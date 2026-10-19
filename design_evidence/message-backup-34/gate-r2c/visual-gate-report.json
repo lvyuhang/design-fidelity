@@ -1,0 +1,5 @@
+{
+  "status": "NOT_EVALUATED",
+  "passed": false,
+  "reason": "Every candidate needs a matching --receipt NAME=JSON"
+}

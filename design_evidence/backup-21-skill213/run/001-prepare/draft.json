@@ -1,0 +1,6256 @@
+{
+  "schema_version": 2,
+  "workflow_version": 1,
+  "require_style_evidence": true,
+  "status": "draft",
+  "name": "1备份21 · Skill 2.13 复用测试",
+  "source_snapshot": "96a01f5f2335227991eee0bc659d9afa",
+  "source_version": "12393b6b-5467-4fbf-8701-122c1702dd6d",
+  "canvas": [
+    375,
+    812
+  ],
+  "render_scale": 4.0,
+  "reference": "../../reference-4x.png",
+  "source_documents": [
+    "../../normalized-source/region-01.json",
+    "../../normalized-source/region-02.json",
+    "../../normalized-source/region-03.json",
+    "../../normalized-source/region-04.json"
+  ],
+  "regions": {
+    "whole": {
+      "label": "完整页面",
+      "rect": [
+        0,
+        0,
+        375,
+        812
+      ],
+      "max_mae": 6.0,
+      "max_p95": 32.0
+    }
+  },
+  "features": {
+    "small__188D812C-6E96-4297-91E1-CF5518266247": {
+      "label": "椭圆形",
+      "node_ids": [
+        "188D812C-6E96-4297-91E1-CF5518266247"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__53677ADF-BBC3-4B39-BBEC-07EFE30236F1": {
+      "label": "矩形备份 6",
+      "node_ids": [
+        "53677ADF-BBC3-4B39-BBEC-07EFE30236F1"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__A629AA0E-D2E3-45A8-8FD7-3EBEF8C4C9BC": {
+      "label": "路径",
+      "node_ids": [
+        "A629AA0E-D2E3-45A8-8FD7-3EBEF8C4C9BC"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__B33C5281-A170-41D2-9B34-097F22BBDA48": {
+      "label": "矩形备份 40",
+      "node_ids": [
+        "B33C5281-A170-41D2-9B34-097F22BBDA48"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "text__EC384EEC-3181-4C57-AD2C-BCCA48B25F2A": {
+      "label": "甜酷辣妹备份 2",
+      "node_ids": [
+        "EC384EEC-3181-4C57-AD2C-BCCA48B25F2A"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          218,
+          199,
+          255
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "small__AF8AA2DB-58AA-4539-95D3-1B98E16A81B3": {
+      "label": "蒙版",
+      "node_ids": [
+        "AF8AA2DB-58AA-4539-95D3-1B98E16A81B3"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__4F4D842E-F732-48D0-BAA3-1E79D4F75CF0": {
+      "label": "去除图片主题文案 (51) (1)",
+      "node_ids": [
+        "4F4D842E-F732-48D0-BAA3-1E79D4F75CF0"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__1F8FDA8F-C9ED-4379-A4B8-2605B3848E6D": {
+      "label": "矩形备份 41",
+      "node_ids": [
+        "1F8FDA8F-C9ED-4379-A4B8-2605B3848E6D"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "text__9E70D178-BBD1-43ED-9DDC-81E6AC78E710": {
+      "label": "温柔知性备份",
+      "node_ids": [
+        "9E70D178-BBD1-43ED-9DDC-81E6AC78E710"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          218,
+          199,
+          255
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "small__8B35387E-659D-48A8-B545-9E068533CF0F": {
+      "label": "蒙版",
+      "node_ids": [
+        "8B35387E-659D-48A8-B545-9E068533CF0F"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__CF1BE17C-B997-4C94-BA6C-5164B4058BC5": {
+      "label": "去除图片主题文案 (49) (1)备份",
+      "node_ids": [
+        "CF1BE17C-B997-4C94-BA6C-5164B4058BC5"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "text__4B56B9CB-8D3B-49FF-B7B3-D704322C2E15": {
+      "label": "阿珍同学备份 5",
+      "node_ids": [
+        "4B56B9CB-8D3B-49FF-B7B3-D704322C2E15"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "text__C1F2FCCD-8B4A-4808-9294-730BD7708274": {
+      "label": "南城以南…备份 2",
+      "node_ids": [
+        "C1F2FCCD-8B4A-4808-9294-730BD7708274"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "small__88F3D345-4828-476C-B1C5-FF4FD79C5483": {
+      "label": "矩形",
+      "node_ids": [
+        "88F3D345-4828-476C-B1C5-FF4FD79C5483"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "text__904EF4D0-3F2D-4195-B759-E0684F610347": {
+      "label": "魅力指数：",
+      "node_ids": [
+        "904EF4D0-3F2D-4195-B759-E0684F610347"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "text__E9C7457E-4342-4464-AFCE-FF08F21E6AAC": {
+      "label": "1000",
+      "node_ids": [
+        "E9C7457E-4342-4464-AFCE-FF08F21E6AAC"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          249,
+          79,
+          45
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "small__BC0EFB0B-FEC1-4B05-91D9-AB971D78A6DF": {
+      "label": "蒙版",
+      "node_ids": [
+        "BC0EFB0B-FEC1-4B05-91D9-AB971D78A6DF"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__DC16184F-EFE3-4F81-BB55-7CB18D498509": {
+      "label": "image (5)",
+      "node_ids": [
+        "DC16184F-EFE3-4F81-BB55-7CB18D498509"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8": {
+      "label": "矩形",
+      "node_ids": [
+        "2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "text__861A68CE-1349-4D54-8CDE-BC56F46056D5": {
+      "label": "魅力指数：",
+      "node_ids": [
+        "861A68CE-1349-4D54-8CDE-BC56F46056D5"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "text__62AB6D3E-E284-4AE2-9723-B7DBFBFCB4DE": {
+      "label": "500",
+      "node_ids": [
+        "62AB6D3E-E284-4AE2-9723-B7DBFBFCB4DE"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          249,
+          79,
+          45
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "small__278182B1-7644-4724-A0E1-AC747FD3BE46": {
+      "label": "蒙版",
+      "node_ids": [
+        "278182B1-7644-4724-A0E1-AC747FD3BE46"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__C7274AB2-C021-42A1-81D8-B94A83398764": {
+      "label": "image (5)",
+      "node_ids": [
+        "C7274AB2-C021-42A1-81D8-B94A83398764"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__7AFC8E7C-BFFB-4152-A8A9-C26154657BE3": {
+      "label": "形状结合备份 4",
+      "node_ids": [
+        "7AFC8E7C-BFFB-4152-A8A9-C26154657BE3"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__1CEC3E87-B258-4032-861C-B647A9E6A89B": {
+      "label": "形状结合备份 5",
+      "node_ids": [
+        "1CEC3E87-B258-4032-861C-B647A9E6A89B"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__97FB03F0-BEFA-49E9-957E-C00EB3D686C1": {
+      "label": "椭圆形",
+      "node_ids": [
+        "97FB03F0-BEFA-49E9-957E-C00EB3D686C1"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__C529936D-3130-4023-B20C-603D6BA435B8": {
+      "label": "椭圆形",
+      "node_ids": [
+        "C529936D-3130-4023-B20C-603D6BA435B8"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__840DA636-451F-4CE6-A1F4-0D723FD3C2E3": {
+      "label": "形状结合",
+      "node_ids": [
+        "840DA636-451F-4CE6-A1F4-0D723FD3C2E3"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__A94C3144-FDEA-46D8-AF9C-C088A6C70E6B": {
+      "label": "椭圆形",
+      "node_ids": [
+        "A94C3144-FDEA-46D8-AF9C-C088A6C70E6B"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__1AB89435-09ED-4F18-AC00-28DD1E96068C": {
+      "label": "椭圆形",
+      "node_ids": [
+        "1AB89435-09ED-4F18-AC00-28DD1E96068C"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__2F4829CC-F3E0-4C5D-9CD8-2C75BFAC0091": {
+      "label": "形状结合",
+      "node_ids": [
+        "2F4829CC-F3E0-4C5D-9CD8-2C75BFAC0091"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__63368B30-5887-4EFD-9B6C-1F683580EE11": {
+      "label": "矩形备份 11",
+      "node_ids": [
+        "63368B30-5887-4EFD-9B6C-1F683580EE11"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__65936BE4-5DBC-40EA-9F8D-7D62008C4683": {
+      "label": "椭圆形备份 9",
+      "node_ids": [
+        "65936BE4-5DBC-40EA-9F8D-7D62008C4683"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "text__66B203C0-C477-4062-9151-0ED2B6807166": {
+      "label": "在线备份 4",
+      "node_ids": [
+        "66B203C0-C477-4062-9151-0ED2B6807166"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          59,
+          206,
+          138
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "small__DD197111-9D7C-4F2E-99A5-1A37E1E2CCFE": {
+      "label": "矩形",
+      "node_ids": [
+        "DD197111-9D7C-4F2E-99A5-1A37E1E2CCFE"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__920D142B-E9A5-4D80-8D39-9C6798D7A6A8": {
+      "label": "椭圆形",
+      "node_ids": [
+        "920D142B-E9A5-4D80-8D39-9C6798D7A6A8"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "text__A41DBF25-3B18-471D-88C1-DFD59DB22529": {
+      "label": "忙碌",
+      "node_ids": [
+        "A41DBF25-3B18-471D-88C1-DFD59DB22529"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          248,
+          123,
+          98
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "small__0522F0CE-376A-433C-9B09-652C21E812C1": {
+      "label": "路径 2",
+      "node_ids": [
+        "0522F0CE-376A-433C-9B09-652C21E812C1"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "text__DC0E7CFF-8361-45D0-9689-66DE5D3F7E4A": {
+      "label": "交友",
+      "node_ids": [
+        "DC0E7CFF-8361-45D0-9689-66DE5D3F7E4A"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          24,
+          24,
+          27
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "small__273FB742-2F0B-4155-B701-B6F044818AA7": {
+      "label": "Border",
+      "node_ids": [
+        "273FB742-2F0B-4155-B701-B6F044818AA7"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__5B5225D9-ADA2-499E-9579-387B1F90696F": {
+      "label": "Cap",
+      "node_ids": [
+        "5B5225D9-ADA2-499E-9579-387B1F90696F"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__F43975C8-2179-4C56-93F1-437274E93D65": {
+      "label": "Capacity",
+      "node_ids": [
+        "F43975C8-2179-4C56-93F1-437274E93D65"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__472E7516-EE6C-4D31-84B7-CA3677C2CE0C": {
+      "label": "Wifi",
+      "node_ids": [
+        "472E7516-EE6C-4D31-84B7-CA3677C2CE0C"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__E6F9DCA2-298E-4722-8B44-CF283ED76C77": {
+      "label": "Cellular Connection",
+      "node_ids": [
+        "E6F9DCA2-298E-4722-8B44-CF283ED76C77"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "text__9DD7AA0D-C02E-44FF-A783-B5693A65377E": {
+      "label": "Time",
+      "node_ids": [
+        "9DD7AA0D-C02E-44FF-A783-B5693A65377E"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          0,
+          0,
+          0
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "small__ACFA342C-5C69-41BA-9B24-6FBC27D50AFC": {
+      "label": "矩形备份 38",
+      "node_ids": [
+        "ACFA342C-5C69-41BA-9B24-6FBC27D50AFC"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__7EDFF30D-2406-4DB7-BEE6-86D0179E9EED": {
+      "label": "矩形备份 39",
+      "node_ids": [
+        "7EDFF30D-2406-4DB7-BEE6-86D0179E9EED"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "text__EE00DAB6-0FA5-47AF-AC00-FC5D969FEEC1": {
+      "label": "甜酷辣妹",
+      "node_ids": [
+        "EE00DAB6-0FA5-47AF-AC00-FC5D969FEEC1"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          218,
+          199,
+          255
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "text__9E8CD3AF-2FC7-4A87-9876-DE782F8D3F19": {
+      "label": "甜酷辣妹备份",
+      "node_ids": [
+        "9E8CD3AF-2FC7-4A87-9876-DE782F8D3F19"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          218,
+          199,
+          255
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "small__A393A64B-69C6-429C-8392-361ED358BA84": {
+      "label": "蒙版",
+      "node_ids": [
+        "A393A64B-69C6-429C-8392-361ED358BA84"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__5A309C32-51B5-4AE6-9F13-402F0FFDC3D8": {
+      "label": "去除图片主题文案 (51) (1)",
+      "node_ids": [
+        "5A309C32-51B5-4AE6-9F13-402F0FFDC3D8"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__F5F29FD0-3962-4450-BDB2-A0FC98600618": {
+      "label": "蒙版",
+      "node_ids": [
+        "F5F29FD0-3962-4450-BDB2-A0FC98600618"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__70E7EF0B-DFD6-4BBB-8DFC-79FB979A0DF2": {
+      "label": "去除图片主题文案 (51) (1)",
+      "node_ids": [
+        "70E7EF0B-DFD6-4BBB-8DFC-79FB979A0DF2"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__A82CA772-AA6F-4484-8E39-65A48B88E823": {
+      "label": "矩形备份 41",
+      "node_ids": [
+        "A82CA772-AA6F-4484-8E39-65A48B88E823"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "text__03162920-B7B7-47C9-ABE2-D4F5898B2379": {
+      "label": "温柔知性备份",
+      "node_ids": [
+        "03162920-B7B7-47C9-ABE2-D4F5898B2379"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          218,
+          199,
+          255
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "small__99B54AD8-F161-4634-9A2D-8A8D99C51461": {
+      "label": "蒙版",
+      "node_ids": [
+        "99B54AD8-F161-4634-9A2D-8A8D99C51461"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__174D30C7-DF63-4B2B-B3CA-D41983C5E936": {
+      "label": "去除图片主题文案 (49) (1)备份",
+      "node_ids": [
+        "174D30C7-DF63-4B2B-B3CA-D41983C5E936"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__2FEDC784-AA80-4D77-BBF1-8AF596855AB3": {
+      "label": "矩形备份 41",
+      "node_ids": [
+        "2FEDC784-AA80-4D77-BBF1-8AF596855AB3"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "text__6BE60EFB-79D0-4A27-AA88-CF8543E0D96F": {
+      "label": "温柔知性备份",
+      "node_ids": [
+        "6BE60EFB-79D0-4A27-AA88-CF8543E0D96F"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          218,
+          199,
+          255
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "small__0CAD9142-C82A-40FD-BA52-F35BF8B2BDF8": {
+      "label": "蒙版",
+      "node_ids": [
+        "0CAD9142-C82A-40FD-BA52-F35BF8B2BDF8"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__BC4EE3F3-4F02-4D6E-B62C-066F234CC3B8": {
+      "label": "去除图片主题文案 (49) (1)备份",
+      "node_ids": [
+        "BC4EE3F3-4F02-4D6E-B62C-066F234CC3B8"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "text__C4AF1D97-AF3C-4551-B2FA-6FCDC8A65691": {
+      "label": "阿珍同学备份 3",
+      "node_ids": [
+        "C4AF1D97-AF3C-4551-B2FA-6FCDC8A65691"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "text__E10F6F20-086F-42F8-948D-C2A3645164F3": {
+      "label": "阿珍同学备份 4",
+      "node_ids": [
+        "E10F6F20-086F-42F8-948D-C2A3645164F3"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "text__D3280CCC-326D-42D0-96D9-BFB81890D222": {
+      "label": "南城以南…",
+      "node_ids": [
+        "D3280CCC-326D-42D0-96D9-BFB81890D222"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "text__AD83C2F3-FC9A-4456-A41B-D37E4BA24FB5": {
+      "label": "南城以南…备份",
+      "node_ids": [
+        "AD83C2F3-FC9A-4456-A41B-D37E4BA24FB5"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "small__657ACAF2-961D-4BF7-80AA-89FE7B215DCC": {
+      "label": "矩形",
+      "node_ids": [
+        "657ACAF2-961D-4BF7-80AA-89FE7B215DCC"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__667F32D5-D4BD-40F0-85C6-EA0DD47FBC16": {
+      "label": "矩形备份 2",
+      "node_ids": [
+        "667F32D5-D4BD-40F0-85C6-EA0DD47FBC16"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__5B1685B0-FB7D-4C57-8A48-57AAF03E81CB": {
+      "label": "矩形备份",
+      "node_ids": [
+        "5B1685B0-FB7D-4C57-8A48-57AAF03E81CB"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__88A37D58-6B12-4352-99ED-8B2C50D30409": {
+      "label": "矩形备份 3",
+      "node_ids": [
+        "88A37D58-6B12-4352-99ED-8B2C50D30409"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "text__F0D2CF6C-0E3E-495F-9261-F397FCD44815": {
+      "label": "魅力指数：",
+      "node_ids": [
+        "F0D2CF6C-0E3E-495F-9261-F397FCD44815"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "text__993435FE-EAE4-4C9A-988E-F4842A5E8F9B": {
+      "label": "魅力指数：备份 2",
+      "node_ids": [
+        "993435FE-EAE4-4C9A-988E-F4842A5E8F9B"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "text__5D04754E-AE61-4301-BF43-1D8C0F98FFF1": {
+      "label": "魅力指数：备份",
+      "node_ids": [
+        "5D04754E-AE61-4301-BF43-1D8C0F98FFF1"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "text__54435179-3B64-4861-97EF-6872A12B12FE": {
+      "label": "魅力指数：备份 3",
+      "node_ids": [
+        "54435179-3B64-4861-97EF-6872A12B12FE"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "text__2FD2F0C0-085F-478F-93CA-022339FB4588": {
+      "label": "1000",
+      "node_ids": [
+        "2FD2F0C0-085F-478F-93CA-022339FB4588"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          249,
+          79,
+          45
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "text__908D225D-A5B0-4192-B9CC-112D32BB1195": {
+      "label": "1000备份 2",
+      "node_ids": [
+        "908D225D-A5B0-4192-B9CC-112D32BB1195"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          249,
+          79,
+          45
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "text__FDD6EA61-7452-45A9-A20C-808B17AC1C5D": {
+      "label": "1000备份",
+      "node_ids": [
+        "FDD6EA61-7452-45A9-A20C-808B17AC1C5D"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          249,
+          79,
+          45
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "text__DA375A82-2668-4850-9815-DBA7CE67BB23": {
+      "label": "1000备份 3",
+      "node_ids": [
+        "DA375A82-2668-4850-9815-DBA7CE67BB23"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          249,
+          79,
+          45
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "small__138012A4-02F8-4444-8C71-9701D1E0C8F8": {
+      "label": "蒙版",
+      "node_ids": [
+        "138012A4-02F8-4444-8C71-9701D1E0C8F8"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__E8B15434-31E8-4276-BCC0-D1884B54390B": {
+      "label": "image (5)",
+      "node_ids": [
+        "E8B15434-31E8-4276-BCC0-D1884B54390B"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__97577131-E44A-4820-B59D-19A86F0D9015": {
+      "label": "蒙版",
+      "node_ids": [
+        "97577131-E44A-4820-B59D-19A86F0D9015"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__AB1C3468-53D5-494F-BC8F-3DC2EB60BA44": {
+      "label": "image (5)",
+      "node_ids": [
+        "AB1C3468-53D5-494F-BC8F-3DC2EB60BA44"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__61746C39-AB6C-4B7A-93C0-748A52ADA484": {
+      "label": "蒙版",
+      "node_ids": [
+        "61746C39-AB6C-4B7A-93C0-748A52ADA484"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__BBEDE7EA-8C0C-456E-A026-654F06E35ABD": {
+      "label": "image (5)",
+      "node_ids": [
+        "BBEDE7EA-8C0C-456E-A026-654F06E35ABD"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__2C561AE5-20DB-4634-AC09-C6F77EEA0152": {
+      "label": "蒙版",
+      "node_ids": [
+        "2C561AE5-20DB-4634-AC09-C6F77EEA0152"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__881F334C-A989-4050-873B-F53758622409": {
+      "label": "image (5)",
+      "node_ids": [
+        "881F334C-A989-4050-873B-F53758622409"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__B8CDD6AE-2FFA-487A-8F4D-E11B79C58FB9": {
+      "label": "形状结合",
+      "node_ids": [
+        "B8CDD6AE-2FFA-487A-8F4D-E11B79C58FB9"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__03D3D21E-2F00-4C25-ACD9-A092F755A61B": {
+      "label": "形状结合备份 2",
+      "node_ids": [
+        "03D3D21E-2F00-4C25-ACD9-A092F755A61B"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__3C021254-152A-46EC-B9E0-BA518AAF230A": {
+      "label": "形状结合备份",
+      "node_ids": [
+        "3C021254-152A-46EC-B9E0-BA518AAF230A"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__B383D6D4-17E8-49AC-9420-4AE493CEB9BC": {
+      "label": "形状结合备份 3",
+      "node_ids": [
+        "B383D6D4-17E8-49AC-9420-4AE493CEB9BC"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__6AEE8D93-3D7F-4372-A5A3-F0EF43D4965D": {
+      "label": "椭圆形",
+      "node_ids": [
+        "6AEE8D93-3D7F-4372-A5A3-F0EF43D4965D"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__1E445E06-4B1A-4B89-A4BF-7FDD27B5472A": {
+      "label": "椭圆形",
+      "node_ids": [
+        "1E445E06-4B1A-4B89-A4BF-7FDD27B5472A"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__DF7CABE4-F42D-4423-AEBA-0E18EC3775FA": {
+      "label": "形状结合",
+      "node_ids": [
+        "DF7CABE4-F42D-4423-AEBA-0E18EC3775FA"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__8E07A897-DE57-447E-8B09-7DC834624B49": {
+      "label": "椭圆形",
+      "node_ids": [
+        "8E07A897-DE57-447E-8B09-7DC834624B49"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__897653A6-5700-4DFB-87F0-AA90854CA3B6": {
+      "label": "椭圆形",
+      "node_ids": [
+        "897653A6-5700-4DFB-87F0-AA90854CA3B6"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__DBB674EE-295F-48B0-970F-BFF0714942C5": {
+      "label": "形状结合",
+      "node_ids": [
+        "DBB674EE-295F-48B0-970F-BFF0714942C5"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__BE411C43-8E01-4CF3-BD60-968876C5AD31": {
+      "label": "椭圆形",
+      "node_ids": [
+        "BE411C43-8E01-4CF3-BD60-968876C5AD31"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__60B14FE1-AD38-451D-A77B-D3C3E2EEE2B0": {
+      "label": "椭圆形",
+      "node_ids": [
+        "60B14FE1-AD38-451D-A77B-D3C3E2EEE2B0"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__219FD332-AE52-4C95-82EC-5C059B8EE172": {
+      "label": "形状结合",
+      "node_ids": [
+        "219FD332-AE52-4C95-82EC-5C059B8EE172"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__069C27F5-1AFA-4B23-94B2-FE6C213F4747": {
+      "label": "椭圆形",
+      "node_ids": [
+        "069C27F5-1AFA-4B23-94B2-FE6C213F4747"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__4B8AD4A9-2785-4589-8560-FC4BB131D1DC": {
+      "label": "椭圆形",
+      "node_ids": [
+        "4B8AD4A9-2785-4589-8560-FC4BB131D1DC"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__681CC3FB-A474-4663-8658-988B6265A94F": {
+      "label": "路径",
+      "node_ids": [
+        "681CC3FB-A474-4663-8658-988B6265A94F"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__B97DBEF4-7146-4D3E-83DA-18C7FB6B1558": {
+      "label": "路径",
+      "node_ids": [
+        "B97DBEF4-7146-4D3E-83DA-18C7FB6B1558"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__4C0557A1-29E7-4315-BF04-D787E9458BF3": {
+      "label": "形状",
+      "node_ids": [
+        "4C0557A1-29E7-4315-BF04-D787E9458BF3"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__02A37778-1F3F-413B-9D75-D7E938C4A704": {
+      "label": "矩形备份 11",
+      "node_ids": [
+        "02A37778-1F3F-413B-9D75-D7E938C4A704"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__B9F93DAB-E64E-44DF-A885-7B0B5CCB3EE3": {
+      "label": "椭圆形备份 9",
+      "node_ids": [
+        "B9F93DAB-E64E-44DF-A885-7B0B5CCB3EE3"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "text__9A1948E3-AB48-4B4F-953D-6FE531AF6541": {
+      "label": "在线备份 4",
+      "node_ids": [
+        "9A1948E3-AB48-4B4F-953D-6FE531AF6541"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          59,
+          206,
+          138
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "small__9D9EAE68-D103-4514-A4C5-ADD8178E42C8": {
+      "label": "矩形备份 11",
+      "node_ids": [
+        "9D9EAE68-D103-4514-A4C5-ADD8178E42C8"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__B0931C98-96CB-451A-BF7D-2FA17C440B2A": {
+      "label": "椭圆形备份 9",
+      "node_ids": [
+        "B0931C98-96CB-451A-BF7D-2FA17C440B2A"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "text__7DCFBF61-5C9E-41A8-B372-777339C3FBDB": {
+      "label": "在线备份 4",
+      "node_ids": [
+        "7DCFBF61-5C9E-41A8-B372-777339C3FBDB"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          59,
+          206,
+          138
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "small__0F63768D-656C-4293-B8FD-E082232434D2": {
+      "label": "矩形",
+      "node_ids": [
+        "0F63768D-656C-4293-B8FD-E082232434D2"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__D1A49E9B-0C81-422A-B53E-3F83F5BADDBC": {
+      "label": "椭圆形",
+      "node_ids": [
+        "D1A49E9B-0C81-422A-B53E-3F83F5BADDBC"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "text__214B3847-0DD7-43BF-8571-32527220DCAF": {
+      "label": "忙碌",
+      "node_ids": [
+        "214B3847-0DD7-43BF-8571-32527220DCAF"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          248,
+          123,
+          98
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "small__6F7BCFB0-1513-480F-892A-F9760C9A1A5C": {
+      "label": "矩形",
+      "node_ids": [
+        "6F7BCFB0-1513-480F-892A-F9760C9A1A5C"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__B4B0C0E3-EEE7-49C7-8289-A352413AF69D": {
+      "label": "椭圆形",
+      "node_ids": [
+        "B4B0C0E3-EEE7-49C7-8289-A352413AF69D"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "text__0F171E3B-2CC3-438B-965D-83A6B24771B6": {
+      "label": "忙碌",
+      "node_ids": [
+        "0F171E3B-2CC3-438B-965D-83A6B24771B6"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          248,
+          123,
+          98
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "text__BBBE5D23-3D10-4472-A243-5401BEE4469F": {
+      "label": "我的备份 4",
+      "node_ids": [
+        "BBBE5D23-3D10-4472-A243-5401BEE4469F"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          123,
+          121,
+          128
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "text__6CC2DEDF-E607-4160-BB38-FD7CD862614B": {
+      "label": "消息",
+      "node_ids": [
+        "6CC2DEDF-E607-4160-BB38-FD7CD862614B"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          123,
+          121,
+          128
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "small__D4C4BE5D-4704-4214-85F7-623DE24A37EB": {
+      "label": "矩形备份 9",
+      "node_ids": [
+        "D4C4BE5D-4704-4214-85F7-623DE24A37EB"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__11F087AE-E152-4B98-BFA1-B7B49D95F0F3": {
+      "label": "形状结合",
+      "node_ids": [
+        "11F087AE-E152-4B98-BFA1-B7B49D95F0F3"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__B301A544-A059-4E77-945B-DA6724609D85": {
+      "label": "路径 11",
+      "node_ids": [
+        "B301A544-A059-4E77-945B-DA6724609D85"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__B57891F4-1743-42C7-B0AE-718FAB19076B": {
+      "label": "矩形备份 10",
+      "node_ids": [
+        "B57891F4-1743-42C7-B0AE-718FAB19076B"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__89E02CB7-9181-4311-B909-3CB78E149B6E": {
+      "label": "椭圆形",
+      "node_ids": [
+        "89E02CB7-9181-4311-B909-3CB78E149B6E"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__8E3DE8AC-8F20-4827-AE74-8DFB0CAFC74D": {
+      "label": "路径",
+      "node_ids": [
+        "8E3DE8AC-8F20-4827-AE74-8DFB0CAFC74D"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__E1118B4E-8F03-4575-A906-E415FB9DE49C": {
+      "label": "路径 12",
+      "node_ids": [
+        "E1118B4E-8F03-4575-A906-E415FB9DE49C"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__B3C12E36-F44E-485C-B176-D664B56B4C94": {
+      "label": "矩形",
+      "node_ids": [
+        "B3C12E36-F44E-485C-B176-D664B56B4C94"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "text__20A559D4-2CD6-4739-98B9-7FD8039FE4E4": {
+      "label": "交友",
+      "node_ids": [
+        "20A559D4-2CD6-4739-98B9-7FD8039FE4E4"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          24,
+          24,
+          27
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "small__12D33D87-D78E-44DB-8784-9301C08E46D3": {
+      "label": "矩形",
+      "node_ids": [
+        "12D33D87-D78E-44DB-8784-9301C08E46D3"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__6DE13EFA-EE86-4025-88B7-21205B10B27F": {
+      "label": "路径",
+      "node_ids": [
+        "6DE13EFA-EE86-4025-88B7-21205B10B27F"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__337F3C1B-9C35-412A-8432-A31E693A6B94": {
+      "label": "形状",
+      "node_ids": [
+        "337F3C1B-9C35-412A-8432-A31E693A6B94"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__05554036-223C-4740-BD6D-69449754FDD4": {
+      "label": "形状",
+      "node_ids": [
+        "05554036-223C-4740-BD6D-69449754FDD4"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "text__92CFCC69-9746-4C4D-9C79-66E48935F024": {
+      "label": "发现",
+      "node_ids": [
+        "92CFCC69-9746-4C4D-9C79-66E48935F024"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          123,
+          121,
+          128
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "small__9669D5E3-D349-4B0D-BE8F-31145980329D": {
+      "label": "矩形",
+      "node_ids": [
+        "9669D5E3-D349-4B0D-BE8F-31145980329D"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__FD7CE27C-2E1E-4F87-BFD0-92F09D9A1379": {
+      "label": "路径",
+      "node_ids": [
+        "FD7CE27C-2E1E-4F87-BFD0-92F09D9A1379"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__DAA9F1C1-047E-4269-885C-BF0D3BB184E0": {
+      "label": "路径 8",
+      "node_ids": [
+        "DAA9F1C1-047E-4269-885C-BF0D3BB184E0"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__0D351280-C927-4965-B024-F3FB0507FFE6": {
+      "label": "路径 9",
+      "node_ids": [
+        "0D351280-C927-4965-B024-F3FB0507FFE6"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__48C19ECF-0824-496C-9BF9-522EE1BF3C49": {
+      "label": "蒙版",
+      "node_ids": [
+        "48C19ECF-0824-496C-9BF9-522EE1BF3C49"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__9A5D800A-E5C2-4B42-AB44-913513AF690F": {
+      "label": "位图",
+      "node_ids": [
+        "9A5D800A-E5C2-4B42-AB44-913513AF690F"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "text__0CA49764-0A4A-41C8-A6CF-14D01612EB2A": {
+      "label": "温柔丸性",
+      "node_ids": [
+        "0CA49764-0A4A-41C8-A6CF-14D01612EB2A"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          34,
+          36,
+          42
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "small__2C388516-EE7D-48B7-8260-6CE644B15952": {
+      "label": "椭圆形备份",
+      "node_ids": [
+        "2C388516-EE7D-48B7-8260-6CE644B15952"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__CEE6746B-6004-44CF-B7FE-B031A32589F1": {
+      "label": "矩形",
+      "node_ids": [
+        "CEE6746B-6004-44CF-B7FE-B031A32589F1"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "text__9FD19EA3-49F7-4857-92B3-EFD1190DC1D4": {
+      "label": "回复",
+      "node_ids": [
+        "9FD19EA3-49F7-4857-92B3-EFD1190DC1D4"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          249,
+          79,
+          46
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "text__411E1524-68FE-432D-B354-9AF2E8897214": {
+      "label": "7”",
+      "node_ids": [
+        "411E1524-68FE-432D-B354-9AF2E8897214"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          145,
+          145,
+          155
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    },
+    "text__DCB809E4-C808-491A-97D4-50843C30E78E": {
+      "label": "[语音]",
+      "node_ids": [
+        "DCB809E4-C808-491A-97D4-50843C30E78E"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          145,
+          145,
+          155
+        ],
+        "max_distance": 32,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75
+      }
+    }
+  },
+  "pinned_files": {
+    "../../reference-4x.png": "34a0970adcead4d8a785cb0ba3e0aa3555cc80054992784ee02e2900b7fe47d5",
+    "../../normalized-source/region-01.json": "3ca4429a7314d82b0708a719caf563808c9474841d67dc7559213b7d001e65a1",
+    "../../normalized-source/region-02.json": "132250ea576b84f76d2fbac90dab6fc1adc8c47a15a4e078be89f80fe4119287",
+    "../../normalized-source/region-03.json": "43a553244e588344f9e8d0c3478bf7d7d9ac50580365b93153e55ab17931176c",
+    "../../normalized-source/region-04.json": "021753c66deb238372019ad03825e6aa0a3bbef2ec21810fd2a23cde46bd04b4"
+  },
+  "assets": [],
+  "fonts": [],
+  "implementation_inputs": [],
+  "environment": {
+    "renderer": "",
+    "renderer_version": "",
+    "platform": "",
+    "locale": "",
+    "state": "",
+    "text_scale": 1
+  },
+  "exclude_rects": [],
+  "max_excluded_fraction": 0.2,
+  "not_applicable": {},
+  "relations": {},
+  "color_samples": {
+    "effect__188D812C-6E96-4297-91E1-CF5518266247__shadow:0__edge": {
+      "label": "effect__188D812C-6E96-4297-91E1-CF5518266247__shadow:0__edge",
+      "node_ids": [
+        "188D812C-6E96-4297-91E1-CF5518266247"
+      ],
+      "rect": [
+        340,
+        85,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "188D812C-6E96-4297-91E1-CF5518266247",
+        "key": "shadow:0",
+        "role": "edge"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__188D812C-6E96-4297-91E1-CF5518266247__shadow:0__peak": {
+      "label": "effect__188D812C-6E96-4297-91E1-CF5518266247__shadow:0__peak",
+      "node_ids": [
+        "188D812C-6E96-4297-91E1-CF5518266247"
+      ],
+      "rect": [
+        340,
+        86,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "188D812C-6E96-4297-91E1-CF5518266247",
+        "key": "shadow:0",
+        "role": "peak"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__188D812C-6E96-4297-91E1-CF5518266247__shadow:0__tail": {
+      "label": "effect__188D812C-6E96-4297-91E1-CF5518266247__shadow:0__tail",
+      "node_ids": [
+        "188D812C-6E96-4297-91E1-CF5518266247"
+      ],
+      "rect": [
+        340,
+        91,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "188D812C-6E96-4297-91E1-CF5518266247",
+        "key": "shadow:0",
+        "role": "tail"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__1B910FB6-6619-40D0-88E9-94CBA7F28173__fills:0:gradient__start": {
+      "label": "effect__1B910FB6-6619-40D0-88E9-94CBA7F28173__fills:0:gradient__start",
+      "node_ids": [
+        "1B910FB6-6619-40D0-88E9-94CBA7F28173"
+      ],
+      "rect": [
+        99,
+        718,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "1B910FB6-6619-40D0-88E9-94CBA7F28173",
+        "key": "fills:0:gradient",
+        "role": "start"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__1B910FB6-6619-40D0-88E9-94CBA7F28173__fills:0:gradient__middle": {
+      "label": "effect__1B910FB6-6619-40D0-88E9-94CBA7F28173__fills:0:gradient__middle",
+      "node_ids": [
+        "1B910FB6-6619-40D0-88E9-94CBA7F28173"
+      ],
+      "rect": [
+        99,
+        750,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "1B910FB6-6619-40D0-88E9-94CBA7F28173",
+        "key": "fills:0:gradient",
+        "role": "middle"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__1B910FB6-6619-40D0-88E9-94CBA7F28173__fills:0:gradient__end": {
+      "label": "effect__1B910FB6-6619-40D0-88E9-94CBA7F28173__fills:0:gradient__end",
+      "node_ids": [
+        "1B910FB6-6619-40D0-88E9-94CBA7F28173"
+      ],
+      "rect": [
+        99,
+        781,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "1B910FB6-6619-40D0-88E9-94CBA7F28173",
+        "key": "fills:0:gradient",
+        "role": "end"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__DE544AB5-333D-4928-BCF6-1F50D9F621CA__fills:0:gradient__start": {
+      "label": "effect__DE544AB5-333D-4928-BCF6-1F50D9F621CA__fills:0:gradient__start",
+      "node_ids": [
+        "DE544AB5-333D-4928-BCF6-1F50D9F621CA"
+      ],
+      "rect": [
+        276,
+        718,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "DE544AB5-333D-4928-BCF6-1F50D9F621CA",
+        "key": "fills:0:gradient",
+        "role": "start"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__DE544AB5-333D-4928-BCF6-1F50D9F621CA__fills:0:gradient__middle": {
+      "label": "effect__DE544AB5-333D-4928-BCF6-1F50D9F621CA__fills:0:gradient__middle",
+      "node_ids": [
+        "DE544AB5-333D-4928-BCF6-1F50D9F621CA"
+      ],
+      "rect": [
+        276,
+        750,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "DE544AB5-333D-4928-BCF6-1F50D9F621CA",
+        "key": "fills:0:gradient",
+        "role": "middle"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__DE544AB5-333D-4928-BCF6-1F50D9F621CA__fills:0:gradient__end": {
+      "label": "effect__DE544AB5-333D-4928-BCF6-1F50D9F621CA__fills:0:gradient__end",
+      "node_ids": [
+        "DE544AB5-333D-4928-BCF6-1F50D9F621CA"
+      ],
+      "rect": [
+        276,
+        781,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "DE544AB5-333D-4928-BCF6-1F50D9F621CA",
+        "key": "fills:0:gradient",
+        "role": "end"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__88F3D345-4828-476C-B1C5-FF4FD79C5483__borders:0:gradient__start": {
+      "label": "effect__88F3D345-4828-476C-B1C5-FF4FD79C5483__borders:0:gradient__start",
+      "node_ids": [
+        "88F3D345-4828-476C-B1C5-FF4FD79C5483"
+      ],
+      "rect": [
+        38,
+        582,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "88F3D345-4828-476C-B1C5-FF4FD79C5483",
+        "key": "borders:0:gradient",
+        "role": "start"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__88F3D345-4828-476C-B1C5-FF4FD79C5483__borders:0:gradient__middle": {
+      "label": "effect__88F3D345-4828-476C-B1C5-FF4FD79C5483__borders:0:gradient__middle",
+      "node_ids": [
+        "88F3D345-4828-476C-B1C5-FF4FD79C5483"
+      ],
+      "rect": [
+        67,
+        580,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "88F3D345-4828-476C-B1C5-FF4FD79C5483",
+        "key": "borders:0:gradient",
+        "role": "middle"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__88F3D345-4828-476C-B1C5-FF4FD79C5483__borders:0:gradient__end": {
+      "label": "effect__88F3D345-4828-476C-B1C5-FF4FD79C5483__borders:0:gradient__end",
+      "node_ids": [
+        "88F3D345-4828-476C-B1C5-FF4FD79C5483"
+      ],
+      "rect": [
+        96,
+        578,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "88F3D345-4828-476C-B1C5-FF4FD79C5483",
+        "key": "borders:0:gradient",
+        "role": "end"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8__borders:0:gradient__start": {
+      "label": "effect__2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8__borders:0:gradient__start",
+      "node_ids": [
+        "2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8"
+      ],
+      "rect": [
+        212,
+        582,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8",
+        "key": "borders:0:gradient",
+        "role": "start"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8__borders:0:gradient__middle": {
+      "label": "effect__2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8__borders:0:gradient__middle",
+      "node_ids": [
+        "2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8"
+      ],
+      "rect": [
+        241,
+        580,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8",
+        "key": "borders:0:gradient",
+        "role": "middle"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8__borders:0:gradient__end": {
+      "label": "effect__2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8__borders:0:gradient__end",
+      "node_ids": [
+        "2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8"
+      ],
+      "rect": [
+        270,
+        578,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8",
+        "key": "borders:0:gradient",
+        "role": "end"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__A3DA70AA-7E4D-4053-980E-B9FFA3FC6187__fills:0:gradient__start": {
+      "label": "effect__A3DA70AA-7E4D-4053-980E-B9FFA3FC6187__fills:0:gradient__start",
+      "node_ids": [
+        "A3DA70AA-7E4D-4053-980E-B9FFA3FC6187"
+      ],
+      "rect": [
+        99,
+        252,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "A3DA70AA-7E4D-4053-980E-B9FFA3FC6187",
+        "key": "fills:0:gradient",
+        "role": "start"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__A3DA70AA-7E4D-4053-980E-B9FFA3FC6187__fills:0:gradient__middle": {
+      "label": "effect__A3DA70AA-7E4D-4053-980E-B9FFA3FC6187__fills:0:gradient__middle",
+      "node_ids": [
+        "A3DA70AA-7E4D-4053-980E-B9FFA3FC6187"
+      ],
+      "rect": [
+        99,
+        284,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "A3DA70AA-7E4D-4053-980E-B9FFA3FC6187",
+        "key": "fills:0:gradient",
+        "role": "middle"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__A3DA70AA-7E4D-4053-980E-B9FFA3FC6187__fills:0:gradient__end": {
+      "label": "effect__A3DA70AA-7E4D-4053-980E-B9FFA3FC6187__fills:0:gradient__end",
+      "node_ids": [
+        "A3DA70AA-7E4D-4053-980E-B9FFA3FC6187"
+      ],
+      "rect": [
+        99,
+        315,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "A3DA70AA-7E4D-4053-980E-B9FFA3FC6187",
+        "key": "fills:0:gradient",
+        "role": "end"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__8E41EEBC-3D78-4012-AD36-3E1EB47C0B42__fills:0:gradient__start": {
+      "label": "effect__8E41EEBC-3D78-4012-AD36-3E1EB47C0B42__fills:0:gradient__start",
+      "node_ids": [
+        "8E41EEBC-3D78-4012-AD36-3E1EB47C0B42"
+      ],
+      "rect": [
+        99,
+        485,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "8E41EEBC-3D78-4012-AD36-3E1EB47C0B42",
+        "key": "fills:0:gradient",
+        "role": "start"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__8E41EEBC-3D78-4012-AD36-3E1EB47C0B42__fills:0:gradient__middle": {
+      "label": "effect__8E41EEBC-3D78-4012-AD36-3E1EB47C0B42__fills:0:gradient__middle",
+      "node_ids": [
+        "8E41EEBC-3D78-4012-AD36-3E1EB47C0B42"
+      ],
+      "rect": [
+        99,
+        517,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "8E41EEBC-3D78-4012-AD36-3E1EB47C0B42",
+        "key": "fills:0:gradient",
+        "role": "middle"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__8E41EEBC-3D78-4012-AD36-3E1EB47C0B42__fills:0:gradient__end": {
+      "label": "effect__8E41EEBC-3D78-4012-AD36-3E1EB47C0B42__fills:0:gradient__end",
+      "node_ids": [
+        "8E41EEBC-3D78-4012-AD36-3E1EB47C0B42"
+      ],
+      "rect": [
+        99,
+        548,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "8E41EEBC-3D78-4012-AD36-3E1EB47C0B42",
+        "key": "fills:0:gradient",
+        "role": "end"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__E6E1BC26-72DE-4BFA-A6FF-075C40B9A2A7__fills:0:gradient__start": {
+      "label": "effect__E6E1BC26-72DE-4BFA-A6FF-075C40B9A2A7__fills:0:gradient__start",
+      "node_ids": [
+        "E6E1BC26-72DE-4BFA-A6FF-075C40B9A2A7"
+      ],
+      "rect": [
+        276,
+        252,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "E6E1BC26-72DE-4BFA-A6FF-075C40B9A2A7",
+        "key": "fills:0:gradient",
+        "role": "start"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__E6E1BC26-72DE-4BFA-A6FF-075C40B9A2A7__fills:0:gradient__middle": {
+      "label": "effect__E6E1BC26-72DE-4BFA-A6FF-075C40B9A2A7__fills:0:gradient__middle",
+      "node_ids": [
+        "E6E1BC26-72DE-4BFA-A6FF-075C40B9A2A7"
+      ],
+      "rect": [
+        276,
+        284,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "E6E1BC26-72DE-4BFA-A6FF-075C40B9A2A7",
+        "key": "fills:0:gradient",
+        "role": "middle"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__E6E1BC26-72DE-4BFA-A6FF-075C40B9A2A7__fills:0:gradient__end": {
+      "label": "effect__E6E1BC26-72DE-4BFA-A6FF-075C40B9A2A7__fills:0:gradient__end",
+      "node_ids": [
+        "E6E1BC26-72DE-4BFA-A6FF-075C40B9A2A7"
+      ],
+      "rect": [
+        276,
+        315,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "E6E1BC26-72DE-4BFA-A6FF-075C40B9A2A7",
+        "key": "fills:0:gradient",
+        "role": "end"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__BA65F155-D026-45C4-B758-CFDCAB667BC3__fills:0:gradient__start": {
+      "label": "effect__BA65F155-D026-45C4-B758-CFDCAB667BC3__fills:0:gradient__start",
+      "node_ids": [
+        "BA65F155-D026-45C4-B758-CFDCAB667BC3"
+      ],
+      "rect": [
+        276,
+        485,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "BA65F155-D026-45C4-B758-CFDCAB667BC3",
+        "key": "fills:0:gradient",
+        "role": "start"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__BA65F155-D026-45C4-B758-CFDCAB667BC3__fills:0:gradient__middle": {
+      "label": "effect__BA65F155-D026-45C4-B758-CFDCAB667BC3__fills:0:gradient__middle",
+      "node_ids": [
+        "BA65F155-D026-45C4-B758-CFDCAB667BC3"
+      ],
+      "rect": [
+        276,
+        517,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "BA65F155-D026-45C4-B758-CFDCAB667BC3",
+        "key": "fills:0:gradient",
+        "role": "middle"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__BA65F155-D026-45C4-B758-CFDCAB667BC3__fills:0:gradient__end": {
+      "label": "effect__BA65F155-D026-45C4-B758-CFDCAB667BC3__fills:0:gradient__end",
+      "node_ids": [
+        "BA65F155-D026-45C4-B758-CFDCAB667BC3"
+      ],
+      "rect": [
+        276,
+        548,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "BA65F155-D026-45C4-B758-CFDCAB667BC3",
+        "key": "fills:0:gradient",
+        "role": "end"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__657ACAF2-961D-4BF7-80AA-89FE7B215DCC__borders:0:gradient__start": {
+      "label": "effect__657ACAF2-961D-4BF7-80AA-89FE7B215DCC__borders:0:gradient__start",
+      "node_ids": [
+        "657ACAF2-961D-4BF7-80AA-89FE7B215DCC"
+      ],
+      "rect": [
+        38,
+        116,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "657ACAF2-961D-4BF7-80AA-89FE7B215DCC",
+        "key": "borders:0:gradient",
+        "role": "start"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__657ACAF2-961D-4BF7-80AA-89FE7B215DCC__borders:0:gradient__middle": {
+      "label": "effect__657ACAF2-961D-4BF7-80AA-89FE7B215DCC__borders:0:gradient__middle",
+      "node_ids": [
+        "657ACAF2-961D-4BF7-80AA-89FE7B215DCC"
+      ],
+      "rect": [
+        67,
+        114,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "657ACAF2-961D-4BF7-80AA-89FE7B215DCC",
+        "key": "borders:0:gradient",
+        "role": "middle"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__657ACAF2-961D-4BF7-80AA-89FE7B215DCC__borders:0:gradient__end": {
+      "label": "effect__657ACAF2-961D-4BF7-80AA-89FE7B215DCC__borders:0:gradient__end",
+      "node_ids": [
+        "657ACAF2-961D-4BF7-80AA-89FE7B215DCC"
+      ],
+      "rect": [
+        96,
+        112,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "657ACAF2-961D-4BF7-80AA-89FE7B215DCC",
+        "key": "borders:0:gradient",
+        "role": "end"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__667F32D5-D4BD-40F0-85C6-EA0DD47FBC16__borders:0:gradient__start": {
+      "label": "effect__667F32D5-D4BD-40F0-85C6-EA0DD47FBC16__borders:0:gradient__start",
+      "node_ids": [
+        "667F32D5-D4BD-40F0-85C6-EA0DD47FBC16"
+      ],
+      "rect": [
+        38,
+        348,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "667F32D5-D4BD-40F0-85C6-EA0DD47FBC16",
+        "key": "borders:0:gradient",
+        "role": "start"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__667F32D5-D4BD-40F0-85C6-EA0DD47FBC16__borders:0:gradient__middle": {
+      "label": "effect__667F32D5-D4BD-40F0-85C6-EA0DD47FBC16__borders:0:gradient__middle",
+      "node_ids": [
+        "667F32D5-D4BD-40F0-85C6-EA0DD47FBC16"
+      ],
+      "rect": [
+        67,
+        346,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "667F32D5-D4BD-40F0-85C6-EA0DD47FBC16",
+        "key": "borders:0:gradient",
+        "role": "middle"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__667F32D5-D4BD-40F0-85C6-EA0DD47FBC16__borders:0:gradient__end": {
+      "label": "effect__667F32D5-D4BD-40F0-85C6-EA0DD47FBC16__borders:0:gradient__end",
+      "node_ids": [
+        "667F32D5-D4BD-40F0-85C6-EA0DD47FBC16"
+      ],
+      "rect": [
+        96,
+        344,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "667F32D5-D4BD-40F0-85C6-EA0DD47FBC16",
+        "key": "borders:0:gradient",
+        "role": "end"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__5B1685B0-FB7D-4C57-8A48-57AAF03E81CB__borders:0:gradient__start": {
+      "label": "effect__5B1685B0-FB7D-4C57-8A48-57AAF03E81CB__borders:0:gradient__start",
+      "node_ids": [
+        "5B1685B0-FB7D-4C57-8A48-57AAF03E81CB"
+      ],
+      "rect": [
+        218,
+        116,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "5B1685B0-FB7D-4C57-8A48-57AAF03E81CB",
+        "key": "borders:0:gradient",
+        "role": "start"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__5B1685B0-FB7D-4C57-8A48-57AAF03E81CB__borders:0:gradient__middle": {
+      "label": "effect__5B1685B0-FB7D-4C57-8A48-57AAF03E81CB__borders:0:gradient__middle",
+      "node_ids": [
+        "5B1685B0-FB7D-4C57-8A48-57AAF03E81CB"
+      ],
+      "rect": [
+        248,
+        114,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "5B1685B0-FB7D-4C57-8A48-57AAF03E81CB",
+        "key": "borders:0:gradient",
+        "role": "middle"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__5B1685B0-FB7D-4C57-8A48-57AAF03E81CB__borders:0:gradient__end": {
+      "label": "effect__5B1685B0-FB7D-4C57-8A48-57AAF03E81CB__borders:0:gradient__end",
+      "node_ids": [
+        "5B1685B0-FB7D-4C57-8A48-57AAF03E81CB"
+      ],
+      "rect": [
+        277,
+        111,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "5B1685B0-FB7D-4C57-8A48-57AAF03E81CB",
+        "key": "borders:0:gradient",
+        "role": "end"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__88A37D58-6B12-4352-99ED-8B2C50D30409__borders:0:gradient__start": {
+      "label": "effect__88A37D58-6B12-4352-99ED-8B2C50D30409__borders:0:gradient__start",
+      "node_ids": [
+        "88A37D58-6B12-4352-99ED-8B2C50D30409"
+      ],
+      "rect": [
+        218,
+        348,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "88A37D58-6B12-4352-99ED-8B2C50D30409",
+        "key": "borders:0:gradient",
+        "role": "start"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__88A37D58-6B12-4352-99ED-8B2C50D30409__borders:0:gradient__middle": {
+      "label": "effect__88A37D58-6B12-4352-99ED-8B2C50D30409__borders:0:gradient__middle",
+      "node_ids": [
+        "88A37D58-6B12-4352-99ED-8B2C50D30409"
+      ],
+      "rect": [
+        248,
+        346,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "88A37D58-6B12-4352-99ED-8B2C50D30409",
+        "key": "borders:0:gradient",
+        "role": "middle"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__88A37D58-6B12-4352-99ED-8B2C50D30409__borders:0:gradient__end": {
+      "label": "effect__88A37D58-6B12-4352-99ED-8B2C50D30409__borders:0:gradient__end",
+      "node_ids": [
+        "88A37D58-6B12-4352-99ED-8B2C50D30409"
+      ],
+      "rect": [
+        277,
+        343,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "88A37D58-6B12-4352-99ED-8B2C50D30409",
+        "key": "borders:0:gradient",
+        "role": "end"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__1DCB4BAF-56BB-4FE6-9219-D902811366E1__shadow:0__edge": {
+      "label": "effect__1DCB4BAF-56BB-4FE6-9219-D902811366E1__shadow:0__edge",
+      "node_ids": [
+        "1DCB4BAF-56BB-4FE6-9219-D902811366E1"
+      ],
+      "rect": [
+        185,
+        118,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "1DCB4BAF-56BB-4FE6-9219-D902811366E1",
+        "key": "shadow:0",
+        "role": "edge"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__1DCB4BAF-56BB-4FE6-9219-D902811366E1__shadow:0__peak": {
+      "label": "effect__1DCB4BAF-56BB-4FE6-9219-D902811366E1__shadow:0__peak",
+      "node_ids": [
+        "1DCB4BAF-56BB-4FE6-9219-D902811366E1"
+      ],
+      "rect": [
+        185,
+        120,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "1DCB4BAF-56BB-4FE6-9219-D902811366E1",
+        "key": "shadow:0",
+        "role": "peak"
+      },
+      "max_channel_delta": 6.0
+    },
+    "effect__1DCB4BAF-56BB-4FE6-9219-D902811366E1__shadow:0__tail": {
+      "label": "effect__1DCB4BAF-56BB-4FE6-9219-D902811366E1__shadow:0__tail",
+      "node_ids": [
+        "1DCB4BAF-56BB-4FE6-9219-D902811366E1"
+      ],
+      "rect": [
+        185,
+        130,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "1DCB4BAF-56BB-4FE6-9219-D902811366E1",
+        "key": "shadow:0",
+        "role": "tail"
+      },
+      "max_channel_delta": 6.0
+    }
+  },
+  "source_scope": {
+    "kind": "page",
+    "expected_node_count": 229
+  },
+  "node_decisions": {
+    "9A4A0A90-222B-4071-B4D8-2D3E9A4BC19A": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "3BBABDAA-CF61-4BDE-941D-165810B9E2C7": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "5DAE51BC-2859-41F6-9293-AA0F51C6BA0C": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "7A9B0FF7-C101-4235-8348-E5AFD4793E23": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "B160912A-FD89-4231-A735-9587882452EF": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "F7083F8D-0E63-490D-8946-26D40886DA91": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "FDEB1A50-248C-47D0-8CDF-BF900B5DC10F": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "349F36A8-904D-41C6-AF83-0954B7AF3E89": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "69A0710E-FC76-46C7-95F9-856E4B1E3BF3": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "188D812C-6E96-4297-91E1-CF5518266247": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "53677ADF-BBC3-4B39-BBEC-07EFE30236F1": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "A629AA0E-D2E3-45A8-8FD7-3EBEF8C4C9BC": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "4B78ED47-A224-4F17-B134-747DBCA5732F": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "94CFC890-5C54-439E-8A42-8BFE9A78D8CE": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "66AB07DA-9039-40F2-BC13-669C41BD947B": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "D4EE8138-4216-481B-8DE6-974CE61A048C": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "D9B48322-C3E3-401D-8BB6-799B0360125A": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "DD386080-9BFE-4A0F-9FF9-00AB07D88C79": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "70F61C63-282E-4BBF-9E9F-775CEA7206AB": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "A7C8FCF7-2421-4C3E-9C42-5B8F2F12EC8D": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "D10821D7-DC50-440D-B9EB-BED8A411F186": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "E3858F58-652E-4259-B544-0ECFE4794170": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "1B910FB6-6619-40D0-88E9-94CBA7F28173": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "DE544AB5-333D-4928-BCF6-1F50D9F621CA": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "B33C5281-A170-41D2-9B34-097F22BBDA48": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "EC384EEC-3181-4C57-AD2C-BCCA48B25F2A": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "AF8AA2DB-58AA-4539-95D3-1B98E16A81B3": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "4F4D842E-F732-48D0-BAA3-1E79D4F75CF0": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "1F8FDA8F-C9ED-4379-A4B8-2605B3848E6D": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "9E70D178-BBD1-43ED-9DDC-81E6AC78E710": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "8B35387E-659D-48A8-B545-9E068533CF0F": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "CF1BE17C-B997-4C94-BA6C-5164B4058BC5": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "4B56B9CB-8D3B-49FF-B7B3-D704322C2E15": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "C1F2FCCD-8B4A-4808-9294-730BD7708274": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "88F3D345-4828-476C-B1C5-FF4FD79C5483": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "904EF4D0-3F2D-4195-B759-E0684F610347": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "E9C7457E-4342-4464-AFCE-FF08F21E6AAC": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "BC0EFB0B-FEC1-4B05-91D9-AB971D78A6DF": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "DC16184F-EFE3-4F81-BB55-7CB18D498509": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "861A68CE-1349-4D54-8CDE-BC56F46056D5": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "62AB6D3E-E284-4AE2-9723-B7DBFBFCB4DE": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "278182B1-7644-4724-A0E1-AC747FD3BE46": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "C7274AB2-C021-42A1-81D8-B94A83398764": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "7AFC8E7C-BFFB-4152-A8A9-C26154657BE3": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "1CEC3E87-B258-4032-861C-B647A9E6A89B": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "97FB03F0-BEFA-49E9-957E-C00EB3D686C1": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "C529936D-3130-4023-B20C-603D6BA435B8": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "840DA636-451F-4CE6-A1F4-0D723FD3C2E3": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "4D3F43B4-8720-42E7-BA8C-794821CFF0D7": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "802DBE99-2249-46A3-B2BD-A48CA5BB3022": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "93F2EA16-F78C-4D5B-BCC2-C5A663C90505": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "617EB816-62A2-4887-A623-71F171ED0410": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "51D4528F-19CD-450D-99EA-DA30F90F812C": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "A94C3144-FDEA-46D8-AF9C-C088A6C70E6B": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "1AB89435-09ED-4F18-AC00-28DD1E96068C": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "2F4829CC-F3E0-4C5D-9CD8-2C75BFAC0091": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "63368B30-5887-4EFD-9B6C-1F683580EE11": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "65936BE4-5DBC-40EA-9F8D-7D62008C4683": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "66B203C0-C477-4062-9151-0ED2B6807166": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "DD197111-9D7C-4F2E-99A5-1A37E1E2CCFE": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "920D142B-E9A5-4D80-8D39-9C6798D7A6A8": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "A41DBF25-3B18-471D-88C1-DFD59DB22529": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "1D9F5CD5-2627-487B-9808-097E3216EDB1": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "D524ECBD-508B-46A6-9529-56FFEA894F8C": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "F6C58514-30F5-4004-9AE4-3FE2BB506271": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "1CD5ECE0-6C7D-4484-89EC-83A3849B4834": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "0522F0CE-376A-433C-9B09-652C21E812C1": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "DC0E7CFF-8361-45D0-9689-66DE5D3F7E4A": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "273FB742-2F0B-4155-B701-B6F044818AA7": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "5B5225D9-ADA2-499E-9579-387B1F90696F": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "F43975C8-2179-4C56-93F1-437274E93D65": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "472E7516-EE6C-4D31-84B7-CA3677C2CE0C": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "E6F9DCA2-298E-4722-8B44-CF283ED76C77": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "9DD7AA0D-C02E-44FF-A783-B5693A65377E": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "BBE38D7D-FA23-4B64-8A1C-7993772389A7": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "A3DA70AA-7E4D-4053-980E-B9FFA3FC6187": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "8E41EEBC-3D78-4012-AD36-3E1EB47C0B42": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "E6E1BC26-72DE-4BFA-A6FF-075C40B9A2A7": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "BA65F155-D026-45C4-B758-CFDCAB667BC3": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "ACFA342C-5C69-41BA-9B24-6FBC27D50AFC": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "7EDFF30D-2406-4DB7-BEE6-86D0179E9EED": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "EE00DAB6-0FA5-47AF-AC00-FC5D969FEEC1": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "9E8CD3AF-2FC7-4A87-9876-DE782F8D3F19": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "A393A64B-69C6-429C-8392-361ED358BA84": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "5A309C32-51B5-4AE6-9F13-402F0FFDC3D8": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "F5F29FD0-3962-4450-BDB2-A0FC98600618": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "70E7EF0B-DFD6-4BBB-8DFC-79FB979A0DF2": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "A82CA772-AA6F-4484-8E39-65A48B88E823": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "03162920-B7B7-47C9-ABE2-D4F5898B2379": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "99B54AD8-F161-4634-9A2D-8A8D99C51461": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "174D30C7-DF63-4B2B-B3CA-D41983C5E936": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "2FEDC784-AA80-4D77-BBF1-8AF596855AB3": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "6BE60EFB-79D0-4A27-AA88-CF8543E0D96F": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "0CAD9142-C82A-40FD-BA52-F35BF8B2BDF8": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "BC4EE3F3-4F02-4D6E-B62C-066F234CC3B8": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "C4AF1D97-AF3C-4551-B2FA-6FCDC8A65691": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "E10F6F20-086F-42F8-948D-C2A3645164F3": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "D3280CCC-326D-42D0-96D9-BFB81890D222": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "33AA626F-0FB5-4931-AD34-321ED4A3E2A0": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "46382DB2-FE36-4A1C-9BD7-74FBDFE30379": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "6E3780C1-5FC0-49F1-BE8A-C38B712A5527": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "5C3B8640-CA32-405C-BE08-4C1B4437603E": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "A8AC7814-9CDF-418C-B9EE-126FFF039ADE": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "CEF50751-2274-4399-B1AA-FE65C2F64A00": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "F38ECF0A-E38D-48F8-8C39-BF1DAEA85EC0": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "0F0FA3A2-DB0F-46BD-AD1E-FDC4345ABE10": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "297C5DCA-81D2-4A4E-AF56-A074C47D1734": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "AD83C2F3-FC9A-4456-A41B-D37E4BA24FB5": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "657ACAF2-961D-4BF7-80AA-89FE7B215DCC": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "667F32D5-D4BD-40F0-85C6-EA0DD47FBC16": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "5B1685B0-FB7D-4C57-8A48-57AAF03E81CB": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "88A37D58-6B12-4352-99ED-8B2C50D30409": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "F0D2CF6C-0E3E-495F-9261-F397FCD44815": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "993435FE-EAE4-4C9A-988E-F4842A5E8F9B": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "5D04754E-AE61-4301-BF43-1D8C0F98FFF1": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "54435179-3B64-4861-97EF-6872A12B12FE": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "2FD2F0C0-085F-478F-93CA-022339FB4588": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "908D225D-A5B0-4192-B9CC-112D32BB1195": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "FDD6EA61-7452-45A9-A20C-808B17AC1C5D": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "DA375A82-2668-4850-9815-DBA7CE67BB23": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "138012A4-02F8-4444-8C71-9701D1E0C8F8": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "E8B15434-31E8-4276-BCC0-D1884B54390B": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "97577131-E44A-4820-B59D-19A86F0D9015": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "AB1C3468-53D5-494F-BC8F-3DC2EB60BA44": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "61746C39-AB6C-4B7A-93C0-748A52ADA484": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "BBEDE7EA-8C0C-456E-A026-654F06E35ABD": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "2C561AE5-20DB-4634-AC09-C6F77EEA0152": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "881F334C-A989-4050-873B-F53758622409": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "B8CDD6AE-2FFA-487A-8F4D-E11B79C58FB9": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "03D3D21E-2F00-4C25-ACD9-A092F755A61B": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "3C021254-152A-46EC-B9E0-BA518AAF230A": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "B383D6D4-17E8-49AC-9420-4AE493CEB9BC": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "6AEE8D93-3D7F-4372-A5A3-F0EF43D4965D": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "1E445E06-4B1A-4B89-A4BF-7FDD27B5472A": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "DF7CABE4-F42D-4423-AEBA-0E18EC3775FA": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "8E07A897-DE57-447E-8B09-7DC834624B49": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "897653A6-5700-4DFB-87F0-AA90854CA3B6": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "DBB674EE-295F-48B0-970F-BFF0714942C5": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "BE411C43-8E01-4CF3-BD60-968876C5AD31": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "60B14FE1-AD38-451D-A77B-D3C3E2EEE2B0": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "219FD332-AE52-4C95-82EC-5C059B8EE172": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "069C27F5-1AFA-4B23-94B2-FE6C213F4747": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "4B8AD4A9-2785-4589-8560-FC4BB131D1DC": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "681CC3FB-A474-4663-8658-988B6265A94F": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "B97DBEF4-7146-4D3E-83DA-18C7FB6B1558": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "4C0557A1-29E7-4315-BF04-D787E9458BF3": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "02A37778-1F3F-413B-9D75-D7E938C4A704": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "B9F93DAB-E64E-44DF-A885-7B0B5CCB3EE3": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "9A1948E3-AB48-4B4F-953D-6FE531AF6541": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "9D9EAE68-D103-4514-A4C5-ADD8178E42C8": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "B0931C98-96CB-451A-BF7D-2FA17C440B2A": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "7DCFBF61-5C9E-41A8-B372-777339C3FBDB": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "0F63768D-656C-4293-B8FD-E082232434D2": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "D1A49E9B-0C81-422A-B53E-3F83F5BADDBC": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "96B97AB1-436C-4D50-A068-6CBB5A301278": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "214B3847-0DD7-43BF-8571-32527220DCAF": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "6F7BCFB0-1513-480F-892A-F9760C9A1A5C": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "B4B0C0E3-EEE7-49C7-8289-A352413AF69D": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "0F171E3B-2CC3-438B-965D-83A6B24771B6": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "D702BE09-A795-4BF0-AE0A-94F9D4601193": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "BBBE5D23-3D10-4472-A243-5401BEE4469F": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "6CC2DEDF-E607-4160-BB38-FD7CD862614B": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "D4C4BE5D-4704-4214-85F7-623DE24A37EB": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "11F087AE-E152-4B98-BFA1-B7B49D95F0F3": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "B301A544-A059-4E77-945B-DA6724609D85": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "B57891F4-1743-42C7-B0AE-718FAB19076B": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "89E02CB7-9181-4311-B909-3CB78E149B6E": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "8E3DE8AC-8F20-4827-AE74-8DFB0CAFC74D": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "E1118B4E-8F03-4575-A906-E415FB9DE49C": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "B3C12E36-F44E-485C-B176-D664B56B4C94": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "20A559D4-2CD6-4739-98B9-7FD8039FE4E4": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "12D33D87-D78E-44DB-8784-9301C08E46D3": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "6DE13EFA-EE86-4025-88B7-21205B10B27F": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "337F3C1B-9C35-412A-8432-A31E693A6B94": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "05554036-223C-4740-BD6D-69449754FDD4": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "92CFCC69-9746-4C4D-9C79-66E48935F024": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "9669D5E3-D349-4B0D-BE8F-31145980329D": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "FD7CE27C-2E1E-4F87-BFD0-92F09D9A1379": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "DAA9F1C1-047E-4269-885C-BF0D3BB184E0": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "0D351280-C927-4965-B024-F3FB0507FFE6": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "30B310D6-99E6-4F20-966C-00D99612D03B": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "B8A5F983-22D8-4723-A3CF-22290E4B6FD4": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "1DCB4BAF-56BB-4FE6-9219-D902811366E1": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "48C19ECF-0824-496C-9BF9-522EE1BF3C49": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "9A5D800A-E5C2-4B42-AB44-913513AF690F": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "0CA49764-0A4A-41C8-A6CF-14D01612EB2A": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "2C388516-EE7D-48B7-8260-6CE644B15952": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "CEE6746B-6004-44CF-B7FE-B031A32589F1": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "9FD19EA3-49F7-4857-92B3-EFD1190DC1D4": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "411E1524-68FE-432D-B354-9AF2E8897214": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "DCB809E4-C808-491A-97D4-50843C30E78E": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    }
+  },
+  "coverage": {
+    "9A4A0A90-222B-4071-B4D8-2D3E9A4BC19A": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "3BBABDAA-CF61-4BDE-941D-165810B9E2C7": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "5DAE51BC-2859-41F6-9293-AA0F51C6BA0C": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "7A9B0FF7-C101-4235-8348-E5AFD4793E23": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "B160912A-FD89-4231-A735-9587882452EF": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "F7083F8D-0E63-490D-8946-26D40886DA91": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "FDEB1A50-248C-47D0-8CDF-BF900B5DC10F": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "349F36A8-904D-41C6-AF83-0954B7AF3E89": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "69A0710E-FC76-46C7-95F9-856E4B1E3BF3": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "188D812C-6E96-4297-91E1-CF5518266247": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "53677ADF-BBC3-4B39-BBEC-07EFE30236F1": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "A629AA0E-D2E3-45A8-8FD7-3EBEF8C4C9BC": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "4B78ED47-A224-4F17-B134-747DBCA5732F": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "94CFC890-5C54-439E-8A42-8BFE9A78D8CE": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "66AB07DA-9039-40F2-BC13-669C41BD947B": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "D4EE8138-4216-481B-8DE6-974CE61A048C": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "D9B48322-C3E3-401D-8BB6-799B0360125A": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "DD386080-9BFE-4A0F-9FF9-00AB07D88C79": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "70F61C63-282E-4BBF-9E9F-775CEA7206AB": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "A7C8FCF7-2421-4C3E-9C42-5B8F2F12EC8D": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "D10821D7-DC50-440D-B9EB-BED8A411F186": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "E3858F58-652E-4259-B544-0ECFE4794170": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "1B910FB6-6619-40D0-88E9-94CBA7F28173": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "DE544AB5-333D-4928-BCF6-1F50D9F621CA": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "B33C5281-A170-41D2-9B34-097F22BBDA48": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "EC384EEC-3181-4C57-AD2C-BCCA48B25F2A": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "AF8AA2DB-58AA-4539-95D3-1B98E16A81B3": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "4F4D842E-F732-48D0-BAA3-1E79D4F75CF0": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "1F8FDA8F-C9ED-4379-A4B8-2605B3848E6D": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "9E70D178-BBD1-43ED-9DDC-81E6AC78E710": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "8B35387E-659D-48A8-B545-9E068533CF0F": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "CF1BE17C-B997-4C94-BA6C-5164B4058BC5": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "4B56B9CB-8D3B-49FF-B7B3-D704322C2E15": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "C1F2FCCD-8B4A-4808-9294-730BD7708274": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "88F3D345-4828-476C-B1C5-FF4FD79C5483": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "904EF4D0-3F2D-4195-B759-E0684F610347": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "E9C7457E-4342-4464-AFCE-FF08F21E6AAC": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "BC0EFB0B-FEC1-4B05-91D9-AB971D78A6DF": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "DC16184F-EFE3-4F81-BB55-7CB18D498509": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "861A68CE-1349-4D54-8CDE-BC56F46056D5": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "62AB6D3E-E284-4AE2-9723-B7DBFBFCB4DE": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "278182B1-7644-4724-A0E1-AC747FD3BE46": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "C7274AB2-C021-42A1-81D8-B94A83398764": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "7AFC8E7C-BFFB-4152-A8A9-C26154657BE3": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "1CEC3E87-B258-4032-861C-B647A9E6A89B": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "97FB03F0-BEFA-49E9-957E-C00EB3D686C1": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "C529936D-3130-4023-B20C-603D6BA435B8": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "840DA636-451F-4CE6-A1F4-0D723FD3C2E3": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "4D3F43B4-8720-42E7-BA8C-794821CFF0D7": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "802DBE99-2249-46A3-B2BD-A48CA5BB3022": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "93F2EA16-F78C-4D5B-BCC2-C5A663C90505": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "617EB816-62A2-4887-A623-71F171ED0410": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "51D4528F-19CD-450D-99EA-DA30F90F812C": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "A94C3144-FDEA-46D8-AF9C-C088A6C70E6B": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "1AB89435-09ED-4F18-AC00-28DD1E96068C": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "2F4829CC-F3E0-4C5D-9CD8-2C75BFAC0091": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "63368B30-5887-4EFD-9B6C-1F683580EE11": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "65936BE4-5DBC-40EA-9F8D-7D62008C4683": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "66B203C0-C477-4062-9151-0ED2B6807166": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "DD197111-9D7C-4F2E-99A5-1A37E1E2CCFE": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "920D142B-E9A5-4D80-8D39-9C6798D7A6A8": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "A41DBF25-3B18-471D-88C1-DFD59DB22529": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "1D9F5CD5-2627-487B-9808-097E3216EDB1": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "D524ECBD-508B-46A6-9529-56FFEA894F8C": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "F6C58514-30F5-4004-9AE4-3FE2BB506271": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "1CD5ECE0-6C7D-4484-89EC-83A3849B4834": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "0522F0CE-376A-433C-9B09-652C21E812C1": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "DC0E7CFF-8361-45D0-9689-66DE5D3F7E4A": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "273FB742-2F0B-4155-B701-B6F044818AA7": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "5B5225D9-ADA2-499E-9579-387B1F90696F": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "F43975C8-2179-4C56-93F1-437274E93D65": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "472E7516-EE6C-4D31-84B7-CA3677C2CE0C": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "E6F9DCA2-298E-4722-8B44-CF283ED76C77": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "9DD7AA0D-C02E-44FF-A783-B5693A65377E": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "BBE38D7D-FA23-4B64-8A1C-7993772389A7": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "A3DA70AA-7E4D-4053-980E-B9FFA3FC6187": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "8E41EEBC-3D78-4012-AD36-3E1EB47C0B42": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "E6E1BC26-72DE-4BFA-A6FF-075C40B9A2A7": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "BA65F155-D026-45C4-B758-CFDCAB667BC3": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "ACFA342C-5C69-41BA-9B24-6FBC27D50AFC": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "7EDFF30D-2406-4DB7-BEE6-86D0179E9EED": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "EE00DAB6-0FA5-47AF-AC00-FC5D969FEEC1": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "9E8CD3AF-2FC7-4A87-9876-DE782F8D3F19": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "A393A64B-69C6-429C-8392-361ED358BA84": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "5A309C32-51B5-4AE6-9F13-402F0FFDC3D8": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "F5F29FD0-3962-4450-BDB2-A0FC98600618": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "70E7EF0B-DFD6-4BBB-8DFC-79FB979A0DF2": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "A82CA772-AA6F-4484-8E39-65A48B88E823": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "03162920-B7B7-47C9-ABE2-D4F5898B2379": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "99B54AD8-F161-4634-9A2D-8A8D99C51461": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "174D30C7-DF63-4B2B-B3CA-D41983C5E936": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "2FEDC784-AA80-4D77-BBF1-8AF596855AB3": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "6BE60EFB-79D0-4A27-AA88-CF8543E0D96F": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "0CAD9142-C82A-40FD-BA52-F35BF8B2BDF8": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "BC4EE3F3-4F02-4D6E-B62C-066F234CC3B8": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "C4AF1D97-AF3C-4551-B2FA-6FCDC8A65691": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "E10F6F20-086F-42F8-948D-C2A3645164F3": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "D3280CCC-326D-42D0-96D9-BFB81890D222": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "33AA626F-0FB5-4931-AD34-321ED4A3E2A0": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "46382DB2-FE36-4A1C-9BD7-74FBDFE30379": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "6E3780C1-5FC0-49F1-BE8A-C38B712A5527": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "5C3B8640-CA32-405C-BE08-4C1B4437603E": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "A8AC7814-9CDF-418C-B9EE-126FFF039ADE": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "CEF50751-2274-4399-B1AA-FE65C2F64A00": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "F38ECF0A-E38D-48F8-8C39-BF1DAEA85EC0": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "0F0FA3A2-DB0F-46BD-AD1E-FDC4345ABE10": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "297C5DCA-81D2-4A4E-AF56-A074C47D1734": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "AD83C2F3-FC9A-4456-A41B-D37E4BA24FB5": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "657ACAF2-961D-4BF7-80AA-89FE7B215DCC": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "667F32D5-D4BD-40F0-85C6-EA0DD47FBC16": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "5B1685B0-FB7D-4C57-8A48-57AAF03E81CB": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "88A37D58-6B12-4352-99ED-8B2C50D30409": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "F0D2CF6C-0E3E-495F-9261-F397FCD44815": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "993435FE-EAE4-4C9A-988E-F4842A5E8F9B": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "5D04754E-AE61-4301-BF43-1D8C0F98FFF1": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "54435179-3B64-4861-97EF-6872A12B12FE": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "2FD2F0C0-085F-478F-93CA-022339FB4588": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "908D225D-A5B0-4192-B9CC-112D32BB1195": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "FDD6EA61-7452-45A9-A20C-808B17AC1C5D": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "DA375A82-2668-4850-9815-DBA7CE67BB23": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "138012A4-02F8-4444-8C71-9701D1E0C8F8": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "E8B15434-31E8-4276-BCC0-D1884B54390B": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "97577131-E44A-4820-B59D-19A86F0D9015": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "AB1C3468-53D5-494F-BC8F-3DC2EB60BA44": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "61746C39-AB6C-4B7A-93C0-748A52ADA484": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "BBEDE7EA-8C0C-456E-A026-654F06E35ABD": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "2C561AE5-20DB-4634-AC09-C6F77EEA0152": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "881F334C-A989-4050-873B-F53758622409": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "B8CDD6AE-2FFA-487A-8F4D-E11B79C58FB9": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "03D3D21E-2F00-4C25-ACD9-A092F755A61B": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "3C021254-152A-46EC-B9E0-BA518AAF230A": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "B383D6D4-17E8-49AC-9420-4AE493CEB9BC": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "6AEE8D93-3D7F-4372-A5A3-F0EF43D4965D": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "1E445E06-4B1A-4B89-A4BF-7FDD27B5472A": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "DF7CABE4-F42D-4423-AEBA-0E18EC3775FA": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "8E07A897-DE57-447E-8B09-7DC834624B49": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "897653A6-5700-4DFB-87F0-AA90854CA3B6": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "DBB674EE-295F-48B0-970F-BFF0714942C5": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "BE411C43-8E01-4CF3-BD60-968876C5AD31": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "60B14FE1-AD38-451D-A77B-D3C3E2EEE2B0": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "219FD332-AE52-4C95-82EC-5C059B8EE172": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "069C27F5-1AFA-4B23-94B2-FE6C213F4747": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "4B8AD4A9-2785-4589-8560-FC4BB131D1DC": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "681CC3FB-A474-4663-8658-988B6265A94F": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "B97DBEF4-7146-4D3E-83DA-18C7FB6B1558": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "4C0557A1-29E7-4315-BF04-D787E9458BF3": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "02A37778-1F3F-413B-9D75-D7E938C4A704": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "B9F93DAB-E64E-44DF-A885-7B0B5CCB3EE3": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "9A1948E3-AB48-4B4F-953D-6FE531AF6541": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "9D9EAE68-D103-4514-A4C5-ADD8178E42C8": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "B0931C98-96CB-451A-BF7D-2FA17C440B2A": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "7DCFBF61-5C9E-41A8-B372-777339C3FBDB": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "0F63768D-656C-4293-B8FD-E082232434D2": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "D1A49E9B-0C81-422A-B53E-3F83F5BADDBC": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "96B97AB1-436C-4D50-A068-6CBB5A301278": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "214B3847-0DD7-43BF-8571-32527220DCAF": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "6F7BCFB0-1513-480F-892A-F9760C9A1A5C": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "B4B0C0E3-EEE7-49C7-8289-A352413AF69D": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "0F171E3B-2CC3-438B-965D-83A6B24771B6": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "D702BE09-A795-4BF0-AE0A-94F9D4601193": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "BBBE5D23-3D10-4472-A243-5401BEE4469F": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "6CC2DEDF-E607-4160-BB38-FD7CD862614B": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "D4C4BE5D-4704-4214-85F7-623DE24A37EB": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "11F087AE-E152-4B98-BFA1-B7B49D95F0F3": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "B301A544-A059-4E77-945B-DA6724609D85": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "B57891F4-1743-42C7-B0AE-718FAB19076B": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "89E02CB7-9181-4311-B909-3CB78E149B6E": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "8E3DE8AC-8F20-4827-AE74-8DFB0CAFC74D": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "E1118B4E-8F03-4575-A906-E415FB9DE49C": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "B3C12E36-F44E-485C-B176-D664B56B4C94": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "20A559D4-2CD6-4739-98B9-7FD8039FE4E4": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "12D33D87-D78E-44DB-8784-9301C08E46D3": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "6DE13EFA-EE86-4025-88B7-21205B10B27F": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "337F3C1B-9C35-412A-8432-A31E693A6B94": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "05554036-223C-4740-BD6D-69449754FDD4": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "92CFCC69-9746-4C4D-9C79-66E48935F024": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "9669D5E3-D349-4B0D-BE8F-31145980329D": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "FD7CE27C-2E1E-4F87-BFD0-92F09D9A1379": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "DAA9F1C1-047E-4269-885C-BF0D3BB184E0": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "0D351280-C927-4965-B024-F3FB0507FFE6": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "30B310D6-99E6-4F20-966C-00D99612D03B": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "B8A5F983-22D8-4723-A3CF-22290E4B6FD4": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "1DCB4BAF-56BB-4FE6-9219-D902811366E1": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "48C19ECF-0824-496C-9BF9-522EE1BF3C49": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "9A5D800A-E5C2-4B42-AB44-913513AF690F": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "0CA49764-0A4A-41C8-A6CF-14D01612EB2A": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "2C388516-EE7D-48B7-8260-6CE644B15952": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "CEE6746B-6004-44CF-B7FE-B031A32589F1": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "9FD19EA3-49F7-4857-92B3-EFD1190DC1D4": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "411E1524-68FE-432D-B354-9AF2E8897214": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "DCB809E4-C808-491A-97D4-50843C30E78E": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    }
+  }
+}

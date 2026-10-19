@@ -1,0 +1,575 @@
+--- 2.11/SKILL.md
++++ 2.12/SKILL.md
+@@ -2,20 +2,21 @@
+ name: lanhu-design-fidelity
+ description: Implement or repair Lanhu designs with original MCP assets, reproducible renders and visual checks, especially Flutter. Use for high-fidelity design-to-code work, not PRD-only analysis.
+ metadata:
+-  version: "2.11.0"
++  version: "2.12.0"
+ ---
+ 
+ # 蓝湖高保真还原
+ 
+-交付可运行页面、原稿对比与真实验收结果。默认只读本文件和一次[操作入口](references/session-entrypoint.md)；已有上下文不重复读取。脚本直接运行，维护时才读源码；MCP 原始数据落盘，按摘要及节点 ID 定向读取，不能为减少回显省略取证。
++交付可维护的界面代码、原稿对比与真实验收结果。默认只读本文件和一次[操作入口](references/session-entrypoint.md)，不重复加载。脚本直接运行，维护时才读源码；MCP 原数据落盘，按摘要/节点 ID 查异常。
+ 
+ ## 关键决策
+ 
+-- 固定快照、版本、参考图、画布、字体和渲染环境。设计为 375px 时按 375 逻辑宽度展示。overview/CSS 用于定位，样式和父级效果以原始节点为准；缺证据先补取。
+-- 原始素材优先，保留导出画框、透明边距和裁剪。仅完整通用矢量可按源数据绘制；缺失的定制素材先尝试源渲染回退，否则保形色块并提示“设计素材未切图”。不能用近似 icon、emoji 或整页截图替代实现。
+-- 每个可见节点均须处置，包括父级效果和独立装饰。固定父级画框再换算子坐标，单独核对小图标、底纹、阴影/渐变与图文关系；整页平均误差不代表细节正确。
+-- 使用冻结 v2 契约和新渲染收据；不得放宽阈值、删检查或扩大排除来通过。确需校准时保留旧记录并另立关联试验。完整页不能缩成局部验收；缺图逐项披露，标为 PASS_WITH_EXCLUSIONS。
+-- 最终查看原稿/真实 Flutter 渲染并列图，完成项目检查、目标构建与可运行预览。自动通过仍可能漏检；明显差异未解决只能交付诊断预览。目标 2–3 轮，不能按轮数强行结束；相同截图不是视觉改善。
++- 固定快照、版本、参考图、画布、字体与环境。375px 设计按 375 逻辑宽展示。overview/CSS 用于定位；样式和父效果以原始节点为准，缺证据补取。
++- 原素材保留画框、透明边距与裁剪；完整通用矢量可精确绘制。缺失定制素材默认保形占位并提示“设计素材未切图”，遵守用户策略。仅授权的单个静态素材可源渲染回退；禁止整卡、业务文字、按钮、导航打平裁图或用近似 icon/emoji 替代。
++- 所有可见节点须处置，含父效果和独立装饰。先固定父框再换算子坐标；小图标、底纹、阴影/渐变、图文关系分别检查，整页误差不代替细节。
++- 按组件/样式组审核语义与异常，工具展开逐节点检查。复用 prepare 草稿、分组声明和渲染器，避免逐页写生成器。冻结前用原稿自检检测器，不能用候选图反调标准。
++- 冻结 v2 契约并使用新渲染收据；不能放宽阈值、删检查或扩大排除以通过。校准保留旧记录另立关联试验；整页不能缩成局部验收，缺图逐项披露并标 PASS_WITH_EXCLUSIONS。
++- 并列复查原稿/真实 Flutter 渲染，完成项目检查、构建和预览。裁片分数、可点击热区不证明组件实现。明显差异只交付诊断预览。目标 2–3 轮，统计全任务失败/基线，校准不能归零；相同截图不是视觉改善。
+ 
+ ## 按需定位，不递归读完链接
+ 
+--- 2.11/references/efficient-execution.md
++++ 2.12/references/efficient-execution.md
+@@ -6,19 +6,23 @@
+ 
+ - 同版本源文件与按哈希验证的资源复用；overview 定位，inspect 定向补样式/效果。独立分页可有界并发，版本不同不合并。
+ - 大 JSON、bundle、完整报告落盘；只回传身份、数量、缺口及路径，按 node_id 读必要数据。失败先区分鉴权、截断、分页或落盘原因。
+-- 字体映射、harness 和配置一次接入。coverage/哈希交给编译器，模型审核语义与异常，不逐页写构建脚本；已有工具足够快时不再造调度器。
++- 字体映射、harness 和配置一次接入。prepare 输出同类审核组，compile 展开 decision_groups/feature_groups；模型审核组件语义和例外，工具保留逐节点覆盖。避免逐页写契约生成脚本或为普通页面维护通用框架。
+ - 先补证据/字体，再集中实现、修正；迭代只 validate，最终才构建。不为省时间删检测或少取源数据。
+ 
+ ## 轮次与时间
+ 
+ elapsed 为 start 后墙钟，command 为工具执行；差额含编辑/等待，只能叫未归因时间。start 前未知。环境接入和工具维护单列，同时保留总等待。
+ 
++更准确地说，command 只累计 page_session 管理的子命令，不含手动 MCP/终端。phase 切换 evidence、implementation、validation、preview、infrastructure 记录阶段墙钟；未记录历史不能补造分段。脚本仅占总等待极小时，优先减少模型决策和返工，不优化毫秒级命令。
++
+ 初版计第 1 轮；输入改变计新轮，相同输入重跑计尝试。实现/验收/混合/元数据变更分别分类；失败、重试、中断保留。超过三轮说明根因与新策略，不重复微调或重置日志。
+ 
+-同日志冻结验收语义和检测工具；即使变严格也不再是相同比较。确有基线错误，保留旧结果并用故障样本证明后另立关联校准任务。旧日志无 policy 时仅作诊断，不补造历史冻结状态。
++同日志冻结验收语义和检测工具；即使变严格也不再是相同比较。确有基线错误，保留旧结果另立关联校准任务；session 按不可变 run.json 累计全部尝试及基线数量，不能只报告最后一个基线的轮数。旧日志无 policy 时仅作诊断，不补造历史冻结状态。
+ 
+ ## 收益口径
+ 
+ 比较相近复杂度、同模型/推理强度、渲染环境、缺图和标准的任务；首次实现与旧页复用分开。记录总等待、实现修正、验收改动、最终覆盖和复查。轮数不是调用数，脚本秒数不是整页时间。
+ 
+ token 用实际会话计量，分列输入、缓存输入、输出，推理已计入输出时不重复加；未取得则留空。文档/回传字符压缩只证明上下文体量下降，不能直接换算费用或整页提速。历史案例按需查 [验证记录](validation.md)。
++
++优化验证分两层：回放历史故障证明规则可提前拦截、声明压缩后检查完全等价；再用新页面测端到端耗时与交付质量。前者不能宣称已达到 5–10 分钟。照片缺失时，单素材占位与整卡截图属于不同交付质量，后者的低像素误差不能作为前者替代品。
+--- 2.11/references/implementation-decisions.md
++++ 2.12/references/implementation-decisions.md
+@@ -6,12 +6,12 @@
+ |---|---|
+ | 可导出原位图/SVG/bundle | 使用原资源，保留透明画框、缩放与裁剪 |
+ | 通用界面矢量且数据完整 | 按源路径/变换/填充/描边精确绘制 |
+-| 定制照片、头像、印章、业务 icon 等无素材 | 优先源 render_fallback，失败后保形占位 |
++| 定制照片、头像、印章、业务 icon 等无素材 | 按用户策略；默认保形占位，标记未切图 |
+ | 下划线、色带、引号底板、分隔线 | 独立节点实现与检查，不合并到文字后遗漏 |
+ | 阴影、发光、模糊、渐变、透明叠层 | 保留源参数、父组效果、叠层和裁剪 |
+ | 类型/参数无法确定 | 补取证据，记录未实现原因 |
+ 
+-无 asset_id 不等于缺图；继续查完整原始矢量/效果。定制素材不能根据零散路径仿造。装饰字形缺字体时优先源回退或占位，不换相似字体。
++无 asset_id 不等于缺图；继续查完整原始矢量/效果。定制素材不能根据零散路径仿造。仅获授权时，单个静态素材可用源渲染回退并记录节点和画框。不得把带业务文字、按钮、状态或导航的区域打平；缺照片不意味着整张卡片都可截图。装饰字形回退需 static_artwork_reason 说明，不能用于业务标签。代码绑定与实际素材内容仍需复查，声明本身不是证明。
+ 
+ ## 几何
+ 
+--- 2.11/references/mcp-evidence.md
++++ 2.12/references/mcp-evidence.md
+@@ -18,6 +18,6 @@
+ - bounds、父级层级/裁剪、类型、asset_id、导出结果；文字保存字体/字重/行高/颜色/对齐及混合 runs。
+ - 矢量保存路径、控制点、变换、填充规则、描边/端点/连接；保存阴影、渐变、透明、模糊、蒙版等原始字段与祖先样式。overview/CSS 不足以实现这些效果。
+ 
+-无 asset_id 继续查原矢量/效果，不能直接判缺图。定制素材无法导出时尝试源 render_fallback，失败再按节点决策占位。缺证据只阻塞受影响区域，正式验收前闭环。
++无 asset_id 继续查原矢量/效果，不能直接判缺图。定制素材缺失按用户策略保形占位；仅授权的单个静态素材可源渲染回退，不得裁图替代卡片/导航等业务代码。缺证据只阻塞受影响区域，正式验收前闭环。
+ 
+ 完整页 expected_node_count 对照源总数；局部显式 provided_nodes 和原因。初始化器无法发现未拉取节点。参考图可见但清单没有时排查分页、父层烘焙、低透明层/蒙版，不在代码中仿画补洞。
+--- 2.11/references/preparation.md
++++ 2.12/references/preparation.md
+@@ -34,6 +34,23 @@
+ 
+ implementation_inputs 列全影响渲染的代码、测试/harness、配置和 lockfile；assets/fonts 列实际文件。工具不推断依赖图。CONTRACT_COMPILED 仅表示声明合法，尚未视觉验收。初始化器的 detector: review_required 和 pending 需审核；字段形状查 assets/visual-contract.template.json，检查设计查 visual-contract.md。
+ 
++## 批量声明（2.12）
++
++同实现或同检测策略可按明确节点 ID 分组；编译后仍是逐节点检查，不能用一张大区域稀释小图标差异。分组与显式声明不可重复，保留不同状态、样式、尺寸的差异，不用分组代替语义审核。
++
++```json
++{
++  "decision_groups": {
++    "labels": {"node_ids":["TEXT_A","TEXT_B"], "decision":{"mode":"native_exact","implementation":"../../lib/page.dart","symbol":"Page.labels"}}
++  },
++  "feature_groups": {
++    "labels": {"node_ids":["TEXT_A","TEXT_B"],"label":"同色文字","padding":[1,1,1,1],"detector":{"kind":"dark","luma_max":100,"min_pixels":2},"limits":{"max_center_delta":0.75,"max_size_delta":0.75}}
++  }
++}
++```
++
++compile 用原稿运行所有检测器；无墨迹须先查遮挡或目标层，不能等候选截图后删检查。此自检只能发现无效分割，不能证明目标层语义正确，须看对应源 ROI。业务文字或其祖先不允许默认 render_fallback；静态装饰的例外必须说明，页面热区不构成组件实现。
++
+ ## 执行约束与迁移（2.9）
+ 
+ 正式契约 schema_version: 2、workflow_version: 1。node_decisions 为每个可见节点绑定实现，例如：
+--- 2.11/references/session-entrypoint.md
++++ 2.12/references/session-entrypoint.md
+@@ -4,21 +4,26 @@
+ 
+ ```sh
+ # SKILL_DIR 为技能目录；python 为项目已有环境。
+-python "$SKILL_DIR/scripts/page_session.py" --config page.json start
+-python "$SKILL_DIR/scripts/page_session.py" --config page.json prepare
+-# 审核 page-plan.json 和 draft.json，实施页面，写 reviewed-spec.json。
+-python "$SKILL_DIR/scripts/page_session.py" --config page.json compile
+-python "$SKILL_DIR/scripts/page_session.py" --config page.json validate --note "初版"
+-# 批量修正后重复 validate，复用同一契约与日志；最终才加 --build。
+-python "$SKILL_DIR/scripts/page_session.py" --config page.json validate --note "发现的问题及修正" --build
+-# 最终并列复查、项目检查及预览完成后：
+-python "$SKILL_DIR/scripts/page_session.py" --config page.json finish --note "复查结论、排除项、预览地址"
++page() { python "$SKILL_DIR/scripts/page_session.py" --config page.json "$@"; }
++page start
++page prepare
++page phase --phase implementation
++# 审核 page-plan.json/draft.json，实施页面，填写 reviewed-spec.json。
++page phase --phase validation
++page compile
++page validate --note "初版" --build
++# 有失败才批量修正并重复 validate；通过即可交付，无需凑轮数。
++page phase --phase preview
++# 真实并列复查与预览完成后：
++page finish --note "复查结论、排除项、预览地址"
+ ```
+ 
+ - 取证：定位设计后固定快照，完整分页并保存原始样式/祖先、参考图、资源及 manifest。同版本不重复全量拉取。
+-- prepare：一次合并证据、查字体和画框，输出待审清单与草稿。按 issue 类型补取；模型审核节点语义、素材内容、矢量完整性和效果，不默认批准候选。
+-- compile：spec 绑定实现文件/符号及 blocking 检查；省略 coverage/status/pinned_files，由编译器生成。新契约与 spec 同目录，字段不熟才查准备/契约章节；修代码无需重编契约。
++- prepare：先看 issues/review_groups 和源图，按样式/组件审核，实例画框保留；不默认批准候选。草稿提供单色不透明文字检测器，混色/遮挡仍需审核。
++- compile：decision_groups/feature_groups 展开后仍逐节点检测，字段见 preparation.md。无墨迹检测器与业务 UI 裁图在冻结前拦截；spec/contract 同目录，省略 coverage/status/pinned_files；修代码无需重编。
+ - validate：预检→真实截图/收据→门禁→配置的静态检查，自动分配输出目录。读取失败检查与必要 ROI，同类问题一次修完；连续两轮无改善先回查证据/坐标/检测器。
+ - finish：要求最近验证成功、收据仍有效及非空复查记录，执行者负责实际检查和预览。
+ 
+-默认 stdout 回传状态、计时、轮次、失败摘要及报告路径。完整命令/输出仍在 session.json/html、task-run.json/html 和各轮报告；调试入口才用 --verbose。status 查看进展；token 未采集记 null。start 不可重置，中断 lock 确认进程结束后再清理并保留记录。
++start 固定 Python 供子命令复用。phase 只在阶段切换调用，可标 infrastructure；墙钟含编辑/等待，不是模型计算时间。普通页面不扩建通用工具。
++
++stdout 回传全任务轮次、阶段时间和失败摘要；完整输出在 session/各轮报告。run.json 汇总跨基线轮次，改名 task-run 不能归零。status 查进展，调试才 --verbose；token 未采集记 null。start 不可重置，中断锁先确认进程结束。--build 在门禁通过后执行，不为构建重复渲染。
+--- 2.11/scripts/compile_contract.py
++++ 2.12/scripts/compile_contract.py
+@@ -7,18 +7,82 @@
+ from pathlib import Path
+ 
+ from fidelity_contract import inventory, read_json, sha256, validate_contract, verify_files, verify_fonts
+-from visual_fidelity_gate import _load_nodes, _validate_evidence
++from visual_fidelity_gate import (_load_nodes, _validate_evidence, _union_bounds,
++    _padded_roi, _measure_feature)
+ from source_requirements import add_sample_drafts
++
++
++def expand_groups(c):
++    """Expand reviewed templates, preserving an independent check per node."""
++    for group_name, target, wrapped in (
++        ('decision_groups', 'node_decisions', True),
++        ('feature_groups', 'features', False),
++    ):
++        destination = c.setdefault(target, {})
++        for name, group in c.pop(group_name, {}).items():
++            ids = group.get('node_ids', [])
++            if not ids or len(ids) != len(set(ids)):
++                raise ValueError(f'{group_name}.{name}: unique explicit node_ids required')
++            template = group['decision'] if wrapped else {k:v for k,v in group.items() if k != 'node_ids'}
++            for node_id in ids:
++                key = node_id if wrapped else f'{name}__{node_id}'
++                if key in destination:
++                    raise ValueError(f'{group_name}.{name}: duplicate binding {key}')
++                destination[key] = copy.deepcopy(template)
++                if not wrapped:
++                    destination[key]['node_ids'] = [node_id]
++
++
++def check_reference_detectors(c, nodes, base):
++    """Source-only check before freezing: no candidate pixels or threshold tuning."""
++    import numpy as np
++    from PIL import Image
++    with Image.open(base/c['reference']) as im:
++        expected = tuple(round(v*c['render_scale']) for v in c['canvas'])
++        if im.size != expected:
++            raise ValueError('Reference dimensions differ from canvas/render_scale')
++        reference = np.asarray(im.convert('RGB'))
++    empty = []
++    for key, feature in c['features'].items():
++        roi = _padded_roi(_union_bounds(feature['node_ids'], nodes),
++                          feature.get('padding', [0, 0, 0, 0]))
++        if _measure_feature(reference, roi, c['render_scale'], feature['detector']) is None:
++            empty.append(key)
++    if empty:
++        raise ValueError('Reference detectors found no ink; review occlusion/target layer before render: '
++                         + ', '.join(empty))
++
++
++def check_raster_scope(c, nodes):
++    """Reject text-bearing UI crops; a decorative glyph needs explicit review."""
++    text_owners = set()
++    for key, node in nodes.items():
++        if not node.get('text'):
++            continue
++        seen = set()
++        while key in nodes and key not in seen:
++            seen.add(key)
++            text_owners.add(key)
++            key = nodes[key].get('parent_id')
++    for key, decision in c.get('node_decisions', {}).items():
++        if decision.get('mode') != 'render_fallback':
++            continue
++        if key in text_owners and not decision.get('static_artwork_reason', '').strip():
++            raise ValueError(f'{key}: render_fallback contains text/UI; use native widgets and '
++                             'individual missing-asset placeholders. Static decorative artwork '
++                             'requires an explicit static_artwork_reason, never business labels.')
+ 
+ 
+ def compile_spec(spec, base):
+     c = copy.deepcopy(spec)
++    expand_groups(c)
+     if any(k in c for k in ('coverage','pinned_files','status')):
+         raise ValueError('Spec must omit generated coverage, pinned_files and status')
+     exclusions = c.pop('excluded_nodes', {})
+     paths = [base/p for p in c['source_documents']]
+     _validate_evidence(paths, c)
+     nodes = _load_nodes(paths)
++    check_raster_scope(c, nodes)
+     c["workflow_version"] = 1
+     auto = c.pop("auto_effect_samples", None)
+     if auto is not None:
+@@ -47,6 +111,7 @@
+     c['pinned_files'] = {p:sha256(base/p) for p in sorted(required)}
+     verify_files(c, base)
+     verify_fonts(c, nodes, base)
++    check_reference_detectors(c, nodes, base)
+     return c
+ 
+ 
+--- 2.11/scripts/init_visual_contract.py
++++ 2.12/scripts/init_visual_contract.py
+@@ -6,6 +6,7 @@
+ import argparse
+ import json
+ import os
++import re
+ from pathlib import Path
+ from typing import Any
+ 
+@@ -43,6 +44,28 @@
+             effects.append(field)
+     return {'vector_data_present': bool(raw.get('points') or raw.get('path') or node.get('path')),
+             'effect_fields': effects}
++
++
++def source_text_detector(node):
++    """Single opaque source color only; never guess from candidate/reference ink."""
++    spec = node.get('text_spec') or {}
++    runs = spec.get('text_runs') or [spec.get('base_style') or {}]
++    colors = {r.get('color') for r in runs}
++    if len(colors) != 1:
++        return None
++    color = next(iter(colors))
++    if not isinstance(color, str):
++        return None
++    if re.fullmatch(r'#[0-9a-fA-F]{6}', color):
++        rgb = [int(color[i:i+2], 16) for i in (1,3,5)]
++    else:
++        match = re.fullmatch(r'rgba\((\d+),(\d+),(\d+),1(?:\.0+)?\)', color.replace(' ', ''))
++        if not match:
++            return None
++        rgb = list(map(int, match.groups()))
++    if any(v > 255 for v in rgb):
++        return None
++    return {'kind':'color_distance','rgb':rgb,'max_distance':32,'min_pixels':2}
+ 
+ 
+ def main() -> int:
+@@ -148,6 +171,13 @@
+                 'padding':[1,1,1,1], 'detector':{'kind':'review_required','min_pixels':1},
+                 'limits':{'max_center_delta':.75,'max_size_delta':.75,'max_edge_delta':.75,
+                           'max_ink_ratio_delta':.25,'max_mask_iou_loss':.2}}
++        if node.get('text') and not is_small_visual(node):
++            detector = source_text_detector(node)
++            if detector:
++                contract['features']['text__'+key] = {
++                    'label':node.get('name',key), 'node_ids':[key], 'padding':[1,1,1,1],
++                    'detector':detector,
++                    'limits':{'max_center_delta':.75,'max_size_delta':.75}}
+     suggestions = []
+     for key, node in selected.items():
+         text = node.get("text")
+--- 2.11/scripts/page_session.py
++++ 2.12/scripts/page_session.py
+@@ -15,15 +15,64 @@
+ SCRIPTS = Path(__file__).resolve().parent
+ 
+ 
++def session_rounds(data, root):
++    """Use immutable attempt reports, so renaming a task log cannot reset totals."""
++    tickets, attempts, baselines = set(), set(), set()
++    total, latest, missing, calls = 0.0, 'NOT_STARTED', 0, 0
++    for event in data['events']:
++        if event['action'] != 'validate':
++            continue
++        calls += 1
++        report = Path(event['report']) if event.get('report') else None
++        if not report or not report.is_file():
++            missing += 1
++            continue
++        run = read_json(report)
++        ticket = run.get('iteration', {})
++        identity = ticket.get('attempt_id')
++        if not identity or identity in attempts:
++            if not identity:
++                missing += 1
++            continue
++        attempts.add(identity)
++        tickets.add((ticket['task_id'], ticket['round_number']))
++        baselines.add(ticket['task_id'])
++        total += run.get('seconds', 0)
++        latest = run.get('status', 'RUNNING')
++    if not calls:
++        return None
++    # Per-baseline classifications remain in individual task logs. A baseline
++    # restart must not be represented as an implementation correction.
++    return {'rounds': len(tickets), 'validation_attempts': len(attempts),
++            'validation_calls': calls, 'untracked_calls': missing,
++            'baseline_count': len(baselines), 'implementation_revisions': None,
++            'criteria_revisions': None, 'repeat_attempts': len(attempts)-len(tickets),
++            'latest_status': latest, 'over_target': len(tickets)>3,
++            'total_validation_seconds': round(total, 3),
++            'count_scope': 'Session attempt reports across all baselines; missing reports are not invented'}
++
++
++def phase_seconds(data, end):
++    marks = data.get('phase_marks', [])
++    if not marks:
++        return {'unclassified': round(end-data['started_unix'], 3)}
++    totals = {}
++    for i, mark in enumerate(marks):
++        stop = marks[i+1]['unix'] if i+1 < len(marks) else end
++        totals[mark['phase']] = totals.get(mark['phase'], 0) + max(0, stop-mark['unix'])
++    return {k:round(v, 3) for k,v in totals.items()}
++
++
+ def status(data, root):
+     end = data.get('finished_unix') or time.time()
+     active = sum(e.get('seconds', 0) for e in data['events'])
+-    rounds = read_json(root/'task-run.json').get('summary') if (root/'task-run.json').exists() else None
++    rounds = session_rounds(data, root)
+     return {'status': data['status'], 'elapsed_seconds': round(end-data['started_unix'], 3),
+             'command_seconds': round(active, 3),
+             'unattributed_seconds': round(max(0, end-data['started_unix']-active), 3),
+             'timing_scope': 'Since explicit start; includes editing, waiting and failures. Time before start is unknown.',
+-            'tokens': None, 'rounds': rounds, 'session_log': str(root/'session.html')}
++            'tokens': None, 'rounds': rounds, 'phase_seconds': phase_seconds(data, end),
++            'session_log': str(root/'session.html')}
+ 
+ 
+ def compact_result(data, root, event=None):
+@@ -34,6 +83,10 @@
+         'implementation_revisions','criteria_revisions','repeat_attempts','latest_status','over_target')}
+         if s['rounds'] else None)
+     result['report'] = str(root/'session.json')
++    result['phase_seconds'] = s.get('phase_seconds')
++    if s['rounds']:
++        result['rounds'].update({k:s['rounds'][k] for k in
++            ('baseline_count', 'validation_calls', 'untracked_calls')})
+     if not event:
+         return result
+     result.update(action=event['action'], action_status=event['status'], seconds=event['seconds'])
+@@ -70,6 +123,8 @@
+         f'<h1>{esc(data["name"])} · {esc(data["status"])}</h1>'
+         f'<p>从 start 到当前/结束：{s["elapsed_seconds"]} 秒；命令执行：{s["command_seconds"]} 秒；其余未归因时间：{s["unattributed_seconds"]} 秒。</p>'
+         '<p>未归因时间含编辑、等待等，不能全部算为模型思考；start 前耗时未知。Token 未采集。</p>'
++        f'<p>阶段墙钟（含该阶段的等待）：{esc(s["phase_seconds"])}</p>'
++        f'<p>全任务验证统计：{esc(s["rounds"])}</p>'
+         '<p><a href="task-run.html">逐轮视觉验证</a> · <a href="session.json">完整运行记录</a></p>'
+         '<table><tr><th>操作</th><th>状态</th><th>秒</th><th>说明</th><th>错误</th></tr>'+rows+'</table>'
+         f'<pre>{esc(json.dumps(s.get("rounds"),ensure_ascii=False,indent=2))}</pre>')
+@@ -78,7 +133,8 @@
+ def main():
+     p = argparse.ArgumentParser(description=__doc__)
+     p.add_argument('--config', type=Path, required=True)
+-    p.add_argument('action', choices=['start','prepare','compile','validate','status','finish'])
++    p.add_argument('action', choices=['start','phase','prepare','compile','validate','status','finish'])
++    p.add_argument('--phase', choices=['evidence','implementation','validation','preview','infrastructure'])
+     p.add_argument('--note', default='')
+     p.add_argument('--build', action='store_true')
+     p.add_argument('--verbose', action='store_true', help='Print full session/event details; default is a compact result')
+@@ -95,8 +151,11 @@
+             if args.action == 'start':
+                 if state.exists():
+                     raise ValueError('Session already exists; resume it, do not reset its timer')
+-                data = {'name':c['name'], 'status':'RUNNING', 'started_unix':time.time(),
++                now = time.time()
++                data = {'name':c['name'], 'status':'RUNNING', 'started_unix':now,
+                         'started_at':utc(time.time()), 'config':str(config), 'events':[]}
++                data['python'] = sys.executable
++                data['phase_marks'] = [{'phase':'evidence','unix':now}]
+                 save(data, root)
+                 print(json.dumps(data['summary'] if args.verbose else compact_result(data,root), ensure_ascii=False)); return 0
+             if not state.exists():
+@@ -109,6 +168,12 @@
+                 print(json.dumps(data['summary'] if args.verbose else compact_result(data,root), ensure_ascii=False)); return 0
+             if data['status'] != 'RUNNING':
+                 raise ValueError('Session is already complete; use a new explicitly named task')
++            if args.action == 'phase':
++                if not args.phase:
++                    raise ValueError('phase requires --phase')
++                data.setdefault('phase_marks', []).append({'phase':args.phase,'unix':time.time()})
++                save(data, root)
++                print(json.dumps(compact_result(data,root),ensure_ascii=False)); return 0
+             started = time.monotonic()
+             event = {'action':args.action, 'status':'RUNNING', 'started_at':utc(time.time()),
+                      'config_sha256':sha256(config), 'note':args.note}
+@@ -117,7 +182,7 @@
+             output = root/f'{len(data["events"]):03d}-{args.action}'
+ 
+             def invoke(script, flags):
+-                command = [sys.executable, str(SCRIPTS/script), *map(str, flags)]
++                command = [data.get('python', sys.executable), str(SCRIPTS/script), *map(str, flags)]
+                 log = root/f'{len(data["events"]):03d}-{Path(script).stem}.log'
+                 event.setdefault('commands', []).append({'argv':command, 'log':str(log)})
+                 with log.open('w') as stream:
+--- 2.11/scripts/prepare_page.py
++++ 2.12/scripts/prepare_page.py
+@@ -179,6 +179,15 @@
+         node_plan.append(entry)
+         if mode in ('ancestor_asset_candidate','missing_bitmap','review_source_geometry'):
+             review.append({'node_id': key, 'kind': mode, 'owner_candidate': owner})
++    review_groups = {}
++    for entry in node_plan:
++        # Group only review work; every instance retains its own geometry and
++        # obligation checks. Different text widths still need per-node review.
++        styles = [{k:v for k,v in run.items() if k != 'text'} for run in entry.get('runs', [])]
++        signature = json.dumps([entry['proposal'], entry['asset_owner_candidate'], styles], sort_keys=True)
++        group = review_groups.setdefault(signature, {'proposal':entry['proposal'],
++            'owner_candidate':entry['asset_owner_candidate'], 'styles':styles, 'node_ids':[]})
++        group['node_ids'].append(entry['node_id'])
+     effects = [{'node_id': key, **visual_hints(n)} for key,n in nodes.items()
+                if n.get('effective_source_visible',n.get('source_visible')) is not False and visual_hints(n)['effect_fields']]
+     pins = {str(p.resolve()): sha256(p) for p in [*evidence, reference, manifest_path, *([font_map] if font_map else [])]}
+@@ -188,7 +197,9 @@
+             'canvas': canvas, 'render_scale': scale, 'source_nodes': len(nodes),
+             'export_origin': origin, 'origin_anchor_nodes': anchors,
+             'assets': prepared_assets, 'fonts': fonts, 'nodes': node_plan,
+-            'effect_requirements': requirements(nodes, canvas), 'effect_candidates': effects, 'review_queue': review, 'issues': issues, 'pinned_inputs': pins}
++            'effect_requirements': requirements(nodes, canvas), 'effect_candidates': effects,
++            'review_queue': review, 'review_groups':list(review_groups.values()),
++            'issues': issues, 'pinned_inputs': pins}
+ 
+ 
+ def main():
+@@ -211,6 +222,7 @@
+     summary.update(asset_count=len(result.get('assets', [])),
+                    issue_counts=dict(Counter(i['kind'] for i in result.get('issues', []))),
+                    review_count=len(result.get('review_queue', [])), report=str(a.output/'page-plan.json'))
++    summary['review_group_count'] = len(result.get('review_groups', []))
+     (a.output/'summary.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2)+'\n')
+     print(json.dumps(summary, ensure_ascii=False))
+     return 0 if result['status'] == 'PREPARED_FOR_REVIEW' else 2
+--- 2.11/tests/test_page_session.py
++++ 2.12/tests/test_page_session.py
+@@ -131,3 +131,35 @@
+         self.assertEqual(result['failed_check_count'],12)
+         self.assertEqual(len(result['failed_checks']),5)
+         self.assertEqual(len(json.loads(report.read_text())['failures']),12)
++
++    def test_archiving_baseline_log_does_not_reset_session_rounds(self):
++        self.call('start'); self.call('validate')
++        log=self.f.root/'session/task-run.json'
++        log.rename(log.with_name('archived-task-run.json'))
++        run,result=self.call('validate')
++        self.assertEqual(run.returncode,0,run.stdout)
++        self.assertEqual(result['rounds']['rounds'],2)
++        self.assertEqual(result['rounds']['validation_attempts'],2)
++        self.assertEqual(result['rounds']['baseline_count'],2)
++
++    def test_phase_time_partition_and_pinned_interpreter(self):
++        self.call('start')
++        self.call('phase','--phase','implementation')
++        self.call('phase','--phase','validation')
++        run,result=self.call('validate')
++        self.assertEqual(run.returncode,0,run.stdout)
++        self.assertAlmostEqual(sum(result['phase_seconds'].values()),result['elapsed_seconds'],delta=.01)
++        data=json.loads((self.f.root/'session/session.json').read_text())
++        self.assertEqual(data['python'],sys.executable)
++        self.assertEqual(data['events'][0]['commands'][0]['argv'][0],sys.executable)
++        self.call('phase','--phase','preview')
++        self.assertEqual(self.call('finish','--note','reviewed')[0].returncode,0)
++
++    def test_missing_attempt_report_is_disclosed_not_counted_as_success(self):
++        self.call('start');self.call('validate')
++        data=json.loads((self.f.root/'session/session.json').read_text())
++        Path(data['events'][0]['report']).unlink()
++        _,result=self.call('status')
++        self.assertEqual(result['rounds']['validation_calls'],1)
++        self.assertEqual(result['rounds']['validation_attempts'],0)
++        self.assertEqual(result['rounds']['untracked_calls'],1)
+--- 2.11/tests/test_preparation.py
++++ 2.12/tests/test_preparation.py
+@@ -5,7 +5,7 @@
+ import unittest
+ 
+ import test_fidelity as fixtures
+-from compile_contract import compile_spec
++from compile_contract import compile_spec, check_raster_scope
+ from fidelity_contract import sha256
+ from prepare_page import prepare
+ 
+@@ -101,6 +101,12 @@
+         self.assertEqual(r['effect_candidates'][0]['effect_fields'], ['shadow'])
+         self.assertNotIn('coverage', r)
+ 
++    def test_review_groups_do_not_remove_instances_or_effects(self):
++        r = self.run_prepare()
++        grouped = [key for group in r['review_groups'] for key in group['node_ids']]
++        self.assertEqual(sorted(grouped), sorted(n['node_id'] for n in r['nodes']))
++        self.assertEqual(len(grouped), len(set(grouped)))
++
+ 
+ class ContractCompilerTests(unittest.TestCase):
+     def setUp(self):
+@@ -140,3 +146,41 @@
+         (self.fixture.root/'source.json').write_text(json.dumps(e))
+         with self.assertRaisesRegex(ValueError,'missing glyphs'):
+             compile_spec(self.spec,self.fixture.root)
++
++    def test_groups_expand_to_independent_unchanged_checks(self):
++        expected = copy.deepcopy(self.spec['features']['icon'])
++        self.spec['feature_groups'] = {'group':self.spec['features'].pop('icon')}
++        self.spec['relations']['row']['features'][0] = 'group__icon'
++        original = self.spec['node_decisions'].pop('icon')
++        self.spec['decision_groups'] = {'icons':{'node_ids':['icon'],'decision':original}}
++        result = compile_spec(self.spec, self.fixture.root)
++        self.assertEqual(result['features']['group__icon'], expected)
++        self.assertEqual(result['node_decisions']['icon'], original)
++        self.assertNotIn('feature_groups', result)
++        self.assertEqual(result['coverage']['icon']['checks'], ['features.group__icon'])
++
++    def test_group_cannot_overwrite_explicit_decision(self):
++        self.spec['decision_groups'] = {'icons':{'node_ids':['icon'],
++            'decision':self.spec['node_decisions']['icon']}}
++        with self.assertRaisesRegex(ValueError,'duplicate binding'):
++            compile_spec(self.spec,self.fixture.root)
++
++    def test_empty_reference_detector_rejected_before_any_candidate(self):
++        self.spec['features']['icon']['detector']['rgb'] = [0,255,0]
++        with self.assertRaisesRegex(ValueError,'no ink'):
++            compile_spec(self.spec,self.fixture.root)
++        self.assertFalse((self.fixture.root/'candidate.png').exists())
++
++    def test_rasterized_text_and_text_parent_are_not_component_implementation(self):
++        nodes = {'text':{'text':'Reply','parent_id':'card'}, 'card':{}}
++        for key in ('text','card'):
++            with self.subTest(key=key), self.assertRaisesRegex(ValueError,'contains text/UI'):
++                check_raster_scope({'node_decisions':{key:{'mode':'render_fallback'}}},nodes)
++        check_raster_scope({'node_decisions':{'photo':{'mode':'render_fallback'}}},
++                           {'photo':{'node_type':'bitmap'}})
++
++    def test_text_detector_uses_only_single_opaque_source_color(self):
++        from init_visual_contract import source_text_detector
++        self.assertEqual(source_text_detector({'text_spec':{'base_style':{'color':'#102030'}}})['rgb'],[16,32,48])
++        self.assertIsNone(source_text_detector({'text_spec':{'text_runs':[{'color':'rgba(1,2,3,0.5)'}]}}))
++        self.assertIsNone(source_text_detector({'text_spec':{'text_runs':[{'color':'#000000'},{'color':'#ff0000'}]}}))

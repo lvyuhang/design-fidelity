@@ -1,0 +1,38 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<title>视觉还原门禁报告</title><style>
+body{font:14px/1.5 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;margin:32px;color:#20242a;background:#f5f6f8}
+main{max-width:1180px;margin:auto}section{background:white;border:1px solid #e1e4e8;border-radius:14px;padding:22px;margin:20px 0;overflow:auto}
+table{border-collapse:collapse;width:100%;min-width:800px}th,td{border-bottom:1px solid #eceef1;padding:8px;text-align:left}img{width:375px;max-width:100%;border:1px solid #ddd}
+.shots{display:flex;gap:16px;flex-wrap:wrap}figure{margin:0}figcaption{color:#686b77;margin-top:6px}
+.ref{color:#15a46b}.actual{color:#e13d8c}code{background:#eef0f3;padding:2px 5px;border-radius:4px}
+</style></head><body><main><h1>视觉还原自动门禁</h1>
+<p>整体结果：PASS_WITH_EXCLUSIONS。绿色框为蓝湖原稿可见像素，粉色框为候选渲染可见像素。</p>
+<details><summary>验收范围、环境与排除项</summary><pre>{
+  &quot;skill_version&quot;: &quot;2.0.0&quot;,
+  &quot;coverage&quot;: {
+    &quot;nodes&quot;: 104,
+    &quot;covered&quot;: 95,
+    &quot;exceptions&quot;: [
+      &quot;node 8B508E24-F045-4878-9F96-7A0E8ED4FBDD: 主视频蒙版属于动态媒体；源节点没有可导出的原始像素。&quot;,
+      &quot;node 64B75AC7-18DD-4508-B248-973A11CC975B: 主视频位图属于动态媒体；MCP 未提供 asset_id，使用确定性占位并排除像素验收。&quot;,
+      &quot;node 9E11CDEB-EA46-4549-9E96-14B9CF3C2126: 顶部透明渐变已由原始切图 SHA-256 固定；透明渐变不适合独立可见特征检测。&quot;,
+      &quot;node 624D186D-5326-4D15-9172-1D5120EA6818: 通话头像位图没有可导出的原始资源，使用项目内确定性头像占位。&quot;,
+      &quot;node A92C98EC-11D4-4397-AB42-8707D6930570: 底部透明渐变已由原始切图 SHA-256 固定；透明渐变不适合独立可见特征检测。&quot;,
+      &quot;node 044F36D9-493C-46E1-9A08-87E29CDF588B: 小窗视频蒙版属于动态媒体。&quot;,
+      &quot;node 1C724BD2-E3E6-42C1-B22E-2C912CE7755A: 小窗视频位图没有可导出的原始资源，使用确定性占位。&quot;,
+      &quot;node 8CA36077-D8D3-44EC-BD66-E2B412C48047: 源字体为 SFPro-Semibold；项目未嵌入可再分发的确定性 SF Pro 文件，状态栏时间仅作系统字体近似。&quot;,
+      &quot;node 84C7AE56-0805-456A-A302-4DDE98402B97: 全屏 40% 遮罩覆盖动态视频，无法用独立颜色特征隔离；其结果由前景区域检查体现。&quot;
+    ]
+  },
+  &quot;environment&quot;: {
+    &quot;renderer&quot;: &quot;Flutter widget test / Skia&quot;,
+    &quot;renderer_version&quot;: &quot;Flutter 3.47.7 · engine deb287481e3ce9468f3434937ced4240a70539ca&quot;,
+    &quot;platform&quot;: &quot;macOS arm64&quot;,
+    &quot;locale&quot;: &quot;zh_CN&quot;,
+    &quot;state&quot;: &quot;caller relationship dialog open; deterministic video placeholder&quot;,
+    &quot;text_scale&quot;: 1
+  },
+  &quot;exclusions&quot;: [],
+  &quot;excluded_fraction&quot;: 0.0
+}</pre></details>
+<section><h2>r3 · <strong style="color:#137A52">PASS</strong></h2><div class="shots"><figure><img src="reference.png" alt="reference"><figcaption>蓝湖原稿</figcaption></figure><figure><img src="1-r3-candidate.png" alt="candidate"><figcaption>候选实现</figcaption></figure><figure><img src="1-r3-alignment-overlay.png" alt="alignment overlay"><figcaption>可见像素对齐</figcaption></figure></div><p class="legend"><span class="ref">原稿可见边界</span> · <span class="actual">实现可见边界</span></p><h3>区域像素门禁</h3><table><tr><th>区域</th><th>MAE</th><th>P95</th><th>结果</th><th>原因</th></tr><tr><td>关系详情卡片</td><td>7.1975</td><td>19.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>底部统计卡</td><td>2.0605</td><td>12.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr></table><h3>元素几何门禁</h3><table><tr><th>元素</th><th>ΔX</th><th>ΔY</th><th>Δ宽</th><th>Δ高</th><th>结果</th><th>原因</th></tr><tr><td>关系详情卡片整体边界</td><td>-0.38</td><td>0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>顶部通话控件</td><td>3.53</td><td>5.25</td><td>0.50</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>底部安全提示与操作控件</td><td>0.85</td><td>-2.69</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>关系详情标题图标</td><td>-0.02</td><td>-0.51</td><td>-1.00</td><td>-1.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>关系详情标题文字</td><td>0.47</td><td>-0.11</td><td>0.50</td><td>1.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>活跃时段折线</td><td>2.24</td><td>-0.58</td><td>0.00</td><td>-0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>底部 Home Indicator</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr></table><h3>组内关系门禁</h3><table><tr><th>关系</th><th>原稿差值</th><th>实现差值</th><th>偏差</th><th>结果</th></tr><tr><td>标题图标与标题文字垂直中心线</td><td>0.6545</td><td>0.2534</td><td>0.401</td><td><strong style="color:#137A52">PASS</strong></td></tr></table><h3>颜色采样门禁</h3><table><tr><th>采样</th><th>原稿 RGB</th><th>实现 RGB</th><th>最大通道偏差</th><th>结果</th></tr><tr><td>统计卡不透明底色</td><td>[41.41, 41.52, 43.85]</td><td>[42.78, 42.97, 45.35]</td><td>1.50</td><td><strong style="color:#137A52">PASS</strong></td></tr></table></section></main></body></html>

@@ -1,0 +1,646 @@
+{
+  "schema_version": 2,
+  "workflow_version": 1,
+  "require_style_evidence": true,
+  "status": "draft",
+  "name": "platform-intro-skill29-focus",
+  "source_snapshot": "da6dd92db9b6df7fc3fc4d2bc873e0ee",
+  "source_version": "d4d1c235-1fb2-4395-9d0e-a5055d074f4e",
+  "canvas": [
+    375,
+    812
+  ],
+  "render_scale": 4.0,
+  "reference": "reference-4x.png",
+  "source_documents": [
+    "source/focus-effects.json"
+  ],
+  "regions": {
+    "whole": {
+      "label": "完整页面",
+      "rect": [
+        0,
+        0,
+        375,
+        812
+      ],
+      "max_mae": 9.0,
+      "max_p95": 48.0
+    }
+  },
+  "features": {
+    "small__11857F91-EAAB-4C0C-A518-9D0D2F73628B": {
+      "label": "形状",
+      "node_ids": [
+        "11857F91-EAAB-4C0C-A518-9D0D2F73628B"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__D44A759A-F00C-4F91-B906-8D3AEA24B017": {
+      "label": "形状",
+      "node_ids": [
+        "D44A759A-F00C-4F91-B906-8D3AEA24B017"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    },
+    "small__67A66F14-1BFC-4ED2-B7CC-CA53F587487F": {
+      "label": "位图",
+      "node_ids": [
+        "67A66F14-1BFC-4ED2-B7CC-CA53F587487F"
+      ],
+      "profile": "small_visual",
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "review_required",
+        "min_pixels": 1
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      }
+    }
+  },
+  "pinned_files": {
+    "reference-4x.png": "6c7b4d3290d1140e569eb134c514fd082590892a9cd2afb4868d64a8b9693c5f",
+    "source/focus-effects.json": "b260ee819293d07dde85bda8ee6c2ea4e320306e7ad0f3ea375820d2bef07af0"
+  },
+  "assets": [],
+  "fonts": [],
+  "implementation_inputs": [],
+  "environment": {
+    "renderer": "",
+    "renderer_version": "",
+    "platform": "",
+    "locale": "",
+    "state": "",
+    "text_scale": 1
+  },
+  "exclude_rects": [],
+  "max_excluded_fraction": 0.2,
+  "not_applicable": {},
+  "relations": {},
+  "color_samples": {
+    "effect__A3FD2014-8642-473A-B0F5-4C17D694B015__fills:0:gradient__start": {
+      "label": "effect__A3FD2014-8642-473A-B0F5-4C17D694B015__fills:0:gradient__start",
+      "node_ids": [
+        "A3FD2014-8642-473A-B0F5-4C17D694B015"
+      ],
+      "rect": [
+        321,
+        213,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "A3FD2014-8642-473A-B0F5-4C17D694B015",
+        "key": "fills:0:gradient",
+        "role": "start"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__A3FD2014-8642-473A-B0F5-4C17D694B015__fills:0:gradient__middle": {
+      "label": "effect__A3FD2014-8642-473A-B0F5-4C17D694B015__fills:0:gradient__middle",
+      "node_ids": [
+        "A3FD2014-8642-473A-B0F5-4C17D694B015"
+      ],
+      "rect": [
+        321,
+        233,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "A3FD2014-8642-473A-B0F5-4C17D694B015",
+        "key": "fills:0:gradient",
+        "role": "middle"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__A3FD2014-8642-473A-B0F5-4C17D694B015__fills:0:gradient__end": {
+      "label": "effect__A3FD2014-8642-473A-B0F5-4C17D694B015__fills:0:gradient__end",
+      "node_ids": [
+        "A3FD2014-8642-473A-B0F5-4C17D694B015"
+      ],
+      "rect": [
+        321,
+        254,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "A3FD2014-8642-473A-B0F5-4C17D694B015",
+        "key": "fills:0:gradient",
+        "role": "end"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__7E01FF1B-EB56-4729-8906-6426783856F5__shadow:0__edge": {
+      "label": "effect__7E01FF1B-EB56-4729-8906-6426783856F5__shadow:0__edge",
+      "node_ids": [
+        "7E01FF1B-EB56-4729-8906-6426783856F5"
+      ],
+      "rect": [
+        187,
+        690,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+        "key": "shadow:0",
+        "role": "edge"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__7E01FF1B-EB56-4729-8906-6426783856F5__shadow:0__peak": {
+      "label": "effect__7E01FF1B-EB56-4729-8906-6426783856F5__shadow:0__peak",
+      "node_ids": [
+        "7E01FF1B-EB56-4729-8906-6426783856F5"
+      ],
+      "rect": [
+        187,
+        695,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+        "key": "shadow:0",
+        "role": "peak"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__7E01FF1B-EB56-4729-8906-6426783856F5__shadow:0__tail": {
+      "label": "effect__7E01FF1B-EB56-4729-8906-6426783856F5__shadow:0__tail",
+      "node_ids": [
+        "7E01FF1B-EB56-4729-8906-6426783856F5"
+      ],
+      "rect": [
+        187,
+        707,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+        "key": "shadow:0",
+        "role": "tail"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__7E01FF1B-EB56-4729-8906-6426783856F5__fills:0:gradient__start": {
+      "label": "effect__7E01FF1B-EB56-4729-8906-6426783856F5__fills:0:gradient__start",
+      "node_ids": [
+        "7E01FF1B-EB56-4729-8906-6426783856F5"
+      ],
+      "rect": [
+        186,
+        450,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+        "key": "fills:0:gradient",
+        "role": "start"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__7E01FF1B-EB56-4729-8906-6426783856F5__fills:0:gradient__middle": {
+      "label": "effect__7E01FF1B-EB56-4729-8906-6426783856F5__fills:0:gradient__middle",
+      "node_ids": [
+        "7E01FF1B-EB56-4729-8906-6426783856F5"
+      ],
+      "rect": [
+        184,
+        557,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+        "key": "fills:0:gradient",
+        "role": "middle"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__7E01FF1B-EB56-4729-8906-6426783856F5__fills:0:gradient__end": {
+      "label": "effect__7E01FF1B-EB56-4729-8906-6426783856F5__fills:0:gradient__end",
+      "node_ids": [
+        "7E01FF1B-EB56-4729-8906-6426783856F5"
+      ],
+      "rect": [
+        181,
+        663,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+        "key": "fills:0:gradient",
+        "role": "end"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__D918BBDD-E8F9-4952-B1C0-818569C32B90__fills:0:gradient__start": {
+      "label": "effect__D918BBDD-E8F9-4952-B1C0-818569C32B90__fills:0:gradient__start",
+      "node_ids": [
+        "D918BBDD-E8F9-4952-B1C0-818569C32B90"
+      ],
+      "rect": [
+        311,
+        429,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "D918BBDD-E8F9-4952-B1C0-818569C32B90",
+        "key": "fills:0:gradient",
+        "role": "start"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__D918BBDD-E8F9-4952-B1C0-818569C32B90__fills:0:gradient__middle": {
+      "label": "effect__D918BBDD-E8F9-4952-B1C0-818569C32B90__fills:0:gradient__middle",
+      "node_ids": [
+        "D918BBDD-E8F9-4952-B1C0-818569C32B90"
+      ],
+      "rect": [
+        311,
+        449,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "D918BBDD-E8F9-4952-B1C0-818569C32B90",
+        "key": "fills:0:gradient",
+        "role": "middle"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__D918BBDD-E8F9-4952-B1C0-818569C32B90__fills:0:gradient__end": {
+      "label": "effect__D918BBDD-E8F9-4952-B1C0-818569C32B90__fills:0:gradient__end",
+      "node_ids": [
+        "D918BBDD-E8F9-4952-B1C0-818569C32B90"
+      ],
+      "rect": [
+        311,
+        469,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "D918BBDD-E8F9-4952-B1C0-818569C32B90",
+        "key": "fills:0:gradient",
+        "role": "end"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B__shadow:0__edge": {
+      "label": "effect__0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B__shadow:0__edge",
+      "node_ids": [
+        "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B"
+      ],
+      "rect": [
+        188,
+        681,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+        "key": "shadow:0",
+        "role": "edge"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B__shadow:0__peak": {
+      "label": "effect__0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B__shadow:0__peak",
+      "node_ids": [
+        "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B"
+      ],
+      "rect": [
+        188,
+        686,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+        "key": "shadow:0",
+        "role": "peak"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B__shadow:0__tail": {
+      "label": "effect__0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B__shadow:0__tail",
+      "node_ids": [
+        "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B"
+      ],
+      "rect": [
+        188,
+        698,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+        "key": "shadow:0",
+        "role": "tail"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B__fills:0:gradient__start": {
+      "label": "effect__0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B__fills:0:gradient__start",
+      "node_ids": [
+        "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B"
+      ],
+      "rect": [
+        188,
+        492,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+        "key": "fills:0:gradient",
+        "role": "start"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B__fills:0:gradient__middle": {
+      "label": "effect__0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B__fills:0:gradient__middle",
+      "node_ids": [
+        "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B"
+      ],
+      "rect": [
+        188,
+        576,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+        "key": "fills:0:gradient",
+        "role": "middle"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B__fills:0:gradient__end": {
+      "label": "effect__0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B__fills:0:gradient__end",
+      "node_ids": [
+        "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B"
+      ],
+      "rect": [
+        188,
+        660,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+        "key": "fills:0:gradient",
+        "role": "end"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__B3B02A92-587E-4458-994E-449FD80C020F__shadow:0__edge": {
+      "label": "effect__B3B02A92-587E-4458-994E-449FD80C020F__shadow:0__edge",
+      "node_ids": [
+        "B3B02A92-587E-4458-994E-449FD80C020F"
+      ],
+      "rect": [
+        187,
+        764,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "B3B02A92-587E-4458-994E-449FD80C020F",
+        "key": "shadow:0",
+        "role": "edge"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__B3B02A92-587E-4458-994E-449FD80C020F__shadow:0__peak": {
+      "label": "effect__B3B02A92-587E-4458-994E-449FD80C020F__shadow:0__peak",
+      "node_ids": [
+        "B3B02A92-587E-4458-994E-449FD80C020F"
+      ],
+      "rect": [
+        187,
+        772,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "B3B02A92-587E-4458-994E-449FD80C020F",
+        "key": "shadow:0",
+        "role": "peak"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__B3B02A92-587E-4458-994E-449FD80C020F__shadow:0__tail": {
+      "label": "effect__B3B02A92-587E-4458-994E-449FD80C020F__shadow:0__tail",
+      "node_ids": [
+        "B3B02A92-587E-4458-994E-449FD80C020F"
+      ],
+      "rect": [
+        187,
+        786,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "B3B02A92-587E-4458-994E-449FD80C020F",
+        "key": "shadow:0",
+        "role": "tail"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__B3B02A92-587E-4458-994E-449FD80C020F__fills:0:gradient__start": {
+      "label": "effect__B3B02A92-587E-4458-994E-449FD80C020F__fills:0:gradient__start",
+      "node_ids": [
+        "B3B02A92-587E-4458-994E-449FD80C020F"
+      ],
+      "rect": [
+        324,
+        739,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "B3B02A92-587E-4458-994E-449FD80C020F",
+        "key": "fills:0:gradient",
+        "role": "start"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__B3B02A92-587E-4458-994E-449FD80C020F__fills:0:gradient__middle": {
+      "label": "effect__B3B02A92-587E-4458-994E-449FD80C020F__fills:0:gradient__middle",
+      "node_ids": [
+        "B3B02A92-587E-4458-994E-449FD80C020F"
+      ],
+      "rect": [
+        187,
+        739,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "B3B02A92-587E-4458-994E-449FD80C020F",
+        "key": "fills:0:gradient",
+        "role": "middle"
+      },
+      "max_channel_delta": 28.0
+    },
+    "effect__B3B02A92-587E-4458-994E-449FD80C020F__fills:0:gradient__end": {
+      "label": "effect__B3B02A92-587E-4458-994E-449FD80C020F__fills:0:gradient__end",
+      "node_ids": [
+        "B3B02A92-587E-4458-994E-449FD80C020F"
+      ],
+      "rect": [
+        50,
+        739,
+        1,
+        1
+      ],
+      "effect": {
+        "node_id": "B3B02A92-587E-4458-994E-449FD80C020F",
+        "key": "fills:0:gradient",
+        "role": "end"
+      },
+      "max_channel_delta": 28.0
+    }
+  },
+  "source_scope": {
+    "kind": "page",
+    "expected_node_count": 8
+  },
+  "node_decisions": {
+    "11857F91-EAAB-4C0C-A518-9D0D2F73628B": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "A3FD2014-8642-473A-B0F5-4C17D694B015": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "7E01FF1B-EB56-4729-8906-6426783856F5": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "D44A759A-F00C-4F91-B906-8D3AEA24B017": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "67A66F14-1BFC-4ED2-B7CC-CA53F587487F": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "D918BBDD-E8F9-4952-B1C0-818569C32B90": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    },
+    "B3B02A92-587E-4458-994E-449FD80C020F": {
+      "mode": "pending",
+      "implementation": "",
+      "symbol": ""
+    }
+  },
+  "coverage": {
+    "11857F91-EAAB-4C0C-A518-9D0D2F73628B": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "A3FD2014-8642-473A-B0F5-4C17D694B015": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "7E01FF1B-EB56-4729-8906-6426783856F5": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "D44A759A-F00C-4F91-B906-8D3AEA24B017": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "67A66F14-1BFC-4ED2-B7CC-CA53F587487F": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "D918BBDD-E8F9-4952-B1C0-818569C32B90": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "B3B02A92-587E-4458-994E-449FD80C020F": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    }
+  }
+}

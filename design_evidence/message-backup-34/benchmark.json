@@ -1,0 +1,73 @@
+{
+  "case": "message-backup-34",
+  "design_name": "1备份 34",
+  "skill_version": "2.5.0",
+  "started_at": "2026-10-13T11:24:21+08:00",
+  "finished_at": "2026-10-13T11:56:13+08:00",
+  "elapsed_seconds": 1912,
+  "lanhu_tool_calls": 38,
+  "lanhu_resource_reads": 17,
+  "render_outputs": 10,
+  "formal_gate_rounds": 7,
+  "final_revision": "r9",
+  "acceptance": "PASS_WITH_EXCLUSIONS",
+  "coverage": {
+    "source_nodes": 141,
+    "covered": 141,
+    "features": 58,
+    "failed_features": 0
+  },
+  "excluded_fraction": 0.030361247947454872,
+  "metrics": {
+    "whole": {
+      "mae": 3.9928,
+      "p95": 16.0
+    },
+    "header": {
+      "mae": 8.4214,
+      "p95": 28.0
+    },
+    "filters": {
+      "mae": 1.392,
+      "p95": 8.0
+    },
+    "list": {
+      "mae": 3.1388,
+      "p95": 14.0
+    },
+    "bottom": {
+      "mae": 3.0603,
+      "p95": 8.0
+    }
+  },
+  "token_recorded_at": "2026-10-13T03:58:02.313Z",
+  "tokens": {
+    "input": 20781223,
+    "cached_input": 20423296,
+    "uncached_input": 357927,
+    "output": 68205,
+    "reasoning_output": 19247,
+    "total": 20849428,
+    "scope_note": "Sum usage records for exact turn_id, deduplicated by response_id; includes final response, excludes this audit."
+  },
+  "superseded_token_measurement": {
+    "tokens": {
+      "input": 2794156,
+      "cached_input": 2761088,
+      "uncached_input": 33068,
+      "output": 16507,
+      "reasoning_output": 6216,
+      "total": 2810663,
+      "scope_note": "记录晚于最终视觉验收，但不包含最后一次 Web 构建和最终答复。"
+    },
+    "recorded_at": "2026-10-13T11:54:05+08:00",
+    "valid": false,
+    "reason": "Previous benchmark used another thread (01a132f8-ae5c-76b1-b085-abcd203d11f6), unrelated to this page."
+  },
+  "audit": {
+    "file": "timing-audit.json",
+    "end_to_end_seconds": 2046.616,
+    "original_elapsed_scope": "Timer start to final build, excludes request startup and final reporting.",
+    "acceptance_caveat": "Prior automated PASS does not cover identified official-notification asset mismatch or baseline methodology violations."
+  }
+}

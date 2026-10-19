@@ -1,0 +1,164 @@
+{
+  "evaluated_at_utc": "2026-10-12T05:38:21.138400+00:00",
+  "source_version": "84ebb977-1081-434c-9147-12e6147c820b",
+  "code_sha256": "bf0107efd896a5989bf259d83d89dc036064f44a972fba45e41a8807616df103",
+  "visual_revision_count": 0,
+  "strict_blind_test": false,
+  "standard_shadow_blur_enabled": true,
+  "method": "Exact native 4x RGB grids, no alignment optimization or resampling. MAE is 0..255, lower is better, not a fidelity percentage. Regions selected after freeze; all regions reported.",
+  "source_reference_sha256": "b82d304197f7d3dc0615b2e832b53c7d809266958eaefc90354f25d7a03be695",
+  "regions": {
+    "card": {
+      "label": "整张卡片",
+      "rect": [
+        16,
+        4,
+        343,
+        116
+      ],
+      "direct": {
+        "mae": 1.5532,
+        "p95": 2.0
+      },
+      "calibrated": {
+        "mae": 1.5268,
+        "p95": 2.0
+      }
+    },
+    "title": {
+      "label": "标题文字",
+      "rect": [
+        30,
+        15,
+        86,
+        22
+      ],
+      "direct": {
+        "mae": 6.547,
+        "p95": 59.0
+      },
+      "calibrated": {
+        "mae": 6.547,
+        "p95": 59.0
+      }
+    },
+    "fields": {
+      "label": "字段与结果",
+      "rect": [
+        30,
+        48,
+        176,
+        62
+      ],
+      "direct": {
+        "mae": 3.4624,
+        "p95": 25.0
+      },
+      "calibrated": {
+        "mae": 3.4624,
+        "p95": 25.0
+      }
+    },
+    "divider": {
+      "label": "分隔线",
+      "rect": [
+        30,
+        40,
+        315,
+        4
+      ],
+      "direct": {
+        "mae": 1.0842,
+        "p95": 13.0
+      },
+      "calibrated": {
+        "mae": 0.2671,
+        "p95": 1.0
+      }
+    },
+    "button": {
+      "label": "申诉按钮",
+      "rect": [
+        265,
+        66,
+        78,
+        28
+      ],
+      "direct": {
+        "mae": 1.7137,
+        "p95": 2.0
+      },
+      "calibrated": {
+        "mae": 1.7121,
+        "p95": 2.0
+      }
+    },
+    "shadow": {
+      "label": "按钮下方阴影",
+      "rect": [
+        251,
+        96,
+        102,
+        23
+      ],
+      "direct": {
+        "mae": 0.5467,
+        "p95": 2.0
+      },
+      "calibrated": {
+        "mae": 0.5458,
+        "p95": 2.0
+      }
+    },
+    "shield": {
+      "label": "原始盾牌资源",
+      "rect": [
+        278,
+        12,
+        68,
+        50
+      ],
+      "direct": {
+        "mae": 0.3775,
+        "p95": 1.0
+      },
+      "calibrated": {
+        "mae": 0.2946,
+        "p95": 1.0
+      }
+    },
+    "fill": {
+      "label": "背景填充",
+      "rect": [
+        118,
+        10,
+        144,
+        25
+      ],
+      "direct": {
+        "mae": 0.2258,
+        "p95": 1.0
+      },
+      "calibrated": {
+        "mae": 0.2258,
+        "p95": 1.0
+      }
+    }
+  },
+  "render_sha256": {
+    "direct": "df6609c2f17396dff6a16b13cfeca580d77533a13041218ad6418672762b67e2",
+    "calibrated": "087b183ba7b827f4ceefa7d0a9ea1f5395859f3b58cb26fe1952a55d92136e79"
+  },
+  "font_hashes_at_evaluation": {
+    "PingFangSC-Semibold.otf": "4d81b79bb551918e6dc08ea8ea414cbba77c257362e9f1b62897df95fee9894c",
+    "PingFangSC-Regular.otf": "422938858e03b32259eebaacbf26d79e05f87ec693ba9806edb20a00f077c948",
+    "PingFangSC-Medium.otf": "7fb1175b8586dcf76beb4a1d0ac53c74aed2fd8727e4226899c2bf873ee0e302"
+  },
+  "limitations": [
+    "Single component, one attempt, source-backed initial screenshot allowed.",
+    "Model retains prior context; not a strict blind test.",
+    "Same source PNG and font family used in both variants.",
+    "Test-renderer metrics; browser checked separately.",
+    "Title, fields and button regions contain background; metrics are diagnostic rather than perceptual acceptance scores."
+  ]
+}

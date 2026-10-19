@@ -1,0 +1,20 @@
+{
+  "skill_version": "2.0.0",
+  "unit_tests": 31,
+  "unit_result": "PASS",
+  "flutter_smoke": {
+    "type": "independent synthetic fixture",
+    "flutter_version": "3.47.7",
+    "r0": "FAIL: icon center +4px, relation error 4px",
+    "r1": "PASS: MAE 0, 0 failed checks",
+    "static_analysis": "dart analyze lib test: PASS"
+  },
+  "real_source_scaffolding": {
+    "platform_nodes": 82,
+    "relation_suggestions": 7,
+    "gender_crop": "REJECTED: crop vs full canvas size mismatch"
+  },
+  "real_page_fresh_mcp_to_code": "not performed",
+  "legacy_r2": "NOT_EVALUATED, 8 failed text checks for each candidate",
+  "package_sha256": "771960b3bb044f50a579a387fb5554cb3c5b7319615052a294722c1f7a7daab3"
+}

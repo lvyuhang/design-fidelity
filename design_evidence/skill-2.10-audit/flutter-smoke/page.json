@@ -1,0 +1,12 @@
+{
+  "name": "2.10 real Flutter fault injection",
+  "run_dir": "session",
+  "contract": "contract.json",
+  "app": ".",
+  "test": "test/render_test.dart",
+  "output_env": "FIDELITY_OUTPUT",
+  "analyze": [
+    "lib",
+    "test"
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "status": "PASS_WITH_EXCLUSIONS",
+  "scope": "validation of supplied implementation; not end-to-end development time",
+  "started_unix": 1791885954.260829,
+  "stages": [
+    {
+      "name": "preflight",
+      "seconds": 0.041,
+      "exit_code": 0
+    },
+    {
+      "name": "render",
+      "seconds": 2.348,
+      "exit_code": 0
+    },
+    {
+      "name": "gate",
+      "seconds": 1.0,
+      "exit_code": 0
+    },
+    {
+      "name": "analyze",
+      "seconds": 1.549,
+      "exit_code": 0
+    }
+  ],
+  "gate_status": "PASS_WITH_EXCLUSIONS",
+  "iteration": {
+    "task_id": "2a526f10-e748-4874-a710-edc89b7e0a01",
+    "round_number": 2,
+    "attempt_number": 1,
+    "attempt_id": "5230aa51-3546-4b90-b59b-3ffa8be1eec6",
+    "target_rounds": [
+      2,
+      3
+    ],
+    "over_target": false,
+    "log": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/platform-intro-skill29/task-run.json",
+    "html": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/platform-intro-skill29/task-run.html"
+  },
+  "preflight": {
+    "status": "READY_FOR_RENDER",
+    "coverage": {
+      "effect_obligations": 12,
+      "implementation_decisions": 8,
+      "unaccounted_visible_nodes": 0,
+      "nodes": 8,
+      "covered": 3,
+      "exceptions": [
+        "Partial source scope: 本轮针对上次复核暴露的引号、01/02、星光、收益区渐变/阴影/间距和 CTA 阴影做正式回归；完整页面像素差同时保留为阻断检查。",
+        "relations: 本轮三个已实现目标为纵向分离的独立容器；它们的源边界与相互间距由各自节点 region 和整页检查覆盖。",
+        "node 11857F91-EAAB-4C0C-A518-9D0D2F73628B: 源节点只有填色和边界，没有路径或导出资源；使用原矩形画框占位。",
+        "node A3FD2014-8642-473A-B0F5-4C17D694B015: Source-KeynoteartHans 装饰字体未提供，不能用普通字体仿造 01；使用原矩形画框占位。",
+        "node D44A759A-F00C-4F91-B906-8D3AEA24B017: 源节点只有填色和边界，没有路径或导出资源；使用原矩形画框占位。",
+        "node 67A66F14-1BFC-4ED2-B7CC-CA53F587487F: 星光位图没有 asset_id 且 MCP 无 render fallback；使用并集矩形画框占位。",
+        "node D918BBDD-E8F9-4952-B1C0-818569C32B90: Source-KeynoteartHans 装饰字体未提供，不能用普通字体仿造 02；使用并集矩形画框占位。"
+      ]
+    },
+    "fonts": {
+      "text_nodes_checked": 0
+    },
+    "asset_count": 0,
+    "style_gaps": [],
+    "scope": "input integrity and font coverage; source-style completeness is separate; not visual acceptance"
+  },
+  "failures": [],
+  "metrics": {
+    "whole": {
+      "compared_pixels": 4726464,
+      "total_pixels": 4872000,
+      "mae": 2.9753,
+      "p95_max_channel": 11.0
+    },
+    "benefit_surface": {
+      "compared_pixels": 1373072,
+      "total_pixels": 1459808,
+      "mae": 3.6385,
+      "p95_max_channel": 20.0
+    },
+    "benefit_border": {
+      "compared_pixels": 1373072,
+      "total_pixels": 1459808,
+      "mae": 3.6385,
+      "p95_max_channel": 20.0
+    },
+    "benefit_mask": {
+      "compared_pixels": 1373072,
+      "total_pixels": 1459808,
+      "mae": 3.6385,
+      "p95_max_channel": 20.0
+    },
+    "white_card": {
+      "compared_pixels": 1069600,
+      "total_pixels": 1092000,
+      "mae": 3.9322,
+      "p95_max_channel": 17.0
+    },
+    "cta": {
+      "compared_pixels": 274400,
+      "total_pixels": 274400,
+      "mae": 1.9858,
+      "p95_max_channel": 1.0
+    },
+    "cta_border": {
+      "compared_pixels": 274400,
+      "total_pixels": 274400,
+      "mae": 1.9858,
+      "p95_max_channel": 1.0
+    }
+  },
+  "seconds": 4.942
+}

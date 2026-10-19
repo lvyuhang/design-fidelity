@@ -1,0 +1,66 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>任务运行日志</title><style>body{font:15px/1.6 system-ui;max-width:1200px;margin:32px auto;padding:0 24px;background:#f5f6f8;color:#20252c}section,.summary{background:white;border-radius:12px;padding:20px;margin:16px 0}table{width:100%;border-collapse:collapse}td,th{text-align:left;vertical-align:top;padding:10px;border-bottom:1px solid #ddd}pre{white-space:pre-wrap;max-width:340px}h1{font-size:26px}.counts{font-size:22px;font-weight:650}a{color:#1563c5}</style><h1>平台介绍页视觉契约 · 任务运行日志</h1><div class="summary"><p class="counts">3 轮 / 目标 2–3 轮 · 3 次验证 · 0 次重复验证或重试</p><p>目标：初版加修正共 2–3 轮；一次通过即可交付，无需凑轮数。</p><p>验证累计执行：7.872 秒。包含失败尝试；不代表整页开发耗时。</p><p>初版计第 1 轮（R0）；输入改变后计新一轮，相同输入再次执行单列为尝试。工具调用总数未采集，不能用轮数代替。</p><p>仅统计接入本日志后的运行，不补造之前未记录的轮次。自动门禁通过仍需视觉复查。</p></div><section><h2>第 1 轮 · R0</h2><p>基线变更：否</p><table><tr><th>尝试</th><th>运行状态</th><th>门禁结果</th><th>执行秒数</th><th>本轮处理</th><th>发现/剩余问题</th><th>证据</th></tr><tr><td>1</td><td>DIAGNOSTIC</td><td>DIAGNOSTIC_DIFFERENCES</td><td>2.617</td><td>初版：仅基于冻结蓝湖节点和11张原始切图实现；开始检查整体区域、关键图标、文字和组内对齐。</td><td><pre>regions.whole: [&#x27;mae=13.3147 &gt; 5.0000&#x27;, &#x27;p95=129.00 &gt; 26.00&#x27;]
+regions.capabilities: [&#x27;mae=15.0241 &gt; 7.0000&#x27;, &#x27;p95=150.00 &gt; 28.00&#x27;]
+regions.benefits: [&#x27;mae=24.4171 &gt; 8.0000&#x27;, &#x27;p95=199.00 &gt; 55.00&#x27;]
+regions.cta: [&#x27;mae=6.3211 &gt; 3.0000&#x27;, &#x27;p95=58.00 &gt; 8.00&#x27;]
+features.capability_badge: [&#x27;center_x_delta=2.24px &gt; 1.00px&#x27;, &#x27;max_edge_delta=2.75px &gt; 2.00px&#x27;]
+features.benefit_badge: [&#x27;center_x_delta=8.20px &gt; 1.00px&#x27;, &#x27;width_delta=-8.25px &gt; 1.50px&#x27;, &#x27;max_edge_delta=8.25px &gt; 2.00px&#x27;]
+features.benefit_heading: [&#x27;center_x_delta=-2.53px &gt; 1.00px&#x27;, &#x27;width_delta=2.75px &gt; 1.50px&#x27;, &#x27;max_edge_delta=2.50px &gt; 2.00px&#x27;]
+features.capability_1_icon: [&#x27;center_y_delta=3.00px &gt; 1.00px&#x27;, &#x27;max_edge_delta=3.00px &gt; 1.50px&#x27;]
+features.capability_1_copy: [&#x27;center_y_delta=4.27px &gt; 1.00px&#x27;, &#x27;max_edge_delta=4.00px &gt; 2.00px&#x27;]
+features.capability_2_icon: [&#x27;center_x_delta=6.08px &gt; 1.00px&#x27;, &#x27;center_y_delta=2.46px &gt; 1.00px&#x27;, &#x27;width_delta=14.00px &gt; 1.25px&#x27;, &#x27;height_delta=17.00px &gt; 1.25px&#x27;, &#x27;max_edge_delta=8.50px &gt; 1.50px&#x27;]
+features.capability_2_copy: [&#x27;center_x_delta=2.93px &gt; 1.00px&#x27;, &#x27;center_y_delta=-1.48px &gt; 1.00px&#x27;, &#x27;width_delta=5.00px &gt; 1.50px&#x27;, &#x27;height_delta=4.00px &gt; 1.50px&#x27;, &#x27;max_edge_delta=2.50px &gt; 2.00px&#x27;, &#x27;ink_ratio=1.360; |ratio-1| &gt; 0.200&#x27;]
+features.capability_3_copy: [&#x27;center_y_delta=-4.78px &gt; 1.00px&#x27;, &#x27;max_edge_delta=5.00px &gt; 2.00px&#x27;]
+features.capability_4_icon: [&#x27;center_x_delta=6.78px &gt; 1.00px&#x27;, &#x27;width_delta=14.00px &gt; 1.25px&#x27;, &#x27;height_delta=21.00px &gt; 1.25px&#x27;, &#x27;max_edge_delta=10.50px &gt; 1.50px&#x27;]
+features.capability_4_copy: [&#x27;center_y_delta=-4.67px &gt; 1.00px&#x27;, &#x27;width_delta=5.00px &gt; 1.50px&#x27;, &#x27;height_delta=3.50px &gt; 1.50px&#x27;, &#x27;max_edge_delta=5.00px &gt; 2.00px&#x27;, &#x27;ink_ratio=1.320; |ratio-1| &gt; 0.200&#x27;]
+features.reward_1_icon: [&#x27;center_x_delta=9.61px &gt; 1.00px&#x27;, &#x27;center_y_delta=3.54px &gt; 1.00px&#x27;, &#x27;width_delta=-12.00px &gt; 1.50px&#x27;, &#x27;height_delta=-2.00px &gt; 1.50px&#x27;, &#x27;max_edge_delta=14.00px &gt; 2.00px&#x27;, &#x27;ink_ratio=0.756; |ratio-1| &gt; 0.200&#x27;]
+features.reward_1_copy: [&#x27;center_x_delta=13.56px &gt; 1.00px&#x27;, &#x27;center_y_delta=1.23px &gt; 1.00px&#x27;, &#x27;width_delta=-14.00px &gt; 1.50px&#x27;, &#x27;max_edge_delta=16.75px &gt; 2.00px&#x27;]
+features.reward_2_icon: [&#x27;center_x_delta=9.61px &gt; 1.00px&#x27;, &#x27;center_y_delta=3.53px &gt; 1.00px&#x27;, &#x27;width_delta=-12.00px &gt; 1.50px&#x27;, &#x27;height_delta=-2.00px &gt; 1.50px&#x27;, &#x27;max_edge_delta=14.00px &gt; 2.00px&#x27;, &#x27;ink_ratio=0.755; |ratio-1| &gt; 0.200&#x27;]
+features.reward_2_copy: [&#x27;center_x_delta=14.02px &gt; 1.00px&#x27;, &#x27;center_y_delta=2.53px &gt; 1.00px&#x27;, &#x27;width_delta=-14.50px &gt; 1.50px&#x27;, &#x27;max_edge_delta=17.00px &gt; 2.00px&#x27;]
+features.reward_3_icon: [&#x27;center_x_delta=9.54px &gt; 1.00px&#x27;, &#x27;center_y_delta=3.69px &gt; 1.00px&#x27;, &#x27;width_delta=-12.00px &gt; 1.50px&#x27;, &#x27;height_delta=-5.00px &gt; 1.50px&#x27;, &#x27;max_edge_delta=14.00px &gt; 2.00px&#x27;, &#x27;ink_ratio=0.723; |ratio-1| &gt; 0.200&#x27;]
+features.reward_3_copy: [&#x27;center_x_delta=14.39px &gt; 1.00px&#x27;, &#x27;center_y_delta=2.61px &gt; 1.00px&#x27;, &#x27;width_delta=-13.50px &gt; 1.50px&#x27;, &#x27;max_edge_delta=17.00px &gt; 2.00px&#x27;]
+relations.capability_row_1_vertical_alignment: 
+relations.capability_row_2_vertical_alignment: 
+relations.capability_row_3_vertical_alignment: 
+relations.capability_row_4_vertical_alignment: 
+relations.reward_row_1_vertical_alignment: 
+relations.reward_row_2_vertical_alignment: 
+relations.reward_row_3_vertical_alignment: </pre></td><td><a href="r0/run.json">run.json</a></td></tr></table></section><section><h2>第 2 轮 · R1</h2><p>基线变更：否</p><table><tr><th>尝试</th><th>运行状态</th><th>门禁结果</th><th>执行秒数</th><th>本轮处理</th><th>发现/剩余问题</th><th>证据</th></tr><tr><td>1</td><td>DIAGNOSTIC</td><td>DIAGNOSTIC_DIFFERENCES</td><td>2.767</td><td>第1轮发现能力卡片第二列和收益列表整体偏右、图标墨迹偏下；本轮集中校正源画框、列起点、文字基线和CTA颜色。</td><td><pre>regions.whole: [&#x27;mae=12.1268 &gt; 5.0000&#x27;, &#x27;p95=121.00 &gt; 26.00&#x27;]
+regions.capabilities: [&#x27;mae=15.0548 &gt; 7.0000&#x27;, &#x27;p95=151.00 &gt; 28.00&#x27;]
+regions.benefits: [&#x27;mae=19.0605 &gt; 8.0000&#x27;, &#x27;p95=131.00 &gt; 55.00&#x27;]
+regions.cta: [&#x27;mae=12.1696 &gt; 3.0000&#x27;, &#x27;p95=58.00 &gt; 8.00&#x27;]
+features.capability_badge: [&#x27;center_x_delta=-1.76px &gt; 1.00px&#x27;, &#x27;center_y_delta=-6.38px &gt; 1.00px&#x27;, &#x27;max_edge_delta=7.00px &gt; 2.00px&#x27;]
+features.benefit_badge: [&#x27;center_y_delta=-7.21px &gt; 1.00px&#x27;, &#x27;max_edge_delta=7.25px &gt; 2.00px&#x27;]
+features.capability_1_icon: [&#x27;center_y_delta=-3.00px &gt; 1.00px&#x27;, &#x27;max_edge_delta=3.00px &gt; 1.50px&#x27;]
+features.capability_1_copy: [&#x27;center_y_delta=-1.73px &gt; 1.00px&#x27;, &#x27;max_edge_delta=2.25px &gt; 2.00px&#x27;]
+features.capability_2_icon: [&#x27;center_y_delta=-3.00px &gt; 1.00px&#x27;, &#x27;max_edge_delta=3.00px &gt; 1.50px&#x27;]
+features.capability_2_copy: [&#x27;center_y_delta=-6.73px &gt; 1.00px&#x27;, &#x27;height_delta=-5.00px &gt; 1.50px&#x27;, &#x27;max_edge_delta=10.00px &gt; 2.00px&#x27;]
+features.capability_3_icon: [&#x27;center_y_delta=-5.00px &gt; 1.00px&#x27;, &#x27;max_edge_delta=5.00px &gt; 1.50px&#x27;]
+features.capability_3_copy: [&#x27;center_x_delta=3.72px &gt; 1.00px&#x27;, &#x27;center_y_delta=-6.77px &gt; 1.00px&#x27;, &#x27;height_delta=-6.00px &gt; 1.50px&#x27;, &#x27;max_edge_delta=11.00px &gt; 2.00px&#x27;]
+features.capability_4_icon: [&#x27;center_y_delta=-5.00px &gt; 1.00px&#x27;, &#x27;max_edge_delta=5.00px &gt; 1.50px&#x27;]
+features.capability_4_copy: [&#x27;center_x_delta=4.18px &gt; 1.00px&#x27;, &#x27;center_y_delta=-6.95px &gt; 1.00px&#x27;, &#x27;height_delta=-6.00px &gt; 1.50px&#x27;, &#x27;max_edge_delta=11.00px &gt; 2.00px&#x27;]
+features.reward_1_icon: [&#x27;center_x_delta=-1.00px &gt; 1.00px&#x27;, &#x27;center_y_delta=-6.08px &gt; 1.00px&#x27;, &#x27;height_delta=-4.75px &gt; 1.50px&#x27;, &#x27;max_edge_delta=6.75px &gt; 2.00px&#x27;]
+features.reward_1_copy: [&#x27;center_x_delta=1.73px &gt; 1.00px&#x27;, &#x27;center_y_delta=1.68px &gt; 1.00px&#x27;, &#x27;ink_ratio=1.228; |ratio-1| &gt; 0.200&#x27;]
+features.reward_2_icon: [&#x27;center_x_delta=-1.00px &gt; 1.00px&#x27;, &#x27;center_y_delta=-6.09px &gt; 1.00px&#x27;, &#x27;height_delta=-4.75px &gt; 1.50px&#x27;, &#x27;max_edge_delta=6.75px &gt; 2.00px&#x27;]
+features.reward_2_copy: [&#x27;center_x_delta=1.23px &gt; 1.00px&#x27;, &#x27;center_y_delta=3.29px &gt; 1.00px&#x27;, &#x27;max_edge_delta=3.00px &gt; 2.00px&#x27;, &#x27;ink_ratio=1.225; |ratio-1| &gt; 0.200&#x27;]
+features.reward_3_icon: [&#x27;center_x_delta=-1.00px &gt; 1.00px&#x27;, &#x27;center_y_delta=-5.94px &gt; 1.00px&#x27;, &#x27;height_delta=-5.75px &gt; 1.50px&#x27;, &#x27;max_edge_delta=7.75px &gt; 2.00px&#x27;]
+features.reward_3_copy: [&#x27;center_y_delta=3.19px &gt; 1.00px&#x27;, &#x27;max_edge_delta=3.00px &gt; 2.00px&#x27;, &#x27;ink_ratio=1.223; |ratio-1| &gt; 0.200&#x27;]
+relations.capability_header_vertical_alignment: 
+relations.benefit_header_vertical_alignment: 
+relations.capability_row_1_vertical_alignment: 
+relations.capability_row_2_vertical_alignment: 
+relations.capability_row_3_vertical_alignment: 
+relations.capability_row_4_vertical_alignment: 
+relations.reward_row_1_vertical_alignment: 
+relations.reward_row_2_vertical_alignment: 
+relations.reward_row_3_vertical_alignment: </pre></td><td><a href="r1/run.json">run.json</a></td></tr></table></section><section><h2>第 3 轮 · R2</h2><p>基线变更：否</p><table><tr><th>尝试</th><th>运行状态</th><th>门禁结果</th><th>执行秒数</th><th>本轮处理</th><th>发现/剩余问题</th><th>证据</th></tr><tr><td>1</td><td>DIAGNOSTIC</td><td>DIAGNOSTIC_DIFFERENCES</td><td>2.488</td><td>第2轮确认CTA渐变和徽章纵向修正过度；本轮按四张卡片各自源基线校正，并恢复更接近原稿的CTA色阶。</td><td><pre>regions.whole: [&#x27;mae=8.6434 &gt; 5.0000&#x27;, &#x27;p95=71.00 &gt; 26.00&#x27;]
+regions.benefits: [&#x27;mae=18.1199 &gt; 8.0000&#x27;, &#x27;p95=131.00 &gt; 55.00&#x27;]
+regions.cta: [&#x27;mae=6.3211 &gt; 3.0000&#x27;, &#x27;p95=58.00 &gt; 8.00&#x27;]
+features.reward_1_icon: [&#x27;center_y_delta=-1.74px &gt; 1.00px&#x27;]
+features.reward_1_copy: [&#x27;max_edge_delta=2.25px &gt; 2.00px&#x27;, &#x27;ink_ratio=1.228; |ratio-1| &gt; 0.200&#x27;]
+features.reward_2_icon: [&#x27;center_y_delta=-1.75px &gt; 1.00px&#x27;]
+features.reward_2_copy: [&#x27;center_y_delta=1.29px &gt; 1.00px&#x27;, &#x27;ink_ratio=1.225; |ratio-1| &gt; 0.200&#x27;]
+features.reward_3_icon: [&#x27;center_y_delta=-1.22px &gt; 1.00px&#x27;]
+features.reward_3_copy: [&#x27;center_x_delta=-1.60px &gt; 1.00px&#x27;, &#x27;center_y_delta=1.19px &gt; 1.00px&#x27;, &#x27;ink_ratio=1.223; |ratio-1| &gt; 0.200&#x27;]
+relations.reward_row_1_vertical_alignment: 
+relations.reward_row_2_vertical_alignment: 
+relations.reward_row_3_vertical_alignment: </pre></td><td><a href="r2/run.json">run.json</a></td></tr></table></section></html>

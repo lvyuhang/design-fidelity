@@ -1,0 +1,30 @@
+{
+  "name": "LayerPilot 图层助手",
+  "description": "自动整理图层、按空间关系分组，以及创建 Sketch 切片供蓝湖交付。",
+  "author": "LayerPilot contributors",
+  "version": "0.5.7",
+  "identifier": "local.layerpilot.sketch",
+  "compatibleVersion": "2026.1",
+  "bundleVersion": 13,
+  "commands": [
+    {
+      "name": "自动整理图层…",
+      "identifier": "organize",
+      "script": "main.js",
+      "handler": "organize"
+    },
+    {
+      "name": "自动切片…",
+      "identifier": "assets",
+      "script": "main.js",
+      "handler": "assets"
+    }
+  ],
+  "menu": {
+    "title": "LayerPilot 图层助手",
+    "items": [
+      "organize",
+      "assets"
+    ]
+  }
+}

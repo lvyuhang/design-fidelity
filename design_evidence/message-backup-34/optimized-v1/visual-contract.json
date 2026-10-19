@@ -1,0 +1,3089 @@
+{
+  "schema_version": 2,
+  "status": "ready",
+  "name": "1备份 34 — optimized replay v1",
+  "source_snapshot": "b3437778812e65917e3972d7062be2c3",
+  "source_version": "24e01fb5-a15f-4495-b896-4ac8b65266ca",
+  "canvas": [
+    375,
+    812
+  ],
+  "render_scale": 2.0,
+  "reference": "../../../flutter_ui_components/design_evidence/message-backup-34/reference-mcp.png",
+  "source_documents": [
+    "../../../design_evidence/message-backup-34/source/snapshot.json"
+  ],
+  "regions": {
+    "whole": {
+      "label": "完整消息页",
+      "rect": [
+        0,
+        0,
+        375,
+        812
+      ],
+      "max_mae": 10,
+      "max_p95": 40,
+      "node_ids": [
+        "44275228-F1D6-4A4D-979F-C3D6DEB57104",
+        "A8A697AC-F80C-4651-A197-CA050FFC1EB9",
+        "E9F17E1C-509F-4EA1-9D44-27082A021D5D",
+        "53EBEC3C-1212-48B1-8E9B-F47B108E6DAF",
+        "DF557CF7-1FD8-44C3-99CA-022E675569DA",
+        "9D85965F-6495-4C4B-9BE8-E58559779A4C",
+        "0F0EF7AD-4D88-4938-8914-FC76C15C7696",
+        "39FB6924-86D4-487A-9B7B-4CD2A16D96E3",
+        "264D1D95-4751-4800-90E3-236567052318",
+        "7DB2AE76-7062-43D0-B1D6-2D8FED3BD8D7",
+        "AFA69A22-F9E2-4E2A-B456-769FC527B40A",
+        "16F0957E-9372-4BDD-8A38-74F925C77F4A",
+        "F8BCDC51-8241-4A14-A89A-E882CE2AF6F4",
+        "EA7355EB-A1EF-4939-BD86-F477A5DD604A",
+        "F7D4A3FB-634A-4C2E-BD4F-D432FC1A3D50",
+        "13603A6E-D798-4D8E-A68B-6102EFCCDC0E",
+        "3D094D6B-0DD8-4A10-BA5B-8C38A6B26B62",
+        "D3397E96-B761-411B-A5A5-8097376713D0",
+        "C4BC7737-4B5C-4FF2-B6D5-26102F764D3E",
+        "29437CC5-BC88-4EAB-945A-D478F73D6F29",
+        "25D9025F-B947-469D-98F5-838C23F9566B",
+        "15621591-9263-49EE-AF51-96E07BD315AF",
+        "20B932D6-B855-4D58-AFF4-6EEEB526C76B",
+        "DD74AF8A-1373-4C59-84E8-0703B633D59B",
+        "89AE79C6-5529-4C51-9013-535990F94E5F",
+        "46973292-5A6D-42BF-9A6F-25D9168D09E8",
+        "8CC12B10-691E-43FC-B179-83CAABC064FF",
+        "01D98DE8-2F69-47FB-A441-F55E352AA0E5",
+        "7FB47576-8EE2-4BB4-A045-52EB92AF670A",
+        "9AA9E29C-3DA6-46B0-9D87-3DE7A29BC07C",
+        "20048584-3BE9-4A13-9751-E254762A274D",
+        "7A7E5242-D597-4010-ACA3-D9FB4A6A55F0",
+        "B450F8D8-E02A-4343-93C8-8CCF6FACB94D",
+        "0E43FF05-72F7-4883-B947-E6EAC5C960C7",
+        "99E98289-9398-4762-8049-B5B7E715C8DD",
+        "9D86AD1F-3CE2-46C4-BD42-57EB34894A46",
+        "2D4AE6CA-90E0-4E90-BA0C-AB4C250E1BCC",
+        "F6231680-BDFF-4B29-B6AE-F4BBE272EB10",
+        "783F2F13-0439-4732-B43C-FFD0DCF94BB2",
+        "41BE3DCA-8299-42DF-8286-815374823BCA",
+        "C3654C3F-8CA0-495A-B3ED-987C522CF26D",
+        "17C82158-B36C-46B3-95DB-989316236659",
+        "D900C1F9-E43C-4FDB-A402-FD41D3D3DA1C",
+        "C031B416-8458-4017-8480-BBA5EF0A4FE8",
+        "18E50681-53FB-4C21-AD2E-81D9F88C7166",
+        "95DE9DE3-311B-43CC-8B27-5CAAF3CE8704",
+        "809A6B37-A85A-4086-A28C-7F25EF3D3797",
+        "21488C35-C0FC-41A7-97F8-EF5370EAE7D8",
+        "3AB3D3AB-E236-4FF4-8571-8DFAEE9E6698",
+        "531C48FF-7434-428F-8B24-92FAD50037BF",
+        "D00F1DA6-F3B1-486C-B916-3F7D0418C95F",
+        "AAA68FF7-EE7B-43A2-9F17-47A318D31C6C",
+        "C2F72DC7-8925-4A60-9CD0-A95D3EF34A66",
+        "42285EB3-128C-4A74-B6F2-276DFF915EE6",
+        "F1ACB15F-51E7-4708-9933-FDEFCA1330C8",
+        "8D3C9024-2B65-4FC6-8A83-D18CD53DE6BB",
+        "B28CDD4F-89C3-4FFE-BDF6-0C94F4F54BFA",
+        "CF437174-0A8A-4674-A21C-1E794F72EBFD",
+        "2F09BE83-3AA8-4615-9D8A-DAEF31FC96ED",
+        "2E1B3E58-2B41-4C04-9503-F0CEA095ACC8",
+        "AB96CA81-4BB1-44F6-9117-D6DDCA4A8B7B",
+        "83542956-2931-44D5-A49E-F8697C3EDB7B",
+        "4AC47899-F5F6-4179-A2E3-7E51F028ED94",
+        "A8281B57-27F2-48D7-8BDC-4273054165DE",
+        "879917DC-AC2E-4C22-A880-00C002F6D56B",
+        "A19F18DC-EF3B-4DB5-A45C-6601B7BE899F",
+        "12FAFF12-6A3B-4671-9C4D-56058CC80DC6",
+        "D19C16E3-4680-403C-A20D-A626AE97315E",
+        "F93DC6EB-564F-45FB-B26E-B0EC13031D03",
+        "CDA6C8D9-1C7C-4CFB-8B35-B453B227E3E8",
+        "2564DA33-C389-4343-BE2F-1E6A1A5EAE86",
+        "4C8A42E8-6301-40C5-A299-41B85B38CF9A",
+        "B10165FC-9976-4E75-A209-25BB989FCA5E",
+        "07EBC91B-ED27-4193-BD68-C5C7A8EB8504",
+        "1C586EF5-CA8B-4BE8-AD24-1DCE14EF8069",
+        "AE344697-D0D3-4867-B3BC-AA722DBF1288",
+        "33E0B12A-79E3-413C-B6B1-25F695108F98",
+        "05DE141B-B6EF-4532-952B-932085C23D81",
+        "FC1D17B3-6027-4867-B5DC-36E95B5C159D",
+        "1357B849-5FC7-4570-9A0A-EE53EAC3ED50",
+        "080129E6-705B-4A0A-9EE4-BB26F51F8CA9",
+        "8A722003-24EE-4A5B-B1AD-0E7F7431E1B3",
+        "C5DC59BB-5778-4A06-B217-8ED43F249EF7",
+        "2CE34DCD-BBA8-40CC-98C7-D9CFF074676E",
+        "9DD0C025-00BA-4EEA-9ABB-8ED78C53FBCD",
+        "F83591A0-1669-4DB3-86E5-424ED262DB9F",
+        "6E747B17-58E6-40AD-B14C-234052E62508",
+        "534A0896-0A6C-4CD4-8A09-46D949AE9C9D",
+        "80B03DF5-E3A6-4A73-A009-8EB9C267B0A3",
+        "4C5886B0-AB45-4341-AF01-363FE0A5090B",
+        "4E4DD66E-6B31-4DDF-B852-8C56C95D16D7",
+        "D3FC8C89-4113-4F9E-B504-99A104989546",
+        "19D92A15-D493-4512-8EAF-43B6445C8740",
+        "6A4D3B16-878E-4C69-A222-27C7274BCA74",
+        "817FD579-F179-45CB-A8FF-436677B241E1",
+        "29A459D2-693F-4E6E-95AB-AC7D6E956922",
+        "001D3A26-E9F7-4A8D-B848-BDBD5D64AEE9",
+        "E568E489-73D5-4230-AE9A-53B52F5DF310",
+        "D8250668-F265-417D-BD2B-6E6E0C9E7924",
+        "BEDE4BD1-D5FF-4977-85CA-0072F4746148",
+        "ED7DC567-6137-467A-B368-F2F41B9230A9",
+        "088F6552-B0B7-4221-ACA3-D86A492AC322",
+        "09D2352B-F303-4358-838E-3EEAA4F2FE77",
+        "827F7B04-AD26-4C36-A12F-9D789EF8BE28",
+        "A4571FE1-904F-4ADC-8F09-B6E45A83C544",
+        "3274B14F-00C4-4413-8922-6A68108BDF8B",
+        "46EB4DD5-DB61-4736-91A6-9287513A19D4",
+        "A8100418-FD67-43CB-BE27-D421E8D8ECB4",
+        "C7E43905-2EA8-42C9-A9BC-94FA1EE13418",
+        "4F68EA83-55E9-430C-81F9-C6632D7D8EB0",
+        "9EBC4966-820D-4A77-BC19-0CD0C8444ED5",
+        "9C941034-6D8C-4C25-BF78-DC59EFCA0A33",
+        "15B43C44-D26D-48FC-AEF3-1C8C6651A07F",
+        "D55213A0-CC80-407D-A954-9045E5B000F5",
+        "84005589-5A6E-4B0B-8664-9E5B623AF342",
+        "E971B9EC-BC94-484A-824A-5573C192E563",
+        "DE63E3E1-256E-4B93-A1D0-1F46EEE254AF",
+        "75F816C6-3BB0-4207-BE79-E69239D6612F",
+        "B2D2E480-44FC-4CF9-BD44-401473189813",
+        "2B952F01-7C2D-4D1A-B3E1-AFEC99B66F81",
+        "2105E345-1E59-4004-B9B2-11B3E6B1A221",
+        "5355B69B-C35E-4D62-AF9D-59C52351451C",
+        "EC6EE647-8960-420C-B5CE-6CE0B361E59B",
+        "B21589D4-434E-4C07-B542-B421CCE0192F",
+        "F7F00C5A-3673-4B53-AACA-B1561E6DB83E",
+        "DEF6BF74-FC26-4480-A0CF-56B2069C09BF",
+        "DABF11FF-12C5-4540-9231-E59D25AF37C5",
+        "11580BA1-4C75-474D-B8F0-4F87F88E0DF8",
+        "626C814A-8099-41E1-9C93-A0671EDDF57A",
+        "01A9271C-BAB1-4896-A8F3-6B146C526DF7",
+        "19EE4B67-E559-498A-BFF9-44E65AA65CD2",
+        "7A0E367B-A662-48BB-BDCB-782745125976",
+        "481A3981-82B6-47E4-84ED-31D765AE1A85",
+        "F3D18C28-E109-44E5-88A1-5FBB234F3678",
+        "E6ED9345-72C4-47EE-A07E-4497059B9714",
+        "ADA661F9-2B88-40BF-A193-0A0FCD91E850",
+        "F5203DE6-E6BA-4BEA-A600-9111889E746E",
+        "EBD9B88B-6465-46F9-88BC-B8BA9BC1F0F5",
+        "BCAFA8CC-A1EA-4EAF-8B67-D4CE8C9180A0",
+        "F65DAD96-FA8B-4A56-A733-4088F9206E4E",
+        "589AC81F-5A99-43A6-9E5F-3858D219C87B"
+      ]
+    },
+    "header": {
+      "label": "状态栏、标题与通知条",
+      "rect": [
+        0,
+        0,
+        375,
+        142
+      ],
+      "max_mae": 12,
+      "max_p95": 48
+    },
+    "filters": {
+      "label": "消息筛选",
+      "rect": [
+        0,
+        142,
+        375,
+        40
+      ],
+      "max_mae": 5,
+      "max_p95": 20
+    },
+    "list": {
+      "label": "消息列表",
+      "rect": [
+        0,
+        182,
+        375,
+        530
+      ],
+      "max_mae": 8,
+      "max_p95": 40
+    },
+    "bottom": {
+      "label": "底部导航",
+      "rect": [
+        0,
+        712,
+        375,
+        100
+      ],
+      "max_mae": 8,
+      "max_p95": 32
+    }
+  },
+  "features": {
+    "text_53ebec3c": {
+      "label": "全部",
+      "node_ids": [
+        "53EBEC3C-1212-48B1-8E9B-F47B108E6DAF"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          178,
+          122,
+          49
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_df557cf7": {
+      "label": "熟人",
+      "node_ids": [
+        "DF557CF7-1FD8-44C3-99CA-022E675569DA"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          166,
+          170,
+          181
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_9d85965f": {
+      "label": "深夜聊的...",
+      "node_ids": [
+        "9D85965F-6495-4C4B-9BE8-E58559779A4C"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          166,
+          170,
+          181
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_0f0ef7ad": {
+      "label": "我关注的",
+      "node_ids": [
+        "0F0EF7AD-4D88-4938-8914-FC76C15C7696"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          166,
+          170,
+          181
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "asset_16f0957e": {
+      "label": "编组",
+      "node_ids": [
+        "16F0957E-9372-4BDD-8A38-74F925C77F4A"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          34,
+          36,
+          42
+        ],
+        "max_distance": 70,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.25,
+        "max_ink_ratio_delta": 0.3,
+        "max_mask_iou_loss": 0.3
+      },
+      "profile": "small_visual"
+    },
+    "asset_46973292": {
+      "label": "message_reminding_icon",
+      "node_ids": [
+        "46973292-5A6D-42BF-9A6F-25D9168D09E8"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          230,
+          181,
+          94
+        ],
+        "max_distance": 70,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "asset_7a7e5242": {
+      "label": "位图备份 2",
+      "node_ids": [
+        "7A7E5242-D597-4010-ACA3-D9FB4A6A55F0"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          247,
+          233,
+          217
+        ],
+        "max_distance": 70,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_783f2f13": {
+      "label": "阿珍同学",
+      "node_ids": [
+        "783F2F13-0439-4732-B43C-FFD0DCF94BB2"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          34,
+          36,
+          42
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_41be3dca": {
+      "label": "官方通知",
+      "node_ids": [
+        "41BE3DCA-8299-42DF-8286-815374823BCA"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          34,
+          36,
+          42
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_c3654c3f": {
+      "label": "旎旎马克",
+      "node_ids": [
+        "C3654C3F-8CA0-495A-B3ED-987C522CF26D"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          34,
+          36,
+          42
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_17c82158": {
+      "label": "晚风",
+      "node_ids": [
+        "17C82158-B36C-46B3-95DB-989316236659"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          34,
+          36,
+          42
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_d900c1f9": {
+      "label": "跳舞机宝贝",
+      "node_ids": [
+        "D900C1F9-E43C-4FDB-A402-FD41D3D3DA1C"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          34,
+          36,
+          42
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_c031b416": {
+      "label": "花花",
+      "node_ids": [
+        "C031B416-8458-4017-8480-BBA5EF0A4FE8"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          34,
+          36,
+          42
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_18e50681": {
+      "label": "物简则明",
+      "node_ids": [
+        "18E50681-53FB-4C21-AD2E-81D9F88C7166"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          34,
+          36,
+          42
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_95de9de3": {
+      "label": "你在干嘛呀？",
+      "node_ids": [
+        "95DE9DE3-311B-43CC-8B27-5CAAF3CE8704"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          145,
+          145,
+          155
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_809a6b37": {
+      "label": "XXXXXXXXXXXXXXXXXXXX XXXX XXXX XX",
+      "node_ids": [
+        "809A6B37-A85A-4086-A28C-7F25EF3D3797"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          145,
+          145,
+          155
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_21488c35": {
+      "label": "[微笑][微笑]",
+      "node_ids": [
+        "21488C35-C0FC-41A7-97F8-EF5370EAE7D8"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          145,
+          145,
+          155
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_3ab3d3ab": {
+      "label": "[图片]",
+      "node_ids": [
+        "3AB3D3AB-E236-4FF4-8571-8DFAEE9E6698"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          145,
+          145,
+          155
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_531c48ff": {
+      "label": "[语音]",
+      "node_ids": [
+        "531C48FF-7434-428F-8B24-92FAD50037BF"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          145,
+          145,
+          155
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_d00f1da6": {
+      "label": "15:33",
+      "node_ids": [
+        "D00F1DA6-F3B1-486C-B916-3F7D0418C95F"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          172,
+          175,
+          183
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_aaa68ff7": {
+      "label": "15:33",
+      "node_ids": [
+        "AAA68FF7-EE7B-43A2-9F17-47A318D31C6C"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          172,
+          175,
+          183
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_c2f72dc7": {
+      "label": "15:33",
+      "node_ids": [
+        "C2F72DC7-8925-4A60-9CD0-A95D3EF34A66"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          172,
+          175,
+          183
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_42285eb3": {
+      "label": "15:33",
+      "node_ids": [
+        "42285EB3-128C-4A74-B6F2-276DFF915EE6"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          172,
+          175,
+          183
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_f1acb15f": {
+      "label": "15:33",
+      "node_ids": [
+        "F1ACB15F-51E7-4708-9933-FDEFCA1330C8"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          172,
+          175,
+          183
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_8d3c9024": {
+      "label": "15:33",
+      "node_ids": [
+        "8D3C9024-2B65-4FC6-8A83-D18CD53DE6BB"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          172,
+          175,
+          183
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_cf437174": {
+      "label": "2",
+      "node_ids": [
+        "CF437174-0A8A-4674-A21C-1E794F72EBFD"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_2f09be83": {
+      "label": "15:33",
+      "node_ids": [
+        "2F09BE83-3AA8-4615-9D8A-DAEF31FC96ED"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          172,
+          175,
+          183
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_ab96ca81": {
+      "label": "2",
+      "node_ids": [
+        "AB96CA81-4BB1-44F6-9117-D6DDCA4A8B7B"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_83542956": {
+      "label": "提醒消息",
+      "node_ids": [
+        "83542956-2931-44D5-A49E-F8697C3EDB7B"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          34,
+          36,
+          42
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_4ac47899": {
+      "label": "XX XXXX XXXXXXXXXXXXXXXXXXXXXX X",
+      "node_ids": [
+        "4AC47899-F5F6-4179-A2E3-7E51F028ED94"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          145,
+          145,
+          155
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_a8281b57": {
+      "label": "15:33",
+      "node_ids": [
+        "A8281B57-27F2-48D7-8BDC-4273054165DE"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          172,
+          175,
+          183
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_a19f18dc": {
+      "label": "2",
+      "node_ids": [
+        "A19F18DC-EF3B-4DB5-A45C-6601B7BE899F"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "asset_ae344697": {
+      "label": "编组",
+      "node_ids": [
+        "AE344697-D0D3-4867-B3BC-AA722DBF1288"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          198,
+          200,
+          208
+        ],
+        "max_distance": 70,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.25,
+        "max_ink_ratio_delta": 0.3,
+        "max_mask_iou_loss": 0.3
+      },
+      "profile": "small_visual"
+    },
+    "text_33e0b12a": {
+      "label": "推送通知未开启，会错过重要消息哦",
+      "node_ids": [
+        "33E0B12A-79E3-413C-B6B1-25F695108F98"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          34,
+          36,
+          42
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_05de141b": {
+      "label": "去开启",
+      "node_ids": [
+        "05DE141B-B6EF-4532-952B-932085C23D81"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          178,
+          122,
+          49
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "asset_1357b849": {
+      "label": "编组",
+      "node_ids": [
+        "1357B849-5FC7-4570-9A0A-EE53EAC3ED50"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          188,
+          145,
+          74
+        ],
+        "max_distance": 70,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.25,
+        "max_ink_ratio_delta": 0.3,
+        "max_mask_iou_loss": 0.3
+      },
+      "profile": "small_visual"
+    },
+    "asset_4c5886b0": {
+      "label": "编组",
+      "node_ids": [
+        "4C5886B0-AB45-4341-AF01-363FE0A5090B"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          24,
+          24,
+          27
+        ],
+        "max_distance": 70,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.25,
+        "max_ink_ratio_delta": 0.3,
+        "max_mask_iou_loss": 0.3
+      },
+      "profile": "small_visual"
+    },
+    "text_4e4dd66e": {
+      "label": "任务",
+      "node_ids": [
+        "4E4DD66E-6B31-4DDF-B852-8C56C95D16D7"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          123,
+          121,
+          128
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_6a4d3b16": {
+      "label": "2",
+      "node_ids": [
+        "6A4D3B16-878E-4C69-A222-27C7274BCA74"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "asset_001d3a26": {
+      "label": "首页",
+      "node_ids": [
+        "001D3A26-E9F7-4A8D-B848-BDBD5D64AEE9"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          24,
+          24,
+          27
+        ],
+        "max_distance": 70,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.25,
+        "max_ink_ratio_delta": 0.3,
+        "max_mask_iou_loss": 0.3
+      },
+      "profile": "small_visual"
+    },
+    "asset_ed7dc567": {
+      "label": "编组",
+      "node_ids": [
+        "ED7DC567-6137-467A-B368-F2F41B9230A9"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          24,
+          24,
+          27
+        ],
+        "max_distance": 70,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.25,
+        "max_ink_ratio_delta": 0.3,
+        "max_mask_iou_loss": 0.3
+      },
+      "profile": "small_visual"
+    },
+    "asset_09d2352b": {
+      "label": "编组",
+      "node_ids": [
+        "09D2352B-F303-4358-838E-3EEAA4F2FE77"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          24,
+          24,
+          27
+        ],
+        "max_distance": 70,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.25,
+        "max_ink_ratio_delta": 0.3,
+        "max_mask_iou_loss": 0.3
+      },
+      "profile": "small_visual"
+    },
+    "text_a4571fe1": {
+      "label": "我的",
+      "node_ids": [
+        "A4571FE1-904F-4ADC-8F09-B6E45A83C544"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          123,
+          121,
+          128
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_3274b14f": {
+      "label": "关系",
+      "node_ids": [
+        "3274B14F-00C4-4413-8922-6A68108BDF8B"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          123,
+          121,
+          128
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_46eb4dd5": {
+      "label": "首页",
+      "node_ids": [
+        "46EB4DD5-DB61-4736-91A6-9287513A19D4"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          123,
+          121,
+          128
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_15b43c44": {
+      "label": "9:41",
+      "node_ids": [
+        "15B43C44-D26D-48FC-AEF3-1C8C6651A07F"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          34,
+          36,
+          42
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_84005589": {
+      "label": "消息",
+      "node_ids": [
+        "84005589-5A6E-4B0B-8664-9E5B623AF342"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          178,
+          122,
+          49
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "asset_2105e345": {
+      "label": "编组",
+      "node_ids": [
+        "2105E345-1E59-4004-B9B2-11B3E6B1A221"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          24,
+          24,
+          27
+        ],
+        "max_distance": 70,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.25,
+        "max_ink_ratio_delta": 0.3,
+        "max_mask_iou_loss": 0.3
+      },
+      "profile": "small_visual"
+    },
+    "asset_5355b69b": {
+      "label": "路径 4",
+      "node_ids": [
+        "5355B69B-C35E-4D62-AF9D-59C52351451C"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          230,
+          181,
+          94
+        ],
+        "max_distance": 70,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.25,
+        "max_ink_ratio_delta": 0.3,
+        "max_mask_iou_loss": 0.3
+      },
+      "profile": "small_visual"
+    },
+    "text_ec6ee647": {
+      "label": "消息",
+      "node_ids": [
+        "EC6EE647-8960-420C-B5CE-6CE0B361E59B"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          34,
+          36,
+          42
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_b21589d4": {
+      "label": "通话记录",
+      "node_ids": [
+        "B21589D4-434E-4C07-B542-B421CCE0192F"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          145,
+          145,
+          155
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_626c814a": {
+      "label": "2",
+      "node_ids": [
+        "626C814A-8099-41E1-9C93-A0671EDDF57A"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "asset_7a0e367b": {
+      "label": "编组 12",
+      "node_ids": [
+        "7A0E367B-A662-48BB-BDCB-782745125976"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          217,
+          68,
+          58
+        ],
+        "max_distance": 70,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.25,
+        "max_ink_ratio_delta": 0.3,
+        "max_mask_iou_loss": 0.3
+      },
+      "profile": "small_visual"
+    },
+    "text_481a3981": {
+      "label": "未接",
+      "node_ids": [
+        "481A3981-82B6-47E4-84ED-31D765AE1A85"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          217,
+          68,
+          58
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_f3d18c28": {
+      "label": "已取消",
+      "node_ids": [
+        "F3D18C28-E109-44E5-88A1-5FBB234F3678"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          166,
+          170,
+          181
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "asset_f5203de6": {
+      "label": "编组 3",
+      "node_ids": [
+        "F5203DE6-E6BA-4BEA-A600-9111889E746E"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          166,
+          170,
+          181
+        ],
+        "max_distance": 70,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.25,
+        "max_ink_ratio_delta": 0.3,
+        "max_mask_iou_loss": 0.3
+      },
+      "profile": "small_visual"
+    },
+    "text_bcafa8cc": {
+      "label": "熟人",
+      "node_ids": [
+        "BCAFA8CC-A1EA-4EAF-8B67-D4CE8C9180A0"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          149,
+          84,
+          104
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_589ac81f": {
+      "label": "生人",
+      "node_ids": [
+        "589AC81F-5A99-43A6-9E5F-3858D219C87B"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          201,
+          135,
+          113
+        ],
+        "max_distance": 74,
+        "min_pixels": 2
+      },
+      "limits": {
+        "max_center_delta": 1.25,
+        "max_size_delta": 1.5
+      }
+    }
+  },
+  "pinned_files": {
+    "../../../flutter_ui_components/design_evidence/message-backup-34/reference-mcp.png": "790d0828fcfb4d56386d5ac2fe6b845be1305743e6d867b4d7b30db3c778c38e",
+    "../../../design_evidence/message-backup-34/source/snapshot.json": "b1b2cfb57e7b8a8165f165a9657f9be8620dc18fde1e038bfb4f3966d1c7eafd",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/133aceb46ccc07583e92c605bc539afd2e22fd2c024af2f90025e03941ab4544.png": "4dd328b126e9385139df9e52eec41d5685929a0c91bdd3028a492aff1c89cf8f",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/711bc34d080a29cb67efeb89cd437f9d2d85882884085eb93a584d436983bfba.png": "f76fdb6e16eecc9cbf90df649af7fddc657e34593c338349f35fc358128ecea8",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/cc123c6bf5380b980ceb60f97f87b37e3118b855f479282363ec453729369e98.png": "fa970e411eeaca65093df3c2d4265c266ed79def92e8f932f29db21943e22140",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/ba6ad713213694bd6d892e33d0effb4a9384c7002553201e6aad73e35f56276f.png": "f33d3ee31037ddc9f304aea4cfd2eb82ffb10837309493993d936136f1275929",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/a25881b7d5ce15dcdb2811888680942ed9ce92f2384e935c5e9eb672bcc64457.png": "8835fddc65e15a07ee4e9f729552e55c49faf97a6f3675c5b246ffad72c0d50a",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/1cc08b902b88aba143242c42b1b3f8f2b3427a06f64b9c66746997c46790c075.png": "15071e71c1ba2050208caa1bff1a19123273fbc6212a1838ca8031b86dea223b",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/a3109e049196a732525f8c4d7b65981c9d4b943e1da00cdad33c576bf2b1d0e9.png": "d3698a7d65ea31ef96345770ac85804017f4350346719ad8a88de6339e1c3900",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/c5b435df1b9694e954a0f7039592d6b377caf13f87a26314173e862966065822.png": "9b5070bba2494423d3a28e6b2d24a37bebfa3ef9dfb5050d7aff58dce7df0ef4",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/3d9c1507231ab4216545fd4d47fc4e0016d132646d95dee832583047252607ef.png": "5cd4321224c8620c42a7a15a7f5d9f9d0faf942311435cb25ea2d13cbd30f6c5",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/58ae7275356d68146c2e4d681bb589158c06ac2106b49b6365258198825ddb9c.png": "0d70f124ddf909854d637e8c44126603e7917869771817881f411195a1256135",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/7770bd50d14ae591e54a1b0b3df11747bb86d312886b8476d748cb4be6e485db.png": "30f834c8a953ee6fe80afebd7c5451db6e09f051852775afccf174c91ff2da15",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/302d40e3cddc0c5dc27b8fca1058f2e9e4266b93ce88e0e3bbdc9dd8d49189dd.png": "7baa1ad9f870bc8cd70e8d34af9dcf31b9679bfe1682274fbc2fc49a4da3b0a6",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/f905dce5939b9af6544739ee7933e79aef295cd8228323f52ddea84e9bfcc124.png": "275b7f7034f917d8738890fe26b214d1b43f799613295be407d99dfcc0715766",
+    "../../../flutter_ui_components/assets/fonts/PingFangSC-Regular.otf": "7c378a0f44481c506116e7e4c6dbbfe073df66ccef620f0d99cd884b0f964e36",
+    "../../../flutter_ui_components/assets/fonts/PingFangSC-Medium.otf": "ded0b60c1531e96f99010bcadf3b085df20de9259c0d194cb933e0b3d54ca230",
+    "../../../flutter_ui_components/assets/fonts/PingFangSC-Semibold.otf": "799786dcc2d17ea4ab140962d0bf43d7d8087271ebf2eaa750c48d916ddf92e1",
+    "../../../flutter_ui_components/lib/experiments/message_backup_34_page.dart": "a162308d7e64dab35c68703f5a3bf40df5e0370d7f5eac11de4b4ae06b76fdf3",
+    "../../../flutter_ui_components/test/message_backup_34_render_test.dart": "350760d85c86fb5e6dde391c28d8c94da3e2c2ea68aeb62683baf828300e75a9",
+    "../../../flutter_ui_components/pubspec.yaml": "91446a66d7201184842abda7272ffcb8d3bbb5099cde62811ea2b9fc95823942",
+    "../../../flutter_ui_components/pubspec.lock": "d764df020ca4eb901ccd2cead6955f5e8600adcc872c563512552b5aa1a815f7"
+  },
+  "assets": [
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/133aceb46ccc07583e92c605bc539afd2e22fd2c024af2f90025e03941ab4544.png",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/711bc34d080a29cb67efeb89cd437f9d2d85882884085eb93a584d436983bfba.png",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/cc123c6bf5380b980ceb60f97f87b37e3118b855f479282363ec453729369e98.png",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/ba6ad713213694bd6d892e33d0effb4a9384c7002553201e6aad73e35f56276f.png",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/a25881b7d5ce15dcdb2811888680942ed9ce92f2384e935c5e9eb672bcc64457.png",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/1cc08b902b88aba143242c42b1b3f8f2b3427a06f64b9c66746997c46790c075.png",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/a3109e049196a732525f8c4d7b65981c9d4b943e1da00cdad33c576bf2b1d0e9.png",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/c5b435df1b9694e954a0f7039592d6b377caf13f87a26314173e862966065822.png",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/3d9c1507231ab4216545fd4d47fc4e0016d132646d95dee832583047252607ef.png",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/58ae7275356d68146c2e4d681bb589158c06ac2106b49b6365258198825ddb9c.png",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/7770bd50d14ae591e54a1b0b3df11747bb86d312886b8476d748cb4be6e485db.png",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/302d40e3cddc0c5dc27b8fca1058f2e9e4266b93ce88e0e3bbdc9dd8d49189dd.png",
+    "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/f905dce5939b9af6544739ee7933e79aef295cd8228323f52ddea84e9bfcc124.png"
+  ],
+  "fonts": [
+    {
+      "path": "../../../flutter_ui_components/assets/fonts/PingFangSC-Regular.otf",
+      "node_ids": [
+        "53EBEC3C-1212-48B1-8E9B-F47B108E6DAF",
+        "DF557CF7-1FD8-44C3-99CA-022E675569DA",
+        "9D85965F-6495-4C4B-9BE8-E58559779A4C",
+        "0F0EF7AD-4D88-4938-8914-FC76C15C7696",
+        "783F2F13-0439-4732-B43C-FFD0DCF94BB2",
+        "41BE3DCA-8299-42DF-8286-815374823BCA",
+        "C3654C3F-8CA0-495A-B3ED-987C522CF26D",
+        "17C82158-B36C-46B3-95DB-989316236659",
+        "D900C1F9-E43C-4FDB-A402-FD41D3D3DA1C",
+        "C031B416-8458-4017-8480-BBA5EF0A4FE8",
+        "18E50681-53FB-4C21-AD2E-81D9F88C7166",
+        "95DE9DE3-311B-43CC-8B27-5CAAF3CE8704",
+        "809A6B37-A85A-4086-A28C-7F25EF3D3797",
+        "21488C35-C0FC-41A7-97F8-EF5370EAE7D8",
+        "3AB3D3AB-E236-4FF4-8571-8DFAEE9E6698",
+        "531C48FF-7434-428F-8B24-92FAD50037BF",
+        "D00F1DA6-F3B1-486C-B916-3F7D0418C95F",
+        "AAA68FF7-EE7B-43A2-9F17-47A318D31C6C",
+        "C2F72DC7-8925-4A60-9CD0-A95D3EF34A66",
+        "42285EB3-128C-4A74-B6F2-276DFF915EE6",
+        "F1ACB15F-51E7-4708-9933-FDEFCA1330C8",
+        "8D3C9024-2B65-4FC6-8A83-D18CD53DE6BB",
+        "CF437174-0A8A-4674-A21C-1E794F72EBFD",
+        "2F09BE83-3AA8-4615-9D8A-DAEF31FC96ED",
+        "AB96CA81-4BB1-44F6-9117-D6DDCA4A8B7B",
+        "83542956-2931-44D5-A49E-F8697C3EDB7B",
+        "4AC47899-F5F6-4179-A2E3-7E51F028ED94",
+        "A8281B57-27F2-48D7-8BDC-4273054165DE",
+        "A19F18DC-EF3B-4DB5-A45C-6601B7BE899F",
+        "33E0B12A-79E3-413C-B6B1-25F695108F98",
+        "05DE141B-B6EF-4532-952B-932085C23D81",
+        "4E4DD66E-6B31-4DDF-B852-8C56C95D16D7",
+        "6A4D3B16-878E-4C69-A222-27C7274BCA74",
+        "A4571FE1-904F-4ADC-8F09-B6E45A83C544",
+        "3274B14F-00C4-4413-8922-6A68108BDF8B",
+        "46EB4DD5-DB61-4736-91A6-9287513A19D4",
+        "15B43C44-D26D-48FC-AEF3-1C8C6651A07F",
+        "84005589-5A6E-4B0B-8664-9E5B623AF342",
+        "EC6EE647-8960-420C-B5CE-6CE0B361E59B",
+        "B21589D4-434E-4C07-B542-B421CCE0192F",
+        "626C814A-8099-41E1-9C93-A0671EDDF57A",
+        "481A3981-82B6-47E4-84ED-31D765AE1A85",
+        "F3D18C28-E109-44E5-88A1-5FBB234F3678",
+        "BCAFA8CC-A1EA-4EAF-8B67-D4CE8C9180A0",
+        "589AC81F-5A99-43A6-9E5F-3858D219C87B"
+      ]
+    },
+    {
+      "path": "../../../flutter_ui_components/assets/fonts/PingFangSC-Medium.otf",
+      "node_ids": [
+        "53EBEC3C-1212-48B1-8E9B-F47B108E6DAF",
+        "DF557CF7-1FD8-44C3-99CA-022E675569DA",
+        "9D85965F-6495-4C4B-9BE8-E58559779A4C",
+        "0F0EF7AD-4D88-4938-8914-FC76C15C7696",
+        "783F2F13-0439-4732-B43C-FFD0DCF94BB2",
+        "41BE3DCA-8299-42DF-8286-815374823BCA",
+        "C3654C3F-8CA0-495A-B3ED-987C522CF26D",
+        "17C82158-B36C-46B3-95DB-989316236659",
+        "D900C1F9-E43C-4FDB-A402-FD41D3D3DA1C",
+        "C031B416-8458-4017-8480-BBA5EF0A4FE8",
+        "18E50681-53FB-4C21-AD2E-81D9F88C7166",
+        "95DE9DE3-311B-43CC-8B27-5CAAF3CE8704",
+        "809A6B37-A85A-4086-A28C-7F25EF3D3797",
+        "21488C35-C0FC-41A7-97F8-EF5370EAE7D8",
+        "3AB3D3AB-E236-4FF4-8571-8DFAEE9E6698",
+        "531C48FF-7434-428F-8B24-92FAD50037BF",
+        "D00F1DA6-F3B1-486C-B916-3F7D0418C95F",
+        "AAA68FF7-EE7B-43A2-9F17-47A318D31C6C",
+        "C2F72DC7-8925-4A60-9CD0-A95D3EF34A66",
+        "42285EB3-128C-4A74-B6F2-276DFF915EE6",
+        "F1ACB15F-51E7-4708-9933-FDEFCA1330C8",
+        "8D3C9024-2B65-4FC6-8A83-D18CD53DE6BB",
+        "CF437174-0A8A-4674-A21C-1E794F72EBFD",
+        "2F09BE83-3AA8-4615-9D8A-DAEF31FC96ED",
+        "AB96CA81-4BB1-44F6-9117-D6DDCA4A8B7B",
+        "83542956-2931-44D5-A49E-F8697C3EDB7B",
+        "4AC47899-F5F6-4179-A2E3-7E51F028ED94",
+        "A8281B57-27F2-48D7-8BDC-4273054165DE",
+        "A19F18DC-EF3B-4DB5-A45C-6601B7BE899F",
+        "33E0B12A-79E3-413C-B6B1-25F695108F98",
+        "05DE141B-B6EF-4532-952B-932085C23D81",
+        "4E4DD66E-6B31-4DDF-B852-8C56C95D16D7",
+        "6A4D3B16-878E-4C69-A222-27C7274BCA74",
+        "A4571FE1-904F-4ADC-8F09-B6E45A83C544",
+        "3274B14F-00C4-4413-8922-6A68108BDF8B",
+        "46EB4DD5-DB61-4736-91A6-9287513A19D4",
+        "15B43C44-D26D-48FC-AEF3-1C8C6651A07F",
+        "84005589-5A6E-4B0B-8664-9E5B623AF342",
+        "EC6EE647-8960-420C-B5CE-6CE0B361E59B",
+        "B21589D4-434E-4C07-B542-B421CCE0192F",
+        "626C814A-8099-41E1-9C93-A0671EDDF57A",
+        "481A3981-82B6-47E4-84ED-31D765AE1A85",
+        "F3D18C28-E109-44E5-88A1-5FBB234F3678",
+        "BCAFA8CC-A1EA-4EAF-8B67-D4CE8C9180A0",
+        "589AC81F-5A99-43A6-9E5F-3858D219C87B"
+      ]
+    },
+    {
+      "path": "../../../flutter_ui_components/assets/fonts/PingFangSC-Semibold.otf",
+      "node_ids": [
+        "53EBEC3C-1212-48B1-8E9B-F47B108E6DAF",
+        "DF557CF7-1FD8-44C3-99CA-022E675569DA",
+        "9D85965F-6495-4C4B-9BE8-E58559779A4C",
+        "0F0EF7AD-4D88-4938-8914-FC76C15C7696",
+        "783F2F13-0439-4732-B43C-FFD0DCF94BB2",
+        "41BE3DCA-8299-42DF-8286-815374823BCA",
+        "C3654C3F-8CA0-495A-B3ED-987C522CF26D",
+        "17C82158-B36C-46B3-95DB-989316236659",
+        "D900C1F9-E43C-4FDB-A402-FD41D3D3DA1C",
+        "C031B416-8458-4017-8480-BBA5EF0A4FE8",
+        "18E50681-53FB-4C21-AD2E-81D9F88C7166",
+        "95DE9DE3-311B-43CC-8B27-5CAAF3CE8704",
+        "809A6B37-A85A-4086-A28C-7F25EF3D3797",
+        "21488C35-C0FC-41A7-97F8-EF5370EAE7D8",
+        "3AB3D3AB-E236-4FF4-8571-8DFAEE9E6698",
+        "531C48FF-7434-428F-8B24-92FAD50037BF",
+        "D00F1DA6-F3B1-486C-B916-3F7D0418C95F",
+        "AAA68FF7-EE7B-43A2-9F17-47A318D31C6C",
+        "C2F72DC7-8925-4A60-9CD0-A95D3EF34A66",
+        "42285EB3-128C-4A74-B6F2-276DFF915EE6",
+        "F1ACB15F-51E7-4708-9933-FDEFCA1330C8",
+        "8D3C9024-2B65-4FC6-8A83-D18CD53DE6BB",
+        "CF437174-0A8A-4674-A21C-1E794F72EBFD",
+        "2F09BE83-3AA8-4615-9D8A-DAEF31FC96ED",
+        "AB96CA81-4BB1-44F6-9117-D6DDCA4A8B7B",
+        "83542956-2931-44D5-A49E-F8697C3EDB7B",
+        "4AC47899-F5F6-4179-A2E3-7E51F028ED94",
+        "A8281B57-27F2-48D7-8BDC-4273054165DE",
+        "A19F18DC-EF3B-4DB5-A45C-6601B7BE899F",
+        "33E0B12A-79E3-413C-B6B1-25F695108F98",
+        "05DE141B-B6EF-4532-952B-932085C23D81",
+        "4E4DD66E-6B31-4DDF-B852-8C56C95D16D7",
+        "6A4D3B16-878E-4C69-A222-27C7274BCA74",
+        "A4571FE1-904F-4ADC-8F09-B6E45A83C544",
+        "3274B14F-00C4-4413-8922-6A68108BDF8B",
+        "46EB4DD5-DB61-4736-91A6-9287513A19D4",
+        "15B43C44-D26D-48FC-AEF3-1C8C6651A07F",
+        "84005589-5A6E-4B0B-8664-9E5B623AF342",
+        "EC6EE647-8960-420C-B5CE-6CE0B361E59B",
+        "B21589D4-434E-4C07-B542-B421CCE0192F",
+        "626C814A-8099-41E1-9C93-A0671EDDF57A",
+        "481A3981-82B6-47E4-84ED-31D765AE1A85",
+        "F3D18C28-E109-44E5-88A1-5FBB234F3678",
+        "BCAFA8CC-A1EA-4EAF-8B67-D4CE8C9180A0",
+        "589AC81F-5A99-43A6-9E5F-3858D219C87B"
+      ]
+    }
+  ],
+  "implementation_inputs": [
+    "../../../flutter_ui_components/lib/experiments/message_backup_34_page.dart",
+    "../../../flutter_ui_components/test/message_backup_34_render_test.dart",
+    "../../../flutter_ui_components/pubspec.yaml",
+    "../../../flutter_ui_components/pubspec.lock"
+  ],
+  "environment": {
+    "renderer": "flutter-test-skia",
+    "renderer_version": "Flutter 3.47.7 / engine deb287481e",
+    "platform": "macOS widget-test 375x812 @2x",
+    "locale": "zh_CN",
+    "state": "message-backup-34 optimized replay",
+    "text_scale": 1
+  },
+  "exclude_rects": [
+    {
+      "rect": [
+        17,
+        194,
+        43,
+        43
+      ],
+      "reason": "阿珍头像原图未提供切图；保留圆形缺图占位"
+    },
+    {
+      "rect": [
+        17,
+        260,
+        43,
+        43
+      ],
+      "reason": "旎旎马克头像原图未提供切图；保留圆形缺图占位"
+    },
+    {
+      "rect": [
+        17,
+        391,
+        43,
+        43
+      ],
+      "reason": "花花头像原图未提供切图；保留圆形缺图占位"
+    },
+    {
+      "rect": [
+        17,
+        456,
+        43,
+        43
+      ],
+      "reason": "物简则明头像原图未提供切图；保留圆形缺图占位"
+    },
+    {
+      "rect": [
+        17,
+        522,
+        43,
+        43
+      ],
+      "reason": "跳舞机宝贝头像原图未提供切图；保留圆形缺图占位"
+    },
+    {
+      "rect": [
+        17,
+        585,
+        44,
+        44
+      ],
+      "reason": "官方通知定制图标没有可导出素材；实现使用45×45圆形未切图占位，排除内部像素，外部位置与占位形状由Widget测试验证"
+    }
+  ],
+  "max_excluded_fraction": 0.04,
+  "not_applicable": {},
+  "relations": {
+    "title_tab_center": {
+      "label": "title tab center",
+      "features": [
+        "text_ec6ee647",
+        "text_b21589d4"
+      ],
+      "metric": "center_y",
+      "max_delta": 1.0
+    },
+    "first_name_detail_left": {
+      "label": "first name detail left",
+      "features": [
+        "text_783f2f13",
+        "text_95de9de3"
+      ],
+      "metric": "left",
+      "max_delta": 1.0
+    },
+    "system_titles_left": {
+      "label": "system titles left",
+      "features": [
+        "text_41be3dca",
+        "text_83542956"
+      ],
+      "metric": "left",
+      "max_delta": 1.0
+    }
+  },
+  "color_samples": {
+    "page_white": {
+      "label": "页面白色背景",
+      "rect": [
+        362,
+        400,
+        6,
+        20
+      ],
+      "max_channel_delta": 5
+    },
+    "filter_surface": {
+      "label": "筛选条底色",
+      "rect": [
+        70,
+        146,
+        8,
+        6
+      ],
+      "max_channel_delta": 8
+    },
+    "nav_surface": {
+      "label": "导航面板底色",
+      "rect": [
+        20,
+        760,
+        8,
+        8
+      ],
+      "max_channel_delta": 10
+    }
+  },
+  "source_scope": {
+    "kind": "page",
+    "expected_node_count": 161
+  },
+  "coverage": {
+    "44275228-F1D6-4A4D-979F-C3D6DEB57104": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "A8A697AC-F80C-4651-A197-CA050FFC1EB9": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "E9F17E1C-509F-4EA1-9D44-27082A021D5D": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "53EBEC3C-1212-48B1-8E9B-F47B108E6DAF": {
+      "status": "covered",
+      "checks": [
+        "features.text_53ebec3c"
+      ],
+      "reason": ""
+    },
+    "DF557CF7-1FD8-44C3-99CA-022E675569DA": {
+      "status": "covered",
+      "checks": [
+        "features.text_df557cf7"
+      ],
+      "reason": ""
+    },
+    "9D85965F-6495-4C4B-9BE8-E58559779A4C": {
+      "status": "covered",
+      "checks": [
+        "features.text_9d85965f"
+      ],
+      "reason": ""
+    },
+    "0F0EF7AD-4D88-4938-8914-FC76C15C7696": {
+      "status": "covered",
+      "checks": [
+        "features.text_0f0ef7ad"
+      ],
+      "reason": ""
+    },
+    "39FB6924-86D4-487A-9B7B-4CD2A16D96E3": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "264D1D95-4751-4800-90E3-236567052318": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "7DB2AE76-7062-43D0-B1D6-2D8FED3BD8D7": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "AFA69A22-F9E2-4E2A-B456-769FC527B40A": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "16F0957E-9372-4BDD-8A38-74F925C77F4A": {
+      "status": "covered",
+      "checks": [
+        "features.asset_16f0957e"
+      ],
+      "reason": ""
+    },
+    "F8BCDC51-8241-4A14-A89A-E882CE2AF6F4": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "EA7355EB-A1EF-4939-BD86-F477A5DD604A": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "F7D4A3FB-634A-4C2E-BD4F-D432FC1A3D50": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "13603A6E-D798-4D8E-A68B-6102EFCCDC0E": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "3D094D6B-0DD8-4A10-BA5B-8C38A6B26B62": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "D3397E96-B761-411B-A5A5-8097376713D0": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "C4BC7737-4B5C-4FF2-B6D5-26102F764D3E": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "29437CC5-BC88-4EAB-945A-D478F73D6F29": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "25D9025F-B947-469D-98F5-838C23F9566B": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "官方通知定制图标没有可导出素材；实现使用45×45圆形未切图占位，排除内部像素，外部位置与占位形状由Widget测试验证"
+    },
+    "15621591-9263-49EE-AF51-96E07BD315AF": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "官方通知定制图标没有可导出素材；实现使用45×45圆形未切图占位，排除内部像素，外部位置与占位形状由Widget测试验证"
+    },
+    "20B932D6-B855-4D58-AFF4-6EEEB526C76B": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "DD74AF8A-1373-4C59-84E8-0703B633D59B": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "89AE79C6-5529-4C51-9013-535990F94E5F": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "46973292-5A6D-42BF-9A6F-25D9168D09E8": {
+      "status": "covered",
+      "checks": [
+        "features.asset_46973292"
+      ],
+      "reason": ""
+    },
+    "8CC12B10-691E-43FC-B179-83CAABC064FF": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "01D98DE8-2F69-47FB-A441-F55E352AA0E5": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "7FB47576-8EE2-4BB4-A045-52EB92AF670A": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "9AA9E29C-3DA6-46B0-9D87-3DE7A29BC07C": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "20048584-3BE9-4A13-9751-E254762A274D": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "7A7E5242-D597-4010-ACA3-D9FB4A6A55F0": {
+      "status": "covered",
+      "checks": [
+        "features.asset_7a7e5242"
+      ],
+      "reason": ""
+    },
+    "B450F8D8-E02A-4343-93C8-8CCF6FACB94D": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "0E43FF05-72F7-4883-B947-E6EAC5C960C7": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "99E98289-9398-4762-8049-B5B7E715C8DD": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "9D86AD1F-3CE2-46C4-BD42-57EB34894A46": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "2D4AE6CA-90E0-4E90-BA0C-AB4C250E1BCC": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "F6231680-BDFF-4B29-B6AE-F4BBE272EB10": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "783F2F13-0439-4732-B43C-FFD0DCF94BB2": {
+      "status": "covered",
+      "checks": [
+        "features.text_783f2f13"
+      ],
+      "reason": ""
+    },
+    "41BE3DCA-8299-42DF-8286-815374823BCA": {
+      "status": "covered",
+      "checks": [
+        "features.text_41be3dca"
+      ],
+      "reason": ""
+    },
+    "C3654C3F-8CA0-495A-B3ED-987C522CF26D": {
+      "status": "covered",
+      "checks": [
+        "features.text_c3654c3f"
+      ],
+      "reason": ""
+    },
+    "17C82158-B36C-46B3-95DB-989316236659": {
+      "status": "covered",
+      "checks": [
+        "features.text_17c82158"
+      ],
+      "reason": ""
+    },
+    "D900C1F9-E43C-4FDB-A402-FD41D3D3DA1C": {
+      "status": "covered",
+      "checks": [
+        "features.text_d900c1f9"
+      ],
+      "reason": ""
+    },
+    "C031B416-8458-4017-8480-BBA5EF0A4FE8": {
+      "status": "covered",
+      "checks": [
+        "features.text_c031b416"
+      ],
+      "reason": ""
+    },
+    "18E50681-53FB-4C21-AD2E-81D9F88C7166": {
+      "status": "covered",
+      "checks": [
+        "features.text_18e50681"
+      ],
+      "reason": ""
+    },
+    "95DE9DE3-311B-43CC-8B27-5CAAF3CE8704": {
+      "status": "covered",
+      "checks": [
+        "features.text_95de9de3"
+      ],
+      "reason": ""
+    },
+    "809A6B37-A85A-4086-A28C-7F25EF3D3797": {
+      "status": "covered",
+      "checks": [
+        "features.text_809a6b37"
+      ],
+      "reason": ""
+    },
+    "21488C35-C0FC-41A7-97F8-EF5370EAE7D8": {
+      "status": "covered",
+      "checks": [
+        "features.text_21488c35"
+      ],
+      "reason": ""
+    },
+    "3AB3D3AB-E236-4FF4-8571-8DFAEE9E6698": {
+      "status": "covered",
+      "checks": [
+        "features.text_3ab3d3ab"
+      ],
+      "reason": ""
+    },
+    "531C48FF-7434-428F-8B24-92FAD50037BF": {
+      "status": "covered",
+      "checks": [
+        "features.text_531c48ff"
+      ],
+      "reason": ""
+    },
+    "D00F1DA6-F3B1-486C-B916-3F7D0418C95F": {
+      "status": "covered",
+      "checks": [
+        "features.text_d00f1da6"
+      ],
+      "reason": ""
+    },
+    "AAA68FF7-EE7B-43A2-9F17-47A318D31C6C": {
+      "status": "covered",
+      "checks": [
+        "features.text_aaa68ff7"
+      ],
+      "reason": ""
+    },
+    "C2F72DC7-8925-4A60-9CD0-A95D3EF34A66": {
+      "status": "covered",
+      "checks": [
+        "features.text_c2f72dc7"
+      ],
+      "reason": ""
+    },
+    "42285EB3-128C-4A74-B6F2-276DFF915EE6": {
+      "status": "covered",
+      "checks": [
+        "features.text_42285eb3"
+      ],
+      "reason": ""
+    },
+    "F1ACB15F-51E7-4708-9933-FDEFCA1330C8": {
+      "status": "covered",
+      "checks": [
+        "features.text_f1acb15f"
+      ],
+      "reason": ""
+    },
+    "8D3C9024-2B65-4FC6-8A83-D18CD53DE6BB": {
+      "status": "covered",
+      "checks": [
+        "features.text_8d3c9024"
+      ],
+      "reason": ""
+    },
+    "B28CDD4F-89C3-4FFE-BDF6-0C94F4F54BFA": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "CF437174-0A8A-4674-A21C-1E794F72EBFD": {
+      "status": "covered",
+      "checks": [
+        "features.text_cf437174"
+      ],
+      "reason": ""
+    },
+    "2F09BE83-3AA8-4615-9D8A-DAEF31FC96ED": {
+      "status": "covered",
+      "checks": [
+        "features.text_2f09be83"
+      ],
+      "reason": ""
+    },
+    "2E1B3E58-2B41-4C04-9503-F0CEA095ACC8": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "AB96CA81-4BB1-44F6-9117-D6DDCA4A8B7B": {
+      "status": "covered",
+      "checks": [
+        "features.text_ab96ca81"
+      ],
+      "reason": ""
+    },
+    "83542956-2931-44D5-A49E-F8697C3EDB7B": {
+      "status": "covered",
+      "checks": [
+        "features.text_83542956"
+      ],
+      "reason": ""
+    },
+    "4AC47899-F5F6-4179-A2E3-7E51F028ED94": {
+      "status": "covered",
+      "checks": [
+        "features.text_4ac47899"
+      ],
+      "reason": ""
+    },
+    "A8281B57-27F2-48D7-8BDC-4273054165DE": {
+      "status": "covered",
+      "checks": [
+        "features.text_a8281b57"
+      ],
+      "reason": ""
+    },
+    "879917DC-AC2E-4C22-A880-00C002F6D56B": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "A19F18DC-EF3B-4DB5-A45C-6601B7BE899F": {
+      "status": "covered",
+      "checks": [
+        "features.text_a19f18dc"
+      ],
+      "reason": ""
+    },
+    "12FAFF12-6A3B-4671-9C4D-56058CC80DC6": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "D19C16E3-4680-403C-A20D-A626AE97315E": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "F93DC6EB-564F-45FB-B26E-B0EC13031D03": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "CDA6C8D9-1C7C-4CFB-8B35-B453B227E3E8": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "2564DA33-C389-4343-BE2F-1E6A1A5EAE86": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "4C8A42E8-6301-40C5-A299-41B85B38CF9A": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "B10165FC-9976-4E75-A209-25BB989FCA5E": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "07EBC91B-ED27-4193-BD68-C5C7A8EB8504": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "1C586EF5-CA8B-4BE8-AD24-1DCE14EF8069": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "AE344697-D0D3-4867-B3BC-AA722DBF1288": {
+      "status": "covered",
+      "checks": [
+        "features.asset_ae344697"
+      ],
+      "reason": ""
+    },
+    "33E0B12A-79E3-413C-B6B1-25F695108F98": {
+      "status": "covered",
+      "checks": [
+        "features.text_33e0b12a"
+      ],
+      "reason": ""
+    },
+    "05DE141B-B6EF-4532-952B-932085C23D81": {
+      "status": "covered",
+      "checks": [
+        "features.text_05de141b"
+      ],
+      "reason": ""
+    },
+    "FC1D17B3-6027-4867-B5DC-36E95B5C159D": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "1357B849-5FC7-4570-9A0A-EE53EAC3ED50": {
+      "status": "covered",
+      "checks": [
+        "features.asset_1357b849"
+      ],
+      "reason": ""
+    },
+    "080129E6-705B-4A0A-9EE4-BB26F51F8CA9": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "8A722003-24EE-4A5B-B1AD-0E7F7431E1B3": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "C5DC59BB-5778-4A06-B217-8ED43F249EF7": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "2CE34DCD-BBA8-40CC-98C7-D9CFF074676E": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "9DD0C025-00BA-4EEA-9ABB-8ED78C53FBCD": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "F83591A0-1669-4DB3-86E5-424ED262DB9F": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "6E747B17-58E6-40AD-B14C-234052E62508": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "534A0896-0A6C-4CD4-8A09-46D949AE9C9D": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "80B03DF5-E3A6-4A73-A009-8EB9C267B0A3": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "4C5886B0-AB45-4341-AF01-363FE0A5090B": {
+      "status": "covered",
+      "checks": [
+        "features.asset_4c5886b0"
+      ],
+      "reason": ""
+    },
+    "4E4DD66E-6B31-4DDF-B852-8C56C95D16D7": {
+      "status": "covered",
+      "checks": [
+        "features.text_4e4dd66e"
+      ],
+      "reason": ""
+    },
+    "D3FC8C89-4113-4F9E-B504-99A104989546": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "19D92A15-D493-4512-8EAF-43B6445C8740": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "6A4D3B16-878E-4C69-A222-27C7274BCA74": {
+      "status": "covered",
+      "checks": [
+        "features.text_6a4d3b16"
+      ],
+      "reason": ""
+    },
+    "817FD579-F179-45CB-A8FF-436677B241E1": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "29A459D2-693F-4E6E-95AB-AC7D6E956922": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "001D3A26-E9F7-4A8D-B848-BDBD5D64AEE9": {
+      "status": "covered",
+      "checks": [
+        "features.asset_001d3a26"
+      ],
+      "reason": ""
+    },
+    "E568E489-73D5-4230-AE9A-53B52F5DF310": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "D8250668-F265-417D-BD2B-6E6E0C9E7924": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "BEDE4BD1-D5FF-4977-85CA-0072F4746148": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "ED7DC567-6137-467A-B368-F2F41B9230A9": {
+      "status": "covered",
+      "checks": [
+        "features.asset_ed7dc567"
+      ],
+      "reason": ""
+    },
+    "088F6552-B0B7-4221-ACA3-D86A492AC322": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "09D2352B-F303-4358-838E-3EEAA4F2FE77": {
+      "status": "covered",
+      "checks": [
+        "features.asset_09d2352b"
+      ],
+      "reason": ""
+    },
+    "827F7B04-AD26-4C36-A12F-9D789EF8BE28": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "A4571FE1-904F-4ADC-8F09-B6E45A83C544": {
+      "status": "covered",
+      "checks": [
+        "features.text_a4571fe1"
+      ],
+      "reason": ""
+    },
+    "3274B14F-00C4-4413-8922-6A68108BDF8B": {
+      "status": "covered",
+      "checks": [
+        "features.text_3274b14f"
+      ],
+      "reason": ""
+    },
+    "46EB4DD5-DB61-4736-91A6-9287513A19D4": {
+      "status": "covered",
+      "checks": [
+        "features.text_46eb4dd5"
+      ],
+      "reason": ""
+    },
+    "A8100418-FD67-43CB-BE27-D421E8D8ECB4": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "C7E43905-2EA8-42C9-A9BC-94FA1EE13418": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "4F68EA83-55E9-430C-81F9-C6632D7D8EB0": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "9EBC4966-820D-4A77-BC19-0CD0C8444ED5": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "9C941034-6D8C-4C25-BF78-DC59EFCA0A33": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "15B43C44-D26D-48FC-AEF3-1C8C6651A07F": {
+      "status": "covered",
+      "checks": [
+        "features.text_15b43c44"
+      ],
+      "reason": ""
+    },
+    "D55213A0-CC80-407D-A954-9045E5B000F5": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "84005589-5A6E-4B0B-8664-9E5B623AF342": {
+      "status": "covered",
+      "checks": [
+        "features.text_84005589"
+      ],
+      "reason": ""
+    },
+    "E971B9EC-BC94-484A-824A-5573C192E563": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "DE63E3E1-256E-4B93-A1D0-1F46EEE254AF": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "75F816C6-3BB0-4207-BE79-E69239D6612F": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "B2D2E480-44FC-4CF9-BD44-401473189813": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "2B952F01-7C2D-4D1A-B3E1-AFEC99B66F81": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "2105E345-1E59-4004-B9B2-11B3E6B1A221": {
+      "status": "covered",
+      "checks": [
+        "features.asset_2105e345"
+      ],
+      "reason": ""
+    },
+    "5355B69B-C35E-4D62-AF9D-59C52351451C": {
+      "status": "covered",
+      "checks": [
+        "features.asset_5355b69b"
+      ],
+      "reason": ""
+    },
+    "EC6EE647-8960-420C-B5CE-6CE0B361E59B": {
+      "status": "covered",
+      "checks": [
+        "features.text_ec6ee647"
+      ],
+      "reason": ""
+    },
+    "B21589D4-434E-4C07-B542-B421CCE0192F": {
+      "status": "covered",
+      "checks": [
+        "features.text_b21589d4"
+      ],
+      "reason": ""
+    },
+    "F7F00C5A-3673-4B53-AACA-B1561E6DB83E": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "DEF6BF74-FC26-4480-A0CF-56B2069C09BF": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "DABF11FF-12C5-4540-9231-E59D25AF37C5": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "11580BA1-4C75-474D-B8F0-4F87F88E0DF8": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "626C814A-8099-41E1-9C93-A0671EDDF57A": {
+      "status": "covered",
+      "checks": [
+        "features.text_626c814a"
+      ],
+      "reason": ""
+    },
+    "01A9271C-BAB1-4896-A8F3-6B146C526DF7": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "19EE4B67-E559-498A-BFF9-44E65AA65CD2": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "7A0E367B-A662-48BB-BDCB-782745125976": {
+      "status": "covered",
+      "checks": [
+        "features.asset_7a0e367b"
+      ],
+      "reason": ""
+    },
+    "481A3981-82B6-47E4-84ED-31D765AE1A85": {
+      "status": "covered",
+      "checks": [
+        "features.text_481a3981"
+      ],
+      "reason": ""
+    },
+    "F3D18C28-E109-44E5-88A1-5FBB234F3678": {
+      "status": "covered",
+      "checks": [
+        "features.text_f3d18c28"
+      ],
+      "reason": ""
+    },
+    "E6ED9345-72C4-47EE-A07E-4497059B9714": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "ADA661F9-2B88-40BF-A193-0A0FCD91E850": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "F5203DE6-E6BA-4BEA-A600-9111889E746E": {
+      "status": "covered",
+      "checks": [
+        "features.asset_f5203de6"
+      ],
+      "reason": ""
+    },
+    "EBD9B88B-6465-46F9-88BC-B8BA9BC1F0F5": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "BCAFA8CC-A1EA-4EAF-8B67-D4CE8C9180A0": {
+      "status": "covered",
+      "checks": [
+        "features.text_bcafa8cc"
+      ],
+      "reason": ""
+    },
+    "F65DAD96-FA8B-4A56-A733-4088F9206E4E": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "589AC81F-5A99-43A6-9E5F-3858D219C87B": {
+      "status": "covered",
+      "checks": [
+        "features.text_589ac81f"
+      ],
+      "reason": ""
+    }
+  },
+  "revision": {
+    "id": "optimized-v1",
+    "based_on": "../visual-contract.json",
+    "reason": "Use native 2x reference, preflight assets/fonts, and explicitly classify missing official artwork before rendering.",
+    "preflight_sha256": "0fb6fbce5c056e1db4493424577a5816f061d4ce0584448fe50022cbac7eebea"
+  }
+}

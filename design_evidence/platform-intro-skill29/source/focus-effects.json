@@ -1,0 +1,2289 @@
+{
+  "status": "complete",
+  "snapshot_id": "da6dd92db9b6df7fc3fc4d2bc873e0ee",
+  "resolved_version": "d4d1c235-1fb2-4395-9d0e-a5055d074f4e",
+  "coordinate_space": "source_canvas",
+  "coordinate_mapping": {
+    "verified": true,
+    "strategy": "identity",
+    "source_origin": {
+      "x": 0,
+      "y": 0
+    },
+    "translation": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "canvas": {
+    "width": 375,
+    "height": 812
+  },
+  "source_region": {
+    "x": 4.0,
+    "y": 196.0,
+    "width": 367.0,
+    "height": 580.0
+  },
+  "image_size": {
+    "width": 886,
+    "height": 1400
+  },
+  "scale": {
+    "x": 2.4141689373297,
+    "y": 2.413793103448276
+  },
+  "labels": [
+    {
+      "label": "N29",
+      "node_id": "11857F91-EAAB-4C0C-A518-9D0D2F73628B",
+      "bounds": {
+        "x": 172.0,
+        "y": 219.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      },
+      "image_bounds": {
+        "x": 405.5803814713896,
+        "y": 57.931034482757525,
+        "width": 36.212534059946464,
+        "height": 31.297846958837333
+      }
+    },
+    {
+      "label": "N31",
+      "node_id": "A3FD2014-8642-473A-B0F5-4C17D694B015",
+      "bounds": {
+        "x": 291.0,
+        "y": 208.0,
+        "width": 60.0,
+        "height": 58.0
+      },
+      "image_bounds": {
+        "x": 692.8664850136239,
+        "y": 28.96551724137931,
+        "width": 144.85013623978202,
+        "height": 140.0
+      }
+    },
+    {
+      "label": "N34",
+      "node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "bounds": {
+        "x": 16.0,
+        "y": 424.0,
+        "width": 343.0,
+        "height": 266.0
+      },
+      "image_bounds": {
+        "x": 28.970027247956402,
+        "y": 550.3448275862069,
+        "width": 828.0599455040872,
+        "height": 642.0689655172414
+      }
+    },
+    {
+      "label": "N35",
+      "node_id": "D44A759A-F00C-4F91-B906-8D3AEA24B017",
+      "bounds": {
+        "x": 199.0,
+        "y": 434.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      },
+      "image_bounds": {
+        "x": 470.7629427792915,
+        "y": 576.8965517241368,
+        "width": 36.212534059946464,
+        "height": 31.297846958837333
+      }
+    },
+    {
+      "label": "N37",
+      "node_id": "67A66F14-1BFC-4ED2-B7CC-CA53F587487F",
+      "bounds": {
+        "x": 288.0,
+        "y": 424.0,
+        "width": 71.0,
+        "height": 67.0
+      },
+      "image_bounds": {
+        "x": 685.6239782016348,
+        "y": 550.3448275862069,
+        "width": 171.4059945504087,
+        "height": 161.72413793103448
+      }
+    },
+    {
+      "label": "N38",
+      "node_id": "D918BBDD-E8F9-4952-B1C0-818569C32B90",
+      "bounds": {
+        "x": 281.0,
+        "y": 424.0,
+        "width": 60.0,
+        "height": 56.0
+      },
+      "image_bounds": {
+        "x": 668.724795640327,
+        "y": 550.3448275862069,
+        "width": 144.85013623978202,
+        "height": 135.17241379310343
+      }
+    },
+    {
+      "label": "N40",
+      "node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+      "bounds": {
+        "x": 26.0,
+        "y": 471.0,
+        "width": 325.0,
+        "height": 210.0
+      },
+      "image_bounds": {
+        "x": 53.11171662125341,
+        "y": 663.7931034482758,
+        "width": 784.6049046321525,
+        "height": 506.8965517241379
+      }
+    },
+    {
+      "label": "N68",
+      "node_id": "B3B02A92-587E-4458-994E-449FD80C020F",
+      "bounds": {
+        "x": 16.0,
+        "y": 714.0,
+        "width": 343.0,
+        "height": 50.0
+      },
+      "image_bounds": {
+        "x": 28.970027247956402,
+        "y": 1250.344827586207,
+        "width": 828.0599455040872,
+        "height": 120.6896551724138
+      }
+    }
+  ],
+  "measurements": [
+    {
+      "from_node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+      "to_node_id": "B3B02A92-587E-4458-994E-449FD80C020F",
+      "axis": "y",
+      "distance": 33.0,
+      "overlap_span": {
+        "start": 26.0,
+        "end": 351.0
+      }
+    },
+    {
+      "from_node_id": "11857F91-EAAB-4C0C-A518-9D0D2F73628B",
+      "to_node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "axis": "y",
+      "distance": 191.03374911705356,
+      "overlap_span": {
+        "start": 172.0,
+        "end": 187.0000000000004
+      }
+    },
+    {
+      "from_node_id": "11857F91-EAAB-4C0C-A518-9D0D2F73628B",
+      "to_node_id": "A3FD2014-8642-473A-B0F5-4C17D694B015",
+      "axis": "x",
+      "distance": 103.9999999999996,
+      "overlap_span": {
+        "start": 219.99999999999955,
+        "end": 232.96625088294644
+      }
+    },
+    {
+      "from_node_id": "67A66F14-1BFC-4ED2-B7CC-CA53F587487F",
+      "to_node_id": "B3B02A92-587E-4458-994E-449FD80C020F",
+      "axis": "y",
+      "distance": 223.0,
+      "overlap_span": {
+        "start": 288.0,
+        "end": 359.0
+      }
+    },
+    {
+      "from_node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "to_node_id": "B3B02A92-587E-4458-994E-449FD80C020F",
+      "axis": "y",
+      "distance": 24.0,
+      "overlap_span": {
+        "start": 16.0,
+        "end": 359.0
+      }
+    },
+    {
+      "from_node_id": "A3FD2014-8642-473A-B0F5-4C17D694B015",
+      "to_node_id": "67A66F14-1BFC-4ED2-B7CC-CA53F587487F",
+      "axis": "y",
+      "distance": 158.0,
+      "overlap_span": {
+        "start": 291.0,
+        "end": 351.0
+      }
+    },
+    {
+      "from_node_id": "A3FD2014-8642-473A-B0F5-4C17D694B015",
+      "to_node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "axis": "y",
+      "distance": 158.0,
+      "overlap_span": {
+        "start": 291.0,
+        "end": 351.0
+      }
+    },
+    {
+      "from_node_id": "A3FD2014-8642-473A-B0F5-4C17D694B015",
+      "to_node_id": "D918BBDD-E8F9-4952-B1C0-818569C32B90",
+      "axis": "y",
+      "distance": 158.0,
+      "overlap_span": {
+        "start": 291.0,
+        "end": 341.0
+      }
+    },
+    {
+      "from_node_id": "D44A759A-F00C-4F91-B906-8D3AEA24B017",
+      "to_node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+      "axis": "y",
+      "distance": 23.033749117053553,
+      "overlap_span": {
+        "start": 199.0,
+        "end": 214.0000000000004
+      }
+    },
+    {
+      "from_node_id": "D44A759A-F00C-4F91-B906-8D3AEA24B017",
+      "to_node_id": "67A66F14-1BFC-4ED2-B7CC-CA53F587487F",
+      "axis": "x",
+      "distance": 73.9999999999996,
+      "overlap_span": {
+        "start": 434.99999999999955,
+        "end": 447.96625088294644
+      }
+    },
+    {
+      "from_node_id": "D44A759A-F00C-4F91-B906-8D3AEA24B017",
+      "to_node_id": "D918BBDD-E8F9-4952-B1C0-818569C32B90",
+      "axis": "x",
+      "distance": 66.9999999999996,
+      "overlap_span": {
+        "start": 434.99999999999955,
+        "end": 447.96625088294644
+      }
+    },
+    {
+      "from_node_id": "D918BBDD-E8F9-4952-B1C0-818569C32B90",
+      "to_node_id": "B3B02A92-587E-4458-994E-449FD80C020F",
+      "axis": "y",
+      "distance": 234.0,
+      "overlap_span": {
+        "start": 281.0,
+        "end": 341.0
+      }
+    }
+  ],
+  "annotated": true,
+  "visual_source": "original_reference",
+  "original_reference_size": {
+    "width": 1500,
+    "height": 3248
+  },
+  "font_requirements": [
+    {
+      "family": "Source-KeynoteartHans-Regular",
+      "availability": "not_checked",
+      "source": "design",
+      "weights": [
+        400
+      ],
+      "node_count": 2,
+      "sample_node_ids": [
+        "A3FD2014-8642-473A-B0F5-4C17D694B015",
+        "D918BBDD-E8F9-4952-B1C0-818569C32B90"
+      ]
+    }
+  ],
+  "scale_metadata": {
+    "device": "iOS @1x",
+    "ArtboardScale": 2,
+    "sliceScale": 4,
+    "exportScale": 4
+  },
+  "source_gaps": [
+    {
+      "code": "logical_coordinate_conversion_unknown",
+      "message": "Source canvas units are preserved. Export density does not establish CSS pixel scale."
+    }
+  ],
+  "render_gaps": [],
+  "gaps": [
+    {
+      "code": "logical_coordinate_conversion_unknown",
+      "message": "Source canvas units are preserved. Export density does not establish CSS pixel scale."
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "11857F91-EAAB-4C0C-A518-9D0D2F73628B",
+      "source_id": "11857F91-EAAB-4C0C-A518-9D0D2F73628B",
+      "identity_source": "source_id",
+      "parent_id": "E79B48D4-D1DC-4040-888E-31EF52D08DB0",
+      "source_parent_id": "E79B48D4-D1DC-4040-888E-31EF52D08DB0",
+      "source_order": 28,
+      "name": "形状",
+      "node_type": "shape",
+      "bounds": {
+        "x": 172,
+        "y": 219.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      },
+      "source_bounds": {
+        "x": 172,
+        "y": 219.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "hasInferredLayout": 0,
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "shouldGrowSizeOfGroupForInferredLayout": 0,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 12.9662508829469,
+        "booleanOperation": 0,
+        "horizontalSizing": 3,
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0,
+          "isEnabled": true
+        },
+        "top": 219.99999999999955,
+        "hasFixedWidth": false,
+        "left": 172,
+        "groupBehavior": 0,
+        "ddsOriginFrame": {
+          "height": 12.9662508829469,
+          "x": 5087,
+          "y": 1062.9999999999995,
+          "width": 15.0000000000004
+        },
+        "ancestorsHaveInferredLayout": 0,
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "paddingSelection": 1,
+        "hasClippingMask": 0,
+        "rotation": 0,
+        "leftPadding": 0,
+        "rightPadding": 0,
+        "fills": [
+          {
+            "patternTileScale": 1,
+            "noiseIntensity": 0,
+            "type": "color",
+            "blendMode": 0,
+            "noiseIndex": 0,
+            "opacity": 1,
+            "color": {
+              "a": 1,
+              "b": 223,
+              "value": "rgba(250,239,223,1)",
+              "g": 239,
+              "r": 250
+            },
+            "patternFillType": 1,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "opacity": 100,
+        "hasFlexLayout": 0,
+        "startMarkerType": 0,
+        "topPadding": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 12.9662508829469,
+        "windingRule": 0,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "isRootFlexLayout": 0,
+        "miterLimit": 10,
+        "influenceWidth": 15.0000000000004,
+        "ancestorsOrSelfHaveInferredLayout": 0,
+        "layerOriginFrame": {
+          "height": 12.9662508829469,
+          "x": 172,
+          "y": 219.99999999999955,
+          "width": 15.0000000000004
+        },
+        "pointRadiusBehaviour": 0,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 3,
+        "hasFixedHeight": false,
+        "influenceLeft": 172,
+        "sharedStyleID": "",
+        "isCopy": false,
+        "verticalSizing": 3,
+        "width": 15.0000000000004,
+        "influenceTop": 219.99999999999955,
+        "bottomPadding": 0,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/28",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "A3FD2014-8642-473A-B0F5-4C17D694B015",
+      "source_id": "A3FD2014-8642-473A-B0F5-4C17D694B015",
+      "identity_source": "source_id",
+      "parent_id": "5635B6E7-37C1-4D57-989A-45A35D3D60E5",
+      "source_parent_id": "5635B6E7-37C1-4D57-989A-45A35D3D60E5",
+      "source_order": 30,
+      "name": "01",
+      "node_type": "text",
+      "bounds": {
+        "x": 291,
+        "y": 208,
+        "width": 60,
+        "height": 58
+      },
+      "source_bounds": {
+        "x": 291,
+        "y": 208,
+        "width": 60,
+        "height": 58
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "01",
+      "raw_style": {
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "isFlippedVertical": false,
+        "dontSynchroniseWithSymbol": false,
+        "isVisible": true,
+        "influenceHeight": 58,
+        "kerning": 0,
+        "top": 208,
+        "hasFixedWidth": false,
+        "left": 291,
+        "lineSpacingBehaviour": 3,
+        "automaticallyDrawOnUnderlyingPath": false,
+        "ddsOriginFrame": {
+          "height": 59,
+          "x": 5206,
+          "y": 1050,
+          "width": 60
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": 0,
+        "rotation": 0,
+        "isLocked": false,
+        "fills": [
+          {
+            "gradient": {
+              "colorStops": [
+                {
+                  "position": 0,
+                  "color": {
+                    "a": 1,
+                    "b": 213,
+                    "value": "rgba(248,234,213,1)",
+                    "g": 234,
+                    "r": 248
+                  }
+                },
+                {
+                  "position": 1,
+                  "color": {
+                    "a": 0.13,
+                    "b": 236,
+                    "value": "rgba(252,246,236,0.13)",
+                    "g": 246,
+                    "r": 252
+                  }
+                }
+              ],
+              "type": "linear",
+              "gradientType": 0,
+              "to": {
+                "x": 0.5,
+                "y": 0.8937367796897888
+              },
+              "elipseLength": 0,
+              "from": {
+                "x": 0.5,
+                "y": 0
+              }
+            },
+            "patternTileScale": 1,
+            "noiseIntensity": 0,
+            "type": "gradient",
+            "blendMode": 0,
+            "noiseIndex": 0,
+            "opacity": 1,
+            "patternFillType": 1,
+            "isEnabled": true,
+            "fillType": 1
+          }
+        ],
+        "opacity": 100,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 58,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "characterSpacing": 0,
+        "influenceWidth": 60,
+        "layerOriginFrame": {
+          "height": 59,
+          "x": 291,
+          "y": 207,
+          "width": 60
+        },
+        "textBehaviour": 0,
+        "shouldBreakMaskChain": false,
+        "index": 2,
+        "hasFixedHeight": false,
+        "influenceLeft": 291,
+        "sharedStyleID": "",
+        "font": {
+          "align": "right",
+          "kerning": 0,
+          "line": 59,
+          "size": 49,
+          "verticalAlignment": 0,
+          "styles": [
+            {
+              "fontWeight": 400,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 59,
+              "location": "0",
+              "minimumLineHeight": 0,
+              "length": "2",
+              "size": "49",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(34,36,42,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 2,
+              "maximumLineHeight": 0,
+              "displayName": "Source-KeynoteartHans",
+              "content": "01",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "spacing": "0",
+              "font": "Source-KeynoteartHans-Regular",
+              "decorationLine": "none",
+              "paragraphSpacingBefore": 0
+            }
+          ],
+          "color": {
+            "a": 1,
+            "b": 42,
+            "value": "rgba(34,36,42,1)",
+            "g": 36,
+            "r": 34,
+            "swatchName": "11"
+          },
+          "displayName": "Source-KeynoteartHans",
+          "content": "01",
+          "textAlignment": 2,
+          "spacing": 0,
+          "font": "Source-KeynoteartHans-Regular"
+        },
+        "width": 60,
+        "influenceTop": 208,
+        "ddsAdaptiveFrame": {
+          "top": 1050,
+          "left": 5206,
+          "height": 58,
+          "width": 60
+        },
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/30",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [
+          {
+            "start": 0,
+            "length": 2,
+            "offset_unit": "utf16",
+            "text": "01",
+            "source_pointer": "/info/30/font/styles/0",
+            "raw_style": {
+              "fontWeight": 400,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 59,
+              "location": "0",
+              "minimumLineHeight": 0,
+              "length": "2",
+              "size": "49",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(34,36,42,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 2,
+              "maximumLineHeight": 0,
+              "displayName": "Source-KeynoteartHans",
+              "content": "01",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "spacing": "0",
+              "font": "Source-KeynoteartHans-Regular",
+              "decorationLine": "none",
+              "paragraphSpacingBefore": 0
+            },
+            "font_family": "Source-KeynoteartHans-Regular",
+            "font_size": 49,
+            "font_weight": 400,
+            "color": "rgba(34,36,42,1.000000)",
+            "line_height": 59,
+            "letter_spacing": 0,
+            "source_fields": {
+              "font_family": "/info/30/font/styles/0/font",
+              "font_size": "/info/30/font/styles/0/size",
+              "font_weight": "/info/30/font/styles/0/fontWeight",
+              "line_height": "/info/30/font/styles/0/line",
+              "letter_spacing": "/info/30/font/styles/0/kern",
+              "paragraph_spacing": "/info/30/font/styles/0/paragraphSpacing",
+              "paragraph_spacing_before": "/info/30/font/styles/0/paragraphSpacingBefore",
+              "color": "/info/30/font/styles/0/color/value",
+              "alignment_code": "/info/30/font/styles/0/alignment",
+              "decoration_line": "/info/30/font/styles/0/decorationLine",
+              "display_name": "/info/30/font/styles/0/displayName"
+            },
+            "font_name_kind": "source_name",
+            "paragraph_spacing": 0,
+            "paragraph_spacing_before": 0,
+            "alignment_code": 2,
+            "decoration_line": "none",
+            "display_name": "Source-KeynoteartHans"
+          }
+        ],
+        "font_requirements": [
+          {
+            "family": "Source-KeynoteartHans-Regular",
+            "name_kind": "source_name",
+            "source": "design",
+            "availability": "not_checked",
+            "source_pointers": [
+              "/info/30/font",
+              "/info/30/font/styles/0"
+            ],
+            "weights": [
+              400
+            ]
+          }
+        ],
+        "gaps": [],
+        "raw_font": {
+          "align": "right",
+          "kerning": 0,
+          "line": 59,
+          "size": 49,
+          "verticalAlignment": 0,
+          "styles": [
+            {
+              "fontWeight": 400,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 59,
+              "location": "0",
+              "minimumLineHeight": 0,
+              "length": "2",
+              "size": "49",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(34,36,42,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 2,
+              "maximumLineHeight": 0,
+              "displayName": "Source-KeynoteartHans",
+              "content": "01",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "spacing": "0",
+              "font": "Source-KeynoteartHans-Regular",
+              "decorationLine": "none",
+              "paragraphSpacingBefore": 0
+            }
+          ],
+          "color": {
+            "a": 1,
+            "b": 42,
+            "value": "rgba(34,36,42,1)",
+            "g": 36,
+            "r": 34,
+            "swatchName": "11"
+          },
+          "displayName": "Source-KeynoteartHans",
+          "content": "01",
+          "textAlignment": 2,
+          "spacing": 0,
+          "font": "Source-KeynoteartHans-Regular"
+        },
+        "base_style": {
+          "font_family": "Source-KeynoteartHans-Regular",
+          "font_size": 49,
+          "font_weight": null,
+          "color": "rgba(34,36,42,1)",
+          "line_height": 59,
+          "letter_spacing": 0,
+          "source_fields": {
+            "font_family": "/info/30/font/font",
+            "font_size": "/info/30/font/size",
+            "line_height": "/info/30/font/line",
+            "letter_spacing": "/info/30/font/kerning",
+            "color": "/info/30/font/color/value",
+            "text_align": "/info/30/font/align",
+            "display_name": "/info/30/font/displayName"
+          },
+          "font_name_kind": "source_name",
+          "text_align": "right",
+          "display_name": "Source-KeynoteartHans",
+          "source_pointer": "/info/30/font"
+        },
+        "text_length_utf16": 2
+      }
+    },
+    {
+      "node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "source_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "identity_source": "source_id",
+      "parent_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "source_parent_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "source_order": 33,
+      "name": "蒙版",
+      "node_type": "shape",
+      "bounds": {
+        "x": 16,
+        "y": 424,
+        "width": 343,
+        "height": 266
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 424,
+        "width": 343,
+        "height": 266
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "radius": [
+          14
+        ],
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "edited": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 266,
+        "booleanOperation": -1,
+        "points": [
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 0
+            },
+            "cornerRadius": 14,
+            "point": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 1,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 1,
+              "y": 0
+            },
+            "cornerRadius": 14,
+            "point": {
+              "x": 1,
+              "y": 0
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 1,
+              "y": 1
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 1,
+              "y": 1
+            },
+            "cornerRadius": 14,
+            "point": {
+              "x": 1,
+              "y": 1
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 1
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 1
+            },
+            "cornerRadius": 14,
+            "point": {
+              "x": 0,
+              "y": 1
+            }
+          }
+        ],
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0,
+          "isEnabled": true
+        },
+        "top": 424,
+        "hasFixedWidth": false,
+        "left": 16,
+        "ddsOriginFrame": {
+          "height": 266,
+          "x": 4931,
+          "y": 1267,
+          "width": 343
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": 1,
+        "rotation": 0,
+        "isLocked": false,
+        "fills": [
+          {
+            "gradient": {
+              "colorStops": [
+                {
+                  "position": 0,
+                  "color": {
+                    "a": 1,
+                    "b": 26,
+                    "value": "rgba(28,28,26,1)",
+                    "g": 28,
+                    "r": 28
+                  }
+                },
+                {
+                  "position": 1,
+                  "color": {
+                    "a": 1,
+                    "b": 123,
+                    "value": "rgba(232,193,123,1)",
+                    "g": 193,
+                    "r": 232
+                  }
+                }
+              ],
+              "type": "linear",
+              "gradientType": 0,
+              "to": {
+                "x": 0.48013848066329956,
+                "y": 1
+              },
+              "elipseLength": 0,
+              "from": {
+                "x": 0.5,
+                "y": 0
+              }
+            },
+            "patternTileScale": 1,
+            "noiseIntensity": 0,
+            "type": "gradient",
+            "blendMode": 0,
+            "noiseIndex": 0,
+            "opacity": 1,
+            "patternFillType": 1,
+            "isEnabled": true,
+            "fillType": 1
+          }
+        ],
+        "opacity": 100,
+        "startMarkerType": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 266,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 343,
+        "layerOriginFrame": {
+          "height": 266,
+          "x": 16,
+          "y": 424,
+          "width": 343
+        },
+        "isClosed": true,
+        "borders": [
+          {
+            "position": "内边框",
+            "type": "color",
+            "blendMode": 0,
+            "opacity": 1,
+            "color": {
+              "a": 1,
+              "b": 250,
+              "value": "rgba(255,250,250,1)",
+              "g": 250,
+              "r": 255
+            },
+            "thickness": 1,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "pointRadiusBehaviour": 1,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 1,
+        "hasFixedHeight": false,
+        "influenceLeft": 16,
+        "sharedStyleID": "",
+        "shadow": [
+          {
+            "blurRadius": 12,
+            "offsetX": 0,
+            "offsetY": 5,
+            "type": "外阴影",
+            "blendMode": 0,
+            "opacity": 1,
+            "color": {
+              "a": 0.15,
+              "b": 90,
+              "value": "rgba(221,170,90,0.15)",
+              "g": 170,
+              "r": 221
+            },
+            "isEnabled": true,
+            "spread": 0
+          }
+        ],
+        "width": 343,
+        "influenceTop": 424,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/33",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "D44A759A-F00C-4F91-B906-8D3AEA24B017",
+      "source_id": "D44A759A-F00C-4F91-B906-8D3AEA24B017",
+      "identity_source": "source_id",
+      "parent_id": "017FFDCA-5C07-433E-90E7-9EF90D666FE0",
+      "source_parent_id": "017FFDCA-5C07-433E-90E7-9EF90D666FE0",
+      "source_order": 34,
+      "name": "形状",
+      "node_type": "shape",
+      "bounds": {
+        "x": 199,
+        "y": 434.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      },
+      "source_bounds": {
+        "x": 199,
+        "y": 434.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "hasInferredLayout": 0,
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "shouldGrowSizeOfGroupForInferredLayout": 0,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 12.9662508829469,
+        "booleanOperation": 0,
+        "horizontalSizing": 3,
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0,
+          "isEnabled": true
+        },
+        "top": 434.99999999999955,
+        "hasFixedWidth": false,
+        "left": 199,
+        "groupBehavior": 0,
+        "ddsOriginFrame": {
+          "height": 12.9662508829469,
+          "x": 5114,
+          "y": 1277.9999999999995,
+          "width": 15.0000000000004
+        },
+        "ancestorsHaveInferredLayout": 0,
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "paddingSelection": 1,
+        "hasClippingMask": 0,
+        "rotation": 0,
+        "leftPadding": 0,
+        "rightPadding": 0,
+        "fills": [
+          {
+            "patternTileScale": 1,
+            "noiseIntensity": 0,
+            "type": "color",
+            "blendMode": 0,
+            "noiseIndex": 0,
+            "opacity": 1,
+            "color": {
+              "a": 1,
+              "b": 123,
+              "value": "rgba(232,199,123,1)",
+              "g": 199,
+              "r": 232,
+              "swatchName": "E8C77B"
+            },
+            "patternFillType": 1,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "opacity": 100,
+        "hasFlexLayout": 0,
+        "startMarkerType": 0,
+        "topPadding": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 12.9662508829469,
+        "windingRule": 0,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "isRootFlexLayout": 0,
+        "miterLimit": 10,
+        "influenceWidth": 15.0000000000004,
+        "ancestorsOrSelfHaveInferredLayout": 0,
+        "layerOriginFrame": {
+          "height": 12.9662508829469,
+          "x": 199,
+          "y": 434.99999999999955,
+          "width": 15.0000000000004
+        },
+        "pointRadiusBehaviour": 0,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 2,
+        "hasFixedHeight": false,
+        "influenceLeft": 199,
+        "sharedStyleID": "",
+        "isCopy": false,
+        "verticalSizing": 3,
+        "width": 15.0000000000004,
+        "influenceTop": 434.99999999999955,
+        "bottomPadding": 0,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/34",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "67A66F14-1BFC-4ED2-B7CC-CA53F587487F",
+      "source_id": "67A66F14-1BFC-4ED2-B7CC-CA53F587487F",
+      "identity_source": "source_id",
+      "parent_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "source_parent_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "source_order": 36,
+      "name": "位图",
+      "node_type": "bitmap",
+      "bounds": {
+        "x": 288,
+        "y": 424,
+        "width": 71,
+        "height": 67
+      },
+      "source_bounds": {
+        "x": 288,
+        "y": 424,
+        "width": 71,
+        "height": 67
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 67,
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0,
+          "isEnabled": true
+        },
+        "top": 424,
+        "hasFixedWidth": false,
+        "left": 288,
+        "ddsOriginFrame": {
+          "height": 105,
+          "x": 5203,
+          "y": 1229,
+          "width": 105
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": 0,
+        "rotation": 0,
+        "opacity": 100,
+        "startMarkerType": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 67,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 71,
+        "layerOriginFrame": {
+          "height": 105,
+          "x": 288,
+          "y": 386,
+          "width": 105
+        },
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 1,
+        "hasFixedHeight": false,
+        "influenceLeft": 288,
+        "sharedStyleID": "",
+        "width": 71,
+        "influenceTop": 424,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/36",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "D918BBDD-E8F9-4952-B1C0-818569C32B90",
+      "source_id": "D918BBDD-E8F9-4952-B1C0-818569C32B90",
+      "identity_source": "source_id",
+      "parent_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "source_parent_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "source_order": 37,
+      "name": "02",
+      "node_type": "text",
+      "bounds": {
+        "x": 281,
+        "y": 424,
+        "width": 60,
+        "height": 56
+      },
+      "source_bounds": {
+        "x": 281,
+        "y": 424,
+        "width": 60,
+        "height": 56
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "02",
+      "raw_style": {
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "isFlippedVertical": false,
+        "dontSynchroniseWithSymbol": false,
+        "isVisible": true,
+        "influenceHeight": 56,
+        "kerning": 0,
+        "top": 424,
+        "hasFixedWidth": false,
+        "left": 281,
+        "lineSpacingBehaviour": 3,
+        "automaticallyDrawOnUnderlyingPath": false,
+        "ddsOriginFrame": {
+          "height": 59,
+          "x": 5196,
+          "y": 1264,
+          "width": 60
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": 0,
+        "rotation": 0,
+        "isLocked": false,
+        "fills": [
+          {
+            "gradient": {
+              "colorStops": [
+                {
+                  "position": 0,
+                  "color": {
+                    "a": 1,
+                    "b": 116,
+                    "value": "rgba(242,194,116,1)",
+                    "g": 194,
+                    "r": 242
+                  }
+                },
+                {
+                  "position": 1,
+                  "color": {
+                    "a": 0.13,
+                    "b": 139,
+                    "value": "rgba(255,211,139,0.13)",
+                    "g": 211,
+                    "r": 255
+                  }
+                }
+              ],
+              "type": "linear",
+              "gradientType": 0,
+              "to": {
+                "x": 0.5,
+                "y": 0.8937367796897888
+              },
+              "elipseLength": 0,
+              "from": {
+                "x": 0.5,
+                "y": 0
+              }
+            },
+            "patternTileScale": 1,
+            "noiseIntensity": 0,
+            "type": "gradient",
+            "blendMode": 0,
+            "noiseIndex": 0,
+            "opacity": 1,
+            "patternFillType": 1,
+            "isEnabled": true,
+            "fillType": 1
+          }
+        ],
+        "opacity": 35,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 56,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "characterSpacing": 0,
+        "influenceWidth": 60,
+        "layerOriginFrame": {
+          "height": 59,
+          "x": 281,
+          "y": 421,
+          "width": 60
+        },
+        "textBehaviour": 0,
+        "shouldBreakMaskChain": false,
+        "index": 1,
+        "hasFixedHeight": false,
+        "influenceLeft": 281,
+        "sharedStyleID": "",
+        "font": {
+          "align": "right",
+          "kerning": 0,
+          "line": 59,
+          "size": 49,
+          "verticalAlignment": 0,
+          "styles": [
+            {
+              "fontWeight": 400,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 59,
+              "location": "0",
+              "minimumLineHeight": 0,
+              "length": "2",
+              "size": "49",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(242,194,116,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 2,
+              "maximumLineHeight": 0,
+              "displayName": "Source-KeynoteartHans",
+              "content": "02",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "spacing": "0",
+              "font": "Source-KeynoteartHans-Regular",
+              "decorationLine": "none",
+              "paragraphSpacingBefore": 0
+            }
+          ],
+          "color": {
+            "a": 1,
+            "b": 116,
+            "value": "rgba(242,194,116,1)",
+            "g": 194,
+            "r": 242
+          },
+          "displayName": "Source-KeynoteartHans",
+          "content": "02",
+          "textAlignment": 2,
+          "spacing": 0,
+          "font": "Source-KeynoteartHans-Regular"
+        },
+        "width": 60,
+        "influenceTop": 424,
+        "ddsAdaptiveFrame": {
+          "top": 1264,
+          "left": 5196,
+          "height": 56,
+          "width": 60
+        },
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/37",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [
+          {
+            "start": 0,
+            "length": 2,
+            "offset_unit": "utf16",
+            "text": "02",
+            "source_pointer": "/info/37/font/styles/0",
+            "raw_style": {
+              "fontWeight": 400,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 59,
+              "location": "0",
+              "minimumLineHeight": 0,
+              "length": "2",
+              "size": "49",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(242,194,116,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 2,
+              "maximumLineHeight": 0,
+              "displayName": "Source-KeynoteartHans",
+              "content": "02",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "spacing": "0",
+              "font": "Source-KeynoteartHans-Regular",
+              "decorationLine": "none",
+              "paragraphSpacingBefore": 0
+            },
+            "font_family": "Source-KeynoteartHans-Regular",
+            "font_size": 49,
+            "font_weight": 400,
+            "color": "rgba(242,194,116,1.000000)",
+            "line_height": 59,
+            "letter_spacing": 0,
+            "source_fields": {
+              "font_family": "/info/37/font/styles/0/font",
+              "font_size": "/info/37/font/styles/0/size",
+              "font_weight": "/info/37/font/styles/0/fontWeight",
+              "line_height": "/info/37/font/styles/0/line",
+              "letter_spacing": "/info/37/font/styles/0/kern",
+              "paragraph_spacing": "/info/37/font/styles/0/paragraphSpacing",
+              "paragraph_spacing_before": "/info/37/font/styles/0/paragraphSpacingBefore",
+              "color": "/info/37/font/styles/0/color/value",
+              "alignment_code": "/info/37/font/styles/0/alignment",
+              "decoration_line": "/info/37/font/styles/0/decorationLine",
+              "display_name": "/info/37/font/styles/0/displayName"
+            },
+            "font_name_kind": "source_name",
+            "paragraph_spacing": 0,
+            "paragraph_spacing_before": 0,
+            "alignment_code": 2,
+            "decoration_line": "none",
+            "display_name": "Source-KeynoteartHans"
+          }
+        ],
+        "font_requirements": [
+          {
+            "family": "Source-KeynoteartHans-Regular",
+            "name_kind": "source_name",
+            "source": "design",
+            "availability": "not_checked",
+            "source_pointers": [
+              "/info/37/font",
+              "/info/37/font/styles/0"
+            ],
+            "weights": [
+              400
+            ]
+          }
+        ],
+        "gaps": [],
+        "raw_font": {
+          "align": "right",
+          "kerning": 0,
+          "line": 59,
+          "size": 49,
+          "verticalAlignment": 0,
+          "styles": [
+            {
+              "fontWeight": 400,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 59,
+              "location": "0",
+              "minimumLineHeight": 0,
+              "length": "2",
+              "size": "49",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(242,194,116,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 2,
+              "maximumLineHeight": 0,
+              "displayName": "Source-KeynoteartHans",
+              "content": "02",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "spacing": "0",
+              "font": "Source-KeynoteartHans-Regular",
+              "decorationLine": "none",
+              "paragraphSpacingBefore": 0
+            }
+          ],
+          "color": {
+            "a": 1,
+            "b": 116,
+            "value": "rgba(242,194,116,1)",
+            "g": 194,
+            "r": 242
+          },
+          "displayName": "Source-KeynoteartHans",
+          "content": "02",
+          "textAlignment": 2,
+          "spacing": 0,
+          "font": "Source-KeynoteartHans-Regular"
+        },
+        "base_style": {
+          "font_family": "Source-KeynoteartHans-Regular",
+          "font_size": 49,
+          "font_weight": null,
+          "color": "rgba(242,194,116,1)",
+          "line_height": 59,
+          "letter_spacing": 0,
+          "source_fields": {
+            "font_family": "/info/37/font/font",
+            "font_size": "/info/37/font/size",
+            "line_height": "/info/37/font/line",
+            "letter_spacing": "/info/37/font/kerning",
+            "color": "/info/37/font/color/value",
+            "text_align": "/info/37/font/align",
+            "display_name": "/info/37/font/displayName"
+          },
+          "font_name_kind": "source_name",
+          "text_align": "right",
+          "display_name": "Source-KeynoteartHans",
+          "source_pointer": "/info/37/font"
+        },
+        "text_length_utf16": 2
+      }
+    },
+    {
+      "node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+      "source_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+      "identity_source": "source_id",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_order": 39,
+      "name": "矩形备份 6",
+      "node_type": "shape",
+      "bounds": {
+        "x": 26,
+        "y": 471,
+        "width": 325,
+        "height": 210
+      },
+      "source_bounds": {
+        "x": 26,
+        "y": 471,
+        "width": 325,
+        "height": 210
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "radius": [
+          12
+        ],
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "edited": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 210,
+        "booleanOperation": -1,
+        "points": [
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 0
+            },
+            "cornerRadius": 12,
+            "point": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 1,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 1,
+              "y": 0
+            },
+            "cornerRadius": 12,
+            "point": {
+              "x": 1,
+              "y": 0
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 1,
+              "y": 1
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 1,
+              "y": 1
+            },
+            "cornerRadius": 12,
+            "point": {
+              "x": 1,
+              "y": 1
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 1
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 1
+            },
+            "cornerRadius": 12,
+            "point": {
+              "x": 0,
+              "y": 1
+            }
+          }
+        ],
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0,
+          "isEnabled": true
+        },
+        "top": 471,
+        "hasFixedWidth": false,
+        "left": 26,
+        "ddsOriginFrame": {
+          "height": 210,
+          "x": 4941,
+          "y": 1314,
+          "width": 325
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": 0,
+        "rotation": 0,
+        "isLocked": false,
+        "fills": [
+          {
+            "gradient": {
+              "colorStops": [
+                {
+                  "position": 0,
+                  "color": {
+                    "a": 1,
+                    "b": 255,
+                    "value": "rgba(255,255,255,1)",
+                    "g": 255,
+                    "r": 255
+                  }
+                },
+                {
+                  "position": 1,
+                  "color": {
+                    "a": 1,
+                    "b": 247,
+                    "value": "rgba(255,252,247,1)",
+                    "g": 252,
+                    "r": 255
+                  }
+                }
+              ],
+              "type": "linear",
+              "gradientType": 0,
+              "to": {
+                "x": 0.5,
+                "y": 1
+              },
+              "elipseLength": 0,
+              "from": {
+                "x": 0.5,
+                "y": 0
+              }
+            },
+            "patternTileScale": 1,
+            "noiseIntensity": 0,
+            "type": "gradient",
+            "blendMode": 0,
+            "noiseIndex": 0,
+            "opacity": 1,
+            "patternFillType": 1,
+            "isEnabled": true,
+            "fillType": 1
+          }
+        ],
+        "opacity": 100,
+        "startMarkerType": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 210,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 325,
+        "layerOriginFrame": {
+          "height": 210,
+          "x": 26,
+          "y": 471,
+          "width": 325
+        },
+        "isClosed": true,
+        "pointRadiusBehaviour": 1,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 0,
+        "hasFixedHeight": false,
+        "influenceLeft": 26,
+        "sharedStyleID": "",
+        "shadow": [
+          {
+            "blurRadius": 12,
+            "offsetX": 0,
+            "offsetY": 5,
+            "type": "外阴影",
+            "blendMode": 0,
+            "opacity": 1,
+            "color": {
+              "a": 0.1,
+              "b": 90,
+              "value": "rgba(221,170,90,0.1)",
+              "g": 170,
+              "r": 221
+            },
+            "isEnabled": true,
+            "spread": 0
+          }
+        ],
+        "width": 325,
+        "influenceTop": 471,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/39",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "B3B02A92-587E-4458-994E-449FD80C020F",
+      "source_id": "B3B02A92-587E-4458-994E-449FD80C020F",
+      "identity_source": "source_id",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_order": 67,
+      "name": "矩形",
+      "node_type": "shape",
+      "bounds": {
+        "x": 16,
+        "y": 714,
+        "width": 343,
+        "height": 50
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 714,
+        "width": 343,
+        "height": 50
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "radius": [
+          25
+        ],
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "edited": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 50,
+        "booleanOperation": -1,
+        "points": [
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 0
+            },
+            "cornerRadius": 25,
+            "point": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 1,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 1,
+              "y": 0
+            },
+            "cornerRadius": 25,
+            "point": {
+              "x": 1,
+              "y": 0
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 1,
+              "y": 1
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 1,
+              "y": 1
+            },
+            "cornerRadius": 25,
+            "point": {
+              "x": 1,
+              "y": 1
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 1
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 1
+            },
+            "cornerRadius": 25,
+            "point": {
+              "x": 0,
+              "y": 1
+            }
+          }
+        ],
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0,
+          "isEnabled": true
+        },
+        "top": 714,
+        "hasFixedWidth": false,
+        "left": 16,
+        "ddsOriginFrame": {
+          "height": 50,
+          "x": 4931,
+          "y": 1557,
+          "width": 343
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": 0,
+        "rotation": 0,
+        "isLocked": false,
+        "fills": [
+          {
+            "gradient": {
+              "colorStops": [
+                {
+                  "position": 0.0006282779720279722,
+                  "color": {
+                    "a": 1,
+                    "b": 34,
+                    "value": "rgba(55,45,34,1)",
+                    "g": 45,
+                    "r": 55
+                  }
+                },
+                {
+                  "position": 1,
+                  "color": {
+                    "a": 1,
+                    "b": 17,
+                    "value": "rgba(17,17,17,1)",
+                    "g": 17,
+                    "r": 17
+                  }
+                }
+              ],
+              "type": "linear",
+              "gradientType": 0,
+              "to": {
+                "x": 2.688821387764051e-16,
+                "y": 0.5
+              },
+              "elipseLength": 1,
+              "from": {
+                "x": 1,
+                "y": 0.5
+              }
+            },
+            "patternTileScale": 1,
+            "noiseIntensity": 0,
+            "type": "gradient",
+            "blendMode": 0,
+            "noiseIndex": 0,
+            "opacity": 1,
+            "patternFillType": 1,
+            "isEnabled": true,
+            "fillType": 1
+          }
+        ],
+        "opacity": 100,
+        "startMarkerType": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 50,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 343,
+        "layerOriginFrame": {
+          "height": 50,
+          "x": 16,
+          "y": 714,
+          "width": 343
+        },
+        "isClosed": true,
+        "borders": [
+          {
+            "position": "内边框",
+            "type": "color",
+            "blendMode": 0,
+            "opacity": 1,
+            "color": {
+              "a": 0.4,
+              "b": 74,
+              "value": "rgba(214,164,74,0.4)",
+              "g": 164,
+              "r": 214
+            },
+            "thickness": 1,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "pointRadiusBehaviour": 1,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 0,
+        "hasFixedHeight": false,
+        "influenceLeft": 16,
+        "sharedStyleID": "",
+        "shadow": [
+          {
+            "blurRadius": 14,
+            "offsetX": 0,
+            "offsetY": 8,
+            "type": "外阴影",
+            "blendMode": 0,
+            "opacity": 1,
+            "color": {
+              "a": 0.1,
+              "b": 74,
+              "value": "rgba(214,164,74,0.1)",
+              "g": 164,
+              "r": 214
+            },
+            "isEnabled": true,
+            "spread": 0
+          }
+        ],
+        "width": 343,
+        "influenceTop": 714,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/67",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    }
+  ],
+  "ancestors": [
+    {
+      "node_id": "E79B48D4-D1DC-4040-888E-31EF52D08DB0",
+      "parent_id": "5635B6E7-37C1-4D57-989A-45A35D3D60E5",
+      "name": "引号",
+      "bounds": {
+        "x": 172,
+        "y": 219.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      }
+    },
+    {
+      "node_id": "5635B6E7-37C1-4D57-989A-45A35D3D60E5",
+      "parent_id": "FBAD45FA-3661-48CD-A7DC-5B858AD7FF6A",
+      "name": "引号 + 01蒙版",
+      "bounds": {
+        "x": 15,
+        "y": 208,
+        "width": 343,
+        "height": 208
+      }
+    },
+    {
+      "node_id": "FBAD45FA-3661-48CD-A7DC-5B858AD7FF6A",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "name": "编组 10",
+      "bounds": {
+        "x": 15,
+        "y": 208,
+        "width": 343,
+        "height": 208
+      }
+    },
+    {
+      "node_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "parent_id": null,
+      "name": "平台介绍页",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      }
+    },
+    {
+      "node_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "name": "位图",
+      "bounds": {
+        "x": 16,
+        "y": 424,
+        "width": 343,
+        "height": 266
+      }
+    },
+    {
+      "node_id": "017FFDCA-5C07-433E-90E7-9EF90D666FE0",
+      "parent_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "name": "引号备份",
+      "bounds": {
+        "x": 199,
+        "y": 434.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      }
+    }
+  ],
+  "dds_layout_suggestions": [
+    {
+      "node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "source": "dds_derived_layout",
+      "style": {
+        "boxShadow": "0px 5px 12px 0px rgba(221,170,90,0.150000)",
+        "backgroundImage": "linear-gradient(182deg, rgba(28,28,26,1.000000) 0, rgba(232,193,123,1.000000) 100.000000%)",
+        "borderRadius": "14px",
+        "position": "relative",
+        "width": 343,
+        "border": "1px solid rgba(255,250,250,1)",
+        "overflow": "hidden",
+        "flexDirection": "row",
+        "display": "flex",
+        "justifyContent": "space-between",
+        "padding": "8px 144px 222px 9px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "D44A759A-F00C-4F91-B906-8D3AEA24B017",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundColor": "rgba(232,199,123,1.000000)",
+        "width": 15,
+        "flexDirection": "row",
+        "display": "flex",
+        "justifyContent": "space-between",
+        "margin": "2px 0 19px 0"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "67A66F14-1BFC-4ED2-B7CC-CA53F587487F",
+      "source": "dds_derived_layout",
+      "style": {
+        "position": "absolute",
+        "left": 272,
+        "top": -38,
+        "width": 105,
+        "height": 105,
+        "display": "flex",
+        "flexDirection": "column"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+      "source": "dds_derived_layout",
+      "style": {
+        "boxShadow": "0px 5px 12px 0px rgba(221,170,90,0.100000)",
+        "backgroundImage": "linear-gradient(180deg, rgba(255,255,255,1.000000) 0, rgba(255,252,247,1.000000) 100.000000%)",
+        "borderRadius": "12px",
+        "position": "absolute",
+        "left": 10,
+        "top": 47,
+        "width": 325,
+        "height": 210,
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "15px 5px 13px 4px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "B3B02A92-587E-4458-994E-449FD80C020F",
+      "source": "dds_derived_layout",
+      "style": {
+        "boxShadow": "0px 8px 14px 0px rgba(214,164,74,0.100000)",
+        "backgroundImage": "linear-gradient(270deg, rgba(55,45,34,1.000000) 0.062828%, rgba(17,17,17,1.000000) 100.000000%)",
+        "borderRadius": "25px",
+        "border": "1px solid rgba(214,164,74,0.4)",
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "14px 140px 13px 141px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "11857F91-EAAB-4C0C-A518-9D0D2F73628B",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundColor": "rgba(250,239,223,1.000000)",
+        "width": 15,
+        "flexDirection": "row",
+        "display": "flex",
+        "justifyContent": "space-between",
+        "margin": "2px 0 19px 0"
+      },
+      "value": ""
+    }
+  ],
+  "assets": [],
+  "total": 8,
+  "returned": 8,
+  "next_offset": null,
+  "truncated": false,
+  "preview_resource": "lanhu://design/da6dd92db9b6df7fc3fc4d2bc873e0ee/preview/911cfb44fdc54ecb1c0914584b117b94",
+  "reference_crop_resource": "lanhu://design/da6dd92db9b6df7fc3fc4d2bc873e0ee/preview/94a4f747cd01f334865a158505d453a9",
+  "image_order": [
+    "clean_reference",
+    "node_overlay"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "case": "message-backup-45",
+  "turn_id": "01a13417-3d3c-7693-8be3-b9ad5307d6a4",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "source_rollout": "/Users/tan/.codex/sessions/2026/10/10/rollout-2026-10-10T10-25-45-01a123a1-7160-7110-93b9-b06c151dea06.jsonl",
+  "measurement_method": "Exact turn usage, deduplicated by response_id. Wall time from task_started to final assistant message. Tool time is union of top-level tool call/output intervals; includes orchestration overhead, excludes any background work outside those intervals. Phase boundaries rounded to source events; phase labels do not imply exclusive CPU task attribution.",
+  "started_at": "2026-10-13T07:08:20.674Z",
+  "final_response_at": "2026-10-13T07:36:05.833Z",
+  "end_to_end_seconds": 1665.159,
+  "tool_round_trips": 107,
+  "tool_interval_seconds": 94.364,
+  "outside_tool_intervals_seconds": 1570.795,
+  "outside_tool_intervals_fraction": 0.9433,
+  "model_responses": 109,
+  "context_compactions": [
+    "2026-10-13T07:21:57.492Z"
+  ],
+  "usage": {
+    "input_tokens": 17640635,
+    "cached_input_tokens": 17236992,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 53389,
+    "reasoning_output_tokens": 13851,
+    "total_tokens": 17694024
+  },
+  "uncached_input_tokens": 403643,
+  "reasoning_already_in_output_tokens": true,
+  "phases": [
+    {
+      "from": "request",
+      "to": "source-ready",
+      "seconds": 298.306,
+      "tool_round_trips": 27
+    },
+    {
+      "from": "source-ready",
+      "to": "initial-implementation-written",
+      "seconds": 206.02,
+      "tool_round_trips": 8
+    },
+    {
+      "from": "initial-implementation-written",
+      "to": "r1-gate",
+      "seconds": 658.0,
+      "tool_round_trips": 40
+    },
+    {
+      "from": "r1-gate",
+      "to": "final-gate",
+      "seconds": 373.0,
+      "tool_round_trips": 25
+    },
+    {
+      "from": "final-gate",
+      "to": "final-response",
+      "seconds": 129.833,
+      "tool_round_trips": 7
+    }
+  ],
+  "findings": [
+    "107 serial tool boundaries dominate iteration overhead; top-level tool intervals account for only about 6% of wall time.",
+    "Existing font and image bootstrap requirements were not enforced before initial render.",
+    "Node layout bounds were used where original asset export bounds were required; export size data was already present in MCP evidence.",
+    "Contract initialization leaves all node decisions pending; a new 215-line page-specific preparation script was authored.",
+    "78 of 106 covered inventory entries refer only to whole-page region metrics; coverage count is not equivalent to independent visual assurance.",
+    "R2 automated acceptance missed missing-glyph boxes because text detector checked position and size only.",
+    "Previous runtime log incorrectly stated token telemetry unavailable."
+  ]
+}

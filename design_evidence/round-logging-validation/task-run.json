@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "task_id": "1474f455-5c15-46cf-8378-ef3c0d86da79",
+  "identity": {
+    "name": "1备份 45",
+    "snapshot": "4c1aaffb700882fdac4b8c53752b2b88",
+    "version": "2d5f61f5-e46d-4412-9f7b-98359416f994",
+    "canvas": [
+      375,
+      812
+    ]
+  },
+  "created_at": "2026-10-13T08:35:53+00:00",
+  "rounds": [
+    {
+      "round_number": 1,
+      "fingerprint": "dd68f952c76bc2c0bcff957ce8f6050d571113c2b25fc8bafae1a554e604d645",
+      "contract_sha256": "3f5df4af3ffcc2cbba7bda2fe60bd4d81bbc6517d6fa6563de170ccbde3ea252",
+      "contract_changed": false,
+      "attempts": [
+        {
+          "attempt_id": "6893278f-8de7-489c-b575-f184966e951a",
+          "attempt_number": 1,
+          "started_at": "2026-10-13T08:35:53+00:00",
+          "status": "PASS",
+          "note": "日志功能接入验证：回放已完成的1备份45，检查真实轮次、失败项和耗时记录；此记录不代表该页面从零实现仅用一轮。",
+          "pid": 9111,
+          "run_report": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/round-logging-validation/replay/run.json",
+          "seconds": 2.929,
+          "gate_status": "PASS_WITH_EXCLUSIONS",
+          "failures": [],
+          "stages": [
+            {
+              "name": "preflight",
+              "seconds": 0.11,
+              "exit_code": 0
+            },
+            {
+              "name": "render",
+              "seconds": 2.083,
+              "exit_code": 0
+            },
+            {
+              "name": "gate",
+              "seconds": 0.729,
+              "exit_code": 0
+            }
+          ],
+          "metrics": {
+            "whole": {
+              "compared_pixels": 4688224,
+              "total_pixels": 4872000,
+              "mae": 1.676,
+              "p95_max_channel": 5.0
+            },
+            "header": {
+              "compared_pixels": 711600,
+              "total_pixels": 726000,
+              "mae": 4.1302,
+              "p95_max_channel": 11.0
+            },
+            "conversation": {
+              "compared_pixels": 3136624,
+              "total_pixels": 3306000,
+              "mae": 0.4622,
+              "p95_max_channel": 1.0
+            },
+            "composer": {
+              "compared_pixels": 840000,
+              "total_pixels": 840000,
+              "mae": 4.1292,
+              "p95_max_channel": 5.0
+            }
+          },
+          "finished_at": "2026-10-13T08:35:56+00:00"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "rounds": 1,
+    "target_rounds": [
+      2,
+      3
+    ],
+    "validation_attempts": 1,
+    "repeat_attempts": 0,
+    "over_target": false,
+    "total_validation_seconds": 2.929,
+    "latest_status": "PASS",
+    "tool_call_count": null,
+    "timing_scope": "Validation execution only; excludes work before first validation and model editing time",
+    "count_scope": "Tracked render/validation attempts only; not all model/tool calls or visual reviews"
+  }
+}

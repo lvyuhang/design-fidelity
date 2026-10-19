@@ -1,0 +1,85 @@
+{
+  "status": "NOT_ACCEPTED",
+  "scope": "validation of supplied implementation; not end-to-end development time",
+  "started_unix": 1791887506.672735,
+  "stages": [
+    {
+      "name": "preflight",
+      "seconds": 0.048,
+      "exit_code": 0
+    },
+    {
+      "name": "render",
+      "seconds": 1.435,
+      "exit_code": 0
+    },
+    {
+      "name": "gate",
+      "seconds": 0.183,
+      "exit_code": 1
+    }
+  ],
+  "gate_status": "FAIL",
+  "iteration": {
+    "task_id": "bd41c267-4d2f-439e-8f10-2543669a3c5a",
+    "round_number": 2,
+    "attempt_number": 1,
+    "attempt_id": "b15cd1ac-39d9-4d6f-92d7-fea577ddd24e",
+    "target_rounds": [
+      2,
+      3
+    ],
+    "over_target": false,
+    "baseline_differences": [],
+    "revision_kind": "implementation",
+    "log": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/session/task-run.json",
+    "html": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/session/task-run.html"
+  },
+  "preflight": {
+    "status": "READY_FOR_RENDER",
+    "coverage": {
+      "effect_obligations": 0,
+      "implementation_decisions": 4,
+      "unaccounted_visible_nodes": 0,
+      "nodes": 4,
+      "covered": 4,
+      "exceptions": []
+    },
+    "fonts": {
+      "text_nodes_checked": 0
+    },
+    "asset_count": 1,
+    "style_gaps": [],
+    "scope": "input integrity and font coverage; source-style completeness is separate; not visual acceptance"
+  },
+  "render_sha256": "471884c7c25ea07ad04fc88527a9882ccdab82b4ad4ba248805ea4464b1b4a65",
+  "failures": [
+    {
+      "check": "features.icon",
+      "label": "icon",
+      "failures": [
+        "center_y_delta=4.00px > 1.00px",
+        "max_edge_delta=4.00px > 2.00px",
+        "mask_iou_loss=0.3333 > 0.2000"
+      ],
+      "error": null
+    },
+    {
+      "check": "relations.row",
+      "label": "图文行",
+      "failures": null,
+      "error": 4.0
+    }
+  ],
+  "metrics": {
+    "whole": {
+      "compared_pixels": 1218000,
+      "total_pixels": 1218000,
+      "mae": 0.0893,
+      "p95_max_channel": 0.0
+    }
+  },
+  "error": "Visual gate failed; see /Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/session/002-validate/gate/visual-gate-report.json",
+  "failed_stage": "gate",
+  "seconds": 1.669
+}

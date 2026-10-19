@@ -1,0 +1,1260 @@
+{
+  "contract": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/voice-calling-backup-2/visual-contract-v2.json",
+  "contract_sha256": "b6c6c6f13798de261f7195da9b5e3a9c55b8782fc9d1d76475f1d3bfcf39ba7c",
+  "skill_version": "2.5.0",
+  "coverage": null,
+  "environment": {
+    "renderer": "flutter-test-skia",
+    "renderer_version": "Flutter 3.47.7 / engine deb287481e",
+    "platform": "macOS widget-test 375x812 @4x",
+    "locale": "zh_CN",
+    "state": "voice-calling-backup-2",
+    "text_scale": 1
+  },
+  "exclusions": [
+    {
+      "rect": [
+        148,
+        178,
+        80,
+        80
+      ],
+      "reason": "通话头像原图未提供切图；圆形占位另由 Widget 测试验证"
+    }
+  ],
+  "excluded_fraction": 0.021018062397372694,
+  "reference": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/voice-calling-backup-2/reference.png",
+  "render_scale": 4.0,
+  "reference_preview": "reference.png",
+  "passed": false,
+  "candidates": {
+    "old": {
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/voice-calling-backup-2/r4/render.png",
+      "preview": "1-old-candidate.png",
+      "passed": false,
+      "regions": {
+        "whole": {
+          "label": "完整语音通话页",
+          "rect": [
+            0,
+            0,
+            375,
+            812
+          ],
+          "metrics": {
+            "compared_pixels": 4769600,
+            "total_pixels": 4872000,
+            "mae": 3.4725,
+            "p95_max_channel": 9.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "top": {
+          "label": "顶部状态与控制",
+          "rect": [
+            0,
+            0,
+            375,
+            168
+          ],
+          "metrics": {
+            "compared_pixels": 1008000,
+            "total_pixels": 1008000,
+            "mae": 5.241,
+            "p95_max_channel": 13.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "hero": {
+          "label": "头像、波形与关系区",
+          "rect": [
+            34,
+            155,
+            308,
+            225
+          ],
+          "metrics": {
+            "compared_pixels": 1006400,
+            "total_pixels": 1108800,
+            "mae": 4.5195,
+            "p95_max_channel": 42.0
+          },
+          "passed": false,
+          "failures": [
+            "p95=42.00 > 36.00"
+          ]
+        },
+        "safety": {
+          "label": "安全提示",
+          "rect": [
+            14,
+            611,
+            278,
+            45
+          ],
+          "metrics": {
+            "compared_pixels": 200160,
+            "total_pixels": 200160,
+            "mae": 4.3095,
+            "p95_max_channel": 30.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "dialogue": {
+          "label": "通话字幕",
+          "rect": [
+            14,
+            664,
+            241,
+            56
+          ],
+          "metrics": {
+            "compared_pixels": 215936,
+            "total_pixels": 215936,
+            "mae": 6.3904,
+            "p95_max_channel": 47.0
+          },
+          "passed": false,
+          "failures": [
+            "p95=47.00 > 44.00"
+          ]
+        },
+        "actions": {
+          "label": "底部操作",
+          "rect": [
+            14,
+            731,
+            289,
+            41
+          ],
+          "metrics": {
+            "compared_pixels": 189584,
+            "total_pixels": 189584,
+            "mae": 9.9918,
+            "p95_max_channel": 59.0
+          },
+          "passed": false,
+          "failures": [
+            "mae=9.9918 > 8.0000",
+            "p95=59.00 > 44.00"
+          ]
+        }
+      },
+      "features": {
+        "text_01496454": {
+          "label": "你在干什么啊？不方便说话吗？",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.5268,
+            "center_y_delta": -0.1298,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.3992
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              81.5,
+              672.25,
+              161.0,
+              11.0
+            ],
+            "center": [
+              165.51451805177112,
+              677.4378405994551
+            ],
+            "ink_pixels": 5872
+          },
+          "actual": {
+            "bbox": [
+              81.25,
+              672.0,
+              161.5,
+              11.25
+            ],
+            "center": [
+              164.98776777020447,
+              677.3080574488803
+            ],
+            "ink_pixels": 8216
+          }
+        },
+        "text_492caa32": {
+          "label": "在外面不方便讲话，你声音好好听",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -1.4469,
+            "center_y_delta": -0.115,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.4151
+          },
+          "failures": [
+            "center_x_delta=-1.45px > 1.00px"
+          ],
+          "reference": {
+            "bbox": [
+              47.5,
+              702.25,
+              178.75,
+              11.5
+            ],
+            "center": [
+              138.23787613204792,
+              707.404177621969
+            ],
+            "ink_pixels": 6846
+          },
+          "actual": {
+            "bbox": [
+              47.5,
+              702.0,
+              179.0,
+              11.75
+            ],
+            "center": [
+              136.79095272502065,
+              707.2891721717589
+            ],
+            "ink_pixels": 9688
+          }
+        },
+        "text_b72a5668": {
+          "label": "变形金钢：",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.1858,
+            "center_y_delta": 0.0072,
+            "width_delta": 0.25,
+            "height_delta": 0.5,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.3722
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              25.75,
+              672.25,
+              51.0,
+              10.75
+            ],
+            "center": [
+              50.04566895368782,
+              677.4755574614065
+            ],
+            "ink_pixels": 2332
+          },
+          "actual": {
+            "bbox": [
+              25.5,
+              672.0,
+              51.25,
+              11.25
+            ],
+            "center": [
+              49.859843749999996,
+              677.482734375
+            ],
+            "ink_pixels": 3200
+          }
+        },
+        "text_b0e3cee2": {
+          "label": "我：",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.4431,
+            "center_y_delta": -0.0854,
+            "width_delta": -0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.5,
+            "ink_ratio": 1.2874
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              25.75,
+              702.25,
+              25.25,
+              10.75
+            ],
+            "center": [
+              32.1266328011611,
+              707.4760522496372
+            ],
+            "ink_pixels": 689
+          },
+          "actual": {
+            "bbox": [
+              25.5,
+              702.0,
+              25.0,
+              11.0
+            ],
+            "center": [
+              31.68348365276212,
+              707.390642615558
+            ],
+            "ink_pixels": 887
+          }
+        },
+        "text_992fafbd": {
+          "label": "平台严禁涉黄、低俗、欺诈，如有发现请及时",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.4971,
+            "center_y_delta": -0.0582,
+            "width_delta": 0.0,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.3026
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              38.5,
+              620.25,
+              239.0,
+              28.5
+            ],
+            "center": [
+              154.8196982689319,
+              633.6706817085588
+            ],
+            "ink_pixels": 18659
+          },
+          "actual": {
+            "bbox": [
+              38.5,
+              620.0,
+              239.0,
+              28.75
+            ],
+            "center": [
+              154.3225879448673,
+              633.6124459987657
+            ],
+            "ink_pixels": 24305
+          }
+        },
+        "asset_e0530ded": {
+          "label": "安全-F",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0,
+            "mask_iou_loss": 0.0
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              24.0,
+              620.0,
+              10.0,
+              10.75
+            ],
+            "center": [
+              28.875,
+              625.0619009584665
+            ],
+            "ink_pixels": 1252
+          },
+          "actual": {
+            "bbox": [
+              24.0,
+              620.0,
+              10.0,
+              10.75
+            ],
+            "center": [
+              28.875,
+              625.0619009584665
+            ],
+            "ink_pixels": 1252
+          }
+        },
+        "asset_43eb1873": {
+          "label": "编组 2",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": 0.0205,
+            "center_y_delta": -1.1076,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 1.0,
+            "ink_ratio": 1.0153,
+            "mask_iou_loss": 0.654320987654321
+          },
+          "failures": [
+            "center_y_delta=-1.11px > 1.00px",
+            "mask_iou_loss=0.6543 > 0.2500"
+          ],
+          "reference": {
+            "bbox": [
+              273.5,
+              743.25,
+              19.0,
+              17.25
+            ],
+            "center": [
+              282.99316720257235,
+              753.1163585209003
+            ],
+            "ink_pixels": 1244
+          },
+          "actual": {
+            "bbox": [
+              273.5,
+              742.25,
+              19.0,
+              17.25
+            ],
+            "center": [
+              283.0136579572447,
+              752.0087094220111
+            ],
+            "ink_pixels": 1263
+          }
+        },
+        "small_10a8c121": {
+          "label": "椭圆形",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -1.25,
+            "center_y_delta": -0.25,
+            "width_delta": -1.0,
+            "height_delta": -1.0,
+            "max_edge_delta": 1.75,
+            "ink_ratio": 0.4583,
+            "mask_iou_loss": 0.8135593220338984
+          },
+          "failures": [
+            "center_x_delta=-1.25px > 1.00px",
+            "max_edge_delta=1.75px > 1.00px",
+            "ink_ratio=0.458; |ratio-1| > 0.250",
+            "mask_iou_loss=0.8136 > 0.2500"
+          ],
+          "reference": {
+            "bbox": [
+              302.75,
+              66.75,
+              3.0,
+              3.0
+            ],
+            "center": [
+              304.125,
+              68.125
+            ],
+            "ink_pixels": 96
+          },
+          "actual": {
+            "bbox": [
+              302.0,
+              67.0,
+              2.0,
+              2.0
+            ],
+            "center": [
+              302.875,
+              67.875
+            ],
+            "ink_pixels": 44
+          }
+        },
+        "small_87a6694e": {
+          "label": "椭圆形",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -0.7669,
+            "center_y_delta": -0.25,
+            "width_delta": 2.25,
+            "height_delta": -1.0,
+            "max_edge_delta": 2.0,
+            "ink_ratio": 0.7708,
+            "mask_iou_loss": 0.7313432835820896
+          },
+          "failures": [
+            "width_delta=2.25px > 1.50px",
+            "max_edge_delta=2.00px > 1.00px",
+            "mask_iou_loss=0.7313 > 0.2500"
+          ],
+          "reference": {
+            "bbox": [
+              296.75,
+              66.75,
+              3.0,
+              3.0
+            ],
+            "center": [
+              298.125,
+              68.125
+            ],
+            "ink_pixels": 96
+          },
+          "actual": {
+            "bbox": [
+              294.75,
+              67.0,
+              5.25,
+              2.0
+            ],
+            "center": [
+              297.3581081081081,
+              67.875
+            ],
+            "ink_pixels": 74
+          }
+        },
+        "small_653a1aed": {
+          "label": "椭圆形",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": 2.25,
+            "center_y_delta": -0.25,
+            "width_delta": -1.0,
+            "height_delta": -1.0,
+            "max_edge_delta": 2.75,
+            "ink_ratio": 0.4583,
+            "mask_iou_loss": 0.9928057553956835
+          },
+          "failures": [
+            "center_x_delta=2.25px > 1.00px",
+            "max_edge_delta=2.75px > 1.00px",
+            "ink_ratio=0.458; |ratio-1| > 0.250",
+            "mask_iou_loss=0.9928 > 0.2500"
+          ],
+          "reference": {
+            "bbox": [
+              291.25,
+              66.75,
+              3.0,
+              3.0
+            ],
+            "center": [
+              292.625,
+              68.125
+            ],
+            "ink_pixels": 96
+          },
+          "actual": {
+            "bbox": [
+              294.0,
+              67.0,
+              2.0,
+              2.0
+            ],
+            "center": [
+              294.875,
+              67.875
+            ],
+            "ink_pixels": 44
+          }
+        },
+        "small_0bb692bf": {
+          "label": "路径",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": 0.5072,
+            "center_y_delta": 0.508,
+            "width_delta": 0.5,
+            "height_delta": 0.5,
+            "max_edge_delta": 0.75,
+            "ink_ratio": 1.0998,
+            "mask_iou_loss": 0.3982521847690387
+          },
+          "failures": [
+            "mask_iou_loss=0.3983 > 0.2500"
+          ],
+          "reference": {
+            "bbox": [
+              340.0,
+              63.0,
+              10.0,
+              10.0
+            ],
+            "center": [
+              344.8678396072013,
+              67.86702127659575
+            ],
+            "ink_pixels": 611
+          },
+          "actual": {
+            "bbox": [
+              340.25,
+              63.25,
+              10.5,
+              10.5
+            ],
+            "center": [
+              345.375,
+              68.375
+            ],
+            "ink_pixels": 672
+          }
+        },
+        "asset_4a941cf3": {
+          "label": "编组 3",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -15.5804,
+            "center_y_delta": 0.505,
+            "width_delta": -10.0,
+            "height_delta": -10.0,
+            "max_edge_delta": 5.0,
+            "ink_ratio": 0.211
+          },
+          "failures": [
+            "center_x_delta=-15.58px > 1.00px",
+            "width_delta=-10.00px > 1.50px",
+            "height_delta=-10.00px > 1.50px"
+          ],
+          "reference": {
+            "bbox": [
+              141.0,
+              171.0,
+              94.0,
+              94.0
+            ],
+            "center": [
+              203.59887583650283,
+              217.61132107264936
+            ],
+            "ink_pixels": 20771
+          },
+          "actual": {
+            "bbox": [
+              146.0,
+              176.0,
+              84.0,
+              84.0
+            ],
+            "center": [
+              188.018484710178,
+              218.11632816065725
+            ],
+            "ink_pixels": 4382
+          }
+        },
+        "text_083e2038": {
+          "label": "14s后开始产生奖励",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.3956,
+            "center_y_delta": -0.0874,
+            "width_delta": 0.5,
+            "height_delta": 0.5,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2098
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              120.75,
+              112.75,
+              134.5,
+              14.75
+            ],
+            "center": [
+              192.07469568424935,
+              120.1211729988934
+            ],
+            "ink_pixels": 10844
+          },
+          "actual": {
+            "bbox": [
+              120.5,
+              112.5,
+              135.0,
+              15.25
+            ],
+            "center": [
+              192.47029118073024,
+              120.03378687399955
+            ],
+            "ink_pixels": 13119
+          }
+        },
+        "text_18247a44": {
+          "label": "语音通话中",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.6867,
+            "center_y_delta": -0.0955,
+            "width_delta": 0.0,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.3672
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              159.5,
+              138.25,
+              58.25,
+              11.0
+            ],
+            "center": [
+              188.10518134715025,
+              143.64620034542315
+            ],
+            "ink_pixels": 2895
+          },
+          "actual": {
+            "bbox": [
+              159.5,
+              138.0,
+              58.25,
+              11.25
+            ],
+            "center": [
+              187.41851945426984,
+              143.55065689742295
+            ],
+            "ink_pixels": 3958
+          }
+        },
+        "small_1fcad52f": {
+          "label": "Home Indicator",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0063,
+            "center_y_delta": 0.0001,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 0.9986,
+            "mask_iou_loss": 0.0014124293785310327
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              121.0,
+              799.0,
+              134.0,
+              5.0
+            ],
+            "center": [
+              187.875,
+              801.375
+            ],
+            "ink_pixels": 10620
+          },
+          "actual": {
+            "bbox": [
+              121.0,
+              799.0,
+              134.0,
+              5.0
+            ],
+            "center": [
+              187.8812824139557,
+              801.3751060820367
+            ],
+            "ink_pixels": 10605
+          }
+        },
+        "text_f21f6c67": {
+          "label": "Time",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": 5.2945,
+            "center_y_delta": 0.6603,
+            "width_delta": 17.25,
+            "height_delta": 4.25,
+            "max_edge_delta": 14.0,
+            "ink_ratio": 8.141
+          },
+          "failures": [
+            "center_x_delta=5.29px > 1.00px",
+            "width_delta=17.25px > 1.50px",
+            "height_delta=4.25px > 1.50px"
+          ],
+          "reference": {
+            "bbox": [
+              38.0,
+              20.25,
+              27.0,
+              11.0
+            ],
+            "center": [
+              51.455555555555556,
+              25.461877394636016
+            ],
+            "ink_pixels": 1305
+          },
+          "actual": {
+            "bbox": [
+              34.75,
+              18.5,
+              44.25,
+              15.25
+            ],
+            "center": [
+              56.75009412650602,
+              26.122129141566266
+            ],
+            "ink_pixels": 10624
+          }
+        },
+        "text_1b407962": {
+          "label": "变形金钢",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.5314,
+            "center_y_delta": -0.1252,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.1776
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              158.75,
+              283.75,
+              58.25,
+              13.75
+            ],
+            "center": [
+              189.31666666666666,
+              290.5249766573296
+            ],
+            "ink_pixels": 5355
+          },
+          "actual": {
+            "bbox": [
+              158.5,
+              283.5,
+              58.5,
+              14.0
+            ],
+            "center": [
+              188.78528385664447,
+              290.39981763399936
+            ],
+            "ink_pixels": 6306
+          }
+        },
+        "text_d4c2aba7": {
+          "label": "不方便讲话，可以发文字",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.7729,
+            "center_y_delta": -0.0426,
+            "width_delta": 0.5,
+            "height_delta": 0.5,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2741
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              50.75,
+              747.25,
+              130.5,
+              11.5
+            ],
+            "center": [
+              114.88862559241706,
+              752.3947867298579
+            ],
+            "ink_pixels": 5275
+          },
+          "actual": {
+            "bbox": [
+              50.5,
+              747.0,
+              131.0,
+              12.0
+            ],
+            "center": [
+              115.6615087040619,
+              752.3522169320041
+            ],
+            "ink_pixels": 6721
+          }
+        },
+        "text_ac5c9681": {
+          "label": "和Ta的关系",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": 1.0515,
+            "center_y_delta": -0.0345,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2821
+          },
+          "failures": [
+            "center_x_delta=1.05px > 1.00px"
+          ],
+          "reference": {
+            "bbox": [
+              161.5,
+              314.0,
+              55.5,
+              10.0
+            ],
+            "center": [
+              188.95558318264014,
+              318.8991862567812
+            ],
+            "ink_pixels": 2212
+          },
+          "actual": {
+            "bbox": [
+              161.5,
+              313.75,
+              55.75,
+              10.25
+            ],
+            "center": [
+              190.0070521861777,
+              318.8646861777151
+            ],
+            "ink_pixels": 2836
+          }
+        },
+        "small_5ede0259": {
+          "label": "路径",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0222,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 0.8136,
+            "mask_iou_loss": 0.18644067796610164
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              224.25,
+              315.25,
+              4.5,
+              7.5
+            ],
+            "center": [
+              226.20974576271186,
+              318.875
+            ],
+            "ink_pixels": 236
+          },
+          "actual": {
+            "bbox": [
+              224.25,
+              315.25,
+              4.5,
+              7.5
+            ],
+            "center": [
+              226.1875,
+              318.875
+            ],
+            "ink_pixels": 192
+          }
+        },
+        "small_ab224340": {
+          "label": "路径",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -0.9532,
+            "center_y_delta": 0.0279,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 1.25,
+            "ink_ratio": 0.9345,
+            "mask_iou_loss": 0.4878706199460916
+          },
+          "failures": [
+            "max_edge_delta=1.25px > 1.00px",
+            "mask_iou_loss=0.4879 > 0.2500"
+          ],
+          "reference": {
+            "bbox": [
+              252.75,
+              61.25,
+              6.0,
+              6.0
+            ],
+            "center": [
+              255.0758620689655,
+              64.67413793103448
+            ],
+            "ink_pixels": 290
+          },
+          "actual": {
+            "bbox": [
+              251.5,
+              62.25,
+              6.25,
+              6.25
+            ],
+            "center": [
+              254.12269372693726,
+              64.7020295202952
+            ],
+            "ink_pixels": 271
+          }
+        },
+        "small_6528939a": {
+          "label": "路径",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": 0.8759,
+            "center_y_delta": -0.8999,
+            "width_delta": 0.25,
+            "height_delta": -0.75,
+            "max_edge_delta": 2.0,
+            "ink_ratio": 0.8966,
+            "mask_iou_loss": 0.6519607843137255
+          },
+          "failures": [
+            "max_edge_delta=2.00px > 1.00px",
+            "mask_iou_loss=0.6520 > 0.2500"
+          ],
+          "reference": {
+            "bbox": [
+              245.25,
+              68.75,
+              6.0,
+              6.0
+            ],
+            "center": [
+              248.6741379310345,
+              71.07586206896552
+            ],
+            "ink_pixels": 290
+          },
+          "actual": {
+            "bbox": [
+              246.25,
+              67.5,
+              6.25,
+              5.25
+            ],
+            "center": [
+              249.55,
+              70.17596153846154
+            ],
+            "ink_pixels": 260
+          }
+        },
+        "small_49007501": {
+          "label": "路径",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -0.9532,
+            "center_y_delta": 0.0279,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 1.25,
+            "ink_ratio": 0.9345,
+            "mask_iou_loss": 0.4878706199460916
+          },
+          "failures": [
+            "max_edge_delta=1.25px > 1.00px",
+            "mask_iou_loss=0.4879 > 0.2500"
+          ],
+          "reference": {
+            "bbox": [
+              252.75,
+              61.25,
+              6.0,
+              6.0
+            ],
+            "center": [
+              255.0758620689655,
+              64.67413793103448
+            ],
+            "ink_pixels": 290
+          },
+          "actual": {
+            "bbox": [
+              251.5,
+              62.25,
+              6.25,
+              6.25
+            ],
+            "center": [
+              254.12269372693726,
+              64.7020295202952
+            ],
+            "ink_pixels": 271
+          }
+        },
+        "small_b87b8d16": {
+          "label": "路径",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": 0.8759,
+            "center_y_delta": -0.8999,
+            "width_delta": 0.25,
+            "height_delta": -0.75,
+            "max_edge_delta": 2.0,
+            "ink_ratio": 0.8966,
+            "mask_iou_loss": 0.6519607843137255
+          },
+          "failures": [
+            "max_edge_delta=2.00px > 1.00px",
+            "mask_iou_loss=0.6520 > 0.2500"
+          ],
+          "reference": {
+            "bbox": [
+              245.25,
+              68.75,
+              6.0,
+              6.0
+            ],
+            "center": [
+              248.6741379310345,
+              71.07586206896552
+            ],
+            "ink_pixels": 290
+          },
+          "actual": {
+            "bbox": [
+              246.25,
+              67.5,
+              6.25,
+              5.25
+            ],
+            "center": [
+              249.55,
+              70.17596153846154
+            ],
+            "ink_pixels": 260
+          }
+        }
+      },
+      "relations": {
+        "title_status_center": {
+          "label": "title status center",
+          "reference_delta": 3.9695,
+          "actual_delta": 5.0518,
+          "error": 1.0823,
+          "passed": false
+        },
+        "avatar_name_center": {
+          "label": "avatar name center",
+          "reference_delta": 14.2822,
+          "actual_delta": -0.7668,
+          "error": 15.049,
+          "passed": false
+        },
+        "relationship_arrow_center": {
+          "label": "relationship arrow center",
+          "reference_delta": 0.0242,
+          "actual_delta": -0.0103,
+          "error": 0.0345,
+          "passed": true
+        },
+        "safety_icon_text_top": {
+          "label": "safety icon text top",
+          "reference_delta": -0.25,
+          "actual_delta": 0.0,
+          "error": 0.25,
+          "passed": true
+        }
+      },
+      "colors": {
+        "background_top": {
+          "label": "顶部背景",
+          "rect": [
+            8,
+            96,
+            8,
+            8
+          ],
+          "reference_rgb": [
+            19.44,
+            16.41,
+            13.38
+          ],
+          "actual_rgb": [
+            19.44,
+            16.41,
+            13.38
+          ],
+          "max_channel_delta": 0.0,
+          "passed": true
+        },
+        "background_hero": {
+          "label": "主视觉光场",
+          "rect": [
+            185,
+            340,
+            8,
+            8
+          ],
+          "reference_rgb": [
+            39.08,
+            31.0,
+            19.16
+          ],
+          "actual_rgb": [
+            42.08,
+            32.48,
+            19.91
+          ],
+          "max_channel_delta": 3.0,
+          "passed": true
+        },
+        "background_lower": {
+          "label": "下部暖色光场",
+          "rect": [
+            330,
+            640,
+            8,
+            8
+          ],
+          "reference_rgb": [
+            39.97,
+            31.92,
+            21.3
+          ],
+          "actual_rgb": [
+            38.7,
+            30.58,
+            20.42
+          ],
+          "max_channel_delta": 1.34,
+          "passed": true
+        },
+        "message_glass": {
+          "label": "消息按钮玻璃材质",
+          "rect": [
+            22,
+            737,
+            8,
+            8
+          ],
+          "reference_rgb": [
+            46.22,
+            42.3,
+            39.12
+          ],
+          "actual_rgb": [
+            58.21,
+            54.88,
+            51.45
+          ],
+          "max_channel_delta": 12.58,
+          "passed": false
+        }
+      },
+      "overlay": "1-old-alignment-overlay.png"
+    }
+  },
+  "metrics_passed": false,
+  "status": "NOT_EVALUATED"
+}

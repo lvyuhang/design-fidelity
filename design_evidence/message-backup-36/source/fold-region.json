@@ -1,0 +1,285 @@
+{
+  "snapshot_id": "6a83953b549ca4e033eddf0b35961d2b",
+  "design_id": "348416a3-a096-473e-a62b-780c5dd040c4",
+  "resolved_version": "f408a567-a766-42f1-b53f-6eacfb03fd28",
+  "source_region": [
+    0,
+    691,
+    375,
+    44
+  ],
+  "coordinate_mapping": {
+    "verified": true,
+    "strategy": "identity"
+  },
+  "nodes": [
+    {
+      "node_id": "A22A1CD3-4A07-4A0C-B1AC-2D4D2F78CB84",
+      "source_id": "A22A1CD3-4A07-4A0C-B1AC-2D4D2F78CB84",
+      "identity_source": "source_id",
+      "parent_id": "067A1DB9-FF33-45AA-A44E-4A7F1DB2A26C",
+      "source_parent_id": "067A1DB9-FF33-45AA-A44E-4A7F1DB2A26C",
+      "source_order": 95,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 348,
+        "y": 711,
+        "width": 8,
+        "height": 4
+      },
+      "source_bounds": {
+        "x": 348,
+        "y": 711,
+        "width": 8,
+        "height": 4
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [
+        "A22A1CD3-4A07-4A0C-B1AC-2D4D2F78CB84:image"
+      ],
+      "source_pointer": "/info/95",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "5FB6266F-941F-42E9-8E1A-AC46207C0726",
+      "source_id": "5FB6266F-941F-42E9-8E1A-AC46207C0726",
+      "identity_source": "source_id",
+      "parent_id": "067A1DB9-FF33-45AA-A44E-4A7F1DB2A26C",
+      "source_parent_id": "067A1DB9-FF33-45AA-A44E-4A7F1DB2A26C",
+      "source_order": 96,
+      "name": "折叠置顶会话",
+      "node_type": "text",
+      "bounds": {
+        "x": 46,
+        "y": 703,
+        "width": 78,
+        "height": 18
+      },
+      "source_bounds": {
+        "x": 46,
+        "y": 703,
+        "width": 78,
+        "height": 18
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "折叠置顶会话",
+      "asset_ids": [],
+      "source_pointer": "/info/96",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "6D712D6D-7EC4-40D6-A4D6-B6DBF7B42763",
+      "source_id": "6D712D6D-7EC4-40D6-A4D6-B6DBF7B42763",
+      "identity_source": "source_id",
+      "parent_id": "D717287F-7CC0-4EB7-AB1C-0826B90ABE3D",
+      "source_parent_id": "D717287F-7CC0-4EB7-AB1C-0826B90ABE3D",
+      "source_order": 163,
+      "name": "线条",
+      "node_type": "shape",
+      "bounds": {
+        "x": 23.5,
+        "y": 705.9999999999991,
+        "width": 1.5,
+        "height": 1
+      },
+      "source_bounds": {
+        "x": 23.5,
+        "y": 705.9999999999991,
+        "width": 1.5,
+        "height": 1
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/163",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "CA21BB0E-3177-455D-BF3C-01A8DE80CCE6",
+      "source_id": "CA21BB0E-3177-455D-BF3C-01A8DE80CCE6",
+      "identity_source": "source_id",
+      "parent_id": "D717287F-7CC0-4EB7-AB1C-0826B90ABE3D",
+      "source_parent_id": "D717287F-7CC0-4EB7-AB1C-0826B90ABE3D",
+      "source_order": 164,
+      "name": "线条 2",
+      "node_type": "shape",
+      "bounds": {
+        "x": 23.5,
+        "y": 711.5,
+        "width": 1.5,
+        "height": 1
+      },
+      "source_bounds": {
+        "x": 23.5,
+        "y": 711.5,
+        "width": 1.5,
+        "height": 1
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/164",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "26021B27-EE2A-465A-9389-E336B2D44395",
+      "source_id": "26021B27-EE2A-465A-9389-E336B2D44395",
+      "identity_source": "source_id",
+      "parent_id": "D717287F-7CC0-4EB7-AB1C-0826B90ABE3D",
+      "source_parent_id": "D717287F-7CC0-4EB7-AB1C-0826B90ABE3D",
+      "source_order": 165,
+      "name": "线条 3",
+      "node_type": "shape",
+      "bounds": {
+        "x": 23.5,
+        "y": 716.9999999999991,
+        "width": 1.5,
+        "height": 1
+      },
+      "source_bounds": {
+        "x": 23.5,
+        "y": 716.9999999999991,
+        "width": 1.5,
+        "height": 1
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/165",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "FB7B8225-D25C-485C-993F-C77602F6DA28",
+      "source_id": "FB7B8225-D25C-485C-993F-C77602F6DA28",
+      "identity_source": "source_id",
+      "parent_id": "D717287F-7CC0-4EB7-AB1C-0826B90ABE3D",
+      "source_parent_id": "D717287F-7CC0-4EB7-AB1C-0826B90ABE3D",
+      "source_order": 166,
+      "name": "线条 6",
+      "node_type": "shape",
+      "bounds": {
+        "x": 27.499999999999773,
+        "y": 705.9999999999991,
+        "width": 8.00000000000014,
+        "height": 1
+      },
+      "source_bounds": {
+        "x": 27.499999999999773,
+        "y": 705.9999999999991,
+        "width": 8.00000000000014,
+        "height": 1
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/166",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "60FB67EE-888B-48F6-9371-D5AAD5142C2A",
+      "source_id": "60FB67EE-888B-48F6-9371-D5AAD5142C2A",
+      "identity_source": "source_id",
+      "parent_id": "D717287F-7CC0-4EB7-AB1C-0826B90ABE3D",
+      "source_parent_id": "D717287F-7CC0-4EB7-AB1C-0826B90ABE3D",
+      "source_order": 167,
+      "name": "线条 5",
+      "node_type": "shape",
+      "bounds": {
+        "x": 27.499999999999773,
+        "y": 711.5,
+        "width": 8.00000000000014,
+        "height": 1
+      },
+      "source_bounds": {
+        "x": 27.499999999999773,
+        "y": 711.5,
+        "width": 8.00000000000014,
+        "height": 1
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/167",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "39267A01-AA6C-4FFE-91D4-E2B0D0DC35C1",
+      "source_id": "39267A01-AA6C-4FFE-91D4-E2B0D0DC35C1",
+      "identity_source": "source_id",
+      "parent_id": "D717287F-7CC0-4EB7-AB1C-0826B90ABE3D",
+      "source_parent_id": "D717287F-7CC0-4EB7-AB1C-0826B90ABE3D",
+      "source_order": 168,
+      "name": "线条 4",
+      "node_type": "shape",
+      "bounds": {
+        "x": 27.499999999999773,
+        "y": 716.9999999999991,
+        "width": 8.00000000000014,
+        "height": 1
+      },
+      "source_bounds": {
+        "x": 27.499999999999773,
+        "y": 716.9999999999991,
+        "width": 8.00000000000014,
+        "height": 1
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/168",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "03E16F01-50B6-4D85-98C8-227018EA45EF",
+      "source_id": "03E16F01-50B6-4D85-98C8-227018EA45EF",
+      "identity_source": "source_id",
+      "parent_id": "067A1DB9-FF33-45AA-A44E-4A7F1DB2A26C",
+      "source_parent_id": "067A1DB9-FF33-45AA-A44E-4A7F1DB2A26C",
+      "source_order": 170,
+      "name": "线条",
+      "node_type": "shape",
+      "bounds": {
+        "x": 0,
+        "y": 691,
+        "width": 375,
+        "height": 1
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 691,
+        "width": 375,
+        "height": 1
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/170",
+      "effective_source_visible": true
+    }
+  ],
+  "implementation_decision": {
+    "collapse_arrow": "original exported asset",
+    "list_icon": "six complete source vector strokes",
+    "separator": "independent 1px decoration"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "1备份21 · Skill 2.13 复用测试",
+  "run_dir": "run",
+  "scope": "page",
+  "evidence": [
+    "normalized-source/region-01.json",
+    "normalized-source/region-02.json",
+    "normalized-source/region-03.json",
+    "normalized-source/region-04.json"
+  ],
+  "reference": "reference-4x.png",
+  "manifest": "source-bundle/install-receipt.json",
+  "font_map": "project-font-map.json",
+  "spec": "reviewed-spec.json",
+  "contract": "visual-contract.json",
+  "app": "../../flutter_ui_components",
+  "test": "test/backup_21_skill213_render_test.dart",
+  "output_env": "BACKUP_21_SKILL213_RENDER_OUTPUT",
+  "analyze": [
+    "lib/experiments/backup_20_skill212_page.dart",
+    "lib/experiments/backup_21_skill213_page.dart",
+    "test/backup_21_skill213_render_test.dart"
+  ]
+}

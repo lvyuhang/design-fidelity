@@ -1,0 +1,5 @@
+{
+  "status": "DIAGNOSTIC_ONLY",
+  "reason": "Previous PASS_WITH_EXCLUSIONS only checked the changed subtitle. The reused 2.12 baseline was not fully accepted and contained status background and avatar-dot defects. Source equality is not implementation acceptance.",
+  "audit": "../skill-2.14-regression/audit.json"
+}

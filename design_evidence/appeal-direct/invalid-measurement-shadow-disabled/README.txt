@@ -1,0 +1,1 @@
+INVALID measurement: default AutomatedTestWidgetsFlutterBinding disables standard BoxShadow blur. CustomPaint shadows remained enabled, making the comparison unfair. Evaluation harness corrected by overriding disableShadows=false. Frozen implementation was not changed.

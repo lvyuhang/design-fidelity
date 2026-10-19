@@ -1,0 +1,18 @@
+{
+  "status": "NEEDS_INPUT_FIXES",
+  "scope": "source preparation only; proposals are not approved implementation or visual acceptance",
+  "canvas": [
+    375,
+    812
+  ],
+  "source_nodes": 228,
+  "seconds": 0.0836,
+  "asset_count": 43,
+  "issue_counts": {
+    "visual_source_unknown": 1,
+    "export_frame_outside_canvas": 43,
+    "missing_glyphs": 17
+  },
+  "review_count": 109,
+  "report": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/run/001-prepare/page-plan.json"
+}

@@ -1,0 +1,72 @@
+{
+  "run_id": "20261013-134245",
+  "status": "FAIL",
+  "started_at": "2026-10-13T13:42:45.638923+08:00",
+  "ended_at": "2026-10-13T13:42:47.672254+08:00",
+  "elapsed_seconds": 2.034,
+  "workflow": "optimized same-page replay v1",
+  "model_work_excluded": true,
+  "mcp_calls": 0,
+  "source": "frozen local snapshot b3437778812e65917e3972d7062be2c3",
+  "contract": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/visual-contract.json",
+  "contract_sha256": "36740e42f02d3bafdd6c00e9d668d16e3264ee8921e0962ef5e2e2cd6017fb96",
+  "stages": [
+    {
+      "stage": "cached_evidence_preflight",
+      "seconds": 0.071,
+      "exit_code": 0,
+      "command": [
+        "/Users/tan/Documents/ChatGPT/聚星阁/.venv-fidelity/bin/python",
+        "/Users/tan/Documents/ChatGPT/聚星阁/tools/prepare_message_backup_34_optimized.py",
+        "--verify-only"
+      ],
+      "stdout_tail": "{\"status\": \"PASS\", \"failures\": []}\n",
+      "stderr_tail": ""
+    },
+    {
+      "stage": "flutter_render_and_interaction_tests",
+      "seconds": 1.697,
+      "exit_code": 0,
+      "command": [
+        "/Users/tan/Documents/ChatGPT/聚星阁/.venv-fidelity/bin/python",
+        "/Users/tan/.codex/skills/lanhu-design-fidelity/scripts/render_with_receipt.py",
+        "--contract",
+        "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/visual-contract.json",
+        "--candidate",
+        "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/runs/20261013-134245/render.png",
+        "--receipt",
+        "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/runs/20261013-134245/render-receipt.json",
+        "--cwd",
+        "/Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components",
+        "--",
+        "flutter",
+        "test",
+        "--no-pub",
+        "test/message_backup_34_render_test.dart"
+      ],
+      "stdout_tail": "00:00 +0: loading /Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components/test/message_backup_34_render_test.dart\n00:00 +0: (setUpAll)\n00:00 +0: message backup 34 renders at native source scale\n00:00 +1: message page primary actions are interactive\n00:00 +2: missing official artwork keeps the source circular frame\n00:00 +3: (tearDownAll)\n00:00 +3: All tests passed!\nRender receipt: /Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/runs/20261013-134245/render-receipt.json\n",
+      "stderr_tail": ""
+    },
+    {
+      "stage": "visual_gate",
+      "seconds": 0.266,
+      "exit_code": 1,
+      "command": [
+        "/Users/tan/Documents/ChatGPT/聚星阁/.venv-fidelity/bin/python",
+        "/Users/tan/.codex/skills/lanhu-design-fidelity/scripts/visual_fidelity_gate.py",
+        "--contract",
+        "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/visual-contract.json",
+        "--candidate",
+        "optimized=/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/runs/20261013-134245/render.png",
+        "--receipt",
+        "optimized=/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/runs/20261013-134245/render-receipt.json",
+        "--output-dir",
+        "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/runs/20261013-134245/gate"
+      ],
+      "stdout_tail": "optimized: FAIL (1 failed checks)\nJSON: /Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/runs/20261013-134245/gate/visual-gate-report.json\nHTML: /Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/runs/20261013-134245/gate/visual-gate-report.html\nAcceptance: FAIL\n",
+      "stderr_tail": ""
+    }
+  ],
+  "gate_status": "FAIL",
+  "gate_report": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/runs/20261013-134245/gate/visual-gate-report.json"
+}

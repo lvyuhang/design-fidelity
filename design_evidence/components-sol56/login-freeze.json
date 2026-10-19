@@ -1,0 +1,11 @@
+{
+  "status": "frozen",
+  "algorithm": "sha256",
+  "source": "flutter_ui_components/lib/experiments/login_sol56.dart",
+  "frozen_copy": "design_evidence/components-sol56/login_sol56.frozen.dart",
+  "source_sha256": "1a952fcb605436bd50508904cc6f5280f52f7e1b923d7d6672d4267833d55262",
+  "frozen_sha256": "1a952fcb605436bd50508904cc6f5280f52f7e1b923d7d6672d4267833d55262",
+  "identical": true,
+  "frozen_before_render": true,
+  "visual_corrections_before_freeze": 0
+}

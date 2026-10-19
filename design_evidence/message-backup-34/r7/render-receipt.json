@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "contract_sha256": "13781e43827136b31de5b03c855a24d5486e8c5eb8e17b486bd4400d2a3da683",
+  "candidate_sha256": "9b47e95d9c8bb5773946f4e88cc6dafc6b69bfa9c36e8d18af0b39a569f59c57",
+  "environment": {
+    "renderer": "flutter-test-skia",
+    "renderer_version": "Flutter 3.47.7 / engine deb287481e",
+    "platform": "macOS widget-test 375x812 @4x",
+    "locale": "zh_CN",
+    "state": "message-backup-34",
+    "text_scale": 1
+  },
+  "inputs": {
+    "../../flutter_ui_components/assets/fonts/PingFangSC-Medium.otf": "80d87b93eec6fbe42e6a58b9cd6b11a4a4d6176c5860c5d59aee2f56e080e7d5",
+    "../../flutter_ui_components/assets/fonts/PingFangSC-Regular.otf": "861bcc996a600a285beb0684fa0ee1e626696c737d622fe5afa0860879c4a447",
+    "../../flutter_ui_components/assets/fonts/PingFangSC-Semibold.otf": "35f585912b030018034da4490d3bf4b61b0eb8ec4a18605cea60bc3648abdd71",
+    "../../flutter_ui_components/assets/lanhu/message_backup_34/assets/133aceb46ccc07583e92c605bc539afd2e22fd2c024af2f90025e03941ab4544.png": "4dd328b126e9385139df9e52eec41d5685929a0c91bdd3028a492aff1c89cf8f",
+    "../../flutter_ui_components/assets/lanhu/message_backup_34/assets/1cc08b902b88aba143242c42b1b3f8f2b3427a06f64b9c66746997c46790c075.png": "15071e71c1ba2050208caa1bff1a19123273fbc6212a1838ca8031b86dea223b",
+    "../../flutter_ui_components/assets/lanhu/message_backup_34/assets/302d40e3cddc0c5dc27b8fca1058f2e9e4266b93ce88e0e3bbdc9dd8d49189dd.png": "7baa1ad9f870bc8cd70e8d34af9dcf31b9679bfe1682274fbc2fc49a4da3b0a6",
+    "../../flutter_ui_components/assets/lanhu/message_backup_34/assets/3d9c1507231ab4216545fd4d47fc4e0016d132646d95dee832583047252607ef.png": "5cd4321224c8620c42a7a15a7f5d9f9d0faf942311435cb25ea2d13cbd30f6c5",
+    "../../flutter_ui_components/assets/lanhu/message_backup_34/assets/58ae7275356d68146c2e4d681bb589158c06ac2106b49b6365258198825ddb9c.png": "0d70f124ddf909854d637e8c44126603e7917869771817881f411195a1256135",
+    "../../flutter_ui_components/assets/lanhu/message_backup_34/assets/711bc34d080a29cb67efeb89cd437f9d2d85882884085eb93a584d436983bfba.png": "f76fdb6e16eecc9cbf90df649af7fddc657e34593c338349f35fc358128ecea8",
+    "../../flutter_ui_components/assets/lanhu/message_backup_34/assets/7770bd50d14ae591e54a1b0b3df11747bb86d312886b8476d748cb4be6e485db.png": "30f834c8a953ee6fe80afebd7c5451db6e09f051852775afccf174c91ff2da15",
+    "../../flutter_ui_components/assets/lanhu/message_backup_34/assets/a25881b7d5ce15dcdb2811888680942ed9ce92f2384e935c5e9eb672bcc64457.png": "8835fddc65e15a07ee4e9f729552e55c49faf97a6f3675c5b246ffad72c0d50a",
+    "../../flutter_ui_components/assets/lanhu/message_backup_34/assets/a3109e049196a732525f8c4d7b65981c9d4b943e1da00cdad33c576bf2b1d0e9.png": "d3698a7d65ea31ef96345770ac85804017f4350346719ad8a88de6339e1c3900",
+    "../../flutter_ui_components/assets/lanhu/message_backup_34/assets/ba6ad713213694bd6d892e33d0effb4a9384c7002553201e6aad73e35f56276f.png": "f33d3ee31037ddc9f304aea4cfd2eb82ffb10837309493993d936136f1275929",
+    "../../flutter_ui_components/assets/lanhu/message_backup_34/assets/c5b435df1b9694e954a0f7039592d6b377caf13f87a26314173e862966065822.png": "9b5070bba2494423d3a28e6b2d24a37bebfa3ef9dfb5050d7aff58dce7df0ef4",
+    "../../flutter_ui_components/assets/lanhu/message_backup_34/assets/cc123c6bf5380b980ceb60f97f87b37e3118b855f479282363ec453729369e98.png": "fa970e411eeaca65093df3c2d4265c266ed79def92e8f932f29db21943e22140",
+    "../../flutter_ui_components/assets/lanhu/message_backup_34/assets/f905dce5939b9af6544739ee7933e79aef295cd8228323f52ddea84e9bfcc124.png": "275b7f7034f917d8738890fe26b214d1b43f799613295be407d99dfcc0715766",
+    "../../flutter_ui_components/lib/experiments/message_backup_34_page.dart": "0519a26c52d1cc8b2f712887546901b9bc245a044bbb6ee5f377f770fc8a85b4",
+    "../../flutter_ui_components/lib/experiments/two_page_fidelity_lab.dart": "89960dcaeeeab12d9221c2a653b539b16ecb9d9668d32cec4647c5f0b40891d4",
+    "../../flutter_ui_components/pubspec.lock": "d764df020ca4eb901ccd2cead6955f5e8600adcc872c563512552b5aa1a815f7",
+    "../../flutter_ui_components/pubspec.yaml": "c04f0d646f588191de408056a0915cc194f2a6394f27504d672d95bd7b0d4f2e",
+    "../../flutter_ui_components/test/message_backup_34_render_test.dart": "e0608f3478d184f6e54da1fc6f62348a87366b968f520f4e5f43a9a4fee8dcbc",
+    "reference.png": "9904f3533c7beaff4ae7314a1b2f44bc9f02f31e4eda37570fe72e7b99d81d4a",
+    "source/snapshot.json": "b1b2cfb57e7b8a8165f165a9657f9be8620dc18fde1e038bfb4f3966d1c7eafd"
+  },
+  "command": [
+    "env",
+    "MESSAGE_BACKUP_34_RENDER_OUTPUT=/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/r7/render.png",
+    "flutter",
+    "test",
+    "--no-pub",
+    "test/message_backup_34_render_test.dart",
+    "--plain-name",
+    "message backup 34 renders at source 4x"
+  ],
+  "cwd": "/Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components",
+  "exit_code": 0,
+  "started_ns": 1791863555833893000,
+  "finished_ns": 1791863557765442000
+}

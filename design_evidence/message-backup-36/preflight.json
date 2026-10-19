@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "failures": [],
+  "snapshot": {
+    "snapshot_id": "6a83953b549ca4e033eddf0b35961d2b",
+    "version": "f408a567-a766-42f1-b53f-6eacfb03fd28",
+    "nodes": 171
+  },
+  "assets": {
+    "source_exported": 14,
+    "reused_by_sha": 12,
+    "downloaded_new": 2
+  },
+  "fonts": [
+    {
+      "weight": "Regular",
+      "sha256": "7c378a0f44481c506116e7e4c6dbbfe073df66ccef620f0d99cd884b0f964e36",
+      "missing": ""
+    },
+    {
+      "weight": "Medium",
+      "sha256": "ded0b60c1531e96f99010bcadf3b085df20de9259c0d194cb933e0b3d54ca230",
+      "missing": ""
+    },
+    {
+      "weight": "Semibold",
+      "sha256": "799786dcc2d17ea4ab140962d0bf43d7d8087271ebf2eaa750c48d916ddf92e1",
+      "missing": ""
+    }
+  ],
+  "contract_sha256": "2dce4fed8cd063cb36699a1115ad24fd768852cd2df394d9c91c90572f0fd2ed"
+}

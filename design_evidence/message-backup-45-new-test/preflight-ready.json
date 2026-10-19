@@ -1,0 +1,27 @@
+{
+  "status": "READY_FOR_RENDER",
+  "coverage": {
+    "nodes": 118,
+    "covered": 107,
+    "exceptions": [
+      "node 91C7F81B-BBAB-4A81-AF88-0DF6194FDCBD: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+      "node FF75EE8E-F764-423A-973B-8CCD6C8E3499: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+      "node 506F6A95-2DFC-4F73-B1A7-2EA2F755E1A4: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+      "node 9AA03999-E623-438A-96D5-DCFB3BE0CE59: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+      "node 2C34E24F-8122-4743-A948-449551EDF921: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+      "node D046C2A8-0AD8-4167-ABE8-80C765C91008: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+      "node BFE10B6B-F12E-459D-9AC3-F0235C7BFF65: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+      "node A17B4782-E31F-49C6-9872-73BCCCFAF1CE: 蓝湖返回的关系图标组边界为 152×752，与可见 14×14 图标不一致；已使用导出原图并人工核对",
+      "node 109A27EE-A12C-4E3C-B782-DC637A1ED913: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+      "node 15F0F477-CEA7-4135-BD2F-8DEC2712E08E: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+      "node 71E736BD-69F4-4BBB-AA46-E1825CEB7E8D: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖"
+    ]
+  },
+  "fonts": {
+    "text_nodes_checked": 16
+  },
+  "asset_count": 14,
+  "style_gaps": [],
+  "scope": "input integrity and font coverage; source-style completeness is separate; not visual acceptance",
+  "seconds": 0.039
+}

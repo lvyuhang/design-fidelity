@@ -1,0 +1,15 @@
+{
+  "name": "页面名称",
+  "run_dir": "run",
+  "scope": "page",
+  "evidence": ["source/region-1.json", "source/region-2.json"],
+  "reference": "reference.png",
+  "manifest": "assets/manifest.json",
+  "font_map": "project-font-map.json",
+  "spec": "reviewed-spec.json",
+  "contract": "visual-contract.json",
+  "app": "../../flutter_app",
+  "test": "test/page_render_test.dart",
+  "output_env": "PAGE_RENDER_OUTPUT",
+  "analyze": ["lib/page.dart", "test/page_render_test.dart"]
+}

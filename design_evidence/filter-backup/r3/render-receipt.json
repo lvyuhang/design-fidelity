@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "canvas": [
+    375,
+    812
+  ],
+  "pixel_ratio": 4,
+  "snapshot_id": "e1197e5a27c6e2ad489b2f1386fc07c4",
+  "resolved_version": "653aa9f3-6fb6-4216-b3e9-06468e9ec4df",
+  "node_count": 236,
+  "asset_count": 15,
+  "source": "flutter_ui_components/lib/experiments/filter_backup_page.dart",
+  "source_sha256": "331c283528f443f9df7b7e5e9acb742d877975377d58c40adbeedbe88b2366c8",
+  "test": "flutter_ui_components/test/filter_backup_render_test.dart",
+  "test_sha256": "846463e04446da80a69eff0ed1ac4df0d16664dbe52d855dd1596d54680b76ba",
+  "render": "design_evidence/filter-backup/r3/render.png",
+  "render_sha256": "52f1587132b234b87c7d98a11035d98823669c155911da4ed9371acc539048cc",
+  "reference_sha256": "8241addf43c80a2c60744e36f737951ad641a0b79973e6a6d198db0831f0eded",
+  "checks": {
+    "dart_analyze_targeted": "pass",
+    "widget_render_test": "pass",
+    "interaction_test": "pass",
+    "visual_gate": "pass",
+    "flutter_build_web": "pass"
+  }
+}

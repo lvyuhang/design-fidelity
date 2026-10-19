@@ -1,0 +1,2151 @@
+{
+  "schema_version": 2,
+  "status": "ready",
+  "name": "task-plan-44",
+  "source_snapshot": "c6a7d292fc945718c9df15b499eea634",
+  "source_version": "356bb545-d906-4a17-b86f-5dc62a6e4cdf",
+  "canvas": [
+    375,
+    812
+  ],
+  "render_scale": 4,
+  "reference": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/task-plan-44/reference.png",
+  "source_documents": [
+    "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/task-plan-44/source/overview.json",
+    "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/task-plan-44/source/source-02.json",
+    "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/task-plan-44/source/source-03.json"
+  ],
+  "source_scope": {
+    "kind": "page",
+    "expected_node_count": 125
+  },
+  "regions": {
+    "whole": {
+      "label": "完整任务计划页",
+      "rect": [
+        0,
+        0,
+        375,
+        812
+      ],
+      "node_ids": [
+        "96F4C599-F69F-4960-A206-EAAB0D615A8A",
+        "5F5C395B-7F5F-425E-8116-D019B66CF1CA",
+        "3A7E4927-C4F8-448F-8A39-ACEE7F769203",
+        "F868E5F3-7E96-437A-8013-D67D60686807",
+        "4B17C2E0-4E73-43C2-A313-7FFB7504962D",
+        "772C581D-E165-463D-8245-4E2142466C9F",
+        "61BAAB25-1FCA-4741-BAC3-CF13524C482F",
+        "AF5F7638-3FC0-409F-AA0C-165C7EDFB106",
+        "108B2049-D775-49D7-83FF-97957EADF9DA",
+        "A5BF0CD7-16DE-428B-9F93-97889DECA606",
+        "37BD5B43-0166-4859-9A32-386F9CB2AE4D",
+        "E6981895-E47E-45F5-97C4-44D3D1F418D0",
+        "4B350140-245F-4445-A1B6-3A27436AED65",
+        "0BE1A434-97EF-4CD0-A793-7E5FB279133B",
+        "9E7A1D9E-15C9-45DC-9478-F8B358EFB53B",
+        "5B52504C-5682-4363-8A2C-721EDEE9EF8E",
+        "AF0AC4B3-C2A4-4AA5-99CD-9D849BBA72C7",
+        "A5914437-9B1F-410E-ACC2-FB869C568F51",
+        "67524185-77C1-4320-95D1-153C17A6BE1B",
+        "9B1B224C-30EE-432D-B1CC-37C47956040E",
+        "7884EA1D-66F0-4FC0-A3E4-BFEB3B6763C6",
+        "430D8674-6B50-49A4-B36C-3C4F940E296B",
+        "41A67F2C-8C77-4609-A22F-46D5B7DFB543",
+        "46E8F6F9-05FF-411B-B09E-DED92BB0072C",
+        "DCCB48FF-EF92-4DC6-AB63-16E8208484D6",
+        "F5F075E5-AD3C-4A87-BDDB-EF0BBEB04C17",
+        "556EF383-3E5A-4266-895B-7A6F7A811952",
+        "3CA29FEF-396A-42D6-AFB8-44B99241D619",
+        "BF9F8555-0E20-4B5F-BDFC-BF1BFED19AB2",
+        "59B1F295-60D4-43EE-89DE-016637FF6C82",
+        "669B9B7C-15D4-4F0B-B8B0-227AD9960C93",
+        "DB2CDF7F-D085-4CE4-A3E7-16AA91658567",
+        "F8B43347-7CF8-44C0-87DF-1C1213B2E4CF",
+        "047E91FE-D2AB-4917-B376-A709E1CBCFAA",
+        "D1A83608-C451-4778-AF6B-AF9A5CD762BF",
+        "B1378807-866C-4E23-A6C0-D5800255A31D",
+        "DE69682B-95C7-4E49-BC26-BA67187726C1",
+        "FA269A7A-F97D-4BB0-BB7A-EBF86F709B38",
+        "A7A40552-24AD-42FA-9486-327242445506",
+        "64BA427F-6CB1-4967-9950-536AFC3C6461",
+        "1081AEC8-AD88-4ED8-957E-24362A86AEB3",
+        "72D53999-41E9-4D45-88A5-C9B9A1CC7FE7",
+        "931DDEDF-33CA-4E81-966E-B2D2DDC01C21",
+        "C945B5F1-DFDD-41E4-9EE1-8049ECB45D37",
+        "668DB589-9E43-4719-9145-8530C70110F0",
+        "8CC5C039-E76E-45BF-B5F3-E062B9288558",
+        "292E21D0-846D-4B69-85E2-8165E9EAF362"
+      ],
+      "max_mae": 13,
+      "max_p95": 58
+    }
+  },
+  "features": {
+    "text_fc74dfd9": {
+      "label": "17:00-18:00",
+      "node_ids": [
+        "FC74DFD9-3649-4D6D-8BA7-FA1E7579F128"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          104,
+          107,
+          119
+        ],
+        "max_distance": 70,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_4fcf2b7e": {
+      "label": "叫醒铃声",
+      "node_ids": [
+        "4FCF2B7E-BDA6-4552-B307-B0E3B9E21748"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 120,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_41314a6a": {
+      "label": "07:00-08:00",
+      "node_ids": [
+        "41314A6A-B7B7-4469-AFF6-AF32CB865C9A"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 120,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_753aa549": {
+      "label": "录制5-60s叫醒语音",
+      "node_ids": [
+        "753AA549-FF63-48F9-9201-7F74E62EF8D7"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          166,
+          170,
+          181
+        ],
+        "max_distance": 70,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_fbab175f": {
+      "label": "去完成",
+      "node_ids": [
+        "FBAB175F-30BC-4213-9186-E2256A9B1293"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "channel_range",
+        "red": [
+          123,
+          255
+        ],
+        "green": [
+          57,
+          187
+        ],
+        "blue": [
+          0,
+          114
+        ],
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_a925e4a2": {
+      "label": "睡前陪伴",
+      "node_ids": [
+        "A925E4A2-C98D-4343-AF04-1564AF8E6E6F"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 120,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_cc5a2707": {
+      "label": "21:00-22:00",
+      "node_ids": [
+        "CC5A2707-E351-43A0-BF39-3E48F01EEE9D"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 120,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_dd96cbb3": {
+      "label": "语音陪伴不少于10分钟",
+      "node_ids": [
+        "DD96CBB3-2238-4A97-9E01-F517C265F02C"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          166,
+          170,
+          181
+        ],
+        "max_distance": 70,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_34e80ef4": {
+      "label": "未开始",
+      "node_ids": [
+        "34E80EF4-4D77-465A-90BF-C17C722D5D2E"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          182,
+          165,
+          142
+        ],
+        "max_distance": 70,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_4b8ddf1d": {
+      "label": "未完成",
+      "node_ids": [
+        "4B8DDF1D-E961-421E-BDC4-6EF2083194A1"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "channel_range",
+        "red": [
+          162,
+          255
+        ],
+        "green": [
+          3,
+          133
+        ],
+        "blue": [
+          0,
+          123
+        ],
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_1658f588": {
+      "label": "今天",
+      "node_ids": [
+        "1658F588-6331-4AE9-A7DC-D24882896B2C"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          234,
+          235,
+          240
+        ],
+        "max_distance": 70,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_47761431": {
+      "label": "未开始",
+      "node_ids": [
+        "47761431-A0A4-4BB9-AA29-EDCBB2F45FA0"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          166,
+          170,
+          181
+        ],
+        "max_distance": 70,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_b4942640": {
+      "label": "未开始",
+      "node_ids": [
+        "B4942640-915D-4476-9695-0FF18397D13F"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          166,
+          170,
+          181
+        ],
+        "max_distance": 70,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_1b0adf95": {
+      "label": "未开始",
+      "node_ids": [
+        "1B0ADF95-D99A-4AB7-9C3B-CD12980FA9E1"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          166,
+          170,
+          181
+        ],
+        "max_distance": 70,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_a77e4ea7": {
+      "label": "到期",
+      "node_ids": [
+        "A77E4EA7-F601-415E-9553-801C96C4D265"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          166,
+          170,
+          181
+        ],
+        "max_distance": 70,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_faa2f544": {
+      "label": "16",
+      "node_ids": [
+        "FAA2F544-0209-482B-A910-27290E01AAD9"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 120,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_8d2ef89b": {
+      "label": "17",
+      "node_ids": [
+        "8D2EF89B-C6F7-46E7-9AD8-5C3560FA1A53"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 120,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_466a2239": {
+      "label": "18",
+      "node_ids": [
+        "466A2239-D777-46F1-A3DE-21AB35112824"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "channel_range",
+        "red": [
+          175,
+          255
+        ],
+        "green": [
+          116,
+          246
+        ],
+        "blue": [
+          29,
+          159
+        ],
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_5fe67946": {
+      "label": "19",
+      "node_ids": [
+        "5FE67946-87D9-4473-9109-445FFF9FF494"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 120,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_72ca4abd": {
+      "label": "20",
+      "node_ids": [
+        "72CA4ABD-7D98-4FF1-BD55-85994368BC82"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 120,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_a4f84bd0": {
+      "label": "21",
+      "node_ids": [
+        "A4F84BD0-34ED-4058-A1A2-B9A95BA20B69"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 120,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_167d5426": {
+      "label": "22",
+      "node_ids": [
+        "167D5426-1B91-4F68-A24B-2DF2DF7A55AD"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 120,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_a97378f3": {
+      "label": "初级任务包  7天     ",
+      "node_ids": [
+        "A97378F3-3379-4757-83B9-FACE864D2700"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 120,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_762965a6": {
+      "label": "送礼大神",
+      "node_ids": [
+        "762965A6-53B0-4937-BEC9-35E239BE5865"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 120,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_c1c2340b": {
+      "label": "（温度的司机）",
+      "node_ids": [
+        "C1C2340B-E143-4E3A-BEA5-F8F359763394"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          182,
+          165,
+          142
+        ],
+        "max_distance": 70,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_f19aabe4": {
+      "label": "9:41",
+      "node_ids": [
+        "F19AABE4-5116-42D8-83C4-03520ECBB8D0"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 120,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_e7cd9dc9": {
+      "label": "任务计划",
+      "node_ids": [
+        "E7CD9DC9-A60A-45F4-A88B-F55D461AA784"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 120,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_9350df86": {
+      "label": "和Ta的关系",
+      "node_ids": [
+        "9350DF86-713D-4A36-BE74-FCD9FA0B1196"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "channel_range",
+        "red": [
+          123,
+          255
+        ],
+        "green": [
+          57,
+          187
+        ],
+        "blue": [
+          0,
+          114
+        ],
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_49bbdeb3": {
+      "label": "到期",
+      "node_ids": [
+        "49BBDEB3-3B75-429C-A618-251CDC968178"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          167,
+          161,
+          153
+        ],
+        "max_distance": 70,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_3964cc7f": {
+      "label": "07月22日",
+      "node_ids": [
+        "3964CC7F-1A8D-43C2-95F6-4593A191BC61"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          182,
+          165,
+          142
+        ],
+        "max_distance": 70,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_55946513": {
+      "label": "任务进度（最低完成 5 个）",
+      "node_ids": [
+        "55946513-4D7D-4EAE-ABC6-18A49044A4E6"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          182,
+          165,
+          142
+        ],
+        "max_distance": 70,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_064f9a4c": {
+      "label": "4 / 7",
+      "node_ids": [
+        "064F9A4C-B541-439F-A0D7-077F381CB04C"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 120,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_df8f5e03": {
+      "label": "失眠哄睡",
+      "node_ids": [
+        "DF8F5E03-3C17-43F4-AA4A-251B52C450AC"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 120,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_4f4513c7": {
+      "label": "01:00-02:00",
+      "node_ids": [
+        "4F4513C7-DC63-494F-9380-A8A1F603233C"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "channel_range",
+        "red": [
+          162,
+          255
+        ],
+        "green": [
+          3,
+          133
+        ],
+        "blue": [
+          0,
+          123
+        ],
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_55fd5e55": {
+      "label": "语音陪伴不少于10分钟",
+      "node_ids": [
+        "55FD5E55-A73D-4CCE-83D6-7611607A4C6B"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          166,
+          170,
+          181
+        ],
+        "max_distance": 70,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_0032725c": {
+      "label": "发私信",
+      "node_ids": [
+        "0032725C-398C-471B-AE79-266720EB2626"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "channel_range",
+        "red": [
+          175,
+          255
+        ],
+        "green": [
+          116,
+          246
+        ],
+        "blue": [
+          29,
+          159
+        ],
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "text_fa77492a": {
+      "label": "备注：周末畅聊，喜欢语音聊天",
+      "node_ids": [
+        "FA77492A-2E25-47B8-9FE5-972A3247F8D8"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "channel_range",
+        "red": [
+          158,
+          255
+        ],
+        "green": [
+          75,
+          205
+        ],
+        "blue": [
+          2,
+          132
+        ],
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 3,
+        "max_edge_delta": 3,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "expiry_underline": {
+      "label": "到期时间底部高亮线",
+      "node_ids": [
+        "46E8F6F9-05FF-411B-B09E-DED92BB0072C"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "channel_range",
+        "red": [
+          245,
+          255
+        ],
+        "green": [
+          225,
+          250
+        ],
+        "blue": [
+          175,
+          225
+        ],
+        "min_pixels": 300
+      },
+      "limits": {
+        "max_center_delta": 1.5,
+        "max_size_delta": 1,
+        "max_edge_delta": 1,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      },
+      "profile": "small_visual"
+    },
+    "date_check": {
+      "label": "17日完成勾选",
+      "node_ids": [
+        "72D53999-41E9-4D45-88A5-C9B9A1CC7FE7"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          131,
+          198,
+          133
+        ],
+        "max_distance": 50,
+        "min_pixels": 300
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.2
+      },
+      "profile": "small_visual"
+    },
+    "relationship_chevron": {
+      "label": "关系入口右箭头",
+      "node_ids": [
+        "DE69682B-95C7-4E49-BC26-BA67187726C1"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "channel_range",
+        "red": [
+          130,
+          220
+        ],
+        "green": [
+          80,
+          160
+        ],
+        "blue": [
+          0,
+          100
+        ],
+        "min_pixels": 80
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.3,
+        "max_mask_iou_loss": 0.2
+      },
+      "profile": "small_visual"
+    },
+    "complete_chevron": {
+      "label": "去完成右箭头",
+      "node_ids": [
+        "AF5F7638-3FC0-409F-AA0C-165C7EDFB106"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "channel_range",
+        "red": [
+          140,
+          230
+        ],
+        "green": [
+          80,
+          160
+        ],
+        "blue": [
+          0,
+          100
+        ],
+        "min_pixels": 80
+      },
+      "limits": {
+        "max_center_delta": 0.75,
+        "max_size_delta": 0.75,
+        "max_edge_delta": 0.75,
+        "max_ink_ratio_delta": 0.3,
+        "max_mask_iou_loss": 0.2
+      },
+      "profile": "small_visual"
+    },
+    "progress_knob": {
+      "label": "任务进度滑块",
+      "node_ids": [
+        "1081AEC8-AD88-4ED8-957E-24362A86AEB3"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 55,
+        "min_pixels": 100
+      },
+      "limits": {
+        "max_center_delta": 1,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.5,
+        "max_ink_ratio_delta": 0.25
+      }
+    },
+    "home_indicator": {
+      "label": "Home Indicator",
+      "node_ids": [
+        "F5F075E5-AD3C-4A87-BDDB-EF0BBEB04C17"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 30,
+        "min_pixels": 1000
+      },
+      "limits": {
+        "max_center_delta": 1,
+        "max_size_delta": 1,
+        "max_edge_delta": 1,
+        "max_ink_ratio_delta": 0.12
+      }
+    }
+  },
+  "relations": {
+    "profile_name_subtitle_alignment": {
+      "label": "昵称与身份说明垂直居中",
+      "features": [
+        "text_762965a6",
+        "text_c1c2340b"
+      ],
+      "metric": "center_y",
+      "max_delta": 1
+    }
+  },
+  "color_samples": {
+    "card_surface": {
+      "label": "任务卡白色表面",
+      "rect": [
+        320,
+        430,
+        6,
+        6
+      ],
+      "max_channel_delta": 5
+    },
+    "today_surface": {
+      "label": "今天日期黑色表面",
+      "rect": [
+        145,
+        315,
+        5,
+        5
+      ],
+      "max_channel_delta": 5
+    },
+    "expiry_underline_color": {
+      "label": "到期时间底部高亮线颜色",
+      "rect": [
+        290,
+        232,
+        3,
+        3
+      ],
+      "max_channel_delta": 6
+    },
+    "header_shadow_edge": {
+      "label": "任务计划卡片底部阴影边缘",
+      "rect": [
+        80,
+        375,
+        200,
+        1
+      ],
+      "max_channel_delta": 6
+    },
+    "header_shadow_fade": {
+      "label": "任务计划卡片底部阴影衰减",
+      "rect": [
+        80,
+        380,
+        200,
+        1
+      ],
+      "max_channel_delta": 6
+    }
+  },
+  "coverage": {
+    "96F4C599-F69F-4960-A206-EAAB0D615A8A": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "5F5C395B-7F5F-425E-8116-D019B66CF1CA": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "FC74DFD9-3649-4D6D-8BA7-FA1E7579F128": {
+      "status": "covered",
+      "checks": [
+        "features.text_fc74dfd9"
+      ],
+      "reason": ""
+    },
+    "3A7E4927-C4F8-448F-8A39-ACEE7F769203": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "F868E5F3-7E96-437A-8013-D67D60686807": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "4B17C2E0-4E73-43C2-A313-7FFB7504962D": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "772C581D-E165-463D-8245-4E2142466C9F": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "4FCF2B7E-BDA6-4552-B307-B0E3B9E21748": {
+      "status": "covered",
+      "checks": [
+        "features.text_4fcf2b7e"
+      ],
+      "reason": ""
+    },
+    "41314A6A-B7B7-4469-AFF6-AF32CB865C9A": {
+      "status": "covered",
+      "checks": [
+        "features.text_41314a6a"
+      ],
+      "reason": ""
+    },
+    "753AA549-FF63-48F9-9201-7F74E62EF8D7": {
+      "status": "covered",
+      "checks": [
+        "features.text_753aa549"
+      ],
+      "reason": ""
+    },
+    "61BAAB25-1FCA-4741-BAC3-CF13524C482F": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "FBAB175F-30BC-4213-9186-E2256A9B1293": {
+      "status": "covered",
+      "checks": [
+        "features.text_fbab175f"
+      ],
+      "reason": ""
+    },
+    "AF5F7638-3FC0-409F-AA0C-165C7EDFB106": {
+      "status": "covered",
+      "checks": [
+        "features.complete_chevron"
+      ],
+      "reason": ""
+    },
+    "108B2049-D775-49D7-83FF-97957EADF9DA": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "F9D266C7-4E8E-4457-9101-AF9D8E87F35B": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "叫醒铃声位图没有 asset_id，显示未切图色块。"
+    },
+    "A5BF0CD7-16DE-428B-9F93-97889DECA606": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "A925E4A2-C98D-4343-AF04-1564AF8E6E6F": {
+      "status": "covered",
+      "checks": [
+        "features.text_a925e4a2"
+      ],
+      "reason": ""
+    },
+    "CC5A2707-E351-43A0-BF39-3E48F01EEE9D": {
+      "status": "covered",
+      "checks": [
+        "features.text_cc5a2707"
+      ],
+      "reason": ""
+    },
+    "DD96CBB3-2238-4A97-9E01-F517C265F02C": {
+      "status": "covered",
+      "checks": [
+        "features.text_dd96cbb3"
+      ],
+      "reason": ""
+    },
+    "37BD5B43-0166-4859-9A32-386F9CB2AE4D": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "34E80EF4-4D77-465A-90BF-C17C722D5D2E": {
+      "status": "covered",
+      "checks": [
+        "features.text_34e80ef4"
+      ],
+      "reason": ""
+    },
+    "E6981895-E47E-45F5-97C4-44D3D1F418D0": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "4B350140-245F-4445-A1B6-3A27436AED65": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "0BE1A434-97EF-4CD0-A793-7E5FB279133B": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "9E7A1D9E-15C9-45DC-9478-F8B358EFB53B": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "5B52504C-5682-4363-8A2C-721EDEE9EF8E": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "4B8DDF1D-E961-421E-BDC4-6EF2083194A1": {
+      "status": "covered",
+      "checks": [
+        "features.text_4b8ddf1d"
+      ],
+      "reason": ""
+    },
+    "AF0AC4B3-C2A4-4AA5-99CD-9D849BBA72C7": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "A5914437-9B1F-410E-ACC2-FB869C568F51": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "1658F588-6331-4AE9-A7DC-D24882896B2C": {
+      "status": "covered",
+      "checks": [
+        "features.text_1658f588"
+      ],
+      "reason": ""
+    },
+    "67524185-77C1-4320-95D1-153C17A6BE1B": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "9B1B224C-30EE-432D-B1CC-37C47956040E": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "7884EA1D-66F0-4FC0-A3E4-BFEB3B6763C6": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "430D8674-6B50-49A4-B36C-3C4F940E296B": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "47761431-A0A4-4BB9-AA29-EDCBB2F45FA0": {
+      "status": "covered",
+      "checks": [
+        "features.text_47761431"
+      ],
+      "reason": ""
+    },
+    "B4942640-915D-4476-9695-0FF18397D13F": {
+      "status": "covered",
+      "checks": [
+        "features.text_b4942640"
+      ],
+      "reason": ""
+    },
+    "1B0ADF95-D99A-4AB7-9C3B-CD12980FA9E1": {
+      "status": "covered",
+      "checks": [
+        "features.text_1b0adf95"
+      ],
+      "reason": ""
+    },
+    "A77E4EA7-F601-415E-9553-801C96C4D265": {
+      "status": "covered",
+      "checks": [
+        "features.text_a77e4ea7"
+      ],
+      "reason": ""
+    },
+    "41A67F2C-8C77-4609-A22F-46D5B7DFB543": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "46E8F6F9-05FF-411B-B09E-DED92BB0072C": {
+      "status": "covered",
+      "checks": [
+        "features.expiry_underline"
+      ],
+      "reason": ""
+    },
+    "16D00A1F-B22D-42A9-AF8E-21AAA5A16BEB": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "初级任务包图标没有可导出的原始素材，显示未切图色块。"
+    },
+    "FAA2F544-0209-482B-A910-27290E01AAD9": {
+      "status": "covered",
+      "checks": [
+        "features.text_faa2f544"
+      ],
+      "reason": ""
+    },
+    "8D2EF89B-C6F7-46E7-9AD8-5C3560FA1A53": {
+      "status": "covered",
+      "checks": [
+        "features.text_8d2ef89b"
+      ],
+      "reason": ""
+    },
+    "466A2239-D777-46F1-A3DE-21AB35112824": {
+      "status": "covered",
+      "checks": [
+        "features.text_466a2239"
+      ],
+      "reason": ""
+    },
+    "5FE67946-87D9-4473-9109-445FFF9FF494": {
+      "status": "covered",
+      "checks": [
+        "features.text_5fe67946"
+      ],
+      "reason": ""
+    },
+    "72CA4ABD-7D98-4FF1-BD55-85994368BC82": {
+      "status": "covered",
+      "checks": [
+        "features.text_72ca4abd"
+      ],
+      "reason": ""
+    },
+    "A4F84BD0-34ED-4058-A1A2-B9A95BA20B69": {
+      "status": "covered",
+      "checks": [
+        "features.text_a4f84bd0"
+      ],
+      "reason": ""
+    },
+    "167D5426-1B91-4F68-A24B-2DF2DF7A55AD": {
+      "status": "covered",
+      "checks": [
+        "features.text_167d5426"
+      ],
+      "reason": ""
+    },
+    "A97378F3-3379-4757-83B9-FACE864D2700": {
+      "status": "covered",
+      "checks": [
+        "features.text_a97378f3"
+      ],
+      "reason": ""
+    },
+    "DCCB48FF-EF92-4DC6-AB63-16E8208484D6": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "279C55CE-5877-4BBF-B54E-5911B222546A": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "头像位图没有 asset_id，MCP 返回 NoAssets，显示未切图色块。"
+    },
+    "762965A6-53B0-4937-BEC9-35E239BE5865": {
+      "status": "covered",
+      "checks": [
+        "features.text_762965a6"
+      ],
+      "reason": ""
+    },
+    "C1C2340B-E143-4E3A-BEA5-F8F359763394": {
+      "status": "covered",
+      "checks": [
+        "features.text_c1c2340b"
+      ],
+      "reason": ""
+    },
+    "F5F075E5-AD3C-4A87-BDDB-EF0BBEB04C17": {
+      "status": "covered",
+      "checks": [
+        "features.home_indicator"
+      ],
+      "reason": ""
+    },
+    "556EF383-3E5A-4266-895B-7A6F7A811952": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "3CA29FEF-396A-42D6-AFB8-44B99241D619": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "BF9F8555-0E20-4B5F-BDFC-BF1BFED19AB2": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "59B1F295-60D4-43EE-89DE-016637FF6C82": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "669B9B7C-15D4-4F0B-B8B0-227AD9960C93": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "DB2CDF7F-D085-4CE4-A3E7-16AA91658567": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "F19AABE4-5116-42D8-83C4-03520ECBB8D0": {
+      "status": "covered",
+      "checks": [
+        "features.text_f19aabe4"
+      ],
+      "reason": ""
+    },
+    "F8B43347-7CF8-44C0-87DF-1C1213B2E4CF": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "047E91FE-D2AB-4917-B376-A709E1CBCFAA": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "D1A83608-C451-4778-AF6B-AF9A5CD762BF": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "E7CD9DC9-A60A-45F4-A88B-F55D461AA784": {
+      "status": "covered",
+      "checks": [
+        "features.text_e7cd9dc9"
+      ],
+      "reason": ""
+    },
+    "B1378807-866C-4E23-A6C0-D5800255A31D": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "9350DF86-713D-4A36-BE74-FCD9FA0B1196": {
+      "status": "covered",
+      "checks": [
+        "features.text_9350df86"
+      ],
+      "reason": ""
+    },
+    "DE69682B-95C7-4E49-BC26-BA67187726C1": {
+      "status": "covered",
+      "checks": [
+        "features.relationship_chevron"
+      ],
+      "reason": ""
+    },
+    "0811403E-78EA-46FF-A6C2-3165E38BA454": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "关系图标没有可导出的原始素材，显示未切图色块。"
+    },
+    "94ED355F-9520-45E2-97DA-437A6C2DB527": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "关系图标没有可导出的原始素材，显示未切图色块。"
+    },
+    "FF31F439-1AC7-4A82-B646-08A7DD70DC08": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "关系图标没有可导出的原始素材，显示未切图色块。"
+    },
+    "49BBDEB3-3B75-429C-A618-251CDC968178": {
+      "status": "covered",
+      "checks": [
+        "features.text_49bbdeb3"
+      ],
+      "reason": ""
+    },
+    "3964CC7F-1A8D-43C2-95F6-4593A191BC61": {
+      "status": "covered",
+      "checks": [
+        "features.text_3964cc7f"
+      ],
+      "reason": ""
+    },
+    "FA269A7A-F97D-4BB0-BB7A-EBF86F709B38": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "55946513-4D7D-4EAE-ABC6-18A49044A4E6": {
+      "status": "covered",
+      "checks": [
+        "features.text_55946513"
+      ],
+      "reason": ""
+    },
+    "064F9A4C-B541-439F-A0D7-077F381CB04C": {
+      "status": "covered",
+      "checks": [
+        "features.text_064f9a4c"
+      ],
+      "reason": ""
+    },
+    "A7A40552-24AD-42FA-9486-327242445506": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "64BA427F-6CB1-4967-9950-536AFC3C6461": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "1081AEC8-AD88-4ED8-957E-24362A86AEB3": {
+      "status": "covered",
+      "checks": [
+        "features.progress_knob"
+      ],
+      "reason": ""
+    },
+    "72D53999-41E9-4D45-88A5-C9B9A1CC7FE7": {
+      "status": "covered",
+      "checks": [
+        "features.date_check"
+      ],
+      "reason": ""
+    },
+    "931DDEDF-33CA-4E81-966E-B2D2DDC01C21": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "3739EAF2-06B1-4022-B398-B395A9B91101": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "睡前陪伴位图没有 asset_id，显示未切图色块。"
+    },
+    "C945B5F1-DFDD-41E4-9EE1-8049ECB45D37": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "DF8F5E03-3C17-43F4-AA4A-251B52C450AC": {
+      "status": "covered",
+      "checks": [
+        "features.text_df8f5e03"
+      ],
+      "reason": ""
+    },
+    "4F4513C7-DC63-494F-9380-A8A1F603233C": {
+      "status": "covered",
+      "checks": [
+        "features.text_4f4513c7"
+      ],
+      "reason": ""
+    },
+    "55FD5E55-A73D-4CCE-83D6-7611607A4C6B": {
+      "status": "covered",
+      "checks": [
+        "features.text_55fd5e55"
+      ],
+      "reason": ""
+    },
+    "668DB589-9E43-4719-9145-8530C70110F0": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "D5BAC799-A869-43C7-A96A-B0372C38A786": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "失眠哄睡位图没有 asset_id，显示未切图色块。"
+    },
+    "B431A994-9542-4C1B-A909-38E6F219D58E": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "已过期印章没有可导出的原始素材，显示圆形未切图色块。"
+    },
+    "07170E12-8CFD-4936-81DB-20E58C2711AD": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "已过期印章没有可导出的原始素材，显示圆形未切图色块。"
+    },
+    "1A06AA28-8C6F-4475-8C68-82E09FE93A0F": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "已过期印章没有可导出的原始素材，显示圆形未切图色块。"
+    },
+    "FBD5B190-A244-4F91-A25A-366F0D7B8E84": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "已过期印章没有可导出的原始素材，显示圆形未切图色块。"
+    },
+    "3F8E161F-206C-4E5C-94C2-334720C6D22A": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "已过期印章文字属于未导出素材，显示圆形未切图色块。"
+    },
+    "8CC5C039-E76E-45BF-B5F3-E062B9288558": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "0032725C-398C-471B-AE79-266720EB2626": {
+      "status": "covered",
+      "checks": [
+        "features.text_0032725c"
+      ],
+      "reason": ""
+    },
+    "C331DE19-4566-4E30-84FE-681C81E528F1": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "发私信图标没有可导出的原始素材，显示未切图色块。"
+    },
+    "4AA365FC-66BC-45EB-A841-76D6C447D55B": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "发私信图标没有可导出的原始素材，显示未切图色块。"
+    },
+    "292E21D0-846D-4B69-85E2-8165E9EAF362": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "FA77492A-2E25-47B8-9FE5-972A3247F8D8": {
+      "status": "covered",
+      "checks": [
+        "features.text_fa77492a"
+      ],
+      "reason": ""
+    }
+  },
+  "pinned_files": {
+    "reference.png": "4659abe5c2d0b1d71c5b97e7c9246df788d0ebafedad9f2512bf1b17476130e1",
+    "source/overview.json": "7311486d4b090faaf31c4022d6bb9bee0945a9d6f91fb4613326b569a84b4313",
+    "source/source-02.json": "6daf48e3b3f0084c4e975a1cf5254c722ed2f47f60d89740c5187115a6f6ce36",
+    "source/source-03.json": "04ecb0b802a53ad3c3899b8cefe1d389fcd9fd6696c5d73ac43f4d675240473b",
+    "../../flutter_ui_components/assets/fonts/PingFangSC-Regular.otf": "076c6f46efe8a4c939a559bf7a0fe97809ff56c1c1d23d029f1731715152b9a6",
+    "../../flutter_ui_components/assets/fonts/PingFangSC-Semibold.otf": "f578eafe524991391d4553c5648fcaeb1427750b47c4b3ff043a158e8b2016a8",
+    "asset-export.json": "1833a282d45c7248c395bff870e5c2f1e58245464e09386fd84aae13188653f2"
+  },
+  "assets": [],
+  "fonts": [
+    {
+      "path": "../../flutter_ui_components/assets/fonts/PingFangSC-Regular.otf",
+      "family": "SourcePingFang",
+      "weight": 400,
+      "node_ids": [
+        "064F9A4C-B541-439F-A0D7-077F381CB04C",
+        "1658F588-6331-4AE9-A7DC-D24882896B2C",
+        "1B0ADF95-D99A-4AB7-9C3B-CD12980FA9E1",
+        "34E80EF4-4D77-465A-90BF-C17C722D5D2E",
+        "47761431-A0A4-4BB9-AA29-EDCBB2F45FA0",
+        "49BBDEB3-3B75-429C-A618-251CDC968178",
+        "4B8DDF1D-E961-421E-BDC4-6EF2083194A1",
+        "4FCF2B7E-BDA6-4552-B307-B0E3B9E21748",
+        "55946513-4D7D-4EAE-ABC6-18A49044A4E6",
+        "55FD5E55-A73D-4CCE-83D6-7611607A4C6B",
+        "753AA549-FF63-48F9-9201-7F74E62EF8D7",
+        "9350DF86-713D-4A36-BE74-FCD9FA0B1196",
+        "A77E4EA7-F601-415E-9553-801C96C4D265",
+        "A925E4A2-C98D-4343-AF04-1564AF8E6E6F",
+        "B4942640-915D-4476-9695-0FF18397D13F",
+        "C1C2340B-E143-4E3A-BEA5-F8F359763394",
+        "DD96CBB3-2238-4A97-9E01-F517C265F02C",
+        "DF8F5E03-3C17-43F4-AA4A-251B52C450AC",
+        "F19AABE4-5116-42D8-83C4-03520ECBB8D0",
+        "FA77492A-2E25-47B8-9FE5-972A3247F8D8"
+      ]
+    },
+    {
+      "path": "../../flutter_ui_components/assets/fonts/PingFangSC-Semibold.otf",
+      "family": "SourcePingFang",
+      "weight": 600,
+      "node_ids": [
+        "0032725C-398C-471B-AE79-266720EB2626",
+        "167D5426-1B91-4F68-A24B-2DF2DF7A55AD",
+        "3964CC7F-1A8D-43C2-95F6-4593A191BC61",
+        "41314A6A-B7B7-4469-AFF6-AF32CB865C9A",
+        "466A2239-D777-46F1-A3DE-21AB35112824",
+        "4F4513C7-DC63-494F-9380-A8A1F603233C",
+        "5FE67946-87D9-4473-9109-445FFF9FF494",
+        "72CA4ABD-7D98-4FF1-BD55-85994368BC82",
+        "762965A6-53B0-4937-BEC9-35E239BE5865",
+        "8D2EF89B-C6F7-46E7-9AD8-5C3560FA1A53",
+        "A4F84BD0-34ED-4058-A1A2-B9A95BA20B69",
+        "A97378F3-3379-4757-83B9-FACE864D2700",
+        "CC5A2707-E351-43A0-BF39-3E48F01EEE9D",
+        "E7CD9DC9-A60A-45F4-A88B-F55D461AA784",
+        "FAA2F544-0209-482B-A910-27290E01AAD9",
+        "FBAB175F-30BC-4213-9186-E2256A9B1293",
+        "FC74DFD9-3649-4D6D-8BA7-FA1E7579F128"
+      ]
+    }
+  ],
+  "implementation_inputs": [
+    "../../flutter_ui_components/lib/experiments/task_plan_44_page.dart",
+    "../../flutter_ui_components/lib/main.dart",
+    "../../flutter_ui_components/test/task_plan_44_render_test.dart",
+    "../../flutter_ui_components/pubspec.yaml",
+    "../../flutter_ui_components/pubspec.lock",
+    "../../tools/build_task_plan_44_contract.py"
+  ],
+  "environment": {
+    "renderer": "flutter_test_repaint_boundary",
+    "renderer_version": "Flutter 3.47.7 / engine deb2874385",
+    "platform": "macOS arm64 software rasterizer",
+    "locale": "zh_CN",
+    "state": "TaskPlan44Screen default deterministic state at 375x812",
+    "text_scale": 1
+  },
+  "exclude_rects": [
+    {
+      "rect": [
+        18,
+        103,
+        50,
+        50
+      ],
+      "reason": "头像位图未导出"
+    },
+    {
+      "rect": [
+        88,
+        134,
+        14,
+        14
+      ],
+      "reason": "关系图标未导出"
+    },
+    {
+      "rect": [
+        277,
+        120,
+        16,
+        16
+      ],
+      "reason": "发私信图标未导出"
+    },
+    {
+      "rect": [
+        33,
+        219,
+        20,
+        20
+      ],
+      "reason": "初级任务包图标未导出"
+    },
+    {
+      "rect": [
+        33,
+        440,
+        39,
+        39
+      ],
+      "reason": "叫醒铃声位图未导出"
+    },
+    {
+      "rect": [
+        35,
+        569,
+        38,
+        38
+      ],
+      "reason": "睡前陪伴位图未导出"
+    },
+    {
+      "rect": [
+        35,
+        699,
+        39,
+        39
+      ],
+      "reason": "失眠哄睡位图未导出"
+    },
+    {
+      "rect": [
+        270,
+        675,
+        65,
+        65
+      ],
+      "reason": "已过期印章未导出"
+    }
+  ],
+  "max_excluded_fraction": 0.045,
+  "not_applicable": {}
+}

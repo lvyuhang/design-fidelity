@@ -1,0 +1,27 @@
+{
+  "status": "NOT_ACCEPTED",
+  "scope": "validation of supplied implementation; not end-to-end development time",
+  "started_unix": 1791900354.059784,
+  "stages": [],
+  "gate_status": null,
+  "iteration": {
+    "task_id": "f47d25e1-a343-4952-95fd-399669f3e103",
+    "round_number": 2,
+    "attempt_number": 1,
+    "attempt_id": "48762f54-b6f8-492a-b17a-c837852aed68",
+    "target_rounds": [
+      2,
+      3
+    ],
+    "over_target": false,
+    "baseline_differences": [
+      "regions.source_delta.max_p95"
+    ],
+    "revision_kind": "criteria",
+    "log": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/task-run.json",
+    "html": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/task-run.html"
+  },
+  "error": "Frozen acceptance changed; this run cannot demonstrate same-quality improvement: regions.source_delta.max_p95",
+  "failed_stage": "baseline",
+  "seconds": 0.014
+}

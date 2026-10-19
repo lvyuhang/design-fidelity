@@ -1,0 +1,9 @@
+const assert=require('node:assert/strict'),c=require('../LayerPilot.sketchplugin/Contents/Sketch/lib/core'),g=require('../LayerPilot.sketchplugin/Contents/Sketch/lib/glyphs');
+module.exports=function(){let passed=0;function test(n,fn){fn();passed++;}function n(id,x,y,w,h,extra={}){return {id,name:id,type:'ShapePath',customPath:true,x,y,width:w,height:h,children:[],...extra};}function group(cs,name='编组'){return n('group',0,0,40,40,{name,type:'Group',children:cs});}
+ test('button keeps glyph and excludes filled circular surface',()=>{const cs=[n('bg',0,0,32,32,{buttonSurface:true}),n('bell',9,7,14,18)];assert.deepEqual(c.discover([group(cs)]).assets.map(a=>a.node.id),['bell']);});
+ test('play disc and triangle remain distinguishable even as siblings',()=>{const cs=[n('disc',0,0,20,20,{buttonSurface:true}),n('play',7,6,7,8),n('text',50,0,30,20,{type:'Text'})];assert.deepEqual(c.discover([group(cs)]).assets.map(a=>a.node.id),['play']);});
+ test('stroke profile ring remains part of glyph',()=>{const cs=[n('ring',0,0,18,18),n('head',6,4,5,5),n('shoulders',3,11,12,4)];assert.deepEqual(c.discover([group(cs,'icon/profile')]).assets.map(a=>a.node.id),['group']);});
+ test('named photo icon with only vectors remains SVG candidate',()=>assert.equal(c.resourceKind(group([n('path',0,0,9,9)],'图片')),'icon'));
+ test('small detached accent joins its enclosing glyph, not a neighbour',()=>{const cs=[n('heart',0,0,18,16),n('accent',11,3,3,2),n('other',40,0,18,16)];assert.deepEqual(g.clusters(cs,c.resourceKind).clusters.map(a=>a.map(n=>n.id)),[['heart','accent']]);});
+ test('no button classification for masks or large arbitrary silhouettes',()=>{assert.equal(g.surfaces([n('mask',0,0,32,32,{buttonSurface:true,mask:true}),n('glyph',9,7,14,18)]).length,0);assert.equal(g.surfaces([n('bg',0,0,32,32),n('glyph',9,7,14,18)]).length,0);});
+ return {passed};};

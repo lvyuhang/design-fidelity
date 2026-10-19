@@ -1,0 +1,203 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<title>视觉还原门禁报告</title><style>
+body{font:14px/1.5 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;margin:32px;color:#20242a;background:#f5f6f8}
+main{max-width:1180px;margin:auto}section{background:white;border:1px solid #e1e4e8;border-radius:14px;padding:22px;margin:20px 0;overflow:auto}
+table{border-collapse:collapse;width:100%;min-width:800px}th,td{border-bottom:1px solid #eceef1;padding:8px;text-align:left}img{width:375px;max-width:100%;border:1px solid #ddd}
+.shots{display:flex;gap:16px;flex-wrap:wrap}figure{margin:0}figcaption{color:#686b77;margin-top:6px}
+.ref{color:#15a46b}.actual{color:#e13d8c}code{background:#eef0f3;padding:2px 5px;border-radius:4px}
+</style></head><body><main><h1>视觉还原自动门禁</h1>
+<p>整体结果：FAIL。绿色框为蓝湖原稿可见像素，粉色框为候选渲染可见像素。</p>
+<details><summary>验收范围、环境与排除项</summary><pre>{
+  &quot;skill_version&quot;: &quot;2.5.0&quot;,
+  &quot;coverage&quot;: {
+    &quot;nodes&quot;: 193,
+    &quot;covered&quot;: 74,
+    &quot;exceptions&quot;: [
+      &quot;node D999526D-4728-48B8-AA31-36C1A02359B5: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 544246B8-B6FF-444A-8567-9345CDA09D65: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 088CFA39-2314-4828-8054-4BF12522A166: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node CF239E0D-C4D4-477E-8111-ADD579A7197A: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node E33E4E81-BEE3-474C-A501-7C3F739CD604: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 5D9CBA25-2522-44DA-B468-B70DE3920E25: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 115BD764-5C8D-427F-BA81-FD1654E1E34B: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 7C4BCA8B-27DA-4F74-85C3-462D58C5B0CF: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 3F5B3ADA-2559-4E2F-9C66-4AB8479B9DC7: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 1847BCB0-C92E-40F1-9362-D0795F0E9B28: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 1999247D-5887-46E1-9AF2-FA708F1C3B2B: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 5C743858-45D9-4D8A-8E35-29E0183411E3: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 39F88042-1AC4-44D6-B1FA-75EFD34673E8: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 311E0348-9A86-475B-BE41-87087E8A52CB: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 2B8A43D9-7648-4D7B-9860-FA6288B3AAE9: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 70BBB12E-A77D-4B83-9648-6C8A521249F0: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node F1D91665-B1A1-4268-8B64-E57A30BACDDE: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node AEB20B7D-6D55-4ABB-A215-369617386CBE: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node F02E4C11-0C09-4C74-A097-9E31D4B048AA: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 5EB6D00D-1E6A-42F9-BE3F-BCFF32ACA7CA: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 2FFB25A2-C1EF-42EE-BA93-25ACFF30779D: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node ADAC47AD-797D-45C1-BB42-351ABE0699CF: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node A256CD3D-3664-4808-A78B-BEC2F495FF9D: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node E3986A9D-EB5D-46C8-8928-77118A366617: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 65EAAD3D-6FB1-4ECB-9B9F-9FC912A2FE1A: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 1CA8CE0A-1329-4CED-A41F-2C924985E58F: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 24106BE0-AB76-443C-9815-5D77D520A517: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node FAAF0612-963F-41EF-B7D9-CC2A9D4FD515: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node D043F548-2975-42D9-BCE7-A3F4C4A31BAA: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 4CEC2099-CA41-4A9A-BC6B-0AB154F3B00B: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 281D69BC-4FC1-44D5-B182-B99829EFA78B: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node C67E7C96-5687-4476-9041-B8DE53DB47D3: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 19C07147-0D42-4489-B175-85C283AF63DF: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 2EB85140-B5F1-4E47-9AE0-0F29FA633340: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 347E1D1F-87D1-488A-A13E-346BCB4CD10E: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node D687C11D-D4E1-4AA7-B628-75FF31CCF052: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node C0806E85-B3EC-4040-9565-D4B99E51ED0E: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 6ED744A7-761A-43F6-A759-3F9228D26641: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 80BB08F3-4B4D-4F9A-B731-6FEEC01DFDA6: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 1A883DB2-4D9E-46CE-A8BE-AE38278697BC: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node EC9EB4CB-E97E-4338-A3EA-6AA95C49C065: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 41BF6ECA-EA3F-49BD-93EB-318DC5E3A8CC: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node A8461701-C430-4E8B-B5FC-AE814208BB80: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 474F08DA-49CA-4174-9DC6-7DC0AB0CF20E: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 47882A50-99FD-4753-869C-90728A24F11E: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 5DAD8866-246B-4A97-8B05-8D7C97972135: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 3E664171-0C0B-4310-AC2E-E4A4B47ED3EA: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node BCCA1E1F-7866-488C-A9EC-B34723848AB4: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node D4E8CD5D-B6E9-48A1-B3C7-5F59E1F3AEFC: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node A7E5BDFA-4DC0-424C-A709-6F3D92B405BF: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node F87AD2F7-6A32-4123-B3F6-E3A9CEC5C083: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 4701AFE1-5458-4A44-A684-227EFC018FA1: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 267E2336-488C-4931-B733-D9965168E240: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 91BB294B-DEBE-4FBF-80CE-658A6E2BA66C: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node DA058BB8-C5CC-448A-9D42-9BA832108E90: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 40E237AF-C35F-4868-A49F-B3FEA2A94C78: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 86634088-D406-455A-B5FD-AFD03ECED575: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node BF321EED-A43E-4FD9-910F-4BDE953FBB79: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 566A3D12-DC7D-454E-8BBE-59E8C6A500D0: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 5F2ECE5E-0E45-46A4-81B8-6887D9BF20F3: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 41850417-7BD0-4D0E-94BE-00A18BAB7F23: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 49486696-976D-48CB-A151-FAACF09261AC: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node DCE84587-AC82-44D1-ACC4-46D2E2E98726: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 913CF66C-B817-4E36-A052-9F7DDF858BAF: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node ADB34B57-FD4A-43DB-B749-8FFBE21C731D: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 7447EA9B-091C-4192-95D0-7B72487EC112: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node E5717FEA-46FF-4D4A-981C-E45A632B4A0A: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 91BCB0ED-4A07-46A2-ABBF-8A723B2ACD80: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node B342033A-8800-4DA4-8AB8-0A6DE03CC659: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node B30184F5-2A59-455F-83A5-17078FA6349C: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 70842D26-B34D-4175-912C-D88BE41A46C5: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 0BF2AE40-C7C4-450D-83D2-10D18C2B6263: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 151F2C97-4072-4640-B2DE-E3CF8521B8A1: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node CE85DAB3-789D-4113-ABFA-4D22DE957E82: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 3E2ADEE0-A863-4D1C-8AA9-BAABD5A80AC2: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 0907A4A5-B18A-4E8C-B194-52F251CF549F: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 5D2DC3D3-4656-46D5-B3A3-EC15A59DE617: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 2B4ECED7-A658-4344-897B-5A56AA872DEE: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node F7AAE46D-20FF-4BCC-AE38-D2008F9E7771: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 74126980-2D38-4D7A-9188-3EF474EF4691: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 5A529363-3840-4E57-B4F5-892F7C391EA6: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node B148E4D5-9F6A-4358-B5D7-4D3BB23D4658: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 10529177-0E83-4E6B-B5F5-77134DB698BC: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除&quot;,
+      &quot;node 910631A8-2C2F-4BDE-843E-6638736A2488: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除&quot;,
+      &quot;node D0DE154A-7285-41C2-B032-0C5A31AAB066: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node AF11D8BB-A3F2-4308-935D-924ADE588478: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node DC004803-8B21-489F-8A04-E9955A763486: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node A0A70480-DAED-45B0-9A33-38B4868952D5: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node D0062F5F-E576-450F-8847-174E587DB05D: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 4DD9587B-53AB-495D-B46E-844E128E4EF9: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 86FA6BD5-9535-4D15-9042-2829595FFF3E: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 052E1E31-B2AA-4FC5-953E-E9B4961D0671: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 097D3A14-938E-4833-B876-DB3107A89C97: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node A4E54BB2-7B4A-4C43-8E8C-9102E1C37E1A: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node E6435516-D4CA-4426-B35C-E14E674ACB8A: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 4DCC4994-6548-489D-95D0-88175AE46927: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 537C46FF-4513-4E33-83D5-C809EEBAA26F: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node B0E1B96D-EFA2-43CD-B24C-442AF7C81930: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node BB0A3943-E051-4E7A-998E-56C3927E7547: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node F3104068-AEC7-4784-A457-9145EE62B4AB: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node F6045FCD-36BD-49D4-85ED-93F950C6F008: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 4916B388-EA68-4836-B798-0A61F97C2AC1: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡&quot;,
+      &quot;node 2FF20CF6-8DBD-4681-A08B-39B26E85CA54: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除&quot;,
+      &quot;node 132AD4D3-1C40-4D4E-8B51-96A08AFF9DD8: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除&quot;,
+      &quot;node 6C57EB09-A0A1-4BB2-BA28-AFD566D5DA8A: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除&quot;,
+      &quot;node E7FD65CE-0C0B-44B6-BB4C-F2E337437EB6: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除&quot;,
+      &quot;node AFBB9CBB-C2C0-441D-B456-341464CA66D3: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除&quot;,
+      &quot;node 9D408414-5FDE-4C3F-BD17-D9CC7AAA0B2D: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除&quot;,
+      &quot;node 3F964538-0FD3-4E76-A2F5-5C44A9AD5AC3: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除&quot;,
+      &quot;node EC741E48-B99B-4FDE-AC53-6D25014604EE: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除&quot;,
+      &quot;node A2BC9819-103F-4571-B74D-3ADF78CC6486: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除&quot;,
+      &quot;node 70433398-755E-40FF-8960-E2BADDE1CEDA: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除&quot;,
+      &quot;node ADD97D1E-2372-4F75-ADA4-5287A3783996: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除&quot;,
+      &quot;node 6E907BB0-FA36-47E5-9566-3149FE3EA39A: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除&quot;,
+      &quot;node AEB4B2F3-0357-4EF4-8771-FA4DDF906BFF: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除&quot;,
+      &quot;node A95397A1-A367-476B-8671-40210DB0E48F: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除&quot;,
+      &quot;node 68524E98-B65B-42A8-8B02-A402EEE26C8E: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除&quot;,
+      &quot;node 8C20325C-6F5C-49DE-9BAC-F0A22D477DE6: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除&quot;,
+      &quot;node 63632BC2-376D-44B3-8C3B-F607F2D44668: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除&quot;
+    ]
+  },
+  &quot;environment&quot;: {
+    &quot;renderer&quot;: &quot;flutter-test-skia&quot;,
+    &quot;renderer_version&quot;: &quot;Flutter 3.47.7 / engine deb287481e&quot;,
+    &quot;platform&quot;: &quot;macOS widget-test 375x812 @4x&quot;,
+    &quot;locale&quot;: &quot;zh_CN&quot;,
+    &quot;state&quot;: &quot;filter-backup&quot;,
+    &quot;text_scale&quot;: 1
+  },
+  &quot;exclusions&quot;: [
+    {
+      &quot;rect&quot;: [
+        8,
+        99,
+        177,
+        236
+      ],
+      &quot;reason&quot;: &quot;发现页照片 1 未提供切图&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        190,
+        99,
+        177,
+        236
+      ],
+      &quot;reason&quot;: &quot;发现页照片 2 未提供切图&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        41,
+        488,
+        33,
+        33
+      ],
+      &quot;reason&quot;: &quot;待配置任务图标 1 未提供切图&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        41,
+        541,
+        33,
+        33
+      ],
+      &quot;reason&quot;: &quot;待配置任务图标 2 未提供切图&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        41,
+        598,
+        33,
+        33
+      ],
+      &quot;reason&quot;: &quot;待配置任务图标 3 未提供切图&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        41,
+        653,
+        33,
+        33
+      ],
+      &quot;reason&quot;: &quot;待配置任务图标 4 未提供切图&quot;
+    }
+  ],
+  &quot;excluded_fraction&quot;: 0.2886699507389162
+}</pre></details>
+<section><h2>r6 · <strong style="color:#C6293E">FAIL</strong></h2><div class="shots"><figure><img src="reference.png" alt="reference"><figcaption>蓝湖原稿</figcaption></figure><figure><img src="1-r6-candidate.png" alt="candidate"><figcaption>候选实现</figcaption></figure><figure><img src="1-r6-alignment-overlay.png" alt="alignment overlay"><figcaption>可见像素对齐</figcaption></figure></div><p class="legend"><span class="ref">原稿可见边界</span> · <span class="actual">实现可见边界</span></p><h3>区域像素门禁</h3><table><tr><th>区域</th><th>MAE</th><th>P95</th><th>结果</th><th>原因</th></tr><tr><td>完整页面与模态结构</td><td>1.8316</td><td>12.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>发现页头部</td><td>4.6820</td><td>17.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>任务配置弹层</td><td>1.2363</td><td>3.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>已开启任务卡</td><td>1.0735</td><td>1.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>待配置任务卡</td><td>1.4970</td><td>11.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>底部配置按钮</td><td>2.8333</td><td>1.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr></table><h3>元素几何门禁</h3><table><tr><th>元素</th><th>ΔX</th><th>ΔY</th><th>Δ宽</th><th>Δ高</th><th>结果</th><th>原因</th></tr><tr><td>Time</td><td>13.58</td><td>-1.24</td><td>-1.00</td><td>0.25</td><td><strong style="color:#C6293E">FAIL</strong></td><td>center_x_delta=13.58px &gt; 1.00px; center_y_delta=-1.24px &gt; 1.00px</td></tr><tr><td>我关注的</td><td>0.07</td><td>0.01</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>关注我的</td><td>0.06</td><td>0.01</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>发现</td><td>0.11</td><td>-0.08</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>路径</td><td>0.01</td><td>1.03</td><td>0.00</td><td>0.00</td><td><strong style="color:#C6293E">FAIL</strong></td><td>center_y_delta=1.03px &gt; 1.00px; mask_iou_loss=0.2882 &gt; 0.2500</td></tr><tr><td>筛选</td><td>-0.10</td><td>0.07</td><td>0.25</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>已开启任务</td><td>0.09</td><td>-0.08</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>待配置任务</td><td>0.02</td><td>-0.03</td><td>0.00</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>视频通话</td><td>-0.32</td><td>-0.15</td><td>0.00</td><td>0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>语音通话</td><td>-0.59</td><td>-0.13</td><td>0.00</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>编组 4</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>编组</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>-path备份</td><td>0.13</td><td>0.18</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>编组</td><td>-0.54</td><td>-0.59</td><td>-0.50</td><td>-0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>私信互动</td><td>-0.15</td><td>0.01</td><td>0.50</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>编组</td><td>0.48</td><td>0.04</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>编组</td><td>-0.47</td><td>-0.01</td><td>-0.50</td><td>-0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>开通任务项，获取更多奖励</td><td>0.05</td><td>-0.01</td><td>0.00</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>已为你默认开启以下任务项，可前往设置奖励</td><td>0.21</td><td>-0.05</td><td>0.25</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>直线 5</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>去配置任务项</td><td>0.28</td><td>-0.57</td><td>0.00</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>直线 4备份 3</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>直线 4备份 4</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>直线 4备份 5</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>叫醒服务</td><td>-0.09</td><td>-0.08</td><td>0.50</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>录制至少 10 秒叫醒音频</td><td>0.04</td><td>-0.03</td><td>0.50</td><td>0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>未开通</td><td>0.21</td><td>-0.05</td><td>0.00</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>叫醒服务备份</td><td>-0.09</td><td>-0.08</td><td>0.50</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>录制至少 10 秒叫醒音频备份</td><td>0.04</td><td>-0.03</td><td>0.50</td><td>0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>未开通备份</td><td>0.21</td><td>-0.05</td><td>0.00</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>叫醒服务备份 2</td><td>0.28</td><td>-0.05</td><td>0.25</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>录制至少 10 秒叫醒音频备份 2</td><td>0.00</td><td>-0.03</td><td>0.50</td><td>0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>未开通备份 2</td><td>0.21</td><td>-0.05</td><td>0.00</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>叫醒服务备份 3</td><td>0.28</td><td>-0.05</td><td>0.25</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>录制至少 10 秒叫醒音频备份 3</td><td>0.00</td><td>-0.03</td><td>0.50</td><td>0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>未开通备份 3</td><td>0.21</td><td>-0.05</td><td>0.00</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>编组 2</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>编组 6</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>编组 8</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr></table><h3>组内关系门禁</h3><table><tr><th>关系</th><th>原稿差值</th><th>实现差值</th><th>偏差</th><th>结果</th></tr><tr><td>enabled video label center</td><td>-0.3348</td><td>-0.6577</td><td>0.3229</td><td><strong style="color:#137A52">PASS</strong></td></tr><tr><td>enabled voice label center</td><td>0.9547</td><td>0.9125</td><td>0.0421</td><td><strong style="color:#137A52">PASS</strong></td></tr><tr><td>enabled message label center</td><td>-0.2153</td><td>0.1071</td><td>0.3224</td><td><strong style="color:#137A52">PASS</strong></td></tr><tr><td>row2 title left</td><td>0.5</td><td>0.5</td><td>0.0</td><td><strong style="color:#137A52">PASS</strong></td></tr><tr><td>row3 title left</td><td>0.5</td><td>0.5</td><td>0.0</td><td><strong style="color:#137A52">PASS</strong></td></tr><tr><td>row4 title left</td><td>0.5</td><td>0.5</td><td>0.0</td><td><strong style="color:#137A52">PASS</strong></td></tr></table><h3>颜色采样门禁</h3><table><tr><th>采样</th><th>原稿 RGB</th><th>实现 RGB</th><th>最大通道偏差</th><th>结果</th></tr><tr><td>弹层顶部暖白</td><td>[243.35, 235.08, 216.59]</td><td>[244.61, 235.31, 220.64]</td><td>4.05</td><td><strong style="color:#137A52">PASS</strong></td></tr><tr><td>已开启卡底色</td><td>[254.02, 253.74, 252.06]</td><td>[253.98, 253.67, 251.92]</td><td>0.14</td><td><strong style="color:#137A52">PASS</strong></td></tr><tr><td>待配置卡底色</td><td>[255.0, 252.0, 246.01]</td><td>[255.0, 252.03, 246.09]</td><td>0.08</td><td><strong style="color:#137A52">PASS</strong></td></tr><tr><td>CTA 深色渐变</td><td>[19.87, 19.08, 18.28]</td><td>[19.86, 19.1, 18.27]</td><td>0.02</td><td><strong style="color:#137A52">PASS</strong></td></tr></table></section></main></body></html>

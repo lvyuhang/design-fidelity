@@ -1,0 +1,1036 @@
+{
+  "schema_version": 2,
+  "status": "ready",
+  "name": "拨打方-1备份 2",
+  "source_snapshot": "e275e2eb8b9ade5c88d9c8bf61474c12",
+  "source_version": "be8e6f39-d73f-4525-9694-055fc4498343",
+  "source_scope": {
+    "kind": "page",
+    "expected_node_count": 128
+  },
+  "canvas": [
+    375,
+    812
+  ],
+  "render_scale": 2,
+  "reference": "reference.png",
+  "source_documents": [
+    "source/overview.json",
+    "source/source-01.json",
+    "source/source-02.json",
+    "source/source-03.json"
+  ],
+  "assets": [
+    "../../flutter_ui_components/assets/lanhu/caller_relationship/assets/5355d8346ce5e22f4be49f7731459ff6d76c15d1f4c773601d934b80078f237e.png",
+    "../../flutter_ui_components/assets/lanhu/caller_relationship/assets/5859b2c3b9adbbf2f97f5176d19c6ac2f24293c8cacacb7c601e76a90ceb3c21.png",
+    "../../flutter_ui_components/assets/lanhu/caller_relationship/assets/724f5751b6438b10e1f13f9ba48349a39ce4d1e9ed616b6838b86b6ce9791e11.png",
+    "../../flutter_ui_components/assets/lanhu/caller_relationship/assets/c4230360431291bd733d3496f0a3029f71a18615047dcad1e7ba4aa5d3398a49.png",
+    "../../flutter_ui_components/assets/lanhu/caller_relationship/assets/d8cc76f99f7becdebd771e7be0fac81ae8afe66257e7c9effa979da60364d235.png"
+  ],
+  "fonts": [
+    {
+      "path": "../../flutter_ui_components/assets/fonts/PingFangSC-Regular.otf",
+      "node_ids": [
+        "8418433B-DE62-43EB-BBB5-76F400031FAC",
+        "9F038702-68CC-4C18-ABEB-F4F65EB70F9B",
+        "CEB2795D-8551-41B2-BF83-A8A99D911905",
+        "A70744EA-ED94-432B-B20E-9D56AC7E8DFA",
+        "7FBC7E0B-04C0-418F-9BAC-4BF004A72192",
+        "438F26D6-375A-4FC9-9E80-C356BC4CFA6F",
+        "D0ABC4DE-325B-441C-904C-34B63E1D6B7E",
+        "11873540-C06C-45DA-BB85-92C9AC90C908",
+        "A5799E8B-FDC1-49F8-B897-FA929D3F8DDE",
+        "2D863C0D-E3B1-48B3-80E8-7B20A8D4A227",
+        "0CD9645A-ED4B-44E7-8A8F-44831D57D454",
+        "22B946FC-AB22-41BF-BF7B-5F3028009AC7",
+        "484CED7B-D164-483C-AA95-B2A9A89CBB2A",
+        "B10C4B68-921E-45EC-AD11-E305B71B9D4F",
+        "91AE299E-9432-452C-A799-6A13BB412F23",
+        "0462D8CF-0AF7-4855-9DD5-6209607B346F",
+        "B8AB880D-184D-4B60-9654-2D50206CD92E",
+        "6FE127CE-98F0-47CE-A7FC-EB9955A086CA",
+        "B044E922-4F7E-4300-B5E3-B71F6ECD67C9",
+        "DAA5DAD8-BB70-4C18-AE4B-79790001A850",
+        "BE371142-9230-49D9-A79E-D0E8678DF14F"
+      ]
+    },
+    {
+      "path": "../../flutter_ui_components/assets/fonts/PingFangSC-Semibold.otf",
+      "node_ids": [
+        "46539170-ED0D-4210-8C70-3CBACFF59A02",
+        "6BA42167-CA92-4509-A895-BC0CB0F834C0",
+        "4656FF92-4571-44BB-8028-086C0F55E28B",
+        "7096A54A-A5C9-459F-A07E-B798B3CE4B14",
+        "78FCE78E-30B7-4536-B9B0-0558DDF09667",
+        "5EC7DEB4-17F9-4DD4-AA3F-1173F6DF3B59"
+      ]
+    }
+  ],
+  "implementation_inputs": [
+    "../../flutter_ui_components/lib/experiments/caller_relationship_page.dart",
+    "../../flutter_ui_components/lib/main.dart",
+    "../../flutter_ui_components/test/caller_relationship_render_test.dart",
+    "../../flutter_ui_components/pubspec.yaml",
+    "../../flutter_ui_components/pubspec.lock",
+    "../../flutter_ui_components/assets/fixtures/reply-avatar.png",
+    "../../flutter_ui_components/assets/fixtures/feed-photo.png"
+  ],
+  "environment": {
+    "renderer": "Flutter widget test / Skia",
+    "renderer_version": "Flutter 3.47.7 · engine deb287481e3ce9468f3434937ced4240a70539ca",
+    "platform": "macOS arm64",
+    "locale": "zh_CN",
+    "state": "caller relationship dialog open; deterministic video placeholder",
+    "text_scale": 1
+  },
+  "coverage": {
+    "F35B9F20-DC8D-431A-A3BA-3172BF04B304": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "6BA987BC-4E8B-4A99-8221-024DB2FA3F59": {
+      "status": "covered",
+      "checks": [
+        "features.bottom_chrome"
+      ]
+    },
+    "8B508E24-F045-4878-9F96-7A0E8ED4FBDD": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "主视频蒙版属于动态媒体；源节点没有可导出的原始像素。"
+    },
+    "64B75AC7-18DD-4508-B248-973A11CC975B": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "主视频位图属于动态媒体；MCP 未提供 asset_id，使用确定性占位并排除像素验收。"
+    },
+    "9E11CDEB-EA46-4549-9E96-14B9CF3C2126": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "顶部透明渐变已由原始切图 SHA-256 固定；透明渐变不适合独立可见特征检测。"
+    },
+    "578E7B70-54E6-498A-9723-DB6D297B0AC8": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "46539170-ED0D-4210-8C70-3CBACFF59A02": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "E8CE512D-AD94-4C3E-9490-CA65424CD795": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "624D186D-5326-4D15-9172-1D5120EA6818": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "通话头像位图没有可导出的原始资源，使用项目内确定性头像占位。"
+    },
+    "A92C98EC-11D4-4397-AB42-8707D6930570": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "底部透明渐变已由原始切图 SHA-256 固定；透明渐变不适合独立可见特征检测。"
+    },
+    "044F36D9-493C-46E1-9A08-87E29CDF588B": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "小窗视频蒙版属于动态媒体。"
+    },
+    "1C724BD2-E3E6-42C1-B22E-2C912CE7755A": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "小窗视频位图没有可导出的原始资源，使用确定性占位。"
+    },
+    "E62C91C2-4CC1-440D-9DD7-161A87F462A4": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "3A217E1A-759D-432B-9DD0-2CC38096D0D8": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "DFB0FE23-7777-48D8-BA99-9BB9C5C71FDC": {
+      "status": "covered",
+      "checks": [
+        "features.home_indicator"
+      ]
+    },
+    "824DCE3B-6BE2-4C8A-9876-0D50B017D434": {
+      "status": "covered",
+      "checks": [
+        "features.bottom_chrome"
+      ]
+    },
+    "41FAB53B-B5C9-4375-B465-2B88C5D83C15": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "9E904841-8CBE-4890-ADCD-9894067AC277": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "16DFFF30-940B-4EA5-9987-BA26711C9170": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "5FAA6D2D-1859-4851-BF99-5E9F2AF8AE53": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "153CA816-6034-418D-8E8B-BE00696849ED": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "8CA36077-D8D3-44EC-BD66-E2B412C48047": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "源字体为 SFPro-Semibold；项目未嵌入可再分发的确定性 SF Pro 文件，状态栏时间仅作系统字体近似。"
+    },
+    "A78093A9-D08F-49DF-857D-E88C8A360D27": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "6BA42167-CA92-4509-A895-BC0CB0F834C0": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "9869F6CB-D64E-4F16-9B72-CCD789E209EA": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "10F93C2D-295C-4D56-86B6-198AF8577F0D": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "ACBB2B68-57EB-4DCC-A329-349E47DE98A4": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "D2AAC863-F491-4756-B53C-354A7603B03C": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "A4B72597-91A8-4514-9471-D360961B9315": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "E51C4D3F-CB7E-4110-A3D0-C045502FF9F7": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "E9101077-09EC-4733-B6FF-646BCD138ECF": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "D891D335-2017-4C28-92C5-C735DEC30F1D": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "86054235-2A19-4E03-8FEA-9E84D4A8DC0A": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "67247CB4-99FE-48C2-B175-4842F8AA7346": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "374EA018-CE8F-4D53-9BAF-7038C27E6D9A": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "4AFD7A00-3B20-4BB9-B5BD-028D7E1212C4": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "8418433B-DE62-43EB-BBB5-76F400031FAC": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "8FA36DC2-9DBD-49C0-8FA9-A1417BE268A3": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "25EE1E7D-F79C-48A1-8E10-7DFFE2A0FE25": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "6F0D0548-5E54-4E25-87C7-B31D23520BF0": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "8CA21AA7-B370-42CD-BAEF-800F4F1500E1": {
+      "status": "covered",
+      "checks": [
+        "features.top_chrome"
+      ]
+    },
+    "14BB3DC9-9478-4166-AF4B-95ED7B0CB533": {
+      "status": "covered",
+      "checks": [
+        "features.bottom_chrome"
+      ]
+    },
+    "F03E4DF5-44AD-4BDA-96EB-2C9186BF1002": {
+      "status": "covered",
+      "checks": [
+        "features.bottom_chrome"
+      ]
+    },
+    "98C691C7-D923-4E6F-8511-E5B9F3A7590F": {
+      "status": "covered",
+      "checks": [
+        "features.bottom_chrome"
+      ]
+    },
+    "5BD141A6-DC1D-4765-B59D-00B126B40328": {
+      "status": "covered",
+      "checks": [
+        "features.bottom_chrome"
+      ]
+    },
+    "80DE56D4-B58C-469F-8A68-A6070F117053": {
+      "status": "covered",
+      "checks": [
+        "features.bottom_chrome"
+      ]
+    },
+    "56036432-AE44-4321-ADA4-DEDB57D4351C": {
+      "status": "covered",
+      "checks": [
+        "features.bottom_chrome"
+      ]
+    },
+    "F1F04246-91DD-4202-8AD0-F3F5A6404383": {
+      "status": "covered",
+      "checks": [
+        "features.bottom_chrome"
+      ]
+    },
+    "AEC30577-6C4B-4CDA-B935-70C1930ECAD3": {
+      "status": "covered",
+      "checks": [
+        "features.bottom_chrome"
+      ]
+    },
+    "9F038702-68CC-4C18-ABEB-F4F65EB70F9B": {
+      "status": "covered",
+      "checks": [
+        "features.bottom_chrome"
+      ]
+    },
+    "EA8F3E4A-4E4B-404F-B13C-6158DD6EE0F7": {
+      "status": "covered",
+      "checks": [
+        "features.bottom_chrome"
+      ]
+    },
+    "031ECBFF-4A07-4610-90EF-9F5442D1A4A6": {
+      "status": "covered",
+      "checks": [
+        "features.bottom_chrome"
+      ]
+    },
+    "B2D8A9DF-EC5D-4117-B73D-D1C364A62688": {
+      "status": "covered",
+      "checks": [
+        "features.bottom_chrome"
+      ]
+    },
+    "DF29A63F-70B8-4676-AA32-538A3465646F": {
+      "status": "covered",
+      "checks": [
+        "features.bottom_chrome"
+      ]
+    },
+    "CEB2795D-8551-41B2-BF83-A8A99D911905": {
+      "status": "covered",
+      "checks": [
+        "features.bottom_chrome"
+      ]
+    },
+    "BF4A6B1C-CCA1-4EF5-AD7D-4CAB6E7EFF4D": {
+      "status": "covered",
+      "checks": [
+        "features.bottom_chrome"
+      ]
+    },
+    "84C7AE56-0805-456A-A302-4DDE98402B97": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "全屏 40% 遮罩覆盖动态视频，无法用独立颜色特征隔离；其结果由前景区域检查体现。"
+    },
+    "3CD31816-341A-4D8A-8E55-3BD897ECFF93": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "E7FAC82C-353C-4286-B129-D42367B59CE6": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "A70744EA-ED94-432B-B20E-9D56AC7E8DFA": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "4656FF92-4571-44BB-8028-086C0F55E28B": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "7096A54A-A5C9-459F-A07E-B798B3CE4B14": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "78FCE78E-30B7-4536-B9B0-0558DDF09667": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "7FBC7E0B-04C0-418F-9BAC-4BF004A72192": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "438F26D6-375A-4FC9-9E80-C356BC4CFA6F": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "080CAAEE-103E-4A7B-B3C7-1EC9343AF442": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "D0ABC4DE-325B-441C-904C-34B63E1D6B7E": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "FA05AB21-C5F2-4769-BAA3-190F61EB08B4": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "11873540-C06C-45DA-BB85-92C9AC90C908": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "5EC7DEB4-17F9-4DD4-AA3F-1173F6DF3B59": {
+      "status": "covered",
+      "checks": [
+        "features.title_text"
+      ]
+    },
+    "A5799E8B-FDC1-49F8-B897-FA929D3F8DDE": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "2D863C0D-E3B1-48B3-80E8-7B20A8D4A227": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "0CD9645A-ED4B-44E7-8A8F-44831D57D454": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "22B946FC-AB22-41BF-BF7B-5F3028009AC7": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "484CED7B-D164-483C-AA95-B2A9A89CBB2A": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "B10C4B68-921E-45EC-AD11-E305B71B9D4F": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "91AE299E-9432-452C-A799-6A13BB412F23": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "0462D8CF-0AF7-4855-9DD5-6209607B346F": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "E1F3E070-2174-477F-8164-E07CFF967881": {
+      "status": "covered",
+      "checks": [
+        "features.title_icon"
+      ]
+    },
+    "1507943B-4E9F-4439-88C7-7834DB888651": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "4C6D95EC-2304-4258-B844-7F702E07615D": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "FFFE5F28-4D78-4B36-B8AC-0D144E19203D": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "9DC68D67-25B8-47FA-AA6E-2D0C077CD96A": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "FF524642-E714-4996-BA12-534EC9010AF9": {
+      "status": "covered",
+      "checks": [
+        "features.chart_line"
+      ]
+    },
+    "858E5AD6-38FC-41EB-9063-5CE9B3B12DB9": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "0E34667F-38CF-4856-8287-CA763E1D4ECF": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "A950BFEE-B081-439A-BDFE-4B9AE2A64CC1": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "18599B6D-8A0D-4F25-A569-6D6D1AC1B1B5": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "EA767750-C792-4E70-9CB9-2A44C859752C": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "0ACBC762-A589-436E-AD36-C9C95C319446": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "91722D3C-61CE-45B3-8A81-B87E42847EFA": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "1B54DC20-AAFE-48B7-9D77-DFABE52A1D31": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "BDB98F4E-8F04-4271-8FF6-CF90E1656927": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "F531C82B-B7FE-4B6C-A462-B2E9833D98D7": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "BB2A519B-25DD-46B3-9AB9-8F27B022E98E": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "B8AB880D-184D-4B60-9654-2D50206CD92E": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "6FE127CE-98F0-47CE-A7FC-EB9955A086CA": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "B044E922-4F7E-4300-B5E3-B71F6ECD67C9": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "3DC042E5-3A04-45C0-B282-C8DC14DDD57B": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "A837EA5B-1599-4C78-9E2C-301119EF9E0D": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "F3D2CD36-CB0E-4E2D-B07D-9A72BBD4867E": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "DAA5DAD8-BB70-4C18-AE4B-79790001A850": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "CFEABC24-FEFC-4035-99EC-BCBA3461659E": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    },
+    "BE371142-9230-49D9-A79E-D0E8678DF14F": {
+      "status": "covered",
+      "checks": [
+        "features.card_shell"
+      ]
+    }
+  },
+  "regions": {
+    "card": {
+      "label": "关系详情卡片",
+      "rect": [
+        23,
+        178,
+        330,
+        420
+      ],
+      "max_mae": 14,
+      "max_p95": 55
+    },
+    "stats": {
+      "label": "底部统计卡",
+      "rect": [
+        44,
+        505,
+        288,
+        70
+      ],
+      "max_mae": 8,
+      "max_p95": 32
+    }
+  },
+  "features": {
+    "card_shell": {
+      "label": "关系详情卡片整体边界",
+      "node_ids": [
+        "3CD31816-341A-4D8A-8E55-3BD897ECFF93",
+        "E7FAC82C-353C-4286-B129-D42367B59CE6",
+        "A70744EA-ED94-432B-B20E-9D56AC7E8DFA",
+        "4656FF92-4571-44BB-8028-086C0F55E28B",
+        "7096A54A-A5C9-459F-A07E-B798B3CE4B14",
+        "78FCE78E-30B7-4536-B9B0-0558DDF09667",
+        "7FBC7E0B-04C0-418F-9BAC-4BF004A72192",
+        "438F26D6-375A-4FC9-9E80-C356BC4CFA6F",
+        "080CAAEE-103E-4A7B-B3C7-1EC9343AF442",
+        "D0ABC4DE-325B-441C-904C-34B63E1D6B7E",
+        "FA05AB21-C5F2-4769-BAA3-190F61EB08B4",
+        "11873540-C06C-45DA-BB85-92C9AC90C908",
+        "5EC7DEB4-17F9-4DD4-AA3F-1173F6DF3B59",
+        "A5799E8B-FDC1-49F8-B897-FA929D3F8DDE",
+        "2D863C0D-E3B1-48B3-80E8-7B20A8D4A227",
+        "0CD9645A-ED4B-44E7-8A8F-44831D57D454",
+        "22B946FC-AB22-41BF-BF7B-5F3028009AC7",
+        "484CED7B-D164-483C-AA95-B2A9A89CBB2A",
+        "B10C4B68-921E-45EC-AD11-E305B71B9D4F",
+        "91AE299E-9432-452C-A799-6A13BB412F23",
+        "0462D8CF-0AF7-4855-9DD5-6209607B346F",
+        "E1F3E070-2174-477F-8164-E07CFF967881",
+        "1507943B-4E9F-4439-88C7-7834DB888651",
+        "4C6D95EC-2304-4258-B844-7F702E07615D",
+        "FFFE5F28-4D78-4B36-B8AC-0D144E19203D",
+        "9DC68D67-25B8-47FA-AA6E-2D0C077CD96A",
+        "FF524642-E714-4996-BA12-534EC9010AF9",
+        "858E5AD6-38FC-41EB-9063-5CE9B3B12DB9",
+        "0E34667F-38CF-4856-8287-CA763E1D4ECF",
+        "A950BFEE-B081-439A-BDFE-4B9AE2A64CC1",
+        "18599B6D-8A0D-4F25-A569-6D6D1AC1B1B5",
+        "EA767750-C792-4E70-9CB9-2A44C859752C",
+        "0ACBC762-A589-436E-AD36-C9C95C319446",
+        "91722D3C-61CE-45B3-8A81-B87E42847EFA",
+        "1B54DC20-AAFE-48B7-9D77-DFABE52A1D31",
+        "BDB98F4E-8F04-4271-8FF6-CF90E1656927",
+        "F531C82B-B7FE-4B6C-A462-B2E9833D98D7",
+        "BB2A519B-25DD-46B3-9AB9-8F27B022E98E",
+        "B8AB880D-184D-4B60-9654-2D50206CD92E",
+        "6FE127CE-98F0-47CE-A7FC-EB9955A086CA",
+        "B044E922-4F7E-4300-B5E3-B71F6ECD67C9",
+        "3DC042E5-3A04-45C0-B282-C8DC14DDD57B",
+        "A837EA5B-1599-4C78-9E2C-301119EF9E0D",
+        "F3D2CD36-CB0E-4E2D-B07D-9A72BBD4867E",
+        "DAA5DAD8-BB70-4C18-AE4B-79790001A850",
+        "CFEABC24-FEFC-4035-99EC-BCBA3461659E",
+        "BE371142-9230-49D9-A79E-D0E8678DF14F"
+      ],
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 55,
+        "min_pixels": 25000
+      },
+      "limits": {
+        "max_center_delta": 1.5,
+        "max_size_delta": 2.5,
+        "max_edge_delta": 2.5,
+        "max_ink_ratio_delta": 0.12
+      }
+    },
+    "top_chrome": {
+      "label": "顶部通话控件",
+      "node_ids": [
+        "F35B9F20-DC8D-431A-A3BA-3172BF04B304",
+        "578E7B70-54E6-498A-9723-DB6D297B0AC8",
+        "46539170-ED0D-4210-8C70-3CBACFF59A02",
+        "E8CE512D-AD94-4C3E-9490-CA65424CD795",
+        "E62C91C2-4CC1-440D-9DD7-161A87F462A4",
+        "3A217E1A-759D-432B-9DD0-2CC38096D0D8",
+        "41FAB53B-B5C9-4375-B465-2B88C5D83C15",
+        "9E904841-8CBE-4890-ADCD-9894067AC277",
+        "16DFFF30-940B-4EA5-9987-BA26711C9170",
+        "5FAA6D2D-1859-4851-BF99-5E9F2AF8AE53",
+        "153CA816-6034-418D-8E8B-BE00696849ED",
+        "A78093A9-D08F-49DF-857D-E88C8A360D27",
+        "6BA42167-CA92-4509-A895-BC0CB0F834C0",
+        "9869F6CB-D64E-4F16-9B72-CCD789E209EA",
+        "10F93C2D-295C-4D56-86B6-198AF8577F0D",
+        "ACBB2B68-57EB-4DCC-A329-349E47DE98A4",
+        "D2AAC863-F491-4756-B53C-354A7603B03C",
+        "A4B72597-91A8-4514-9471-D360961B9315",
+        "E51C4D3F-CB7E-4110-A3D0-C045502FF9F7",
+        "E9101077-09EC-4733-B6FF-646BCD138ECF",
+        "D891D335-2017-4C28-92C5-C735DEC30F1D",
+        "86054235-2A19-4E03-8FEA-9E84D4A8DC0A",
+        "67247CB4-99FE-48C2-B175-4842F8AA7346",
+        "374EA018-CE8F-4D53-9BAF-7038C27E6D9A",
+        "4AFD7A00-3B20-4BB9-B5BD-028D7E1212C4",
+        "8418433B-DE62-43EB-BBB5-76F400031FAC",
+        "8FA36DC2-9DBD-49C0-8FA9-A1417BE268A3",
+        "25EE1E7D-F79C-48A1-8E10-7DFFE2A0FE25",
+        "6F0D0548-5E54-4E25-87C7-B31D23520BF0",
+        "8CA21AA7-B370-42CD-BAEF-800F4F1500E1"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "light",
+        "luma_min": 145,
+        "min_pixels": 250
+      },
+      "limits": {
+        "max_center_delta": 7,
+        "max_size_delta": 8,
+        "max_edge_delta": 8,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "bottom_chrome": {
+      "label": "底部安全提示与操作控件",
+      "node_ids": [
+        "6BA987BC-4E8B-4A99-8221-024DB2FA3F59",
+        "DFB0FE23-7777-48D8-BA99-9BB9C5C71FDC",
+        "824DCE3B-6BE2-4C8A-9876-0D50B017D434",
+        "14BB3DC9-9478-4166-AF4B-95ED7B0CB533",
+        "F03E4DF5-44AD-4BDA-96EB-2C9186BF1002",
+        "98C691C7-D923-4E6F-8511-E5B9F3A7590F",
+        "5BD141A6-DC1D-4765-B59D-00B126B40328",
+        "80DE56D4-B58C-469F-8A68-A6070F117053",
+        "56036432-AE44-4321-ADA4-DEDB57D4351C",
+        "F1F04246-91DD-4202-8AD0-F3F5A6404383",
+        "AEC30577-6C4B-4CDA-B935-70C1930ECAD3",
+        "9F038702-68CC-4C18-ABEB-F4F65EB70F9B",
+        "EA8F3E4A-4E4B-404F-B13C-6158DD6EE0F7",
+        "031ECBFF-4A07-4610-90EF-9F5442D1A4A6",
+        "B2D8A9DF-EC5D-4117-B73D-D1C364A62688",
+        "DF29A63F-70B8-4676-AA32-538A3465646F",
+        "CEB2795D-8551-41B2-BF83-A8A99D911905",
+        "BF4A6B1C-CCA1-4EF5-AD7D-4CAB6E7EFF4D"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "gold",
+        "red_min": 80,
+        "red_blue_min": 10,
+        "green_blue_min": 4,
+        "min_pixels": 250
+      },
+      "limits": {
+        "max_center_delta": 5,
+        "max_size_delta": 12,
+        "max_edge_delta": 12,
+        "max_ink_ratio_delta": 0.5
+      }
+    },
+    "title_icon": {
+      "label": "关系详情标题图标",
+      "node_ids": [
+        "E1F3E070-2174-477F-8164-E07CFF967881"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "gold",
+        "red_min": 120,
+        "red_blue_min": 18,
+        "green_blue_min": 8,
+        "min_pixels": 40
+      },
+      "limits": {
+        "max_center_delta": 1.5,
+        "max_size_delta": 2,
+        "max_edge_delta": 2.5,
+        "max_ink_ratio_delta": 0.3
+      }
+    },
+    "title_text": {
+      "label": "关系详情标题文字",
+      "node_ids": [
+        "5EC7DEB4-17F9-4DD4-AA3F-1173F6DF3B59"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "gold",
+        "red_min": 120,
+        "red_blue_min": 18,
+        "green_blue_min": 8,
+        "min_pixels": 120
+      },
+      "limits": {
+        "max_center_delta": 1.5,
+        "max_size_delta": 2,
+        "max_edge_delta": 2.5,
+        "max_ink_ratio_delta": 0.25
+      }
+    },
+    "chart_line": {
+      "label": "活跃时段折线",
+      "node_ids": [
+        "FF524642-E714-4996-BA12-534EC9010AF9"
+      ],
+      "padding": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "detector": {
+        "kind": "gold",
+        "red_min": 205,
+        "red_blue_min": 50,
+        "green_blue_min": 35,
+        "min_pixels": 120
+      },
+      "limits": {
+        "max_center_delta": 2.5,
+        "max_size_delta": 2,
+        "max_edge_delta": 2.5,
+        "max_ink_ratio_delta": 0.35
+      }
+    },
+    "home_indicator": {
+      "label": "底部 Home Indicator",
+      "node_ids": [
+        "DFB0FE23-7777-48D8-BA99-9BB9C5C71FDC"
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "detector": {
+        "kind": "light",
+        "luma_min": 150,
+        "min_pixels": 300
+      },
+      "limits": {
+        "max_center_delta": 1,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 2,
+        "max_ink_ratio_delta": 0.2
+      }
+    }
+  },
+  "relations": {
+    "title_alignment": {
+      "label": "标题图标与标题文字垂直中心线",
+      "features": [
+        "title_icon",
+        "title_text"
+      ],
+      "metric": "center_y",
+      "max_delta": 1
+    }
+  },
+  "color_samples": {
+    "stats_surface": {
+      "label": "统计卡不透明底色",
+      "node_ids": [
+        "E7FAC82C-353C-4286-B129-D42367B59CE6"
+      ],
+      "anchor": [
+        0.42,
+        0.43
+      ],
+      "size": [
+        6,
+        6
+      ],
+      "max_channel_delta": 5
+    }
+  },
+  "pinned_files": {
+    "reference.png": "f10a0f87054a6f6e29070cd6df1e9dcede2e6833e1ebe236792aeff92890bca7",
+    "source/overview.json": "85eeb8f26da97be54030f3e88a1c78852838b61a78b9add4de9b4b917fd6169e",
+    "source/source-01.json": "13bd41029df7f062e4da36db30257d2f0f0522febb337532cf65e2085b1f0d52",
+    "source/source-02.json": "536cd01fbe5f81425a796ab867f16614fd8db925a2d1a46dc7e772f44ddd1bd5",
+    "source/source-03.json": "e664777622d20b6869a442ba5e112d88c505e10d5583ba59f2783beaa41cb4e4",
+    "../../flutter_ui_components/assets/lanhu/caller_relationship/assets/5355d8346ce5e22f4be49f7731459ff6d76c15d1f4c773601d934b80078f237e.png": "09740aa08a332419e84e510ef7e721d5ad4ebe95bb04b8fd1bdbd871d3ec8e24",
+    "../../flutter_ui_components/assets/lanhu/caller_relationship/assets/5859b2c3b9adbbf2f97f5176d19c6ac2f24293c8cacacb7c601e76a90ceb3c21.png": "d34d6e13b819c76015929f82ba2b3b8ede1c3c1abaaced9c06bfb9d01a8d4b91",
+    "../../flutter_ui_components/assets/lanhu/caller_relationship/assets/724f5751b6438b10e1f13f9ba48349a39ce4d1e9ed616b6838b86b6ce9791e11.png": "f9cccca4cd9e5e6dc2f0ed01314ac27acb3527d94d143f88f8f2ac7cdc11d201",
+    "../../flutter_ui_components/assets/lanhu/caller_relationship/assets/c4230360431291bd733d3496f0a3029f71a18615047dcad1e7ba4aa5d3398a49.png": "1223fa2a7d85ccbf0a9f54908f00414222e8025ba8684f0d512f735cd205147b",
+    "../../flutter_ui_components/assets/lanhu/caller_relationship/assets/d8cc76f99f7becdebd771e7be0fac81ae8afe66257e7c9effa979da60364d235.png": "22414394d4f32c246e7d651befb0631ec36d927066f88a479a51db83c75cbf58",
+    "../../flutter_ui_components/assets/fonts/PingFangSC-Regular.otf": "582475dbeb3256eacae907b799144e74a0b063c984218498295c6ea1163d26c6",
+    "../../flutter_ui_components/assets/fonts/PingFangSC-Medium.otf": "6a1f0df7f25f223b67a219562c45918ca246708462fc1b59cd9ce4c9a7a129b0",
+    "../../flutter_ui_components/assets/fonts/PingFangSC-Semibold.otf": "6ebc60350d6ee7f78cf583be0fbd52b74308b8b506cde6526073c7b4d3de1e3b"
+  },
+  "exclude_rects": [],
+  "max_excluded_fraction": 0.2,
+  "not_applicable": {}
+}

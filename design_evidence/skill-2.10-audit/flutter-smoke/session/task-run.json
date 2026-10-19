@@ -1,0 +1,398 @@
+{
+  "schema_version": 1,
+  "task_id": "bd41c267-4d2f-439e-8f10-2543669a3c5a",
+  "identity": {
+    "name": "独立 Flutter 合成夹具",
+    "snapshot": "synthetic-flutter-v2",
+    "version": "fixture-2-workflow",
+    "canvas": [
+      375,
+      812
+    ]
+  },
+  "created_at": "2026-10-13T10:29:26+00:00",
+  "rounds": [
+    {
+      "round_number": 1,
+      "fingerprint": "9185afa1a63bcca44e920e2edcfc52861e52e8f9550225b198dc097c8503f9ab",
+      "contract_sha256": "6e0c3e9ae2a862a19890bb8ebf27f718bccdba1f00ffcc14fc03a3faf8e40549",
+      "implementation_signature": "3a8b3055be45d3627634386c9b950ea950cad8c6622e3cb63eb5fdcb896a6cfe",
+      "criteria_signature": "f37034ffcffe9d0b546552d9812ef7038b4cdc420269dfd29157771d92a88b23",
+      "revision_kind": "initial",
+      "implementation_changed": false,
+      "criteria_changed": false,
+      "contract_changed": false,
+      "attempts": [
+        {
+          "attempt_id": "cf1456d6-4af4-4357-8282-927e37dabe93",
+          "attempt_number": 1,
+          "started_at": "2026-10-13T10:29:26+00:00",
+          "status": "PASS",
+          "note": "正确合成夹具，冻结标准；验证配置入口与真实 Flutter 渲染",
+          "pid": 23332,
+          "run_report": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/session/001-validate/run.json",
+          "baseline_differences": [],
+          "seconds": 7.153,
+          "gate_status": "PASS",
+          "failures": [],
+          "stages": [
+            {
+              "name": "preflight",
+              "seconds": 0.039,
+              "exit_code": 0
+            },
+            {
+              "name": "render",
+              "seconds": 4.252,
+              "exit_code": 0
+            },
+            {
+              "name": "gate",
+              "seconds": 0.182,
+              "exit_code": 0
+            },
+            {
+              "name": "analyze",
+              "seconds": 2.678,
+              "exit_code": 0
+            }
+          ],
+          "metrics": {
+            "whole": {
+              "compared_pixels": 1218000,
+              "total_pixels": 1218000,
+              "mae": 0.0,
+              "p95_max_channel": 0.0
+            }
+          },
+          "render_sha256": "e5e61b1827b8d8f71874a259b9fde5bf562c5cbf6a1a8b9d9da6110f24f99172",
+          "same_render_as_previous": false,
+          "finished_at": "2026-10-13T10:29:33+00:00"
+        }
+      ]
+    },
+    {
+      "round_number": 2,
+      "fingerprint": "69b64c7d30c23b13637112e0b2bbbaed1aaaada0b92ba986d3960e7f5a14b70b",
+      "contract_sha256": "6e0c3e9ae2a862a19890bb8ebf27f718bccdba1f00ffcc14fc03a3faf8e40549",
+      "implementation_signature": "79e46fd060d09f4ca8ef80e04b3267b1c1e74d49b44aa8374a9d7881ac66ccdf",
+      "criteria_signature": "f37034ffcffe9d0b546552d9812ef7038b4cdc420269dfd29157771d92a88b23",
+      "revision_kind": "implementation",
+      "implementation_changed": true,
+      "criteria_changed": false,
+      "contract_changed": false,
+      "attempts": [
+        {
+          "attempt_id": "b15cd1ac-39d9-4d6f-92d7-fea577ddd24e",
+          "attempt_number": 1,
+          "started_at": "2026-10-13T10:31:46+00:00",
+          "status": "NOT_ACCEPTED",
+          "note": "故障注入：只将图标下移 4px，冻结验收标准不变；预期拒绝",
+          "pid": 23942,
+          "run_report": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/session/002-validate/run.json",
+          "baseline_differences": [],
+          "seconds": 1.669,
+          "gate_status": "FAIL",
+          "failures": [
+            {
+              "check": "features.icon",
+              "label": "icon",
+              "failures": [
+                "center_y_delta=4.00px > 1.00px",
+                "max_edge_delta=4.00px > 2.00px",
+                "mask_iou_loss=0.3333 > 0.2000"
+              ],
+              "error": null
+            },
+            {
+              "check": "relations.row",
+              "label": "图文行",
+              "failures": null,
+              "error": 4.0
+            }
+          ],
+          "error": "Visual gate failed; see /Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/session/002-validate/gate/visual-gate-report.json",
+          "failed_stage": "gate",
+          "stages": [
+            {
+              "name": "preflight",
+              "seconds": 0.048,
+              "exit_code": 0
+            },
+            {
+              "name": "render",
+              "seconds": 1.435,
+              "exit_code": 0
+            },
+            {
+              "name": "gate",
+              "seconds": 0.183,
+              "exit_code": 1
+            }
+          ],
+          "metrics": {
+            "whole": {
+              "compared_pixels": 1218000,
+              "total_pixels": 1218000,
+              "mae": 0.0893,
+              "p95_max_channel": 0.0
+            }
+          },
+          "render_sha256": "471884c7c25ea07ad04fc88527a9882ccdab82b4ad4ba248805ea4464b1b4a65",
+          "same_render_as_previous": false,
+          "finished_at": "2026-10-13T10:31:48+00:00"
+        }
+      ]
+    },
+    {
+      "round_number": 3,
+      "fingerprint": "9185afa1a63bcca44e920e2edcfc52861e52e8f9550225b198dc097c8503f9ab",
+      "contract_sha256": "6e0c3e9ae2a862a19890bb8ebf27f718bccdba1f00ffcc14fc03a3faf8e40549",
+      "implementation_signature": "3a8b3055be45d3627634386c9b950ea950cad8c6622e3cb63eb5fdcb896a6cfe",
+      "criteria_signature": "f37034ffcffe9d0b546552d9812ef7038b4cdc420269dfd29157771d92a88b23",
+      "revision_kind": "implementation",
+      "implementation_changed": true,
+      "criteria_changed": false,
+      "contract_changed": false,
+      "attempts": [
+        {
+          "attempt_id": "1067adc0-48c9-4f16-ac66-93c9d95eeb25",
+          "attempt_number": 1,
+          "started_at": "2026-10-13T10:32:56+00:00",
+          "status": "PASS",
+          "note": "撤回注入的 4px 偏移；验收契约不变，确认修复后可通过",
+          "pid": 24234,
+          "run_report": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/session/003-validate/run.json",
+          "baseline_differences": [],
+          "seconds": 5.188,
+          "gate_status": "PASS",
+          "failures": [],
+          "stages": [
+            {
+              "name": "preflight",
+              "seconds": 0.039,
+              "exit_code": 0
+            },
+            {
+              "name": "render",
+              "seconds": 1.751,
+              "exit_code": 0
+            },
+            {
+              "name": "gate",
+              "seconds": 0.186,
+              "exit_code": 0
+            },
+            {
+              "name": "analyze",
+              "seconds": 3.21,
+              "exit_code": 0
+            }
+          ],
+          "metrics": {
+            "whole": {
+              "compared_pixels": 1218000,
+              "total_pixels": 1218000,
+              "mae": 0.0,
+              "p95_max_channel": 0.0
+            }
+          },
+          "render_sha256": "e5e61b1827b8d8f71874a259b9fde5bf562c5cbf6a1a8b9d9da6110f24f99172",
+          "same_render_as_previous": false,
+          "finished_at": "2026-10-13T10:33:01+00:00"
+        }
+      ]
+    }
+  ],
+  "baseline_policy": {
+    "engine_sha256": {
+      "visual_fidelity_gate.py": "f37fbb9828d1a601ff5a24b80622d333335dedfcee1e7c6b1bd30b66790d16b0",
+      "fidelity_contract.py": "2a042779cf116b027c1bc61093d9ede84559384d21f7fedf0334fd95fff553ee",
+      "source_requirements.py": "ce3034e265896de4f03cdb2616364b43a1a4146d7fb7bfb787dd158aacb11f54",
+      "preflight.py": "4b73199a0d47ca108d9d88a1f18d90f12288b7b9f917fed4d9131cad4ec4a796"
+    },
+    "regions": {
+      "whole": {
+        "rect": [
+          0,
+          0,
+          375,
+          812
+        ],
+        "max_mae": 1,
+        "max_p95": 2
+      }
+    },
+    "features": {
+      "icon": {
+        "node_ids": [
+          "icon"
+        ],
+        "padding": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "detector": {
+          "kind": "color_distance",
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "max_distance": 15,
+          "min_pixels": 50
+        },
+        "limits": {
+          "max_center_delta": 1,
+          "max_size_delta": 1.5,
+          "max_edge_delta": 2,
+          "max_ink_ratio_delta": 0.2,
+          "max_mask_iou_loss": 0.2
+        },
+        "profile": "small_visual"
+      },
+      "heading": {
+        "node_ids": [
+          "heading"
+        ],
+        "padding": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "detector": {
+          "kind": "dark",
+          "luma_max": 60,
+          "min_pixels": 50
+        },
+        "limits": {
+          "max_center_delta": 1,
+          "max_size_delta": 1.5,
+          "max_edge_delta": 2
+        }
+      },
+      "cta": {
+        "node_ids": [
+          "cta"
+        ],
+        "padding": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "detector": {
+          "kind": "dark",
+          "luma_max": 60,
+          "min_pixels": 50
+        },
+        "limits": {
+          "max_center_delta": 1,
+          "max_size_delta": 1.5,
+          "max_edge_delta": 2
+        }
+      }
+    },
+    "relations": {
+      "row": {
+        "features": [
+          "icon",
+          "heading"
+        ],
+        "metric": "center_y",
+        "max_delta": 0.75
+      }
+    },
+    "color_samples": {
+      "surface": {
+        "node_ids": [
+          "surface"
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "size": [
+          6,
+          6
+        ],
+        "max_channel_delta": 1
+      }
+    },
+    "schema_version": 2,
+    "workflow_version": 1,
+    "source_snapshot": "synthetic-flutter-v2",
+    "source_version": "fixture-2-workflow",
+    "source_scope": {
+      "kind": "page",
+      "expected_node_count": 4
+    },
+    "canvas": [
+      375,
+      812
+    ],
+    "render_scale": 2,
+    "environment": {
+      "renderer": "Flutter widget test",
+      "renderer_version": "3.47.7 / deb287481e3ce9468f3434937ced4240a70539ca",
+      "platform": "macOS arm64",
+      "locale": "en",
+      "state": "synthetic-static",
+      "text_scale": 1
+    },
+    "max_excluded_fraction": null,
+    "coverage": {
+      "icon": {
+        "status": "covered",
+        "checks": [
+          "features.icon"
+        ]
+      },
+      "heading": {
+        "status": "covered",
+        "checks": [
+          "features.heading"
+        ]
+      },
+      "cta": {
+        "status": "covered",
+        "checks": [
+          "features.cta"
+        ]
+      },
+      "surface": {
+        "status": "covered",
+        "checks": [
+          "color_samples.surface"
+        ]
+      }
+    },
+    "exclude_rects": [],
+    "reference_sha256": "581e31834b43d7b1f52a39836ecdb42f5c714fa800c19060b1c25e6f5f9e04fc",
+    "source_hashes": [
+      "c1af794545aa64cc2031bf97a4b794124afb465ad62e91a97f8fa37abac539dc"
+    ]
+  },
+  "summary": {
+    "rounds": 3,
+    "target_rounds": [
+      2,
+      3
+    ],
+    "validation_attempts": 3,
+    "implementation_revisions": 2,
+    "criteria_revisions": 0,
+    "classified_rounds": 3,
+    "unchanged_render_attempts": 0,
+    "repeat_attempts": 0,
+    "over_target": false,
+    "total_validation_seconds": 14.01,
+    "latest_status": "PASS",
+    "tool_call_count": null,
+    "timing_scope": "Validation execution only; excludes work before first validation and model editing time",
+    "count_scope": "Tracked render/validation attempts only; not all model/tool calls or visual reviews"
+  }
+}

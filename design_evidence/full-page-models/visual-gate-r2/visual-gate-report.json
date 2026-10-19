@@ -1,0 +1,1850 @@
+{
+  "contract": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/full-page-models/visual-contract.json",
+  "reference": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/full-page-models/reference-4x.png",
+  "render_scale": 4.0,
+  "passed": false,
+  "candidates": {
+    "sol56-r2": {
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/full-page-models/sol56-r2-4x.png",
+      "passed": false,
+      "regions": {
+        "whole": {
+          "label": "完整页面",
+          "rect": [
+            0,
+            0,
+            375,
+            812
+          ],
+          "metrics": {
+            "mae": 3.267,
+            "p95_max_channel": 8.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "capabilities": {
+          "label": "平台能力区",
+          "rect": [
+            15,
+            208,
+            343,
+            208
+          ],
+          "metrics": {
+            "mae": 4.9058,
+            "p95_max_channel": 11.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "benefits": {
+          "label": "创作者收益区",
+          "rect": [
+            16,
+            424,
+            343,
+            266
+          ],
+          "metrics": {
+            "mae": 4.5729,
+            "p95_max_channel": 22.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "cta": {
+          "label": "底部 CTA",
+          "rect": [
+            16,
+            714,
+            343,
+            50
+          ],
+          "metrics": {
+            "mae": 1.989,
+            "p95_max_channel": 1.0
+          },
+          "passed": true,
+          "failures": []
+        }
+      },
+      "features": {
+        "capability_badge": {
+          "label": "平台能力徽章可见主体",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.1191,
+            "center_y_delta": 0.0027,
+            "width_delta": 1.25,
+            "height_delta": 1.25,
+            "max_edge_delta": 0.75,
+            "ink_ratio": 1.0868
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              28.75,
+              223.5,
+              29.0,
+              28.75
+            ],
+            "center": [
+              43.25634682658671,
+              237.88250874562718
+            ],
+            "ink_pixels": 10005
+          },
+          "actual": {
+            "bbox": [
+              28.0,
+              223.0,
+              30.25,
+              30.0
+            ],
+            "center": [
+              43.137197645544006,
+              237.88524326312884
+            ],
+            "ink_pixels": 10873
+          }
+        },
+        "capability_heading": {
+          "label": "平台能力介绍文字",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.2733,
+            "center_y_delta": -0.1338,
+            "width_delta": 1.25,
+            "height_delta": 0.0,
+            "max_edge_delta": 1.0,
+            "ink_ratio": 1.1001
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              61.75,
+              227.75,
+              94.25,
+              15.0
+            ],
+            "center": [
+              109.58108920413561,
+              235.19478841067564
+            ],
+            "ink_pixels": 8318
+          },
+          "actual": {
+            "bbox": [
+              60.75,
+              227.75,
+              95.5,
+              15.0
+            ],
+            "center": [
+              109.30783520926676,
+              235.0610042618293
+            ],
+            "ink_pixels": 9151
+          }
+        },
+        "benefit_badge": {
+          "label": "创作者收益徽章可见主体",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.2283,
+            "center_y_delta": 0.0097,
+            "width_delta": 0.25,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.0305
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              31.5,
+              439.0,
+              32.5,
+              23.5
+            ],
+            "center": [
+              43.36920430750823,
+              450.78125934789114
+            ],
+            "ink_pixels": 6686
+          },
+          "actual": {
+            "bbox": [
+              31.25,
+              439.0,
+              32.75,
+              23.5
+            ],
+            "center": [
+              43.59753265602322,
+              450.7909288824383
+            ],
+            "ink_pixels": 6890
+          }
+        },
+        "benefit_heading": {
+          "label": "创作者获得的收益文字",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": 0.1624,
+            "center_y_delta": -0.1281,
+            "width_delta": 2.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 1.5,
+            "ink_ratio": 1.1502
+          },
+          "failures": [
+            "width_delta=2.25px > 1.50px"
+          ],
+          "reference": {
+            "bbox": [
+              62.5,
+              442.75,
+              126.75,
+              15.0
+            ],
+            "center": [
+              126.57010320597277,
+              450.17204655248133
+            ],
+            "ink_pixels": 13662
+          },
+          "actual": {
+            "bbox": [
+              61.75,
+              442.5,
+              129.0,
+              15.25
+            ],
+            "center": [
+              126.73254740995291,
+              450.0439098892707
+            ],
+            "ink_pixels": 15714
+          }
+        },
+        "capability_1_icon": {
+          "label": "内容创作图标",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0058,
+            "center_y_delta": -0.0114,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0029
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              44.5,
+              288.5,
+              14.0,
+              15.25
+            ],
+            "center": [
+              49.986247544204325,
+              295.51277013752457
+            ],
+            "ink_pixels": 2036
+          },
+          "actual": {
+            "bbox": [
+              44.5,
+              288.5,
+              14.0,
+              15.25
+            ],
+            "center": [
+              49.99204211557297,
+              295.50134671890305
+            ],
+            "ink_pixels": 2042
+          }
+        },
+        "capability_1_copy": {
+          "label": "内容创作文字组",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -0.0079,
+            "center_y_delta": 0.3333,
+            "width_delta": 2.5,
+            "height_delta": 0.5,
+            "max_edge_delta": 1.25,
+            "ink_ratio": 1.1853
+          },
+          "failures": [
+            "width_delta=2.50px > 1.50px"
+          ],
+          "reference": {
+            "bbox": [
+              72.75,
+              274.0,
+              97.5,
+              44.0
+            ],
+            "center": [
+              107.40046384850802,
+              293.8358358837031
+            ],
+            "ink_pixels": 10456
+          },
+          "actual": {
+            "bbox": [
+              71.5,
+              273.75,
+              100.0,
+              44.5
+            ],
+            "center": [
+              107.39260066166383,
+              294.16908738804165
+            ],
+            "ink_pixels": 12393
+          }
+        },
+        "capability_2_icon": {
+          "label": "智能推荐图标",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0034,
+            "center_y_delta": -0.0067,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.003
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              205.5,
+              287.5,
+              17.0,
+              17.0
+            ],
+            "center": [
+              213.87007972097658,
+              295.8743148978575
+            ],
+            "ink_pixels": 2007
+          },
+          "actual": {
+            "bbox": [
+              205.5,
+              287.5,
+              17.0,
+              17.0
+            ],
+            "center": [
+              213.8734475906607,
+              295.867610531545
+            ],
+            "ink_pixels": 2013
+          }
+        },
+        "capability_2_copy": {
+          "label": "智能推荐文字组",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -0.0356,
+            "center_y_delta": 0.4594,
+            "width_delta": 2.0,
+            "height_delta": 0.25,
+            "max_edge_delta": 1.0,
+            "ink_ratio": 1.1611
+          },
+          "failures": [
+            "width_delta=2.00px > 1.50px"
+          ],
+          "reference": {
+            "bbox": [
+              235.5,
+              280.0,
+              76.0,
+              30.0
+            ],
+            "center": [
+              263.41107382550337,
+              294.0996768580661
+            ],
+            "ink_pixels": 8046
+          },
+          "actual": {
+            "bbox": [
+              234.5,
+              279.75,
+              78.0,
+              30.25
+            ],
+            "center": [
+              263.3754816955684,
+              294.5591147505887
+            ],
+            "ink_pixels": 9342
+          }
+        },
+        "capability_3_icon": {
+          "label": "任务互动图标",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0001,
+            "center_y_delta": 0.006,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0038
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              43.5,
+              363.5,
+              16.0,
+              13.25
+            ],
+            "center": [
+              50.679991628296364,
+              370.6523650062788
+            ],
+            "ink_pixels": 2389
+          },
+          "actual": {
+            "bbox": [
+              43.5,
+              363.5,
+              16.0,
+              13.25
+            ],
+            "center": [
+              50.68004587155963,
+              370.65836113427855
+            ],
+            "ink_pixels": 2398
+          }
+        },
+        "capability_3_copy": {
+          "label": "任务互动文字组",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -0.0213,
+            "center_y_delta": 0.2786,
+            "width_delta": 1.75,
+            "height_delta": 0.0,
+            "max_edge_delta": 1.5,
+            "ink_ratio": 1.149
+          },
+          "failures": [
+            "width_delta=1.75px > 1.50px"
+          ],
+          "reference": {
+            "bbox": [
+              72.25,
+              357.0,
+              76.0,
+              28.0
+            ],
+            "center": [
+              103.58625467645837,
+              371.30459332132466
+            ],
+            "ink_pixels": 7217
+          },
+          "actual": {
+            "bbox": [
+              70.75,
+              357.0,
+              77.75,
+              28.0
+            ],
+            "center": [
+              103.5649722624216,
+              371.58315243608297
+            ],
+            "ink_pixels": 8292
+          }
+        },
+        "capability_4_icon": {
+          "label": "关系维护图标",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0013,
+            "center_y_delta": -0.0061,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0026
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              205.5,
+              363.5,
+              17.0,
+              13.0
+            ],
+            "center": [
+              213.84428571428572,
+              370.62175824175824
+            ],
+            "ink_pixels": 2275
+          },
+          "actual": {
+            "bbox": [
+              205.5,
+              363.5,
+              17.0,
+              13.0
+            ],
+            "center": [
+              213.84294169224023,
+              370.61562911003944
+            ],
+            "ink_pixels": 2281
+          }
+        },
+        "capability_4_copy": {
+          "label": "关系维护文字组",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -0.1181,
+            "center_y_delta": 0.2707,
+            "width_delta": 2.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 1.25,
+            "ink_ratio": 1.1743
+          },
+          "failures": [
+            "width_delta=2.00px > 1.50px"
+          ],
+          "reference": {
+            "bbox": [
+              235.5,
+              357.0,
+              87.0,
+              28.25
+            ],
+            "center": [
+              271.51017732267735,
+              372.00374625374627
+            ],
+            "ink_pixels": 8008
+          },
+          "actual": {
+            "bbox": [
+              234.25,
+              357.0,
+              89.0,
+              28.25
+            ],
+            "center": [
+              271.39209378987664,
+              372.274457677584
+            ],
+            "ink_pixels": 9404
+          }
+        },
+        "reward_1_icon": {
+          "label": "多平台分发图标",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0012,
+            "center_y_delta": 0.0014,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              35.0,
+              486.0,
+              43.0,
+              43.0
+            ],
+            "center": [
+              56.37710589651023,
+              507.4095431493897
+            ],
+            "ink_pixels": 23268
+          },
+          "actual": {
+            "bbox": [
+              35.0,
+              486.0,
+              43.0,
+              43.0
+            ],
+            "center": [
+              56.375907860243245,
+              507.4109759766213
+            ],
+            "ink_pixels": 23269
+          }
+        },
+        "reward_1_copy": {
+          "label": "多平台分发文字组",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -0.0482,
+            "center_y_delta": 0.6051,
+            "width_delta": 3.5,
+            "height_delta": 0.5,
+            "max_edge_delta": 2.75,
+            "ink_ratio": 1.2073
+          },
+          "failures": [
+            "width_delta=3.50px > 1.50px",
+            "max_edge_delta=2.75px > 2.00px",
+            "ink_ratio=1.207; |ratio-1| > 0.200"
+          ],
+          "reference": {
+            "bbox": [
+              86.75,
+              491.5,
+              166.5,
+              31.25
+            ],
+            "center": [
+              149.36634951787696,
+              507.69301988224254
+            ],
+            "ink_pixels": 11719
+          },
+          "actual": {
+            "bbox": [
+              84.0,
+              491.25,
+              170.0,
+              31.75
+            ],
+            "center": [
+              149.3181545094713,
+              508.29815168221654
+            ],
+            "ink_pixels": 14148
+          }
+        },
+        "reward_2_icon": {
+          "label": "多样任务图标",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.001,
+            "center_y_delta": 0.0217,
+            "width_delta": 0.0,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.0015
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              35.0,
+              558.0,
+              43.0,
+              43.0
+            ],
+            "center": [
+              56.37509121346096,
+              579.4190775636348
+            ],
+            "ink_pixels": 23297
+          },
+          "actual": {
+            "bbox": [
+              35.0,
+              558.0,
+              43.0,
+              43.25
+            ],
+            "center": [
+              56.376098229974716,
+              579.4407705824369
+            ],
+            "ink_pixels": 23333
+          }
+        },
+        "reward_2_copy": {
+          "label": "多样任务文字组",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -0.0189,
+            "center_y_delta": 0.6782,
+            "width_delta": 1.75,
+            "height_delta": 0.25,
+            "max_edge_delta": 1.75,
+            "ink_ratio": 1.2061
+          },
+          "failures": [
+            "width_delta=1.75px > 1.50px",
+            "ink_ratio=1.206; |ratio-1| > 0.200"
+          ],
+          "reference": {
+            "bbox": [
+              86.5,
+              562.5,
+              95.0,
+              29.75
+            ],
+            "center": [
+              123.49960542929293,
+              577.2565761784512
+            ],
+            "ink_pixels": 9504
+          },
+          "actual": {
+            "bbox": [
+              84.75,
+              562.25,
+              96.75,
+              30.0
+            ],
+            "center": [
+              123.48072057925499,
+              577.9348120038385
+            ],
+            "ink_pixels": 11463
+          }
+        },
+        "reward_3_icon": {
+          "label": "任务奖励图标",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.002,
+            "center_y_delta": 0.1353,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0072
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              35.0,
+              625.0,
+              43.0,
+              45.0
+            ],
+            "center": [
+              56.37710550574039,
+              646.896013156792
+            ],
+            "ink_pixels": 23866
+          },
+          "actual": {
+            "bbox": [
+              35.0,
+              625.0,
+              43.0,
+              45.0
+            ],
+            "center": [
+              56.37515079662215,
+              647.0313344981073
+            ],
+            "ink_pixels": 24039
+          }
+        },
+        "reward_3_copy": {
+          "label": "任务奖励文字组",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -0.0082,
+            "center_y_delta": 0.5851,
+            "width_delta": 1.75,
+            "height_delta": 0.25,
+            "max_edge_delta": 1.0,
+            "ink_ratio": 1.2074
+          },
+          "failures": [
+            "width_delta=1.75px > 1.50px",
+            "ink_ratio=1.207; |ratio-1| > 0.200"
+          ],
+          "reference": {
+            "bbox": [
+              86.25,
+              630.5,
+              94.25,
+              29.75
+            ],
+            "center": [
+              122.37384870123151,
+              644.8243816620097
+            ],
+            "ink_pixels": 9663
+          },
+          "actual": {
+            "bbox": [
+              85.25,
+              630.25,
+              96.0,
+              30.0
+            ],
+            "center": [
+              122.36568955172709,
+              645.4095097282935
+            ],
+            "ink_pixels": 11667
+          }
+        }
+      },
+      "relations": {
+        "capability_header_vertical_alignment": {
+          "label": "平台能力徽章与标题的可见中心线",
+          "reference_delta": 2.6877,
+          "actual_delta": 2.8242,
+          "error": 0.1365,
+          "passed": true
+        },
+        "benefit_header_vertical_alignment": {
+          "label": "收益徽章与标题的可见中心线",
+          "reference_delta": 0.6092,
+          "actual_delta": 0.747,
+          "error": 0.1378,
+          "passed": true
+        },
+        "capability_row_1_vertical_alignment": {
+          "label": "内容创作图标与文字组的可见中心线",
+          "reference_delta": 1.6769,
+          "actual_delta": 1.3323,
+          "error": 0.3447,
+          "passed": true
+        },
+        "capability_row_2_vertical_alignment": {
+          "label": "智能推荐图标与文字组的可见中心线",
+          "reference_delta": 1.7746,
+          "actual_delta": 1.3085,
+          "error": 0.4661,
+          "passed": true
+        },
+        "capability_row_3_vertical_alignment": {
+          "label": "任务互动图标与文字组的可见中心线",
+          "reference_delta": -0.6522,
+          "actual_delta": -0.9248,
+          "error": 0.2726,
+          "passed": true
+        },
+        "capability_row_4_vertical_alignment": {
+          "label": "关系维护图标与文字组的可见中心线",
+          "reference_delta": -1.382,
+          "actual_delta": -1.6588,
+          "error": 0.2768,
+          "passed": true
+        },
+        "reward_row_1_vertical_alignment": {
+          "label": "多平台分发图标与文字组的可见中心线",
+          "reference_delta": -0.2835,
+          "actual_delta": -0.8872,
+          "error": 0.6037,
+          "passed": true
+        },
+        "reward_row_2_vertical_alignment": {
+          "label": "多样任务图标与文字组的可见中心线",
+          "reference_delta": 2.1625,
+          "actual_delta": 1.506,
+          "error": 0.6565,
+          "passed": true
+        },
+        "reward_row_3_vertical_alignment": {
+          "label": "任务奖励图标与文字组的可见中心线",
+          "reference_delta": 2.0716,
+          "actual_delta": 1.6218,
+          "error": 0.4498,
+          "passed": true
+        }
+      },
+      "colors": {
+        "capability_card_surface": {
+          "label": "能力卡片底色",
+          "rect": [
+            151.0687402846167,
+            274.3,
+            6,
+            6
+          ],
+          "reference_rgb": [
+            254.0,
+            251.0,
+            247.0
+          ],
+          "actual_rgb": [
+            254.0,
+            250.37,
+            245.01
+          ],
+          "max_channel_delta": 1.99,
+          "passed": true
+        },
+        "benefit_inner_surface": {
+          "label": "收益内卡底色",
+          "rect": [
+            289.5,
+            648.6,
+            6,
+            6
+          ],
+          "reference_rgb": [
+            255.0,
+            252.42,
+            248.12
+          ],
+          "actual_rgb": [
+            255.0,
+            252.42,
+            248.14
+          ],
+          "max_channel_delta": 0.02,
+          "passed": true
+        },
+        "cta_fill": {
+          "label": "CTA 深色渐变",
+          "rect": [
+            67.88,
+            736.0,
+            6,
+            6
+          ],
+          "reference_rgb": [
+            23.13,
+            21.45,
+            19.73
+          ],
+          "actual_rgb": [
+            23.1,
+            21.48,
+            19.73
+          ],
+          "max_channel_delta": 0.03,
+          "passed": true
+        }
+      },
+      "overlay": "sol56-r2-alignment-overlay.png"
+    },
+    "gpt6-r2": {
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/full-page-models/gpt6-r2-4x.png",
+      "passed": false,
+      "regions": {
+        "whole": {
+          "label": "完整页面",
+          "rect": [
+            0,
+            0,
+            375,
+            812
+          ],
+          "metrics": {
+            "mae": 3.7044,
+            "p95_max_channel": 13.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "capabilities": {
+          "label": "平台能力区",
+          "rect": [
+            15,
+            208,
+            343,
+            208
+          ],
+          "metrics": {
+            "mae": 5.1402,
+            "p95_max_channel": 17.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "benefits": {
+          "label": "创作者收益区",
+          "rect": [
+            16,
+            424,
+            343,
+            266
+          ],
+          "metrics": {
+            "mae": 4.9891,
+            "p95_max_channel": 41.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "cta": {
+          "label": "底部 CTA",
+          "rect": [
+            16,
+            714,
+            343,
+            50
+          ],
+          "metrics": {
+            "mae": 1.989,
+            "p95_max_channel": 1.0
+          },
+          "passed": true,
+          "failures": []
+        }
+      },
+      "features": {
+        "capability_badge": {
+          "label": "平台能力徽章可见主体",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.1337,
+            "center_y_delta": -0.0083,
+            "width_delta": 1.25,
+            "height_delta": 1.25,
+            "max_edge_delta": 0.75,
+            "ink_ratio": 1.0898
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              28.75,
+              223.5,
+              29.0,
+              28.75
+            ],
+            "center": [
+              43.25634682658671,
+              237.88250874562718
+            ],
+            "ink_pixels": 10005
+          },
+          "actual": {
+            "bbox": [
+              28.0,
+              223.0,
+              30.25,
+              30.0
+            ],
+            "center": [
+              43.12267265890122,
+              237.87418600385215
+            ],
+            "ink_pixels": 10903
+          }
+        },
+        "capability_heading": {
+          "label": "平台能力介绍文字",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.2733,
+            "center_y_delta": -0.1338,
+            "width_delta": 1.25,
+            "height_delta": 0.0,
+            "max_edge_delta": 1.0,
+            "ink_ratio": 1.1001
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              61.75,
+              227.75,
+              94.25,
+              15.0
+            ],
+            "center": [
+              109.58108920413561,
+              235.19478841067564
+            ],
+            "ink_pixels": 8318
+          },
+          "actual": {
+            "bbox": [
+              60.75,
+              227.75,
+              95.5,
+              15.0
+            ],
+            "center": [
+              109.30783520926676,
+              235.0610042618293
+            ],
+            "ink_pixels": 9151
+          }
+        },
+        "benefit_badge": {
+          "label": "创作者收益徽章可见主体",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.2234,
+            "center_y_delta": 0.0052,
+            "width_delta": 0.25,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.031
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              31.5,
+              439.0,
+              32.5,
+              23.5
+            ],
+            "center": [
+              43.36920430750823,
+              450.78125934789114
+            ],
+            "ink_pixels": 6686
+          },
+          "actual": {
+            "bbox": [
+              31.25,
+              439.0,
+              32.75,
+              23.5
+            ],
+            "center": [
+              43.59259393587698,
+              450.7864862904396
+            ],
+            "ink_pixels": 6893
+          }
+        },
+        "benefit_heading": {
+          "label": "创作者获得的收益文字",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": 0.1624,
+            "center_y_delta": -0.1281,
+            "width_delta": 2.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 1.5,
+            "ink_ratio": 1.1502
+          },
+          "failures": [
+            "width_delta=2.25px > 1.50px"
+          ],
+          "reference": {
+            "bbox": [
+              62.5,
+              442.75,
+              126.75,
+              15.0
+            ],
+            "center": [
+              126.57010320597277,
+              450.17204655248133
+            ],
+            "ink_pixels": 13662
+          },
+          "actual": {
+            "bbox": [
+              61.75,
+              442.5,
+              129.0,
+              15.25
+            ],
+            "center": [
+              126.73254740995291,
+              450.0439098892707
+            ],
+            "ink_pixels": 15714
+          }
+        },
+        "capability_1_icon": {
+          "label": "内容创作图标",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              44.5,
+              288.5,
+              14.0,
+              15.25
+            ],
+            "center": [
+              49.986247544204325,
+              295.51277013752457
+            ],
+            "ink_pixels": 2036
+          },
+          "actual": {
+            "bbox": [
+              44.5,
+              288.5,
+              14.0,
+              15.25
+            ],
+            "center": [
+              49.986247544204325,
+              295.51277013752457
+            ],
+            "ink_pixels": 2036
+          }
+        },
+        "capability_1_copy": {
+          "label": "内容创作文字组",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -0.0079,
+            "center_y_delta": 0.3333,
+            "width_delta": 2.5,
+            "height_delta": 0.5,
+            "max_edge_delta": 1.25,
+            "ink_ratio": 1.1853
+          },
+          "failures": [
+            "width_delta=2.50px > 1.50px"
+          ],
+          "reference": {
+            "bbox": [
+              72.75,
+              274.0,
+              97.5,
+              44.0
+            ],
+            "center": [
+              107.40046384850802,
+              293.8358358837031
+            ],
+            "ink_pixels": 10456
+          },
+          "actual": {
+            "bbox": [
+              71.5,
+              273.75,
+              100.0,
+              44.5
+            ],
+            "center": [
+              107.39260066166383,
+              294.16908738804165
+            ],
+            "ink_pixels": 12393
+          }
+        },
+        "capability_2_icon": {
+          "label": "智能推荐图标",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              205.5,
+              287.5,
+              17.0,
+              17.0
+            ],
+            "center": [
+              213.87007972097658,
+              295.8743148978575
+            ],
+            "ink_pixels": 2007
+          },
+          "actual": {
+            "bbox": [
+              205.5,
+              287.5,
+              17.0,
+              17.0
+            ],
+            "center": [
+              213.87007972097658,
+              295.8743148978575
+            ],
+            "ink_pixels": 2007
+          }
+        },
+        "capability_2_copy": {
+          "label": "智能推荐文字组",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -0.0356,
+            "center_y_delta": 0.4594,
+            "width_delta": 2.0,
+            "height_delta": 0.25,
+            "max_edge_delta": 1.0,
+            "ink_ratio": 1.1611
+          },
+          "failures": [
+            "width_delta=2.00px > 1.50px"
+          ],
+          "reference": {
+            "bbox": [
+              235.5,
+              280.0,
+              76.0,
+              30.0
+            ],
+            "center": [
+              263.41107382550337,
+              294.0996768580661
+            ],
+            "ink_pixels": 8046
+          },
+          "actual": {
+            "bbox": [
+              234.5,
+              279.75,
+              78.0,
+              30.25
+            ],
+            "center": [
+              263.3754816955684,
+              294.5591147505887
+            ],
+            "ink_pixels": 9342
+          }
+        },
+        "capability_3_icon": {
+          "label": "任务互动图标",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              43.5,
+              363.5,
+              16.0,
+              13.25
+            ],
+            "center": [
+              50.679991628296364,
+              370.6523650062788
+            ],
+            "ink_pixels": 2389
+          },
+          "actual": {
+            "bbox": [
+              43.5,
+              363.5,
+              16.0,
+              13.25
+            ],
+            "center": [
+              50.679991628296364,
+              370.6523650062788
+            ],
+            "ink_pixels": 2389
+          }
+        },
+        "capability_3_copy": {
+          "label": "任务互动文字组",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -0.0213,
+            "center_y_delta": 0.2786,
+            "width_delta": 1.75,
+            "height_delta": 0.0,
+            "max_edge_delta": 1.5,
+            "ink_ratio": 1.149
+          },
+          "failures": [
+            "width_delta=1.75px > 1.50px"
+          ],
+          "reference": {
+            "bbox": [
+              72.25,
+              357.0,
+              76.0,
+              28.0
+            ],
+            "center": [
+              103.58625467645837,
+              371.30459332132466
+            ],
+            "ink_pixels": 7217
+          },
+          "actual": {
+            "bbox": [
+              70.75,
+              357.0,
+              77.75,
+              28.0
+            ],
+            "center": [
+              103.5649722624216,
+              371.58315243608297
+            ],
+            "ink_pixels": 8292
+          }
+        },
+        "capability_4_icon": {
+          "label": "关系维护图标",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              205.5,
+              363.5,
+              17.0,
+              13.0
+            ],
+            "center": [
+              213.84428571428572,
+              370.62175824175824
+            ],
+            "ink_pixels": 2275
+          },
+          "actual": {
+            "bbox": [
+              205.5,
+              363.5,
+              17.0,
+              13.0
+            ],
+            "center": [
+              213.84428571428572,
+              370.62175824175824
+            ],
+            "ink_pixels": 2275
+          }
+        },
+        "capability_4_copy": {
+          "label": "关系维护文字组",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -0.1181,
+            "center_y_delta": 0.2707,
+            "width_delta": 2.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 1.25,
+            "ink_ratio": 1.1743
+          },
+          "failures": [
+            "width_delta=2.00px > 1.50px"
+          ],
+          "reference": {
+            "bbox": [
+              235.5,
+              357.0,
+              87.0,
+              28.25
+            ],
+            "center": [
+              271.51017732267735,
+              372.00374625374627
+            ],
+            "ink_pixels": 8008
+          },
+          "actual": {
+            "bbox": [
+              234.25,
+              357.0,
+              89.0,
+              28.25
+            ],
+            "center": [
+              271.39209378987664,
+              372.274457677584
+            ],
+            "ink_pixels": 9404
+          }
+        },
+        "reward_1_icon": {
+          "label": "多平台分发图标",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0028,
+            "center_y_delta": -0.0066,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 0.9994
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              35.0,
+              486.0,
+              43.0,
+              43.0
+            ],
+            "center": [
+              56.37710589651023,
+              507.4095431493897
+            ],
+            "ink_pixels": 23268
+          },
+          "actual": {
+            "bbox": [
+              35.0,
+              486.0,
+              43.0,
+              43.0
+            ],
+            "center": [
+              56.37427969381612,
+              507.4029629311086
+            ],
+            "ink_pixels": 23254
+          }
+        },
+        "reward_1_copy": {
+          "label": "多平台分发文字组",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -0.0482,
+            "center_y_delta": 0.6051,
+            "width_delta": 3.5,
+            "height_delta": 0.5,
+            "max_edge_delta": 2.75,
+            "ink_ratio": 1.2073
+          },
+          "failures": [
+            "width_delta=3.50px > 1.50px",
+            "max_edge_delta=2.75px > 2.00px",
+            "ink_ratio=1.207; |ratio-1| > 0.200"
+          ],
+          "reference": {
+            "bbox": [
+              86.75,
+              491.5,
+              166.5,
+              31.25
+            ],
+            "center": [
+              149.36634951787696,
+              507.69301988224254
+            ],
+            "ink_pixels": 11719
+          },
+          "actual": {
+            "bbox": [
+              84.0,
+              491.25,
+              170.0,
+              31.75
+            ],
+            "center": [
+              149.3181545094713,
+              508.29815168221654
+            ],
+            "ink_pixels": 14148
+          }
+        },
+        "reward_2_icon": {
+          "label": "多样任务图标",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.001,
+            "center_y_delta": -0.0009,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0001
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              35.0,
+              558.0,
+              43.0,
+              43.0
+            ],
+            "center": [
+              56.37509121346096,
+              579.4190775636348
+            ],
+            "ink_pixels": 23297
+          },
+          "actual": {
+            "bbox": [
+              35.0,
+              558.0,
+              43.0,
+              43.0
+            ],
+            "center": [
+              56.37406652360515,
+              579.4181974248927
+            ],
+            "ink_pixels": 23300
+          }
+        },
+        "reward_2_copy": {
+          "label": "多样任务文字组",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -0.0189,
+            "center_y_delta": 0.6782,
+            "width_delta": 1.75,
+            "height_delta": 0.25,
+            "max_edge_delta": 1.75,
+            "ink_ratio": 1.2061
+          },
+          "failures": [
+            "width_delta=1.75px > 1.50px",
+            "ink_ratio=1.206; |ratio-1| > 0.200"
+          ],
+          "reference": {
+            "bbox": [
+              86.5,
+              562.5,
+              95.0,
+              29.75
+            ],
+            "center": [
+              123.49960542929293,
+              577.2565761784512
+            ],
+            "ink_pixels": 9504
+          },
+          "actual": {
+            "bbox": [
+              84.75,
+              562.25,
+              96.75,
+              30.0
+            ],
+            "center": [
+              123.48072057925499,
+              577.9348120038385
+            ],
+            "ink_pixels": 11463
+          }
+        },
+        "reward_3_icon": {
+          "label": "任务奖励图标",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0072,
+            "center_y_delta": 0.0092,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0004
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              35.0,
+              625.0,
+              43.0,
+              45.0
+            ],
+            "center": [
+              56.37710550574039,
+              646.896013156792
+            ],
+            "ink_pixels": 23866
+          },
+          "actual": {
+            "bbox": [
+              35.0,
+              625.0,
+              43.0,
+              45.0
+            ],
+            "center": [
+              56.369953090970014,
+              646.9051662757581
+            ],
+            "ink_pixels": 23876
+          }
+        },
+        "reward_3_copy": {
+          "label": "任务奖励文字组",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -0.0082,
+            "center_y_delta": 0.5851,
+            "width_delta": 1.75,
+            "height_delta": 0.25,
+            "max_edge_delta": 1.0,
+            "ink_ratio": 1.2074
+          },
+          "failures": [
+            "width_delta=1.75px > 1.50px",
+            "ink_ratio=1.207; |ratio-1| > 0.200"
+          ],
+          "reference": {
+            "bbox": [
+              86.25,
+              630.5,
+              94.25,
+              29.75
+            ],
+            "center": [
+              122.37384870123151,
+              644.8243816620097
+            ],
+            "ink_pixels": 9663
+          },
+          "actual": {
+            "bbox": [
+              85.25,
+              630.25,
+              96.0,
+              30.0
+            ],
+            "center": [
+              122.36568955172709,
+              645.4095097282935
+            ],
+            "ink_pixels": 11667
+          }
+        }
+      },
+      "relations": {
+        "capability_header_vertical_alignment": {
+          "label": "平台能力徽章与标题的可见中心线",
+          "reference_delta": 2.6877,
+          "actual_delta": 2.8132,
+          "error": 0.1255,
+          "passed": true
+        },
+        "benefit_header_vertical_alignment": {
+          "label": "收益徽章与标题的可见中心线",
+          "reference_delta": 0.6092,
+          "actual_delta": 0.7426,
+          "error": 0.1334,
+          "passed": true
+        },
+        "capability_row_1_vertical_alignment": {
+          "label": "内容创作图标与文字组的可见中心线",
+          "reference_delta": 1.6769,
+          "actual_delta": 1.3437,
+          "error": 0.3333,
+          "passed": true
+        },
+        "capability_row_2_vertical_alignment": {
+          "label": "智能推荐图标与文字组的可见中心线",
+          "reference_delta": 1.7746,
+          "actual_delta": 1.3152,
+          "error": 0.4594,
+          "passed": true
+        },
+        "capability_row_3_vertical_alignment": {
+          "label": "任务互动图标与文字组的可见中心线",
+          "reference_delta": -0.6522,
+          "actual_delta": -0.9308,
+          "error": 0.2786,
+          "passed": true
+        },
+        "capability_row_4_vertical_alignment": {
+          "label": "关系维护图标与文字组的可见中心线",
+          "reference_delta": -1.382,
+          "actual_delta": -1.6527,
+          "error": 0.2707,
+          "passed": true
+        },
+        "reward_row_1_vertical_alignment": {
+          "label": "多平台分发图标与文字组的可见中心线",
+          "reference_delta": -0.2835,
+          "actual_delta": -0.8952,
+          "error": 0.6117,
+          "passed": true
+        },
+        "reward_row_2_vertical_alignment": {
+          "label": "多样任务图标与文字组的可见中心线",
+          "reference_delta": 2.1625,
+          "actual_delta": 1.4834,
+          "error": 0.6791,
+          "passed": true
+        },
+        "reward_row_3_vertical_alignment": {
+          "label": "任务奖励图标与文字组的可见中心线",
+          "reference_delta": 2.0716,
+          "actual_delta": 1.4957,
+          "error": 0.576,
+          "passed": true
+        }
+      },
+      "colors": {
+        "capability_card_surface": {
+          "label": "能力卡片底色",
+          "rect": [
+            151.0687402846167,
+            274.3,
+            6,
+            6
+          ],
+          "reference_rgb": [
+            254.0,
+            251.0,
+            247.0
+          ],
+          "actual_rgb": [
+            254.0,
+            250.37,
+            245.01
+          ],
+          "max_channel_delta": 1.99,
+          "passed": true
+        },
+        "benefit_inner_surface": {
+          "label": "收益内卡底色",
+          "rect": [
+            289.5,
+            648.6,
+            6,
+            6
+          ],
+          "reference_rgb": [
+            255.0,
+            252.42,
+            248.12
+          ],
+          "actual_rgb": [
+            255.0,
+            252.42,
+            248.14
+          ],
+          "max_channel_delta": 0.02,
+          "passed": true
+        },
+        "cta_fill": {
+          "label": "CTA 深色渐变",
+          "rect": [
+            67.88,
+            736.0,
+            6,
+            6
+          ],
+          "reference_rgb": [
+            23.13,
+            21.45,
+            19.73
+          ],
+          "actual_rgb": [
+            23.1,
+            21.48,
+            19.73
+          ],
+          "max_channel_delta": 0.03,
+          "passed": true
+        }
+      },
+      "overlay": "gpt6-r2-alignment-overlay.png"
+    }
+  }
+}

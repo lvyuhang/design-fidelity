@@ -1,0 +1,651 @@
+{
+  "contract": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/platform-intro-skill29/visual-contract-r2.json",
+  "contract_sha256": "6d1ca3213b8cad8f25cfd8598ccd0846db519d42fde7fd79fd055102c57bdaf3",
+  "skill_version": "2.9.0",
+  "coverage": null,
+  "environment": {
+    "renderer": "flutter_test raster",
+    "renderer_version": "Flutter 3.47.7 / engine deb287481e",
+    "platform": "macOS host, 1500x3248 RGBA PNG",
+    "locale": "zh_CN",
+    "state": "加入聚星阁默认页",
+    "text_scale": 1
+  },
+  "exclusions": [
+    {
+      "rect": [
+        172,
+        220,
+        15,
+        13
+      ],
+      "reason": "平台标题引号没有可导出源素材，按原矩形画框占位。"
+    },
+    {
+      "rect": [
+        291,
+        208,
+        60,
+        58
+      ],
+      "reason": "01 使用缺失的 Source-KeynoteartHans 装饰字，按原矩形画框占位。"
+    },
+    {
+      "rect": [
+        199,
+        435,
+        15,
+        13
+      ],
+      "reason": "收益标题引号没有可导出源素材，按原矩形画框占位。"
+    },
+    {
+      "rect": [
+        281,
+        424,
+        78,
+        67
+      ],
+      "reason": "02 装饰字和星光位图均无可导出源素材，合并为原始并集画框占位。"
+    }
+  ],
+  "excluded_fraction": 0.029871921182266004,
+  "reference": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/platform-intro-skill29/reference-4x.png",
+  "render_scale": 4.0,
+  "reference_preview": "reference.png",
+  "passed": false,
+  "candidates": {
+    "historical": {
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/platform-intro-skill29/r2/final/render.png",
+      "preview": "1-historical-candidate.png",
+      "passed": true,
+      "regions": {
+        "whole": {
+          "label": "完整页面（缺图区域遮罩后）",
+          "rect": [
+            0,
+            0,
+            375,
+            812
+          ],
+          "metrics": {
+            "compared_pixels": 4726464,
+            "total_pixels": 4872000,
+            "mae": 2.9753,
+            "p95_max_channel": 11.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "benefit_surface": {
+          "label": "创作者收益外卡片",
+          "rect": [
+            16,
+            424,
+            343,
+            266
+          ],
+          "metrics": {
+            "compared_pixels": 1373072,
+            "total_pixels": 1459808,
+            "mae": 3.6385,
+            "p95_max_channel": 20.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "benefit_border": {
+          "label": "创作者收益外卡片顶边",
+          "rect": [
+            16,
+            424,
+            343,
+            3
+          ],
+          "metrics": {
+            "compared_pixels": 12720,
+            "total_pixels": 16464,
+            "mae": 0.2694,
+            "p95_max_channel": 1.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "benefit_mask": {
+          "label": "创作者收益外卡片圆角裁剪",
+          "rect": [
+            16,
+            424,
+            20,
+            20
+          ],
+          "metrics": {
+            "compared_pixels": 6400,
+            "total_pixels": 6400,
+            "mae": 2.3267,
+            "p95_max_channel": 4.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "white_card": {
+          "label": "收益白色列表卡片",
+          "rect": [
+            26,
+            471,
+            325,
+            210
+          ],
+          "metrics": {
+            "compared_pixels": 1069600,
+            "total_pixels": 1092000,
+            "mae": 3.9322,
+            "p95_max_channel": 17.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "cta": {
+          "label": "开始入驻按钮",
+          "rect": [
+            16,
+            714,
+            343,
+            50
+          ],
+          "metrics": {
+            "compared_pixels": 274400,
+            "total_pixels": 274400,
+            "mae": 1.9858,
+            "p95_max_channel": 1.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "cta_border": {
+          "label": "开始入驻按钮顶边",
+          "rect": [
+            36,
+            714,
+            303,
+            3
+          ],
+          "metrics": {
+            "compared_pixels": 14544,
+            "total_pixels": 14544,
+            "mae": 0.4233,
+            "p95_max_channel": 1.0
+          },
+          "passed": true,
+          "failures": []
+        }
+      },
+      "features": {
+        "benefit_dark_surface": {
+          "label": "收益外卡片可见深色轮廓",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.5535,
+            "center_y_delta": 0.5146,
+            "width_delta": 0.0,
+            "height_delta": -1.0,
+            "max_edge_delta": 1.0,
+            "ink_ratio": 0.9998,
+            "mask_iou_loss": 0.0630644354734552
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              17.0,
+              425.0,
+              341.0,
+              229.0
+            ],
+            "center": [
+              182.81204355229147,
+              470.5841616064224
+            ],
+            "ink_pixels": 292476
+          },
+          "actual": {
+            "bbox": [
+              17.0,
+              425.0,
+              341.0,
+              228.0
+            ],
+            "center": [
+              183.3655425901923,
+              471.0987737813908
+            ],
+            "ink_pixels": 292403
+          }
+        },
+        "cta_dark_surface": {
+          "label": "开始入驻按钮可见轮廓",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0114,
+            "center_y_delta": 0.0117,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 0.9976,
+            "mask_iou_loss": 0.012449082337864459
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              16.0,
+              714.0,
+              343.0,
+              50.0
+            ],
+            "center": [
+              187.33947341184046,
+              738.8617279620345
+            ],
+            "ink_pixels": 260868
+          },
+          "actual": {
+            "bbox": [
+              16.0,
+              714.0,
+              343.0,
+              50.0
+            ],
+            "center": [
+              187.35090146170518,
+              738.8734735479012
+            ],
+            "ink_pixels": 260244
+          }
+        }
+      },
+      "relations": {},
+      "colors": {
+        "benefit_gradient_start": {
+          "label": "收益渐变起点",
+          "rect": [
+            220,
+            451,
+            1,
+            1
+          ],
+          "reference_rgb": [
+            48.38,
+            44.38,
+            35.69
+          ],
+          "actual_rgb": [
+            48.5,
+            44.56,
+            35.69
+          ],
+          "max_channel_delta": 0.18,
+          "passed": true
+        },
+        "benefit_gradient_middle": {
+          "label": "收益渐变中点",
+          "rect": [
+            20,
+            553,
+            1,
+            1
+          ],
+          "reference_rgb": [
+            131.94,
+            111.88,
+            75.12
+          ],
+          "actual_rgb": [
+            132.56,
+            111.88,
+            74.69
+          ],
+          "max_channel_delta": 0.62,
+          "passed": true
+        },
+        "benefit_gradient_end": {
+          "label": "收益渐变终点",
+          "rect": [
+            20,
+            659,
+            1,
+            1
+          ],
+          "reference_rgb": [
+            212.19,
+            176.62,
+            112.75
+          ],
+          "actual_rgb": [
+            211.75,
+            176.69,
+            112.62
+          ],
+          "max_channel_delta": 0.44,
+          "passed": true
+        },
+        "benefit_shadow_edge": {
+          "label": "收益外卡阴影边缘",
+          "rect": [
+            187,
+            690,
+            1,
+            1
+          ],
+          "reference_rgb": [
+            246.75,
+            237.25,
+            221.75
+          ],
+          "actual_rgb": [
+            250.0,
+            244.0,
+            233.25
+          ],
+          "max_channel_delta": 11.5,
+          "passed": true
+        },
+        "benefit_shadow_peak": {
+          "label": "收益外卡阴影峰值",
+          "rect": [
+            187,
+            695,
+            1,
+            1
+          ],
+          "reference_rgb": [
+            250.5,
+            244.25,
+            234.25
+          ],
+          "actual_rgb": [
+            252.75,
+            248.0,
+            242.0
+          ],
+          "max_channel_delta": 7.75,
+          "passed": true
+        },
+        "benefit_shadow_tail": {
+          "label": "收益外卡阴影衰减",
+          "rect": [
+            187,
+            707,
+            1,
+            1
+          ],
+          "reference_rgb": [
+            255.0,
+            255.0,
+            254.0
+          ],
+          "actual_rgb": [
+            255.0,
+            254.75,
+            253.0
+          ],
+          "max_channel_delta": 1.0,
+          "passed": true
+        },
+        "white_gradient_start": {
+          "label": "白卡渐变起点",
+          "rect": [
+            188,
+            492,
+            1,
+            1
+          ],
+          "reference_rgb": [
+            255.0,
+            254.62,
+            254.12
+          ],
+          "actual_rgb": [
+            255.0,
+            254.69,
+            254.12
+          ],
+          "max_channel_delta": 0.07,
+          "passed": true
+        },
+        "white_gradient_middle": {
+          "label": "白卡渐变中点",
+          "rect": [
+            188,
+            576,
+            1,
+            1
+          ],
+          "reference_rgb": [
+            255.0,
+            253.44,
+            250.88
+          ],
+          "actual_rgb": [
+            255.0,
+            253.5,
+            251.0
+          ],
+          "max_channel_delta": 0.12,
+          "passed": true
+        },
+        "white_gradient_end": {
+          "label": "白卡渐变终点",
+          "rect": [
+            188,
+            660,
+            1,
+            1
+          ],
+          "reference_rgb": [
+            255.0,
+            252.25,
+            247.75
+          ],
+          "actual_rgb": [
+            255.0,
+            252.25,
+            247.75
+          ],
+          "max_channel_delta": 0.0,
+          "passed": true
+        },
+        "white_shadow_edge": {
+          "label": "白卡阴影边缘",
+          "rect": [
+            188,
+            681,
+            1,
+            1
+          ],
+          "reference_rgb": [
+            224.31,
+            185.75,
+            117.56
+          ],
+          "actual_rgb": [
+            225.38,
+            186.69,
+            117.81
+          ],
+          "max_channel_delta": 1.07,
+          "passed": true
+        },
+        "white_shadow_peak": {
+          "label": "白卡阴影峰值",
+          "rect": [
+            188,
+            686,
+            1,
+            1
+          ],
+          "reference_rgb": [
+            228.44,
+            189.44,
+            119.88
+          ],
+          "actual_rgb": [
+            229.19,
+            189.69,
+            120.06
+          ],
+          "max_channel_delta": 0.75,
+          "passed": true
+        },
+        "white_shadow_tail": {
+          "label": "白卡阴影衰减",
+          "rect": [
+            188,
+            698,
+            1,
+            1
+          ],
+          "reference_rgb": [
+            252.5,
+            248.75,
+            242.25
+          ],
+          "actual_rgb": [
+            253.0,
+            251.0,
+            246.25
+          ],
+          "max_channel_delta": 4.0,
+          "passed": true
+        },
+        "cta_gradient_start": {
+          "label": "CTA 渐变右端",
+          "rect": [
+            324,
+            739,
+            1,
+            1
+          ],
+          "reference_rgb": [
+            51.38,
+            41.81,
+            32.31
+          ],
+          "actual_rgb": [
+            51.19,
+            42.19,
+            32.31
+          ],
+          "max_channel_delta": 0.38,
+          "passed": true
+        },
+        "cta_gradient_middle": {
+          "label": "CTA 渐变中点",
+          "rect": [
+            187,
+            720,
+            1,
+            1
+          ],
+          "reference_rgb": [
+            36.12,
+            30.81,
+            25.62
+          ],
+          "actual_rgb": [
+            36.06,
+            31.06,
+            25.56
+          ],
+          "max_channel_delta": 0.25,
+          "passed": true
+        },
+        "cta_gradient_end": {
+          "label": "CTA 渐变左端",
+          "rect": [
+            50,
+            739,
+            1,
+            1
+          ],
+          "reference_rgb": [
+            20.88,
+            19.81,
+            18.75
+          ],
+          "actual_rgb": [
+            20.81,
+            19.81,
+            18.69
+          ],
+          "max_channel_delta": 0.07,
+          "passed": true
+        },
+        "cta_shadow_edge": {
+          "label": "CTA 阴影边缘",
+          "rect": [
+            187,
+            764,
+            1,
+            1
+          ],
+          "reference_rgb": [
+            250.75,
+            246.5,
+            238.5
+          ],
+          "actual_rgb": [
+            252.0,
+            247.5,
+            240.0
+          ],
+          "max_channel_delta": 1.5,
+          "passed": true
+        },
+        "cta_shadow_peak": {
+          "label": "CTA 阴影峰值",
+          "rect": [
+            187,
+            772,
+            1,
+            1
+          ],
+          "reference_rgb": [
+            252.5,
+            250.25,
+            245.75
+          ],
+          "actual_rgb": [
+            253.0,
+            250.75,
+            246.25
+          ],
+          "max_channel_delta": 0.5,
+          "passed": true
+        },
+        "cta_shadow_tail": {
+          "label": "CTA 阴影衰减",
+          "rect": [
+            187,
+            786,
+            1,
+            1
+          ],
+          "reference_rgb": [
+            255.0,
+            255.0,
+            255.0
+          ],
+          "actual_rgb": [
+            255.0,
+            255.0,
+            254.0
+          ],
+          "max_channel_delta": 1.0,
+          "passed": true
+        }
+      },
+      "overlay": "1-historical-alignment-overlay.png"
+    }
+  },
+  "metrics_passed": true,
+  "status": "NOT_EVALUATED"
+}

@@ -1,0 +1,107 @@
+[
+  {
+    "probe": "baseline",
+    "exit_code": 0,
+    "status": "PASS",
+    "whole_region": {
+      "label": "whole",
+      "rect": [
+        0,
+        0,
+        100,
+        100
+      ],
+      "metrics": {
+        "compared_pixels": 10000,
+        "total_pixels": 10000,
+        "mae": 0.0,
+        "p95_max_channel": 0.0
+      },
+      "passed": true,
+      "failures": []
+    }
+  },
+  {
+    "probe": "missing_parent_shadow",
+    "exit_code": 0,
+    "status": "PASS",
+    "whole_region": {
+      "label": "whole",
+      "rect": [
+        0,
+        0,
+        100,
+        100
+      ],
+      "metrics": {
+        "compared_pixels": 10000,
+        "total_pixels": 10000,
+        "mae": 0.9333,
+        "p95_max_channel": 0.0
+      },
+      "passed": true,
+      "failures": []
+    }
+  },
+  {
+    "probe": "missing_independent_decoration",
+    "exit_code": 1,
+    "status": "FAIL",
+    "whole_region": {
+      "label": "whole",
+      "rect": [
+        80,
+        20,
+        4,
+        3
+      ],
+      "metrics": {
+        "compared_pixels": 12,
+        "total_pixels": 12,
+        "mae": 80.6667,
+        "p95_max_channel": 135.0
+      },
+      "passed": false,
+      "failures": [
+        "mae=80.6667 > 6.0000",
+        "p95=135.00 > 32.00"
+      ]
+    }
+  },
+  {
+    "probe": "missing_grouped_decoration",
+    "exit_code": 0,
+    "status": "PASS",
+    "whole_region": {
+      "label": "whole",
+      "rect": [
+        0,
+        0,
+        100,
+        100
+      ],
+      "metrics": {
+        "compared_pixels": 10000,
+        "total_pixels": 10000,
+        "mae": 0.0968,
+        "p95_max_channel": 0.0
+      },
+      "passed": true,
+      "failures": []
+    }
+  },
+  {
+    "probe": "strict_styles_without_shape_raw_style",
+    "status": "READY_FOR_RENDER",
+    "style_gaps": []
+  },
+  {
+    "probe": "actual_page_inventory_before_after",
+    "v2_7_1_count": 82,
+    "v2_8_0_count": 82,
+    "added": [],
+    "five_reported_missing_decorations_in_old": true,
+    "five_in_new": true,
+    "source_nodes_with_raw_style": 0
+  }
+]

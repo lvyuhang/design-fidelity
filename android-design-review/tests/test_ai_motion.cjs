@@ -1,0 +1,13 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const source=fs.readFileSync(require('node:path').join(__dirname,'../static/ai.js'),'utf8');
+const ctx=vm.createContext({aiPending:j=>['queued','running','submitting'].includes(j.status)});
+vm.runInContext(source.slice(source.indexOf('function aiMotionRegions('),source.indexOf('function flashAIResults(')),ctx);
+const job={status:'running',stage:'comparing',completed_regions:['header']};
+let regions=ctx.aiMotionRegions(job,'capture');assert.equal(regions.length,3);assert.equal(regions[0].state,'done');assert.equal(regions[1].state,'scanning');
+assert.equal(regions[1].kind,'area','analysis crops are not component bounding boxes');
+const selected={...job,region:{x:.2,y:.3,width:.4,height:.2},reference_region:{x:.1,y:.2,width:.5,height:.3}};
+assert.equal(ctx.aiMotionRegions(selected,'reference')[0].x,.1);assert.equal(ctx.aiMotionRegions(selected,'capture')[0].x,.2);
+assert.equal(ctx.aiMotionRegions(selected,'capture')[0].kind,'local','only actual selected crops render precise frames');
+assert.equal(ctx.aiMotionRegions({...job,stage:'adjudicating'},'capture')[0].state,'reviewing');
+assert.equal(ctx.aiMotionRegions({...job,status:'done'},'capture').length,0);assert.equal(ctx.aiMotionRegions({...job,stage:'queued'},'capture').length,0);
+console.log('AI motion tests passed: real region completion, paired crop coordinates, review and terminal states');

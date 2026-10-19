@@ -1,0 +1,156 @@
+{
+  "schema_version": 2,
+  "workflow_version": 1,
+  "require_style_evidence": true,
+  "name": "platform-intro-skill29-focus",
+  "source_snapshot": "da6dd92db9b6df7fc3fc4d2bc873e0ee",
+  "source_version": "d4d1c235-1fb2-4395-9d0e-a5055d074f4e",
+  "canvas": [375, 812],
+  "render_scale": 4,
+  "reference": "reference-4x.png",
+  "source_documents": ["source/focus-effects-nodes.json"],
+  "source_scope": {
+    "kind": "provided_nodes",
+    "reason": "本轮针对上次复核暴露的引号、01/02、星光、收益区渐变/阴影/间距和 CTA 阴影做正式回归；完整页面像素差同时保留为阻断检查。"
+  },
+  "regions": {
+    "whole": {
+      "label": "完整页面（缺图区域遮罩后）",
+      "rect": [0, 0, 375, 812],
+      "max_mae": 4,
+      "max_p95": 12
+    },
+    "benefit_surface": {
+      "label": "创作者收益外卡片",
+      "node_ids": ["7E01FF1B-EB56-4729-8906-6426783856F5"],
+      "max_mae": 6,
+      "max_p95": 16
+    },
+    "benefit_border": {
+      "label": "创作者收益外卡片顶边",
+      "node_ids": ["7E01FF1B-EB56-4729-8906-6426783856F5"],
+      "rect": [16, 424, 343, 3],
+      "effect": {"node_id": "7E01FF1B-EB56-4729-8906-6426783856F5", "key": "borders:0"},
+      "review_reason": "以顶边 3px 局部区域验证 1px 内边框，避开内部内容。",
+      "max_mae": 10,
+      "max_p95": 36
+    },
+    "benefit_mask": {
+      "label": "创作者收益外卡片圆角裁剪",
+      "node_ids": ["7E01FF1B-EB56-4729-8906-6426783856F5"],
+      "rect": [16, 424, 20, 20],
+      "effect": {"node_id": "7E01FF1B-EB56-4729-8906-6426783856F5", "key": "mask"},
+      "review_reason": "左上角 20px 局部区域验证半径 14 的裁剪边界。",
+      "max_mae": 10,
+      "max_p95": 48
+    },
+    "white_card": {
+      "label": "收益白色列表卡片",
+      "node_ids": ["0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B"],
+      "max_mae": 6,
+      "max_p95": 16
+    },
+    "cta": {
+      "label": "开始入驻按钮",
+      "node_ids": ["B3B02A92-587E-4458-994E-449FD80C020F"],
+      "max_mae": 3,
+      "max_p95": 8
+    },
+    "cta_border": {
+      "label": "开始入驻按钮顶边",
+      "node_ids": ["B3B02A92-587E-4458-994E-449FD80C020F"],
+      "rect": [36, 714, 303, 3],
+      "effect": {"node_id": "B3B02A92-587E-4458-994E-449FD80C020F", "key": "borders:0"},
+      "review_reason": "避开两端圆角，以中央顶边验证金色半透明描边。",
+      "max_mae": 10,
+      "max_p95": 32
+    }
+  },
+  "features": {
+    "benefit_dark_surface": {
+      "label": "收益外卡片可见深色轮廓",
+      "node_ids": ["7E01FF1B-EB56-4729-8906-6426783856F5"],
+      "padding": [0, 0, 0, 0],
+      "detector": {"kind": "dark", "luma_max": 145, "min_pixels": 12000},
+      "limits": {"max_center_delta": 1, "max_size_delta": 1.5, "max_edge_delta": 1.5, "max_ink_ratio_delta": 0.12, "max_mask_iou_loss": 0.08}
+    },
+    "white_card_surface": {
+      "label": "收益白卡可见轮廓",
+      "node_ids": ["0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B"],
+      "padding": [0, 0, 0, 0],
+      "detector": {"kind": "light", "luma_min": 245, "min_pixels": 24000},
+      "limits": {"max_center_delta": 1, "max_size_delta": 1.5, "max_edge_delta": 1.5, "max_ink_ratio_delta": 0.12, "max_mask_iou_loss": 0.08}
+    },
+    "cta_dark_surface": {
+      "label": "开始入驻按钮可见轮廓",
+      "node_ids": ["B3B02A92-587E-4458-994E-449FD80C020F"],
+      "padding": [2, 2, 2, 2],
+      "detector": {"kind": "dark", "luma_max": 100, "min_pixels": 12000},
+      "limits": {"max_center_delta": 1, "max_size_delta": 1.5, "max_edge_delta": 1.5, "max_ink_ratio_delta": 0.1, "max_mask_iou_loss": 0.08}
+    }
+  },
+  "relations": {},
+  "not_applicable": {
+    "relations": "本轮三个已实现目标为纵向分离的独立容器；它们的源边界与相互间距由各自节点 region 和整页检查覆盖。"
+  },
+  "color_samples": {
+    "benefit_gradient_start": {"label": "收益渐变起点", "node_ids": ["7E01FF1B-EB56-4729-8906-6426783856F5"], "rect": [220, 451, 1, 1], "effect": {"node_id": "7E01FF1B-EB56-4729-8906-6426783856F5", "key": "fills:0:gradient", "role": "start"}, "review_reason": "源候选中心被标题覆盖，沿同一斜向色带移到空白处。", "max_channel_delta": 28},
+    "benefit_gradient_middle": {"label": "收益渐变中点", "node_ids": ["7E01FF1B-EB56-4729-8906-6426783856F5"], "rect": [20, 553, 1, 1], "effect": {"node_id": "7E01FF1B-EB56-4729-8906-6426783856F5", "key": "fills:0:gradient", "role": "middle"}, "review_reason": "中心被白卡覆盖，沿同一斜向色带移到左侧可见边框内。", "max_channel_delta": 28},
+    "benefit_gradient_end": {"label": "收益渐变终点", "node_ids": ["7E01FF1B-EB56-4729-8906-6426783856F5"], "rect": [20, 659, 1, 1], "effect": {"node_id": "7E01FF1B-EB56-4729-8906-6426783856F5", "key": "fills:0:gradient", "role": "end"}, "review_reason": "中心被白卡覆盖，沿同一斜向色带移到左侧可见边框内。", "max_channel_delta": 28},
+    "benefit_shadow_edge": {"label": "收益外卡阴影边缘", "node_ids": ["7E01FF1B-EB56-4729-8906-6426783856F5"], "rect": [187, 690, 1, 1], "effect": {"node_id": "7E01FF1B-EB56-4729-8906-6426783856F5", "key": "shadow:0", "role": "edge"}, "max_channel_delta": 28},
+    "benefit_shadow_peak": {"label": "收益外卡阴影峰值", "node_ids": ["7E01FF1B-EB56-4729-8906-6426783856F5"], "rect": [187, 695, 1, 1], "effect": {"node_id": "7E01FF1B-EB56-4729-8906-6426783856F5", "key": "shadow:0", "role": "peak"}, "max_channel_delta": 28},
+    "benefit_shadow_tail": {"label": "收益外卡阴影衰减", "node_ids": ["7E01FF1B-EB56-4729-8906-6426783856F5"], "rect": [187, 707, 1, 1], "effect": {"node_id": "7E01FF1B-EB56-4729-8906-6426783856F5", "key": "shadow:0", "role": "tail"}, "max_channel_delta": 28},
+    "white_gradient_start": {"label": "白卡渐变起点", "node_ids": ["0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B"], "rect": [188, 492, 1, 1], "effect": {"node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B", "key": "fills:0:gradient", "role": "start"}, "max_channel_delta": 28},
+    "white_gradient_middle": {"label": "白卡渐变中点", "node_ids": ["0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B"], "rect": [188, 576, 1, 1], "effect": {"node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B", "key": "fills:0:gradient", "role": "middle"}, "max_channel_delta": 28},
+    "white_gradient_end": {"label": "白卡渐变终点", "node_ids": ["0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B"], "rect": [188, 660, 1, 1], "effect": {"node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B", "key": "fills:0:gradient", "role": "end"}, "max_channel_delta": 28},
+    "white_shadow_edge": {"label": "白卡阴影边缘", "node_ids": ["0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B"], "rect": [188, 681, 1, 1], "effect": {"node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B", "key": "shadow:0", "role": "edge"}, "max_channel_delta": 28},
+    "white_shadow_peak": {"label": "白卡阴影峰值", "node_ids": ["0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B"], "rect": [188, 686, 1, 1], "effect": {"node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B", "key": "shadow:0", "role": "peak"}, "max_channel_delta": 28},
+    "white_shadow_tail": {"label": "白卡阴影衰减", "node_ids": ["0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B"], "rect": [188, 698, 1, 1], "effect": {"node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B", "key": "shadow:0", "role": "tail"}, "max_channel_delta": 28},
+    "cta_gradient_start": {"label": "CTA 渐变右端", "node_ids": ["B3B02A92-587E-4458-994E-449FD80C020F"], "rect": [324, 739, 1, 1], "effect": {"node_id": "B3B02A92-587E-4458-994E-449FD80C020F", "key": "fills:0:gradient", "role": "start"}, "max_channel_delta": 28},
+    "cta_gradient_middle": {"label": "CTA 渐变中点", "node_ids": ["B3B02A92-587E-4458-994E-449FD80C020F"], "rect": [187, 720, 1, 1], "effect": {"node_id": "B3B02A92-587E-4458-994E-449FD80C020F", "key": "fills:0:gradient", "role": "middle"}, "review_reason": "源候选落在按钮文字上，沿同一垂直色带移到按钮上部空白处。", "max_channel_delta": 28},
+    "cta_gradient_end": {"label": "CTA 渐变左端", "node_ids": ["B3B02A92-587E-4458-994E-449FD80C020F"], "rect": [50, 739, 1, 1], "effect": {"node_id": "B3B02A92-587E-4458-994E-449FD80C020F", "key": "fills:0:gradient", "role": "end"}, "max_channel_delta": 28},
+    "cta_shadow_edge": {"label": "CTA 阴影边缘", "node_ids": ["B3B02A92-587E-4458-994E-449FD80C020F"], "rect": [187, 764, 1, 1], "effect": {"node_id": "B3B02A92-587E-4458-994E-449FD80C020F", "key": "shadow:0", "role": "edge"}, "max_channel_delta": 28},
+    "cta_shadow_peak": {"label": "CTA 阴影峰值", "node_ids": ["B3B02A92-587E-4458-994E-449FD80C020F"], "rect": [187, 772, 1, 1], "effect": {"node_id": "B3B02A92-587E-4458-994E-449FD80C020F", "key": "shadow:0", "role": "peak"}, "max_channel_delta": 28},
+    "cta_shadow_tail": {"label": "CTA 阴影衰减", "node_ids": ["B3B02A92-587E-4458-994E-449FD80C020F"], "rect": [187, 786, 1, 1], "effect": {"node_id": "B3B02A92-587E-4458-994E-449FD80C020F", "key": "shadow:0", "role": "tail"}, "max_channel_delta": 28}
+  },
+  "exclude_rects": [
+    {"rect": [172, 220, 15, 13], "reason": "平台标题引号没有可导出源素材，按原矩形画框占位。"},
+    {"rect": [291, 208, 60, 58], "reason": "01 使用缺失的 Source-KeynoteartHans 装饰字，按原矩形画框占位。"},
+    {"rect": [199, 435, 15, 13], "reason": "收益标题引号没有可导出源素材，按原矩形画框占位。"},
+    {"rect": [281, 424, 78, 67], "reason": "02 装饰字和星光位图均无可导出源素材，合并为原始并集画框占位。"}
+  ],
+  "max_excluded_fraction": 0.03,
+  "excluded_nodes": {
+    "11857F91-EAAB-4C0C-A518-9D0D2F73628B": "源节点只有填色和边界，没有路径或导出资源；使用原矩形画框占位。",
+    "A3FD2014-8642-473A-B0F5-4C17D694B015": "Source-KeynoteartHans 装饰字体未提供，不能用普通字体仿造 01；使用原矩形画框占位。",
+    "D44A759A-F00C-4F91-B906-8D3AEA24B017": "源节点只有填色和边界，没有路径或导出资源；使用原矩形画框占位。",
+    "67A66F14-1BFC-4ED2-B7CC-CA53F587487F": "星光位图没有 asset_id 且 MCP 无 render fallback；使用并集矩形画框占位。",
+    "D918BBDD-E8F9-4952-B1C0-818569C32B90": "Source-KeynoteartHans 装饰字体未提供，不能用普通字体仿造 02；使用并集矩形画框占位。"
+  },
+  "assets": [],
+  "fonts": [],
+  "implementation_inputs": [
+    "../../flutter_ui_components/lib/experiments/platform_intro_optimized_page.dart",
+    "../../flutter_ui_components/test/platform_intro_optimized_render_test.dart",
+    "../../flutter_ui_components/pubspec.yaml",
+    "../../flutter_ui_components/pubspec.lock"
+  ],
+  "environment": {
+    "renderer": "flutter_test raster",
+    "renderer_version": "Flutter 3.47.7 / engine deb287481e",
+    "platform": "macOS host, 1500x3248 RGBA PNG",
+    "locale": "zh_CN",
+    "state": "加入聚星阁默认页",
+    "text_scale": 1
+  },
+  "node_decisions": {
+    "11857F91-EAAB-4C0C-A518-9D0D2F73628B": {"mode": "missing_asset_placeholder", "implementation": "../../flutter_ui_components/lib/experiments/platform_intro_optimized_page.dart", "symbol": "_MissingSourceAsset.platformQuote", "shape": "rect", "reason": "源路径与导出资源均缺失。"},
+    "A3FD2014-8642-473A-B0F5-4C17D694B015": {"mode": "missing_asset_placeholder", "implementation": "../../flutter_ui_components/lib/experiments/platform_intro_optimized_page.dart", "symbol": "_MissingSourceAsset.platform01", "shape": "rect", "reason": "装饰字体文件缺失。"},
+    "7E01FF1B-EB56-4729-8906-6426783856F5": {"mode": "native_exact", "implementation": "../../flutter_ui_components/lib/experiments/platform_intro_optimized_page.dart", "symbol": "PlatformIntroOptimizedPage._benefitSection.outerSurface"},
+    "D44A759A-F00C-4F91-B906-8D3AEA24B017": {"mode": "missing_asset_placeholder", "implementation": "../../flutter_ui_components/lib/experiments/platform_intro_optimized_page.dart", "symbol": "_MissingSourceAsset.benefitQuote", "shape": "rect", "reason": "源路径与导出资源均缺失。"},
+    "67A66F14-1BFC-4ED2-B7CC-CA53F587487F": {"mode": "missing_asset_placeholder", "implementation": "../../flutter_ui_components/lib/experiments/platform_intro_optimized_page.dart", "symbol": "_MissingSourceAsset.benefitDecoration", "shape": "rect", "reason": "原位图未切图且无回退渲染。"},
+    "D918BBDD-E8F9-4952-B1C0-818569C32B90": {"mode": "missing_asset_placeholder", "implementation": "../../flutter_ui_components/lib/experiments/platform_intro_optimized_page.dart", "symbol": "_MissingSourceAsset.benefit02", "shape": "rect", "reason": "装饰字体文件缺失。"},
+    "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B": {"mode": "native_exact", "implementation": "../../flutter_ui_components/lib/experiments/platform_intro_optimized_page.dart", "symbol": "PlatformIntroOptimizedPage._benefitSection.whiteCard"},
+    "B3B02A92-587E-4458-994E-449FD80C020F": {"mode": "native_exact", "implementation": "../../flutter_ui_components/lib/experiments/platform_intro_optimized_page.dart", "symbol": "PlatformIntroOptimizedPage.startButton"}
+  }
+}

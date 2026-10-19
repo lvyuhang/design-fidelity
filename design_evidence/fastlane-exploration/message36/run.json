@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "scope": "existing implementation validation only",
+  "started_unix": 1791872430.155335,
+  "stages": [
+    {
+      "name": "preflight",
+      "seconds": 0.093,
+      "exit_code": 0
+    },
+    {
+      "name": "render",
+      "seconds": 1.958,
+      "exit_code": 0
+    },
+    {
+      "name": "gate",
+      "seconds": 0.292,
+      "exit_code": 0
+    },
+    {
+      "name": "analyze",
+      "seconds": 1.503,
+      "exit_code": 0
+    }
+  ],
+  "gate_status": "PASS_WITH_EXCLUSIONS",
+  "preflight": {
+    "coverage": {
+      "nodes": 150,
+      "covered": 150,
+      "exceptions": []
+    },
+    "fonts": {
+      "text_nodes_checked": 46
+    },
+    "assets": 15
+  },
+  "metrics": {
+    "compared_pixels": 1173624,
+    "total_pixels": 1218000,
+    "mae": 3.27,
+    "p95_max_channel": 12.0
+  },
+  "seconds": 3.846
+}

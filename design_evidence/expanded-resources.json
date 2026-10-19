@@ -1,0 +1,120 @@
+{
+  "modal": {
+    "snapshot_id": "d55fd328e4eedf660dbb471e50da78bd",
+    "resolved_version": "f11338b7-d535-4cb0-9843-10f3e481df91",
+    "region": {
+      "x": 0,
+      "y": 245,
+      "width": 375,
+      "height": 280
+    },
+    "tiles": [
+      {
+        "x": 0,
+        "width": 200,
+        "resource": "lanhu://design/d55fd328e4eedf660dbb471e50da78bd/preview/4960f318715ada8640c5b458d03fa411",
+        "image_size": {
+          "width": 800,
+          "height": 1120
+        },
+        "scale": {
+          "x": 4,
+          "y": 4
+        }
+      },
+      {
+        "x": 200,
+        "width": 175,
+        "resource": "lanhu://design/d55fd328e4eedf660dbb471e50da78bd/preview/76b7786b158f8a426dbf8d4acedca1d1",
+        "image_size": {
+          "width": 700,
+          "height": 1120
+        },
+        "scale": {
+          "x": 4,
+          "y": 4
+        }
+      }
+    ]
+  },
+  "nav": {
+    "snapshot_id": "025bc1130d29bbe5b64e14ca4af2b493",
+    "resolved_version": "32aa246d-8d21-40b3-ba5c-32e8d532bdc6",
+    "region": {
+      "x": 0,
+      "y": 714,
+      "width": 375,
+      "height": 98
+    },
+    "tiles": [
+      {
+        "x": 0,
+        "width": 200,
+        "resource": "lanhu://design/025bc1130d29bbe5b64e14ca4af2b493/preview/970d4e7a1a0cb79fc6ca42a54eefa41c",
+        "image_size": {
+          "width": 800,
+          "height": 392
+        },
+        "scale": {
+          "x": 4,
+          "y": 4
+        }
+      },
+      {
+        "x": 200,
+        "width": 175,
+        "resource": "lanhu://design/025bc1130d29bbe5b64e14ca4af2b493/preview/1bf2f94ff0f34ab779d4026bf4aaffcc",
+        "image_size": {
+          "width": 700,
+          "height": 392
+        },
+        "scale": {
+          "x": 4,
+          "y": 4
+        }
+      }
+    ]
+  },
+  "appeal": {
+    "snapshot_id": "4a82a245a06e7de77a4320e533934570",
+    "resolved_version": "84ebb977-1081-434c-9147-12e6147c820b",
+    "region": {
+      "x": 0,
+      "y": 348,
+      "width": 375,
+      "height": 125
+    },
+    "tiles": [
+      {
+        "x": 0,
+        "width": 200,
+        "resource": "lanhu://design/4a82a245a06e7de77a4320e533934570/preview/4e438ea8ba69d7a11d21bb263201e84d",
+        "image_size": {
+          "width": 800,
+          "height": 500
+        },
+        "scale": {
+          "x": 4,
+          "y": 4
+        }
+      },
+      {
+        "x": 200,
+        "width": 175,
+        "resource": "lanhu://design/4a82a245a06e7de77a4320e533934570/preview/7d58a88c7d68ea9238785ab6b4284e3e",
+        "image_size": {
+          "width": 700,
+          "height": 500
+        },
+        "scale": {
+          "x": 4,
+          "y": 4
+        }
+      }
+    ]
+  },
+  "bundles": {
+    "nav": "lanhu://design/025bc1130d29bbe5b64e14ca4af2b493/bundle/9aa3eef1387a1de402d1d6653f69da63",
+    "appeal": "lanhu://design/4a82a245a06e7de77a4320e533934570/bundle/57581ed588851535e6598c385a9ae238"
+  }
+}

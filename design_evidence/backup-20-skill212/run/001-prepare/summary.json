@@ -1,0 +1,15 @@
+{
+  "status": "PREPARED_FOR_REVIEW",
+  "scope": "source preparation only; proposals are not approved implementation or visual acceptance",
+  "canvas": [
+    375,
+    812
+  ],
+  "source_nodes": 228,
+  "seconds": 0.0955,
+  "asset_count": 43,
+  "issue_counts": {},
+  "review_count": 109,
+  "report": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill212/run/001-prepare/page-plan.json",
+  "review_group_count": 44
+}

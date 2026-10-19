@@ -1,0 +1,23 @@
+{
+  "snapshot_id": "96a01f5f2335227991eee0bc659d9afa",
+  "resolved_version": "12393b6b-5467-4fbf-8701-122c1702dd6d",
+  "canvas": {
+    "width": 375,
+    "height": 812
+  },
+  "reference_size": [
+    1500,
+    3248
+  ],
+  "nodes": 229,
+  "node_pages": 4,
+  "selected_asset_ids": 43,
+  "asset_export": {
+    "requested": 43,
+    "succeeded": 43,
+    "failed": 0,
+    "cached": 0
+  },
+  "reference": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/reference-4x.png",
+  "bundle": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle"
+}

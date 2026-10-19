@@ -1,0 +1,31 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<title>视觉还原门禁报告</title><style>
+body{font:14px/1.5 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;margin:32px;color:#20242a;background:#f5f6f8}
+main{max-width:1180px;margin:auto}section{background:white;border:1px solid #e1e4e8;border-radius:14px;padding:22px;margin:20px 0;overflow:auto}
+table{border-collapse:collapse;width:100%;min-width:800px}th,td{border-bottom:1px solid #eceef1;padding:8px;text-align:left}img{width:375px;max-width:100%;border:1px solid #ddd}
+.shots{display:flex;gap:16px;flex-wrap:wrap}figure{margin:0}figcaption{color:#686b77;margin-top:6px}
+.ref{color:#15a46b}.actual{color:#e13d8c}code{background:#eef0f3;padding:2px 5px;border-radius:4px}
+</style></head><body><main><h1>视觉还原自动门禁</h1>
+<p>整体结果：FAIL。绿色框为蓝湖原稿可见像素，粉色框为候选渲染可见像素。</p>
+<details><summary>验收范围、环境与排除项</summary><pre>{
+  &quot;skill_version&quot;: &quot;2.9.0&quot;,
+  &quot;coverage&quot;: {
+    &quot;effect_obligations&quot;: 0,
+    &quot;implementation_decisions&quot;: 4,
+    &quot;unaccounted_visible_nodes&quot;: 0,
+    &quot;nodes&quot;: 4,
+    &quot;covered&quot;: 4,
+    &quot;exceptions&quot;: []
+  },
+  &quot;environment&quot;: {
+    &quot;renderer&quot;: &quot;Flutter widget test&quot;,
+    &quot;renderer_version&quot;: &quot;3.47.7 / deb287481e3ce9468f3434937ced4240a70539ca&quot;,
+    &quot;platform&quot;: &quot;macOS arm64&quot;,
+    &quot;locale&quot;: &quot;en&quot;,
+    &quot;state&quot;: &quot;synthetic-static&quot;,
+    &quot;text_scale&quot;: 1
+  },
+  &quot;exclusions&quot;: [],
+  &quot;excluded_fraction&quot;: 0.0
+}</pre></details>
+<section><h2>shift · <strong style="color:#C6293E">FAIL</strong></h2><div class="shots"><figure><img src="reference.png" alt="reference"><figcaption>蓝湖原稿</figcaption></figure><figure><img src="1-shift-candidate.png" alt="candidate"><figcaption>候选实现</figcaption></figure><figure><img src="1-shift-alignment-overlay.png" alt="alignment overlay"><figcaption>可见像素对齐</figcaption></figure></div><p class="legend"><span class="ref">原稿可见边界</span> · <span class="actual">实现可见边界</span></p><h3>区域像素门禁</h3><table><tr><th>区域</th><th>MAE</th><th>P95</th><th>结果</th><th>原因</th></tr><tr><td>画布</td><td>0.0893</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr></table><h3>元素几何门禁</h3><table><tr><th>元素</th><th>ΔX</th><th>ΔY</th><th>Δ宽</th><th>Δ高</th><th>结果</th><th>原因</th></tr><tr><td>icon</td><td>0.00</td><td>4.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#C6293E">FAIL</strong></td><td>center_y_delta=4.00px &gt; 1.00px; max_edge_delta=4.00px &gt; 2.00px; mask_iou_loss=0.3333 &gt; 0.2000</td></tr><tr><td>heading</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>cta</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr></table><h3>组内关系门禁</h3><table><tr><th>关系</th><th>原稿差值</th><th>实现差值</th><th>偏差</th><th>结果</th></tr><tr><td>图文行</td><td>0.0</td><td>4.0</td><td>4.0</td><td><strong style="color:#C6293E">FAIL</strong></td></tr></table><h3>颜色采样门禁</h3><table><tr><th>采样</th><th>原稿 RGB</th><th>实现 RGB</th><th>最大通道偏差</th><th>结果</th></tr><tr><td>白底</td><td>[255.0, 255.0, 255.0]</td><td>[255.0, 255.0, 255.0]</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td></tr></table></section></main></body></html>

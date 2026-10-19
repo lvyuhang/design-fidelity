@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "experiment": "gender-sol56-direct",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "date": "2026-10-12",
+  "component": {
+    "class_name": "Sol56GenderSelection",
+    "source": "flutter_ui_components/lib/experiments/gender_sol56_direct.dart",
+    "width": 375,
+    "height": 350,
+    "source_region": {
+      "x": 0,
+      "y": 146,
+      "width": 375,
+      "height": 350
+    },
+    "coordinate_transform": "local_x = source_x; local_y = source_y - 146",
+    "states": [
+      "unselected",
+      "female_selected"
+    ],
+    "api": {
+      "femaleSelected": false,
+      "onSelect": "ValueChanged<String>?",
+      "male_callback_value": "male",
+      "female_callback_value": "female"
+    }
+  },
+  "inputs": [
+    "design_evidence/gender-direct/none-input.json",
+    "design_evidence/gender-direct/female-input.json",
+    "design_evidence/gender-direct/none-export.json",
+    "design_evidence/gender-direct/female-export.json",
+    "design_evidence/gender-direct/asset-verification.json",
+    "design_evidence/reference-gender_none-4x.png",
+    "design_evidence/reference-gender_female-4x.png",
+    "flutter_ui_components/pubspec.yaml"
+  ],
+  "asset_dependencies": [
+    "assets/lanhu/gender_none/assets/d2855e7611728cfc07b1476da674344d477abedc8d9fbc67f9087bba0c093a49.png",
+    "assets/lanhu/gender_none/assets/a25cff5f9aabb90c8c6f286be1a49d34401850108d0459495065cdf59093df43.png",
+    "assets/lanhu/gender_female/assets/946fd6e0fb04feeae95ea8730b2c3eb280c50393cc9848ac36ac39e1282fec1f.png",
+    "assets/lanhu/gender_female/assets/eacdc3db8eff06ddcc26f3a404612bc55bc07315ac2ef98900c27fabedff1272.png",
+    "assets/lanhu/gender_female/assets/10416d514d09343fe90359c1170c63f1b6a2a75432844bdc11e568ac56157832.png"
+  ],
+  "implementation_rules": {
+    "independent_implementation": true,
+    "existing_implementation_files_read": false,
+    "existing_tests_read": false,
+    "reference_crop_used_as_component_asset": false,
+    "calibration_helpers_imported": false,
+    "fixture_warning_shield_used": false,
+    "flutter_executed": false,
+    "screenshots_created": false,
+    "renders_inspected": false
+  },
+  "resource_gap": {
+    "item": "right-side faint warning shield internal boolean fill",
+    "evidence_gap": "No points or exported asset are present for the internal boolean fill.",
+    "strategy": "Draw only the available faint outer shield outline and check; omit the missing internal boolean fill. Do not use assets/fixtures/warning-shield.png."
+  },
+  "freeze": {
+    "formatted_before_freeze": true,
+    "render_status": "not_rendered",
+    "visual_corrections": 0,
+    "sha256": "3144c08726585cf8aea581594165ffa86f8a0b7ffc547f88cb362df797a28e3a"
+  }
+}

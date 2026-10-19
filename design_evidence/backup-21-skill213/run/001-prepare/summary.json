@@ -1,0 +1,19 @@
+{
+  "status": "PREPARED_FOR_REVIEW",
+  "scope": "source preparation only; proposals are not approved implementation or visual acceptance",
+  "canvas": [
+    375,
+    812
+  ],
+  "source_nodes": 229,
+  "seconds": 0.0873,
+  "asset_count": 43,
+  "issue_counts": {},
+  "review_count": 109,
+  "report": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/001-prepare/page-plan.json",
+  "review_group_count": 44,
+  "brief": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/001-prepare/implementation-brief.json",
+  "missing_bitmap_count": 11,
+  "text_style_group_count": 13,
+  "major_frame_count": 36
+}

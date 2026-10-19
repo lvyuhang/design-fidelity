@@ -1,0 +1,63 @@
+{
+  "status": "NOT_ACCEPTED",
+  "scope": "validation of supplied implementation; not end-to-end development time",
+  "started_unix": 1791894432.5166411,
+  "stages": [
+    {
+      "name": "preflight",
+      "seconds": 0.125,
+      "exit_code": 0
+    },
+    {
+      "name": "render",
+      "seconds": 3.265,
+      "exit_code": 0
+    },
+    {
+      "name": "gate",
+      "seconds": 0.238,
+      "exit_code": 2
+    }
+  ],
+  "gate_status": "NOT_EVALUATED",
+  "iteration": {
+    "task_id": "cd29d6e6-07eb-42d0-a32d-9f14e517d944",
+    "round_number": 1,
+    "attempt_number": 1,
+    "attempt_id": "77489bbc-6199-4058-9cee-457558d8ffad",
+    "target_rounds": [
+      2,
+      3
+    ],
+    "over_target": false,
+    "baseline_differences": [],
+    "revision_kind": "initial",
+    "log": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/run/task-run.json",
+    "html": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/run/task-run.html"
+  },
+  "preflight": {
+    "status": "READY_FOR_RENDER",
+    "coverage": {
+      "effect_obligations": 97,
+      "implementation_decisions": 191,
+      "unaccounted_visible_nodes": 0,
+      "nodes": 191,
+      "covered": 191,
+      "exceptions": [
+        "relations: All repeated grid and navigation pixels are preserved by pinned source renders; section and node checks catch displacement directly."
+      ]
+    },
+    "fonts": {
+      "text_nodes_checked": 39
+    },
+    "asset_count": 8,
+    "style_gaps": [],
+    "scope": "input integrity and font coverage; source-style completeness is separate; not visual acceptance"
+  },
+  "render_sha256": "4a3a834a66fe57d431b94d50d327845862c71e8d0c67a07c237580c080f1963c",
+  "failures": [],
+  "metrics": {},
+  "error": "Reference detector found no ink for feature node_f6ad6968_66b7_4c13_81b4_81c364d51aa4",
+  "failed_stage": "gate",
+  "seconds": 3.656
+}

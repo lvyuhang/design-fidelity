@@ -1,0 +1,172 @@
+{
+  "status": "PASS",
+  "failures": [],
+  "checks": {
+    "reference": {
+      "actual": [
+        750,
+        1624
+      ],
+      "expected": [
+        750,
+        1624
+      ],
+      "native_scale": 2
+    },
+    "snapshot": {
+      "snapshot_id": "b3437778812e65917e3972d7062be2c3",
+      "version": "24e01fb5-a15f-4495-b896-4ac8b65266ca",
+      "nodes": 161,
+      "expected_nodes": 161,
+      "coordinate_mapping_verified": true
+    },
+    "assets": [
+      {
+        "node_id": "16F0957E-9372-4BDD-8A38-74F925C77F4A",
+        "file": "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/133aceb46ccc07583e92c605bc539afd2e22fd2c024af2f90025e03941ab4544.png",
+        "size": [
+          64,
+          56
+        ],
+        "sha256": "4dd328b126e9385139df9e52eec41d5685929a0c91bdd3028a492aff1c89cf8f"
+      },
+      {
+        "node_id": "46973292-5A6D-42BF-9A6F-25D9168D09E8",
+        "file": "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/711bc34d080a29cb67efeb89cd437f9d2d85882884085eb93a584d436983bfba.png",
+        "size": [
+          180,
+          180
+        ],
+        "sha256": "f76fdb6e16eecc9cbf90df649af7fddc657e34593c338349f35fc358128ecea8"
+      },
+      {
+        "node_id": "7A7E5242-D597-4010-ACA3-D9FB4A6A55F0",
+        "file": "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/cc123c6bf5380b980ceb60f97f87b37e3118b855f479282363ec453729369e98.png",
+        "size": [
+          184,
+          184
+        ],
+        "sha256": "fa970e411eeaca65093df3c2d4265c266ed79def92e8f932f29db21943e22140"
+      },
+      {
+        "node_id": "AE344697-D0D3-4867-B3BC-AA722DBF1288",
+        "file": "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/ba6ad713213694bd6d892e33d0effb4a9384c7002553201e6aad73e35f56276f.png",
+        "size": [
+          40,
+          40
+        ],
+        "sha256": "f33d3ee31037ddc9f304aea4cfd2eb82ffb10837309493993d936136f1275929"
+      },
+      {
+        "node_id": "1357B849-5FC7-4570-9A0A-EE53EAC3ED50",
+        "file": "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/a25881b7d5ce15dcdb2811888680942ed9ce92f2384e935c5e9eb672bcc64457.png",
+        "size": [
+          24,
+          40
+        ],
+        "sha256": "8835fddc65e15a07ee4e9f729552e55c49faf97a6f3675c5b246ffad72c0d50a"
+      },
+      {
+        "node_id": "4C5886B0-AB45-4341-AF01-363FE0A5090B",
+        "file": "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/1cc08b902b88aba143242c42b1b3f8f2b3427a06f64b9c66746997c46790c075.png",
+        "size": [
+          60,
+          72
+        ],
+        "sha256": "15071e71c1ba2050208caa1bff1a19123273fbc6212a1838ca8031b86dea223b"
+      },
+      {
+        "node_id": "001D3A26-E9F7-4A8D-B848-BDBD5D64AEE9",
+        "file": "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/a3109e049196a732525f8c4d7b65981c9d4b943e1da00cdad33c576bf2b1d0e9.png",
+        "size": [
+          88,
+          80
+        ],
+        "sha256": "d3698a7d65ea31ef96345770ac85804017f4350346719ad8a88de6339e1c3900"
+      },
+      {
+        "node_id": "ED7DC567-6137-467A-B368-F2F41B9230A9",
+        "file": "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/c5b435df1b9694e954a0f7039592d6b377caf13f87a26314173e862966065822.png",
+        "size": [
+          80,
+          80
+        ],
+        "sha256": "9b5070bba2494423d3a28e6b2d24a37bebfa3ef9dfb5050d7aff58dce7df0ef4"
+      },
+      {
+        "node_id": "09D2352B-F303-4358-838E-3EEAA4F2FE77",
+        "file": "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/3d9c1507231ab4216545fd4d47fc4e0016d132646d95dee832583047252607ef.png",
+        "size": [
+          80,
+          72
+        ],
+        "sha256": "5cd4321224c8620c42a7a15a7f5d9f9d0faf942311435cb25ea2d13cbd30f6c5"
+      },
+      {
+        "node_id": "2105E345-1E59-4004-B9B2-11B3E6B1A221",
+        "file": "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/58ae7275356d68146c2e4d681bb589158c06ac2106b49b6365258198825ddb9c.png",
+        "size": [
+          80,
+          76
+        ],
+        "sha256": "0d70f124ddf909854d637e8c44126603e7917869771817881f411195a1256135"
+      },
+      {
+        "node_id": "5355B69B-C35E-4D62-AF9D-59C52351451C",
+        "file": "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/7770bd50d14ae591e54a1b0b3df11747bb86d312886b8476d748cb4be6e485db.png",
+        "size": [
+          96,
+          65
+        ],
+        "sha256": "30f834c8a953ee6fe80afebd7c5451db6e09f051852775afccf174c91ff2da15"
+      },
+      {
+        "node_id": "7A0E367B-A662-48BB-BDCB-782745125976",
+        "file": "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/302d40e3cddc0c5dc27b8fca1058f2e9e4266b93ce88e0e3bbdc9dd8d49189dd.png",
+        "size": [
+          68,
+          52
+        ],
+        "sha256": "7baa1ad9f870bc8cd70e8d34af9dcf31b9679bfe1682274fbc2fc49a4da3b0a6"
+      },
+      {
+        "node_id": "F5203DE6-E6BA-4BEA-A600-9111889E746E",
+        "file": "../../../flutter_ui_components/assets/lanhu/message_backup_34/assets/f905dce5939b9af6544739ee7933e79aef295cd8228323f52ddea84e9bfcc124.png",
+        "size": [
+          68,
+          52
+        ],
+        "sha256": "275b7f7034f917d8738890fe26b214d1b43f799613295be407d99dfcc0715766"
+      }
+    ],
+    "fonts": [
+      {
+        "weight": "Regular",
+        "file": "../../../flutter_ui_components/assets/fonts/PingFangSC-Regular.otf",
+        "sha256": "7c378a0f44481c506116e7e4c6dbbfe073df66ccef620f0d99cd884b0f964e36",
+        "missing": ""
+      },
+      {
+        "weight": "Medium",
+        "file": "../../../flutter_ui_components/assets/fonts/PingFangSC-Medium.otf",
+        "sha256": "ded0b60c1531e96f99010bcadf3b085df20de9259c0d194cb933e0b3d54ca230",
+        "missing": ""
+      },
+      {
+        "weight": "Semibold",
+        "file": "../../../flutter_ui_components/assets/fonts/PingFangSC-Semibold.otf",
+        "sha256": "799786dcc2d17ea4ab140962d0bf43d7d8087271ebf2eaa750c48d916ddf92e1",
+        "missing": ""
+      }
+    ],
+    "missing_custom_artwork": {
+      "name": "官方通知图标",
+      "node_ids": [
+        "15621591-9263-49EE-AF51-96E07BD315AF",
+        "25D9025F-B947-469D-98F5-838C23F9566B",
+        "DD79DCD8-ED07-4519-9C0C-399D4F30F08C"
+      ],
+      "policy": "45x45 circular marked placeholder; exact interior excluded from source pixel comparison"
+    }
+  }
+}

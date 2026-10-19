@@ -1,0 +1,24 @@
+{
+  "source": "/System/Library/AssetsV2/com_apple_MobileAsset_Font8/86ba2c91f017a3749571a82f2c6d890ac7ffb2fb.asset/AssetData/PingFang.ttc",
+  "sha256": "9ff3ce9439fe285cdabb46f9ceb46b1ac58f1ca07e6f4a764e8286db621a0af9",
+  "fonts": [
+    {
+      "postscript_name": "PingFangSC-Regular",
+      "weight": 400,
+      "bytes": 215564,
+      "sha256": "e4be1f407052418e4d84abea6755e5d7c8a6a609cc63900fe2236f4d48f29490"
+    },
+    {
+      "postscript_name": "PingFangSC-Medium",
+      "weight": 500,
+      "bytes": 214044,
+      "sha256": "259ac67779c111b1ec5d13698c448f01602abd05002d25edb08f883fcd08bb55"
+    },
+    {
+      "postscript_name": "PingFangSC-Semibold",
+      "weight": 600,
+      "bytes": 213548,
+      "sha256": "cc337275bf2c09935690cfb5a79ba18907612bcc0a0660fa36432f1d08a524a3"
+    }
+  ]
+}

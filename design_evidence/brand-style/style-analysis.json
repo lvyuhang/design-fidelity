@@ -1,0 +1,165 @@
+{
+  "project": "聚星阁",
+  "analyzedOn": "2026-10-12",
+  "sources": [
+    {
+      "key": "logo",
+      "design_id": "53971653-a115-4285-8bb0-753726bd1a9d",
+      "design_name": "1024",
+      "snapshot_id": "4b832f1fb9dff4d837fa80a54b5d1272",
+      "version_id": "336a220f-db08-4d9e-995f-125a58464940",
+      "canvas": {
+        "width": 1024,
+        "height": 1024
+      },
+      "url": "https://lanhuapp.com/web/#/item/project/stage?pid=3be04117-73d6-43db-955e-528423563e93&image_id=53971653-a115-4285-8bb0-753726bd1a9d&version_id=336a220f-db08-4d9e-995f-125a58464940"
+    },
+    {
+      "key": "login",
+      "design_id": "a4eadc40-fbd6-4aa6-a490-5fa2139ac958",
+      "design_name": "登录-普通登录",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "version_id": "18f1a6ed-585a-4b77-801b-7a9d5e726810",
+      "canvas": {
+        "width": 375,
+        "height": 812
+      },
+      "url": "https://lanhuapp.com/web/#/item/project/stage?pid=3be04117-73d6-43db-955e-528423563e93&image_id=a4eadc40-fbd6-4aa6-a490-5fa2139ac958&version_id=18f1a6ed-585a-4b77-801b-7a9d5e726810"
+    },
+    {
+      "key": "home",
+      "design_id": "b4b0d4f9-fe8d-476e-a1ae-81aeb2d15b97",
+      "design_name": "首页",
+      "snapshot_id": "58e8325b6bf4512936877aa111eb084a",
+      "version_id": "7f08adcf-1e12-4e41-b19b-47641f116d9a",
+      "canvas": {
+        "width": 375,
+        "height": 812
+      },
+      "url": "https://lanhuapp.com/web/#/item/project/stage?pid=3be04117-73d6-43db-955e-528423563e93&image_id=b4b0d4f9-fe8d-476e-a1ae-81aeb2d15b97&version_id=7f08adcf-1e12-4e41-b19b-47641f116d9a"
+    },
+    {
+      "key": "profile",
+      "design_id": "94584940-8d42-40ab-ac40-4e4185ce143e",
+      "design_name": "我的",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "version_id": "7b292e6f-8eb5-4be5-894f-a35d023cb35e",
+      "canvas": {
+        "width": 375,
+        "height": 812
+      },
+      "url": "https://lanhuapp.com/web/#/item/project/stage?pid=3be04117-73d6-43db-955e-528423563e93&image_id=94584940-8d42-40ab-ac40-4e4185ce143e&version_id=7b292e6f-8eb5-4be5-894f-a35d023cb35e"
+    }
+  ],
+  "conclusion": "以奶油白为大面积基底，香槟金用于细节，炭黑用于文字及重点操作；星形、轨道、柔光、圆润胶囊和少量金属质感共同构成品牌识别。",
+  "verifiedTokens": {
+    "loginBase": {
+      "value": "#FAF6F0",
+      "role": "底层填充"
+    },
+    "loginSurfaceGradient": {
+      "values": [
+        "#FFFDF9",
+        "#FFFBF2",
+        "#FFFFFF"
+      ],
+      "role": "横向背景渐变"
+    },
+    "textPrimary": {
+      "value": "#22242A",
+      "role": "按钮/正文文字"
+    },
+    "displayText": {
+      "value": "#18181B",
+      "role": "品牌标题"
+    },
+    "loginButton": {
+      "fill": "rgba(255,253,249,0.85)",
+      "border": "#EEDCC4",
+      "borderWidth": 1,
+      "shadow": "0 6px 12px rgba(216,155,71,0.1)",
+      "sourceSize": {
+        "width": 299,
+        "height": 50
+      },
+      "shape": "capsule"
+    },
+    "primaryAction": {
+      "text": "#E8C77B",
+      "gradientStops": [
+        "#C68135",
+        "#1A1A19"
+      ],
+      "note": "原始渐变起点位于按钮框外，实际视觉以深色为主；不能把色标简单理解成左右各半。",
+      "source": "我的 / 去入驻"
+    },
+    "logoBackdrop": {
+      "gradientStops": [
+        "#372D22",
+        "#111111"
+      ]
+    },
+    "decorativeStar": {
+      "value": "#F9E1C1",
+      "note": "不同节点还叠加图层透明度"
+    },
+    "uiFont": {
+      "families": [
+        "PingFangSC-Regular",
+        "PingFangSC-Semibold"
+      ],
+      "weights": [
+        400,
+        600
+      ]
+    },
+    "displayFont": {
+      "family": "zihunxinquhei",
+      "size": 36,
+      "lineHeight": 43,
+      "availability": "design-name-only; font file not acquired"
+    },
+    "logoAsset": {
+      "snapshot_id": "4b832f1fb9dff4d837fa80a54b5d1272",
+      "asset_id": "5CD3337E-2A70-48B7-A258-01CEF09C5CFC:image",
+      "verifiedPixelSize": [
+        4096,
+        4096
+      ],
+      "format": "png",
+      "hasTransparency": false,
+      "sha256": "87875ff63d98ab53fc2b32fe311eafa9c15c83227b42f1fe55c8e00e8c7121d3",
+      "status": "verified by MCP exporter; not yet installed in local website"
+    }
+  },
+  "proposedDownloadAdaptation": {
+    "status": "design recommendation, not a finished screen",
+    "preferredDirection": "奶油白主页面 + 黑金主按钮 + 轻星轨",
+    "background": "延续登录页暖白渐变和低强度光晕",
+    "hero": "使用原始 Logo 及聚星阁真实首页设计图；以星形和细轨道连接品牌与产品",
+    "cta": "参考我的页深色金字胶囊，将首要下载操作与乳白辅助按钮分开",
+    "guide": "沿用现有三步安装结构，改用白色圆角区域和浅金分隔",
+    "faqAndDialog": "深色正文、低对比金色描边、暖白背景",
+    "directions": [
+      {
+        "name": "奶油白品牌延续",
+        "priority": "recommended",
+        "description": "延续登录页，左右分栏结合真实手机界面，品牌一致性最强"
+      },
+      {
+        "name": "黑金品牌主视觉",
+        "description": "首屏采用 Logo 暖黑底与金属星标，下方切回暖白安装说明，视觉更强但需控制深色比例"
+      },
+      {
+        "name": "轻社交产品展示",
+        "description": "暖白背景搭配两张真实 App 画面，将人物与动态内容作为主要吸引点"
+      }
+    ]
+  },
+  "implementationNotes": [
+    "源稿的 D89B47 是登录按钮低透明度阴影色，填充为乳白。",
+    "Logo 中的金属质感为位图内容，优先使用原资产。",
+    "特殊标题字体只有名称证据，后续实现须确认字体文件或使用已导出的品牌图形。",
+    "原始企业下载页的静态源码、安装交互和资产保持现状，本轮只分析设计。"
+  ]
+}

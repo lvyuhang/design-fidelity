@@ -1,0 +1,72 @@
+{
+  "scope": "Read-only retrospective audit of the prior redo; no new UI implementation or speed benchmark",
+  "turn_id": "01a13565-c97f-77f3-bce4-e0ae73d6158c",
+  "source_session": "/Users/tan/.codex/sessions/2026/10/10/rollout-2026-10-10T10-25-45-01a123a1-7160-7110-93b9-b06c151dea06.jsonl",
+  "start": "2026-10-13T13:13:45.607Z",
+  "end": "2026-10-13T13:30:31.178Z",
+  "elapsed_seconds": 1005.571,
+  "outer_tool_calls": 50,
+  "tool_call_intervals_seconds": 153.708,
+  "outside_tool_call_intervals_seconds": 851.863,
+  "outside_tool_interpretation": "Includes model generation/reasoning, context compaction and orchestration delays; not a pure reasoning-time estimate",
+  "intervals": [
+    {
+      "name": "evidence_reading_and_first_implementation",
+      "start": "2026-10-13T13:13:45.607Z",
+      "end": "2026-10-13T13:19:59.584Z",
+      "seconds": 373.977
+    },
+    {
+      "name": "context_compaction_and_compile_layout_repairs",
+      "start": "2026-10-13T13:19:59.584Z",
+      "end": "2026-10-13T13:22:13.325Z",
+      "seconds": 133.741
+    },
+    {
+      "name": "visual_review_dependency_wait_build_browser_open",
+      "start": "2026-10-13T13:22:13.325Z",
+      "end": "2026-10-13T13:26:23.317Z",
+      "seconds": 249.992
+    },
+    {
+      "name": "late_contract_investigation_and_final_reply",
+      "start": "2026-10-13T13:26:23.317Z",
+      "end": "2026-10-13T13:30:31.178Z",
+      "seconds": 247.861
+    }
+  ],
+  "dependency_wait_seconds": 150.681,
+  "web_build_reported_seconds": 13.4,
+  "after_browser_open_tool_calls": 18,
+  "compactions": [
+    "2026-10-13T13:20:56.822Z"
+  ],
+  "usage": {
+    "input_tokens": 5728968,
+    "cached_input_tokens": 5416064,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 27423,
+    "reasoning_output_tokens": 7669,
+    "total_tokens": 5756391
+  },
+  "usage_records": 52,
+  "usage_scope": "Sum of unique response_id usage for this turn; includes cached inputs and compaction as recorded, reasoning_output_tokens are a subset of output_tokens",
+  "uncached_input_tokens": 312904,
+  "acceptance": {
+    "session_status": "RUNNING",
+    "session_elapsed_seconds": 905.434,
+    "formal_contract_present": false,
+    "reviewed_spec_present": false,
+    "formal_run_present": false,
+    "widget_tests_passed": 2,
+    "web_build_succeeded": true,
+    "static_analysis_succeeded": false,
+    "quality_equivalence_established": false
+  },
+  "conclusions": [
+    "The prior 15-minute claim omitted time before the explicit session start and did not represent completed fidelity acceptance.",
+    "The existing run_flutter already sets --no-pub; the manual command path bypassed it.",
+    "Prioritize fewer serial decisions, reusable component families and bound evidence; do not remove final visual acceptance.",
+    "Source/template reuse and same-quality acceptance must be held constant in any follow-up performance comparison."
+  ]
+}

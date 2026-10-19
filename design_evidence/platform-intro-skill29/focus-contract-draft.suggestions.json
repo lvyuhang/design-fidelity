@@ -1,0 +1,570 @@
+{
+  "nodes": [
+    {
+      "node_id": "11857F91-EAAB-4C0C-A518-9D0D2F73628B",
+      "label": "形状",
+      "text": null,
+      "bounds": {
+        "x": 172,
+        "y": 219.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "small_visual",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "A3FD2014-8642-473A-B0F5-4C17D694B015",
+      "label": "01",
+      "text": "01",
+      "bounds": {
+        "x": 291,
+        "y": 208,
+        "width": 60,
+        "height": 58
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "label": "蒙版",
+      "text": null,
+      "bounds": {
+        "x": 16,
+        "y": 424,
+        "width": 343,
+        "height": 266
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": true,
+        "effect_fields": [
+          "shadow"
+        ]
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "D44A759A-F00C-4F91-B906-8D3AEA24B017",
+      "label": "形状",
+      "text": null,
+      "bounds": {
+        "x": 199,
+        "y": 434.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "small_visual",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "67A66F14-1BFC-4ED2-B7CC-CA53F587487F",
+      "label": "位图",
+      "text": null,
+      "bounds": {
+        "x": 288,
+        "y": 424,
+        "width": 71,
+        "height": 67
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "small_visual",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "D918BBDD-E8F9-4952-B1C0-818569C32B90",
+      "label": "02",
+      "text": "02",
+      "bounds": {
+        "x": 281,
+        "y": 424,
+        "width": 60,
+        "height": 56
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+      "label": "矩形备份 6",
+      "text": null,
+      "bounds": {
+        "x": 26,
+        "y": 471,
+        "width": 325,
+        "height": 210
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": true,
+        "effect_fields": [
+          "shadow"
+        ]
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "B3B02A92-587E-4458-994E-449FD80C020F",
+      "label": "矩形",
+      "text": null,
+      "bounds": {
+        "x": 16,
+        "y": 714,
+        "width": 343,
+        "height": 50
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": true,
+        "effect_fields": [
+          "shadow"
+        ]
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    }
+  ],
+  "relation_candidates": [],
+  "effect_candidates": [
+    {
+      "node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "bounds": {
+        "x": 16,
+        "y": 424,
+        "width": 343,
+        "height": 266
+      },
+      "vector_data_present": true,
+      "effect_fields": [
+        "shadow"
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+      "bounds": {
+        "x": 26,
+        "y": 471,
+        "width": 325,
+        "height": 210
+      },
+      "vector_data_present": true,
+      "effect_fields": [
+        "shadow"
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "B3B02A92-587E-4458-994E-449FD80C020F",
+      "bounds": {
+        "x": 16,
+        "y": 714,
+        "width": 343,
+        "height": 50
+      },
+      "vector_data_present": true,
+      "effect_fields": [
+        "shadow"
+      ],
+      "needs_review": true
+    }
+  ],
+  "effect_requirements": [
+    {
+      "node_id": "A3FD2014-8642-473A-B0F5-4C17D694B015",
+      "effect_key": "fills:0:gradient",
+      "kind": "gradient",
+      "samples": [
+        {
+          "role": "start",
+          "rect": [
+            321,
+            213,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "middle",
+          "rect": [
+            321,
+            233,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "end",
+          "rect": [
+            321,
+            254,
+            1,
+            1
+          ]
+        }
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "effect_key": "shadow:0",
+      "kind": "shadow",
+      "samples": [
+        {
+          "role": "edge",
+          "rect": [
+            187,
+            690,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "peak",
+          "rect": [
+            187,
+            695,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "tail",
+          "rect": [
+            187,
+            707,
+            1,
+            1
+          ]
+        }
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "effect_key": "fills:0:gradient",
+      "kind": "gradient",
+      "samples": [
+        {
+          "role": "start",
+          "rect": [
+            186,
+            450,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "middle",
+          "rect": [
+            184,
+            557,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "end",
+          "rect": [
+            181,
+            663,
+            1,
+            1
+          ]
+        }
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "effect_key": "mask",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "D918BBDD-E8F9-4952-B1C0-818569C32B90",
+      "effect_key": "fills:0:gradient",
+      "kind": "gradient",
+      "samples": [
+        {
+          "role": "start",
+          "rect": [
+            311,
+            429,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "middle",
+          "rect": [
+            311,
+            449,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "end",
+          "rect": [
+            311,
+            469,
+            1,
+            1
+          ]
+        }
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "D918BBDD-E8F9-4952-B1C0-818569C32B90",
+      "effect_key": "opacity",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+      "effect_key": "shadow:0",
+      "kind": "shadow",
+      "samples": [
+        {
+          "role": "edge",
+          "rect": [
+            188,
+            681,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "peak",
+          "rect": [
+            188,
+            686,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "tail",
+          "rect": [
+            188,
+            698,
+            1,
+            1
+          ]
+        }
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+      "effect_key": "fills:0:gradient",
+      "kind": "gradient",
+      "samples": [
+        {
+          "role": "start",
+          "rect": [
+            188,
+            492,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "middle",
+          "rect": [
+            188,
+            576,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "end",
+          "rect": [
+            188,
+            660,
+            1,
+            1
+          ]
+        }
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "B3B02A92-587E-4458-994E-449FD80C020F",
+      "effect_key": "shadow:0",
+      "kind": "shadow",
+      "samples": [
+        {
+          "role": "edge",
+          "rect": [
+            187,
+            764,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "peak",
+          "rect": [
+            187,
+            772,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "tail",
+          "rect": [
+            187,
+            786,
+            1,
+            1
+          ]
+        }
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "B3B02A92-587E-4458-994E-449FD80C020F",
+      "effect_key": "fills:0:gradient",
+      "kind": "gradient",
+      "samples": [
+        {
+          "role": "start",
+          "rect": [
+            324,
+            739,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "middle",
+          "rect": [
+            187,
+            739,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "end",
+          "rect": [
+            50,
+            739,
+            1,
+            1
+          ]
+        }
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "B3B02A92-587E-4458-994E-449FD80C020F",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    }
+  ],
+  "source_gaps": [
+    {
+      "node_id": "E79B48D4-D1DC-4040-888E-31EF52D08DB0",
+      "missing": [
+        "raw_style"
+      ],
+      "kind": "visual_source_unknown"
+    },
+    {
+      "node_id": "5635B6E7-37C1-4D57-989A-45A35D3D60E5",
+      "missing": [
+        "raw_style"
+      ],
+      "kind": "visual_source_unknown"
+    },
+    {
+      "node_id": "FBAD45FA-3661-48CD-A7DC-5B858AD7FF6A",
+      "missing": [
+        "raw_style"
+      ],
+      "kind": "visual_source_unknown"
+    },
+    {
+      "node_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "missing": [
+        "raw_style"
+      ],
+      "kind": "visual_source_unknown"
+    },
+    {
+      "node_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "missing": [
+        "raw_style"
+      ],
+      "kind": "visual_source_unknown"
+    },
+    {
+      "node_id": "017FFDCA-5C07-433E-90E7-9EF90D666FE0",
+      "missing": [
+        "raw_style"
+      ],
+      "kind": "visual_source_unknown"
+    }
+  ],
+  "scope": "Only nodes contained in supplied evidence; finish MCP pagination before acceptance"
+}

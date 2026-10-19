@@ -1,0 +1,48 @@
+{
+  "scope": "avatar green fill only",
+  "roi": [
+    60,
+    97,
+    22,
+    16
+  ],
+  "detector": {
+    "kind": "color_distance",
+    "rgb": [
+      12,
+      187,
+      37
+    ],
+    "max_distance": 35,
+    "min_pixels": 8
+  },
+  "measurements": {
+    "reference": {
+      "bbox": [
+        63.0,
+        100.0,
+        8.0,
+        8.0
+      ],
+      "center": [
+        66.875,
+        103.875
+      ],
+      "ink_pixels": 756
+    },
+    "before": null,
+    "after": {
+      "bbox": [
+        63.0,
+        100.0,
+        8.0,
+        8.0
+      ],
+      "center": [
+        66.86682242990655,
+        103.87750333778371
+      ],
+      "ink_pixels": 749
+    }
+  }
+}

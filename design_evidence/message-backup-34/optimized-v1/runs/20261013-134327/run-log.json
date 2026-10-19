@@ -1,0 +1,86 @@
+{
+  "run_id": "20261013-134327",
+  "status": "FAIL",
+  "started_at": "2026-10-13T13:43:27.562009+08:00",
+  "ended_at": "2026-10-13T13:43:30.150487+08:00",
+  "elapsed_seconds": 2.589,
+  "workflow": "optimized same-page replay v1",
+  "model_work_excluded": true,
+  "mcp_calls": 0,
+  "source": "frozen local snapshot b3437778812e65917e3972d7062be2c3",
+  "contract": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/visual-contract.json",
+  "contract_sha256": "f3aba3af914c26336ae41c4cd24554aa719608b13dc1b74418a81489feb726b5",
+  "stages": [
+    {
+      "stage": "cached_evidence_preflight",
+      "seconds": 0.068,
+      "exit_code": 0,
+      "command": [
+        "/Users/tan/Documents/ChatGPT/聚星阁/.venv-fidelity/bin/python",
+        "/Users/tan/Documents/ChatGPT/聚星阁/tools/prepare_message_backup_34_optimized.py",
+        "--verify-only"
+      ],
+      "stdout_tail": "{\"status\": \"PASS\", \"failures\": []}\n",
+      "stderr_tail": ""
+    },
+    {
+      "stage": "flutter_render_and_interaction_tests",
+      "seconds": 1.534,
+      "exit_code": 0,
+      "command": [
+        "/Users/tan/Documents/ChatGPT/聚星阁/.venv-fidelity/bin/python",
+        "/Users/tan/.codex/skills/lanhu-design-fidelity/scripts/render_with_receipt.py",
+        "--contract",
+        "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/visual-contract.json",
+        "--candidate",
+        "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/runs/20261013-134327/render.png",
+        "--receipt",
+        "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/runs/20261013-134327/render-receipt.json",
+        "--cwd",
+        "/Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components",
+        "--",
+        "flutter",
+        "test",
+        "--no-pub",
+        "test/message_backup_34_render_test.dart"
+      ],
+      "stdout_tail": "00:00 +0: loading /Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components/test/message_backup_34_render_test.dart\n00:00 +0: (setUpAll)\n00:00 +0: message backup 34 renders at native source scale\n00:00 +1: message page primary actions are interactive\n00:00 +2: missing official artwork keeps the source circular frame\n00:00 +3: (tearDownAll)\n00:00 +3: All tests passed!\nRender receipt: /Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/runs/20261013-134327/render-receipt.json\n",
+      "stderr_tail": ""
+    },
+    {
+      "stage": "visual_gate",
+      "seconds": 0.247,
+      "exit_code": 0,
+      "command": [
+        "/Users/tan/Documents/ChatGPT/聚星阁/.venv-fidelity/bin/python",
+        "/Users/tan/.codex/skills/lanhu-design-fidelity/scripts/visual_fidelity_gate.py",
+        "--contract",
+        "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/visual-contract.json",
+        "--candidate",
+        "optimized=/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/runs/20261013-134327/render.png",
+        "--receipt",
+        "optimized=/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/runs/20261013-134327/render-receipt.json",
+        "--output-dir",
+        "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/runs/20261013-134327/gate"
+      ],
+      "stdout_tail": "optimized: PASS (0 failed checks)\nJSON: /Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/runs/20261013-134327/gate/visual-gate-report.json\nHTML: /Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/runs/20261013-134327/gate/visual-gate-report.html\nAcceptance: PASS_WITH_EXCLUSIONS\n",
+      "stderr_tail": ""
+    },
+    {
+      "stage": "flutter_static_analysis",
+      "seconds": 0.738,
+      "exit_code": 255,
+      "command": [
+        "flutter",
+        "analyze",
+        "--no-pub",
+        "lib/experiments/message_backup_34_page.dart",
+        "test/message_backup_34_render_test.dart"
+      ],
+      "stdout_tail": "Analyzing 2 items...                                            \n",
+      "stderr_tail": "#22     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:743)\n#23     _microtaskLoop (dart:async/schedule_microtask.dart:40)\n#24     _startMicrotaskLoop (dart:async/schedule_microtask.dart:49)\n#25     _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:127)\n#26     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:193)\nanalysis server exited with code 255 and output:\n[stderr] #7      LspByteStreamServerChannel.listen.<anonymous closure> (package:analysis_server/src/lsp/channel/lsp_byte_stream_channel.dart:67)\n[stderr] #8      _rootRunUnary (dart:async/zone_root.dart:48)\n[stderr] #9      _CustomZone.runUnary (dart:async/zone.dart:816)\n[stderr] #10     _CustomZone.runUnaryGuarded (dart:async/zone.dart:710)\n[stderr] #11     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:381)\n[stderr] #12     _DelayedData.perform (dart:async/stream_impl.dart:573)\n[stderr] #13     _PendingEvents.handleNext (dart:async/stream_impl.dart:678)\n[stderr] #14     _PendingEvents.schedule.<anonymous closure> (dart:async/stream_impl.dart:649)\n[stderr] #15     _rootRun (dart:async/zone_root.dart:27)\n[stderr] #16     _CustomZone.run (dart:async/zone.dart:810)\n[stderr] #17     _CustomZone.runGuarded (dart:async/zone.dart:702)\n[stderr] #18     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:743)\n[stderr] #19     _rootRun (dart:async/zone_root.dart:35)\n[stderr] #20     _CustomZone.run (dart:async/zone.dart:810)\n[stderr] #21     _CustomZone.runGuarded (dart:async/zone.dart:702)\n[stderr] #22     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:743)\n[stderr] #23     _microtaskLoop (dart:async/schedule_microtask.dart:40)\n[stderr] #24     _startMicrotaskLoop (dart:async/schedule_microtask.dart:49)\n[stderr] #25     _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:127)\n[stderr] #26     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:193)\n"
+    }
+  ],
+  "gate_status": "PASS_WITH_EXCLUSIONS",
+  "gate_report": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/optimized-v1/runs/20261013-134327/gate/visual-gate-report.json"
+}

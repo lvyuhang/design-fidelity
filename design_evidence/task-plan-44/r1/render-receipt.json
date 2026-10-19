@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "contract_sha256": "13af777fceff061b84b4b5a9674ff25d2aa4acb1c70c777e1d533bbcf42ac973",
+  "candidate_sha256": "ac29f9befa51c32a0b62c0efd3dc3a304cc8355e9fa5529e47f83dcd814e4bd3",
+  "environment": {
+    "renderer": "flutter_test_repaint_boundary",
+    "renderer_version": "Flutter 3.47.7 / engine deb2874385",
+    "platform": "macOS arm64 software rasterizer",
+    "locale": "zh_CN",
+    "state": "TaskPlan44Screen default deterministic state at 375x812",
+    "text_scale": 1
+  },
+  "inputs": {
+    "../../flutter_ui_components/assets/fixtures/feed-photo.png": "5254e5f673b3cc0ff207d7276a878dece5ce5cd386826a8d06fe82a79c0d98f2",
+    "../../flutter_ui_components/assets/fonts/PingFangSC-Regular.otf": "2375395dfe1e1ca51c09f6825ec477eff043b02dd36d948cd7ef3080abcaf944",
+    "../../flutter_ui_components/assets/fonts/PingFangSC-Semibold.otf": "6a289c7ef3f8f0c46719578d13e01f6f39855e9c20eaecbee8de90ea7203a9a5",
+    "../../flutter_ui_components/lib/experiments/task_plan_44_page.dart": "e48e647db8ce081b6580ed0fc05142f84d8f5ffd90ad7bcc586714324f352f4f",
+    "../../flutter_ui_components/lib/main.dart": "7e06a3aed229634ee561cfde56f607c3942132d63c082e5b64bd8b0543a70599",
+    "../../flutter_ui_components/pubspec.lock": "d764df020ca4eb901ccd2cead6955f5e8600adcc872c563512552b5aa1a815f7",
+    "../../flutter_ui_components/pubspec.yaml": "c40501fc6aee78a03a8f5be2fceb8197169bc5697ec3b5899fc94642ee5173b3",
+    "../../flutter_ui_components/test/task_plan_44_render_test.dart": "53e3d37f597d226120fb3c94edf1d3f736b7c38e778299f2a951fb51ac8df3b3",
+    "../../tools/build_task_plan_44_contract.py": "406f6e37b6633ee09523b8072fc1b9e672a3dc2e754c7ce21380506da9ca82c2",
+    "asset-export.json": "1833a282d45c7248c395bff870e5c2f1e58245464e09386fd84aae13188653f2",
+    "reference.png": "4659abe5c2d0b1d71c5b97e7c9246df788d0ebafedad9f2512bf1b17476130e1",
+    "source/overview.json": "7311486d4b090faaf31c4022d6bb9bee0945a9d6f91fb4613326b569a84b4313",
+    "source/source-02.json": "6daf48e3b3f0084c4e975a1cf5254c722ed2f47f60d89740c5187115a6f6ce36",
+    "source/source-03.json": "04ecb0b802a53ad3c3899b8cefe1d389fcd9fd6696c5d73ac43f4d675240473b"
+  },
+  "command": [
+    "/usr/bin/env",
+    "TASK_PLAN_44_RENDER_OUTPUT=../design_evidence/task-plan-44/r1/render.png",
+    "/Users/tan/development/flutter-arm64/flutter/bin/flutter",
+    "test",
+    "test/task_plan_44_render_test.dart",
+    "--no-pub"
+  ],
+  "cwd": "/Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components",
+  "exit_code": 0,
+  "started_ns": 1791806107617053000,
+  "finished_ns": 1791806109370572000
+}

@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "source_origin": {
+    "x": 1800,
+    "y": 197
+  },
+  "adjusted_asset_records": 43,
+  "root_visibility_completed": true,
+  "files": [
+    {
+      "source": "design_evidence/backup-20-skill211/source/region-01.json",
+      "source_sha256": "7e0246e1f00b418500023e1f05bcd1c4e5bd559260376823442ff49a5323894c",
+      "normalized": "design_evidence/backup-20-skill211/normalized-source/region-01.json",
+      "normalized_sha256": "5d4d355c330fa5a6486af407899ff58634e862f1874556a5cbaf9a15a0d128a2"
+    },
+    {
+      "source": "design_evidence/backup-20-skill211/source/region-02.json",
+      "source_sha256": "4d3e19b082cc9fc27208b579c954bcbaccde3a6351b9c84145a64cdee9c5ee7d",
+      "normalized": "design_evidence/backup-20-skill211/normalized-source/region-02.json",
+      "normalized_sha256": "e2392a669be84e33d4860622f1d3be89d56e47be228158bf899d45a360c9880b"
+    },
+    {
+      "source": "design_evidence/backup-20-skill211/source/region-03.json",
+      "source_sha256": "3e79ae565af2ce2c9ecd74437f9a49f3f6538ada207506ca93b1ddab69ee0924",
+      "normalized": "design_evidence/backup-20-skill211/normalized-source/region-03.json",
+      "normalized_sha256": "3d9c72e29008f265ca7b671c7a5d5baff47f9fedd7f63a44dfd55a1d4c522d90"
+    },
+    {
+      "source": "design_evidence/backup-20-skill211/source/region-04.json",
+      "source_sha256": "9ea06baafea162055ffac0862fb5259800569fe13aed29435ef05271765a1c22",
+      "normalized": "design_evidence/backup-20-skill211/normalized-source/region-04.json",
+      "normalized_sha256": "c4a2cf76d6d9893f2eb2cb8e4bd0b7074f5192a178f4b1f5fb7adcad68f4e03b"
+    }
+  ]
+}

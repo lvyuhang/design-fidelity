@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "contract_sha256": "f6d8b377f425062ae338ee5633ccabee2d29c6fd4040dd5614a6925fe48de1f3",
+  "candidate_sha256": "e5e61b1827b8d8f71874a259b9fde5bf562c5cbf6a1a8b9d9da6110f24f99172",
+  "environment": {
+    "renderer": "Flutter widget test",
+    "renderer_version": "3.47.7 / deb287481e3ce9468f3434937ced4240a70539ca",
+    "platform": "macOS arm64",
+    "locale": "en",
+    "state": "synthetic-static",
+    "text_scale": 1
+  },
+  "inputs": {
+    "assets/icon.png": "5e260c1d139fad33516280189132dd67af33185904c8d88b77c6f2321b40a8f6",
+    "lib/main.dart": "1d16b1d595841f6bcb29f9887267cdabcb9f9422ac441327cd5c8b579f020e35",
+    "pubspec.lock": "1fca3c6690c0c04eb15788a4c16f46a982fd6256fdafc0a1bd5d80caa7377b4a",
+    "pubspec.yaml": "def1bec11986781f19687d6fcac98dab07b379196e4ed139628cd7909aaf23ef",
+    "reference.png": "581e31834b43d7b1f52a39836ecdb42f5c714fa800c19060b1c25e6f5f9e04fc",
+    "source.json": "5902f7325e71bf4361c9a7f17fc64106db3bbaaec96fc57b8b71445092355b15",
+    "test/render_test.dart": "f8d4c1882c3ca2776f45e221b4a3beacb4f7b153048c69184563bf47908fed88"
+  },
+  "command": [
+    "flutter",
+    "test",
+    "--no-pub",
+    "--dart-define=OFFSET=0",
+    "--dart-define=OUTPUT=r1/render.png",
+    "test/render_test.dart"
+  ],
+  "cwd": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-v2-validation/flutter_smoke",
+  "exit_code": 0,
+  "started_ns": 1791800607232767000,
+  "finished_ns": 1791800610691958000
+}

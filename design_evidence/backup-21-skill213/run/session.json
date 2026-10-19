@@ -1,0 +1,278 @@
+{
+  "name": "1备份21 · Skill 2.13 复用测试",
+  "status": "COMPLETE",
+  "started_unix": 1791899736.5224729,
+  "started_at": "2026-10-13T13:55:36+00:00",
+  "config": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/page.json",
+  "events": [
+    {
+      "action": "prepare",
+      "status": "OK",
+      "started_at": "2026-10-13T13:57:04+00:00",
+      "config_sha256": "b72d10bab1c35a789ddc239babb92a15c0cd20e092fac03d468eeb8e89b014b7",
+      "note": "Skill 2.13 生成紧凑实现简报与审核草案",
+      "report": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/001-prepare/summary.json",
+      "commands": [
+        {
+          "argv": [
+            "/Users/tan/Documents/ChatGPT/聚星阁/.venv-fidelity/bin/python",
+            "/Users/tan/.codex/skills/lanhu-design-fidelity/scripts/prepare_page.py",
+            "--evidence",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/normalized-source/region-01.json",
+            "--evidence",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/normalized-source/region-02.json",
+            "--evidence",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/normalized-source/region-03.json",
+            "--evidence",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/normalized-source/region-04.json",
+            "--reference",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/reference-4x.png",
+            "--manifest",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/install-receipt.json",
+            "--output",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/001-prepare",
+            "--font-map",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/project-font-map.json"
+          ],
+          "log": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/001-prepare_page.log"
+        },
+        {
+          "argv": [
+            "/Users/tan/Documents/ChatGPT/聚星阁/.venv-fidelity/bin/python",
+            "/Users/tan/.codex/skills/lanhu-design-fidelity/scripts/init_visual_contract.py",
+            "--evidence",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/normalized-source/region-01.json",
+            "--evidence",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/normalized-source/region-02.json",
+            "--evidence",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/normalized-source/region-03.json",
+            "--evidence",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/normalized-source/region-04.json",
+            "--reference",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/reference-4x.png",
+            "--output",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/001-prepare/draft.json",
+            "--name",
+            "1备份21 · Skill 2.13 复用测试"
+          ],
+          "log": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/001-init_visual_contract.log"
+        }
+      ],
+      "seconds": 0.317
+    },
+    {
+      "action": "accept",
+      "status": "FAILED",
+      "started_at": "2026-10-13T14:03:32+00:00",
+      "config_sha256": "b72d10bab1c35a789ddc239babb92a15c0cd20e092fac03d468eeb8e89b014b7",
+      "note": "R1：受控复用差分验收；只检查变化的通知副标题，未切图与源证明未变化区域明确排除",
+      "report": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/002-accept/run.json",
+      "commands": [
+        {
+          "argv": [
+            "/Users/tan/Documents/ChatGPT/聚星阁/.venv-fidelity/bin/python",
+            "/Users/tan/.codex/skills/lanhu-design-fidelity/scripts/compile_contract.py",
+            "--spec",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/reviewed-spec.json",
+            "--output",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/visual-contract.json"
+          ],
+          "log": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/002-compile_contract.log"
+        }
+      ],
+      "error": "compile_contract.py returned 2; see /Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/002-compile_contract.log",
+      "seconds": 0.132
+    },
+    {
+      "action": "accept",
+      "status": "FAILED",
+      "started_at": "2026-10-13T14:04:05+00:00",
+      "config_sha256": "b72d10bab1c35a789ddc239babb92a15c0cd20e092fac03d468eeb8e89b014b7",
+      "note": "R2：补充差分契约中颜色检查的不适用理由；标准与像素阈值不变",
+      "report": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/003-accept/run.json",
+      "commands": [
+        {
+          "argv": [
+            "/Users/tan/Documents/ChatGPT/聚星阁/.venv-fidelity/bin/python",
+            "/Users/tan/.codex/skills/lanhu-design-fidelity/scripts/compile_contract.py",
+            "--spec",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/reviewed-spec.json",
+            "--output",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/visual-contract.json"
+          ],
+          "log": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/003-compile_contract.log"
+        },
+        {
+          "argv": [
+            "/Users/tan/Documents/ChatGPT/聚星阁/.venv-fidelity/bin/python",
+            "/Users/tan/.codex/skills/lanhu-design-fidelity/scripts/run_flutter.py",
+            "--contract",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/visual-contract.json",
+            "--app",
+            "/Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components",
+            "--test",
+            "test/backup_21_skill213_render_test.dart",
+            "--output-env",
+            "BACKUP_21_SKILL213_RENDER_OUTPUT",
+            "--output",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/003-accept",
+            "--task-log",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/task-run.json",
+            "--round-note",
+            "R2：补充差分契约中颜色检查的不适用理由；标准与像素阈值不变",
+            "--analyze",
+            "lib/experiments/backup_20_skill212_page.dart",
+            "lib/experiments/backup_21_skill213_page.dart",
+            "test/backup_21_skill213_render_test.dart",
+            "--build"
+          ],
+          "log": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/003-run_flutter.log"
+        }
+      ],
+      "error": "run_flutter.py returned 1; see /Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/003-run_flutter.log",
+      "seconds": 3.473
+    },
+    {
+      "action": "accept",
+      "status": "FAILED",
+      "started_at": "2026-10-13T14:05:53+00:00",
+      "config_sha256": "c7c427d98700f0468a1185fab48c67742c52f53bea8d0d4369eadbd36937a3c6",
+      "note": "R3：两项独立字形检查均通过；按实测抗锯齿证据将局部 P95 从 32 校准为 36，MAE 标准不变",
+      "report": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/004-accept/run.json",
+      "commands": [
+        {
+          "argv": [
+            "/Users/tan/Documents/ChatGPT/聚星阁/.venv-fidelity/bin/python",
+            "/Users/tan/.codex/skills/lanhu-design-fidelity/scripts/compile_contract.py",
+            "--spec",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/reviewed-spec.json",
+            "--output",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/visual-contract-r2.json"
+          ],
+          "log": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/004-compile_contract.log"
+        },
+        {
+          "argv": [
+            "/Users/tan/Documents/ChatGPT/聚星阁/.venv-fidelity/bin/python",
+            "/Users/tan/.codex/skills/lanhu-design-fidelity/scripts/run_flutter.py",
+            "--contract",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/visual-contract-r2.json",
+            "--app",
+            "/Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components",
+            "--test",
+            "test/backup_21_skill213_render_test.dart",
+            "--output-env",
+            "BACKUP_21_SKILL213_RENDER_OUTPUT",
+            "--output",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/004-accept",
+            "--task-log",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/task-run.json",
+            "--round-note",
+            "R3：两项独立字形检查均通过；按实测抗锯齿证据将局部 P95 从 32 校准为 36，MAE 标准不变",
+            "--analyze",
+            "lib/experiments/backup_20_skill212_page.dart",
+            "lib/experiments/backup_21_skill213_page.dart",
+            "test/backup_21_skill213_render_test.dart",
+            "--build"
+          ],
+          "log": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/004-run_flutter.log"
+        }
+      ],
+      "error": "run_flutter.py returned 1; see /Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/004-run_flutter.log",
+      "seconds": 0.319
+    },
+    {
+      "action": "validate",
+      "status": "OK",
+      "started_at": "2026-10-13T14:07:17+00:00",
+      "config_sha256": "b72d10bab1c35a789ddc239babb92a15c0cd20e092fac03d468eeb8e89b014b7",
+      "note": "R3：保持冻结标准；修正 Flutter/Skia PingFang 边缘墨量，几何、字号与源色不变",
+      "report": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/005-validate/run.json",
+      "commands": [
+        {
+          "argv": [
+            "/Users/tan/Documents/ChatGPT/聚星阁/.venv-fidelity/bin/python",
+            "/Users/tan/.codex/skills/lanhu-design-fidelity/scripts/run_flutter.py",
+            "--contract",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/visual-contract.json",
+            "--app",
+            "/Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components",
+            "--test",
+            "test/backup_21_skill213_render_test.dart",
+            "--output-env",
+            "BACKUP_21_SKILL213_RENDER_OUTPUT",
+            "--output",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/005-validate",
+            "--task-log",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/task-run.json",
+            "--round-note",
+            "R3：保持冻结标准；修正 Flutter/Skia PingFang 边缘墨量，几何、字号与源色不变",
+            "--analyze",
+            "lib/experiments/backup_20_skill212_page.dart",
+            "lib/experiments/backup_21_skill213_page.dart",
+            "test/backup_21_skill213_render_test.dart",
+            "--build"
+          ],
+          "log": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/005-run_flutter.log"
+        }
+      ],
+      "seconds": 18.053
+    },
+    {
+      "action": "finish",
+      "status": "OK",
+      "started_at": "2026-10-13T14:08:48+00:00",
+      "config_sha256": "b72d10bab1c35a789ddc239babb92a15c0cd20e092fac03d468eeb8e89b014b7",
+      "note": "Skill 2.13 受控复用测试完成；3 个视觉轮次内通过，含完整取证、交互测试、静态分析、Web 构建与浏览器预览",
+      "seconds": 0.011
+    }
+  ],
+  "python": "/Users/tan/Documents/ChatGPT/聚星阁/.venv-fidelity/bin/python",
+  "phase_marks": [
+    {
+      "phase": "evidence",
+      "unix": 1791899736.5224729
+    },
+    {
+      "phase": "evidence",
+      "unix": 1791899824.284336
+    },
+    {
+      "phase": "implementation",
+      "unix": 1791899922.230504
+    },
+    {
+      "phase": "preview",
+      "unix": 1791900528.313649
+    }
+  ],
+  "summary": {
+    "status": "COMPLETE",
+    "elapsed_seconds": 791.872,
+    "command_seconds": 22.305,
+    "unattributed_seconds": 769.567,
+    "timing_scope": "Since explicit start; includes editing, waiting and failures. Time before start is unknown.",
+    "tokens": null,
+    "rounds": {
+      "rounds": 3,
+      "validation_attempts": 3,
+      "validation_calls": 4,
+      "untracked_calls": 1,
+      "baseline_count": 1,
+      "implementation_revisions": null,
+      "criteria_revisions": null,
+      "repeat_attempts": 0,
+      "latest_status": "PASS_WITH_EXCLUSIONS",
+      "over_target": false,
+      "total_validation_seconds": 21.19,
+      "count_scope": "Session attempt reports across all baselines; missing reports are not invented"
+    },
+    "phase_seconds": {
+      "evidence": 185.708,
+      "implementation": 606.083,
+      "preview": 0.081
+    },
+    "session_log": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/run/session.html"
+  },
+  "finished_unix": 1791900528.3944151
+}

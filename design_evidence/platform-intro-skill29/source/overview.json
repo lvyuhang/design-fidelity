@@ -1,0 +1,4912 @@
+{
+  "status": "complete",
+  "snapshot_id": "da6dd92db9b6df7fc3fc4d2bc873e0ee",
+  "design_id": "8f468427-cc51-401d-a916-4ddd469544ad",
+  "design_name": "平台介绍页",
+  "requested_version": "d4d1c235-1fb2-4395-9d0e-a5055d074f4e",
+  "resolved_version": "d4d1c235-1fb2-4395-9d0e-a5055d074f4e",
+  "source_type": "sketch",
+  "canvas": {
+    "width": 375,
+    "height": 812
+  },
+  "coordinate_space": "source_canvas",
+  "coordinate_mapping": {
+    "verified": true,
+    "strategy": "identity",
+    "source_origin": {
+      "x": 0,
+      "y": 0
+    },
+    "translation": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "reference_size": {
+    "width": 1500,
+    "height": 3248
+  },
+  "original_reference_size": {
+    "width": 1500,
+    "height": 3248
+  },
+  "preview_downsampled": false,
+  "scale_metadata": {
+    "device": "iOS @1x",
+    "ArtboardScale": 2,
+    "sliceScale": 4,
+    "exportScale": 4
+  },
+  "font_requirements": [
+    {
+      "family": "FZDBSJW--GB1-0",
+      "availability": "not_checked",
+      "source": "design",
+      "weights": [
+        400
+      ],
+      "node_count": 3,
+      "sample_node_ids": [
+        "10FBACC7-D823-4E7E-842F-EBC3EEEAD5E2",
+        "759EB0D9-27A2-43E0-973C-3B6D859E24B0",
+        "1C813327-0E8A-49FE-A69A-7087BAC66B86"
+      ]
+    },
+    {
+      "family": "Alibaba-PuHuiTi-R",
+      "availability": "not_checked",
+      "source": "design",
+      "weights": [
+        400
+      ],
+      "node_count": 1,
+      "sample_node_ids": [
+        "0DABD7BD-C26E-4F28-BD88-971CB124016F"
+      ]
+    },
+    {
+      "family": ".AppleSystemUIFont",
+      "availability": "not_checked",
+      "source": "design",
+      "weights": [
+        400
+      ],
+      "node_count": 1,
+      "sample_node_ids": [
+        "453B968A-CDC9-4312-BFDA-C845BCC46866"
+      ]
+    },
+    {
+      "family": "Source-KeynoteartHans-Regular",
+      "availability": "not_checked",
+      "source": "design",
+      "weights": [
+        400
+      ],
+      "node_count": 2,
+      "sample_node_ids": [
+        "A3FD2014-8642-473A-B0F5-4C17D694B015",
+        "D918BBDD-E8F9-4952-B1C0-818569C32B90"
+      ]
+    },
+    {
+      "family": "PingFangSC-Semibold",
+      "availability": "not_checked",
+      "source": "design",
+      "weights": [
+        600
+      ],
+      "node_count": 11,
+      "sample_node_ids": [
+        "D5F784F3-8E06-4C4F-A3F8-8FF9128E8FBF",
+        "07374D1F-F808-41C6-BE0B-5D7F42AF350C",
+        "EC9595BF-FBEE-48D6-83B7-578DDF77926C",
+        "A2341762-66D3-4BEF-A1FA-632A86E77426",
+        "DCD786E3-90B6-4426-AE6E-E32DBA9DCAA1"
+      ]
+    },
+    {
+      "family": "PingFangSC-Regular",
+      "availability": "not_checked",
+      "source": "design",
+      "weights": [
+        400
+      ],
+      "node_count": 7,
+      "sample_node_ids": [
+        "43C56157-B07D-4870-881E-AAFDC4564FA8",
+        "AA5F26B7-A949-4AA3-AC80-B79FAD8B5F29",
+        "B5B1EADF-DC60-44D2-B26F-2748C7011D07",
+        "F7EB806C-A636-4C3C-BA0B-08C3881FA358",
+        "3CE43603-6FBC-4489-BDAE-E9E36EDA5FC8"
+      ]
+    }
+  ],
+  "total_nodes": 100,
+  "asset_counts": {
+    "exported_asset": 11
+  },
+  "capabilities": {
+    "raw_nodes": true,
+    "dds_layout": true,
+    "coordinate_mapping_verified": true,
+    "semantic_components": false
+  },
+  "gaps": [
+    {
+      "code": "logical_coordinate_conversion_unknown",
+      "message": "Source canvas units are preserved. Export density does not establish CSS pixel scale."
+    }
+  ],
+  "source_region": {
+    "x": 0.0,
+    "y": 0.0,
+    "width": 375.0,
+    "height": 812.0
+  },
+  "image_size": {
+    "width": 647,
+    "height": 1400
+  },
+  "scale": {
+    "x": 1.7253333333333334,
+    "y": 1.7241379310344827
+  },
+  "labels": [
+    {
+      "label": "N1",
+      "node_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "bounds": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 375.0,
+        "height": 812.0
+      },
+      "image_bounds": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 647.0,
+        "height": 1400.0
+      }
+    },
+    {
+      "label": "N2",
+      "node_id": "4EC3AA61-B992-4521-B690-080B9E6D6279",
+      "bounds": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 375.0,
+        "height": 812.0
+      },
+      "image_bounds": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 647.0,
+        "height": 1400.0
+      }
+    },
+    {
+      "label": "N3",
+      "node_id": "6186D4BD-E2AD-4D58-9300-579C2C21FCDA",
+      "bounds": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 375.0,
+        "height": 229.0
+      },
+      "image_bounds": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 647.0,
+        "height": 394.8275862068965
+      }
+    },
+    {
+      "label": "N4",
+      "node_id": "A6C8724D-3709-47E4-B940-45E36F79B8B9",
+      "bounds": {
+        "x": 0.0,
+        "y": 35.0,
+        "width": 375.0,
+        "height": 193.548387096774
+      },
+      "image_bounds": {
+        "x": 0.0,
+        "y": 60.34482758620689,
+        "width": 647.0,
+        "height": 333.7041156840931
+      }
+    },
+    {
+      "label": "N5",
+      "node_id": "84EBC769-C40D-43ED-A012-5A6334394DF0",
+      "bounds": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 375.0,
+        "height": 229.0
+      },
+      "image_bounds": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 647.0,
+        "height": 394.8275862068965
+      }
+    },
+    {
+      "label": "N6",
+      "node_id": "10FBACC7-D823-4E7E-842F-EBC3EEEAD5E2",
+      "bounds": {
+        "x": 26.0,
+        "y": 128.0000000000001,
+        "width": 180.0,
+        "height": 17.0
+      },
+      "image_bounds": {
+        "x": 44.858666666666664,
+        "y": 220.68965517241398,
+        "width": 310.56,
+        "height": 29.310344827586206
+      }
+    },
+    {
+      "label": "N7",
+      "node_id": "0DABD7BD-C26E-4F28-BD88-971CB124016F",
+      "bounds": {
+        "x": 29.0,
+        "y": 159.0000000000001,
+        "width": 178.0,
+        "height": 17.0
+      },
+      "image_bounds": {
+        "x": 50.034666666666666,
+        "y": 274.13793103448296,
+        "width": 307.1093333333333,
+        "height": 29.310344827586206
+      }
+    },
+    {
+      "label": "N8",
+      "node_id": "759EB0D9-27A2-43E0-973C-3B6D859E24B0",
+      "bounds": {
+        "x": 19.0,
+        "y": 78.0,
+        "width": 76.0,
+        "height": 43.0
+      },
+      "image_bounds": {
+        "x": 32.781333333333336,
+        "y": 134.48275862068965,
+        "width": 131.12533333333334,
+        "height": 74.13793103448275
+      }
+    },
+    {
+      "label": "N9",
+      "node_id": "1C813327-0E8A-49FE-A69A-7087BAC66B86",
+      "bounds": {
+        "x": 98.0,
+        "y": 78.0,
+        "width": 114.0,
+        "height": 43.0
+      },
+      "image_bounds": {
+        "x": 169.08266666666668,
+        "y": 134.48275862068965,
+        "width": 196.68800000000002,
+        "height": 74.13793103448275
+      }
+    },
+    {
+      "label": "N10",
+      "node_id": "6010A6AB-EC7A-480B-A0D9-3C44644352CE",
+      "bounds": {
+        "x": 19.0,
+        "y": 78.0,
+        "width": 193.0,
+        "height": 98.0000000000001
+      },
+      "image_bounds": {
+        "x": 32.781333333333336,
+        "y": 134.48275862068965,
+        "width": 332.9893333333333,
+        "height": 168.9655172413795
+      }
+    },
+    {
+      "label": "N11",
+      "node_id": "FF1C36C8-FBEC-4362-B530-937D4560C776",
+      "bounds": {
+        "x": 209.0,
+        "y": 61.0,
+        "width": 15.0,
+        "height": 15.0
+      },
+      "image_bounds": {
+        "x": 360.5946666666667,
+        "y": 105.17241379310344,
+        "width": 25.880000000000003,
+        "height": 25.86206896551724
+      }
+    },
+    {
+      "label": "N12",
+      "node_id": "FE6B412E-3445-4E61-ADC1-42FE747717B8",
+      "bounds": {
+        "x": 192.18347496980368,
+        "y": 57.18347496980448,
+        "width": 12.633050060391422,
+        "height": 12.633050060391422
+      },
+      "image_bounds": {
+        "x": 331.5805554812346,
+        "y": 98.59219822380082,
+        "width": 21.796222370861983,
+        "height": 21.78112079377832
+      }
+    },
+    {
+      "label": "N13",
+      "node_id": "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4",
+      "bounds": {
+        "x": 19.0,
+        "y": 57.183474969804365,
+        "width": 205.0,
+        "height": 118.816525030196
+      },
+      "image_bounds": {
+        "x": 32.781333333333336,
+        "y": 98.59219822380062,
+        "width": 353.6933333333333,
+        "height": 204.85607763826897
+      }
+    },
+    {
+      "label": "N14",
+      "node_id": "E40795A5-5FEF-4164-9D5A-93BA2A33E0A7",
+      "bounds": {
+        "x": 121.0,
+        "y": 799.0,
+        "width": 134.0,
+        "height": 5.0
+      },
+      "image_bounds": {
+        "x": 208.76533333333333,
+        "y": 1377.5862068965516,
+        "width": 231.19466666666668,
+        "height": 8.620689655172413
+      }
+    },
+    {
+      "label": "N15",
+      "node_id": "88693C67-6C64-4D5F-BBF2-53D5EC5E786A",
+      "bounds": {
+        "x": 121.0,
+        "y": 778.0,
+        "width": 134.0,
+        "height": 34.0
+      },
+      "image_bounds": {
+        "x": 208.76533333333333,
+        "y": 1341.3793103448274,
+        "width": 231.19466666666668,
+        "height": 58.62068965517241
+      }
+    },
+    {
+      "label": "N16",
+      "node_id": "383C9133-CAF8-4323-9C98-474BEE70E996",
+      "bounds": {
+        "x": 121.0,
+        "y": 778.0,
+        "width": 134.0,
+        "height": 34.0
+      },
+      "image_bounds": {
+        "x": 208.76533333333333,
+        "y": 1341.3793103448274,
+        "width": 231.19466666666668,
+        "height": 58.62068965517241
+      }
+    },
+    {
+      "label": "N17",
+      "node_id": "294C0431-6FAB-471D-8BB7-CBBAD7A4F681",
+      "bounds": {
+        "x": 336.33330000000024,
+        "y": 17.33333333333337,
+        "width": 22.0,
+        "height": 11.3333333333333
+      },
+      "image_bounds": {
+        "x": 580.2870536000004,
+        "y": 29.88505747126443,
+        "width": 37.95733333333334,
+        "height": 19.540229885057414
+      }
+    },
+    {
+      "label": "N18",
+      "node_id": "6C930DF9-C0EB-4E2A-A497-FD6D41C2B9F4",
+      "bounds": {
+        "x": 359.33330000000024,
+        "y": 21.0,
+        "width": 1.32803800560835,
+        "height": 4.0
+      },
+      "image_bounds": {
+        "x": 619.9697202666671,
+        "y": 36.206896551724135,
+        "width": 2.29130823900958,
+        "height": 6.896551724137931
+      }
+    },
+    {
+      "label": "N19",
+      "node_id": "D220EAC4-1149-45BD-AD8C-E3B2D4F258D1",
+      "bounds": {
+        "x": 338.33330000000024,
+        "y": 19.33333333333337,
+        "width": 18.0,
+        "height": 7.33333333333333
+      },
+      "image_bounds": {
+        "x": 583.7377202666671,
+        "y": 33.3333333333334,
+        "width": 31.056,
+        "height": 12.643678160919531
+      }
+    },
+    {
+      "label": "N20",
+      "node_id": "E0F339CD-926D-46AA-9E56-12A5475550E5",
+      "bounds": {
+        "x": 336.0,
+        "y": 17.0,
+        "width": 25.0,
+        "height": 12.0
+      },
+      "image_bounds": {
+        "x": 579.712,
+        "y": 29.310344827586206,
+        "width": 43.13333333333333,
+        "height": 20.689655172413794
+      }
+    },
+    {
+      "label": "N21",
+      "node_id": "7F9F5132-94FD-4768-920F-2DBE7DFB06BD",
+      "bounds": {
+        "x": 316.0,
+        "y": 17.33067270403251,
+        "width": 15.3333,
+        "height": 11.0
+      },
+      "image_bounds": {
+        "x": 545.2053333333333,
+        "y": 29.88047017936639,
+        "width": 26.455053600000014,
+        "height": 18.96551724137931
+      }
+    },
+    {
+      "label": "N22",
+      "node_id": "3041A10C-07CD-42F3-A86B-4DBBDD56B385",
+      "bounds": {
+        "x": 294.0,
+        "y": 17.666667000000075,
+        "width": 17.0,
+        "height": 10.6666666666667
+      },
+      "image_bounds": {
+        "x": 507.248,
+        "y": 30.4597706896553,
+        "width": 29.330666666666666,
+        "height": 18.390804597701205
+      }
+    },
+    {
+      "label": "N23",
+      "node_id": "453B968A-CDC9-4312-BFDA-C845BCC46866",
+      "bounds": {
+        "x": 21.0,
+        "y": 14.333300000000236,
+        "width": 54.0,
+        "height": 18.0
+      },
+      "image_bounds": {
+        "x": 36.232,
+        "y": 24.712586206896958,
+        "width": 93.168,
+        "height": 31.034482758620687
+      }
+    },
+    {
+      "label": "N24",
+      "node_id": "48F71FF5-879F-491B-BE13-3481583F6389",
+      "bounds": {
+        "x": 21.0,
+        "y": 7.333300000000236,
+        "width": 54.0,
+        "height": 21.0
+      },
+      "image_bounds": {
+        "x": 36.232,
+        "y": 12.643620689655577,
+        "width": 93.168,
+        "height": 36.206896551724135
+      }
+    },
+    {
+      "label": "N25",
+      "node_id": "3C46A199-74C9-4542-83A2-EEC7B434DE92",
+      "bounds": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 375.0,
+        "height": 44.0
+      },
+      "image_bounds": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 647.0,
+        "height": 75.86206896551724
+      }
+    },
+    {
+      "label": "N26",
+      "node_id": "13226AD8-6BA5-43B3-A98A-9DF76F299658",
+      "bounds": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 375.0,
+        "height": 44.0
+      },
+      "image_bounds": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 647.0,
+        "height": 75.86206896551724
+      }
+    },
+    {
+      "label": "N27",
+      "node_id": "48806B19-1694-4437-9E26-09E95238A067",
+      "bounds": {
+        "x": 15.0,
+        "y": 208.0,
+        "width": 343.0,
+        "height": 208.0
+      },
+      "image_bounds": {
+        "x": 25.880000000000003,
+        "y": 358.6206896551724,
+        "width": 591.7893333333334,
+        "height": 358.6206896551724
+      }
+    },
+    {
+      "label": "N28",
+      "node_id": "9E217909-FC20-4BB1-BAAE-644790E8168F",
+      "bounds": {
+        "x": 15.0,
+        "y": 208.0,
+        "width": 343.0,
+        "height": 208.0
+      },
+      "image_bounds": {
+        "x": 25.880000000000003,
+        "y": 358.6206896551724,
+        "width": 591.7893333333334,
+        "height": 358.6206896551724
+      }
+    },
+    {
+      "label": "N29",
+      "node_id": "11857F91-EAAB-4C0C-A518-9D0D2F73628B",
+      "bounds": {
+        "x": 172.0,
+        "y": 219.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      },
+      "image_bounds": {
+        "x": 296.75733333333335,
+        "y": 379.3103448275854,
+        "width": 25.88000000000069,
+        "height": 22.355604970598094
+      }
+    },
+    {
+      "label": "N30",
+      "node_id": "E79B48D4-D1DC-4040-888E-31EF52D08DB0",
+      "bounds": {
+        "x": 172.0,
+        "y": 219.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      },
+      "image_bounds": {
+        "x": 296.75733333333335,
+        "y": 379.3103448275854,
+        "width": 25.88000000000069,
+        "height": 22.355604970598094
+      }
+    },
+    {
+      "label": "N31",
+      "node_id": "A3FD2014-8642-473A-B0F5-4C17D694B015",
+      "bounds": {
+        "x": 291.0,
+        "y": 208.0,
+        "width": 60.0,
+        "height": 58.0
+      },
+      "image_bounds": {
+        "x": 502.072,
+        "y": 358.6206896551724,
+        "width": 103.52000000000001,
+        "height": 100.0
+      }
+    },
+    {
+      "label": "N32",
+      "node_id": "5635B6E7-37C1-4D57-989A-45A35D3D60E5",
+      "bounds": {
+        "x": 15.0,
+        "y": 208.0,
+        "width": 343.0,
+        "height": 208.0
+      },
+      "image_bounds": {
+        "x": 25.880000000000003,
+        "y": 358.6206896551724,
+        "width": 591.7893333333334,
+        "height": 358.6206896551724
+      }
+    },
+    {
+      "label": "N33",
+      "node_id": "FBAD45FA-3661-48CD-A7DC-5B858AD7FF6A",
+      "bounds": {
+        "x": 15.0,
+        "y": 208.0,
+        "width": 343.0,
+        "height": 208.0
+      },
+      "image_bounds": {
+        "x": 25.880000000000003,
+        "y": 358.6206896551724,
+        "width": 591.7893333333334,
+        "height": 358.6206896551724
+      }
+    },
+    {
+      "label": "N34",
+      "node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "bounds": {
+        "x": 16.0,
+        "y": 424.0,
+        "width": 343.0,
+        "height": 266.0
+      },
+      "image_bounds": {
+        "x": 27.605333333333334,
+        "y": 731.0344827586207,
+        "width": 591.7893333333334,
+        "height": 458.6206896551724
+      }
+    },
+    {
+      "label": "N35",
+      "node_id": "D44A759A-F00C-4F91-B906-8D3AEA24B017",
+      "bounds": {
+        "x": 199.0,
+        "y": 434.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      },
+      "image_bounds": {
+        "x": 343.34133333333335,
+        "y": 749.9999999999992,
+        "width": 25.88000000000069,
+        "height": 22.355604970598094
+      }
+    },
+    {
+      "label": "N36",
+      "node_id": "017FFDCA-5C07-433E-90E7-9EF90D666FE0",
+      "bounds": {
+        "x": 199.0,
+        "y": 434.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      },
+      "image_bounds": {
+        "x": 343.34133333333335,
+        "y": 749.9999999999992,
+        "width": 25.88000000000069,
+        "height": 22.355604970598094
+      }
+    },
+    {
+      "label": "N37",
+      "node_id": "67A66F14-1BFC-4ED2-B7CC-CA53F587487F",
+      "bounds": {
+        "x": 288.0,
+        "y": 424.0,
+        "width": 71.0,
+        "height": 67.0
+      },
+      "image_bounds": {
+        "x": 496.896,
+        "y": 731.0344827586207,
+        "width": 122.49866666666667,
+        "height": 115.51724137931033
+      }
+    },
+    {
+      "label": "N38",
+      "node_id": "D918BBDD-E8F9-4952-B1C0-818569C32B90",
+      "bounds": {
+        "x": 281.0,
+        "y": 424.0,
+        "width": 60.0,
+        "height": 56.0
+      },
+      "image_bounds": {
+        "x": 484.8186666666667,
+        "y": 731.0344827586207,
+        "width": 103.52000000000001,
+        "height": 96.55172413793103
+      }
+    },
+    {
+      "label": "N39",
+      "node_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "bounds": {
+        "x": 16.0,
+        "y": 424.0,
+        "width": 343.0,
+        "height": 266.0
+      },
+      "image_bounds": {
+        "x": 27.605333333333334,
+        "y": 731.0344827586207,
+        "width": 591.7893333333334,
+        "height": 458.6206896551724
+      }
+    },
+    {
+      "label": "N40",
+      "node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+      "bounds": {
+        "x": 26.0,
+        "y": 471.0,
+        "width": 325.0,
+        "height": 210.0
+      },
+      "image_bounds": {
+        "x": 44.858666666666664,
+        "y": 812.0689655172413,
+        "width": 560.7333333333333,
+        "height": 362.06896551724134
+      }
+    },
+    {
+      "label": "N41",
+      "node_id": "C4E31964-6BB3-4C0B-B672-F466B0071466",
+      "bounds": {
+        "x": 35.0,
+        "y": 625.0,
+        "width": 43.0,
+        "height": 43.0
+      },
+      "image_bounds": {
+        "x": 60.38666666666667,
+        "y": 1077.5862068965516,
+        "width": 74.18933333333334,
+        "height": 74.13793103448275
+      }
+    },
+    {
+      "label": "N42",
+      "node_id": "0F085E92-24C5-427D-8773-FB4CA375285F",
+      "bounds": {
+        "x": 47.375,
+        "y": 645.4223586066275,
+        "width": 19.25,
+        "height": 11.9166666666667
+      },
+      "image_bounds": {
+        "x": 81.73766666666667,
+        "y": 1112.7971700114267,
+        "width": 33.21266666666667,
+        "height": 20.545977011494383
+      }
+    },
+    {
+      "label": "N43",
+      "node_id": "F9B45E83-0BD9-42E8-B5BD-4479052DA6C6",
+      "bounds": {
+        "x": 46.0,
+        "y": 636.0,
+        "width": 22.0,
+        "height": 10.3175408982943
+      },
+      "image_bounds": {
+        "x": 79.36533333333334,
+        "y": 1096.551724137931,
+        "width": 37.95733333333334,
+        "height": 17.788863617748763
+      }
+    },
+    {
+      "label": "N44",
+      "node_id": "60F1B29F-4076-4435-9C28-DBA494E30B7C",
+      "bounds": {
+        "x": 52.41666666666697,
+        "y": 647.0,
+        "width": 9.16666666666667,
+        "height": 9.16666666666667
+      },
+      "image_bounds": {
+        "x": 90.43622222222275,
+        "y": 1115.5172413793102,
+        "width": 15.815555555555564,
+        "height": 15.804597701149358
+      }
+    },
+    {
+      "label": "N45",
+      "node_id": "BD427EBB-C725-416A-A798-1AD75287E7EC",
+      "bounds": {
+        "x": 56.08333333333303,
+        "y": 642.4166666666667,
+        "width": 1.83333333333334,
+        "height": 3.66666666666667
+      },
+      "image_bounds": {
+        "x": 96.76244444444393,
+        "y": 1107.6149425287356,
+        "width": 3.1631111111111276,
+        "height": 6.321839080459704
+      }
+    },
+    {
+      "label": "N46",
+      "node_id": "D21FF697-FB94-4D6E-8CC6-DAFF62A943C0",
+      "bounds": {
+        "x": 46.0,
+        "y": 636.0,
+        "width": 22.0,
+        "height": 21.3390252732942
+      },
+      "image_bounds": {
+        "x": 79.36533333333334,
+        "y": 1096.551724137931,
+        "width": 37.95733333333334,
+        "height": 36.79142288498994
+      }
+    },
+    {
+      "label": "N47",
+      "node_id": "CC16704D-812C-42AB-8488-1E79C65EE8B8",
+      "bounds": {
+        "x": 35.0,
+        "y": 625.0,
+        "width": 43.0,
+        "height": 43.0
+      },
+      "image_bounds": {
+        "x": 60.38666666666667,
+        "y": 1077.5862068965516,
+        "width": 74.18933333333334,
+        "height": 74.13793103448275
+      }
+    },
+    {
+      "label": "N48",
+      "node_id": "513DC40A-2FB1-439E-8BB4-950FA176E204",
+      "bounds": {
+        "x": 35.0,
+        "y": 558.0,
+        "width": 43.0,
+        "height": 43.0
+      },
+      "image_bounds": {
+        "x": 60.38666666666667,
+        "y": 962.0689655172413,
+        "width": 74.18933333333334,
+        "height": 74.13793103448275
+      }
+    },
+    {
+      "label": "N49",
+      "node_id": "F5D72186-D951-4DFC-B7AC-303C6C590936",
+      "bounds": {
+        "x": 48.0,
+        "y": 570.0,
+        "width": 17.0,
+        "height": 20.0
+      },
+      "image_bounds": {
+        "x": 82.816,
+        "y": 982.7586206896551,
+        "width": 29.330666666666666,
+        "height": 34.48275862068965
+      }
+    },
+    {
+      "label": "N50",
+      "node_id": "A4724EA7-52E1-43A9-A5F3-C871175D39D6",
+      "bounds": {
+        "x": 48.0,
+        "y": 570.0,
+        "width": 17.0,
+        "height": 20.0
+      },
+      "image_bounds": {
+        "x": 82.816,
+        "y": 982.7586206896551,
+        "width": 29.330666666666666,
+        "height": 34.48275862068965
+      }
+    },
+    {
+      "label": "N51",
+      "node_id": "38F39AB7-1B1B-4536-B256-68E93B251F33",
+      "bounds": {
+        "x": 35.0,
+        "y": 558.0,
+        "width": 43.0,
+        "height": 43.0
+      },
+      "image_bounds": {
+        "x": 60.38666666666667,
+        "y": 962.0689655172413,
+        "width": 74.18933333333334,
+        "height": 74.13793103448275
+      }
+    },
+    {
+      "label": "N52",
+      "node_id": "0E9CC64A-60B9-4781-BE54-CD55F949DEB9",
+      "bounds": {
+        "x": 35.0,
+        "y": 486.0,
+        "width": 43.0,
+        "height": 43.0
+      },
+      "image_bounds": {
+        "x": 60.38666666666667,
+        "y": 837.9310344827586,
+        "width": 74.18933333333334,
+        "height": 74.13793103448275
+      }
+    },
+    {
+      "label": "N53",
+      "node_id": "4FE59FC7-9B49-446A-A18A-4353E1D12875",
+      "bounds": {
+        "x": 46.0,
+        "y": 497.0,
+        "width": 21.0,
+        "height": 21.0
+      },
+      "image_bounds": {
+        "x": 79.36533333333334,
+        "y": 856.8965517241379,
+        "width": 36.232,
+        "height": 36.206896551724135
+      }
+    },
+    {
+      "label": "N54",
+      "node_id": "09FEA212-58C6-431B-A9A5-404ACDA7245A",
+      "bounds": {
+        "x": 46.0,
+        "y": 497.0,
+        "width": 21.0,
+        "height": 21.0
+      },
+      "image_bounds": {
+        "x": 79.36533333333334,
+        "y": 856.8965517241379,
+        "width": 36.232,
+        "height": 36.206896551724135
+      }
+    },
+    {
+      "label": "N55",
+      "node_id": "BAA46888-06CE-4239-9E0B-2B4C194C1ECF",
+      "bounds": {
+        "x": 35.0,
+        "y": 486.0,
+        "width": 43.0,
+        "height": 43.0
+      },
+      "image_bounds": {
+        "x": 60.38666666666667,
+        "y": 837.9310344827586,
+        "width": 74.18933333333334,
+        "height": 74.13793103448275
+      }
+    },
+    {
+      "label": "N56",
+      "node_id": "A22C0DB6-9846-4744-A900-37852C9874DA",
+      "bounds": {
+        "x": 26.0,
+        "y": 263.0,
+        "width": 156.181390590996,
+        "height": 65.0
+      },
+      "image_bounds": {
+        "x": 44.858666666666664,
+        "y": 453.44827586206895,
+        "width": 269.4649592329984,
+        "height": 112.06896551724137
+      }
+    },
+    {
+      "label": "N57",
+      "node_id": "A3FCFA75-7355-4B91-8C30-CAC01E8397F2",
+      "bounds": {
+        "x": 26.0,
+        "y": 338.0,
+        "width": 156.181390590996,
+        "height": 65.0
+      },
+      "image_bounds": {
+        "x": 44.858666666666664,
+        "y": 582.7586206896551,
+        "width": 269.4649592329984,
+        "height": 112.06896551724137
+      }
+    },
+    {
+      "label": "N58",
+      "node_id": "2E98A454-4D93-4BF3-99FD-A142E36B1B85",
+      "bounds": {
+        "x": 190.81860940900424,
+        "y": 263.0,
+        "width": 156.181390590996,
+        "height": 65.0
+      },
+      "image_bounds": {
+        "x": 329.2257074336687,
+        "y": 453.44827586206895,
+        "width": 269.4649592329984,
+        "height": 112.06896551724137
+      }
+    },
+    {
+      "label": "N59",
+      "node_id": "EEA3D6F9-2349-45DF-98B7-D4EE41FD3794",
+      "bounds": {
+        "x": 190.81860940900424,
+        "y": 338.0,
+        "width": 156.181390590996,
+        "height": 65.0
+      },
+      "image_bounds": {
+        "x": 329.2257074336687,
+        "y": 582.7586206896551,
+        "width": 269.4649592329984,
+        "height": 112.06896551724137
+      }
+    },
+    {
+      "label": "N60",
+      "node_id": "D5F784F3-8E06-4C4F-A3F8-8FF9128E8FBF",
+      "bounds": {
+        "x": 86.0,
+        "y": 488.0,
+        "width": 70.0,
+        "height": 20.0
+      },
+      "image_bounds": {
+        "x": 148.37866666666667,
+        "y": 841.3793103448276,
+        "width": 120.77333333333334,
+        "height": 34.48275862068965
+      }
+    }
+  ],
+  "measurements": [
+    {
+      "from_node_id": "017FFDCA-5C07-433E-90E7-9EF90D666FE0",
+      "to_node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+      "axis": "y",
+      "distance": 23.033749117053553,
+      "overlap_span": {
+        "start": 199.0,
+        "end": 214.0000000000004
+      }
+    },
+    {
+      "from_node_id": "017FFDCA-5C07-433E-90E7-9EF90D666FE0",
+      "to_node_id": "D918BBDD-E8F9-4952-B1C0-818569C32B90",
+      "axis": "x",
+      "distance": 66.9999999999996,
+      "overlap_span": {
+        "start": 434.99999999999955,
+        "end": 447.96625088294644
+      }
+    },
+    {
+      "from_node_id": "09FEA212-58C6-431B-A9A5-404ACDA7245A",
+      "to_node_id": "513DC40A-2FB1-439E-8BB4-950FA176E204",
+      "axis": "y",
+      "distance": 40.0,
+      "overlap_span": {
+        "start": 46.0,
+        "end": 67.0
+      }
+    },
+    {
+      "from_node_id": "09FEA212-58C6-431B-A9A5-404ACDA7245A",
+      "to_node_id": "D5F784F3-8E06-4C4F-A3F8-8FF9128E8FBF",
+      "axis": "x",
+      "distance": 19.0,
+      "overlap_span": {
+        "start": 497.0,
+        "end": 508.0
+      }
+    },
+    {
+      "from_node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+      "to_node_id": "88693C67-6C64-4D5F-BBF2-53D5EC5E786A",
+      "axis": "y",
+      "distance": 97.0,
+      "overlap_span": {
+        "start": 121.0,
+        "end": 255.0
+      }
+    },
+    {
+      "from_node_id": "0DABD7BD-C26E-4F28-BD88-971CB124016F",
+      "to_node_id": "48806B19-1694-4437-9E26-09E95238A067",
+      "axis": "y",
+      "distance": 31.999999999999886,
+      "overlap_span": {
+        "start": 29.0,
+        "end": 207.0
+      }
+    },
+    {
+      "from_node_id": "0E9CC64A-60B9-4781-BE54-CD55F949DEB9",
+      "to_node_id": "38F39AB7-1B1B-4536-B256-68E93B251F33",
+      "axis": "y",
+      "distance": 29.0,
+      "overlap_span": {
+        "start": 35.0,
+        "end": 78.0
+      }
+    },
+    {
+      "from_node_id": "0E9CC64A-60B9-4781-BE54-CD55F949DEB9",
+      "to_node_id": "513DC40A-2FB1-439E-8BB4-950FA176E204",
+      "axis": "y",
+      "distance": 29.0,
+      "overlap_span": {
+        "start": 35.0,
+        "end": 78.0
+      }
+    },
+    {
+      "from_node_id": "0E9CC64A-60B9-4781-BE54-CD55F949DEB9",
+      "to_node_id": "A4724EA7-52E1-43A9-A5F3-C871175D39D6",
+      "axis": "y",
+      "distance": 41.0,
+      "overlap_span": {
+        "start": 48.0,
+        "end": 65.0
+      }
+    },
+    {
+      "from_node_id": "0E9CC64A-60B9-4781-BE54-CD55F949DEB9",
+      "to_node_id": "D5F784F3-8E06-4C4F-A3F8-8FF9128E8FBF",
+      "axis": "x",
+      "distance": 8.0,
+      "overlap_span": {
+        "start": 488.0,
+        "end": 508.0
+      }
+    },
+    {
+      "from_node_id": "0E9CC64A-60B9-4781-BE54-CD55F949DEB9",
+      "to_node_id": "F5D72186-D951-4DFC-B7AC-303C6C590936",
+      "axis": "y",
+      "distance": 41.0,
+      "overlap_span": {
+        "start": 48.0,
+        "end": 65.0
+      }
+    },
+    {
+      "from_node_id": "10FBACC7-D823-4E7E-842F-EBC3EEEAD5E2",
+      "to_node_id": "0DABD7BD-C26E-4F28-BD88-971CB124016F",
+      "axis": "y",
+      "distance": 14.0,
+      "overlap_span": {
+        "start": 29.0,
+        "end": 206.0
+      }
+    },
+    {
+      "from_node_id": "11857F91-EAAB-4C0C-A518-9D0D2F73628B",
+      "to_node_id": "A22C0DB6-9846-4744-A900-37852C9874DA",
+      "axis": "y",
+      "distance": 30.033749117053553,
+      "overlap_span": {
+        "start": 172.0,
+        "end": 182.181390590996
+      }
+    },
+    {
+      "from_node_id": "11857F91-EAAB-4C0C-A518-9D0D2F73628B",
+      "to_node_id": "A3FD2014-8642-473A-B0F5-4C17D694B015",
+      "axis": "x",
+      "distance": 103.9999999999996,
+      "overlap_span": {
+        "start": 219.99999999999955,
+        "end": 232.96625088294644
+      }
+    },
+    {
+      "from_node_id": "13226AD8-6BA5-43B3-A98A-9DF76F299658",
+      "to_node_id": "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4",
+      "axis": "y",
+      "distance": 13.183474969804365,
+      "overlap_span": {
+        "start": 19.0,
+        "end": 224.0
+      }
+    },
+    {
+      "from_node_id": "1C813327-0E8A-49FE-A69A-7087BAC66B86",
+      "to_node_id": "10FBACC7-D823-4E7E-842F-EBC3EEEAD5E2",
+      "axis": "y",
+      "distance": 7.000000000000114,
+      "overlap_span": {
+        "start": 98.0,
+        "end": 206.0
+      }
+    },
+    {
+      "from_node_id": "294C0431-6FAB-471D-8BB7-CBBAD7A4F681",
+      "to_node_id": "6C930DF9-C0EB-4E2A-A497-FD6D41C2B9F4",
+      "axis": "x",
+      "distance": 1.0,
+      "overlap_span": {
+        "start": 21.0,
+        "end": 25.0
+      }
+    },
+    {
+      "from_node_id": "294C0431-6FAB-471D-8BB7-CBBAD7A4F681",
+      "to_node_id": "A6C8724D-3709-47E4-B940-45E36F79B8B9",
+      "axis": "y",
+      "distance": 6.333333333333329,
+      "overlap_span": {
+        "start": 336.33330000000024,
+        "end": 358.33330000000024
+      }
+    },
+    {
+      "from_node_id": "2E98A454-4D93-4BF3-99FD-A142E36B1B85",
+      "to_node_id": "EEA3D6F9-2349-45DF-98B7-D4EE41FD3794",
+      "axis": "y",
+      "distance": 10.0,
+      "overlap_span": {
+        "start": 190.81860940900424,
+        "end": 347.0000000000002
+      }
+    },
+    {
+      "from_node_id": "3041A10C-07CD-42F3-A86B-4DBBDD56B385",
+      "to_node_id": "7F9F5132-94FD-4768-920F-2DBE7DFB06BD",
+      "axis": "x",
+      "distance": 5.0,
+      "overlap_span": {
+        "start": 17.666667000000075,
+        "end": 28.33067270403251
+      }
+    },
+    {
+      "from_node_id": "3041A10C-07CD-42F3-A86B-4DBBDD56B385",
+      "to_node_id": "A6C8724D-3709-47E4-B940-45E36F79B8B9",
+      "axis": "y",
+      "distance": 6.666666333333225,
+      "overlap_span": {
+        "start": 294.0,
+        "end": 311.0
+      }
+    },
+    {
+      "from_node_id": "38F39AB7-1B1B-4536-B256-68E93B251F33",
+      "to_node_id": "C4E31964-6BB3-4C0B-B672-F466B0071466",
+      "axis": "y",
+      "distance": 24.0,
+      "overlap_span": {
+        "start": 35.0,
+        "end": 78.0
+      }
+    },
+    {
+      "from_node_id": "3C46A199-74C9-4542-83A2-EEC7B434DE92",
+      "to_node_id": "759EB0D9-27A2-43E0-973C-3B6D859E24B0",
+      "axis": "y",
+      "distance": 34.0,
+      "overlap_span": {
+        "start": 19.0,
+        "end": 95.0
+      }
+    },
+    {
+      "from_node_id": "3C46A199-74C9-4542-83A2-EEC7B434DE92",
+      "to_node_id": "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4",
+      "axis": "y",
+      "distance": 13.183474969804365,
+      "overlap_span": {
+        "start": 19.0,
+        "end": 224.0
+      }
+    },
+    {
+      "from_node_id": "3C46A199-74C9-4542-83A2-EEC7B434DE92",
+      "to_node_id": "A3FD2014-8642-473A-B0F5-4C17D694B015",
+      "axis": "y",
+      "distance": 164.0,
+      "overlap_span": {
+        "start": 291.0,
+        "end": 351.0
+      }
+    },
+    {
+      "from_node_id": "3C46A199-74C9-4542-83A2-EEC7B434DE92",
+      "to_node_id": "FE6B412E-3445-4E61-ADC1-42FE747717B8",
+      "axis": "y",
+      "distance": 13.183474969804479,
+      "overlap_span": {
+        "start": 192.18347496980368,
+        "end": 204.8165250301951
+      }
+    },
+    {
+      "from_node_id": "3C46A199-74C9-4542-83A2-EEC7B434DE92",
+      "to_node_id": "FF1C36C8-FBEC-4362-B530-937D4560C776",
+      "axis": "y",
+      "distance": 17.0,
+      "overlap_span": {
+        "start": 209.0,
+        "end": 224.0
+      }
+    },
+    {
+      "from_node_id": "453B968A-CDC9-4312-BFDA-C845BCC46866",
+      "to_node_id": "3041A10C-07CD-42F3-A86B-4DBBDD56B385",
+      "axis": "x",
+      "distance": 219.0,
+      "overlap_span": {
+        "start": 17.666667000000075,
+        "end": 28.333333666666775
+      }
+    },
+    {
+      "from_node_id": "453B968A-CDC9-4312-BFDA-C845BCC46866",
+      "to_node_id": "A6C8724D-3709-47E4-B940-45E36F79B8B9",
+      "axis": "y",
+      "distance": 2.6666999999997643,
+      "overlap_span": {
+        "start": 21.0,
+        "end": 75.0
+      }
+    },
+    {
+      "from_node_id": "48806B19-1694-4437-9E26-09E95238A067",
+      "to_node_id": "017FFDCA-5C07-433E-90E7-9EF90D666FE0",
+      "axis": "y",
+      "distance": 18.999999999999545,
+      "overlap_span": {
+        "start": 199.0,
+        "end": 214.0000000000004
+      }
+    },
+    {
+      "from_node_id": "48806B19-1694-4437-9E26-09E95238A067",
+      "to_node_id": "09FEA212-58C6-431B-A9A5-404ACDA7245A",
+      "axis": "y",
+      "distance": 81.0,
+      "overlap_span": {
+        "start": 46.0,
+        "end": 67.0
+      }
+    },
+    {
+      "from_node_id": "48806B19-1694-4437-9E26-09E95238A067",
+      "to_node_id": "0E9CC64A-60B9-4781-BE54-CD55F949DEB9",
+      "axis": "y",
+      "distance": 70.0,
+      "overlap_span": {
+        "start": 35.0,
+        "end": 78.0
+      }
+    },
+    {
+      "from_node_id": "48806B19-1694-4437-9E26-09E95238A067",
+      "to_node_id": "4FE59FC7-9B49-446A-A18A-4353E1D12875",
+      "axis": "y",
+      "distance": 81.0,
+      "overlap_span": {
+        "start": 46.0,
+        "end": 67.0
+      }
+    },
+    {
+      "from_node_id": "48806B19-1694-4437-9E26-09E95238A067",
+      "to_node_id": "67A66F14-1BFC-4ED2-B7CC-CA53F587487F",
+      "axis": "y",
+      "distance": 8.0,
+      "overlap_span": {
+        "start": 288.0,
+        "end": 358.0
+      }
+    },
+    {
+      "from_node_id": "48806B19-1694-4437-9E26-09E95238A067",
+      "to_node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "axis": "y",
+      "distance": 8.0,
+      "overlap_span": {
+        "start": 16.0,
+        "end": 358.0
+      }
+    },
+    {
+      "from_node_id": "48806B19-1694-4437-9E26-09E95238A067",
+      "to_node_id": "BAA46888-06CE-4239-9E0B-2B4C194C1ECF",
+      "axis": "y",
+      "distance": 70.0,
+      "overlap_span": {
+        "start": 35.0,
+        "end": 78.0
+      }
+    },
+    {
+      "from_node_id": "48806B19-1694-4437-9E26-09E95238A067",
+      "to_node_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "axis": "y",
+      "distance": 8.0,
+      "overlap_span": {
+        "start": 16.0,
+        "end": 358.0
+      }
+    },
+    {
+      "from_node_id": "48806B19-1694-4437-9E26-09E95238A067",
+      "to_node_id": "D44A759A-F00C-4F91-B906-8D3AEA24B017",
+      "axis": "y",
+      "distance": 18.999999999999545,
+      "overlap_span": {
+        "start": 199.0,
+        "end": 214.0000000000004
+      }
+    },
+    {
+      "from_node_id": "48806B19-1694-4437-9E26-09E95238A067",
+      "to_node_id": "D5F784F3-8E06-4C4F-A3F8-8FF9128E8FBF",
+      "axis": "y",
+      "distance": 72.0,
+      "overlap_span": {
+        "start": 86.0,
+        "end": 156.0
+      }
+    },
+    {
+      "from_node_id": "48806B19-1694-4437-9E26-09E95238A067",
+      "to_node_id": "D918BBDD-E8F9-4952-B1C0-818569C32B90",
+      "axis": "y",
+      "distance": 8.0,
+      "overlap_span": {
+        "start": 281.0,
+        "end": 341.0
+      }
+    },
+    {
+      "from_node_id": "48F71FF5-879F-491B-BE13-3481583F6389",
+      "to_node_id": "3041A10C-07CD-42F3-A86B-4DBBDD56B385",
+      "axis": "x",
+      "distance": 219.0,
+      "overlap_span": {
+        "start": 17.666667000000075,
+        "end": 28.333300000000236
+      }
+    },
+    {
+      "from_node_id": "48F71FF5-879F-491B-BE13-3481583F6389",
+      "to_node_id": "A6C8724D-3709-47E4-B940-45E36F79B8B9",
+      "axis": "y",
+      "distance": 6.666699999999764,
+      "overlap_span": {
+        "start": 21.0,
+        "end": 75.0
+      }
+    },
+    {
+      "from_node_id": "4FE59FC7-9B49-446A-A18A-4353E1D12875",
+      "to_node_id": "513DC40A-2FB1-439E-8BB4-950FA176E204",
+      "axis": "y",
+      "distance": 40.0,
+      "overlap_span": {
+        "start": 46.0,
+        "end": 67.0
+      }
+    },
+    {
+      "from_node_id": "4FE59FC7-9B49-446A-A18A-4353E1D12875",
+      "to_node_id": "D5F784F3-8E06-4C4F-A3F8-8FF9128E8FBF",
+      "axis": "x",
+      "distance": 19.0,
+      "overlap_span": {
+        "start": 497.0,
+        "end": 508.0
+      }
+    },
+    {
+      "from_node_id": "513DC40A-2FB1-439E-8BB4-950FA176E204",
+      "to_node_id": "0F085E92-24C5-427D-8773-FB4CA375285F",
+      "axis": "y",
+      "distance": 44.42235860662754,
+      "overlap_span": {
+        "start": 47.375,
+        "end": 66.625
+      }
+    },
+    {
+      "from_node_id": "513DC40A-2FB1-439E-8BB4-950FA176E204",
+      "to_node_id": "BD427EBB-C725-416A-A798-1AD75287E7EC",
+      "axis": "y",
+      "distance": 41.41666666666674,
+      "overlap_span": {
+        "start": 56.08333333333303,
+        "end": 57.91666666666637
+      }
+    },
+    {
+      "from_node_id": "513DC40A-2FB1-439E-8BB4-950FA176E204",
+      "to_node_id": "C4E31964-6BB3-4C0B-B672-F466B0071466",
+      "axis": "y",
+      "distance": 24.0,
+      "overlap_span": {
+        "start": 35.0,
+        "end": 78.0
+      }
+    },
+    {
+      "from_node_id": "513DC40A-2FB1-439E-8BB4-950FA176E204",
+      "to_node_id": "CC16704D-812C-42AB-8488-1E79C65EE8B8",
+      "axis": "y",
+      "distance": 24.0,
+      "overlap_span": {
+        "start": 35.0,
+        "end": 78.0
+      }
+    },
+    {
+      "from_node_id": "513DC40A-2FB1-439E-8BB4-950FA176E204",
+      "to_node_id": "D21FF697-FB94-4D6E-8CC6-DAFF62A943C0",
+      "axis": "y",
+      "distance": 35.0,
+      "overlap_span": {
+        "start": 46.0,
+        "end": 68.0
+      }
+    },
+    {
+      "from_node_id": "513DC40A-2FB1-439E-8BB4-950FA176E204",
+      "to_node_id": "F9B45E83-0BD9-42E8-B5BD-4479052DA6C6",
+      "axis": "y",
+      "distance": 35.0,
+      "overlap_span": {
+        "start": 46.0,
+        "end": 68.0
+      }
+    },
+    {
+      "from_node_id": "5635B6E7-37C1-4D57-989A-45A35D3D60E5",
+      "to_node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "axis": "y",
+      "distance": 8.0,
+      "overlap_span": {
+        "start": 16.0,
+        "end": 358.0
+      }
+    },
+    {
+      "from_node_id": "6010A6AB-EC7A-480B-A0D9-3C44644352CE",
+      "to_node_id": "48806B19-1694-4437-9E26-09E95238A067",
+      "axis": "y",
+      "distance": 31.9999999999999,
+      "overlap_span": {
+        "start": 19.0,
+        "end": 212.0
+      }
+    },
+    {
+      "from_node_id": "6186D4BD-E2AD-4D58-9300-579C2C21FCDA",
+      "to_node_id": "2E98A454-4D93-4BF3-99FD-A142E36B1B85",
+      "axis": "y",
+      "distance": 34.0,
+      "overlap_span": {
+        "start": 190.81860940900424,
+        "end": 347.0000000000002
+      }
+    },
+    {
+      "from_node_id": "6186D4BD-E2AD-4D58-9300-579C2C21FCDA",
+      "to_node_id": "A22C0DB6-9846-4744-A900-37852C9874DA",
+      "axis": "y",
+      "distance": 34.0,
+      "overlap_span": {
+        "start": 26.0,
+        "end": 182.181390590996
+      }
+    },
+    {
+      "from_node_id": "6C930DF9-C0EB-4E2A-A497-FD6D41C2B9F4",
+      "to_node_id": "A6C8724D-3709-47E4-B940-45E36F79B8B9",
+      "axis": "y",
+      "distance": 10.0,
+      "overlap_span": {
+        "start": 359.33330000000024,
+        "end": 360.66133800560857
+      }
+    },
+    {
+      "from_node_id": "759EB0D9-27A2-43E0-973C-3B6D859E24B0",
+      "to_node_id": "10FBACC7-D823-4E7E-842F-EBC3EEEAD5E2",
+      "axis": "y",
+      "distance": 7.000000000000114,
+      "overlap_span": {
+        "start": 26.0,
+        "end": 95.0
+      }
+    },
+    {
+      "from_node_id": "759EB0D9-27A2-43E0-973C-3B6D859E24B0",
+      "to_node_id": "1C813327-0E8A-49FE-A69A-7087BAC66B86",
+      "axis": "x",
+      "distance": 3.0,
+      "overlap_span": {
+        "start": 78.0,
+        "end": 121.0
+      }
+    },
+    {
+      "from_node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "to_node_id": "383C9133-CAF8-4323-9C98-474BEE70E996",
+      "axis": "y",
+      "distance": 88.0,
+      "overlap_span": {
+        "start": 121.0,
+        "end": 255.0
+      }
+    },
+    {
+      "from_node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "to_node_id": "88693C67-6C64-4D5F-BBF2-53D5EC5E786A",
+      "axis": "y",
+      "distance": 88.0,
+      "overlap_span": {
+        "start": 121.0,
+        "end": 255.0
+      }
+    },
+    {
+      "from_node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "to_node_id": "E40795A5-5FEF-4164-9D5A-93BA2A33E0A7",
+      "axis": "y",
+      "distance": 109.0,
+      "overlap_span": {
+        "start": 121.0,
+        "end": 255.0
+      }
+    },
+    {
+      "from_node_id": "7F9F5132-94FD-4768-920F-2DBE7DFB06BD",
+      "to_node_id": "294C0431-6FAB-471D-8BB7-CBBAD7A4F681",
+      "axis": "x",
+      "distance": 5.000000000000236,
+      "overlap_span": {
+        "start": 17.33333333333337,
+        "end": 28.33067270403251
+      }
+    },
+    {
+      "from_node_id": "7F9F5132-94FD-4768-920F-2DBE7DFB06BD",
+      "to_node_id": "A6C8724D-3709-47E4-B940-45E36F79B8B9",
+      "axis": "y",
+      "distance": 6.669327295967491,
+      "overlap_span": {
+        "start": 316.0,
+        "end": 331.3333
+      }
+    },
+    {
+      "from_node_id": "7F9F5132-94FD-4768-920F-2DBE7DFB06BD",
+      "to_node_id": "D220EAC4-1149-45BD-AD8C-E3B2D4F258D1",
+      "axis": "x",
+      "distance": 7.000000000000236,
+      "overlap_span": {
+        "start": 19.33333333333337,
+        "end": 26.6666666666667
+      }
+    },
+    {
+      "from_node_id": "7F9F5132-94FD-4768-920F-2DBE7DFB06BD",
+      "to_node_id": "E0F339CD-926D-46AA-9E56-12A5475550E5",
+      "axis": "x",
+      "distance": 4.6667000000000005,
+      "overlap_span": {
+        "start": 17.33067270403251,
+        "end": 28.33067270403251
+      }
+    },
+    {
+      "from_node_id": "84EBC769-C40D-43ED-A012-5A6334394DF0",
+      "to_node_id": "A22C0DB6-9846-4744-A900-37852C9874DA",
+      "axis": "y",
+      "distance": 34.0,
+      "overlap_span": {
+        "start": 26.0,
+        "end": 182.181390590996
+      }
+    },
+    {
+      "from_node_id": "9E217909-FC20-4BB1-BAAE-644790E8168F",
+      "to_node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "axis": "y",
+      "distance": 8.0,
+      "overlap_span": {
+        "start": 16.0,
+        "end": 358.0
+      }
+    },
+    {
+      "from_node_id": "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4",
+      "to_node_id": "11857F91-EAAB-4C0C-A518-9D0D2F73628B",
+      "axis": "y",
+      "distance": 43.999999999999176,
+      "overlap_span": {
+        "start": 172.0,
+        "end": 187.0000000000004
+      }
+    },
+    {
+      "from_node_id": "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4",
+      "to_node_id": "48806B19-1694-4437-9E26-09E95238A067",
+      "axis": "y",
+      "distance": 31.99999999999963,
+      "overlap_span": {
+        "start": 19.0,
+        "end": 224.0
+      }
+    },
+    {
+      "from_node_id": "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4",
+      "to_node_id": "5635B6E7-37C1-4D57-989A-45A35D3D60E5",
+      "axis": "y",
+      "distance": 31.99999999999963,
+      "overlap_span": {
+        "start": 19.0,
+        "end": 224.0
+      }
+    },
+    {
+      "from_node_id": "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4",
+      "to_node_id": "9E217909-FC20-4BB1-BAAE-644790E8168F",
+      "axis": "y",
+      "distance": 31.99999999999963,
+      "overlap_span": {
+        "start": 19.0,
+        "end": 224.0
+      }
+    },
+    {
+      "from_node_id": "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4",
+      "to_node_id": "E79B48D4-D1DC-4040-888E-31EF52D08DB0",
+      "axis": "y",
+      "distance": 43.999999999999176,
+      "overlap_span": {
+        "start": 172.0,
+        "end": 187.0000000000004
+      }
+    },
+    {
+      "from_node_id": "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4",
+      "to_node_id": "FBAD45FA-3661-48CD-A7DC-5B858AD7FF6A",
+      "axis": "y",
+      "distance": 31.99999999999963,
+      "overlap_span": {
+        "start": 19.0,
+        "end": 224.0
+      }
+    },
+    {
+      "from_node_id": "A22C0DB6-9846-4744-A900-37852C9874DA",
+      "to_node_id": "2E98A454-4D93-4BF3-99FD-A142E36B1B85",
+      "axis": "x",
+      "distance": 8.63721881800825,
+      "overlap_span": {
+        "start": 263.0,
+        "end": 328.0
+      }
+    },
+    {
+      "from_node_id": "A22C0DB6-9846-4744-A900-37852C9874DA",
+      "to_node_id": "A3FCFA75-7355-4B91-8C30-CAC01E8397F2",
+      "axis": "y",
+      "distance": 10.0,
+      "overlap_span": {
+        "start": 26.0,
+        "end": 182.181390590996
+      }
+    },
+    {
+      "from_node_id": "A3FCFA75-7355-4B91-8C30-CAC01E8397F2",
+      "to_node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "axis": "y",
+      "distance": 21.0,
+      "overlap_span": {
+        "start": 26.0,
+        "end": 182.181390590996
+      }
+    },
+    {
+      "from_node_id": "A3FCFA75-7355-4B91-8C30-CAC01E8397F2",
+      "to_node_id": "EEA3D6F9-2349-45DF-98B7-D4EE41FD3794",
+      "axis": "x",
+      "distance": 8.63721881800825,
+      "overlap_span": {
+        "start": 338.0,
+        "end": 403.0
+      }
+    },
+    {
+      "from_node_id": "A3FD2014-8642-473A-B0F5-4C17D694B015",
+      "to_node_id": "EEA3D6F9-2349-45DF-98B7-D4EE41FD3794",
+      "axis": "y",
+      "distance": 72.0,
+      "overlap_span": {
+        "start": 291.0,
+        "end": 347.0000000000002
+      }
+    },
+    {
+      "from_node_id": "A4724EA7-52E1-43A9-A5F3-C871175D39D6",
+      "to_node_id": "C4E31964-6BB3-4C0B-B672-F466B0071466",
+      "axis": "y",
+      "distance": 35.0,
+      "overlap_span": {
+        "start": 48.0,
+        "end": 65.0
+      }
+    },
+    {
+      "from_node_id": "A6C8724D-3709-47E4-B940-45E36F79B8B9",
+      "to_node_id": "A22C0DB6-9846-4744-A900-37852C9874DA",
+      "axis": "y",
+      "distance": 34.45161290322599,
+      "overlap_span": {
+        "start": 26.0,
+        "end": 182.181390590996
+      }
+    },
+    {
+      "from_node_id": "BAA46888-06CE-4239-9E0B-2B4C194C1ECF",
+      "to_node_id": "513DC40A-2FB1-439E-8BB4-950FA176E204",
+      "axis": "y",
+      "distance": 29.0,
+      "overlap_span": {
+        "start": 35.0,
+        "end": 78.0
+      }
+    },
+    {
+      "from_node_id": "BAA46888-06CE-4239-9E0B-2B4C194C1ECF",
+      "to_node_id": "D5F784F3-8E06-4C4F-A3F8-8FF9128E8FBF",
+      "axis": "x",
+      "distance": 8.0,
+      "overlap_span": {
+        "start": 488.0,
+        "end": 508.0
+      }
+    },
+    {
+      "from_node_id": "BD427EBB-C725-416A-A798-1AD75287E7EC",
+      "to_node_id": "60F1B29F-4076-4435-9C28-DBA494E30B7C",
+      "axis": "y",
+      "distance": 0.9166666666665875,
+      "overlap_span": {
+        "start": 56.08333333333303,
+        "end": 57.91666666666637
+      }
+    },
+    {
+      "from_node_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "to_node_id": "88693C67-6C64-4D5F-BBF2-53D5EC5E786A",
+      "axis": "y",
+      "distance": 88.0,
+      "overlap_span": {
+        "start": 121.0,
+        "end": 255.0
+      }
+    },
+    {
+      "from_node_id": "D220EAC4-1149-45BD-AD8C-E3B2D4F258D1",
+      "to_node_id": "6C930DF9-C0EB-4E2A-A497-FD6D41C2B9F4",
+      "axis": "x",
+      "distance": 3.0,
+      "overlap_span": {
+        "start": 21.0,
+        "end": 25.0
+      }
+    },
+    {
+      "from_node_id": "D220EAC4-1149-45BD-AD8C-E3B2D4F258D1",
+      "to_node_id": "A6C8724D-3709-47E4-B940-45E36F79B8B9",
+      "axis": "y",
+      "distance": 8.333333333333298,
+      "overlap_span": {
+        "start": 338.33330000000024,
+        "end": 356.33330000000024
+      }
+    },
+    {
+      "from_node_id": "D44A759A-F00C-4F91-B906-8D3AEA24B017",
+      "to_node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+      "axis": "y",
+      "distance": 23.033749117053553,
+      "overlap_span": {
+        "start": 199.0,
+        "end": 214.0000000000004
+      }
+    },
+    {
+      "from_node_id": "D44A759A-F00C-4F91-B906-8D3AEA24B017",
+      "to_node_id": "67A66F14-1BFC-4ED2-B7CC-CA53F587487F",
+      "axis": "x",
+      "distance": 73.9999999999996,
+      "overlap_span": {
+        "start": 434.99999999999955,
+        "end": 447.96625088294644
+      }
+    },
+    {
+      "from_node_id": "D44A759A-F00C-4F91-B906-8D3AEA24B017",
+      "to_node_id": "D918BBDD-E8F9-4952-B1C0-818569C32B90",
+      "axis": "x",
+      "distance": 66.9999999999996,
+      "overlap_span": {
+        "start": 434.99999999999955,
+        "end": 447.96625088294644
+      }
+    },
+    {
+      "from_node_id": "D5F784F3-8E06-4C4F-A3F8-8FF9128E8FBF",
+      "to_node_id": "67A66F14-1BFC-4ED2-B7CC-CA53F587487F",
+      "axis": "x",
+      "distance": 132.0,
+      "overlap_span": {
+        "start": 488.0,
+        "end": 491.0
+      }
+    },
+    {
+      "from_node_id": "D5F784F3-8E06-4C4F-A3F8-8FF9128E8FBF",
+      "to_node_id": "88693C67-6C64-4D5F-BBF2-53D5EC5E786A",
+      "axis": "y",
+      "distance": 270.0,
+      "overlap_span": {
+        "start": 121.0,
+        "end": 156.0
+      }
+    },
+    {
+      "from_node_id": "E0F339CD-926D-46AA-9E56-12A5475550E5",
+      "to_node_id": "A6C8724D-3709-47E4-B940-45E36F79B8B9",
+      "axis": "y",
+      "distance": 6.0,
+      "overlap_span": {
+        "start": 336.0,
+        "end": 361.0
+      }
+    },
+    {
+      "from_node_id": "E79B48D4-D1DC-4040-888E-31EF52D08DB0",
+      "to_node_id": "A22C0DB6-9846-4744-A900-37852C9874DA",
+      "axis": "y",
+      "distance": 30.033749117053553,
+      "overlap_span": {
+        "start": 172.0,
+        "end": 182.181390590996
+      }
+    },
+    {
+      "from_node_id": "E79B48D4-D1DC-4040-888E-31EF52D08DB0",
+      "to_node_id": "A3FD2014-8642-473A-B0F5-4C17D694B015",
+      "axis": "x",
+      "distance": 103.9999999999996,
+      "overlap_span": {
+        "start": 219.99999999999955,
+        "end": 232.96625088294644
+      }
+    },
+    {
+      "from_node_id": "EEA3D6F9-2349-45DF-98B7-D4EE41FD3794",
+      "to_node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "axis": "y",
+      "distance": 21.0,
+      "overlap_span": {
+        "start": 190.81860940900424,
+        "end": 347.0000000000002
+      }
+    },
+    {
+      "from_node_id": "F5D72186-D951-4DFC-B7AC-303C6C590936",
+      "to_node_id": "C4E31964-6BB3-4C0B-B672-F466B0071466",
+      "axis": "y",
+      "distance": 35.0,
+      "overlap_span": {
+        "start": 48.0,
+        "end": 65.0
+      }
+    },
+    {
+      "from_node_id": "F9B45E83-0BD9-42E8-B5BD-4479052DA6C6",
+      "to_node_id": "60F1B29F-4076-4435-9C28-DBA494E30B7C",
+      "axis": "y",
+      "distance": 0.6824591017056996,
+      "overlap_span": {
+        "start": 52.41666666666697,
+        "end": 61.58333333333364
+      }
+    },
+    {
+      "from_node_id": "FBAD45FA-3661-48CD-A7DC-5B858AD7FF6A",
+      "to_node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "axis": "y",
+      "distance": 8.0,
+      "overlap_span": {
+        "start": 16.0,
+        "end": 358.0
+      }
+    },
+    {
+      "from_node_id": "FE6B412E-3445-4E61-ADC1-42FE747717B8",
+      "to_node_id": "1C813327-0E8A-49FE-A69A-7087BAC66B86",
+      "axis": "y",
+      "distance": 8.183474969804099,
+      "overlap_span": {
+        "start": 192.18347496980368,
+        "end": 204.8165250301951
+      }
+    },
+    {
+      "from_node_id": "FE6B412E-3445-4E61-ADC1-42FE747717B8",
+      "to_node_id": "FF1C36C8-FBEC-4362-B530-937D4560C776",
+      "axis": "x",
+      "distance": 4.1834749698048945,
+      "overlap_span": {
+        "start": 61.0,
+        "end": 69.8165250301959
+      }
+    },
+    {
+      "from_node_id": "FF1C36C8-FBEC-4362-B530-937D4560C776",
+      "to_node_id": "1C813327-0E8A-49FE-A69A-7087BAC66B86",
+      "axis": "y",
+      "distance": 2.0,
+      "overlap_span": {
+        "start": 209.0,
+        "end": 212.0
+      }
+    },
+    {
+      "from_node_id": "FF1C36C8-FBEC-4362-B530-937D4560C776",
+      "to_node_id": "6010A6AB-EC7A-480B-A0D9-3C44644352CE",
+      "axis": "y",
+      "distance": 2.0,
+      "overlap_span": {
+        "start": 209.0,
+        "end": 212.0
+      }
+    }
+  ],
+  "annotated": false,
+  "visual_source": "original_reference",
+  "source_gaps": [
+    {
+      "code": "logical_coordinate_conversion_unknown",
+      "message": "Source canvas units are preserved. Export density does not establish CSS pixel scale."
+    }
+  ],
+  "render_gaps": [],
+  "nodes": [
+    {
+      "node_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "identity_source": "source_id",
+      "parent_id": null,
+      "source_parent_id": null,
+      "source_order": 0,
+      "name": "平台介绍页",
+      "node_type": "artboard-group",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": null,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/0",
+      "effective_source_visible": null
+    },
+    {
+      "node_id": "4EC3AA61-B992-4521-B690-080B9E6D6279",
+      "source_id": "4EC3AA61-B992-4521-B690-080B9E6D6279",
+      "identity_source": "source_id",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_order": 1,
+      "name": "矩形",
+      "node_type": "shape",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/1",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "6186D4BD-E2AD-4D58-9300-579C2C21FCDA",
+      "source_id": "6186D4BD-E2AD-4D58-9300-579C2C21FCDA",
+      "identity_source": "source_id",
+      "parent_id": "84EBC769-C40D-43ED-A012-5A6334394DF0",
+      "source_parent_id": "84EBC769-C40D-43ED-A012-5A6334394DF0",
+      "source_order": 2,
+      "name": "蒙版",
+      "node_type": "shape",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 229
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 229
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/2",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "A6C8724D-3709-47E4-B940-45E36F79B8B9",
+      "source_id": "A6C8724D-3709-47E4-B940-45E36F79B8B9",
+      "identity_source": "source_id",
+      "parent_id": "84EBC769-C40D-43ED-A012-5A6334394DF0",
+      "source_parent_id": "84EBC769-C40D-43ED-A012-5A6334394DF0",
+      "source_order": 3,
+      "name": "生成高清纯白背景图片 (48)",
+      "node_type": "bitmap",
+      "bounds": {
+        "x": 0,
+        "y": 35,
+        "width": 375,
+        "height": 193.548387096774
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 35,
+        "width": 375,
+        "height": 193.548387096774
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/3",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "84EBC769-C40D-43ED-A012-5A6334394DF0",
+      "source_id": "84EBC769-C40D-43ED-A012-5A6334394DF0",
+      "identity_source": "source_id",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_order": 4,
+      "name": "生成高清纯白背景图片 (48)",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 229
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 229
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [
+        "84EBC769-C40D-43ED-A012-5A6334394DF0:image"
+      ],
+      "source_pointer": "/info/4",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "10FBACC7-D823-4E7E-842F-EBC3EEEAD5E2",
+      "source_id": "10FBACC7-D823-4E7E-842F-EBC3EEEAD5E2",
+      "identity_source": "source_id",
+      "parent_id": "6010A6AB-EC7A-480B-A0D9-3C44644352CE",
+      "source_parent_id": "6010A6AB-EC7A-480B-A0D9-3C44644352CE",
+      "source_order": 5,
+      "name": "创作者一站式互动运营平台",
+      "node_type": "text",
+      "bounds": {
+        "x": 26,
+        "y": 128.0000000000001,
+        "width": 180,
+        "height": 17
+      },
+      "source_bounds": {
+        "x": 26,
+        "y": 128.0000000000001,
+        "width": 180,
+        "height": 17
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "创作者一站式互动运营平台",
+      "asset_ids": [],
+      "source_pointer": "/info/5",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "0DABD7BD-C26E-4F28-BD88-971CB124016F",
+      "source_id": "0DABD7BD-C26E-4F28-BD88-971CB124016F",
+      "identity_source": "source_id",
+      "parent_id": "6010A6AB-EC7A-480B-A0D9-3C44644352CE",
+      "source_parent_id": "6010A6AB-EC7A-480B-A0D9-3C44644352CE",
+      "source_order": 6,
+      "name": "入驻后解锁任务、关系与奖励能力",
+      "node_type": "text",
+      "bounds": {
+        "x": 29,
+        "y": 159.0000000000001,
+        "width": 178,
+        "height": 17
+      },
+      "source_bounds": {
+        "x": 29,
+        "y": 159.0000000000001,
+        "width": 178,
+        "height": 17
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "入驻后解锁任务、关系与奖励能力",
+      "asset_ids": [],
+      "source_pointer": "/info/6",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "759EB0D9-27A2-43E0-973C-3B6D859E24B0",
+      "source_id": "759EB0D9-27A2-43E0-973C-3B6D859E24B0",
+      "identity_source": "source_id",
+      "parent_id": "6010A6AB-EC7A-480B-A0D9-3C44644352CE",
+      "source_parent_id": "6010A6AB-EC7A-480B-A0D9-3C44644352CE",
+      "source_order": 7,
+      "name": "加入",
+      "node_type": "text",
+      "bounds": {
+        "x": 19,
+        "y": 78,
+        "width": 76,
+        "height": 43
+      },
+      "source_bounds": {
+        "x": 19,
+        "y": 78,
+        "width": 76,
+        "height": 43
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "加入",
+      "asset_ids": [],
+      "source_pointer": "/info/7",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "1C813327-0E8A-49FE-A69A-7087BAC66B86",
+      "source_id": "1C813327-0E8A-49FE-A69A-7087BAC66B86",
+      "identity_source": "source_id",
+      "parent_id": "6010A6AB-EC7A-480B-A0D9-3C44644352CE",
+      "source_parent_id": "6010A6AB-EC7A-480B-A0D9-3C44644352CE",
+      "source_order": 8,
+      "name": "聚星阁",
+      "node_type": "text",
+      "bounds": {
+        "x": 98,
+        "y": 78,
+        "width": 114,
+        "height": 43
+      },
+      "source_bounds": {
+        "x": 98,
+        "y": 78,
+        "width": 114,
+        "height": 43
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "聚星阁",
+      "asset_ids": [],
+      "source_pointer": "/info/8",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "6010A6AB-EC7A-480B-A0D9-3C44644352CE",
+      "source_id": "6010A6AB-EC7A-480B-A0D9-3C44644352CE",
+      "identity_source": "source_id",
+      "parent_id": "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4",
+      "source_parent_id": "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4",
+      "source_order": 9,
+      "name": "编组 8",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 19,
+        "y": 78,
+        "width": 193,
+        "height": 98.0000000000001
+      },
+      "source_bounds": {
+        "x": 19,
+        "y": 78,
+        "width": 193,
+        "height": 98.0000000000001
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/9",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "FF1C36C8-FBEC-4362-B530-937D4560C776",
+      "source_id": "FF1C36C8-FBEC-4362-B530-937D4560C776",
+      "identity_source": "source_id",
+      "parent_id": "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4",
+      "source_parent_id": "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4",
+      "source_order": 10,
+      "name": "星形",
+      "node_type": "shape",
+      "bounds": {
+        "x": 209,
+        "y": 61,
+        "width": 15,
+        "height": 15
+      },
+      "source_bounds": {
+        "x": 209,
+        "y": 61,
+        "width": 15,
+        "height": 15
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/10",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "FE6B412E-3445-4E61-ADC1-42FE747717B8",
+      "source_id": "FE6B412E-3445-4E61-ADC1-42FE747717B8",
+      "identity_source": "source_id",
+      "parent_id": "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4",
+      "source_parent_id": "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4",
+      "source_order": 11,
+      "name": "星形备份",
+      "node_type": "shape",
+      "bounds": {
+        "x": 192.18347496980368,
+        "y": 57.18347496980448,
+        "width": 12.633050060391422,
+        "height": 12.633050060391422
+      },
+      "source_bounds": {
+        "x": 192.18347496980368,
+        "y": 57.18347496980448,
+        "width": 12.633050060391422,
+        "height": 12.633050060391422
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/11",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4",
+      "source_id": "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4",
+      "identity_source": "source_id",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_order": 12,
+      "name": "编组 9",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 19,
+        "y": 57.183474969804365,
+        "width": 205,
+        "height": 118.816525030196
+      },
+      "source_bounds": {
+        "x": 19,
+        "y": 57.183474969804365,
+        "width": 205,
+        "height": 118.816525030196
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [
+        "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4:image"
+      ],
+      "source_pointer": "/info/12",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "E40795A5-5FEF-4164-9D5A-93BA2A33E0A7",
+      "source_id": "E40795A5-5FEF-4164-9D5A-93BA2A33E0A7",
+      "identity_source": "source_id",
+      "parent_id": "88693C67-6C64-4D5F-BBF2-53D5EC5E786A",
+      "source_parent_id": "88693C67-6C64-4D5F-BBF2-53D5EC5E786A",
+      "source_order": 13,
+      "name": "Home Indicator",
+      "node_type": "shape",
+      "bounds": {
+        "x": 121,
+        "y": 799,
+        "width": 134,
+        "height": 5
+      },
+      "source_bounds": {
+        "x": 121,
+        "y": 799,
+        "width": 134,
+        "height": 5
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/13",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "88693C67-6C64-4D5F-BBF2-53D5EC5E786A",
+      "source_id": "88693C67-6C64-4D5F-BBF2-53D5EC5E786A",
+      "identity_source": "source_id",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_order": 14,
+      "name": "Bars/Home Indicators/iPhone/Light - Portrait",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 121,
+        "y": 778,
+        "width": 134,
+        "height": 34
+      },
+      "source_bounds": {
+        "x": 121,
+        "y": 778,
+        "width": 134,
+        "height": 34
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/14",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "383C9133-CAF8-4323-9C98-474BEE70E996",
+      "source_id": "383C9133-CAF8-4323-9C98-474BEE70E996",
+      "identity_source": "source_id",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_order": 15,
+      "name": "Bars/Home Indicators/iPhone/Light - Portrait",
+      "node_type": "symbol",
+      "bounds": {
+        "x": 121,
+        "y": 778,
+        "width": 134,
+        "height": 34
+      },
+      "source_bounds": {
+        "x": 121,
+        "y": 778,
+        "width": 134,
+        "height": 34
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/15",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "294C0431-6FAB-471D-8BB7-CBBAD7A4F681",
+      "source_id": "294C0431-6FAB-471D-8BB7-CBBAD7A4F681",
+      "identity_source": "source_id",
+      "parent_id": "E0F339CD-926D-46AA-9E56-12A5475550E5",
+      "source_parent_id": "E0F339CD-926D-46AA-9E56-12A5475550E5",
+      "source_order": 16,
+      "name": "Border",
+      "node_type": "shape",
+      "bounds": {
+        "x": 336.33330000000024,
+        "y": 17.33333333333337,
+        "width": 22,
+        "height": 11.3333333333333
+      },
+      "source_bounds": {
+        "x": 336.33330000000024,
+        "y": 17.33333333333337,
+        "width": 22,
+        "height": 11.3333333333333
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/16",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "6C930DF9-C0EB-4E2A-A497-FD6D41C2B9F4",
+      "source_id": "6C930DF9-C0EB-4E2A-A497-FD6D41C2B9F4",
+      "identity_source": "source_id",
+      "parent_id": "E0F339CD-926D-46AA-9E56-12A5475550E5",
+      "source_parent_id": "E0F339CD-926D-46AA-9E56-12A5475550E5",
+      "source_order": 17,
+      "name": "Cap",
+      "node_type": "shape",
+      "bounds": {
+        "x": 359.33330000000024,
+        "y": 21,
+        "width": 1.32803800560835,
+        "height": 4
+      },
+      "source_bounds": {
+        "x": 359.33330000000024,
+        "y": 21,
+        "width": 1.32803800560835,
+        "height": 4
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/17",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "D220EAC4-1149-45BD-AD8C-E3B2D4F258D1",
+      "source_id": "D220EAC4-1149-45BD-AD8C-E3B2D4F258D1",
+      "identity_source": "source_id",
+      "parent_id": "E0F339CD-926D-46AA-9E56-12A5475550E5",
+      "source_parent_id": "E0F339CD-926D-46AA-9E56-12A5475550E5",
+      "source_order": 18,
+      "name": "Capacity",
+      "node_type": "shape",
+      "bounds": {
+        "x": 338.33330000000024,
+        "y": 19.33333333333337,
+        "width": 18,
+        "height": 7.33333333333333
+      },
+      "source_bounds": {
+        "x": 338.33330000000024,
+        "y": 19.33333333333337,
+        "width": 18,
+        "height": 7.33333333333333
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/18",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "E0F339CD-926D-46AA-9E56-12A5475550E5",
+      "source_id": "E0F339CD-926D-46AA-9E56-12A5475550E5",
+      "identity_source": "source_id",
+      "parent_id": "3C46A199-74C9-4542-83A2-EEC7B434DE92",
+      "source_parent_id": "3C46A199-74C9-4542-83A2-EEC7B434DE92",
+      "source_order": 19,
+      "name": "Battery",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 336,
+        "y": 17,
+        "width": 25,
+        "height": 12
+      },
+      "source_bounds": {
+        "x": 336,
+        "y": 17,
+        "width": 25,
+        "height": 12
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/19",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "7F9F5132-94FD-4768-920F-2DBE7DFB06BD",
+      "source_id": "7F9F5132-94FD-4768-920F-2DBE7DFB06BD",
+      "identity_source": "source_id",
+      "parent_id": "3C46A199-74C9-4542-83A2-EEC7B434DE92",
+      "source_parent_id": "3C46A199-74C9-4542-83A2-EEC7B434DE92",
+      "source_order": 20,
+      "name": "Wifi",
+      "node_type": "shape",
+      "bounds": {
+        "x": 316,
+        "y": 17.33067270403251,
+        "width": 15.3333,
+        "height": 11
+      },
+      "source_bounds": {
+        "x": 316,
+        "y": 17.33067270403251,
+        "width": 15.3333,
+        "height": 11
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/20",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "3041A10C-07CD-42F3-A86B-4DBBDD56B385",
+      "source_id": "3041A10C-07CD-42F3-A86B-4DBBDD56B385",
+      "identity_source": "source_id",
+      "parent_id": "3C46A199-74C9-4542-83A2-EEC7B434DE92",
+      "source_parent_id": "3C46A199-74C9-4542-83A2-EEC7B434DE92",
+      "source_order": 21,
+      "name": "Cellular Connection",
+      "node_type": "shape",
+      "bounds": {
+        "x": 294,
+        "y": 17.666667000000075,
+        "width": 17,
+        "height": 10.6666666666667
+      },
+      "source_bounds": {
+        "x": 294,
+        "y": 17.666667000000075,
+        "width": 17,
+        "height": 10.6666666666667
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/21",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "453B968A-CDC9-4312-BFDA-C845BCC46866",
+      "source_id": "453B968A-CDC9-4312-BFDA-C845BCC46866",
+      "identity_source": "source_id",
+      "parent_id": "48F71FF5-879F-491B-BE13-3481583F6389",
+      "source_parent_id": "48F71FF5-879F-491B-BE13-3481583F6389",
+      "source_order": 22,
+      "name": "Time",
+      "node_type": "text",
+      "bounds": {
+        "x": 21,
+        "y": 14.333300000000236,
+        "width": 54,
+        "height": 18
+      },
+      "source_bounds": {
+        "x": 21,
+        "y": 14.333300000000236,
+        "width": 54,
+        "height": 18
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "9:41",
+      "asset_ids": [],
+      "source_pointer": "/info/22",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "48F71FF5-879F-491B-BE13-3481583F6389",
+      "source_id": "48F71FF5-879F-491B-BE13-3481583F6389",
+      "identity_source": "source_id",
+      "parent_id": "3C46A199-74C9-4542-83A2-EEC7B434DE92",
+      "source_parent_id": "3C46A199-74C9-4542-83A2-EEC7B434DE92",
+      "source_order": 23,
+      "name": "Time Style",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 21,
+        "y": 7.333300000000236,
+        "width": 54,
+        "height": 21
+      },
+      "source_bounds": {
+        "x": 21,
+        "y": 7.333300000000236,
+        "width": 54,
+        "height": 21
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/23",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "3C46A199-74C9-4542-83A2-EEC7B434DE92",
+      "source_id": "3C46A199-74C9-4542-83A2-EEC7B434DE92",
+      "identity_source": "source_id",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_order": 24,
+      "name": "Bars/Status Bars/iPhone/Light",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 44
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 44
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/24",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "13226AD8-6BA5-43B3-A98A-9DF76F299658",
+      "source_id": "13226AD8-6BA5-43B3-A98A-9DF76F299658",
+      "identity_source": "source_id",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_order": 25,
+      "name": "Bars/Status Bars/iPhone/Light",
+      "node_type": "symbol",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 44
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 44
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/25",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "48806B19-1694-4437-9E26-09E95238A067",
+      "source_id": "48806B19-1694-4437-9E26-09E95238A067",
+      "identity_source": "source_id",
+      "parent_id": "FBAD45FA-3661-48CD-A7DC-5B858AD7FF6A",
+      "source_parent_id": "FBAD45FA-3661-48CD-A7DC-5B858AD7FF6A",
+      "source_order": 26,
+      "name": "蒙版",
+      "node_type": "shape",
+      "bounds": {
+        "x": 15,
+        "y": 208,
+        "width": 343,
+        "height": 208
+      },
+      "source_bounds": {
+        "x": 15,
+        "y": 208,
+        "width": 343,
+        "height": 208
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/26",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "9E217909-FC20-4BB1-BAAE-644790E8168F",
+      "source_id": "9E217909-FC20-4BB1-BAAE-644790E8168F",
+      "identity_source": "source_id",
+      "parent_id": "5635B6E7-37C1-4D57-989A-45A35D3D60E5",
+      "source_parent_id": "5635B6E7-37C1-4D57-989A-45A35D3D60E5",
+      "source_order": 27,
+      "name": "蒙版",
+      "node_type": "shape",
+      "bounds": {
+        "x": 15,
+        "y": 208,
+        "width": 343,
+        "height": 208
+      },
+      "source_bounds": {
+        "x": 15,
+        "y": 208,
+        "width": 343,
+        "height": 208
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/27",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "11857F91-EAAB-4C0C-A518-9D0D2F73628B",
+      "source_id": "11857F91-EAAB-4C0C-A518-9D0D2F73628B",
+      "identity_source": "source_id",
+      "parent_id": "E79B48D4-D1DC-4040-888E-31EF52D08DB0",
+      "source_parent_id": "E79B48D4-D1DC-4040-888E-31EF52D08DB0",
+      "source_order": 28,
+      "name": "形状",
+      "node_type": "shape",
+      "bounds": {
+        "x": 172,
+        "y": 219.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      },
+      "source_bounds": {
+        "x": 172,
+        "y": 219.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/28",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "E79B48D4-D1DC-4040-888E-31EF52D08DB0",
+      "source_id": "E79B48D4-D1DC-4040-888E-31EF52D08DB0",
+      "identity_source": "source_id",
+      "parent_id": "5635B6E7-37C1-4D57-989A-45A35D3D60E5",
+      "source_parent_id": "5635B6E7-37C1-4D57-989A-45A35D3D60E5",
+      "source_order": 29,
+      "name": "引号",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 172,
+        "y": 219.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      },
+      "source_bounds": {
+        "x": 172,
+        "y": 219.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/29",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "A3FD2014-8642-473A-B0F5-4C17D694B015",
+      "source_id": "A3FD2014-8642-473A-B0F5-4C17D694B015",
+      "identity_source": "source_id",
+      "parent_id": "5635B6E7-37C1-4D57-989A-45A35D3D60E5",
+      "source_parent_id": "5635B6E7-37C1-4D57-989A-45A35D3D60E5",
+      "source_order": 30,
+      "name": "01",
+      "node_type": "text",
+      "bounds": {
+        "x": 291,
+        "y": 208,
+        "width": 60,
+        "height": 58
+      },
+      "source_bounds": {
+        "x": 291,
+        "y": 208,
+        "width": 60,
+        "height": 58
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "01",
+      "asset_ids": [],
+      "source_pointer": "/info/30",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "5635B6E7-37C1-4D57-989A-45A35D3D60E5",
+      "source_id": "5635B6E7-37C1-4D57-989A-45A35D3D60E5",
+      "identity_source": "source_id",
+      "parent_id": "FBAD45FA-3661-48CD-A7DC-5B858AD7FF6A",
+      "source_parent_id": "FBAD45FA-3661-48CD-A7DC-5B858AD7FF6A",
+      "source_order": 31,
+      "name": "引号 + 01蒙版",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 15,
+        "y": 208,
+        "width": 343,
+        "height": 208
+      },
+      "source_bounds": {
+        "x": 15,
+        "y": 208,
+        "width": 343,
+        "height": 208
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/31",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "FBAD45FA-3661-48CD-A7DC-5B858AD7FF6A",
+      "source_id": "FBAD45FA-3661-48CD-A7DC-5B858AD7FF6A",
+      "identity_source": "source_id",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_order": 32,
+      "name": "编组 10",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 15,
+        "y": 208,
+        "width": 343,
+        "height": 208
+      },
+      "source_bounds": {
+        "x": 15,
+        "y": 208,
+        "width": 343,
+        "height": 208
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/32",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "source_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "identity_source": "source_id",
+      "parent_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "source_parent_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "source_order": 33,
+      "name": "蒙版",
+      "node_type": "shape",
+      "bounds": {
+        "x": 16,
+        "y": 424,
+        "width": 343,
+        "height": 266
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 424,
+        "width": 343,
+        "height": 266
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/33",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "D44A759A-F00C-4F91-B906-8D3AEA24B017",
+      "source_id": "D44A759A-F00C-4F91-B906-8D3AEA24B017",
+      "identity_source": "source_id",
+      "parent_id": "017FFDCA-5C07-433E-90E7-9EF90D666FE0",
+      "source_parent_id": "017FFDCA-5C07-433E-90E7-9EF90D666FE0",
+      "source_order": 34,
+      "name": "形状",
+      "node_type": "shape",
+      "bounds": {
+        "x": 199,
+        "y": 434.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      },
+      "source_bounds": {
+        "x": 199,
+        "y": 434.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/34",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "017FFDCA-5C07-433E-90E7-9EF90D666FE0",
+      "source_id": "017FFDCA-5C07-433E-90E7-9EF90D666FE0",
+      "identity_source": "source_id",
+      "parent_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "source_parent_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "source_order": 35,
+      "name": "引号备份",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 199,
+        "y": 434.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      },
+      "source_bounds": {
+        "x": 199,
+        "y": 434.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/35",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "67A66F14-1BFC-4ED2-B7CC-CA53F587487F",
+      "source_id": "67A66F14-1BFC-4ED2-B7CC-CA53F587487F",
+      "identity_source": "source_id",
+      "parent_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "source_parent_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "source_order": 36,
+      "name": "位图",
+      "node_type": "bitmap",
+      "bounds": {
+        "x": 288,
+        "y": 424,
+        "width": 71,
+        "height": 67
+      },
+      "source_bounds": {
+        "x": 288,
+        "y": 424,
+        "width": 71,
+        "height": 67
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/36",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "D918BBDD-E8F9-4952-B1C0-818569C32B90",
+      "source_id": "D918BBDD-E8F9-4952-B1C0-818569C32B90",
+      "identity_source": "source_id",
+      "parent_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "source_parent_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "source_order": 37,
+      "name": "02",
+      "node_type": "text",
+      "bounds": {
+        "x": 281,
+        "y": 424,
+        "width": 60,
+        "height": 56
+      },
+      "source_bounds": {
+        "x": 281,
+        "y": 424,
+        "width": 60,
+        "height": 56
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "02",
+      "asset_ids": [],
+      "source_pointer": "/info/37",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "source_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "identity_source": "source_id",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_order": 38,
+      "name": "位图",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 16,
+        "y": 424,
+        "width": 343,
+        "height": 266
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 424,
+        "width": 343,
+        "height": 266
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/38",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+      "source_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+      "identity_source": "source_id",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_order": 39,
+      "name": "矩形备份 6",
+      "node_type": "shape",
+      "bounds": {
+        "x": 26,
+        "y": 471,
+        "width": 325,
+        "height": 210
+      },
+      "source_bounds": {
+        "x": 26,
+        "y": 471,
+        "width": 325,
+        "height": 210
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/39",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "C4E31964-6BB3-4C0B-B672-F466B0071466",
+      "source_id": "C4E31964-6BB3-4C0B-B672-F466B0071466",
+      "identity_source": "source_id",
+      "parent_id": "CC16704D-812C-42AB-8488-1E79C65EE8B8",
+      "source_parent_id": "CC16704D-812C-42AB-8488-1E79C65EE8B8",
+      "source_order": 40,
+      "name": "椭圆形备份 5",
+      "node_type": "shape",
+      "bounds": {
+        "x": 35,
+        "y": 625,
+        "width": 43,
+        "height": 43
+      },
+      "source_bounds": {
+        "x": 35,
+        "y": 625,
+        "width": 43,
+        "height": 43
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/40",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "0F085E92-24C5-427D-8773-FB4CA375285F",
+      "source_id": "0F085E92-24C5-427D-8773-FB4CA375285F",
+      "identity_source": "source_id",
+      "parent_id": "D21FF697-FB94-4D6E-8CC6-DAFF62A943C0",
+      "source_parent_id": "D21FF697-FB94-4D6E-8CC6-DAFF62A943C0",
+      "source_order": 41,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 47.375,
+        "y": 645.4223586066275,
+        "width": 19.25,
+        "height": 11.9166666666667
+      },
+      "source_bounds": {
+        "x": 47.375,
+        "y": 645.4223586066275,
+        "width": 19.25,
+        "height": 11.9166666666667
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/41",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "F9B45E83-0BD9-42E8-B5BD-4479052DA6C6",
+      "source_id": "F9B45E83-0BD9-42E8-B5BD-4479052DA6C6",
+      "identity_source": "source_id",
+      "parent_id": "D21FF697-FB94-4D6E-8CC6-DAFF62A943C0",
+      "source_parent_id": "D21FF697-FB94-4D6E-8CC6-DAFF62A943C0",
+      "source_order": 42,
+      "name": "形状",
+      "node_type": "shape",
+      "bounds": {
+        "x": 46,
+        "y": 636,
+        "width": 22,
+        "height": 10.3175408982943
+      },
+      "source_bounds": {
+        "x": 46,
+        "y": 636,
+        "width": 22,
+        "height": 10.3175408982943
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/42",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "60F1B29F-4076-4435-9C28-DBA494E30B7C",
+      "source_id": "60F1B29F-4076-4435-9C28-DBA494E30B7C",
+      "identity_source": "source_id",
+      "parent_id": "D21FF697-FB94-4D6E-8CC6-DAFF62A943C0",
+      "source_parent_id": "D21FF697-FB94-4D6E-8CC6-DAFF62A943C0",
+      "source_order": 43,
+      "name": "星形",
+      "node_type": "shape",
+      "bounds": {
+        "x": 52.41666666666697,
+        "y": 647,
+        "width": 9.16666666666667,
+        "height": 9.16666666666667
+      },
+      "source_bounds": {
+        "x": 52.41666666666697,
+        "y": 647,
+        "width": 9.16666666666667,
+        "height": 9.16666666666667
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/43",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "BD427EBB-C725-416A-A798-1AD75287E7EC",
+      "source_id": "BD427EBB-C725-416A-A798-1AD75287E7EC",
+      "identity_source": "source_id",
+      "parent_id": "D21FF697-FB94-4D6E-8CC6-DAFF62A943C0",
+      "source_parent_id": "D21FF697-FB94-4D6E-8CC6-DAFF62A943C0",
+      "source_order": 44,
+      "name": "矩形",
+      "node_type": "shape",
+      "bounds": {
+        "x": 56.08333333333303,
+        "y": 642.4166666666667,
+        "width": 1.83333333333334,
+        "height": 3.66666666666667
+      },
+      "source_bounds": {
+        "x": 56.08333333333303,
+        "y": 642.4166666666667,
+        "width": 1.83333333333334,
+        "height": 3.66666666666667
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/44",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "D21FF697-FB94-4D6E-8CC6-DAFF62A943C0",
+      "source_id": "D21FF697-FB94-4D6E-8CC6-DAFF62A943C0",
+      "identity_source": "source_id",
+      "parent_id": "CC16704D-812C-42AB-8488-1E79C65EE8B8",
+      "source_parent_id": "CC16704D-812C-42AB-8488-1E79C65EE8B8",
+      "source_order": 45,
+      "name": "礼物,礼物盒,礼品",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 46,
+        "y": 636,
+        "width": 22,
+        "height": 21.3390252732942
+      },
+      "source_bounds": {
+        "x": 46,
+        "y": 636,
+        "width": 22,
+        "height": 21.3390252732942
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/45",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "CC16704D-812C-42AB-8488-1E79C65EE8B8",
+      "source_id": "CC16704D-812C-42AB-8488-1E79C65EE8B8",
+      "identity_source": "source_id",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_order": 46,
+      "name": "编组 7",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 35,
+        "y": 625,
+        "width": 43,
+        "height": 43
+      },
+      "source_bounds": {
+        "x": 35,
+        "y": 625,
+        "width": 43,
+        "height": 43
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [
+        "CC16704D-812C-42AB-8488-1E79C65EE8B8:image"
+      ],
+      "source_pointer": "/info/46",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "513DC40A-2FB1-439E-8BB4-950FA176E204",
+      "source_id": "513DC40A-2FB1-439E-8BB4-950FA176E204",
+      "identity_source": "source_id",
+      "parent_id": "38F39AB7-1B1B-4536-B256-68E93B251F33",
+      "source_parent_id": "38F39AB7-1B1B-4536-B256-68E93B251F33",
+      "source_order": 47,
+      "name": "椭圆形备份 6",
+      "node_type": "shape",
+      "bounds": {
+        "x": 35,
+        "y": 558,
+        "width": 43,
+        "height": 43
+      },
+      "source_bounds": {
+        "x": 35,
+        "y": 558,
+        "width": 43,
+        "height": 43
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/47",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "F5D72186-D951-4DFC-B7AC-303C6C590936",
+      "source_id": "F5D72186-D951-4DFC-B7AC-303C6C590936",
+      "identity_source": "source_id",
+      "parent_id": "A4724EA7-52E1-43A9-A5F3-C871175D39D6",
+      "source_parent_id": "A4724EA7-52E1-43A9-A5F3-C871175D39D6",
+      "source_order": 48,
+      "name": "形状",
+      "node_type": "shape",
+      "bounds": {
+        "x": 48,
+        "y": 570,
+        "width": 17,
+        "height": 20
+      },
+      "source_bounds": {
+        "x": 48,
+        "y": 570,
+        "width": 17,
+        "height": 20
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/48",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "A4724EA7-52E1-43A9-A5F3-C871175D39D6",
+      "source_id": "A4724EA7-52E1-43A9-A5F3-C871175D39D6",
+      "identity_source": "source_id",
+      "parent_id": "38F39AB7-1B1B-4536-B256-68E93B251F33",
+      "source_parent_id": "38F39AB7-1B1B-4536-B256-68E93B251F33",
+      "source_order": 49,
+      "name": "任务 (1)",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 48,
+        "y": 570,
+        "width": 17,
+        "height": 20
+      },
+      "source_bounds": {
+        "x": 48,
+        "y": 570,
+        "width": 17,
+        "height": 20
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/49",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "38F39AB7-1B1B-4536-B256-68E93B251F33",
+      "source_id": "38F39AB7-1B1B-4536-B256-68E93B251F33",
+      "identity_source": "source_id",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_order": 50,
+      "name": "编组 6",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 35,
+        "y": 558,
+        "width": 43,
+        "height": 43
+      },
+      "source_bounds": {
+        "x": 35,
+        "y": 558,
+        "width": 43,
+        "height": 43
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [
+        "38F39AB7-1B1B-4536-B256-68E93B251F33:image"
+      ],
+      "source_pointer": "/info/50",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "0E9CC64A-60B9-4781-BE54-CD55F949DEB9",
+      "source_id": "0E9CC64A-60B9-4781-BE54-CD55F949DEB9",
+      "identity_source": "source_id",
+      "parent_id": "BAA46888-06CE-4239-9E0B-2B4C194C1ECF",
+      "source_parent_id": "BAA46888-06CE-4239-9E0B-2B4C194C1ECF",
+      "source_order": 51,
+      "name": "椭圆形备份 7",
+      "node_type": "shape",
+      "bounds": {
+        "x": 35,
+        "y": 486,
+        "width": 43,
+        "height": 43
+      },
+      "source_bounds": {
+        "x": 35,
+        "y": 486,
+        "width": 43,
+        "height": 43
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/51",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "4FE59FC7-9B49-446A-A18A-4353E1D12875",
+      "source_id": "4FE59FC7-9B49-446A-A18A-4353E1D12875",
+      "identity_source": "source_id",
+      "parent_id": "09FEA212-58C6-431B-A9A5-404ACDA7245A",
+      "source_parent_id": "09FEA212-58C6-431B-A9A5-404ACDA7245A",
+      "source_order": 52,
+      "name": "形状结合",
+      "node_type": "shape",
+      "bounds": {
+        "x": 46,
+        "y": 497,
+        "width": 21,
+        "height": 21
+      },
+      "source_bounds": {
+        "x": 46,
+        "y": 497,
+        "width": 21,
+        "height": 21
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/52",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "09FEA212-58C6-431B-A9A5-404ACDA7245A",
+      "source_id": "09FEA212-58C6-431B-A9A5-404ACDA7245A",
+      "identity_source": "source_id",
+      "parent_id": "BAA46888-06CE-4239-9E0B-2B4C194C1ECF",
+      "source_parent_id": "BAA46888-06CE-4239-9E0B-2B4C194C1ECF",
+      "source_order": 53,
+      "name": "火箭 (1)",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 46,
+        "y": 497,
+        "width": 21,
+        "height": 21
+      },
+      "source_bounds": {
+        "x": 46,
+        "y": 497,
+        "width": 21,
+        "height": 21
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/53",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "BAA46888-06CE-4239-9E0B-2B4C194C1ECF",
+      "source_id": "BAA46888-06CE-4239-9E0B-2B4C194C1ECF",
+      "identity_source": "source_id",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_order": 54,
+      "name": "编组 5",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 35,
+        "y": 486,
+        "width": 43,
+        "height": 43
+      },
+      "source_bounds": {
+        "x": 35,
+        "y": 486,
+        "width": 43,
+        "height": 43
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [
+        "BAA46888-06CE-4239-9E0B-2B4C194C1ECF:image"
+      ],
+      "source_pointer": "/info/54",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "A22C0DB6-9846-4744-A900-37852C9874DA",
+      "source_id": "A22C0DB6-9846-4744-A900-37852C9874DA",
+      "identity_source": "source_id",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_order": 55,
+      "name": "矩形",
+      "node_type": "shape",
+      "bounds": {
+        "x": 26,
+        "y": 263,
+        "width": 156.181390590996,
+        "height": 65
+      },
+      "source_bounds": {
+        "x": 26,
+        "y": 263,
+        "width": 156.181390590996,
+        "height": 65
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/55",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "A3FCFA75-7355-4B91-8C30-CAC01E8397F2",
+      "source_id": "A3FCFA75-7355-4B91-8C30-CAC01E8397F2",
+      "identity_source": "source_id",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_order": 56,
+      "name": "矩形备份 4",
+      "node_type": "shape",
+      "bounds": {
+        "x": 26,
+        "y": 338,
+        "width": 156.181390590996,
+        "height": 65
+      },
+      "source_bounds": {
+        "x": 26,
+        "y": 338,
+        "width": 156.181390590996,
+        "height": 65
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/56",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "2E98A454-4D93-4BF3-99FD-A142E36B1B85",
+      "source_id": "2E98A454-4D93-4BF3-99FD-A142E36B1B85",
+      "identity_source": "source_id",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_order": 57,
+      "name": "矩形备份 5",
+      "node_type": "shape",
+      "bounds": {
+        "x": 190.81860940900424,
+        "y": 263,
+        "width": 156.181390590996,
+        "height": 65
+      },
+      "source_bounds": {
+        "x": 190.81860940900424,
+        "y": 263,
+        "width": 156.181390590996,
+        "height": 65
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/57",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "EEA3D6F9-2349-45DF-98B7-D4EE41FD3794",
+      "source_id": "EEA3D6F9-2349-45DF-98B7-D4EE41FD3794",
+      "identity_source": "source_id",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_order": 58,
+      "name": "矩形备份 8",
+      "node_type": "shape",
+      "bounds": {
+        "x": 190.81860940900424,
+        "y": 338,
+        "width": 156.181390590996,
+        "height": 65
+      },
+      "source_bounds": {
+        "x": 190.81860940900424,
+        "y": 338,
+        "width": 156.181390590996,
+        "height": 65
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/58",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "D5F784F3-8E06-4C4F-A3F8-8FF9128E8FBF",
+      "source_id": "D5F784F3-8E06-4C4F-A3F8-8FF9128E8FBF",
+      "identity_source": "source_id",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source_order": 59,
+      "name": "多平台分发",
+      "node_type": "text",
+      "bounds": {
+        "x": 86,
+        "y": 488,
+        "width": 70,
+        "height": 20
+      },
+      "source_bounds": {
+        "x": 86,
+        "y": 488,
+        "width": 70,
+        "height": 20
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "多平台分发",
+      "asset_ids": [],
+      "source_pointer": "/info/59",
+      "effective_source_visible": true
+    }
+  ],
+  "ancestors": [
+    {
+      "node_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "parent_id": null,
+      "name": "平台介绍页",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      }
+    },
+    {
+      "node_id": "84EBC769-C40D-43ED-A012-5A6334394DF0",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "name": "生成高清纯白背景图片 (48)",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 229
+      }
+    },
+    {
+      "node_id": "6010A6AB-EC7A-480B-A0D9-3C44644352CE",
+      "parent_id": "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4",
+      "name": "编组 8",
+      "bounds": {
+        "x": 19,
+        "y": 78,
+        "width": 193,
+        "height": 98.0000000000001
+      }
+    },
+    {
+      "node_id": "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "name": "编组 9",
+      "bounds": {
+        "x": 19,
+        "y": 57.183474969804365,
+        "width": 205,
+        "height": 118.816525030196
+      }
+    },
+    {
+      "node_id": "88693C67-6C64-4D5F-BBF2-53D5EC5E786A",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "name": "Bars/Home Indicators/iPhone/Light - Portrait",
+      "bounds": {
+        "x": 121,
+        "y": 778,
+        "width": 134,
+        "height": 34
+      }
+    },
+    {
+      "node_id": "E0F339CD-926D-46AA-9E56-12A5475550E5",
+      "parent_id": "3C46A199-74C9-4542-83A2-EEC7B434DE92",
+      "name": "Battery",
+      "bounds": {
+        "x": 336,
+        "y": 17,
+        "width": 25,
+        "height": 12
+      }
+    },
+    {
+      "node_id": "3C46A199-74C9-4542-83A2-EEC7B434DE92",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "name": "Bars/Status Bars/iPhone/Light",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 44
+      }
+    },
+    {
+      "node_id": "48F71FF5-879F-491B-BE13-3481583F6389",
+      "parent_id": "3C46A199-74C9-4542-83A2-EEC7B434DE92",
+      "name": "Time Style",
+      "bounds": {
+        "x": 21,
+        "y": 7.333300000000236,
+        "width": 54,
+        "height": 21
+      }
+    },
+    {
+      "node_id": "FBAD45FA-3661-48CD-A7DC-5B858AD7FF6A",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "name": "编组 10",
+      "bounds": {
+        "x": 15,
+        "y": 208,
+        "width": 343,
+        "height": 208
+      }
+    },
+    {
+      "node_id": "5635B6E7-37C1-4D57-989A-45A35D3D60E5",
+      "parent_id": "FBAD45FA-3661-48CD-A7DC-5B858AD7FF6A",
+      "name": "引号 + 01蒙版",
+      "bounds": {
+        "x": 15,
+        "y": 208,
+        "width": 343,
+        "height": 208
+      }
+    },
+    {
+      "node_id": "E79B48D4-D1DC-4040-888E-31EF52D08DB0",
+      "parent_id": "5635B6E7-37C1-4D57-989A-45A35D3D60E5",
+      "name": "引号",
+      "bounds": {
+        "x": 172,
+        "y": 219.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      }
+    },
+    {
+      "node_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "name": "位图",
+      "bounds": {
+        "x": 16,
+        "y": 424,
+        "width": 343,
+        "height": 266
+      }
+    },
+    {
+      "node_id": "017FFDCA-5C07-433E-90E7-9EF90D666FE0",
+      "parent_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "name": "引号备份",
+      "bounds": {
+        "x": 199,
+        "y": 434.99999999999955,
+        "width": 15.0000000000004,
+        "height": 12.9662508829469
+      }
+    },
+    {
+      "node_id": "CC16704D-812C-42AB-8488-1E79C65EE8B8",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "name": "编组 7",
+      "bounds": {
+        "x": 35,
+        "y": 625,
+        "width": 43,
+        "height": 43
+      }
+    },
+    {
+      "node_id": "D21FF697-FB94-4D6E-8CC6-DAFF62A943C0",
+      "parent_id": "CC16704D-812C-42AB-8488-1E79C65EE8B8",
+      "name": "礼物,礼物盒,礼品",
+      "bounds": {
+        "x": 46,
+        "y": 636,
+        "width": 22,
+        "height": 21.3390252732942
+      }
+    },
+    {
+      "node_id": "38F39AB7-1B1B-4536-B256-68E93B251F33",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "name": "编组 6",
+      "bounds": {
+        "x": 35,
+        "y": 558,
+        "width": 43,
+        "height": 43
+      }
+    },
+    {
+      "node_id": "A4724EA7-52E1-43A9-A5F3-C871175D39D6",
+      "parent_id": "38F39AB7-1B1B-4536-B256-68E93B251F33",
+      "name": "任务 (1)",
+      "bounds": {
+        "x": 48,
+        "y": 570,
+        "width": 17,
+        "height": 20
+      }
+    },
+    {
+      "node_id": "BAA46888-06CE-4239-9E0B-2B4C194C1ECF",
+      "parent_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "name": "编组 5",
+      "bounds": {
+        "x": 35,
+        "y": 486,
+        "width": 43,
+        "height": 43
+      }
+    },
+    {
+      "node_id": "09FEA212-58C6-431B-A9A5-404ACDA7245A",
+      "parent_id": "BAA46888-06CE-4239-9E0B-2B4C194C1ECF",
+      "name": "火箭 (1)",
+      "bounds": {
+        "x": 46,
+        "y": 497,
+        "width": 21,
+        "height": 21
+      }
+    }
+  ],
+  "dds_layout_suggestions": [
+    {
+      "node_id": "6B2576DE-9F44-4021-83DB-86205B7446D8",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundColor": "rgba(255,255,255,1.000000)",
+        "position": "relative",
+        "width": 375,
+        "height": 812,
+        "overflow": "hidden",
+        "display": "flex",
+        "flexDirection": "column"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "4EC3AA61-B992-4521-B690-080B9E6D6279",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundColor": "rgba(255,255,255,1.000000)",
+        "position": "relative",
+        "height": 812,
+        "display": "flex",
+        "flexDirection": "column"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "6186D4BD-E2AD-4D58-9300-579C2C21FCDA",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundImage": "linear-gradient(180deg, rgba(255,255,255,0.000000) 0, rgba(255,255,255,1.000000) 40.438457%, rgba(255,255,255,0.000000) 100.000000%)",
+        "marginTop": -1,
+        "paddingTop": 15,
+        "display": "flex",
+        "flexDirection": "column"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "453B968A-CDC9-4312-BFDA-C845BCC46866",
+      "source": "dds_derived_layout",
+      "style": {
+        "overflowWrap": "break-word",
+        "color": "rgba(0,0,0,1)",
+        "fontSize": 15,
+        "letterSpacing": "-0.30000001192092896px",
+        "fontFamily": "Helvetica, \"Microsoft YaHei\", Arial, sans-serif",
+        "fontWeight": "normal",
+        "textAlign": "right",
+        "whiteSpace": "nowrap",
+        "lineHeight": 18
+      },
+      "value": "9:41"
+    },
+    {
+      "node_id": "3041A10C-07CD-42F3-A86B-4DBBDD56B385",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundColor": "rgba(0,0,0,1.000000)",
+        "flexDirection": "row",
+        "display": "flex",
+        "margin": "4px 0 3px 219px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "7F9F5132-94FD-4768-920F-2DBE7DFB06BD",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundColor": "rgba(0,0,0,1.000000)",
+        "display": "flex",
+        "flexDirection": "column",
+        "margin": "3px 0 4px 5px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "294C0431-6FAB-471D-8BB7-CBBAD7A4F681",
+      "source": "dds_derived_layout",
+      "style": {
+        "borderRadius": "2px",
+        "border": "1px solid rgba(0,0,0,0.35)",
+        "display": "flex",
+        "flexDirection": "column",
+        "margin": "3px 0 4px 5px",
+        "padding": "1px 1px 1px 1px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "D220EAC4-1149-45BD-AD8C-E3B2D4F258D1",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundColor": "rgba(0,0,0,1.000000)",
+        "borderRadius": "1px",
+        "width": 18,
+        "height": 7,
+        "display": "flex",
+        "flexDirection": "column"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "6C930DF9-C0EB-4E2A-A497-FD6D41C2B9F4",
+      "source": "dds_derived_layout",
+      "style": {
+        "width": 1,
+        "height": 4,
+        "display": "flex",
+        "flexDirection": "column",
+        "margin": "7px 0 7px 1px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "A6C8724D-3709-47E4-B940-45E36F79B8B9",
+      "source": "dds_derived_layout",
+      "style": {
+        "marginTop": 3,
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "16px 24px 53px 19px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "FE6B412E-3445-4E61-ADC1-42FE747717B8",
+      "source": "dds_derived_layout",
+      "style": {
+        "width": 13,
+        "height": 13,
+        "display": "flex",
+        "flexDirection": "column",
+        "margin": "6px 0 6px 0"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "FF1C36C8-FBEC-4362-B530-937D4560C776",
+      "source": "dds_derived_layout",
+      "style": {
+        "width": 15,
+        "height": 15,
+        "display": "flex",
+        "flexDirection": "column",
+        "margin": "10px 0 0 4px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "759EB0D9-27A2-43E0-973C-3B6D859E24B0",
+      "source": "dds_derived_layout",
+      "style": {
+        "overflowWrap": "break-word",
+        "color": "rgba(10,10,10,1)",
+        "fontSize": 38,
+        "fontFamily": "FZDBSJW--GB1-0",
+        "textAlign": "right",
+        "whiteSpace": "nowrap",
+        "lineHeight": 43
+      },
+      "value": "加入"
+    },
+    {
+      "node_id": "1C813327-0E8A-49FE-A69A-7087BAC66B86",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundImage": "linear-gradient(186deg, rgba(245,205,131,1.000000) 0, rgba(180,136,78,1.000000) 100.000000%)",
+        "overflowWrap": "break-word",
+        "color": "rgba(176,127,61,1)",
+        "fontSize": 38,
+        "fontFamily": "FZDBSJW--GB1-0",
+        "textAlign": "right",
+        "whiteSpace": "nowrap",
+        "lineHeight": 43,
+        "WebkitBackgroundClip": "text",
+        "WebkitTextFillColor": "transparent"
+      },
+      "value": "聚星阁"
+    },
+    {
+      "node_id": "10FBACC7-D823-4E7E-842F-EBC3EEEAD5E2",
+      "source": "dds_derived_layout",
+      "style": {
+        "overflowWrap": "break-word",
+        "color": "rgba(10,10,10,1)",
+        "fontSize": 15,
+        "fontFamily": "FZDBSJW--GB1-0",
+        "textAlign": "right",
+        "whiteSpace": "nowrap",
+        "lineHeight": 17
+      },
+      "value": "创作者一站式互动运营平台"
+    },
+    {
+      "node_id": "0DABD7BD-C26E-4F28-BD88-971CB124016F",
+      "source": "dds_derived_layout",
+      "style": {
+        "overflowWrap": "break-word",
+        "color": "rgba(159,159,159,1)",
+        "fontSize": 12,
+        "fontFamily": "Alibaba-PuHuiTi-R",
+        "fontWeight": "normal",
+        "textAlign": "right",
+        "whiteSpace": "nowrap",
+        "lineHeight": 17
+      },
+      "value": "入驻后解锁任务、关系与奖励能力"
+    },
+    {
+      "node_id": "C2C9DF67-1B84-4E04-A871-FD1A60E4F46E",
+      "source": "dds_derived_layout",
+      "style": {
+        "boxShadow": "0px 6px 12px 0px rgba(221,170,90,0.100000)",
+        "alignSelf": "center",
+        "marginTop": 195,
+        "display": "flex",
+        "flexDirection": "column",
+        "width": 343
+      },
+      "value": ""
+    },
+    {
+      "node_id": "7E01FF1B-EB56-4729-8906-6426783856F5",
+      "source": "dds_derived_layout",
+      "style": {
+        "boxShadow": "0px 5px 12px 0px rgba(221,170,90,0.150000)",
+        "backgroundImage": "linear-gradient(182deg, rgba(28,28,26,1.000000) 0, rgba(232,193,123,1.000000) 100.000000%)",
+        "borderRadius": "14px",
+        "position": "relative",
+        "width": 343,
+        "border": "1px solid rgba(255,250,250,1)",
+        "overflow": "hidden",
+        "flexDirection": "row",
+        "display": "flex",
+        "justifyContent": "space-between",
+        "padding": "8px 144px 222px 9px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "D44A759A-F00C-4F91-B906-8D3AEA24B017",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundColor": "rgba(232,199,123,1.000000)",
+        "width": 15,
+        "flexDirection": "row",
+        "display": "flex",
+        "justifyContent": "space-between",
+        "margin": "2px 0 19px 0"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "67A66F14-1BFC-4ED2-B7CC-CA53F587487F",
+      "source": "dds_derived_layout",
+      "style": {
+        "position": "absolute",
+        "left": 272,
+        "top": -38,
+        "width": 105,
+        "height": 105,
+        "display": "flex",
+        "flexDirection": "column"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B",
+      "source": "dds_derived_layout",
+      "style": {
+        "boxShadow": "0px 5px 12px 0px rgba(221,170,90,0.100000)",
+        "backgroundImage": "linear-gradient(180deg, rgba(255,255,255,1.000000) 0, rgba(255,252,247,1.000000) 100.000000%)",
+        "borderRadius": "12px",
+        "position": "absolute",
+        "left": 10,
+        "top": 47,
+        "width": 325,
+        "height": 210,
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "15px 5px 13px 4px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "0E9CC64A-60B9-4781-BE54-CD55F949DEB9",
+      "source": "dds_derived_layout",
+      "style": {
+        "boxShadow": "0px 6px 12px 0px rgba(216,155,71,0.100000)",
+        "backgroundImage": "linear-gradient(180deg, rgba(248,235,215,1.000000) 0, rgba(248,232,208,1.000000) 100.000000%)",
+        "borderRadius": "50%",
+        "border": "0.5px solid rgba(249,237,218,1)",
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "10.5px 10.5px 10.5px 10.5px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "4FE59FC7-9B49-446A-A18A-4353E1D12875",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundImage": "linear-gradient(180deg, rgba(216,182,108,1.000000) 0, rgba(175,127,58,1.000000) 100.000000%)",
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "0 0 1px 1px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "D5F784F3-8E06-4C4F-A3F8-8FF9128E8FBF",
+      "source": "dds_derived_layout",
+      "style": {
+        "overflowWrap": "break-word",
+        "color": "rgba(34,36,42,1)",
+        "fontSize": 14,
+        "fontFamily": "PingFangSC-Semibold",
+        "fontWeight": "600",
+        "textAlign": "left",
+        "whiteSpace": "nowrap",
+        "lineHeight": 20,
+        "marginRight": 98
+      },
+      "value": "多平台分发"
+    },
+    {
+      "node_id": "513DC40A-2FB1-439E-8BB4-950FA176E204",
+      "source": "dds_derived_layout",
+      "style": {
+        "boxShadow": "0px 6px 12px 0px rgba(216,155,71,0.100000)",
+        "backgroundImage": "linear-gradient(180deg, rgba(248,235,215,1.000000) 0, rgba(248,232,208,1.000000) 100.000000%)",
+        "borderRadius": "50%",
+        "border": "0.5px solid rgba(249,237,218,1)",
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "11.5px 12.5px 10.5px 12.5px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "F5D72186-D951-4DFC-B7AC-303C6C590936",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundImage": "linear-gradient(180deg, rgba(216,182,108,1.000000) 0, rgba(175,127,58,1.000000) 100.000000%)",
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingTop": 2
+      },
+      "value": ""
+    },
+    {
+      "node_id": "C4E31964-6BB3-4C0B-B672-F466B0071466",
+      "source": "dds_derived_layout",
+      "style": {
+        "boxShadow": "0px 6px 12px 0px rgba(216,155,71,0.100000)",
+        "backgroundImage": "linear-gradient(180deg, rgba(248,235,215,1.000000) 0, rgba(248,232,208,1.000000) 100.000000%)",
+        "borderRadius": "50%",
+        "position": "relative",
+        "border": "0.5px solid rgba(249,237,218,1)",
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "19.5px 11.5px 10.5px 11.5px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "0F085E92-24C5-427D-8773-FB4CA375285F",
+      "source": "dds_derived_layout",
+      "style": {
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "2px 5px 1px 5px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "60F1B29F-4076-4435-9C28-DBA494E30B7C",
+      "source": "dds_derived_layout",
+      "style": {
+        "width": 9,
+        "height": 9,
+        "display": "flex",
+        "flexDirection": "column"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "F9B45E83-0BD9-42E8-B5BD-4479052DA6C6",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundImage": "linear-gradient(180deg, rgba(216,182,108,1.000000) 0, rgba(185,145,89,1.000000) 100.000000%)",
+        "height": 10,
+        "display": "flex",
+        "flexDirection": "column",
+        "width": 22,
+        "position": "absolute",
+        "left": 11,
+        "top": 11
+      },
+      "value": ""
+    },
+    {
+      "node_id": "BD427EBB-C725-416A-A798-1AD75287E7EC",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundColor": "rgba(255,255,255,0.660000)",
+        "width": 2,
+        "height": 4,
+        "display": "flex",
+        "flexDirection": "column"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "E40795A5-5FEF-4164-9D5A-93BA2A33E0A7",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundColor": "rgba(0,0,0,1.000000)",
+        "borderRadius": "100px",
+        "width": 134,
+        "height": 5,
+        "alignSelf": "center",
+        "marginTop": 35,
+        "display": "flex",
+        "flexDirection": "column"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "48806B19-1694-4437-9E26-09E95238A067",
+      "source": "dds_derived_layout",
+      "style": {
+        "boxShadow": "0px 6px 12px 0px rgba(221,170,90,0.150000)",
+        "backgroundImage": "linear-gradient(180deg, rgba(255,255,255,0.640000) 0, rgba(254,253,251,1.000000) 100.000000%)",
+        "borderRadius": "14px",
+        "height": 208,
+        "border": "1px solid rgba(255,250,250,1)",
+        "display": "flex",
+        "flexDirection": "column",
+        "width": 343,
+        "position": "absolute",
+        "left": 15,
+        "top": 208
+      },
+      "value": ""
+    },
+    {
+      "node_id": "9E217909-FC20-4BB1-BAAE-644790E8168F",
+      "source": "dds_derived_layout",
+      "style": {
+        "boxShadow": "0px 6px 12px 0px rgba(221,170,90,0.150000)",
+        "backgroundImage": "linear-gradient(180deg, rgba(255,255,255,0.640000) 0, rgba(254,253,251,1.000000) 100.000000%)",
+        "borderRadius": "14px",
+        "border": "1px solid rgba(255,250,250,1)",
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "9px 10px 12px 10px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "11857F91-EAAB-4C0C-A518-9D0D2F73628B",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundColor": "rgba(250,239,223,1.000000)",
+        "width": 15,
+        "flexDirection": "row",
+        "display": "flex",
+        "justifyContent": "space-between",
+        "margin": "2px 0 19px 0"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "A22C0DB6-9846-4744-A900-37852C9874DA",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundColor": "rgba(255,248,239,0.300000)",
+        "borderRadius": "12px",
+        "width": 156,
+        "border": "1px solid rgba(255,243,226,1)",
+        "flexDirection": "row",
+        "display": "flex",
+        "justifyContent": "space-between",
+        "padding": "7px 7px 6px 9px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "2E98A454-4D93-4BF3-99FD-A142E36B1B85",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundColor": "rgba(255,248,239,0.300000)",
+        "borderRadius": "12px",
+        "width": 156,
+        "border": "1px solid rgba(255,243,226,1)",
+        "flexDirection": "row",
+        "display": "flex",
+        "justifyContent": "space-between",
+        "padding": "13px 34px 14px 7px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "A3FCFA75-7355-4B91-8C30-CAC01E8397F2",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundColor": "rgba(255,248,239,0.300000)",
+        "borderRadius": "12px",
+        "width": 156,
+        "border": "1px solid rgba(255,243,226,1)",
+        "flexDirection": "row",
+        "display": "flex",
+        "justifyContent": "space-between",
+        "padding": "15px 7px 14px 9px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "EEA3D6F9-2349-45DF-98B7-D4EE41FD3794",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundColor": "rgba(255,248,239,0.200000)",
+        "borderRadius": "12px",
+        "width": 156,
+        "border": "1px solid rgba(252,247,240,1)",
+        "flexDirection": "row",
+        "display": "flex",
+        "justifyContent": "space-between",
+        "padding": "15px 23px 14px 7px"
+      },
+      "value": ""
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "84EBC769-C40D-43ED-A012-5A6334394DF0:image",
+      "node_id": "84EBC769-C40D-43ED-A012-5A6334394DF0",
+      "kind": "exported_asset",
+      "format_hint": null,
+      "render_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 229
+      },
+      "render_bounds_source_field": "node.bounds",
+      "source_field": "image",
+      "source_pointer": "/info/4/image",
+      "variants": [
+        {
+          "variant_id": "v-84603c1233670cf71708b1cb",
+          "source_field": "image.imageUrl",
+          "format_hint": null,
+          "is_original": true,
+          "format_verification": "requires_download"
+        }
+      ],
+      "source_size": {
+        "height": 230,
+        "width": 375
+      },
+      "source_point": {
+        "x": 4915,
+        "y": 842
+      },
+      "pixel_dimensions": null,
+      "pixel_dimensions_status": "requires_download"
+    },
+    {
+      "asset_id": "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4:image",
+      "node_id": "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4",
+      "kind": "exported_asset",
+      "format_hint": null,
+      "render_bounds": {
+        "x": 19,
+        "y": 57.183474969804365,
+        "width": 205,
+        "height": 118.816525030196
+      },
+      "render_bounds_source_field": "node.bounds",
+      "source_field": "image",
+      "source_pointer": "/info/12/image",
+      "variants": [
+        {
+          "variant_id": "v-0fd9e1ec845d37dbbbd30cdb",
+          "source_field": "image.imageUrl",
+          "format_hint": null,
+          "is_original": true,
+          "format_verification": "requires_download"
+        },
+        {
+          "variant_id": "v-ce72a6b1f7a8683264097633",
+          "source_field": "image.svgUrl",
+          "format_hint": "svg",
+          "is_original": false,
+          "format_verification": "requires_download"
+        }
+      ],
+      "source_size": {
+        "height": 119,
+        "width": 205
+      },
+      "source_point": {
+        "x": 4934,
+        "y": 900
+      },
+      "pixel_dimensions": null,
+      "pixel_dimensions_status": "requires_download"
+    },
+    {
+      "asset_id": "CC16704D-812C-42AB-8488-1E79C65EE8B8:image",
+      "node_id": "CC16704D-812C-42AB-8488-1E79C65EE8B8",
+      "kind": "exported_asset",
+      "format_hint": null,
+      "render_bounds": {
+        "x": 35,
+        "y": 625,
+        "width": 43,
+        "height": 43
+      },
+      "render_bounds_source_field": "node.bounds",
+      "source_field": "image",
+      "source_pointer": "/info/46/image",
+      "variants": [
+        {
+          "variant_id": "v-8a979a2401ed3f70cef110d1",
+          "source_field": "image.imageUrl",
+          "format_hint": null,
+          "is_original": true,
+          "format_verification": "requires_download"
+        },
+        {
+          "variant_id": "v-90e5be376009501cd5940c63",
+          "source_field": "image.svgUrl",
+          "format_hint": "svg",
+          "is_original": false,
+          "format_verification": "requires_download"
+        }
+      ],
+      "source_size": {
+        "height": 67,
+        "width": 67
+      },
+      "source_point": {
+        "x": 4938,
+        "y": 1462
+      },
+      "pixel_dimensions": null,
+      "pixel_dimensions_status": "requires_download"
+    },
+    {
+      "asset_id": "38F39AB7-1B1B-4536-B256-68E93B251F33:image",
+      "node_id": "38F39AB7-1B1B-4536-B256-68E93B251F33",
+      "kind": "exported_asset",
+      "format_hint": null,
+      "render_bounds": {
+        "x": 35,
+        "y": 558,
+        "width": 43,
+        "height": 43
+      },
+      "render_bounds_source_field": "node.bounds",
+      "source_field": "image",
+      "source_pointer": "/info/50/image",
+      "variants": [
+        {
+          "variant_id": "v-95c8442655b05485a4f7d9af",
+          "source_field": "image.imageUrl",
+          "format_hint": null,
+          "is_original": true,
+          "format_verification": "requires_download"
+        },
+        {
+          "variant_id": "v-aa3e7db26f903bf9b186f02c",
+          "source_field": "image.svgUrl",
+          "format_hint": "svg",
+          "is_original": false,
+          "format_verification": "requires_download"
+        }
+      ],
+      "source_size": {
+        "height": 67,
+        "width": 67
+      },
+      "source_point": {
+        "x": 4938,
+        "y": 1395
+      },
+      "pixel_dimensions": null,
+      "pixel_dimensions_status": "requires_download"
+    },
+    {
+      "asset_id": "BAA46888-06CE-4239-9E0B-2B4C194C1ECF:image",
+      "node_id": "BAA46888-06CE-4239-9E0B-2B4C194C1ECF",
+      "kind": "exported_asset",
+      "format_hint": null,
+      "render_bounds": {
+        "x": 35,
+        "y": 486,
+        "width": 43,
+        "height": 43
+      },
+      "render_bounds_source_field": "node.bounds",
+      "source_field": "image",
+      "source_pointer": "/info/54/image",
+      "variants": [
+        {
+          "variant_id": "v-0bc9754b4629ffeae032f153",
+          "source_field": "image.imageUrl",
+          "format_hint": null,
+          "is_original": true,
+          "format_verification": "requires_download"
+        },
+        {
+          "variant_id": "v-3c138ec0ab78adca4a937783",
+          "source_field": "image.svgUrl",
+          "format_hint": "svg",
+          "is_original": false,
+          "format_verification": "requires_download"
+        }
+      ],
+      "source_size": {
+        "height": 67,
+        "width": 67
+      },
+      "source_point": {
+        "x": 4938,
+        "y": 1323
+      },
+      "pixel_dimensions": null,
+      "pixel_dimensions_status": "requires_download"
+    }
+  ],
+  "total": 100,
+  "returned": 60,
+  "next_offset": 60,
+  "truncated": true,
+  "preview_resource": "lanhu://design/da6dd92db9b6df7fc3fc4d2bc873e0ee/preview/49cb5b874d57b208cb35db6b89f93694",
+  "reference_crop_resource": "lanhu://design/da6dd92db9b6df7fc3fc4d2bc873e0ee/preview/49cb5b874d57b208cb35db6b89f93694",
+  "selected_font_requirements": [
+    {
+      "family": "FZDBSJW--GB1-0",
+      "availability": "not_checked",
+      "source": "design",
+      "weights": [
+        400
+      ],
+      "node_count": 3,
+      "sample_node_ids": [
+        "10FBACC7-D823-4E7E-842F-EBC3EEEAD5E2",
+        "759EB0D9-27A2-43E0-973C-3B6D859E24B0",
+        "1C813327-0E8A-49FE-A69A-7087BAC66B86"
+      ]
+    },
+    {
+      "family": "Alibaba-PuHuiTi-R",
+      "availability": "not_checked",
+      "source": "design",
+      "weights": [
+        400
+      ],
+      "node_count": 1,
+      "sample_node_ids": [
+        "0DABD7BD-C26E-4F28-BD88-971CB124016F"
+      ]
+    },
+    {
+      "family": ".AppleSystemUIFont",
+      "availability": "not_checked",
+      "source": "design",
+      "weights": [
+        400
+      ],
+      "node_count": 1,
+      "sample_node_ids": [
+        "453B968A-CDC9-4312-BFDA-C845BCC46866"
+      ]
+    },
+    {
+      "family": "Source-KeynoteartHans-Regular",
+      "availability": "not_checked",
+      "source": "design",
+      "weights": [
+        400
+      ],
+      "node_count": 2,
+      "sample_node_ids": [
+        "A3FD2014-8642-473A-B0F5-4C17D694B015",
+        "D918BBDD-E8F9-4952-B1C0-818569C32B90"
+      ]
+    },
+    {
+      "family": "PingFangSC-Semibold",
+      "availability": "not_checked",
+      "source": "design",
+      "weights": [
+        600
+      ],
+      "node_count": 1,
+      "sample_node_ids": [
+        "D5F784F3-8E06-4C4F-A3F8-8FF9128E8FBF"
+      ]
+    }
+  ],
+  "image_order": [
+    "reference_or_overlay"
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "method": "RGB absolute error on immutable native 4x grids, no fitting/rescaling. Preview-derived photos, avatars and shield excluded. These metrics are not a fidelity percentage.",
+  "samples": {
+    "feed-stage": {
+      "snapshot_id": "58e8325b6bf4512936877aa111eb084a",
+      "resolved_version": "7f08adcf-1e12-4e41-b19b-47641f116d9a",
+      "reference_sha256": "73c0feeefc1b395e86bc629730da534e6765d5b9b5dc3c4bee83ffdfab34ac26",
+      "flutter_sha256": "396436791350a3c652cb1e4f2d900dc3b8dee3f634c502b923769f4dac315abf",
+      "independent_pixels": {
+        "pixels": 1345632,
+        "mean_abs_rgb_0_255": 0.4245,
+        "p95_max_channel_abs": 0.0
+      },
+      "excluded_rects": [
+        [
+          96.75,
+          12,
+          181.5,
+          242
+        ],
+        [
+          103.75,
+          305,
+          15,
+          15
+        ]
+      ],
+      "regions": {
+        "caption": {
+          "pixels": 95328,
+          "mean_abs_rgb_0_255": 4.7858,
+          "p95_max_channel_abs": 39.0
+        },
+        "author_status_like": {
+          "pixels": 51820,
+          "mean_abs_rgb_0_255": 1.531,
+          "p95_max_channel_abs": 6.0
+        }
+      }
+    },
+    "gender_none": {
+      "snapshot_id": "bcd9357e8adb4a8c4ce9c6b51e3b9a69",
+      "resolved_version": "9121ae6b-b534-4070-aa1b-5085a2406781",
+      "reference_sha256": "c9f025967172ed54cb1632e5ad49f2570d7065dff8e0b61d9854d6508734387f",
+      "flutter_sha256": "33c604215f033a1cfe91f22abd577e4b00a6832ee95962c2dcebdd6709339e78",
+      "independent_pixels": {
+        "pixels": 2100000,
+        "mean_abs_rgb_0_255": 0.648,
+        "p95_max_channel_abs": 2.0
+      },
+      "excluded_rects": [],
+      "regions": {
+        "title": {
+          "pixels": 120960,
+          "mean_abs_rgb_0_255": 3.7792,
+          "p95_max_channel_abs": 19.0
+        },
+        "male": {
+          "pixels": 351616,
+          "mean_abs_rgb_0_255": 0.4115,
+          "p95_max_channel_abs": 1.0
+        },
+        "female": {
+          "pixels": 351616,
+          "mean_abs_rgb_0_255": 0.393,
+          "p95_max_channel_abs": 1.0
+        }
+      }
+    },
+    "gender_female": {
+      "snapshot_id": "63e113909e6f5346b547c71fb5dbc651",
+      "resolved_version": "6c06f0c3-cc7b-4d0c-8617-04693fdbb877",
+      "reference_sha256": "07b1c45f8f543892e8ecb7e943f2f5c1f5b92a5ab39fe5d1e67221fcaf7d2eca",
+      "flutter_sha256": "fcde79600b5f600afa641377c2ae0b98bc19bc01977880488aba3833cfc8cb89",
+      "independent_pixels": {
+        "pixels": 2079872,
+        "mean_abs_rgb_0_255": 0.7277,
+        "p95_max_channel_abs": 2.0
+      },
+      "excluded_rects": [
+        [
+          295,
+          299,
+          37,
+          34
+        ]
+      ],
+      "regions": {
+        "title": {
+          "pixels": 120960,
+          "mean_abs_rgb_0_255": 3.7792,
+          "p95_max_channel_abs": 19.0
+        },
+        "selected": {
+          "pixels": 360192,
+          "mean_abs_rgb_0_255": 0.2678,
+          "p95_max_channel_abs": 0.0
+        },
+        "warning_text_icon": {
+          "pixels": 124416,
+          "mean_abs_rgb_0_255": 1.9781,
+          "p95_max_channel_abs": 7.0
+        }
+      }
+    },
+    "comments": {
+      "snapshot_id": "b9dc26094ff136d05a9337e37cf30a0e",
+      "resolved_version": "ae9eabab-b45e-4ae3-a910-bd2f49703c3d",
+      "reference_sha256": "5bbc3c293a4f9418e1f201929ea1f480a58a1df0ef48911fb5a616349f8f5ac5",
+      "flutter_sha256": "cef1886ac00b2195a5f3b0a43ab8f8d454b8c59eb5e892ecc3b281b529a66ed7",
+      "independent_pixels": {
+        "pixels": 2205984,
+        "mean_abs_rgb_0_255": 1.3078,
+        "p95_max_channel_abs": 1.0
+      },
+      "excluded_rects": [
+        [
+          16,
+          47,
+          30,
+          30
+        ],
+        [
+          16,
+          147,
+          30,
+          30
+        ],
+        [
+          53,
+          232,
+          24,
+          24
+        ]
+      ],
+      "regions": {
+        "title": {
+          "pixels": 23120,
+          "mean_abs_rgb_0_255": 6.7284,
+          "p95_max_channel_abs": 54.0
+        },
+        "first_comment": {
+          "pixels": 237440,
+          "mean_abs_rgb_0_255": 3.3321,
+          "p95_max_channel_abs": 18.0
+        },
+        "nested_reply": {
+          "pixels": 330240,
+          "mean_abs_rgb_0_255": 2.3525,
+          "p95_max_channel_abs": 1.0
+        },
+        "expand": {
+          "pixels": 60000,
+          "mean_abs_rgb_0_255": 2.3965,
+          "p95_max_channel_abs": 4.0
+        }
+      }
+    }
+  }
+}

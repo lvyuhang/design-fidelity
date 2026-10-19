@@ -1,0 +1,3124 @@
+{
+  "nodes": [
+    {
+      "node_id": "36037A54-332E-4283-B04E-4FA48AED0CC6",
+      "label": "编组",
+      "text": null,
+      "bounds": {
+        "x": 28,
+        "y": 154,
+        "width": 14,
+        "height": 12.1333333333333
+      },
+      "asset_ids": [
+        "36037A54-332E-4283-B04E-4FA48AED0CC6:image"
+      ],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "50B9E4FC-05D1-4968-8254-B420F0556EA4",
+      "label": "位图备份 6",
+      "text": null,
+      "bounds": {
+        "x": 17,
+        "y": 585,
+        "width": 44,
+        "height": 44
+      },
+      "asset_ids": [
+        "50B9E4FC-05D1-4968-8254-B420F0556EA4:image"
+      ],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "4D8A04A3-DFB2-48DA-848C-DCD9938C9674",
+      "label": "message_reminding_icon",
+      "text": null,
+      "bounds": {
+        "x": 17,
+        "y": 651,
+        "width": 44,
+        "height": 44
+      },
+      "asset_ids": [
+        "4D8A04A3-DFB2-48DA-848C-DCD9938C9674:image"
+      ],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "DB30FAD9-2588-4A4A-BA0A-3DC544FEC67A",
+      "label": "编组",
+      "text": null,
+      "bounds": {
+        "x": 339,
+        "y": 115,
+        "width": 8,
+        "height": 8
+      },
+      "asset_ids": [
+        "DB30FAD9-2588-4A4A-BA0A-3DC544FEC67A:image"
+      ],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "39188530-995C-4BDE-92F1-09A185A9CD9D",
+      "label": "编组",
+      "text": null,
+      "bounds": {
+        "x": 318,
+        "y": 115,
+        "width": 4,
+        "height": 8
+      },
+      "asset_ids": [
+        "39188530-995C-4BDE-92F1-09A185A9CD9D:image"
+      ],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "B6471D2F-8CD2-4DD6-B7C6-02CF6C59EF50",
+      "label": "编组",
+      "text": null,
+      "bounds": {
+        "x": 248,
+        "y": 749,
+        "width": 14,
+        "height": 17
+      },
+      "asset_ids": [
+        "B6471D2F-8CD2-4DD6-B7C6-02CF6C59EF50:image"
+      ],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "AF600665-5A9A-4D56-BC60-3BF25E80020C",
+      "label": "首页",
+      "text": null,
+      "bounds": {
+        "x": 45,
+        "y": 748,
+        "width": 20.000076801688,
+        "height": 18
+      },
+      "asset_ids": [
+        "AF600665-5A9A-4D56-BC60-3BF25E80020C:image"
+      ],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "68FE86C9-F461-4925-87F5-A0404767C54F",
+      "label": "编组",
+      "text": null,
+      "bounds": {
+        "x": 306,
+        "y": 748,
+        "width": 18,
+        "height": 18
+      },
+      "asset_ids": [
+        "68FE86C9-F461-4925-87F5-A0404767C54F:image"
+      ],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "5D45D6FA-E0A7-4040-B2F3-88A3F38988BA",
+      "label": "编组",
+      "text": null,
+      "bounds": {
+        "x": 179,
+        "y": 750,
+        "width": 18,
+        "height": 15.44679
+      },
+      "asset_ids": [
+        "5D45D6FA-E0A7-4040-B2F3-88A3F38988BA:image"
+      ],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "7E43F54C-1B05-4031-8116-D639B7C5D1CD",
+      "label": "编组",
+      "text": null,
+      "bounds": {
+        "x": 111,
+        "y": 748,
+        "width": 20,
+        "height": 18.973801138537
+      },
+      "asset_ids": [
+        "7E43F54C-1B05-4031-8116-D639B7C5D1CD:image"
+      ],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "F97AB976-BFAB-4C56-B25C-CA2A45219E44",
+      "label": "编组 12",
+      "text": null,
+      "bounds": {
+        "x": 74,
+        "y": 418,
+        "width": 15,
+        "height": 11
+      },
+      "asset_ids": [
+        "F97AB976-BFAB-4C56-B25C-CA2A45219E44:image"
+      ],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "4537C8B5-3F90-4C68-871C-484FE91B3321",
+      "label": "编组 3",
+      "text": null,
+      "bounds": {
+        "x": 73,
+        "y": 484,
+        "width": 15,
+        "height": 11
+      },
+      "asset_ids": [
+        "4537C8B5-3F90-4C68-871C-484FE91B3321:image"
+      ],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "5E4BDAF8-3661-4002-B776-1385DCF1412A",
+      "label": "矩形",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "0362BC69-EB5B-4182-9303-66E991389809",
+      "label": "矩形 12",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 181,
+        "width": 374,
+        "height": 631
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "E0DA0AD1-238A-4EA9-8E03-B4FACA073281",
+      "label": "矩形 3",
+      "text": null,
+      "bounds": {
+        "x": 60,
+        "y": 144,
+        "width": 285,
+        "height": 32
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "F1E7397E-0F82-4895-A308-DF26139BFDCF",
+      "label": "矩形 2",
+      "text": null,
+      "bounds": {
+        "x": 64,
+        "y": 147,
+        "width": 66,
+        "height": 26
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "0C1AEF14-9E1E-468C-BFC7-F82AB1479722",
+      "label": "全部",
+      "text": "全部",
+      "bounds": {
+        "x": 84,
+        "y": 151,
+        "width": 26,
+        "height": 18
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "5537F6F8-F41A-45CD-B8C3-2882F4F7C770",
+      "label": "熟人",
+      "text": "熟人",
+      "bounds": {
+        "x": 148,
+        "y": 151,
+        "width": 26,
+        "height": 18
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "D642FADB-A810-4F71-B78C-28A13C8A95DF",
+      "label": "深夜聊的...",
+      "text": "深夜聊的...",
+      "bounds": {
+        "x": 193,
+        "y": 151,
+        "width": 63,
+        "height": 18
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "35FB7F5A-2CD5-43E2-B3B0-C83D8ECE172C",
+      "label": "我关注的",
+      "text": "我关注的",
+      "bounds": {
+        "x": 275,
+        "y": 151,
+        "width": 52,
+        "height": 18
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "F32CD366-88D9-42F7-85B4-797FD7120466",
+      "label": "矩形 6",
+      "text": null,
+      "bounds": {
+        "x": 16,
+        "y": 145,
+        "width": 38,
+        "height": 30
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "8B3CC333-87B8-41BE-9383-B84ABC675CE5",
+      "label": "线条 2",
+      "text": null,
+      "bounds": {
+        "x": 28,
+        "y": 154,
+        "width": 14,
+        "height": 1
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "D3209346-42BA-4EA3-B2B7-B969838AD5BA",
+      "label": "线条 3",
+      "text": null,
+      "bounds": {
+        "x": 28,
+        "y": 159.5666666666666,
+        "width": 10,
+        "height": 1
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "B32D8FA6-CC66-457C-A45E-ACA227BCBC52",
+      "label": "线条 4",
+      "text": null,
+      "bounds": {
+        "x": 28,
+        "y": 165.1333333333332,
+        "width": 7,
+        "height": 1
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "FC627801-DD3F-4D0C-9CF9-F783E5CBA69F",
+      "label": "矩形",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 574,
+        "width": 375,
+        "height": 65
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "55028FBE-EF86-41CB-BAC1-7D3D24A75DD8",
+      "label": "矩形备份",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 250,
+        "width": 375,
+        "height": 65
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "19F7F0D4-391F-4AD7-BF0A-9CA4AA5C5C1C",
+      "label": "矩形备份 2",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 185,
+        "width": 375,
+        "height": 65
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "0C05ADD8-104B-4B6D-84E4-D1E1A74C4966",
+      "label": "矩形备份 3",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 316,
+        "width": 375,
+        "height": 65
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "9851D4CD-7B22-4BBA-973A-2BBB1A01EAA4",
+      "label": "矩形备份 4",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 381,
+        "width": 375,
+        "height": 65
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "67C99A07-E334-412F-8D38-655562118830",
+      "label": "矩形备份 5",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 446,
+        "width": 375,
+        "height": 65
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "62CF972E-931F-496D-981B-87217AA5731F",
+      "label": "蒙版",
+      "text": null,
+      "bounds": {
+        "x": 16,
+        "y": 193,
+        "width": 45,
+        "height": 45
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "19AF1D08-D83A-423E-955E-A9FF3858815F",
+      "label": "位图",
+      "text": null,
+      "bounds": {
+        "x": 16,
+        "y": 193,
+        "width": 45,
+        "height": 45
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "EB457189-4BDD-4552-9EB5-387A57189BE9",
+      "label": "蒙版",
+      "text": null,
+      "bounds": {
+        "x": 16,
+        "y": 584,
+        "width": 45,
+        "height": 45
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "90D00F37-547E-45FC-93C1-260D0A9E8C44",
+      "label": "image (18)",
+      "text": null,
+      "bounds": {
+        "x": 18,
+        "y": 588,
+        "width": 41,
+        "height": 41
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "A45226A9-7833-43EA-8E96-5D886C6E084D",
+      "label": "蒙版",
+      "text": null,
+      "bounds": {
+        "x": 16,
+        "y": 650,
+        "width": 45,
+        "height": 45
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "8722E370-4F94-493E-BD71-7DE9DCF5A30E",
+      "label": "位图",
+      "text": null,
+      "bounds": {
+        "x": 20.768292682926813,
+        "y": 655.5102715169141,
+        "width": 36,
+        "height": 32
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "9271E4DC-4DF4-4BAE-BC37-8A01B97E1F8D",
+      "label": "位图",
+      "text": null,
+      "bounds": {
+        "x": 25,
+        "y": 656,
+        "width": 8,
+        "height": 10
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "8037B333-4A98-433A-B28E-D5D57CFF7ACB",
+      "label": "蒙版",
+      "text": null,
+      "bounds": {
+        "x": 16,
+        "y": 259,
+        "width": 45,
+        "height": 45
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "EB339216-DFCF-4FCC-9D4E-A0ADC0740ED8",
+      "label": "位图",
+      "text": null,
+      "bounds": {
+        "x": 16,
+        "y": 259,
+        "width": 45,
+        "height": 45
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "98A39B8B-BBED-45FD-81E8-8B3E26F35A6D",
+      "label": "蒙版",
+      "text": null,
+      "bounds": {
+        "x": 16,
+        "y": 325,
+        "width": 45,
+        "height": 45
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "041ED0CB-B935-4C6D-B376-324747046BD0",
+      "label": "位图",
+      "text": null,
+      "bounds": {
+        "x": 16,
+        "y": 325,
+        "width": 45,
+        "height": 45
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "8A4CE263-A516-4FD5-BE80-D8BB5E9AA305",
+      "label": "蒙版",
+      "text": null,
+      "bounds": {
+        "x": 16,
+        "y": 521,
+        "width": 45,
+        "height": 45
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "855C23D7-8B7A-45D1-984B-C80FE8863534",
+      "label": "位图",
+      "text": null,
+      "bounds": {
+        "x": 16,
+        "y": 521,
+        "width": 45,
+        "height": 45
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "BE6C288D-F263-479A-B2AC-BE0107C0B72A",
+      "label": "蒙版",
+      "text": null,
+      "bounds": {
+        "x": 16,
+        "y": 390,
+        "width": 45,
+        "height": 45
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "93CEC73E-5E96-47E8-BC7D-40FE30174D39",
+      "label": "位图",
+      "text": null,
+      "bounds": {
+        "x": 16,
+        "y": 390,
+        "width": 44.717277486911,
+        "height": 45
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "9DDC299E-A419-4CE7-A7DD-E58C91422599",
+      "label": "蒙版",
+      "text": null,
+      "bounds": {
+        "x": 16,
+        "y": 455,
+        "width": 45,
+        "height": 45
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "3DEB988F-E662-402A-9CB6-4423C6A9AEEE",
+      "label": "位图",
+      "text": null,
+      "bounds": {
+        "x": 16,
+        "y": 455,
+        "width": 45,
+        "height": 45
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "EFFEB311-801C-4291-90CA-5D09774B24E5",
+      "label": "阿珍同学备份",
+      "text": "阿珍同学",
+      "bounds": {
+        "x": 71,
+        "y": 196,
+        "width": 60,
+        "height": 21
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "8B99809F-C198-48F0-96D7-6FD820ED6779",
+      "label": "官方通知",
+      "text": "官方通知",
+      "bounds": {
+        "x": 71,
+        "y": 586,
+        "width": 60,
+        "height": 21
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "AB71930D-FBFF-42F8-983E-1327B840B618",
+      "label": "旎旎马克",
+      "text": "旎旎马克",
+      "bounds": {
+        "x": 71,
+        "y": 262,
+        "width": 60,
+        "height": 21
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "E261A733-8738-4A62-A323-5B4D53683B35",
+      "label": "晚风",
+      "text": "晚风",
+      "bounds": {
+        "x": 71,
+        "y": 328,
+        "width": 30,
+        "height": 21
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "71D1D464-24FE-4F37-AFCD-F156DB1BAC46",
+      "label": "跳舞机宝贝",
+      "text": "跳舞机宝贝",
+      "bounds": {
+        "x": 71,
+        "y": 524,
+        "width": 75,
+        "height": 21
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "DCB46A82-CA5D-4070-8771-BACF5E90A25D",
+      "label": "花花",
+      "text": "花花",
+      "bounds": {
+        "x": 71,
+        "y": 393,
+        "width": 30,
+        "height": 21
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "DB38DED7-9157-4A11-B145-B63AEB8FD52D",
+      "label": "物简则明",
+      "text": "物简则明",
+      "bounds": {
+        "x": 71,
+        "y": 458,
+        "width": 60,
+        "height": 21
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "FE1D62F4-9919-427E-80CD-50D88551CD4F",
+      "label": "你在干嘛呀？",
+      "text": "你在干嘛呀？",
+      "bounds": {
+        "x": 71,
+        "y": 220,
+        "width": 72,
+        "height": 17
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "2E6749E2-5A34-4A0C-AC2D-1F00A0FD4457",
+      "label": "XXXXXXXXXXXXXXXXXXXX",
+      "text": "XXXXXXXXXXXXXXXXXXXX XXXX XXXX XX",
+      "bounds": {
+        "x": 71,
+        "y": 609,
+        "width": 242,
+        "height": 17
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "CC93AFAA-4579-4C99-B988-D534E69156A2",
+      "label": "[微笑][微笑]",
+      "text": "[微笑][微笑]",
+      "bounds": {
+        "x": 71,
+        "y": 284,
+        "width": 64,
+        "height": 17
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "70FA4A98-D4D2-4418-ABE0-3DD2591CFF3E",
+      "label": "[图片]",
+      "text": "[图片]",
+      "bounds": {
+        "x": 71,
+        "y": 350,
+        "width": 32,
+        "height": 17
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "ED916437-72A5-4ED0-8B0D-7CC691D2A33E",
+      "label": "[语音]",
+      "text": "[语音]",
+      "bounds": {
+        "x": 71,
+        "y": 546,
+        "width": 32,
+        "height": 17
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "46E9D9C6-D414-4B7D-A9BE-CA9B334C735D",
+      "label": "15:33",
+      "text": "15:33",
+      "bounds": {
+        "x": 332,
+        "y": 200,
+        "width": 25,
+        "height": 14
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "F0238E4D-3961-4739-8A97-89A28EB22EAD",
+      "label": "15:33备份",
+      "text": "15:33",
+      "bounds": {
+        "x": 332,
+        "y": 266,
+        "width": 25,
+        "height": 14
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "3EC3E755-FAA1-4DDD-9EAE-612F08C3BBE1",
+      "label": "15:33备份 2",
+      "text": "15:33",
+      "bounds": {
+        "x": 332,
+        "y": 332,
+        "width": 25,
+        "height": 14
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "FCF9F2FA-8B62-4324-B92A-23E1655455F0",
+      "label": "15:33备份 5",
+      "text": "15:33",
+      "bounds": {
+        "x": 332,
+        "y": 528,
+        "width": 25,
+        "height": 14
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "52057523-1C55-4032-BD6D-888DBF0E2746",
+      "label": "15:33备份 3",
+      "text": "15:33",
+      "bounds": {
+        "x": 332,
+        "y": 397,
+        "width": 25,
+        "height": 14
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "957E5DF0-504A-4AD7-8413-DA167A93B5AF",
+      "label": "15:33备份 4",
+      "text": "15:33",
+      "bounds": {
+        "x": 332,
+        "y": 462,
+        "width": 25,
+        "height": 14
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "1EB23E40-A19D-457B-A93B-071808B9688F",
+      "label": "矩形 7",
+      "text": null,
+      "bounds": {
+        "x": 337,
+        "y": 221,
+        "width": 18,
+        "height": 14
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "634EF614-0DA1-4AA4-978F-ED5280D81A62",
+      "label": "2",
+      "text": "2",
+      "bounds": {
+        "x": 343,
+        "y": 221,
+        "width": 6,
+        "height": 14
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "108A2899-BEB5-4823-A559-FD3F91D04687",
+      "label": "15:33备份 6",
+      "text": "15:33",
+      "bounds": {
+        "x": 332,
+        "y": 588,
+        "width": 25,
+        "height": 14
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "F53F2221-4DF5-4224-9A09-DA0D575ED8FE",
+      "label": "矩形 9",
+      "text": null,
+      "bounds": {
+        "x": 337,
+        "y": 609,
+        "width": 18,
+        "height": 14
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "D040772A-6F12-4F4B-A32C-E3133AA53B65",
+      "label": "2备份 3",
+      "text": "2",
+      "bounds": {
+        "x": 343,
+        "y": 609,
+        "width": 6,
+        "height": 14
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "FBBCE9F1-5C00-4E45-B418-F9489AB39F2C",
+      "label": "提醒消息",
+      "text": "提醒消息",
+      "bounds": {
+        "x": 71,
+        "y": 651,
+        "width": 60,
+        "height": 21
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "D7447525-29A4-42E4-8F15-63165C38B169",
+      "label": "XX XXXX XXXXXXXXXXXX",
+      "text": "XX XXXX XXXXXXXXXXXXXXXXXXXXXX X",
+      "bounds": {
+        "x": 71,
+        "y": 674,
+        "width": 234,
+        "height": 17
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "7C5094FD-9786-4F47-A543-90BEBE192FC9",
+      "label": "15:33备份 7",
+      "text": "15:33",
+      "bounds": {
+        "x": 332,
+        "y": 653,
+        "width": 25,
+        "height": 14
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "461A842A-7035-45E3-A472-A2E78CC78187",
+      "label": "矩形 11",
+      "text": null,
+      "bounds": {
+        "x": 337,
+        "y": 674,
+        "width": 18,
+        "height": 14
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "C9E6D2B4-60AC-4B8A-AD0E-47B5E44E9A5D",
+      "label": "2备份 4",
+      "text": "2",
+      "bounds": {
+        "x": 343,
+        "y": 674,
+        "width": 6,
+        "height": 14
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "AE305BFE-F23F-4455-B5A5-1D787B79CD83",
+      "label": "椭圆形",
+      "text": null,
+      "bounds": {
+        "x": 49,
+        "y": 228,
+        "width": 8,
+        "height": 8
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "FD497F20-0867-4A0E-B1FE-4B5F8EDB07F9",
+      "label": "椭圆形备份",
+      "text": null,
+      "bounds": {
+        "x": 49,
+        "y": 295,
+        "width": 8,
+        "height": 8
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "6C181068-D8B6-4631-A0D9-8F8972039253",
+      "label": "椭圆形备份 3",
+      "text": null,
+      "bounds": {
+        "x": 49,
+        "y": 558,
+        "width": 8,
+        "height": 8
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "09E8BE26-5F7E-4794-9FEB-148DDA94D420",
+      "label": "椭圆形备份 4",
+      "text": null,
+      "bounds": {
+        "x": 49,
+        "y": 492,
+        "width": 8,
+        "height": 8
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "89ECCDB3-A81B-463E-B28C-96F11046401B",
+      "label": "椭圆形备份 2",
+      "text": null,
+      "bounds": {
+        "x": 49,
+        "y": 363,
+        "width": 8,
+        "height": 8
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "3E472CEA-8225-4730-BD2E-6CE604E714FE",
+      "label": "矩形",
+      "text": null,
+      "bounds": {
+        "x": 16,
+        "y": 104,
+        "width": 343,
+        "height": 30
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "352986D6-1414-4883-9A87-AEF8688F761F",
+      "label": "路径",
+      "text": null,
+      "bounds": {
+        "x": 339,
+        "y": 115,
+        "width": 8,
+        "height": 8
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "96C39716-4AAC-4691-A3B9-75C420862FEE",
+      "label": "路径",
+      "text": null,
+      "bounds": {
+        "x": 339,
+        "y": 115,
+        "width": 8,
+        "height": 8
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "69A394C6-3541-4751-A3E9-EBDF57CF5535",
+      "label": "推送通知未开启，会错过重要消息哦",
+      "text": "推送通知未开启，会错过重要消息哦",
+      "bounds": {
+        "x": 30,
+        "y": 111,
+        "width": 192,
+        "height": 17
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "F621EB45-D468-497C-B14E-4EEE962B8D5D",
+      "label": "去开启",
+      "text": "去开启",
+      "bounds": {
+        "x": 281,
+        "y": 111,
+        "width": 33,
+        "height": 16
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "B61471BC-A4F7-434A-90AF-079717E65D4B",
+      "label": "路径",
+      "text": null,
+      "bounds": {
+        "x": 318,
+        "y": 115,
+        "width": 4,
+        "height": 8
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "9AC5273A-7FCE-4B44-BA19-75589E375530",
+      "label": "蒙版",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 100
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "E2C9D9CE-510C-4788-B84B-0514188FF056",
+      "label": "蒙版",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 100
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "B147D450-BCC9-4082-B785-D832393CB38D",
+      "label": "椭圆形",
+      "text": null,
+      "bounds": {
+        "x": 28.358208955223972,
+        "y": 0,
+        "width": 94,
+        "height": 26
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "51FF62AF-5708-45D8-9B99-23132F55924D",
+      "label": "矩形",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 714,
+        "width": 375,
+        "height": 98
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "E0F638E7-F5FD-4B16-9165-DF670CE858A7",
+      "label": "矩形 13",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 692,
+        "width": 375,
+        "height": 120
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "A22A1CD3-4A07-4A0C-B1AC-2D4D2F78CB84",
+      "label": "路径",
+      "text": null,
+      "bounds": {
+        "x": 348,
+        "y": 711,
+        "width": 8,
+        "height": 4
+      },
+      "asset_ids": [
+        "A22A1CD3-4A07-4A0C-B1AC-2D4D2F78CB84:image"
+      ],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "5FB6266F-941F-42E9-8E1A-AC46207C0726",
+      "label": "折叠置顶会话",
+      "text": "折叠置顶会话",
+      "bounds": {
+        "x": 46,
+        "y": 703,
+        "width": 78,
+        "height": 18
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "0282A85E-42D7-4A18-94FC-0278614568B4",
+      "label": "矩形",
+      "text": null,
+      "bounds": {
+        "x": 14,
+        "y": 735,
+        "width": 347,
+        "height": 56
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "B9ADE0E9-186A-4702-BB43-0DA751F0AC09",
+      "label": "路径",
+      "text": null,
+      "bounds": {
+        "x": 248,
+        "y": 751.1951219512193,
+        "width": 13.1707317073171,
+        "height": 14
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "00B974F6-5290-464B-B27A-EEBA1F17C324",
+      "label": "路径",
+      "text": null,
+      "bounds": {
+        "x": 251.5121951219512,
+        "y": 749,
+        "width": 6.14634146341464,
+        "height": 4.82926829268293
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "B69BAED1-3A93-4DB1-A9C2-7BF56126F3F9",
+      "label": "直线",
+      "text": null,
+      "bounds": {
+        "x": 251.5,
+        "y": 757,
+        "width": 4,
+        "height": 1
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "5DF8613D-E341-4766-B778-D8132B47E038",
+      "label": "直线备份",
+      "text": null,
+      "bounds": {
+        "x": 251,
+        "y": 761,
+        "width": 7,
+        "height": 1
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "FA95C5D8-45A8-4CA2-BA25-398B34A85826",
+      "label": "任务",
+      "text": "任务",
+      "bounds": {
+        "x": 246,
+        "y": 772,
+        "width": 18,
+        "height": 10
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "DB51A054-7C3C-409E-9FEA-E1002A74BBAD",
+      "label": "矩形",
+      "text": null,
+      "bounds": {
+        "x": 91,
+        "y": 742,
+        "width": 60,
+        "height": 43
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "4927CFE0-4C27-487A-8D24-C5936A3FBB8F",
+      "label": "矩形 10",
+      "text": null,
+      "bounds": {
+        "x": 135,
+        "y": 740,
+        "width": 18,
+        "height": 14
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "44BF32A0-9202-4EFC-96C3-0B8175371A61",
+      "label": "2备份",
+      "text": "2",
+      "bounds": {
+        "x": 141,
+        "y": 740,
+        "width": 6,
+        "height": 14
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "BA1AE646-8A40-43C5-865E-CC33E5BDFA80",
+      "label": "蒙版",
+      "text": null,
+      "bounds": {
+        "x": 45,
+        "y": 748,
+        "width": 20.000076801688,
+        "height": 18
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "FA583A45-037D-4A6C-8034-B52093FEBC4B",
+      "label": "矩形",
+      "text": null,
+      "bounds": {
+        "x": 53,
+        "y": 760,
+        "width": 4,
+        "height": 6
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "E22778F2-C122-400F-BBB0-D2AFE406B411",
+      "label": "路径",
+      "text": null,
+      "bounds": {
+        "x": 306,
+        "y": 748,
+        "width": 18,
+        "height": 18
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "37DCF556-DC29-4A8E-A336-198D60F9431C",
+      "label": "路径",
+      "text": null,
+      "bounds": {
+        "x": 312.75,
+        "y": 752.0500000000002,
+        "width": 4.5,
+        "height": 4.5
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "676536B8-FB55-4FE7-AEC7-6BA1303C9B74",
+      "label": "路径",
+      "text": null,
+      "bounds": {
+        "x": 308.70990000000006,
+        "y": 759.25,
+        "width": 12.579615,
+        "height": 4.1994
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "0B3B46CC-A4DF-4DF9-AC6B-DF410C7F9615",
+      "label": "路径",
+      "text": null,
+      "bounds": {
+        "x": 179,
+        "y": 750,
+        "width": 18,
+        "height": 15.44679
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "177540CD-7AB1-49B1-B887-CAC8B6237422",
+      "label": "路径 3",
+      "text": null,
+      "bounds": {
+        "x": 190.77392578125,
+        "y": 753.0068359375009,
+        "width": 3.50390625,
+        "height": 2.26589133522736
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "15E4D7B9-FB35-406B-B5FF-37A3255B5802",
+      "label": "我的备份 4",
+      "text": "我的",
+      "bounds": {
+        "x": 307,
+        "y": 772,
+        "width": 18,
+        "height": 10
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "B7D095DE-91A2-43D2-88ED-410C09D98BFA",
+      "label": "关系",
+      "text": "关系",
+      "bounds": {
+        "x": 179,
+        "y": 772,
+        "width": 18,
+        "height": 10
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "8155588F-657C-42C3-A122-1753183C8986",
+      "label": "首页",
+      "text": "首页",
+      "bounds": {
+        "x": 46,
+        "y": 772,
+        "width": 18,
+        "height": 10
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "11FE3C1C-3908-4E83-82DA-CDE97BC97F47",
+      "label": "Border",
+      "text": null,
+      "bounds": {
+        "x": 336.3333,
+        "y": 17.33333333333303,
+        "width": 22,
+        "height": 11.3333333333333
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "0E5A8C4C-0F18-48C1-BB82-4EDDD5AF2BD0",
+      "label": "Cap",
+      "text": null,
+      "bounds": {
+        "x": 359.3333,
+        "y": 21,
+        "width": 1.32803800560835,
+        "height": 4
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "ED68A070-4FA1-4A1C-89B9-8B7E7FD43FCB",
+      "label": "Capacity",
+      "text": null,
+      "bounds": {
+        "x": 338.3333,
+        "y": 19.33333333333303,
+        "width": 18,
+        "height": 7.33333333333333
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "32B8FAA8-FC89-460C-86A9-E63602A4AAC9",
+      "label": "Wifi",
+      "text": null,
+      "bounds": {
+        "x": 316,
+        "y": 17.330672704032622,
+        "width": 15.3333,
+        "height": 11
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "9C308AF8-A8E2-4C9C-947B-D75798C270A2",
+      "label": "Cellular Connection",
+      "text": null,
+      "bounds": {
+        "x": 294,
+        "y": 17.666667000000416,
+        "width": 17,
+        "height": 10.6666666666667
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "950F8103-14F5-4B2E-8252-ED0BB71FB15A",
+      "label": "Time",
+      "text": "9:41",
+      "bounds": {
+        "x": 21,
+        "y": 14.333300000000236,
+        "width": 54,
+        "height": 18
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "5FF91BB3-6FC7-4167-AFD5-7750A57D6F50",
+      "label": "Bars/Status Bars/iPhone/Light",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 44
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "C50592A0-9B55-4586-BA95-E5107D5F3524",
+      "label": "消息",
+      "text": "消息",
+      "bounds": {
+        "x": 112,
+        "y": 772,
+        "width": 18,
+        "height": 10
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "CB408699-5E04-4982-B174-3A40B891B044",
+      "label": "蒙版",
+      "text": null,
+      "bounds": {
+        "x": 111,
+        "y": 748,
+        "width": 20,
+        "height": 18.973801138537
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "E79752FB-AEFC-4EBC-B3A6-377516D395D2",
+      "label": "椭圆形",
+      "text": null,
+      "bounds": {
+        "x": 115,
+        "y": 748,
+        "width": 12,
+        "height": 4
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "EF251A1A-038E-44B1-A2F0-03F41E9FBD5A",
+      "label": "路径",
+      "text": null,
+      "bounds": {
+        "x": 123.9545454545455,
+        "y": 754.818181818182,
+        "width": 0.454545454545457,
+        "height": 0.454545454545454
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "2E4A14E5-811C-46FA-A3B2-35815A50F919",
+      "label": "路径",
+      "text": null,
+      "bounds": {
+        "x": 117.59090909090901,
+        "y": 754.818181818182,
+        "width": 0.454545454545454,
+        "height": 0.454545454545454
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "8E24E949-FD21-4FAA-99AD-F4A22D4C6DA7",
+      "label": "路径",
+      "text": null,
+      "bounds": {
+        "x": 117.81818181818176,
+        "y": 758.909090909091,
+        "width": 6.36363636363636,
+        "height": 1.81818181818182
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "F496DD98-915C-4CB4-805A-FCAF6EDF5FEC",
+      "label": "路径 4",
+      "text": null,
+      "bounds": {
+        "x": 57.59466422272794,
+        "y": 75.2705078125,
+        "width": 19.7111104393502,
+        "height": 12
+      },
+      "asset_ids": [
+        "F496DD98-915C-4CB4-805A-FCAF6EDF5FEC:image"
+      ],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "60E096F3-B05B-462C-9930-AFD796E3A0FC",
+      "label": "消息",
+      "text": "消息",
+      "bounds": {
+        "x": 16,
+        "y": 51,
+        "width": 52,
+        "height": 37
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "8B9F016C-B7F7-4091-87F2-924ABE1BBC84",
+      "label": "通话记录",
+      "text": "通话记录",
+      "bounds": {
+        "x": 92.06108810937894,
+        "y": 58,
+        "width": 60,
+        "height": 21
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "E24A09BA-24F1-4B9B-9286-B0B61B33BA51",
+      "label": "Home Indicator",
+      "text": null,
+      "bounds": {
+        "x": 121,
+        "y": 799,
+        "width": 134,
+        "height": 5
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "C11FF705-6328-4645-B086-4A29FCDB0988",
+      "label": "Bars/Home Indicators/iPhone/Light - Portrait",
+      "text": null,
+      "bounds": {
+        "x": 121,
+        "y": 778,
+        "width": 134,
+        "height": 34
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "BC6D8A6F-99E6-4EE0-8A1F-41A48D04E4D8",
+      "label": "矩形备份 6",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 509,
+        "width": 375,
+        "height": 65
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "AE1FCEC9-A280-41D1-9B23-31DA0EE5BE3B",
+      "label": "矩形 8",
+      "text": null,
+      "bounds": {
+        "x": 145,
+        "y": 47,
+        "width": 18,
+        "height": 14
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "E9965EB8-AFF1-4AF2-8B53-476C534D5A6C",
+      "label": "2备份 2",
+      "text": "2",
+      "bounds": {
+        "x": 151,
+        "y": 47,
+        "width": 6,
+        "height": 14
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "EAD6916A-5F10-4083-AE83-B316B680D0C0",
+      "label": "形状结合",
+      "text": null,
+      "bounds": {
+        "x": 74,
+        "y": 418,
+        "width": 15.0000000000001,
+        "height": 11
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "7C23E5C4-319A-4BC8-A7F2-6DD382875EA4",
+      "label": "线条",
+      "text": null,
+      "bounds": {
+        "x": 77.36959519390348,
+        "y": 421.0755360795529,
+        "width": 2.45528810417371,
+        "height": 0.613822026043429
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "E173F20F-8990-4F81-AB62-B942CF77D10D",
+      "label": "未接",
+      "text": "未接",
+      "bounds": {
+        "x": 95,
+        "y": 415,
+        "width": 24,
+        "height": 17
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "3B155625-8B03-44A6-92A9-D4D0AF7C1E94",
+      "label": "已取消",
+      "text": "已取消",
+      "bounds": {
+        "x": 94,
+        "y": 480,
+        "width": 36,
+        "height": 17
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "EBADDDCD-960A-4727-98CE-9C891EB1EE72",
+      "label": "形状结合",
+      "text": null,
+      "bounds": {
+        "x": 73,
+        "y": 484,
+        "width": 15.0000000000001,
+        "height": 11
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "16E1CD81-0431-40C8-94EC-0E6FF1A2CD83",
+      "label": "线条",
+      "text": null,
+      "bounds": {
+        "x": 76.36959519390348,
+        "y": 487.0755360795529,
+        "width": 2.45528810417371,
+        "height": 0.613822026043429
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "1F4CDA85-5264-4AFD-A9C5-684DF24F84B4",
+      "label": "矩形 4",
+      "text": null,
+      "bounds": {
+        "x": 136,
+        "y": 265,
+        "width": 32,
+        "height": 14
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "7DFB8813-32B5-4632-9A77-82BC9F25DAE4",
+      "label": "熟人",
+      "text": "熟人",
+      "bounds": {
+        "x": 143,
+        "y": 266,
+        "width": 18,
+        "height": 13
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "E19403CA-08F1-4D20-B85C-CAF7F648AAF4",
+      "label": "矩形 5",
+      "text": null,
+      "bounds": {
+        "x": 136,
+        "y": 198,
+        "width": 32,
+        "height": 14
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "119461FF-E165-4344-998B-E2A84C845986",
+      "label": "生人",
+      "text": "生人",
+      "bounds": {
+        "x": 144,
+        "y": 198,
+        "width": 18,
+        "height": 13
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "features",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "6D712D6D-7EC4-40D6-A4D6-B6DBF7B42763",
+      "label": "线条",
+      "text": null,
+      "bounds": {
+        "x": 23.5,
+        "y": 705.9999999999991,
+        "width": 1.5,
+        "height": 1
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "CA21BB0E-3177-455D-BF3C-01A8DE80CCE6",
+      "label": "线条 2",
+      "text": null,
+      "bounds": {
+        "x": 23.5,
+        "y": 711.5,
+        "width": 1.5,
+        "height": 1
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "26021B27-EE2A-465A-9389-E336B2D44395",
+      "label": "线条 3",
+      "text": null,
+      "bounds": {
+        "x": 23.5,
+        "y": 716.9999999999991,
+        "width": 1.5,
+        "height": 1
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "FB7B8225-D25C-485C-993F-C77602F6DA28",
+      "label": "线条 6",
+      "text": null,
+      "bounds": {
+        "x": 27.499999999999773,
+        "y": 705.9999999999991,
+        "width": 8.00000000000014,
+        "height": 1
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "60FB67EE-888B-48F6-9371-D5AAD5142C2A",
+      "label": "线条 5",
+      "text": null,
+      "bounds": {
+        "x": 27.499999999999773,
+        "y": 711.5,
+        "width": 8.00000000000014,
+        "height": 1
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "39267A01-AA6C-4FFE-91D4-E2B0D0DC35C1",
+      "label": "线条 4",
+      "text": null,
+      "bounds": {
+        "x": 27.499999999999773,
+        "y": 716.9999999999991,
+        "width": 8.00000000000014,
+        "height": 1
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    },
+    {
+      "node_id": "03E16F01-50B6-4D85-98C8-227018EA45EF",
+      "label": "线条",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 691,
+        "width": 375,
+        "height": 1
+      },
+      "asset_ids": [],
+      "evidence_hints": {
+        "vector_data_present": false,
+        "effect_fields": []
+      },
+      "implementation": "pending",
+      "suggested_check": "regions/color_samples",
+      "needs_review": true,
+      "detector_hint": "Choose using source colors and a clean crop; do not infer from name"
+    }
+  ],
+  "relation_candidates": [
+    {
+      "node_ids": [
+        "DB30FAD9-2588-4A4A-BA0A-3DC544FEC67A",
+        "39188530-995C-4BDE-92F1-09A185A9CD9D"
+      ],
+      "metric": "center_y",
+      "needs_review": true
+    },
+    {
+      "node_ids": [
+        "DB30FAD9-2588-4A4A-BA0A-3DC544FEC67A",
+        "F621EB45-D468-497C-B14E-4EEE962B8D5D"
+      ],
+      "metric": "center_y",
+      "needs_review": true
+    },
+    {
+      "node_ids": [
+        "39188530-995C-4BDE-92F1-09A185A9CD9D",
+        "F621EB45-D468-497C-B14E-4EEE962B8D5D"
+      ],
+      "metric": "center_y",
+      "needs_review": true
+    },
+    {
+      "node_ids": [
+        "F97AB976-BFAB-4C56-B25C-CA2A45219E44",
+        "E173F20F-8990-4F81-AB62-B942CF77D10D"
+      ],
+      "metric": "center_y",
+      "needs_review": true
+    },
+    {
+      "node_ids": [
+        "4537C8B5-3F90-4C68-871C-484FE91B3321",
+        "3B155625-8B03-44A6-92A9-D4D0AF7C1E94"
+      ],
+      "metric": "center_y",
+      "needs_review": true
+    },
+    {
+      "node_ids": [
+        "5537F6F8-F41A-45CD-B8C3-2882F4F7C770",
+        "D642FADB-A810-4F71-B78C-28A13C8A95DF"
+      ],
+      "metric": "center_y",
+      "needs_review": true
+    },
+    {
+      "node_ids": [
+        "D642FADB-A810-4F71-B78C-28A13C8A95DF",
+        "35FB7F5A-2CD5-43E2-B3B0-C83D8ECE172C"
+      ],
+      "metric": "center_y",
+      "needs_review": true
+    },
+    {
+      "node_ids": [
+        "EFFEB311-801C-4291-90CA-5D09774B24E5",
+        "119461FF-E165-4344-998B-E2A84C845986"
+      ],
+      "metric": "center_y",
+      "needs_review": true
+    },
+    {
+      "node_ids": [
+        "AB71930D-FBFF-42F8-983E-1327B840B618",
+        "7DFB8813-32B5-4632-9A77-82BC9F25DAE4"
+      ],
+      "metric": "center_y",
+      "needs_review": true
+    },
+    {
+      "node_ids": [
+        "2E6749E2-5A34-4A0C-AC2D-1F00A0FD4457",
+        "D040772A-6F12-4F4B-A32C-E3133AA53B65"
+      ],
+      "metric": "center_y",
+      "needs_review": true
+    },
+    {
+      "node_ids": [
+        "60E096F3-B05B-462C-9930-AFD796E3A0FC",
+        "8B9F016C-B7F7-4091-87F2-924ABE1BBC84"
+      ],
+      "metric": "center_y",
+      "needs_review": true
+    }
+  ],
+  "effect_candidates": [],
+  "scope": "Only nodes contained in supplied evidence; finish MCP pagination before acceptance"
+}

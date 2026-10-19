@@ -1,0 +1,654 @@
+{
+  "schema_version": 1,
+  "task_id": "405d83b2-21fe-4934-b5b9-3f3e9c8d1a46",
+  "identity": {
+    "name": "平台介绍页视觉契约",
+    "snapshot": null,
+    "version": null,
+    "canvas": [
+      375,
+      812
+    ]
+  },
+  "created_at": "2026-10-13T08:42:48+00:00",
+  "rounds": [
+    {
+      "round_number": 1,
+      "fingerprint": "241349184f79032baea857764d9cbb0332369be76a38cab791e5eaec41d3d28d",
+      "contract_sha256": "693744f75cdc053feea251452c8639796d1e1993c1799daae043681883ab3699",
+      "contract_changed": false,
+      "attempts": [
+        {
+          "attempt_id": "94117c53-b269-4673-ac7e-9af1c060ea81",
+          "attempt_number": 1,
+          "started_at": "2026-10-13T08:42:48+00:00",
+          "status": "DIAGNOSTIC",
+          "note": "初版：仅基于冻结蓝湖节点和11张原始切图实现；开始检查整体区域、关键图标、文字和组内对齐。",
+          "pid": 10618,
+          "run_report": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/platform-intro-optimized/r0/run.json",
+          "seconds": 2.617,
+          "gate_status": "DIAGNOSTIC_DIFFERENCES",
+          "failures": [
+            {
+              "check": "regions.whole",
+              "failures": [
+                "mae=13.3147 > 5.0000",
+                "p95=129.00 > 26.00"
+              ]
+            },
+            {
+              "check": "regions.capabilities",
+              "failures": [
+                "mae=15.0241 > 7.0000",
+                "p95=150.00 > 28.00"
+              ]
+            },
+            {
+              "check": "regions.benefits",
+              "failures": [
+                "mae=24.4171 > 8.0000",
+                "p95=199.00 > 55.00"
+              ]
+            },
+            {
+              "check": "regions.cta",
+              "failures": [
+                "mae=6.3211 > 3.0000",
+                "p95=58.00 > 8.00"
+              ]
+            },
+            {
+              "check": "features.capability_badge",
+              "failures": [
+                "center_x_delta=2.24px > 1.00px",
+                "max_edge_delta=2.75px > 2.00px"
+              ]
+            },
+            {
+              "check": "features.benefit_badge",
+              "failures": [
+                "center_x_delta=8.20px > 1.00px",
+                "width_delta=-8.25px > 1.50px",
+                "max_edge_delta=8.25px > 2.00px"
+              ]
+            },
+            {
+              "check": "features.benefit_heading",
+              "failures": [
+                "center_x_delta=-2.53px > 1.00px",
+                "width_delta=2.75px > 1.50px",
+                "max_edge_delta=2.50px > 2.00px"
+              ]
+            },
+            {
+              "check": "features.capability_1_icon",
+              "failures": [
+                "center_y_delta=3.00px > 1.00px",
+                "max_edge_delta=3.00px > 1.50px"
+              ]
+            },
+            {
+              "check": "features.capability_1_copy",
+              "failures": [
+                "center_y_delta=4.27px > 1.00px",
+                "max_edge_delta=4.00px > 2.00px"
+              ]
+            },
+            {
+              "check": "features.capability_2_icon",
+              "failures": [
+                "center_x_delta=6.08px > 1.00px",
+                "center_y_delta=2.46px > 1.00px",
+                "width_delta=14.00px > 1.25px",
+                "height_delta=17.00px > 1.25px",
+                "max_edge_delta=8.50px > 1.50px"
+              ]
+            },
+            {
+              "check": "features.capability_2_copy",
+              "failures": [
+                "center_x_delta=2.93px > 1.00px",
+                "center_y_delta=-1.48px > 1.00px",
+                "width_delta=5.00px > 1.50px",
+                "height_delta=4.00px > 1.50px",
+                "max_edge_delta=2.50px > 2.00px",
+                "ink_ratio=1.360; |ratio-1| > 0.200"
+              ]
+            },
+            {
+              "check": "features.capability_3_copy",
+              "failures": [
+                "center_y_delta=-4.78px > 1.00px",
+                "max_edge_delta=5.00px > 2.00px"
+              ]
+            },
+            {
+              "check": "features.capability_4_icon",
+              "failures": [
+                "center_x_delta=6.78px > 1.00px",
+                "width_delta=14.00px > 1.25px",
+                "height_delta=21.00px > 1.25px",
+                "max_edge_delta=10.50px > 1.50px"
+              ]
+            },
+            {
+              "check": "features.capability_4_copy",
+              "failures": [
+                "center_y_delta=-4.67px > 1.00px",
+                "width_delta=5.00px > 1.50px",
+                "height_delta=3.50px > 1.50px",
+                "max_edge_delta=5.00px > 2.00px",
+                "ink_ratio=1.320; |ratio-1| > 0.200"
+              ]
+            },
+            {
+              "check": "features.reward_1_icon",
+              "failures": [
+                "center_x_delta=9.61px > 1.00px",
+                "center_y_delta=3.54px > 1.00px",
+                "width_delta=-12.00px > 1.50px",
+                "height_delta=-2.00px > 1.50px",
+                "max_edge_delta=14.00px > 2.00px",
+                "ink_ratio=0.756; |ratio-1| > 0.200"
+              ]
+            },
+            {
+              "check": "features.reward_1_copy",
+              "failures": [
+                "center_x_delta=13.56px > 1.00px",
+                "center_y_delta=1.23px > 1.00px",
+                "width_delta=-14.00px > 1.50px",
+                "max_edge_delta=16.75px > 2.00px"
+              ]
+            },
+            {
+              "check": "features.reward_2_icon",
+              "failures": [
+                "center_x_delta=9.61px > 1.00px",
+                "center_y_delta=3.53px > 1.00px",
+                "width_delta=-12.00px > 1.50px",
+                "height_delta=-2.00px > 1.50px",
+                "max_edge_delta=14.00px > 2.00px",
+                "ink_ratio=0.755; |ratio-1| > 0.200"
+              ]
+            },
+            {
+              "check": "features.reward_2_copy",
+              "failures": [
+                "center_x_delta=14.02px > 1.00px",
+                "center_y_delta=2.53px > 1.00px",
+                "width_delta=-14.50px > 1.50px",
+                "max_edge_delta=17.00px > 2.00px"
+              ]
+            },
+            {
+              "check": "features.reward_3_icon",
+              "failures": [
+                "center_x_delta=9.54px > 1.00px",
+                "center_y_delta=3.69px > 1.00px",
+                "width_delta=-12.00px > 1.50px",
+                "height_delta=-5.00px > 1.50px",
+                "max_edge_delta=14.00px > 2.00px",
+                "ink_ratio=0.723; |ratio-1| > 0.200"
+              ]
+            },
+            {
+              "check": "features.reward_3_copy",
+              "failures": [
+                "center_x_delta=14.39px > 1.00px",
+                "center_y_delta=2.61px > 1.00px",
+                "width_delta=-13.50px > 1.50px",
+                "max_edge_delta=17.00px > 2.00px"
+              ]
+            },
+            {
+              "check": "relations.capability_row_1_vertical_alignment",
+              "failures": []
+            },
+            {
+              "check": "relations.capability_row_2_vertical_alignment",
+              "failures": []
+            },
+            {
+              "check": "relations.capability_row_3_vertical_alignment",
+              "failures": []
+            },
+            {
+              "check": "relations.capability_row_4_vertical_alignment",
+              "failures": []
+            },
+            {
+              "check": "relations.reward_row_1_vertical_alignment",
+              "failures": []
+            },
+            {
+              "check": "relations.reward_row_2_vertical_alignment",
+              "failures": []
+            },
+            {
+              "check": "relations.reward_row_3_vertical_alignment",
+              "failures": []
+            }
+          ],
+          "stages": [
+            {
+              "name": "render",
+              "seconds": 2.182,
+              "exit_code": 0
+            },
+            {
+              "name": "diagnostic_gate",
+              "seconds": 0.435,
+              "exit_code": 1
+            }
+          ],
+          "metrics": {
+            "whole": {
+              "mae": 13.3147,
+              "p95_max_channel": 129.0
+            },
+            "capabilities": {
+              "mae": 15.0241,
+              "p95_max_channel": 150.0
+            },
+            "benefits": {
+              "mae": 24.4171,
+              "p95_max_channel": 199.0
+            },
+            "cta": {
+              "mae": 6.3211,
+              "p95_max_channel": 58.0
+            }
+          },
+          "finished_at": "2026-10-13T08:42:51+00:00"
+        }
+      ]
+    },
+    {
+      "round_number": 2,
+      "fingerprint": "973fe9ac2d5261867bbb09ddf8f8695407828fc7b92c5619ae65d9fd847e6140",
+      "contract_sha256": "693744f75cdc053feea251452c8639796d1e1993c1799daae043681883ab3699",
+      "contract_changed": false,
+      "attempts": [
+        {
+          "attempt_id": "37758b31-4ab9-4161-8146-514fd907e8f8",
+          "attempt_number": 1,
+          "started_at": "2026-10-13T08:44:42+00:00",
+          "status": "DIAGNOSTIC",
+          "note": "第1轮发现能力卡片第二列和收益列表整体偏右、图标墨迹偏下；本轮集中校正源画框、列起点、文字基线和CTA颜色。",
+          "pid": 10835,
+          "run_report": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/platform-intro-optimized/r1/run.json",
+          "seconds": 2.767,
+          "gate_status": "DIAGNOSTIC_DIFFERENCES",
+          "failures": [
+            {
+              "check": "regions.whole",
+              "failures": [
+                "mae=12.1268 > 5.0000",
+                "p95=121.00 > 26.00"
+              ]
+            },
+            {
+              "check": "regions.capabilities",
+              "failures": [
+                "mae=15.0548 > 7.0000",
+                "p95=151.00 > 28.00"
+              ]
+            },
+            {
+              "check": "regions.benefits",
+              "failures": [
+                "mae=19.0605 > 8.0000",
+                "p95=131.00 > 55.00"
+              ]
+            },
+            {
+              "check": "regions.cta",
+              "failures": [
+                "mae=12.1696 > 3.0000",
+                "p95=58.00 > 8.00"
+              ]
+            },
+            {
+              "check": "features.capability_badge",
+              "failures": [
+                "center_x_delta=-1.76px > 1.00px",
+                "center_y_delta=-6.38px > 1.00px",
+                "max_edge_delta=7.00px > 2.00px"
+              ]
+            },
+            {
+              "check": "features.benefit_badge",
+              "failures": [
+                "center_y_delta=-7.21px > 1.00px",
+                "max_edge_delta=7.25px > 2.00px"
+              ]
+            },
+            {
+              "check": "features.capability_1_icon",
+              "failures": [
+                "center_y_delta=-3.00px > 1.00px",
+                "max_edge_delta=3.00px > 1.50px"
+              ]
+            },
+            {
+              "check": "features.capability_1_copy",
+              "failures": [
+                "center_y_delta=-1.73px > 1.00px",
+                "max_edge_delta=2.25px > 2.00px"
+              ]
+            },
+            {
+              "check": "features.capability_2_icon",
+              "failures": [
+                "center_y_delta=-3.00px > 1.00px",
+                "max_edge_delta=3.00px > 1.50px"
+              ]
+            },
+            {
+              "check": "features.capability_2_copy",
+              "failures": [
+                "center_y_delta=-6.73px > 1.00px",
+                "height_delta=-5.00px > 1.50px",
+                "max_edge_delta=10.00px > 2.00px"
+              ]
+            },
+            {
+              "check": "features.capability_3_icon",
+              "failures": [
+                "center_y_delta=-5.00px > 1.00px",
+                "max_edge_delta=5.00px > 1.50px"
+              ]
+            },
+            {
+              "check": "features.capability_3_copy",
+              "failures": [
+                "center_x_delta=3.72px > 1.00px",
+                "center_y_delta=-6.77px > 1.00px",
+                "height_delta=-6.00px > 1.50px",
+                "max_edge_delta=11.00px > 2.00px"
+              ]
+            },
+            {
+              "check": "features.capability_4_icon",
+              "failures": [
+                "center_y_delta=-5.00px > 1.00px",
+                "max_edge_delta=5.00px > 1.50px"
+              ]
+            },
+            {
+              "check": "features.capability_4_copy",
+              "failures": [
+                "center_x_delta=4.18px > 1.00px",
+                "center_y_delta=-6.95px > 1.00px",
+                "height_delta=-6.00px > 1.50px",
+                "max_edge_delta=11.00px > 2.00px"
+              ]
+            },
+            {
+              "check": "features.reward_1_icon",
+              "failures": [
+                "center_x_delta=-1.00px > 1.00px",
+                "center_y_delta=-6.08px > 1.00px",
+                "height_delta=-4.75px > 1.50px",
+                "max_edge_delta=6.75px > 2.00px"
+              ]
+            },
+            {
+              "check": "features.reward_1_copy",
+              "failures": [
+                "center_x_delta=1.73px > 1.00px",
+                "center_y_delta=1.68px > 1.00px",
+                "ink_ratio=1.228; |ratio-1| > 0.200"
+              ]
+            },
+            {
+              "check": "features.reward_2_icon",
+              "failures": [
+                "center_x_delta=-1.00px > 1.00px",
+                "center_y_delta=-6.09px > 1.00px",
+                "height_delta=-4.75px > 1.50px",
+                "max_edge_delta=6.75px > 2.00px"
+              ]
+            },
+            {
+              "check": "features.reward_2_copy",
+              "failures": [
+                "center_x_delta=1.23px > 1.00px",
+                "center_y_delta=3.29px > 1.00px",
+                "max_edge_delta=3.00px > 2.00px",
+                "ink_ratio=1.225; |ratio-1| > 0.200"
+              ]
+            },
+            {
+              "check": "features.reward_3_icon",
+              "failures": [
+                "center_x_delta=-1.00px > 1.00px",
+                "center_y_delta=-5.94px > 1.00px",
+                "height_delta=-5.75px > 1.50px",
+                "max_edge_delta=7.75px > 2.00px"
+              ]
+            },
+            {
+              "check": "features.reward_3_copy",
+              "failures": [
+                "center_y_delta=3.19px > 1.00px",
+                "max_edge_delta=3.00px > 2.00px",
+                "ink_ratio=1.223; |ratio-1| > 0.200"
+              ]
+            },
+            {
+              "check": "relations.capability_header_vertical_alignment",
+              "failures": []
+            },
+            {
+              "check": "relations.benefit_header_vertical_alignment",
+              "failures": []
+            },
+            {
+              "check": "relations.capability_row_1_vertical_alignment",
+              "failures": []
+            },
+            {
+              "check": "relations.capability_row_2_vertical_alignment",
+              "failures": []
+            },
+            {
+              "check": "relations.capability_row_3_vertical_alignment",
+              "failures": []
+            },
+            {
+              "check": "relations.capability_row_4_vertical_alignment",
+              "failures": []
+            },
+            {
+              "check": "relations.reward_row_1_vertical_alignment",
+              "failures": []
+            },
+            {
+              "check": "relations.reward_row_2_vertical_alignment",
+              "failures": []
+            },
+            {
+              "check": "relations.reward_row_3_vertical_alignment",
+              "failures": []
+            }
+          ],
+          "stages": [
+            {
+              "name": "render",
+              "seconds": 2.281,
+              "exit_code": 0
+            },
+            {
+              "name": "diagnostic_gate",
+              "seconds": 0.485,
+              "exit_code": 1
+            }
+          ],
+          "metrics": {
+            "whole": {
+              "mae": 12.1268,
+              "p95_max_channel": 121.0
+            },
+            "capabilities": {
+              "mae": 15.0548,
+              "p95_max_channel": 151.0
+            },
+            "benefits": {
+              "mae": 19.0605,
+              "p95_max_channel": 131.0
+            },
+            "cta": {
+              "mae": 12.1696,
+              "p95_max_channel": 58.0
+            }
+          },
+          "finished_at": "2026-10-13T08:44:44+00:00"
+        }
+      ]
+    },
+    {
+      "round_number": 3,
+      "fingerprint": "772ce127da052746f5645da5c15acfa1b8ef3079714c5fe2bd463d5eb22645ab",
+      "contract_sha256": "693744f75cdc053feea251452c8639796d1e1993c1799daae043681883ab3699",
+      "contract_changed": false,
+      "attempts": [
+        {
+          "attempt_id": "902b90aa-9d0d-4d35-951e-80bf4b2807ad",
+          "attempt_number": 1,
+          "started_at": "2026-10-13T08:46:34+00:00",
+          "status": "DIAGNOSTIC",
+          "note": "第2轮确认CTA渐变和徽章纵向修正过度；本轮按四张卡片各自源基线校正，并恢复更接近原稿的CTA色阶。",
+          "pid": 11019,
+          "run_report": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/platform-intro-optimized/r2/run.json",
+          "seconds": 2.488,
+          "gate_status": "DIAGNOSTIC_DIFFERENCES",
+          "failures": [
+            {
+              "check": "regions.whole",
+              "failures": [
+                "mae=8.6434 > 5.0000",
+                "p95=71.00 > 26.00"
+              ]
+            },
+            {
+              "check": "regions.benefits",
+              "failures": [
+                "mae=18.1199 > 8.0000",
+                "p95=131.00 > 55.00"
+              ]
+            },
+            {
+              "check": "regions.cta",
+              "failures": [
+                "mae=6.3211 > 3.0000",
+                "p95=58.00 > 8.00"
+              ]
+            },
+            {
+              "check": "features.reward_1_icon",
+              "failures": [
+                "center_y_delta=-1.74px > 1.00px"
+              ]
+            },
+            {
+              "check": "features.reward_1_copy",
+              "failures": [
+                "max_edge_delta=2.25px > 2.00px",
+                "ink_ratio=1.228; |ratio-1| > 0.200"
+              ]
+            },
+            {
+              "check": "features.reward_2_icon",
+              "failures": [
+                "center_y_delta=-1.75px > 1.00px"
+              ]
+            },
+            {
+              "check": "features.reward_2_copy",
+              "failures": [
+                "center_y_delta=1.29px > 1.00px",
+                "ink_ratio=1.225; |ratio-1| > 0.200"
+              ]
+            },
+            {
+              "check": "features.reward_3_icon",
+              "failures": [
+                "center_y_delta=-1.22px > 1.00px"
+              ]
+            },
+            {
+              "check": "features.reward_3_copy",
+              "failures": [
+                "center_x_delta=-1.60px > 1.00px",
+                "center_y_delta=1.19px > 1.00px",
+                "ink_ratio=1.223; |ratio-1| > 0.200"
+              ]
+            },
+            {
+              "check": "relations.reward_row_1_vertical_alignment",
+              "failures": []
+            },
+            {
+              "check": "relations.reward_row_2_vertical_alignment",
+              "failures": []
+            },
+            {
+              "check": "relations.reward_row_3_vertical_alignment",
+              "failures": []
+            }
+          ],
+          "stages": [
+            {
+              "name": "render",
+              "seconds": 2.038,
+              "exit_code": 0
+            },
+            {
+              "name": "diagnostic_gate",
+              "seconds": 0.45,
+              "exit_code": 1
+            }
+          ],
+          "metrics": {
+            "whole": {
+              "mae": 8.6434,
+              "p95_max_channel": 71.0
+            },
+            "capabilities": {
+              "mae": 2.7966,
+              "p95_max_channel": 22.0
+            },
+            "benefits": {
+              "mae": 18.1199,
+              "p95_max_channel": 131.0
+            },
+            "cta": {
+              "mae": 6.3211,
+              "p95_max_channel": 58.0
+            }
+          },
+          "finished_at": "2026-10-13T08:46:36+00:00"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "rounds": 3,
+    "target_rounds": [
+      2,
+      3
+    ],
+    "validation_attempts": 3,
+    "repeat_attempts": 0,
+    "over_target": false,
+    "total_validation_seconds": 7.872,
+    "wall_clock_seconds": 763,
+    "wall_clock_scope": "从冻结证据读取、独立 Flutter 实现、三轮视觉校正，到测试及 Web 构建完成",
+    "latest_status": "DIAGNOSTIC",
+    "tool_call_count": null,
+    "timing_scope": "Validation execution only; excludes work before first validation and model editing time",
+    "count_scope": "Tracked render/validation attempts only; not all model/tool calls or visual reviews"
+  }
+}

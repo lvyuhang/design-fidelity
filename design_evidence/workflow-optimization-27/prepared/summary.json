@@ -1,0 +1,18 @@
+{
+  "status": "NEEDS_INPUT_FIXES",
+  "scope": "source preparation only; proposals are not approved implementation or visual acceptance",
+  "canvas": [
+    375,
+    812
+  ],
+  "source_nodes": 143,
+  "seconds": 0.0529,
+  "asset_count": 14,
+  "issue_counts": {
+    "export_frame_outside_canvas": 1,
+    "font_mapping_missing": 1,
+    "missing_glyphs": 1
+  },
+  "review_count": 88,
+  "report": "design_evidence/workflow-optimization-27/prepared/page-plan.json"
+}

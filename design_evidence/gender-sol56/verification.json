@@ -1,0 +1,23 @@
+{
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "frozen_sha256": "3144c08726585cf8aea581594165ffa86f8a0b7ffc547f88cb362df797a28e3a",
+  "frozen_component_unchanged_after_render": true,
+  "visual_revisions": 0,
+  "blocking_repairs": 0,
+  "tests_passed": 34,
+  "dart_analyze": "No issues found",
+  "web_release_build": "passed",
+  "states": ["unselected", "female_selected"],
+  "comparison_variants": ["reference", "gpt-5.6-sol-high", "gpt-6-direct", "calibrated"],
+  "browser_url": "http://127.0.0.1:8767/?case=gender-direct",
+  "browser_checks": [
+    "unselected and female-selected fixtures",
+    "four-way comparison",
+    "GPT-5.6 Sol callback",
+    "GPT-5.6 Sol overlay",
+    "GPT-6 direct overlay"
+  ],
+  "browser_errors_and_warnings": [],
+  "browser_screenshot": "browser-comparison.png"
+}

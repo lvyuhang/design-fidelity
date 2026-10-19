@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "scope": "validation of supplied implementation; not end-to-end development time",
+  "started_unix": 1791879938.2100558,
+  "stages": [
+    {
+      "name": "preflight",
+      "seconds": 0.109,
+      "exit_code": 0
+    },
+    {
+      "name": "render",
+      "seconds": 1.914,
+      "exit_code": 0
+    },
+    {
+      "name": "gate",
+      "seconds": 0.73,
+      "exit_code": 0
+    },
+    {
+      "name": "analyze",
+      "seconds": 1.505,
+      "exit_code": 0
+    }
+  ],
+  "gate_status": "PASS_WITH_EXCLUSIONS",
+  "preflight": {
+    "status": "READY_FOR_RENDER",
+    "coverage": {
+      "nodes": 118,
+      "covered": 106,
+      "exceptions": [
+        "node 91C7F81B-BBAB-4A81-AF88-0DF6194FDCBD: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+        "node FF75EE8E-F764-423A-973B-8CCD6C8E3499: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+        "node 506F6A95-2DFC-4F73-B1A7-2EA2F755E1A4: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+        "node 9AA03999-E623-438A-96D5-DCFB3BE0CE59: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+        "node 2C34E24F-8122-4743-A948-449551EDF921: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+        "node D046C2A8-0AD8-4167-ABE8-80C765C91008: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+        "node BFE10B6B-F12E-459D-9AC3-F0235C7BFF65: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+        "node A17B4782-E31F-49C6-9872-73BCCCFAF1CE: 蓝湖返回的关系图标组边界为 152×752，与可见 14×14 图标不一致；已使用导出原图并人工核对",
+        "node 67548D3B-BC03-40CB-B6C2-724FEEA4FE16: 礼物卡背景原图与未切礼物/星币图层重叠，颜色分割会被缺图占位污染；原始 PNG 哈希与整卡区域继续受门禁约束",
+        "node 109A27EE-A12C-4E3C-B782-DC637A1ED913: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+        "node 15F0F477-CEA7-4135-BD2F-8DEC2712E08E: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+        "node 71E736BD-69F4-4BBB-AA46-E1825CEB7E8D: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖"
+      ]
+    },
+    "fonts": {
+      "text_nodes_checked": 16
+    },
+    "asset_count": 14,
+    "style_gaps": [],
+    "scope": "input integrity and font coverage; source-style completeness is separate; not visual acceptance"
+  },
+  "failures": [],
+  "metrics": {
+    "whole": {
+      "compared_pixels": 4688224,
+      "total_pixels": 4872000,
+      "mae": 1.676,
+      "p95_max_channel": 5.0
+    },
+    "header": {
+      "compared_pixels": 711600,
+      "total_pixels": 726000,
+      "mae": 4.1302,
+      "p95_max_channel": 11.0
+    },
+    "conversation": {
+      "compared_pixels": 3136624,
+      "total_pixels": 3306000,
+      "mae": 0.4622,
+      "p95_max_channel": 1.0
+    },
+    "composer": {
+      "compared_pixels": 840000,
+      "total_pixels": 840000,
+      "mae": 4.1292,
+      "p95_max_channel": 5.0
+    }
+  },
+  "seconds": 4.259
+}

@@ -1,0 +1,1382 @@
+{
+  "contract": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-45-new-test/visual-contract-final.json",
+  "contract_sha256": "8fbddae6193d6c1f51bea27cd6ef762ed7ad5e2d54bd6402da69d215ce6efbb5",
+  "skill_version": "2.6.0",
+  "coverage": {
+    "nodes": 118,
+    "covered": 106,
+    "exceptions": [
+      "node 91C7F81B-BBAB-4A81-AF88-0DF6194FDCBD: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+      "node FF75EE8E-F764-423A-973B-8CCD6C8E3499: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+      "node 506F6A95-2DFC-4F73-B1A7-2EA2F755E1A4: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+      "node 9AA03999-E623-438A-96D5-DCFB3BE0CE59: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+      "node 2C34E24F-8122-4743-A948-449551EDF921: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+      "node D046C2A8-0AD8-4167-ABE8-80C765C91008: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+      "node BFE10B6B-F12E-459D-9AC3-F0235C7BFF65: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+      "node A17B4782-E31F-49C6-9872-73BCCCFAF1CE: 蓝湖返回的关系图标组边界为 152×752，与可见 14×14 图标不一致；已使用导出原图并人工核对",
+      "node 67548D3B-BC03-40CB-B6C2-724FEEA4FE16: 礼物卡背景原图与未切礼物/星币图层重叠，颜色分割会被缺图占位污染；原始 PNG 哈希与整卡区域继续受门禁约束",
+      "node 109A27EE-A12C-4E3C-B782-DC637A1ED913: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+      "node 15F0F477-CEA7-4135-BD2F-8DEC2712E08E: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+      "node 71E736BD-69F4-4BBB-AA46-E1825CEB7E8D: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖"
+    ]
+  },
+  "environment": {
+    "renderer": "flutter-test-skia",
+    "renderer_version": "Flutter 3.47.7 / engine deb287481e",
+    "platform": "macOS widget-test 375x812 @4x",
+    "locale": "zh_CN",
+    "state": "message-backup-45-chat-static",
+    "text_scale": 1
+  },
+  "exclusions": [
+    {
+      "rect": [
+        44,
+        51,
+        30,
+        30
+      ],
+      "reason": "顶部头像原图未提供；保留圆形缺图占位"
+    },
+    {
+      "rect": [
+        17,
+        135,
+        30,
+        30
+      ],
+      "reason": "聊天头像原图未提供；保留圆形缺图占位"
+    },
+    {
+      "rect": [
+        17,
+        187,
+        30,
+        30
+      ],
+      "reason": "聊天头像原图未提供；保留圆形缺图占位"
+    },
+    {
+      "rect": [
+        331,
+        240,
+        30,
+        30
+      ],
+      "reason": "本人头像原图未提供；保留圆形缺图占位"
+    },
+    {
+      "rect": [
+        17,
+        298,
+        30,
+        30
+      ],
+      "reason": "聊天头像原图未提供；保留圆形缺图占位"
+    },
+    {
+      "rect": [
+        331,
+        357,
+        30,
+        30
+      ],
+      "reason": "本人头像原图未提供；保留圆形缺图占位"
+    },
+    {
+      "rect": [
+        17,
+        412,
+        30,
+        30
+      ],
+      "reason": "聊天头像原图未提供；保留圆形缺图占位"
+    },
+    {
+      "rect": [
+        17,
+        465,
+        30,
+        30
+      ],
+      "reason": "聊天头像原图未提供；保留圆形缺图占位"
+    },
+    {
+      "rect": [
+        17,
+        518,
+        30,
+        30
+      ],
+      "reason": "聊天头像原图未提供；保留圆形缺图占位"
+    },
+    {
+      "rect": [
+        62,
+        527,
+        55,
+        55
+      ],
+      "reason": "礼物图片原图未提供；保留圆角缺图占位"
+    },
+    {
+      "rect": [
+        121,
+        558,
+        19,
+        19
+      ],
+      "reason": "星币图片原图未提供；保留圆形缺图占位"
+    }
+  ],
+  "excluded_fraction": 0.037720853858784875,
+  "reference": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-45-new-test/source/reference.png",
+  "render_scale": 4.0,
+  "reference_preview": "reference.png",
+  "passed": true,
+  "candidates": {
+    "flutter": {
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-45-new-test/final/render.png",
+      "preview": "1-flutter-candidate.png",
+      "passed": true,
+      "regions": {
+        "whole": {
+          "label": "完整聊天页面",
+          "rect": [
+            0,
+            0,
+            375,
+            812
+          ],
+          "metrics": {
+            "compared_pixels": 4688224,
+            "total_pixels": 4872000,
+            "mae": 1.6783,
+            "p95_max_channel": 5.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "header": {
+          "label": "状态栏与会话标题",
+          "rect": [
+            0,
+            0,
+            375,
+            121
+          ],
+          "metrics": {
+            "compared_pixels": 711600,
+            "total_pixels": 726000,
+            "mae": 4.1302,
+            "p95_max_channel": 11.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "conversation": {
+          "label": "消息内容区域",
+          "rect": [
+            0,
+            121,
+            375,
+            551
+          ],
+          "metrics": {
+            "compared_pixels": 3136624,
+            "total_pixels": 3306000,
+            "mae": 0.4658,
+            "p95_max_channel": 1.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "composer": {
+          "label": "底部输入与工具区",
+          "rect": [
+            0,
+            672,
+            375,
+            140
+          ],
+          "metrics": {
+            "compared_pixels": 840000,
+            "total_pixels": 840000,
+            "mae": 4.1292,
+            "p95_max_channel": 5.0
+          },
+          "passed": true,
+          "failures": []
+        }
+      },
+      "features": {
+        "text_add289df": {
+          "label": "文字：02-01 15:39",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.1919,
+            "center_y_delta": -0.0465,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2171
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              157.5,
+              109.0,
+              60.75,
+              8.25
+            ],
+            "center": [
+              188.8764282691494,
+              112.94107067287347
+            ],
+            "ink_pixels": 2363
+          },
+          "actual": {
+            "bbox": [
+              157.5,
+              108.75,
+              61.0,
+              8.5
+            ],
+            "center": [
+              189.0683240611961,
+              112.89455841446454
+            ],
+            "ink_pixels": 2876
+          }
+        },
+        "text_cb9905e4": {
+          "label": "文字：00:22:10",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.1536,
+            "center_y_delta": -0.1469,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.1798
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              98.75,
+              426.0,
+              53.25,
+              10.0
+            ],
+            "center": [
+              124.78088026502603,
+              431.03845243729296
+            ],
+            "ink_pixels": 2113
+          },
+          "actual": {
+            "bbox": [
+              98.75,
+              425.75,
+              53.5,
+              10.25
+            ],
+            "center": [
+              124.62725631768953,
+              430.8915964701163
+            ],
+            "ink_pixels": 2493
+          }
+        },
+        "text_8fbed4ad": {
+          "label": "文字：hi",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.3289,
+            "center_y_delta": 0.0417,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2268
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              69.0,
+              148.0,
+              9.25,
+              10.0
+            ],
+            "center": [
+              73.22052154195012,
+              153.08673469387756
+            ],
+            "ink_pixels": 441
+          },
+          "actual": {
+            "bbox": [
+              69.0,
+              147.75,
+              9.5,
+              10.25
+            ],
+            "center": [
+              73.54944547134936,
+              153.12846580406654
+            ],
+            "ink_pixels": 541
+          }
+        },
+        "text_5d89fbcc": {
+          "label": "文字：在干嘛呀？",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.7951,
+            "center_y_delta": 0.0555,
+            "width_delta": 0.25,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2328
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              71.75,
+              200.5,
+              61.75,
+              12.75
+            ],
+            "center": [
+              102.30098405157787,
+              206.45648116728876
+            ],
+            "ink_pixels": 2947
+          },
+          "actual": {
+            "bbox": [
+              71.5,
+              200.5,
+              62.0,
+              12.75
+            ],
+            "center": [
+              103.09606385906963,
+              206.5119735755574
+            ],
+            "ink_pixels": 3633
+          }
+        },
+        "asset_1139571f": {
+          "label": "蓝湖原始切图：编组",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.005,
+            "center_y_delta": -0.0152,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0103,
+            "mask_iou_loss": 0.010156971375807955
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              72.0,
+              309.0,
+              13.0,
+              17.0
+            ],
+            "center": [
+              80.12476679104478,
+              317.31389925373134
+            ],
+            "ink_pixels": 1072
+          },
+          "actual": {
+            "bbox": [
+              72.0,
+              309.0,
+              13.0,
+              17.0
+            ],
+            "center": [
+              80.11980609418282,
+              317.2987072945522
+            ],
+            "ink_pixels": 1083
+          }
+        },
+        "asset_cdf57466": {
+          "label": "蓝湖原始切图：编组备份 4",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.2088,
+            "center_y_delta": 0.0276,
+            "width_delta": -0.25,
+            "height_delta": -0.5,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.0071,
+            "mask_iou_loss": 0.20021299254526093
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              294.25,
+              368.25,
+              12.75,
+              16.5
+            ],
+            "center": [
+              298.82452494061755,
+              376.31413301662707
+            ],
+            "ink_pixels": 842
+          },
+          "actual": {
+            "bbox": [
+              294.5,
+              368.5,
+              12.5,
+              16.0
+            ],
+            "center": [
+              299.0333136792453,
+              376.3416863207547
+            ],
+            "ink_pixels": 848
+          }
+        },
+        "text_5c7a0789": {
+          "label": "文字：7”",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.3122,
+            "center_y_delta": 0.0331,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.1846
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              90.5,
+              310.5,
+              12.75,
+              11.5
+            ],
+            "center": [
+              96.24242424242425,
+              314.2052341597796
+            ],
+            "ink_pixels": 363
+          },
+          "actual": {
+            "bbox": [
+              90.5,
+              310.25,
+              13.0,
+              11.75
+            ],
+            "center": [
+              96.55465116279069,
+              314.23837209302326
+            ],
+            "ink_pixels": 430
+          }
+        },
+        "text_d514e1a1": {
+          "label": "文字：5”",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.1607,
+            "center_y_delta": -0.0099,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.196
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              269.75,
+              369.5,
+              13.25,
+              11.5
+            ],
+            "center": [
+              274.8485,
+              374.527
+            ],
+            "ink_pixels": 500
+          },
+          "actual": {
+            "bbox": [
+              269.75,
+              369.25,
+              13.5,
+              11.75
+            ],
+            "center": [
+              275.00919732441474,
+              374.5171404682274
+            ],
+            "ink_pixels": 598
+          }
+        },
+        "text_42a116f6": {
+          "label": "文字：在看你的视频",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.6845,
+            "center_y_delta": -0.0459,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.199
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              221.75,
+              253.5,
+              82.5,
+              12.75
+            ],
+            "center": [
+              263.5331021437579,
+              259.776271542665
+            ],
+            "ink_pixels": 4758
+          },
+          "actual": {
+            "bbox": [
+              221.5,
+              253.25,
+              83.0,
+              13.0
+            ],
+            "center": [
+              264.2176161262051,
+              259.7303680981595
+            ],
+            "ink_pixels": 5705
+          }
+        },
+        "asset_ec866b95": {
+          "label": "蓝湖原始切图：编组",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.6213,
+            "center_y_delta": 0.0123,
+            "width_delta": -1.0,
+            "height_delta": -2.0,
+            "max_edge_delta": 1.0,
+            "ink_ratio": 0.8946,
+            "mask_iou_loss": 0.5180758888556917
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              222.0,
+              747.0,
+              26.75,
+              20.0
+            ],
+            "center": [
+              234.9611344537815,
+              756.6873567608861
+            ],
+            "ink_pixels": 2618
+          },
+          "actual": {
+            "bbox": [
+              223.0,
+              748.0,
+              25.75,
+              18.0
+            ],
+            "center": [
+              235.58240819812127,
+              756.6996157130658
+            ],
+            "ink_pixels": 2342
+          }
+        },
+        "asset_6a8f5d20": {
+          "label": "蓝湖原始切图：编组 3",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0397,
+            "center_y_delta": -0.0175,
+            "width_delta": -0.5,
+            "height_delta": -0.5,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 0.988,
+            "mask_iou_loss": 0.23921568627450984
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              71.25,
+              423.25,
+              20.5,
+              15.5
+            ],
+            "center": [
+              81.22027197975964,
+              430.719165085389
+            ],
+            "ink_pixels": 1581
+          },
+          "actual": {
+            "bbox": [
+              71.5,
+              423.5,
+              20.0,
+              15.0
+            ],
+            "center": [
+              81.25992317541613,
+              430.70166453265045
+            ],
+            "ink_pixels": 1562
+          }
+        },
+        "text_9c286441": {
+          "label": "文字：00:22:10",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.1536,
+            "center_y_delta": -0.1469,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.1798
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              98.75,
+              479.0,
+              53.25,
+              10.0
+            ],
+            "center": [
+              124.78088026502603,
+              484.03845243729296
+            ],
+            "ink_pixels": 2113
+          },
+          "actual": {
+            "bbox": [
+              98.75,
+              478.75,
+              53.5,
+              10.25
+            ],
+            "center": [
+              124.62725631768953,
+              483.8915964701163
+            ],
+            "ink_pixels": 2493
+          }
+        },
+        "asset_c3bf8887": {
+          "label": "蓝湖原始切图：-path",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0508,
+            "center_y_delta": -0.0514,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0161,
+            "mask_iou_loss": 0.03410138248847927
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              126.5,
+              745.5,
+              23.0,
+              23.0
+            ],
+            "center": [
+              136.6415406427221,
+              758.1395321361059
+            ],
+            "ink_pixels": 2116
+          },
+          "actual": {
+            "bbox": [
+              126.5,
+              745.5,
+              23.0,
+              23.0
+            ],
+            "center": [
+              136.5906976744186,
+              758.0881395348837
+            ],
+            "ink_pixels": 2150
+          }
+        },
+        "asset_65fd3456": {
+          "label": "蓝湖原始切图：-path备份",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0071,
+            "center_y_delta": 0.0095,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0151,
+            "mask_iou_loss": 0.014914243102162605
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              72.0,
+              474.0,
+              18.0,
+              18.0
+            ],
+            "center": [
+              79.9008327024981,
+              483.8158591975776
+            ],
+            "ink_pixels": 1321
+          },
+          "actual": {
+            "bbox": [
+              72.0,
+              474.0,
+              18.0,
+              18.0
+            ],
+            "center": [
+              79.8937360178971,
+              483.82531692766594
+            ],
+            "ink_pixels": 1341
+          }
+        },
+        "asset_7efa4ad4": {
+          "label": "蓝湖原始切图：编组",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0285,
+            "center_y_delta": 0.0168,
+            "width_delta": -0.5,
+            "height_delta": -0.5,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 0.9451,
+            "mask_iou_loss": 0.05492874109263657
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              34.0,
+              747.0,
+              25.0,
+              21.0
+            ],
+            "center": [
+              45.9415825415677,
+              757.6947743467933
+            ],
+            "ink_pixels": 3368
+          },
+          "actual": {
+            "bbox": [
+              34.25,
+              747.25,
+              24.5,
+              20.5
+            ],
+            "center": [
+              45.91313226515865,
+              757.7115928369462
+            ],
+            "ink_pixels": 3183
+          }
+        },
+        "text_881642b5": {
+          "label": "文字：9:41",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.2377,
+            "center_y_delta": -1.2291,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 1.5,
+            "ink_ratio": 1.0491
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              34.75,
+              18.75,
+              25.75,
+              11.0
+            ],
+            "center": [
+              47.65886415963162,
+              23.964504988488102
+            ],
+            "ink_pixels": 1303
+          },
+          "actual": {
+            "bbox": [
+              34.75,
+              17.25,
+              25.75,
+              11.0
+            ],
+            "center": [
+              47.42117776152158,
+              22.735369422092173
+            ],
+            "ink_pixels": 1367
+          }
+        },
+        "asset_c9966a59": {
+          "label": "蓝湖原始切图：编组",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0209,
+            "center_y_delta": -0.0043,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.016,
+            "mask_iou_loss": 0.01577287066246058
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              336.0,
+              65.0,
+              20.0,
+              4.0
+            ],
+            "center": [
+              345.875,
+              66.875
+            ],
+            "ink_pixels": 624
+          },
+          "actual": {
+            "bbox": [
+              336.0,
+              65.0,
+              20.0,
+              4.0
+            ],
+            "center": [
+              345.8958990536278,
+              66.87066246056783
+            ],
+            "ink_pixels": 634
+          }
+        },
+        "asset_5b85f55f": {
+          "label": "蓝湖原始切图：编组",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0,
+            "mask_iou_loss": 0.0
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              15.0,
+              60.0,
+              8.0,
+              14.0
+            ],
+            "center": [
+              19.130988023952096,
+              66.875
+            ],
+            "ink_pixels": 668
+          },
+          "actual": {
+            "bbox": [
+              15.0,
+              60.0,
+              8.0,
+              14.0
+            ],
+            "center": [
+              19.130988023952096,
+              66.875
+            ],
+            "ink_pixels": 668
+          }
+        },
+        "text_3bc3f877": {
+          "label": "文字：送礼大神",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0961,
+            "center_y_delta": -0.0766,
+            "width_delta": 0.25,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.143
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              80.75,
+              53.75,
+              62.0,
+              15.0
+            ],
+            "center": [
+              112.50209121688906,
+              61.183578968333
+            ],
+            "ink_pixels": 5021
+          },
+          "actual": {
+            "bbox": [
+              80.75,
+              53.75,
+              62.25,
+              15.0
+            ],
+            "center": [
+              112.59818783760237,
+              61.10698728001394
+            ],
+            "ink_pixels": 5739
+          }
+        },
+        "text_9a9236ee": {
+          "label": "文字：在线",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0005,
+            "center_y_delta": -0.4251,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.75,
+            "ink_ratio": 1.2665
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              94.5,
+              75.5,
+              15.0,
+              7.25
+            ],
+            "center": [
+              102.13656387665198,
+              79.12775330396475
+            ],
+            "ink_pixels": 454
+          },
+          "actual": {
+            "bbox": [
+              94.25,
+              74.75,
+              15.25,
+              7.5
+            ],
+            "center": [
+              102.13608695652174,
+              78.70260869565217
+            ],
+            "ink_pixels": 575
+          }
+        },
+        "text_f2c34d87": {
+          "label": "文字：发消息…",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0306,
+            "center_y_delta": -0.0287,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.1739
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              65.5,
+              699.5,
+              54.0,
+              13.0
+            ],
+            "center": [
+              87.38534536403236,
+              706.136200995644
+            ],
+            "ink_pixels": 3214
+          },
+          "actual": {
+            "bbox": [
+              65.5,
+              699.25,
+              54.25,
+              13.25
+            ],
+            "center": [
+              87.41598197720647,
+              706.1075404187649
+            ],
+            "ink_pixels": 3773
+          }
+        },
+        "asset_a0da8b25": {
+          "label": "蓝湖原始切图：图形",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": -0.0017,
+            "width_delta": 0.5,
+            "height_delta": 0.5,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.015,
+            "mask_iou_loss": 0.014774166314900805
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              31.25,
+              695.25,
+              21.5,
+              21.5
+            ],
+            "center": [
+              42.14063838903171,
+              705.8692159383033
+            ],
+            "ink_pixels": 2334
+          },
+          "actual": {
+            "bbox": [
+              31.0,
+              695.0,
+              22.0,
+              22.0
+            ],
+            "center": [
+              42.14067116926974,
+              705.8675601519628
+            ],
+            "ink_pixels": 2369
+          }
+        },
+        "asset_22f37677": {
+          "label": "蓝湖原始切图：编组 2",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0004,
+            "center_y_delta": 0.0049,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 0.9983,
+            "mask_iou_loss": 0.0016958733747880483
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              316.0,
+              744.0,
+              24.0,
+              22.0
+            ],
+            "center": [
+              327.9747032221594,
+              754.5682589033352
+            ],
+            "ink_pixels": 3538
+          },
+          "actual": {
+            "bbox": [
+              316.0,
+              744.0,
+              24.0,
+              22.0
+            ],
+            "center": [
+              327.97430634201584,
+              754.57318799547
+            ],
+            "ink_pixels": 3532
+          }
+        },
+        "text_1209c315": {
+          "label": "文字：和Ta的关系",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.7745,
+            "center_y_delta": -0.0512,
+            "width_delta": 0.25,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2455
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              240.5,
+              63.0,
+              55.5,
+              10.0
+            ],
+            "center": [
+              267.8909783110291,
+              67.89547761882787
+            ],
+            "ink_pixels": 2167
+          },
+          "actual": {
+            "bbox": [
+              240.5,
+              63.0,
+              55.75,
+              10.0
+            ],
+            "center": [
+              268.6655242682475,
+              67.84429418303075
+            ],
+            "ink_pixels": 2699
+          }
+        },
+        "asset_5114794c": {
+          "label": "蓝湖原始切图：编组 10",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0,
+            "mask_iou_loss": 0.0
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              226.0,
+              520.0,
+              20.0,
+              68.0
+            ],
+            "center": [
+              235.83276371697764,
+              553.875
+            ],
+            "ink_pixels": 21652
+          },
+          "actual": {
+            "bbox": [
+              226.0,
+              520.0,
+              20.0,
+              68.0
+            ],
+            "center": [
+              235.83276371697764,
+              553.875
+            ],
+            "ink_pixels": 21652
+          }
+        },
+        "text_36b70533": {
+          "label": "文字：礼物名称",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.4093,
+            "center_y_delta": -0.3024,
+            "width_delta": 0.25,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.3253
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              121.75,
+              537.25,
+              50.75,
+              12.0
+            ],
+            "center": [
+              148.14735540334857,
+              543.2028158295282
+            ],
+            "ink_pixels": 2628
+          },
+          "actual": {
+            "bbox": [
+              121.5,
+              537.0,
+              51.0,
+              12.0
+            ],
+            "center": [
+              147.73801320700545,
+              542.900445018662
+            ],
+            "ink_pixels": 3483
+          }
+        },
+        "text_6b72a934": {
+          "label": "文字：300",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0435,
+            "center_y_delta": -0.0375,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.1832
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              141.75,
+              561.75,
+              23.75,
+              10.5
+            ],
+            "center": [
+              153.78419071518192,
+              566.8698243412798
+            ],
+            "ink_pixels": 1594
+          },
+          "actual": {
+            "bbox": [
+              141.5,
+              561.5,
+              24.25,
+              10.75
+            ],
+            "center": [
+              153.7407211028632,
+              566.8323170731708
+            ],
+            "ink_pixels": 1886
+          }
+        },
+        "text_5cd598a1": {
+          "label": "文字：X 1",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0456,
+            "center_y_delta": -0.0898,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2158
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              179.25,
+              539.5,
+              15.25,
+              8.5
+            ],
+            "center": [
+              186.47262479871176,
+              543.4351851851852
+            ],
+            "ink_pixels": 621
+          },
+          "actual": {
+            "bbox": [
+              179.0,
+              539.25,
+              15.75,
+              8.75
+            ],
+            "center": [
+              186.5182119205298,
+              543.3453642384106
+            ],
+            "ink_pixels": 755
+          }
+        }
+      },
+      "relations": {
+        "voice_left_alignment": {
+          "label": "左侧语音波形与时长垂直对齐",
+          "reference_delta": 3.1087,
+          "actual_delta": 3.0603,
+          "error": 0.0483,
+          "passed": true
+        },
+        "header_relation_alignment": {
+          "label": "标题与关系入口垂直关系",
+          "reference_delta": -6.7119,
+          "actual_delta": -6.7373,
+          "error": 0.0254,
+          "passed": true
+        }
+      },
+      "colors": {
+        "page_background": {
+          "label": "会话背景",
+          "rect": [
+            365,
+            300,
+            6,
+            40
+          ],
+          "reference_rgb": [
+            248.0,
+            248.0,
+            248.0
+          ],
+          "actual_rgb": [
+            248.0,
+            248.0,
+            248.0
+          ],
+          "max_channel_delta": 0.0,
+          "passed": true
+        },
+        "composer_surface": {
+          "label": "底部输入区背景",
+          "rect": [
+            4,
+            760,
+            6,
+            30
+          ],
+          "reference_rgb": [
+            250.39,
+            250.39,
+            250.39
+          ],
+          "actual_rgb": [
+            254.91,
+            254.91,
+            254.91
+          ],
+          "max_channel_delta": 4.52,
+          "passed": true
+        }
+      },
+      "overlay": "1-flutter-alignment-overlay.png"
+    }
+  },
+  "status": "PASS_WITH_EXCLUSIONS"
+}

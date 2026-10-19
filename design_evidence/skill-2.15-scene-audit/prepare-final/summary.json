@@ -1,0 +1,20 @@
+{
+  "status": "PREPARED_FOR_REVIEW",
+  "scope": "source preparation only; proposals are not approved implementation or visual acceptance",
+  "canvas": [
+    375,
+    812
+  ],
+  "source_nodes": 228,
+  "seconds": 0.093,
+  "asset_count": 43,
+  "issue_counts": {},
+  "review_count": 109,
+  "report": "design_evidence/skill-2.15-scene-audit/prepare-final/page-plan.json",
+  "review_group_count": 44,
+  "brief": "design_evidence/skill-2.15-scene-audit/prepare-final/implementation-brief.json",
+  "missing_bitmap_count": 11,
+  "text_style_group_count": 13,
+  "visual_style_group_count": 47,
+  "brief_inventory_count": 191
+}

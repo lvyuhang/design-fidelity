@@ -1,0 +1,141 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<title>视觉还原门禁报告</title><style>
+body{font:14px/1.5 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;margin:32px;color:#20242a;background:#f5f6f8}
+main{max-width:1180px;margin:auto}section{background:white;border:1px solid #e1e4e8;border-radius:14px;padding:22px;margin:20px 0;overflow:auto}
+table{border-collapse:collapse;width:100%;min-width:800px}th,td{border-bottom:1px solid #eceef1;padding:8px;text-align:left}img{width:375px;max-width:100%;border:1px solid #ddd}
+.shots{display:flex;gap:16px;flex-wrap:wrap}figure{margin:0}figcaption{color:#686b77;margin-top:6px}
+.ref{color:#15a46b}.actual{color:#e13d8c}code{background:#eef0f3;padding:2px 5px;border-radius:4px}
+</style></head><body><main><h1>视觉还原自动门禁</h1>
+<p>整体结果：PASS_WITH_EXCLUSIONS。绿色框为蓝湖原稿可见像素，粉色框为候选渲染可见像素。</p>
+<details><summary>验收范围、环境与排除项</summary><pre>{
+  &quot;skill_version&quot;: &quot;2.7.0&quot;,
+  &quot;coverage&quot;: {
+    &quot;nodes&quot;: 118,
+    &quot;covered&quot;: 106,
+    &quot;exceptions&quot;: [
+      &quot;node 91C7F81B-BBAB-4A81-AF88-0DF6194FDCBD: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖&quot;,
+      &quot;node FF75EE8E-F764-423A-973B-8CCD6C8E3499: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖&quot;,
+      &quot;node 506F6A95-2DFC-4F73-B1A7-2EA2F755E1A4: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖&quot;,
+      &quot;node 9AA03999-E623-438A-96D5-DCFB3BE0CE59: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖&quot;,
+      &quot;node 2C34E24F-8122-4743-A948-449551EDF921: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖&quot;,
+      &quot;node D046C2A8-0AD8-4167-ABE8-80C765C91008: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖&quot;,
+      &quot;node BFE10B6B-F12E-459D-9AC3-F0235C7BFF65: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖&quot;,
+      &quot;node A17B4782-E31F-49C6-9872-73BCCCFAF1CE: 蓝湖返回的关系图标组边界为 152×752，与可见 14×14 图标不一致；已使用导出原图并人工核对&quot;,
+      &quot;node 67548D3B-BC03-40CB-B6C2-724FEEA4FE16: 礼物卡背景原图与未切礼物/星币图层重叠，颜色分割会被缺图占位污染；原始 PNG 哈希与整卡区域继续受门禁约束&quot;,
+      &quot;node 109A27EE-A12C-4E3C-B782-DC637A1ED913: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖&quot;,
+      &quot;node 15F0F477-CEA7-4135-BD2F-8DEC2712E08E: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖&quot;,
+      &quot;node 71E736BD-69F4-4BBB-AA46-E1825CEB7E8D: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖&quot;
+    ]
+  },
+  &quot;environment&quot;: {
+    &quot;renderer&quot;: &quot;flutter-test-skia&quot;,
+    &quot;renderer_version&quot;: &quot;Flutter 3.47.7 / engine deb287481e&quot;,
+    &quot;platform&quot;: &quot;macOS widget-test 375x812 @4x&quot;,
+    &quot;locale&quot;: &quot;zh_CN&quot;,
+    &quot;state&quot;: &quot;message-backup-45-chat-static&quot;,
+    &quot;text_scale&quot;: 1
+  },
+  &quot;exclusions&quot;: [
+    {
+      &quot;rect&quot;: [
+        44,
+        51,
+        30,
+        30
+      ],
+      &quot;reason&quot;: &quot;顶部头像原图未提供；保留圆形缺图占位&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        17,
+        135,
+        30,
+        30
+      ],
+      &quot;reason&quot;: &quot;聊天头像原图未提供；保留圆形缺图占位&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        17,
+        187,
+        30,
+        30
+      ],
+      &quot;reason&quot;: &quot;聊天头像原图未提供；保留圆形缺图占位&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        331,
+        240,
+        30,
+        30
+      ],
+      &quot;reason&quot;: &quot;本人头像原图未提供；保留圆形缺图占位&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        17,
+        298,
+        30,
+        30
+      ],
+      &quot;reason&quot;: &quot;聊天头像原图未提供；保留圆形缺图占位&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        331,
+        357,
+        30,
+        30
+      ],
+      &quot;reason&quot;: &quot;本人头像原图未提供；保留圆形缺图占位&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        17,
+        412,
+        30,
+        30
+      ],
+      &quot;reason&quot;: &quot;聊天头像原图未提供；保留圆形缺图占位&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        17,
+        465,
+        30,
+        30
+      ],
+      &quot;reason&quot;: &quot;聊天头像原图未提供；保留圆形缺图占位&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        17,
+        518,
+        30,
+        30
+      ],
+      &quot;reason&quot;: &quot;聊天头像原图未提供；保留圆形缺图占位&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        62,
+        527,
+        55,
+        55
+      ],
+      &quot;reason&quot;: &quot;礼物图片原图未提供；保留圆角缺图占位&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        121,
+        558,
+        19,
+        19
+      ],
+      &quot;reason&quot;: &quot;星币图片原图未提供；保留圆形缺图占位&quot;
+    }
+  ],
+  &quot;excluded_fraction&quot;: 0.037720853858784875
+}</pre></details>
+<section><h2>flutter · <strong style="color:#137A52">PASS</strong></h2><div class="shots"><figure><img src="reference.png" alt="reference"><figcaption>蓝湖原稿</figcaption></figure><figure><img src="1-flutter-candidate.png" alt="candidate"><figcaption>候选实现</figcaption></figure><figure><img src="1-flutter-alignment-overlay.png" alt="alignment overlay"><figcaption>可见像素对齐</figcaption></figure></div><p class="legend"><span class="ref">原稿可见边界</span> · <span class="actual">实现可见边界</span></p><h3>区域像素门禁</h3><table><tr><th>区域</th><th>MAE</th><th>P95</th><th>结果</th><th>原因</th></tr><tr><td>完整聊天页面</td><td>1.6760</td><td>5.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>状态栏与会话标题</td><td>4.1302</td><td>11.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>消息内容区域</td><td>0.4622</td><td>1.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>底部输入与工具区</td><td>4.1292</td><td>5.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr></table><h3>元素几何门禁</h3><table><tr><th>元素</th><th>ΔX</th><th>ΔY</th><th>Δ宽</th><th>Δ高</th><th>结果</th><th>原因</th></tr><tr><td>文字：02-01 15:39</td><td>0.19</td><td>-0.05</td><td>0.25</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>文字：00:22:10</td><td>-0.15</td><td>-0.15</td><td>0.25</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>文字：hi</td><td>0.33</td><td>0.04</td><td>0.25</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>文字：在干嘛呀？</td><td>0.80</td><td>0.06</td><td>0.25</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>蓝湖原始切图：编组</td><td>-0.01</td><td>-0.02</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>蓝湖原始切图：编组备份 4</td><td>0.21</td><td>0.03</td><td>-0.25</td><td>-0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>文字：7”</td><td>0.31</td><td>0.03</td><td>0.25</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>文字：5”</td><td>0.16</td><td>-0.01</td><td>0.25</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>文字：在看你的视频</td><td>0.68</td><td>-0.05</td><td>0.50</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>蓝湖原始切图：编组</td><td>0.62</td><td>0.01</td><td>-1.00</td><td>-2.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>蓝湖原始切图：编组 3</td><td>0.04</td><td>-0.02</td><td>-0.50</td><td>-0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>文字：00:22:10</td><td>-0.15</td><td>-0.15</td><td>0.25</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>蓝湖原始切图：-path</td><td>-0.05</td><td>-0.05</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>蓝湖原始切图：-path备份</td><td>-0.01</td><td>0.01</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>蓝湖原始切图：编组</td><td>-0.03</td><td>0.02</td><td>-0.50</td><td>-0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>文字：9:41</td><td>-0.24</td><td>-1.23</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>蓝湖原始切图：编组</td><td>0.02</td><td>-0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>蓝湖原始切图：编组</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>文字：送礼大神</td><td>0.10</td><td>-0.08</td><td>0.25</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>文字：在线</td><td>-0.00</td><td>-0.43</td><td>0.25</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>文字：发消息…</td><td>0.03</td><td>-0.03</td><td>0.25</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>蓝湖原始切图：图形</td><td>0.00</td><td>-0.00</td><td>0.50</td><td>0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>蓝湖原始切图：编组 2</td><td>-0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>文字：和Ta的关系</td><td>0.77</td><td>-0.05</td><td>0.25</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>蓝湖原始切图：编组 10</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>文字：礼物名称</td><td>-0.15</td><td>-0.32</td><td>0.50</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>文字：300</td><td>-0.04</td><td>-0.04</td><td>0.50</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>文字：X 1</td><td>0.05</td><td>-0.09</td><td>0.50</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr></table><h3>组内关系门禁</h3><table><tr><th>关系</th><th>原稿差值</th><th>实现差值</th><th>偏差</th><th>结果</th></tr><tr><td>左侧语音波形与时长垂直对齐</td><td>3.1087</td><td>3.0603</td><td>0.0483</td><td><strong style="color:#137A52">PASS</strong></td></tr><tr><td>标题与关系入口垂直关系</td><td>-6.7119</td><td>-6.7373</td><td>0.0254</td><td><strong style="color:#137A52">PASS</strong></td></tr></table><h3>颜色采样门禁</h3><table><tr><th>采样</th><th>原稿 RGB</th><th>实现 RGB</th><th>最大通道偏差</th><th>结果</th></tr><tr><td>会话背景</td><td>[248.0, 248.0, 248.0]</td><td>[248.0, 248.0, 248.0]</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td></tr><tr><td>底部输入区背景</td><td>[250.39, 250.39, 250.39]</td><td>[254.91, 254.91, 254.91]</td><td>4.52</td><td><strong style="color:#137A52">PASS</strong></td></tr></table></section></main></body></html>

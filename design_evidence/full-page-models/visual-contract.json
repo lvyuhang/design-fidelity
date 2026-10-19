@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "name": "平台介绍页视觉契约",
+  "canvas": [375, 812],
+  "render_scale": 4,
+  "reference": "reference-4x.png",
+  "source_documents": ["source-part-1.json", "source-part-2.json"],
+  "regions": {
+    "whole": {
+      "label": "完整页面",
+      "rect": [0, 0, 375, 812],
+      "max_mae": 5.0,
+      "max_p95": 26
+    },
+    "capabilities": {
+      "label": "平台能力区",
+      "node_ids": ["FBAD45FA-3661-48CD-A7DC-5B858AD7FF6A"],
+      "max_mae": 7.0,
+      "max_p95": 28
+    },
+    "benefits": {
+      "label": "创作者收益区",
+      "node_ids": ["C2C9DF67-1B84-4E04-A871-FD1A60E4F46E"],
+      "max_mae": 8.0,
+      "max_p95": 55
+    },
+    "cta": {
+      "label": "底部 CTA",
+      "rect": [16, 714, 343, 50],
+      "max_mae": 3.0,
+      "max_p95": 8
+    }
+  },
+  "features": {
+    "capability_badge": {
+      "label": "平台能力徽章可见主体",
+      "node_ids": ["14D9E6CC-37AE-4AB2-9258-2D4D87DF2351"],
+      "padding": [4, 4, 4, 4],
+      "detector": {"kind": "gold", "red_min": 100, "red_blue_min": 18, "green_blue_min": 8, "min_pixels": 100},
+      "limits": {"max_center_delta": 1.0, "max_size_delta": 1.5, "max_edge_delta": 2.0, "max_ink_ratio_delta": 0.2}
+    },
+    "capability_heading": {
+      "label": "平台能力介绍文字",
+      "node_ids": ["A2341762-66D3-4BEF-A1FA-632A86E77426"],
+      "padding": [2, 4, 2, 4],
+      "detector": {"kind": "dark", "luma_max": 150, "min_pixels": 100},
+      "limits": {"max_center_delta": 1.0, "max_size_delta": 1.5, "max_edge_delta": 2.0, "max_ink_ratio_delta": 0.2}
+    },
+    "benefit_badge": {
+      "label": "创作者收益徽章可见主体",
+      "node_ids": ["251ABCDE-68AA-46EB-8431-11FBF0BC73DB"],
+      "padding": [4, 4, 4, 4],
+      "detector": {"kind": "gold", "red_min": 115, "red_blue_min": 18, "green_blue_min": 8, "min_pixels": 100},
+      "limits": {"max_center_delta": 1.0, "max_size_delta": 1.5, "max_edge_delta": 2.0, "max_ink_ratio_delta": 0.25}
+    },
+    "benefit_heading": {
+      "label": "创作者获得的收益文字",
+      "node_ids": ["06EDBF6F-00C9-4981-A374-0A3424689867"],
+      "padding": [2, 4, 2, 4],
+      "detector": {"kind": "gold", "red_min": 125, "red_blue_min": 18, "green_blue_min": 8, "min_pixels": 100},
+      "limits": {"max_center_delta": 1.0, "max_size_delta": 1.5, "max_edge_delta": 2.0, "max_ink_ratio_delta": 0.22}
+    },
+    "capability_1_icon": {
+      "label": "内容创作图标",
+      "node_ids": ["AF8E4ABD-0DC5-4426-A06A-FE01CDC5D2F2"],
+      "padding": [2, 2, 2, 2],
+      "detector": {"kind": "gold", "red_min": 100, "red_blue_min": 18, "green_blue_min": 8, "min_pixels": 60},
+      "limits": {"max_center_delta": 1.0, "max_size_delta": 1.25, "max_edge_delta": 1.5, "max_ink_ratio_delta": 0.15}
+    },
+    "capability_1_copy": {
+      "label": "内容创作文字组",
+      "node_ids": ["0588FFD0-9562-49B6-B337-585A7D47D221", "F7EB806C-A636-4C3C-BA0B-08C3881FA358"],
+      "padding": [2, 2, 2, 2],
+      "detector": {"kind": "dark", "luma_max": 185, "min_pixels": 100},
+      "limits": {"max_center_delta": 1.0, "max_size_delta": 1.5, "max_edge_delta": 2.0, "max_ink_ratio_delta": 0.2}
+    },
+    "capability_2_icon": {
+      "label": "智能推荐图标",
+      "node_ids": ["7185821F-B5C4-464B-9B8D-E9A543ECE224"],
+      "padding": [2, 2, 2, 2],
+      "detector": {"kind": "gold", "red_min": 100, "red_blue_min": 18, "green_blue_min": 8, "min_pixels": 60},
+      "limits": {"max_center_delta": 1.0, "max_size_delta": 1.25, "max_edge_delta": 1.5, "max_ink_ratio_delta": 0.15}
+    },
+    "capability_2_copy": {
+      "label": "智能推荐文字组",
+      "node_ids": ["7C04B759-F351-4971-80B7-BEFAB8B539B6", "8EDE0981-29FD-4710-9141-07C885C203C8"],
+      "padding": [2, 2, 2, 2],
+      "detector": {"kind": "dark", "luma_max": 185, "min_pixels": 100},
+      "limits": {"max_center_delta": 1.0, "max_size_delta": 1.5, "max_edge_delta": 2.0, "max_ink_ratio_delta": 0.2}
+    },
+    "capability_3_icon": {
+      "label": "任务互动图标",
+      "node_ids": ["74B4B740-E889-4DB2-97B1-7346446D4C95"],
+      "padding": [2, 2, 2, 2],
+      "detector": {"kind": "gold", "red_min": 100, "red_blue_min": 18, "green_blue_min": 8, "min_pixels": 60},
+      "limits": {"max_center_delta": 1.0, "max_size_delta": 1.25, "max_edge_delta": 1.5, "max_ink_ratio_delta": 0.15}
+    },
+    "capability_3_copy": {
+      "label": "任务互动文字组",
+      "node_ids": ["AE3A27D6-DA99-4A1F-9E49-B640B007DC44", "3CE43603-6FBC-4489-BDAE-E9E36EDA5FC8"],
+      "padding": [2, 2, 2, 2],
+      "detector": {"kind": "dark", "luma_max": 185, "min_pixels": 100},
+      "limits": {"max_center_delta": 1.0, "max_size_delta": 1.5, "max_edge_delta": 2.0, "max_ink_ratio_delta": 0.2}
+    },
+    "capability_4_icon": {
+      "label": "关系维护图标",
+      "node_ids": ["0F5AA2FF-F6A6-4507-A98E-D8F68114AD7A"],
+      "padding": [2, 2, 2, 2],
+      "detector": {"kind": "gold", "red_min": 100, "red_blue_min": 18, "green_blue_min": 8, "min_pixels": 60},
+      "limits": {"max_center_delta": 1.0, "max_size_delta": 1.25, "max_edge_delta": 1.5, "max_ink_ratio_delta": 0.15}
+    },
+    "capability_4_copy": {
+      "label": "关系维护文字组",
+      "node_ids": ["C7811218-5CB1-4E7E-847C-4E821BAE3A5D", "FEDBCFFC-B6C5-44F7-9247-BDA9C9F25D60"],
+      "padding": [2, 2, 2, 2],
+      "detector": {"kind": "dark", "luma_max": 185, "min_pixels": 100},
+      "limits": {"max_center_delta": 1.0, "max_size_delta": 1.5, "max_edge_delta": 2.0, "max_ink_ratio_delta": 0.2}
+    },
+    "reward_1_icon": {
+      "label": "多平台分发图标",
+      "node_ids": ["BAA46888-06CE-4239-9E0B-2B4C194C1ECF"],
+      "padding": [2, 2, 2, 2],
+      "detector": {"kind": "gold", "red_min": 100, "red_blue_min": 18, "green_blue_min": 8, "min_pixels": 100},
+      "limits": {"max_center_delta": 1.0, "max_size_delta": 1.5, "max_edge_delta": 2.0, "max_ink_ratio_delta": 0.2}
+    },
+    "reward_1_copy": {
+      "label": "多平台分发文字组",
+      "node_ids": ["D5F784F3-8E06-4C4F-A3F8-8FF9128E8FBF", "43C56157-B07D-4870-881E-AAFDC4564FA8"],
+      "padding": [2, 2, 2, 2],
+      "detector": {"kind": "dark", "luma_max": 200, "min_pixels": 100},
+      "limits": {"max_center_delta": 1.0, "max_size_delta": 1.5, "max_edge_delta": 2.0, "max_ink_ratio_delta": 0.2}
+    },
+    "reward_2_icon": {
+      "label": "多样任务图标",
+      "node_ids": ["38F39AB7-1B1B-4536-B256-68E93B251F33"],
+      "padding": [2, 2, 2, 2],
+      "detector": {"kind": "gold", "red_min": 100, "red_blue_min": 18, "green_blue_min": 8, "min_pixels": 100},
+      "limits": {"max_center_delta": 1.0, "max_size_delta": 1.5, "max_edge_delta": 2.0, "max_ink_ratio_delta": 0.2}
+    },
+    "reward_2_copy": {
+      "label": "多样任务文字组",
+      "node_ids": ["07374D1F-F808-41C6-BE0B-5D7F42AF350C", "AA5F26B7-A949-4AA3-AC80-B79FAD8B5F29"],
+      "padding": [2, 2, 2, 2],
+      "detector": {"kind": "dark", "luma_max": 200, "min_pixels": 100},
+      "limits": {"max_center_delta": 1.0, "max_size_delta": 1.5, "max_edge_delta": 2.0, "max_ink_ratio_delta": 0.2}
+    },
+    "reward_3_icon": {
+      "label": "任务奖励图标",
+      "node_ids": ["CC16704D-812C-42AB-8488-1E79C65EE8B8"],
+      "padding": [2, 2, 2, 2],
+      "detector": {"kind": "gold", "red_min": 100, "red_blue_min": 18, "green_blue_min": 8, "min_pixels": 100},
+      "limits": {"max_center_delta": 1.0, "max_size_delta": 1.5, "max_edge_delta": 2.0, "max_ink_ratio_delta": 0.2}
+    },
+    "reward_3_copy": {
+      "label": "任务奖励文字组",
+      "node_ids": ["EC9595BF-FBEE-48D6-83B7-578DDF77926C", "B5B1EADF-DC60-44D2-B26F-2748C7011D07"],
+      "padding": [2, 2, 2, 2],
+      "detector": {"kind": "dark", "luma_max": 200, "min_pixels": 100},
+      "limits": {"max_center_delta": 1.0, "max_size_delta": 1.5, "max_edge_delta": 2.0, "max_ink_ratio_delta": 0.2}
+    }
+  },
+  "relations": {
+    "capability_header_vertical_alignment": {
+      "label": "平台能力徽章与标题的可见中心线",
+      "features": ["capability_badge", "capability_heading"],
+      "metric": "center_y",
+      "max_delta": 0.75
+    },
+    "benefit_header_vertical_alignment": {
+      "label": "收益徽章与标题的可见中心线",
+      "features": ["benefit_badge", "benefit_heading"],
+      "metric": "center_y",
+      "max_delta": 0.75
+    },
+    "capability_row_1_vertical_alignment": {
+      "label": "内容创作图标与文字组的可见中心线",
+      "features": ["capability_1_icon", "capability_1_copy"],
+      "metric": "center_y",
+      "max_delta": 0.75
+    },
+    "capability_row_2_vertical_alignment": {
+      "label": "智能推荐图标与文字组的可见中心线",
+      "features": ["capability_2_icon", "capability_2_copy"],
+      "metric": "center_y",
+      "max_delta": 0.75
+    },
+    "capability_row_3_vertical_alignment": {
+      "label": "任务互动图标与文字组的可见中心线",
+      "features": ["capability_3_icon", "capability_3_copy"],
+      "metric": "center_y",
+      "max_delta": 0.75
+    },
+    "capability_row_4_vertical_alignment": {
+      "label": "关系维护图标与文字组的可见中心线",
+      "features": ["capability_4_icon", "capability_4_copy"],
+      "metric": "center_y",
+      "max_delta": 0.75
+    },
+    "reward_row_1_vertical_alignment": {
+      "label": "多平台分发图标与文字组的可见中心线",
+      "features": ["reward_1_icon", "reward_1_copy"],
+      "metric": "center_y",
+      "max_delta": 0.75
+    },
+    "reward_row_2_vertical_alignment": {
+      "label": "多样任务图标与文字组的可见中心线",
+      "features": ["reward_2_icon", "reward_2_copy"],
+      "metric": "center_y",
+      "max_delta": 0.75
+    },
+    "reward_row_3_vertical_alignment": {
+      "label": "任务奖励图标与文字组的可见中心线",
+      "features": ["reward_3_icon", "reward_3_copy"],
+      "metric": "center_y",
+      "max_delta": 0.75
+    }
+  },
+  "color_samples": {
+    "capability_card_surface": {
+      "label": "能力卡片底色",
+      "node_ids": ["A22C0DB6-9846-4744-A900-37852C9874DA"],
+      "anchor": [0.82, 0.22],
+      "size": [6, 6],
+      "max_channel_delta": 4
+    },
+    "benefit_inner_surface": {
+      "label": "收益内卡底色",
+      "node_ids": ["0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B"],
+      "anchor": [0.82, 0.86],
+      "size": [6, 6],
+      "max_channel_delta": 4
+    },
+    "cta_fill": {
+      "label": "CTA 深色渐变",
+      "node_ids": ["B3B02A92-587E-4458-994E-449FD80C020F"],
+      "anchor": [0.16, 0.5],
+      "size": [6, 6],
+      "max_channel_delta": 4
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "contract_sha256": "6d1ca3213b8cad8f25cfd8598ccd0846db519d42fde7fd79fd055102c57bdaf3",
+  "candidate_sha256": "f9d6bf9a7025460c23651b07d442d525f03324f6ea49c0ca613645e012d1b9e4",
+  "environment": {
+    "renderer": "flutter_test raster",
+    "renderer_version": "Flutter 3.47.7 / engine deb287481e",
+    "platform": "macOS host, 1500x3248 RGBA PNG",
+    "locale": "zh_CN",
+    "state": "加入聚星阁默认页",
+    "text_scale": 1
+  },
+  "inputs": {
+    "../../flutter_ui_components/lib/experiments/platform_intro_optimized_page.dart": "3962c3d15dcecfc0b82d7facefff78fdb99d8252e0cd602d0cbc6091fbd0f10a",
+    "../../flutter_ui_components/pubspec.lock": "d764df020ca4eb901ccd2cead6955f5e8600adcc872c563512552b5aa1a815f7",
+    "../../flutter_ui_components/pubspec.yaml": "b4f3d136d52b36fce7db754c4079460840aa6d921d0667c248a7a6efaf1d61de",
+    "../../flutter_ui_components/test/platform_intro_optimized_render_test.dart": "4cbdb60f71b1f8d5e3f70aadccd1cea3fa891e48128fee34fb7eb366732ba402",
+    "reference-4x.png": "6c7b4d3290d1140e569eb134c514fd082590892a9cd2afb4868d64a8b9693c5f",
+    "source/focus-effects-nodes.json": "07442722e01e2aff42d71801d98d18f03db1571b1257b963eb9a9ae6c5e9147b"
+  },
+  "command": [
+    "flutter",
+    "test",
+    "--no-pub",
+    "test/platform_intro_optimized_render_test.dart"
+  ],
+  "cwd": "/Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components",
+  "exit_code": 0,
+  "started_ns": 1791885954329881000,
+  "finished_ns": 1791885956640187000
+}

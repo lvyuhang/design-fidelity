@@ -1,0 +1,22 @@
+{
+  "scope": [
+    {
+      "kind": "provided_nodes",
+      "reason": "本轮针对上次复核暴露的引号、01/02、星光、收益区渐变/阴影/间距和 CTA 阴影做正式回归；完整页面像素差同时保留为阻断检查。"
+    },
+    {
+      "kind": "provided_nodes",
+      "reason": "本轮针对上次复核暴露的引号、01/02、星光、收益区渐变/阴影/间距和 CTA 阴影做正式回归；完整页面像素差同时保留为阻断检查。"
+    }
+  ],
+  "baseline_differences": [
+    "coverage.0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B.checks",
+    "features.white_card_surface",
+    "regions.benefit_surface.max_p95",
+    "regions.white_card.max_p95"
+  ],
+  "render_sha256": {
+    "design_evidence/platform-intro-skill29/r1/final.png/render.png": "f9d6bf9a7025460c23651b07d442d525f03324f6ea49c0ca613645e012d1b9e4",
+    "design_evidence/platform-intro-skill29/r2/final/render.png": "f9d6bf9a7025460c23651b07d442d525f03324f6ea49c0ca613645e012d1b9e4"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "1备份20 · Skill 2.12 组件重做",
+  "run_dir": "run",
+  "scope": "page",
+  "evidence": [
+    "../backup-20-skill211/normalized-source/region-01.json",
+    "../backup-20-skill211/normalized-source/region-02.json",
+    "../backup-20-skill211/normalized-source/region-03.json",
+    "../backup-20-skill211/normalized-source/region-04.json"
+  ],
+  "reference": "../backup-20-skill211/reference-4x.png",
+  "manifest": "../backup-20-skill211/source-bundle/install-receipt.json",
+  "font_map": "../backup-20-skill211/project-font-map.json",
+  "spec": "reviewed-spec.json",
+  "contract": "visual-contract.json",
+  "app": "../../flutter_ui_components",
+  "test": "test/backup_20_skill212_render_test.dart",
+  "output_env": "BACKUP_20_SKILL212_RENDER_OUTPUT",
+  "analyze": [
+    "lib/experiments/backup_20_skill212_page.dart",
+    "test/backup_20_skill212_render_test.dart"
+  ]
+}

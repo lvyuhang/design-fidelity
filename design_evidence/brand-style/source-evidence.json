@@ -1,0 +1,3114 @@
+{
+  "sources": [
+    {
+      "key": "logo",
+      "design_id": "53971653-a115-4285-8bb0-753726bd1a9d",
+      "design_name": "1024",
+      "snapshot_id": "4b832f1fb9dff4d837fa80a54b5d1272",
+      "version_id": "336a220f-db08-4d9e-995f-125a58464940",
+      "canvas": {
+        "width": 1024,
+        "height": 1024
+      },
+      "url": "https://lanhuapp.com/web/#/item/project/stage?pid=3be04117-73d6-43db-955e-528423563e93&image_id=53971653-a115-4285-8bb0-753726bd1a9d&version_id=336a220f-db08-4d9e-995f-125a58464940"
+    },
+    {
+      "key": "login",
+      "design_id": "a4eadc40-fbd6-4aa6-a490-5fa2139ac958",
+      "design_name": "登录-普通登录",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "version_id": "18f1a6ed-585a-4b77-801b-7a9d5e726810",
+      "canvas": {
+        "width": 375,
+        "height": 812
+      },
+      "url": "https://lanhuapp.com/web/#/item/project/stage?pid=3be04117-73d6-43db-955e-528423563e93&image_id=a4eadc40-fbd6-4aa6-a490-5fa2139ac958&version_id=18f1a6ed-585a-4b77-801b-7a9d5e726810"
+    },
+    {
+      "key": "home",
+      "design_id": "b4b0d4f9-fe8d-476e-a1ae-81aeb2d15b97",
+      "design_name": "首页",
+      "snapshot_id": "58e8325b6bf4512936877aa111eb084a",
+      "version_id": "7f08adcf-1e12-4e41-b19b-47641f116d9a",
+      "canvas": {
+        "width": 375,
+        "height": 812
+      },
+      "url": "https://lanhuapp.com/web/#/item/project/stage?pid=3be04117-73d6-43db-955e-528423563e93&image_id=b4b0d4f9-fe8d-476e-a1ae-81aeb2d15b97&version_id=7f08adcf-1e12-4e41-b19b-47641f116d9a"
+    },
+    {
+      "key": "profile",
+      "design_id": "94584940-8d42-40ab-ac40-4e4185ce143e",
+      "design_name": "我的",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "version_id": "7b292e6f-8eb5-4be5-894f-a35d023cb35e",
+      "canvas": {
+        "width": 375,
+        "height": 812
+      },
+      "url": "https://lanhuapp.com/web/#/item/project/stage?pid=3be04117-73d6-43db-955e-528423563e93&image_id=94584940-8d42-40ab-ac40-4e4185ce143e&version_id=7b292e6f-8eb5-4be5-894f-a35d023cb35e"
+    }
+  ],
+  "evidence": [
+    {
+      "source": "logo",
+      "snapshot_id": "4b832f1fb9dff4d837fa80a54b5d1272",
+      "node_id": "F5BF9392-1075-4073-8657-09E52AAAACD2",
+      "name": "1024",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 1024
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 255,
+            "value": "rgba(255,255,255,1)",
+            "g": 255,
+            "r": 255
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "borders": [],
+      "shadow": [],
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "logo",
+      "snapshot_id": "4b832f1fb9dff4d837fa80a54b5d1272",
+      "node_id": "6C160D3D-4E7D-4DD1-85D5-C36687B0F2A9",
+      "name": "矩形",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1022.9361038961056,
+        "height": 1022.9361038961056
+      },
+      "fills": [
+        {
+          "gradient": {
+            "colorStops": [
+              {
+                "position": 0.0006282779720279722,
+                "color": {
+                  "a": 1,
+                  "b": 34,
+                  "value": "rgba(55,45,34,1)",
+                  "g": 45,
+                  "r": 55
+                }
+              },
+              {
+                "position": 1,
+                "color": {
+                  "a": 1,
+                  "b": 17,
+                  "value": "rgba(17,17,17,1)",
+                  "g": 17,
+                  "r": 17
+                }
+              }
+            ],
+            "type": "linear",
+            "gradientType": 0,
+            "to": {
+              "x": 0.345672607421875,
+              "y": 0.873687744140625
+            },
+            "elipseLength": 1,
+            "from": {
+              "x": 1.15380859375,
+              "y": -0.37335205078125
+            }
+          },
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "gradient",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 1
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "logo",
+      "snapshot_id": "4b832f1fb9dff4d837fa80a54b5d1272",
+      "node_id": "705DDF8A-8827-4442-A714-6B0998838618",
+      "name": "logo_1024px",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 1024
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 255,
+            "value": "rgba(255,255,255,1)",
+            "g": 255,
+            "r": 255
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "D1C64A4F-EA81-4245-BB6F-16CADFADECCD",
+      "name": "登录-普通登录",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 255,
+            "value": "rgba(255,255,255,1)",
+            "g": 255,
+            "r": 255
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "borders": [],
+      "shadow": [],
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "D47B6AAE-889B-498A-9EA5-AD2D196A893C",
+      "name": "蒙版",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 240,
+            "value": "rgba(250,246,240,1)",
+            "g": 246,
+            "r": 250
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "0EDF11A4-3BDE-4A6D-A3F2-2D983EF94561",
+      "name": "蒙版",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "fills": [
+        {
+          "gradient": {
+            "colorStops": [
+              {
+                "position": 0,
+                "color": {
+                  "a": 1,
+                  "b": 249,
+                  "value": "rgba(255,253,249,1)",
+                  "g": 253,
+                  "r": 255
+                }
+              },
+              {
+                "position": 0.557473776223776,
+                "color": {
+                  "a": 1,
+                  "b": 242,
+                  "value": "rgba(255,251,242,1)",
+                  "g": 251,
+                  "r": 255
+                }
+              },
+              {
+                "position": 1,
+                "color": {
+                  "a": 1,
+                  "b": 255,
+                  "value": "rgba(255,255,255,1)",
+                  "g": 255,
+                  "r": 255
+                }
+              }
+            ],
+            "type": "linear",
+            "gradientType": 0,
+            "to": {
+              "x": 1,
+              "y": 0.5
+            },
+            "elipseLength": 1,
+            "from": {
+              "x": 0,
+              "y": 0.5
+            }
+          },
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "gradient",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 1
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "97E04EC2-17CE-4D96-AE75-521C2711D283",
+      "name": "路径",
+      "text": null,
+      "bounds": {
+        "x": 143.12977099236696,
+        "y": 0,
+        "width": 231.87022900763304,
+        "height": 229.01408450704218
+      },
+      "fills": [
+        {
+          "gradient": {
+            "colorStops": [
+              {
+                "position": 0,
+                "color": {
+                  "a": 0.28,
+                  "b": 116,
+                  "value": "rgba(242,205,116,0.28)",
+                  "g": 205,
+                  "r": 242
+                }
+              },
+              {
+                "position": 0.560000002384186,
+                "color": {
+                  "a": 0.13,
+                  "b": 216,
+                  "value": "rgba(255,241,216,0.13)",
+                  "g": 241,
+                  "r": 255
+                }
+              },
+              {
+                "position": 1,
+                "color": {
+                  "a": 0,
+                  "b": 255,
+                  "value": "rgba(255,255,255,0)",
+                  "g": 255,
+                  "r": 255
+                }
+              }
+            ],
+            "type": "radial",
+            "gradientType": 1,
+            "to": {
+              "x": 1,
+              "y": 0.5
+            },
+            "elipseLength": 1,
+            "from": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "gradient",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 1
+        }
+      ],
+      "opacity": 42,
+      "blur": {
+        "radius": 9.54198473282443,
+        "center": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "blurType": 0,
+        "type": "高斯模糊",
+        "saturation": 1,
+        "isEnabled": true,
+        "motionAngle": 0
+      },
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "D2E7EDE5-7CAA-4B01-88E7-BD6CB48F4992",
+      "name": "路径",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 522.915492957746,
+        "width": 229.00763358778607,
+        "height": 289.084507042254
+      },
+      "fills": [
+        {
+          "gradient": {
+            "colorStops": [
+              {
+                "position": 0,
+                "color": {
+                  "a": 0.28,
+                  "b": 116,
+                  "value": "rgba(242,205,116,0.28)",
+                  "g": 205,
+                  "r": 242
+                }
+              },
+              {
+                "position": 0.560000002384186,
+                "color": {
+                  "a": 0.13,
+                  "b": 216,
+                  "value": "rgba(255,241,216,0.13)",
+                  "g": 241,
+                  "r": 255
+                }
+              },
+              {
+                "position": 1,
+                "color": {
+                  "a": 0,
+                  "b": 255,
+                  "value": "rgba(255,255,255,0)",
+                  "g": 255,
+                  "r": 255
+                }
+              }
+            ],
+            "type": "radial",
+            "gradientType": 1,
+            "to": {
+              "x": 1,
+              "y": 0.5
+            },
+            "elipseLength": 1,
+            "from": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "gradient",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 1
+        }
+      ],
+      "opacity": 50,
+      "blur": {
+        "radius": 11.4503816793893,
+        "center": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "blurType": 0,
+        "type": "高斯模糊",
+        "saturation": 1,
+        "isEnabled": true,
+        "motionAngle": 0
+      },
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "B48BE123-B9B6-4D06-B386-D3A897D1AA79",
+      "name": "矩形备份 5",
+      "text": null,
+      "bounds": {
+        "x": 38,
+        "y": 609,
+        "width": 299,
+        "height": 50
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 0.85,
+            "b": 249,
+            "value": "rgba(255,253,249,0.85)",
+            "g": 253,
+            "r": 255
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "borders": [
+        {
+          "position": "内边框",
+          "type": "color",
+          "blendMode": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 196,
+            "value": "rgba(238,220,196,1)",
+            "g": 220,
+            "r": 238
+          },
+          "thickness": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "shadow": [
+        {
+          "blurRadius": 12,
+          "offsetX": 0,
+          "offsetY": 6,
+          "type": "外阴影",
+          "blendMode": 0,
+          "opacity": 1,
+          "color": {
+            "a": 0.1,
+            "b": 71,
+            "value": "rgba(216,155,71,0.1)",
+            "g": 155,
+            "r": 216
+          },
+          "isEnabled": true,
+          "spread": 0
+        }
+      ],
+      "opacity": 100,
+      "radius": [
+        3.402823466385289e+38
+      ],
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "0B63C1CF-9205-44B7-8051-F2E247C6C7D6",
+      "name": "矩形备份 2",
+      "text": null,
+      "bounds": {
+        "x": 38,
+        "y": 405,
+        "width": 299,
+        "height": 50
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 0.85,
+            "b": 249,
+            "value": "rgba(255,253,249,0.85)",
+            "g": 253,
+            "r": 255
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "borders": [
+        {
+          "position": "内边框",
+          "type": "color",
+          "blendMode": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 196,
+            "value": "rgba(238,220,196,1)",
+            "g": 220,
+            "r": 238
+          },
+          "thickness": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "shadow": [
+        {
+          "blurRadius": 12,
+          "offsetX": 0,
+          "offsetY": 6,
+          "type": "外阴影",
+          "blendMode": 0,
+          "opacity": 1,
+          "color": {
+            "a": 0.1,
+            "b": 71,
+            "value": "rgba(216,155,71,0.1)",
+            "g": 155,
+            "r": 216
+          },
+          "isEnabled": true,
+          "spread": 0
+        }
+      ],
+      "opacity": 100,
+      "radius": [
+        1.7976931348623157e+308
+      ],
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "7021DA79-1F72-4C3D-ACF0-11FA88AB5690",
+      "name": "形状",
+      "text": null,
+      "bounds": {
+        "x": 146,
+        "y": 625,
+        "width": 15.402116,
+        "height": 18.7504020869565
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 42,
+            "value": "rgba(34,36,42,1)",
+            "g": 36,
+            "r": 34,
+            "swatchName": "1"
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "F6AC0250-7B39-4787-895C-44D7673A3C62",
+      "name": "苹果登录",
+      "text": "苹果登录",
+      "bounds": {
+        "x": 172,
+        "y": 624,
+        "width": 60,
+        "height": 20
+      },
+      "opacity": 100,
+      "text_runs": [
+        {
+          "text": "苹果登录",
+          "font": "PingFangSC-Semibold",
+          "size": 14,
+          "weight": 600,
+          "line": 20,
+          "color": "rgba(34,36,42,1.000000)"
+        }
+      ],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "CBE8C3DC-9908-4A04-9AA2-584E54DC536C",
+      "name": "微信登录",
+      "text": "微信登录",
+      "bounds": {
+        "x": 172,
+        "y": 420,
+        "width": 56,
+        "height": 20
+      },
+      "opacity": 100,
+      "text_runs": [
+        {
+          "text": "微信登录",
+          "font": "PingFangSC-Semibold",
+          "size": 14,
+          "weight": 600,
+          "line": 20,
+          "color": "rgba(34,36,42,1.000000)"
+        }
+      ],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "36055850-68FE-41E1-BFF2-83302A65F5B9",
+      "name": "矩形备份 3",
+      "text": null,
+      "bounds": {
+        "x": 38,
+        "y": 473,
+        "width": 299,
+        "height": 50
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 0.85,
+            "b": 249,
+            "value": "rgba(255,253,249,0.85)",
+            "g": 253,
+            "r": 255
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "borders": [
+        {
+          "position": "内边框",
+          "type": "color",
+          "blendMode": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 196,
+            "value": "rgba(238,220,196,1)",
+            "g": 220,
+            "r": 238
+          },
+          "thickness": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "shadow": [
+        {
+          "blurRadius": 12,
+          "offsetX": 0,
+          "offsetY": 6,
+          "type": "外阴影",
+          "blendMode": 0,
+          "opacity": 1,
+          "color": {
+            "a": 0.1,
+            "b": 71,
+            "value": "rgba(216,155,71,0.1)",
+            "g": 155,
+            "r": 216
+          },
+          "isEnabled": true,
+          "spread": 0
+        }
+      ],
+      "opacity": 100,
+      "radius": [
+        1.7976931348623157e+308
+      ],
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "E4003A3F-48CC-4575-BA9C-04D254A23751",
+      "name": "QQ登录",
+      "text": "QQ登录",
+      "bounds": {
+        "x": 172,
+        "y": 488,
+        "width": 50,
+        "height": 20
+      },
+      "opacity": 100,
+      "text_runs": [
+        {
+          "text": "QQ登录",
+          "font": "PingFangSC-Semibold",
+          "size": 14,
+          "weight": 600,
+          "line": 20,
+          "color": "rgba(34,36,42,1.000000)"
+        }
+      ],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "46E0F6BC-6848-4C99-894E-C5215F09D1A3",
+      "name": "矩形备份 4",
+      "text": null,
+      "bounds": {
+        "x": 38,
+        "y": 541,
+        "width": 299,
+        "height": 50
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 0.85,
+            "b": 249,
+            "value": "rgba(255,253,249,0.85)",
+            "g": 253,
+            "r": 255
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "borders": [
+        {
+          "position": "内边框",
+          "type": "color",
+          "blendMode": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 196,
+            "value": "rgba(238,220,196,1)",
+            "g": 220,
+            "r": 238
+          },
+          "thickness": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "shadow": [
+        {
+          "blurRadius": 12,
+          "offsetX": 0,
+          "offsetY": 6,
+          "type": "外阴影",
+          "blendMode": 0,
+          "opacity": 1,
+          "color": {
+            "a": 0.1,
+            "b": 71,
+            "value": "rgba(216,155,71,0.1)",
+            "g": 155,
+            "r": 216
+          },
+          "isEnabled": true,
+          "spread": 0
+        }
+      ],
+      "opacity": 100,
+      "radius": [
+        1.7976931348623157e+308
+      ],
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "4BFB7693-39A2-4C30-AE71-12FA0710340F",
+      "name": "形状",
+      "text": null,
+      "bounds": {
+        "x": 146,
+        "y": 556,
+        "width": 13.6363636363636,
+        "height": 20
+      },
+      "fills": [
+        {
+          "gradient": {
+            "colorStops": [
+              {
+                "position": 0,
+                "color": {
+                  "a": 1,
+                  "b": 108,
+                  "value": "rgba(216,182,108,1)",
+                  "g": 182,
+                  "r": 216
+                }
+              },
+              {
+                "position": 1,
+                "color": {
+                  "a": 1,
+                  "b": 58,
+                  "value": "rgba(175,127,58,1)",
+                  "g": 127,
+                  "r": 175
+                }
+              }
+            ],
+            "type": "linear",
+            "gradientType": 0,
+            "to": {
+              "x": 0.5,
+              "y": 1
+            },
+            "elipseLength": 0,
+            "from": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "gradient",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 1
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "86E009FB-E7B9-410E-9808-7677FE42A822",
+      "name": "手机号登录备份 3",
+      "text": "手机号登录",
+      "bounds": {
+        "x": 172,
+        "y": 556,
+        "width": 70,
+        "height": 20
+      },
+      "opacity": 100,
+      "text_runs": [
+        {
+          "text": "手机号登录",
+          "font": "PingFangSC-Semibold",
+          "size": 14,
+          "weight": 600,
+          "line": 20,
+          "color": "rgba(34,36,42,1.000000)"
+        }
+      ],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "EF5E9082-F944-4A48-A406-B97433DC450F",
+      "name": "我已阅读并同意《用户协议》、《隐私协议》",
+      "text": "我已阅读并同意《用户协议》、《隐私协议》、《用户违规行为管理办法》、《运营商认证服务条款》",
+      "bounds": {
+        "x": 48,
+        "y": 740,
+        "width": 301,
+        "height": 32
+      },
+      "opacity": 100,
+      "text_runs": [
+        {
+          "text": "我已阅读并同意《用户协议》、《隐私协议》、《用户违规行为管理办法》、《运营商认证服务条款》",
+          "font": "PingFangSC-Regular",
+          "size": 11,
+          "weight": 400,
+          "line": 16,
+          "color": "rgba(145,145,155,1.000000)"
+        }
+      ],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "C6117AB0-0C78-477C-BB77-6F5AC7F19ADA",
+      "name": "椭圆形",
+      "text": null,
+      "bounds": {
+        "x": 129,
+        "y": 173,
+        "width": 101,
+        "height": 17
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 12,
+            "value": "rgba(118,65,12,1)",
+            "g": 65,
+            "r": 118
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 30,
+      "blur": {
+        "radius": 10,
+        "center": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "blurType": 0,
+        "type": "高斯模糊",
+        "saturation": 1,
+        "isEnabled": true,
+        "motionAngle": 0
+      },
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "EE37125B-2D0F-4F5F-B2E7-E2B39C975B4E",
+      "name": "Cap",
+      "text": null,
+      "bounds": {
+        "x": 359.33330000000024,
+        "y": 21,
+        "width": 1.32803800560835,
+        "height": 4
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 0,
+            "value": "rgba(0,0,0,1)",
+            "g": 0,
+            "r": 0
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 40,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "2ABE901E-36F1-4D4D-983E-9D57CDCED477",
+      "name": "Capacity",
+      "text": null,
+      "bounds": {
+        "x": 338.33330000000024,
+        "y": 19.33333333333337,
+        "width": 18,
+        "height": 7.33333333333333
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 0,
+            "value": "rgba(0,0,0,1)",
+            "g": 0,
+            "r": 0
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 100,
+      "radius": [
+        1.33333337306976
+      ],
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "BA366939-1068-4638-9B5A-835AC099E6F2",
+      "name": "Wifi",
+      "text": null,
+      "bounds": {
+        "x": 316,
+        "y": 17.33067270403251,
+        "width": 15.3333,
+        "height": 11
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 0,
+            "value": "rgba(0,0,0,1)",
+            "g": 0,
+            "r": 0
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "003AFDAF-60B1-494C-B48D-7997677ED41B",
+      "name": "Cellular Connection",
+      "text": null,
+      "bounds": {
+        "x": 294,
+        "y": 17.666667000000075,
+        "width": 17,
+        "height": 10.6666666666667
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 0,
+            "value": "rgba(0,0,0,1)",
+            "g": 0,
+            "r": 0
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "ADC36A60-85EA-4F04-9CDF-8D79494A598F",
+      "name": "Time",
+      "text": "9:41",
+      "bounds": {
+        "x": 21,
+        "y": 14.333300000000236,
+        "width": 54,
+        "height": 18
+      },
+      "opacity": 100,
+      "text_runs": [
+        {
+          "text": "9:41",
+          "font": ".AppleSystemUIFont",
+          "size": 15,
+          "weight": 400,
+          "line": 18,
+          "color": "rgba(0,0,0,1.000000)"
+        }
+      ],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "3482F840-3E83-4CAE-83FD-FE057504375E",
+      "name": "星形",
+      "text": null,
+      "bounds": {
+        "x": 140.99999999999955,
+        "y": 121.00000000000023,
+        "width": 11,
+        "height": 11
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 193,
+            "value": "rgba(249,225,193,1)",
+            "g": 225,
+            "r": 249
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "44B2CD73-DF76-4D2E-9393-9130F5C571B8",
+      "name": "星形备份",
+      "text": null,
+      "bounds": {
+        "x": 238.3096564329935,
+        "y": 153.36214908421164,
+        "width": 27.349428301045712,
+        "height": 27.349428301045712
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 193,
+            "value": "rgba(249,225,193,1)",
+            "g": 225,
+            "r": 249
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 61,
+      "radius": [
+        1
+      ],
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "706082C1-1253-4A99-8188-11F6E5F4CDEF",
+      "name": "欢迎登录聚星阁",
+      "text": "欢迎登录聚星阁",
+      "bounds": {
+        "x": 61,
+        "y": 228,
+        "width": 252,
+        "height": 43
+      },
+      "opacity": 100,
+      "text_runs": [
+        {
+          "text": "欢迎登录聚星阁",
+          "font": "zihunxinquhei",
+          "size": 36,
+          "weight": 400,
+          "line": 43,
+          "color": "rgba(24,24,27,1.000000)"
+        }
+      ],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "6D66E1D4-61B2-4DE7-8CD2-46C00B95E191",
+      "name": "Home Indicator",
+      "text": null,
+      "bounds": {
+        "x": 121,
+        "y": 799,
+        "width": 134,
+        "height": 5
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 0,
+            "value": "rgba(0,0,0,1)",
+            "g": 0,
+            "r": 0
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 100,
+      "radius": [
+        100
+      ],
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "C4D68904-68EB-4B3E-AA98-891EE4630FC1",
+      "name": "形状",
+      "text": null,
+      "bounds": {
+        "x": 141,
+        "y": 421,
+        "width": 22.8148148148148,
+        "height": 18.7407407407407
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 82,
+            "value": "rgba(65,196,82,1)",
+            "g": 196,
+            "r": 65
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "login",
+      "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+      "node_id": "C6F8A257-78CC-48DB-AC80-2DF05552D736",
+      "name": "路径",
+      "text": null,
+      "bounds": {
+        "x": 143,
+        "y": 489,
+        "width": 18.7407407407407,
+        "height": 18.7407407407407
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 236,
+            "value": "rgba(99,147,236,1)",
+            "g": 147,
+            "r": 99
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "8D468E57-DEDF-49AD-B250-1F1A46C696A2",
+      "name": "我的",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 255,
+            "value": "rgba(255,255,255,1)",
+            "g": 255,
+            "r": 255
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "borders": [],
+      "shadow": [],
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "5C6AE950-087E-49B5-A56D-B6DD12F47F94",
+      "name": "矩形",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 250,
+            "value": "rgba(255,254,250,1)",
+            "g": 254,
+            "r": 255
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "8CDE651B-6D1B-49DA-9D6E-A552724E8986",
+      "name": "蒙版",
+      "text": null,
+      "bounds": {
+        "x": 16,
+        "y": 211,
+        "width": 343,
+        "height": 65
+      },
+      "fills": [
+        {
+          "gradient": {
+            "colorStops": [
+              {
+                "position": 0,
+                "color": {
+                  "a": 1,
+                  "b": 234,
+                  "value": "rgba(253,245,234,1)",
+                  "g": 245,
+                  "r": 253
+                }
+              },
+              {
+                "position": 0.999348958333333,
+                "color": {
+                  "a": 1,
+                  "b": 207,
+                  "value": "rgba(254,234,207,1)",
+                  "g": 234,
+                  "r": 254
+                }
+              }
+            ],
+            "type": "linear",
+            "gradientType": 0,
+            "to": {
+              "x": 0.9778038263320923,
+              "y": 0.5
+            },
+            "elipseLength": 0,
+            "from": {
+              "x": 0.019349034875631332,
+              "y": 0.4388316869735718
+            }
+          },
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "gradient",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 1
+        }
+      ],
+      "borders": [
+        {
+          "position": "内边框",
+          "type": "color",
+          "blendMode": 0,
+          "opacity": 1,
+          "color": {
+            "a": 0.9,
+            "b": 255,
+            "value": "rgba(255,255,255,0.9)",
+            "g": 255,
+            "r": 255
+          },
+          "thickness": 1,
+          "isEnabled": true,
+          "fillType": 0
+        },
+        {
+          "gradient": {
+            "colorStops": [
+              {
+                "position": 0,
+                "color": {
+                  "a": 1,
+                  "b": 237,
+                  "value": "rgba(255,247,237,1)",
+                  "g": 247,
+                  "r": 255
+                }
+              },
+              {
+                "position": 1,
+                "color": {
+                  "a": 1,
+                  "b": 215,
+                  "value": "rgba(253,235,215,1)",
+                  "g": 235,
+                  "r": 253
+                }
+              }
+            ],
+            "type": "linear",
+            "gradientType": 0,
+            "to": {
+              "x": 0.5,
+              "y": 1
+            },
+            "elipseLength": 0,
+            "from": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          "position": "外边框",
+          "type": "gradient",
+          "blendMode": 0,
+          "opacity": 1,
+          "thickness": 0.5,
+          "isEnabled": true,
+          "fillType": 1
+        }
+      ],
+      "shadow": [
+        {
+          "blurRadius": 16,
+          "offsetX": 0,
+          "offsetY": 0,
+          "type": "外阴影",
+          "blendMode": 0,
+          "opacity": 1,
+          "color": {
+            "a": 0.12,
+            "b": 123,
+            "value": "rgba(232,199,123,0.12)",
+            "g": 199,
+            "r": 232
+          },
+          "isEnabled": true,
+          "spread": 0
+        }
+      ],
+      "opacity": 100,
+      "radius": [
+        14
+      ],
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "1B7A9CEF-A579-4B71-BAF4-42C15973072B",
+      "name": "蒙版",
+      "text": null,
+      "bounds": {
+        "x": 16,
+        "y": 210,
+        "width": 99,
+        "height": 71
+      },
+      "fills": [
+        {
+          "gradient": {
+            "colorStops": [
+              {
+                "position": 0,
+                "color": {
+                  "a": 0,
+                  "b": 238,
+                  "value": "rgba(238,238,238,0)",
+                  "g": 238,
+                  "r": 238
+                }
+              },
+              {
+                "position": 1,
+                "color": {
+                  "a": 1,
+                  "b": 216,
+                  "value": "rgba(216,216,216,1)",
+                  "g": 216,
+                  "r": 216
+                }
+              }
+            ],
+            "type": "linear",
+            "gradientType": 0,
+            "to": {
+              "x": 1.2233493328094482,
+              "y": 0.43236204981803894
+            },
+            "elipseLength": 0,
+            "from": {
+              "x": 0.205078125,
+              "y": 0.43236204981803894
+            }
+          },
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "gradient",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 1
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "31420BE5-FC50-4252-95F5-173DC76280E8",
+      "name": "形状结合",
+      "text": null,
+      "bounds": {
+        "x": 162.43318455717315,
+        "y": 217.5279171157017,
+        "width": 18.229681010762647,
+        "height": 18.22968101076212
+      },
+      "fills": [
+        {
+          "gradient": {
+            "colorStops": [
+              {
+                "position": 0,
+                "color": {
+                  "a": 1,
+                  "b": 128,
+                  "value": "rgba(255,202,128,1)",
+                  "g": 202,
+                  "r": 255
+                }
+              },
+              {
+                "position": 1,
+                "color": {
+                  "a": 1,
+                  "b": 216,
+                  "value": "rgba(254,242,216,1)",
+                  "g": 242,
+                  "r": 254
+                }
+              }
+            ],
+            "type": "linear",
+            "gradientType": 0,
+            "to": {
+              "x": 0.5,
+              "y": 1
+            },
+            "elipseLength": 0,
+            "from": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "gradient",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 1
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "939DFEAE-0402-4C96-9978-8B5A0F95A4CF",
+      "name": "形状",
+      "text": null,
+      "bounds": {
+        "x": 105.30077761010477,
+        "y": 270.9119382870558,
+        "width": 20.307269532764593,
+        "height": 21.4122844915889
+      },
+      "fills": [
+        {
+          "gradient": {
+            "colorStops": [
+              {
+                "position": 0,
+                "color": {
+                  "a": 1,
+                  "b": 193,
+                  "value": "rgba(255,235,193,1)",
+                  "g": 235,
+                  "r": 255
+                }
+              },
+              {
+                "position": 1,
+                "color": {
+                  "a": 1,
+                  "b": 128,
+                  "value": "rgba(255,202,128,1)",
+                  "g": 202,
+                  "r": 255
+                }
+              }
+            ],
+            "type": "linear",
+            "gradientType": 0,
+            "to": {
+              "x": 0.5,
+              "y": 1
+            },
+            "elipseLength": 0,
+            "from": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "gradient",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 1
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "23825D0B-2236-4B85-8668-F25B4F545B97",
+      "name": "路径",
+      "text": null,
+      "bounds": {
+        "x": 22.660760933366873,
+        "y": 228.7559697428469,
+        "width": 15.50119878198034,
+        "height": 13.203195651526157
+      },
+      "fills": [
+        {
+          "gradient": {
+            "colorStops": [
+              {
+                "position": 0,
+                "color": {
+                  "a": 1,
+                  "b": 216,
+                  "value": "rgba(254,242,216,1)",
+                  "g": 242,
+                  "r": 254
+                }
+              },
+              {
+                "position": 1,
+                "color": {
+                  "a": 1,
+                  "b": 128,
+                  "value": "rgba(255,202,128,1)",
+                  "g": 202,
+                  "r": 255
+                }
+              }
+            ],
+            "type": "linear",
+            "gradientType": 0,
+            "to": {
+              "x": 0.5,
+              "y": 1
+            },
+            "elipseLength": 0,
+            "from": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "gradient",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 1
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "FDA9D1FC-6BAC-470E-8F08-1F77F843D772",
+      "name": "形状",
+      "text": null,
+      "bounds": {
+        "x": 18.927653549414345,
+        "y": 222.659306824773,
+        "width": 16.704200053928652,
+        "height": 13.104272882286242
+      },
+      "fills": [
+        {
+          "gradient": {
+            "colorStops": [
+              {
+                "position": 0,
+                "color": {
+                  "a": 1,
+                  "b": 216,
+                  "value": "rgba(254,242,216,1)",
+                  "g": 242,
+                  "r": 254
+                }
+              },
+              {
+                "position": 1,
+                "color": {
+                  "a": 1,
+                  "b": 128,
+                  "value": "rgba(255,202,128,1)",
+                  "g": 202,
+                  "r": 255
+                }
+              }
+            ],
+            "type": "linear",
+            "gradientType": 0,
+            "to": {
+              "x": 0.5,
+              "y": 1
+            },
+            "elipseLength": 0,
+            "from": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "gradient",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 1
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "6D93E293-2E93-4DA5-B843-F8CF6D9BF8F9",
+      "name": "星形",
+      "text": null,
+      "bounds": {
+        "x": 26.24776279049263,
+        "y": 231.28595681412025,
+        "width": 8.451358250840457,
+        "height": 8.38690547654802
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 220,
+            "value": "rgba(255,242,220,1)",
+            "g": 242,
+            "r": 255
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "3772B541-8210-4AB2-8589-420ABD003CB3",
+      "name": "矩形",
+      "text": null,
+      "bounds": {
+        "x": 27.100820852945276,
+        "y": 229.68024992436222,
+        "width": 2.251935036364255,
+        "height": 2.7797075576157875
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 255,
+            "value": "rgba(255,255,255,1)",
+            "g": 255,
+            "r": 255
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 66,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "0ECA4F5D-1A34-48AA-BD1B-E8DC19CCECF9",
+      "name": "创作者入驻",
+      "text": "创作者入驻",
+      "bounds": {
+        "x": 73,
+        "y": 225,
+        "width": 85,
+        "height": 24
+      },
+      "fills": [
+        {
+          "gradient": {
+            "colorStops": [
+              {
+                "position": 0,
+                "color": {
+                  "a": 1,
+                  "b": 66,
+                  "value": "rgba(118,97,66,1)",
+                  "g": 97,
+                  "r": 118
+                }
+              },
+              {
+                "position": 0.549105101679358,
+                "color": {
+                  "a": 1,
+                  "b": 24,
+                  "value": "rgba(24,24,24,1)",
+                  "g": 24,
+                  "r": 24
+                }
+              },
+              {
+                "position": 1,
+                "color": {
+                  "a": 1,
+                  "b": 51,
+                  "value": "rgba(195,127,51,1)",
+                  "g": 127,
+                  "r": 195
+                }
+              }
+            ],
+            "type": "linear",
+            "gradientType": 0,
+            "to": {
+              "x": -0.13965992629528046,
+              "y": 0.7822265625
+            },
+            "elipseLength": 0,
+            "from": {
+              "x": 0.9448201060295105,
+              "y": 0.2913411557674408
+            }
+          },
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "gradient",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 1
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [
+        {
+          "text": "创作者入驻",
+          "font": "PingFangSC-Semibold",
+          "size": 17,
+          "weight": 600,
+          "line": 24,
+          "color": "rgba(34,36,42,1.000000)"
+        }
+      ],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "F45C2D65-5E96-429B-AB11-5721070B5C1A",
+      "name": "解锁任务、关系与奖励能力",
+      "text": "解锁任务、关系与奖励能力",
+      "bounds": {
+        "x": 74,
+        "y": 250,
+        "width": 144,
+        "height": 17
+      },
+      "opacity": 100,
+      "text_runs": [
+        {
+          "text": "解锁任务、关系与奖励能力",
+          "font": "PingFangSC-Regular",
+          "size": 12,
+          "weight": 400,
+          "line": 17,
+          "color": "rgba(178,122,49,1.000000)"
+        }
+      ],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "04F4F9DE-1D3B-4BCB-8DA6-7FB2359581B8",
+      "name": "关注我的",
+      "text": "关注我的",
+      "bounds": {
+        "x": 53,
+        "y": 179,
+        "width": 44,
+        "height": 16
+      },
+      "opacity": 100,
+      "text_runs": [
+        {
+          "text": "关注我的",
+          "font": "PingFangSC-Regular",
+          "size": 11,
+          "weight": 400,
+          "line": 16,
+          "color": "rgba(121,119,114,1.000000)"
+        }
+      ],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "C5314F53-F0D3-4C85-82D1-3DF122B5C937",
+      "name": "我关注的",
+      "text": "我关注的",
+      "bounds": {
+        "x": 166,
+        "y": 179,
+        "width": 44,
+        "height": 16
+      },
+      "opacity": 100,
+      "text_runs": [
+        {
+          "text": "我关注的",
+          "font": "PingFangSC-Regular",
+          "size": 11,
+          "weight": 400,
+          "line": 16,
+          "color": "rgba(121,119,114,1.000000)"
+        }
+      ],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "7D3EF595-BF97-4C10-B323-090575BF64D0",
+      "name": "谁看过我",
+      "text": "谁看过我",
+      "bounds": {
+        "x": 274,
+        "y": 179,
+        "width": 44,
+        "height": 16
+      },
+      "opacity": 100,
+      "text_runs": [
+        {
+          "text": "谁看过我",
+          "font": "PingFangSC-Regular",
+          "size": 11,
+          "weight": 400,
+          "line": 16,
+          "color": "rgba(121,119,114,1.000000)"
+        }
+      ],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "AB18788E-00A8-47E5-97EC-817BA0384FFF",
+      "name": "126",
+      "text": "126",
+      "bounds": {
+        "x": 62,
+        "y": 151,
+        "width": 29,
+        "height": 25
+      },
+      "opacity": 100,
+      "text_runs": [
+        {
+          "text": "126",
+          "font": "PingFangSC-Semibold",
+          "size": 18,
+          "weight": 600,
+          "line": 25,
+          "color": "rgba(34,36,42,1.000000)"
+        }
+      ],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "683F3DF2-2511-4D14-A3A0-5F10F8016F81",
+      "name": "23",
+      "text": "23",
+      "bounds": {
+        "x": 178,
+        "y": 151,
+        "width": 22,
+        "height": 25
+      },
+      "opacity": 100,
+      "text_runs": [
+        {
+          "text": "23",
+          "font": "PingFangSC-Semibold",
+          "size": 18,
+          "weight": 600,
+          "line": 25,
+          "color": "rgba(34,36,42,1.000000)"
+        }
+      ],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "3A210AE0-1817-4535-BB19-CF813D90A837",
+      "name": "10",
+      "text": "10",
+      "bounds": {
+        "x": 286,
+        "y": 151,
+        "width": 19,
+        "height": 25
+      },
+      "opacity": 100,
+      "text_runs": [
+        {
+          "text": "10",
+          "font": "PingFangSC-Semibold",
+          "size": 18,
+          "weight": 600,
+          "line": 25,
+          "color": "rgba(34,36,42,1.000000)"
+        }
+      ],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "7DBAD9C7-D598-44B3-BA80-2FC2570FB93F",
+      "name": "蒙版",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 100
+      },
+      "fills": [
+        {
+          "gradient": {
+            "colorStops": [
+              {
+                "position": 0,
+                "color": {
+                  "a": 0.9,
+                  "b": 243,
+                  "value": "rgba(255,251,243,0.9)",
+                  "g": 251,
+                  "r": 255
+                }
+              },
+              {
+                "position": 1,
+                "color": {
+                  "a": 0.9,
+                  "b": 255,
+                  "value": "rgba(255,255,255,0.9)",
+                  "g": 255,
+                  "r": 255
+                }
+              }
+            ],
+            "type": "linear",
+            "gradientType": 0,
+            "to": {
+              "x": 0.5,
+              "y": 1
+            },
+            "elipseLength": 0,
+            "from": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "gradient",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 0.8,
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 1
+        }
+      ],
+      "opacity": 100,
+      "blur": {
+        "radius": 12,
+        "center": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "blurType": 3,
+        "type": "背景模糊",
+        "saturation": 1,
+        "isEnabled": true,
+        "motionAngle": 0
+      },
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "8B8F9DC8-FF65-416D-B84B-CBC245C8AB23",
+      "name": "蒙版",
+      "text": null,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 100
+      },
+      "fills": [
+        {
+          "gradient": {
+            "colorStops": [
+              {
+                "position": 0,
+                "color": {
+                  "a": 0.9,
+                  "b": 243,
+                  "value": "rgba(255,251,243,0.9)",
+                  "g": 251,
+                  "r": 255
+                }
+              },
+              {
+                "position": 1,
+                "color": {
+                  "a": 0,
+                  "b": 250,
+                  "value": "rgba(255,254,250,0)",
+                  "g": 254,
+                  "r": 255
+                }
+              }
+            ],
+            "type": "linear",
+            "gradientType": 0,
+            "to": {
+              "x": 0.5,
+              "y": 1
+            },
+            "elipseLength": 0,
+            "from": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "gradient",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 1
+        }
+      ],
+      "opacity": 100,
+      "blur": {
+        "radius": 12,
+        "center": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "blurType": 3,
+        "type": "背景模糊",
+        "saturation": 1,
+        "isEnabled": true,
+        "motionAngle": 0
+      },
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "BA16D904-FB0F-4E18-8D5D-3DA33C0C6288",
+      "name": "椭圆形",
+      "text": null,
+      "bounds": {
+        "x": 8.358208955223972,
+        "y": 0,
+        "width": 137,
+        "height": 38
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 0.7,
+            "b": 156,
+            "value": "rgba(255,231,156,0.7)",
+            "g": 231,
+            "r": 255
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 100,
+      "blur": {
+        "radius": 50,
+        "center": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "blurType": 0,
+        "type": "高斯模糊",
+        "saturation": 1,
+        "isEnabled": true,
+        "motionAngle": 0
+      },
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "E300DBCB-FFF5-48A4-95FC-795DAFB8230C",
+      "name": "椭圆形",
+      "text": null,
+      "bounds": {
+        "x": 202.35820895522397,
+        "y": 0,
+        "width": 172.64179104477603,
+        "height": 38
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 0.6,
+            "b": 117,
+            "value": "rgba(252,187,117,0.6)",
+            "g": 187,
+            "r": 252
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 100,
+      "blur": {
+        "radius": 50,
+        "center": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "blurType": 0,
+        "type": "高斯模糊",
+        "saturation": 1,
+        "isEnabled": true,
+        "motionAngle": 0
+      },
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "404CA5AF-B98E-4372-AE5A-808690E52D4C",
+      "name": "Cap",
+      "text": null,
+      "bounds": {
+        "x": 359.3333,
+        "y": 21,
+        "width": 1.32803800560835,
+        "height": 4
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 0,
+            "value": "rgba(0,0,0,1)",
+            "g": 0,
+            "r": 0
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 40,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "35EFA4CC-46E2-477A-8216-3166345D21AB",
+      "name": "Capacity",
+      "text": null,
+      "bounds": {
+        "x": 338.3333,
+        "y": 19.33333333333303,
+        "width": 18,
+        "height": 7.33333333333333
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 0,
+            "value": "rgba(0,0,0,1)",
+            "g": 0,
+            "r": 0
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 100,
+      "radius": [
+        1.33333337306976
+      ],
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "43D8D60E-EA48-487F-AC4F-94B69F70211C",
+      "name": "Wifi",
+      "text": null,
+      "bounds": {
+        "x": 316,
+        "y": 17.330672704032622,
+        "width": 15.3333,
+        "height": 11
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 0,
+            "value": "rgba(0,0,0,1)",
+            "g": 0,
+            "r": 0
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "006548D7-0BBB-4CED-920A-67A101693C15",
+      "name": "Cellular Connection",
+      "text": null,
+      "bounds": {
+        "x": 294,
+        "y": 17.666667000000416,
+        "width": 17,
+        "height": 10.6666666666667
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 0,
+            "value": "rgba(0,0,0,1)",
+            "g": 0,
+            "r": 0
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "8C91D791-797B-4957-AAB2-11DD07247307",
+      "name": "Time",
+      "text": "9:41",
+      "bounds": {
+        "x": 21,
+        "y": 14.333300000000236,
+        "width": 54,
+        "height": 18
+      },
+      "opacity": 100,
+      "text_runs": [
+        {
+          "text": "9:41",
+          "font": ".AppleSystemUIFont",
+          "size": 15,
+          "weight": 400,
+          "line": 18,
+          "color": "rgba(0,0,0,1.000000)"
+        }
+      ],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "5CFAC403-FBBD-43E0-826C-9CF272CC1594",
+      "name": "蒙版",
+      "text": null,
+      "bounds": {
+        "x": 16,
+        "y": 65,
+        "width": 70,
+        "height": 70
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 223,
+            "value": "rgba(223,223,223,1)",
+            "g": 223,
+            "r": 223
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "borders": [
+        {
+          "position": "内边框",
+          "type": "color",
+          "blendMode": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 255,
+            "value": "rgba(255,255,255,1)",
+            "g": 255,
+            "r": 255
+          },
+          "thickness": 2,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "A4B0E8B9-8C39-4C8C-BE09-38386DD9B10A",
+      "name": "位图",
+      "text": null,
+      "bounds": {
+        "x": 16,
+        "y": 65,
+        "width": 70,
+        "height": 70
+      },
+      "shadow": [
+        {
+          "blurRadius": 8,
+          "offsetX": 0,
+          "offsetY": 0,
+          "type": "外阴影",
+          "blendMode": 0,
+          "opacity": 1,
+          "color": {
+            "a": 0.1,
+            "b": 0,
+            "value": "rgba(0,0,0,0.1)",
+            "g": 0,
+            "r": 0
+          },
+          "isEnabled": true,
+          "spread": 0
+        }
+      ],
+      "opacity": 100,
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "29DAF27A-8550-4DEC-9BAC-E434609967DF",
+      "name": "暖暖",
+      "text": "暖暖",
+      "bounds": {
+        "x": 97,
+        "y": 78,
+        "width": 30,
+        "height": 21
+      },
+      "opacity": 100,
+      "text_runs": [
+        {
+          "text": "暖暖",
+          "font": "PingFangSC-Semibold",
+          "size": 15,
+          "weight": 600,
+          "line": 21,
+          "color": "rgba(34,36,42,1.000000)"
+        }
+      ],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "62F66193-4E9D-47B5-B801-4C26AD0089FC",
+      "name": "ID：2938473",
+      "text": "ID：2938473",
+      "bounds": {
+        "x": 97,
+        "y": 102,
+        "width": 74,
+        "height": 17
+      },
+      "opacity": 100,
+      "text_runs": [
+        {
+          "text": "ID：2938473",
+          "font": "PingFangSC-Regular",
+          "size": 12,
+          "weight": 400,
+          "line": 17,
+          "color": "rgba(166,170,181,1.000000)"
+        }
+      ],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "C672E4AA-F70A-4A2E-A204-D49D363B8E63",
+      "name": "矩形",
+      "text": null,
+      "bounds": {
+        "x": 274,
+        "y": 88,
+        "width": 84,
+        "height": 28
+      },
+      "fills": [
+        {
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "color",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "color": {
+            "a": 0.46,
+            "b": 239,
+            "value": "rgba(255,252,239,0.46)",
+            "g": 252,
+            "r": 255
+          },
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "borders": [
+        {
+          "position": "内边框",
+          "type": "color",
+          "blendMode": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 208,
+            "value": "rgba(224,219,208,1)",
+            "g": 219,
+            "r": 224
+          },
+          "thickness": 0.5,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "opacity": 100,
+      "radius": [
+        3.402823466385289e+38
+      ],
+      "text_runs": [],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "8805DD43-720B-4D54-AF3A-F03CCF3C1287",
+      "name": "编辑资料",
+      "text": "编辑资料",
+      "bounds": {
+        "x": 286,
+        "y": 93,
+        "width": 52,
+        "height": 18
+      },
+      "opacity": 100,
+      "text_runs": [
+        {
+          "text": "编辑资料",
+          "font": "PingFangSC-Regular",
+          "size": 13,
+          "weight": 400,
+          "line": 18,
+          "color": "rgba(34,36,42,1.000000)"
+        }
+      ],
+      "asset_ids": []
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "86A9DE5F-3E6C-4A28-9E4D-F79D6E11F08B",
+      "name": "矩形备份 6",
+      "text": null,
+      "bounds": {
+        "x": 260,
+        "y": 230,
+        "width": 78,
+        "height": 28
+      },
+      "fills": [
+        {
+          "gradient": {
+            "colorStops": [
+              {
+                "position": 0,
+                "color": {
+                  "a": 1,
+                  "b": 53,
+                  "value": "rgba(198,129,53,1)",
+                  "g": 129,
+                  "r": 198
+                }
+              },
+              {
+                "position": 1,
+                "color": {
+                  "a": 1,
+                  "b": 25,
+                  "value": "rgba(26,26,25,1)",
+                  "g": 26,
+                  "r": 26
+                }
+              }
+            ],
+            "type": "linear",
+            "gradientType": 0,
+            "to": {
+              "x": 0.2762920558452606,
+              "y": 1
+            },
+            "elipseLength": 0,
+            "from": {
+              "x": 0.054136618971824646,
+              "y": -1.1010044813156128
+            }
+          },
+          "patternTileScale": 1,
+          "noiseIntensity": 0,
+          "type": "gradient",
+          "blendMode": 0,
+          "noiseIndex": 0,
+          "opacity": 1,
+          "patternFillType": 1,
+          "isEnabled": true,
+          "fillType": 1
+        }
+      ],
+      "borders": [
+        {
+          "position": "内边框",
+          "type": "color",
+          "blendMode": 0,
+          "opacity": 1,
+          "color": {
+            "a": 1,
+            "b": 217,
+            "value": "rgba(231,229,217,1)",
+            "g": 229,
+            "r": 231
+          },
+          "thickness": 0.5,
+          "isEnabled": true,
+          "fillType": 0
+        }
+      ],
+      "shadow": [
+        {
+          "blurRadius": 8,
+          "offsetX": 0,
+          "offsetY": 2,
+          "type": "外阴影",
+          "blendMode": 0,
+          "opacity": 1,
+          "color": {
+            "a": 0.48,
+            "b": 74,
+            "value": "rgba(214,164,74,0.48)",
+            "g": 164,
+            "r": 214
+          },
+          "isEnabled": true,
+          "spread": 0
+        }
+      ],
+      "opacity": 100,
+      "radius": [
+        14
+      ],
+      "text_runs": [],
+      "asset_ids": [
+        "86A9DE5F-3E6C-4A28-9E4D-F79D6E11F08B:image"
+      ]
+    },
+    {
+      "source": "profile",
+      "snapshot_id": "af12c7cb35c08f7a6c00e26f1d898a81",
+      "node_id": "1BF728AF-123D-4FD0-91C1-BC569FF44EE1",
+      "name": "去入驻",
+      "text": "去入驻",
+      "bounds": {
+        "x": 279,
+        "y": 236,
+        "width": 36,
+        "height": 17
+      },
+      "opacity": 100,
+      "text_runs": [
+        {
+          "text": "去入驻",
+          "font": "PingFangSC-Semibold",
+          "size": 12,
+          "weight": 600,
+          "line": 17,
+          "color": "rgba(232,199,123,1.000000)"
+        }
+      ],
+      "asset_ids": []
+    }
+  ]
+}

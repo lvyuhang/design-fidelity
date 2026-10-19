@@ -1,0 +1,376 @@
+{
+  "method": "Source-aligned 4x RGB absolute error without alignment or resizing. Both R0 implementations were isolated and frozen before first render. Each R1 implementation received exactly one visual correction round using only its own R0 render, heatmap and the Lanhu source, then was frozen before R1 render. R2 applies the shared source-node visual contract, restores verified font coverage, and calibrates visible-pixel geometry before its final freeze. Native masks the bounding rectangles of all shared Lanhu raster assets. MAE is a 0-255 error value, not a fidelity percentage.",
+  "snapshot_id": "da6dd92db9b6df7fc3fc4d2bc873e0ee",
+  "resolved_version": "d4d1c235-1fb2-4395-9d0e-a5055d074f4e",
+  "models": {
+    "sol56": {
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "visual_revision_count": 0
+    },
+    "gpt6": {
+      "model": "gpt-6-sol",
+      "reasoning_effort": "high",
+      "visual_revision_count": 0
+    },
+    "sol56_r1": {
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "visual_revision_count": 1
+    },
+    "gpt6_r1": {
+      "model": "gpt-6-sol",
+      "reasoning_effort": "high",
+      "visual_revision_count": 1
+    },
+    "sol56_r2": {
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "visual_revision_count": 2
+    },
+    "gpt6_r2": {
+      "model": "gpt-6-sol",
+      "reasoning_effort": "high",
+      "visual_revision_count": 2
+    }
+  },
+  "source_sha256": "6c7b4d3290d1140e569eb134c514fd082590892a9cd2afb4868d64a8b9693c5f",
+  "code_sha256": {
+    "sol56": "cac1de357930decdd2c8a184233b55eb653a81b11dffec703338157a4b684652",
+    "gpt6": "a03af0adea1bd323bc0bf1716f3f4b209d7d9095f55829ec1c954f5a22ee42bf",
+    "sol56_r1": "582506a0592e8006463f35c2a3782ac86800d88db6297c76448ccf69040b93fe",
+    "gpt6_r1": "e241397a5152f98c4886260a31fbda0dc03fe9c8485922861e769985e1245810",
+    "sol56_r2": "e006f2b08c20cc5fd92e563c3643f90851591a6cdc975883d47464644e55b516",
+    "gpt6_r2": "5c70c6c21b74cd6cc5c36d0dfdcacbadd16ceb271bfe123046df27d7be6e5371"
+  },
+  "render_sha256": {
+    "sol56": "fd27c6ea5ce9d48de0c504edd43d76d36b107a59016ae7307df301d72f1d76d2",
+    "gpt6": "2fc0aed60ed2ac13946e7abd40ba72bd7aa6240c5d94868d07939a1dc163e8b9",
+    "sol56_r1": "ea8142f171273c8b3a2a98a980b1b9617d2f1cd2a00d268ad36908d75b2f652f",
+    "gpt6_r1": "87cede4ebb16f5b63d19c9e748dba415ad6c0cdccd35111ac8e453f3d44d6999",
+    "sol56_r2": "ae800a6cd3de45b825d2d59ff67dbef9569ac9f53a48de0cf884c01b42f4e5fa",
+    "gpt6_r2": "361888133cf663f987f3de5f99748bcea43548eff42c0b050db0d1bd5341ba99"
+  },
+  "asset_exclusion_rects": [
+    [
+      0,
+      0,
+      375,
+      229
+    ],
+    [
+      19,
+      57.183,
+      205,
+      118.817
+    ],
+    [
+      26,
+      218,
+      34,
+      34
+    ],
+    [
+      36,
+      281,
+      30,
+      30
+    ],
+    [
+      199,
+      281,
+      30,
+      30
+    ],
+    [
+      36,
+      355,
+      30,
+      30
+    ],
+    [
+      199,
+      355,
+      30,
+      30
+    ],
+    [
+      26,
+      433,
+      34,
+      34
+    ],
+    [
+      35,
+      486,
+      43,
+      43
+    ],
+    [
+      35,
+      558,
+      43,
+      43
+    ],
+    [
+      35,
+      625,
+      43,
+      43
+    ]
+  ],
+  "regions": {
+    "whole": {
+      "label": "完整页面",
+      "rect": [
+        0,
+        0,
+        375,
+        812
+      ],
+      "sol56": {
+        "pixels": 4872000,
+        "mean_abs_rgb_0_255": 3.7904,
+        "p95_max_channel_abs": 14.0
+      },
+      "gpt6": {
+        "pixels": 4872000,
+        "mean_abs_rgb_0_255": 4.23,
+        "p95_max_channel_abs": 23.0
+      },
+      "sol56_r1": {
+        "pixels": 4872000,
+        "mean_abs_rgb_0_255": 6.7949,
+        "p95_max_channel_abs": 34.0
+      },
+      "gpt6_r1": {
+        "pixels": 4872000,
+        "mean_abs_rgb_0_255": 6.5204,
+        "p95_max_channel_abs": 34.0
+      },
+      "sol56_r2": {
+        "pixels": 4872000,
+        "mean_abs_rgb_0_255": 3.267,
+        "p95_max_channel_abs": 8.0
+      },
+      "gpt6_r2": {
+        "pixels": 4872000,
+        "mean_abs_rgb_0_255": 3.7044,
+        "p95_max_channel_abs": 13.0
+      }
+    },
+    "native": {
+      "label": "排除原始切图后的原生结构",
+      "rect": [
+        0,
+        0,
+        375,
+        812
+      ],
+      "sol56": {
+        "pixels": 3320640,
+        "mean_abs_rgb_0_255": 3.8902,
+        "p95_max_channel_abs": 10.0
+      },
+      "gpt6": {
+        "pixels": 3320640,
+        "mean_abs_rgb_0_255": 4.1619,
+        "p95_max_channel_abs": 16.0
+      },
+      "sol56_r1": {
+        "pixels": 3320640,
+        "mean_abs_rgb_0_255": 7.5135,
+        "p95_max_channel_abs": 38.0
+      },
+      "gpt6_r1": {
+        "pixels": 3320640,
+        "mean_abs_rgb_0_255": 6.9013,
+        "p95_max_channel_abs": 40.0
+      },
+      "sol56_r2": {
+        "pixels": 3320640,
+        "mean_abs_rgb_0_255": 3.8699,
+        "p95_max_channel_abs": 9.0
+      },
+      "gpt6_r2": {
+        "pixels": 3320640,
+        "mean_abs_rgb_0_255": 4.1412,
+        "p95_max_channel_abs": 15.0
+      }
+    },
+    "hero": {
+      "label": "状态栏与首屏视觉",
+      "rect": [
+        0,
+        0,
+        375,
+        208
+      ],
+      "sol56": {
+        "pixels": 1248000,
+        "mean_abs_rgb_0_255": 1.9794,
+        "p95_max_channel_abs": 7.0
+      },
+      "gpt6": {
+        "pixels": 1248000,
+        "mean_abs_rgb_0_255": 2.9314,
+        "p95_max_channel_abs": 8.0
+      },
+      "sol56_r1": {
+        "pixels": 1248000,
+        "mean_abs_rgb_0_255": 3.8028,
+        "p95_max_channel_abs": 9.0
+      },
+      "gpt6_r1": {
+        "pixels": 1248000,
+        "mean_abs_rgb_0_255": 3.9471,
+        "p95_max_channel_abs": 9.0
+      },
+      "sol56_r2": {
+        "pixels": 1248000,
+        "mean_abs_rgb_0_255": 1.9794,
+        "p95_max_channel_abs": 7.0
+      },
+      "gpt6_r2": {
+        "pixels": 1248000,
+        "mean_abs_rgb_0_255": 2.9314,
+        "p95_max_channel_abs": 8.0
+      }
+    },
+    "capabilities": {
+      "label": "平台能力",
+      "rect": [
+        15,
+        208,
+        343,
+        208
+      ],
+      "sol56": {
+        "pixels": 1141504,
+        "mean_abs_rgb_0_255": 5.5219,
+        "p95_max_channel_abs": 15.0
+      },
+      "gpt6": {
+        "pixels": 1141504,
+        "mean_abs_rgb_0_255": 5.7555,
+        "p95_max_channel_abs": 19.0
+      },
+      "sol56_r1": {
+        "pixels": 1141504,
+        "mean_abs_rgb_0_255": 10.2161,
+        "p95_max_channel_abs": 93.0
+      },
+      "gpt6_r1": {
+        "pixels": 1141504,
+        "mean_abs_rgb_0_255": 10.3259,
+        "p95_max_channel_abs": 103.0
+      },
+      "sol56_r2": {
+        "pixels": 1141504,
+        "mean_abs_rgb_0_255": 4.9058,
+        "p95_max_channel_abs": 11.0
+      },
+      "gpt6_r2": {
+        "pixels": 1141504,
+        "mean_abs_rgb_0_255": 5.1402,
+        "p95_max_channel_abs": 17.0
+      }
+    },
+    "benefits": {
+      "label": "创作者收益",
+      "rect": [
+        16,
+        424,
+        343,
+        266
+      ],
+      "sol56": {
+        "pixels": 1459808,
+        "mean_abs_rgb_0_255": 5.838,
+        "p95_max_channel_abs": 40.0
+      },
+      "gpt6": {
+        "pixels": 1459808,
+        "mean_abs_rgb_0_255": 6.2619,
+        "p95_max_channel_abs": 50.0
+      },
+      "sol56_r1": {
+        "pixels": 1459808,
+        "mean_abs_rgb_0_255": 10.0389,
+        "p95_max_channel_abs": 89.0
+      },
+      "gpt6_r1": {
+        "pixels": 1459808,
+        "mean_abs_rgb_0_255": 9.0928,
+        "p95_max_channel_abs": 89.0
+      },
+      "sol56_r2": {
+        "pixels": 1459808,
+        "mean_abs_rgb_0_255": 4.5729,
+        "p95_max_channel_abs": 22.0
+      },
+      "gpt6_r2": {
+        "pixels": 1459808,
+        "mean_abs_rgb_0_255": 4.9891,
+        "p95_max_channel_abs": 41.0
+      }
+    },
+    "cta": {
+      "label": "底部按钮",
+      "rect": [
+        16,
+        714,
+        343,
+        50
+      ],
+      "sol56": {
+        "pixels": 274400,
+        "mean_abs_rgb_0_255": 1.989,
+        "p95_max_channel_abs": 1.0
+      },
+      "gpt6": {
+        "pixels": 274400,
+        "mean_abs_rgb_0_255": 1.989,
+        "p95_max_channel_abs": 1.0
+      },
+      "sol56_r1": {
+        "pixels": 274400,
+        "mean_abs_rgb_0_255": 3.9624,
+        "p95_max_channel_abs": 1.0
+      },
+      "gpt6_r1": {
+        "pixels": 274400,
+        "mean_abs_rgb_0_255": 3.9624,
+        "p95_max_channel_abs": 1.0
+      },
+      "sol56_r2": {
+        "pixels": 274400,
+        "mean_abs_rgb_0_255": 1.989,
+        "p95_max_channel_abs": 1.0
+      },
+      "gpt6_r2": {
+        "pixels": 274400,
+        "mean_abs_rgb_0_255": 1.989,
+        "p95_max_channel_abs": 1.0
+      }
+    }
+  },
+  "round_improvement": {
+    "sol56": {
+      "whole": -0.5234,
+      "native": -0.0203,
+      "hero": 0.0,
+      "capabilities": -0.6161,
+      "benefits": -1.2651,
+      "cta": 0.0
+    },
+    "gpt6": {
+      "whole": -0.5256,
+      "native": -0.0207,
+      "hero": 0.0,
+      "capabilities": -0.6153,
+      "benefits": -1.2728,
+      "cta": 0.0
+    }
+  }
+}

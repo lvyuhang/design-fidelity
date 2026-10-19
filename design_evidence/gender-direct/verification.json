@@ -1,0 +1,19 @@
+{
+  "frozen_component_sha256": "ae137648f34ac0b9ecd2ebcddfb5c7e0eda6174ef09212a25d4abdb94257609b",
+  "component_matches_freeze": true,
+  "visual_revisions": 0,
+  "blocking_repairs": 0,
+  "tests_passed": 31,
+  "dart_analyze": "No issues found",
+  "web_release_build": "passed",
+  "browser_url": "http://127.0.0.1:8767/?case=gender-direct",
+  "browser_checks": [
+    "both source fixtures",
+    "direct female callback",
+    "three-way comparison",
+    "overlay and opacity slider",
+    "shield gap zoom"
+  ],
+  "browser_errors_and_warnings": [],
+  "browser_screenshot": "browser-experiment.png"
+}

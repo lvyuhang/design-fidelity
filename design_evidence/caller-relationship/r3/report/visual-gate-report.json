@@ -1,0 +1,386 @@
+{
+  "contract": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/caller-relationship/visual-contract.json",
+  "contract_sha256": "444b747d2f2105be003761c59de20e37c621a4906fe85daa723743d82cc5f07f",
+  "skill_version": "2.0.0",
+  "coverage": {
+    "nodes": 104,
+    "covered": 95,
+    "exceptions": [
+      "node 8B508E24-F045-4878-9F96-7A0E8ED4FBDD: 主视频蒙版属于动态媒体；源节点没有可导出的原始像素。",
+      "node 64B75AC7-18DD-4508-B248-973A11CC975B: 主视频位图属于动态媒体；MCP 未提供 asset_id，使用确定性占位并排除像素验收。",
+      "node 9E11CDEB-EA46-4549-9E96-14B9CF3C2126: 顶部透明渐变已由原始切图 SHA-256 固定；透明渐变不适合独立可见特征检测。",
+      "node 624D186D-5326-4D15-9172-1D5120EA6818: 通话头像位图没有可导出的原始资源，使用项目内确定性头像占位。",
+      "node A92C98EC-11D4-4397-AB42-8707D6930570: 底部透明渐变已由原始切图 SHA-256 固定；透明渐变不适合独立可见特征检测。",
+      "node 044F36D9-493C-46E1-9A08-87E29CDF588B: 小窗视频蒙版属于动态媒体。",
+      "node 1C724BD2-E3E6-42C1-B22E-2C912CE7755A: 小窗视频位图没有可导出的原始资源，使用确定性占位。",
+      "node 8CA36077-D8D3-44EC-BD66-E2B412C48047: 源字体为 SFPro-Semibold；项目未嵌入可再分发的确定性 SF Pro 文件，状态栏时间仅作系统字体近似。",
+      "node 84C7AE56-0805-456A-A302-4DDE98402B97: 全屏 40% 遮罩覆盖动态视频，无法用独立颜色特征隔离；其结果由前景区域检查体现。"
+    ]
+  },
+  "environment": {
+    "renderer": "Flutter widget test / Skia",
+    "renderer_version": "Flutter 3.47.7 · engine deb287481e3ce9468f3434937ced4240a70539ca",
+    "platform": "macOS arm64",
+    "locale": "zh_CN",
+    "state": "caller relationship dialog open; deterministic video placeholder",
+    "text_scale": 1
+  },
+  "exclusions": [],
+  "excluded_fraction": 0.0,
+  "reference": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/caller-relationship/reference.png",
+  "render_scale": 2.0,
+  "reference_preview": "reference.png",
+  "passed": true,
+  "candidates": {
+    "r3": {
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/caller-relationship/r3/render.png",
+      "preview": "1-r3-candidate.png",
+      "passed": true,
+      "regions": {
+        "card": {
+          "label": "关系详情卡片",
+          "rect": [
+            23,
+            178,
+            330,
+            420
+          ],
+          "metrics": {
+            "compared_pixels": 554400,
+            "total_pixels": 554400,
+            "mae": 7.1975,
+            "p95_max_channel": 19.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "stats": {
+          "label": "底部统计卡",
+          "rect": [
+            44,
+            505,
+            288,
+            70
+          ],
+          "metrics": {
+            "compared_pixels": 80640,
+            "total_pixels": 80640,
+            "mae": 2.0605,
+            "p95_max_channel": 12.0
+          },
+          "passed": true,
+          "failures": []
+        }
+      },
+      "features": {
+        "card_shell": {
+          "label": "关系详情卡片整体边界",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.3786,
+            "center_y_delta": 0.0032,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 0.9865
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              23.0,
+              178.0,
+              330.0,
+              420.0
+            ],
+            "center": [
+              189.00904906471527,
+              388.4365642586458
+            ],
+            "ink_pixels": 520109
+          },
+          "actual": {
+            "bbox": [
+              23.0,
+              178.0,
+              330.0,
+              420.0
+            ],
+            "center": [
+              188.63042749534696,
+              388.4397355317138
+            ],
+            "ink_pixels": 513105
+          }
+        },
+        "top_chrome": {
+          "label": "顶部通话控件",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 3.5258,
+            "center_y_delta": 5.2516,
+            "width_delta": 0.5,
+            "height_delta": 0.0,
+            "max_edge_delta": 1.0,
+            "ink_ratio": 1.1038
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              20.0,
+              19.0,
+              332.0,
+              110.5
+            ],
+            "center": [
+              182.5027397260274,
+              63.16986301369863
+            ],
+            "ink_pixels": 2920
+          },
+          "actual": {
+            "bbox": [
+              19.5,
+              18.0,
+              332.5,
+              110.5
+            ],
+            "center": [
+              186.02854483400557,
+              68.42150170648465
+            ],
+            "ink_pixels": 3223
+          }
+        },
+        "bottom_chrome": {
+          "label": "底部安全提示与操作控件",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.848,
+            "center_y_delta": -2.6944,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.2614
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              24.0,
+              679.0,
+              253.5,
+              82.0
+            ],
+            "center": [
+              131.89237800383313,
+              713.5234409553295
+            ],
+            "ink_pixels": 6783
+          },
+          "actual": {
+            "bbox": [
+              24.0,
+              679.0,
+              253.5,
+              82.0
+            ],
+            "center": [
+              132.74035764375878,
+              710.8290088826554
+            ],
+            "ink_pixels": 8556
+          }
+        },
+        "title_icon": {
+          "label": "关系详情标题图标",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0216,
+            "center_y_delta": -0.5118,
+            "width_delta": -1.0,
+            "height_delta": -1.5,
+            "max_edge_delta": 2.0,
+            "ink_ratio": 1.026
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              46.0,
+              199.0,
+              18.0,
+              18.0
+            ],
+            "center": [
+              54.77164502164502,
+              208.50757575757575
+            ],
+            "ink_pixels": 462
+          },
+          "actual": {
+            "bbox": [
+              46.5,
+              198.5,
+              17.0,
+              16.5
+            ],
+            "center": [
+              54.75,
+              207.9957805907173
+            ],
+            "ink_pixels": 474
+          }
+        },
+        "title_text": {
+          "label": "关系详情标题文字",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.4712,
+            "center_y_delta": -0.1108,
+            "width_delta": 0.5,
+            "height_delta": 1.0,
+            "max_edge_delta": 0.5,
+            "ink_ratio": 1.2149
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              72.0,
+              201.0,
+              62.5,
+              14.5
+            ],
+            "center": [
+              104.14588859416446,
+              207.85311671087533
+            ],
+            "ink_pixels": 1508
+          },
+          "actual": {
+            "bbox": [
+              71.5,
+              200.5,
+              63.0,
+              15.5
+            ],
+            "center": [
+              104.61708515283843,
+              207.74235807860262
+            ],
+            "ink_pixels": 1832
+          }
+        },
+        "chart_line": {
+          "label": "活跃时段折线",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 2.2437,
+            "center_y_delta": -0.5775,
+            "width_delta": 0.0,
+            "height_delta": -0.5,
+            "max_edge_delta": 0.5,
+            "ink_ratio": 0.9583
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              64.5,
+              402.0,
+              267.5,
+              73.0
+            ],
+            "center": [
+              195.09527559055118,
+              440.5685039370079
+            ],
+            "ink_pixels": 1270
+          },
+          "actual": {
+            "bbox": [
+              64.5,
+              402.0,
+              267.5,
+              72.5
+            ],
+            "center": [
+              197.33894823336072,
+              439.9909613804437
+            ],
+            "ink_pixels": 1217
+          }
+        },
+        "home_indicator": {
+          "label": "底部 Home Indicator",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              121.5,
+              799.0,
+              133.0,
+              5.0
+            ],
+            "center": [
+              187.75,
+              801.25
+            ],
+            "ink_pixels": 2640
+          },
+          "actual": {
+            "bbox": [
+              121.5,
+              799.0,
+              133.0,
+              5.0
+            ],
+            "center": [
+              187.75,
+              801.25
+            ],
+            "ink_pixels": 2640
+          }
+        }
+      },
+      "relations": {
+        "title_alignment": {
+          "label": "标题图标与标题文字垂直中心线",
+          "reference_delta": 0.6545,
+          "actual_delta": 0.2534,
+          "error": 0.401,
+          "passed": true
+        }
+      },
+      "colors": {
+        "stats_surface": {
+          "label": "统计卡不透明底色",
+          "rect": [
+            161.95999999999998,
+            532.1,
+            6,
+            6
+          ],
+          "reference_rgb": [
+            41.41,
+            41.52,
+            43.85
+          ],
+          "actual_rgb": [
+            42.78,
+            42.97,
+            45.35
+          ],
+          "max_channel_delta": 1.5,
+          "passed": true
+        }
+      },
+      "overlay": "1-r3-alignment-overlay.png"
+    }
+  },
+  "status": "PASS_WITH_EXCLUSIONS"
+}

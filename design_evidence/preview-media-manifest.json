@@ -1,0 +1,87 @@
+[
+  {
+    "name": "feed-photo",
+    "kind": "preview_crop_fallback",
+    "source_region_relative": [
+      4,
+      1,
+      181.5,
+      242
+    ],
+    "pixel_size": [
+      726,
+      968
+    ],
+    "limitation": "photo + baked image-count badge; original bitmap URL absent",
+    "sha256": "5254e5f673b3cc0ff207d7276a878dece5ce5cd386826a8d06fe82a79c0d98f2",
+    "exclude_from_independent_metrics": true
+  },
+  {
+    "name": "feed-avatar",
+    "kind": "preview_crop_fallback",
+    "source_region_relative": [
+      11,
+      294,
+      15,
+      15
+    ],
+    "pixel_size": [
+      60,
+      60
+    ],
+    "limitation": "avatar preview crop",
+    "sha256": "550829909068cd0f5516ac767b88e3fd7bf219ded90ddcfe5d09896a6a6291b5",
+    "exclude_from_independent_metrics": true
+  },
+  {
+    "name": "comment-avatar",
+    "kind": "preview_crop_fallback",
+    "source_region_relative": [
+      16,
+      47,
+      30,
+      30
+    ],
+    "pixel_size": [
+      120,
+      120
+    ],
+    "limitation": "avatar preview crop",
+    "sha256": "d4f74cb9cb5c35d7915abd78dcfa75904798dff60c9a65d81f007ea18acca065",
+    "exclude_from_independent_metrics": true
+  },
+  {
+    "name": "reply-avatar",
+    "kind": "preview_crop_fallback",
+    "source_region_relative": [
+      53,
+      232,
+      24,
+      24
+    ],
+    "pixel_size": [
+      96,
+      96
+    ],
+    "limitation": "avatar preview crop",
+    "sha256": "277f5d1e4b55ee89bcf293216e0e0e7d3ac96e61ac70848bc82f49520ae4c8a1",
+    "exclude_from_independent_metrics": true
+  },
+  {
+    "name": "warning-shield",
+    "kind": "preview_crop_fallback",
+    "source_region_relative": [
+      295,
+      299,
+      37,
+      34
+    ],
+    "pixel_size": [
+      148,
+      136
+    ],
+    "limitation": "decorative icon preview crop; boolean fill path absent",
+    "sha256": "eff3ede63a969e5cdc3fa0e4d58fb8c9af9f1f54e312dda604e9e37dc60ce3ff",
+    "exclude_from_independent_metrics": true
+  }
+]

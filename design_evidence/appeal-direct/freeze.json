@@ -1,0 +1,17 @@
+{
+  "frozen_at_utc": "2026-10-12T05:29:43.730468+00:00",
+  "code_sha256": "bf0107efd896a5989bf259d83d89dc036064f44a972fba45e41a8807616df103",
+  "frozen_copy": "appeal_direct.frozen.dart",
+  "input_sha256": "ff5c38e6ed785b3546156589aa0f10ed517c052caec5513b44689ade501873ff",
+  "export_sha256": "767bf4cdcf7f36d6239743639017e90ecf807a467357c3ef091e5fb61aa7a38e",
+  "shield_sha256": "477f05684856b1c73f69ba93695e6f3aec136a44c8a12eac7cb4b0835559db20",
+  "font_hashes": {
+    "PingFangSC-Semibold.otf": "90e266f569a49da2b705ee1662d7c69551951756d2fe5179324a04805fc1d1f2",
+    "PingFangSC-Regular.otf": "78c8b24fec9ee5f52359c4944827ba562ba7850209c388c4c790a98b38f4b771",
+    "PingFangSC-Medium.otf": "e97e4d7341535bd58c885cc402dea89e854f849d6808ede3b8d2b0f5315ffe47"
+  },
+  "rendered_before_freeze": false,
+  "visual_revision_count": 0,
+  "runtime_repair_count": 0,
+  "protocol": "protocol.json"
+}

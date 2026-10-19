@@ -1,0 +1,16 @@
+{
+  "fonts": {
+    "PingFangSC-Regular@400": {
+      "path": "../../flutter_ui_components/assets/fonts/PingFangSC-Regular.otf",
+      "runtime_family": "SourcePingFang"
+    },
+    "PingFangSC-Semibold@600": {
+      "path": "../../flutter_ui_components/assets/fonts/PingFangSC-Semibold.otf",
+      "runtime_family": "SourcePingFang"
+    },
+    ".AppleSystemUIFont@400": {
+      "path": "../../flutter_ui_components/assets/fonts/PingFangSC-Regular.otf",
+      "runtime_family": "SourcePingFang"
+    }
+  }
+}

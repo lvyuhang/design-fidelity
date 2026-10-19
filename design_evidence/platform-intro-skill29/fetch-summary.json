@@ -1,0 +1,13 @@
+{
+  "snapshot_id": "da6dd92db9b6df7fc3fc4d2bc873e0ee",
+  "resolved_version": "d4d1c235-1fb2-4395-9d0e-a5055d074f4e",
+  "nodes": 100,
+  "pages": 2,
+  "focus_nodes": 8,
+  "reference": "design_evidence/platform-intro-skill29/reference-4x.png",
+  "reference_preview": "design_evidence/platform-intro-skill29/reference-preview.png",
+  "reference_preview_size": [647, 1400],
+  "reference_source": "same-snapshot-frozen-reference",
+  "assets_reused": 11,
+  "reference_sha256": "6c7b4d3290d1140e569eb134c514fd082590892a9cd2afb4868d64a8b9693c5f"
+}

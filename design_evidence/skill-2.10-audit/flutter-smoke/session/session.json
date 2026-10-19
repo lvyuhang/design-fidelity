@@ -1,0 +1,151 @@
+{
+  "name": "2.10 real Flutter fault injection",
+  "status": "COMPLETE",
+  "started_unix": 1791887348.523423,
+  "started_at": "2026-10-13T10:29:08+00:00",
+  "config": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/page.json",
+  "events": [
+    {
+      "action": "validate",
+      "status": "OK",
+      "started_at": "2026-10-13T10:29:25+00:00",
+      "config_sha256": "6e2abd0fe76e404473b59e85a7138cc46523d2fa722f53fa760cc93980a7232e",
+      "note": "正确合成夹具，冻结标准；验证配置入口与真实 Flutter 渲染",
+      "commands": [
+        {
+          "argv": [
+            "/Users/tan/Documents/ChatGPT/聚星阁/.venv-fidelity/bin/python",
+            "/Users/tan/Documents/ChatGPT/聚星阁/skills/lanhu-design-fidelity/scripts/run_flutter.py",
+            "--contract",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/contract.json",
+            "--app",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke",
+            "--test",
+            "test/render_test.dart",
+            "--output-env",
+            "FIDELITY_OUTPUT",
+            "--output",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/session/001-validate",
+            "--task-log",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/session/task-run.json",
+            "--round-note",
+            "正确合成夹具，冻结标准；验证配置入口与真实 Flutter 渲染",
+            "--analyze",
+            "lib",
+            "test"
+          ],
+          "log": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/session/001-run_flutter.log"
+        }
+      ],
+      "report": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/session/001-validate/run.json",
+      "seconds": 7.201
+    },
+    {
+      "action": "validate",
+      "status": "FAILED",
+      "started_at": "2026-10-13T10:31:46+00:00",
+      "config_sha256": "6e2abd0fe76e404473b59e85a7138cc46523d2fa722f53fa760cc93980a7232e",
+      "note": "故障注入：只将图标下移 4px，冻结验收标准不变；预期拒绝",
+      "commands": [
+        {
+          "argv": [
+            "/Users/tan/Documents/ChatGPT/聚星阁/.venv-fidelity/bin/python",
+            "/Users/tan/Documents/ChatGPT/聚星阁/skills/lanhu-design-fidelity/scripts/run_flutter.py",
+            "--contract",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/contract.json",
+            "--app",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke",
+            "--test",
+            "test/render_test.dart",
+            "--output-env",
+            "FIDELITY_OUTPUT",
+            "--output",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/session/002-validate",
+            "--task-log",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/session/task-run.json",
+            "--round-note",
+            "故障注入：只将图标下移 4px，冻结验收标准不变；预期拒绝",
+            "--analyze",
+            "lib",
+            "test"
+          ],
+          "log": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/session/002-run_flutter.log"
+        }
+      ],
+      "error": "run_flutter.py returned 1; see /Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/session/002-run_flutter.log",
+      "seconds": 1.71
+    },
+    {
+      "action": "validate",
+      "status": "OK",
+      "started_at": "2026-10-13T10:32:56+00:00",
+      "config_sha256": "6e2abd0fe76e404473b59e85a7138cc46523d2fa722f53fa760cc93980a7232e",
+      "note": "撤回注入的 4px 偏移；验收契约不变，确认修复后可通过",
+      "commands": [
+        {
+          "argv": [
+            "/Users/tan/Documents/ChatGPT/聚星阁/.venv-fidelity/bin/python",
+            "/Users/tan/Documents/ChatGPT/聚星阁/skills/lanhu-design-fidelity/scripts/run_flutter.py",
+            "--contract",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/contract.json",
+            "--app",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke",
+            "--test",
+            "test/render_test.dart",
+            "--output-env",
+            "FIDELITY_OUTPUT",
+            "--output",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/session/003-validate",
+            "--task-log",
+            "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/session/task-run.json",
+            "--round-note",
+            "撤回注入的 4px 偏移；验收契约不变，确认修复后可通过",
+            "--analyze",
+            "lib",
+            "test"
+          ],
+          "log": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/session/003-run_flutter.log"
+        }
+      ],
+      "report": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/session/003-validate/run.json",
+      "seconds": 5.234
+    },
+    {
+      "action": "finish",
+      "status": "OK",
+      "started_at": "2026-10-13T10:33:58+00:00",
+      "config_sha256": "6e2abd0fe76e404473b59e85a7138cc46523d2fa722f53fa760cc93980a7232e",
+      "note": "合成夹具的参考布局与渲染已复查；正确、偏移4px、恢复依次 PASS/FAIL/PASS，Dart 分析通过。仅验证工具接入，不代表业务页还原或制作速度。",
+      "seconds": 0.003
+    }
+  ],
+  "summary": {
+    "status": "COMPLETE",
+    "elapsed_seconds": 290.216,
+    "command_seconds": 14.148,
+    "unattributed_seconds": 276.068,
+    "timing_scope": "Since explicit start; includes editing, waiting and failures. Time before start is unknown.",
+    "tokens": null,
+    "rounds": {
+      "rounds": 3,
+      "target_rounds": [
+        2,
+        3
+      ],
+      "validation_attempts": 3,
+      "implementation_revisions": 2,
+      "criteria_revisions": 0,
+      "classified_rounds": 3,
+      "unchanged_render_attempts": 0,
+      "repeat_attempts": 0,
+      "over_target": false,
+      "total_validation_seconds": 14.01,
+      "latest_status": "PASS",
+      "tool_call_count": null,
+      "timing_scope": "Validation execution only; excludes work before first validation and model editing time",
+      "count_scope": "Tracked render/validation attempts only; not all model/tool calls or visual reviews"
+    },
+    "session_log": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/session/session.html"
+  },
+  "finished_unix": 1791887638.7397928
+}

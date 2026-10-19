@@ -1,0 +1,41 @@
+{
+  "model": "gpt-5.6-sol",
+  "reasoning": "high",
+  "scope": "login buttons and unchecked agreement region",
+  "stage": {
+    "width": 375,
+    "height": 395,
+    "source_y_offset": 395
+  },
+  "inputs_read": [
+    "design_evidence/login-source.json",
+    "design_evidence/login-region.json",
+    "design_evidence/component-map.json",
+    "design_evidence/reference-region.png",
+    "design_evidence/reference-buttons-4x.png",
+    "design_evidence/reference-agreement-4x.png",
+    "design_evidence/font-receipt.json",
+    "flutter_ui_components/assets/lanhu/install-receipt.json",
+    "flutter_ui_components/pubspec.yaml",
+    "flutter_ui_components/assets/lanhu/assets/05d568660f8b15118112812d36654cc19a41abfa447fcaf5aa60ea9eba71a8db.png",
+    "flutter_ui_components/assets/lanhu/assets/6ae1b2c8ae7ea66059d0dc46e6197f7ea99ea82ac2cddc0c66beb254b8d1798d.png",
+    "flutter_ui_components/assets/lanhu/assets/aa419996555f658c1ee97725d7f9fa542e2992af291636eff79e96e9dfa5855d.png",
+    "flutter_ui_components/assets/lanhu/assets/9b1e35de0078f86a5139ce45acbb9fae30e8548c2fa8029fb8116dce58924a87.png",
+    "flutter_ui_components/assets/lanhu/assets/9d0654e6ecfa4fe81881a272ab3990f51329b81d32eaecc985c37e6084f234c8.png"
+  ],
+  "existing_implementation_read": false,
+  "implementation_completed_before_first_render": true,
+  "rendered": false,
+  "flutter_executed": false,
+  "screenshots_created": false,
+  "comparisons_run": false,
+  "visual_corrections": 0,
+  "provider_ids": [
+    "wechat",
+    "qq",
+    "phone",
+    "apple"
+  ],
+  "agreement_state": "unchecked",
+  "agreement_interaction_added": false
+}

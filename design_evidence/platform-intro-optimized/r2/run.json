@@ -1,0 +1,111 @@
+{
+  "status": "DIAGNOSTIC",
+  "scope": "Legacy frozen v1 contract diagnostic; never a v2 visual PASS",
+  "seconds": 2.488,
+  "gate_status": "DIAGNOSTIC_DIFFERENCES",
+  "failures": [
+    {
+      "check": "regions.whole",
+      "failures": [
+        "mae=8.6434 > 5.0000",
+        "p95=71.00 > 26.00"
+      ]
+    },
+    {
+      "check": "regions.benefits",
+      "failures": [
+        "mae=18.1199 > 8.0000",
+        "p95=131.00 > 55.00"
+      ]
+    },
+    {
+      "check": "regions.cta",
+      "failures": [
+        "mae=6.3211 > 3.0000",
+        "p95=58.00 > 8.00"
+      ]
+    },
+    {
+      "check": "features.reward_1_icon",
+      "failures": [
+        "center_y_delta=-1.74px > 1.00px"
+      ]
+    },
+    {
+      "check": "features.reward_1_copy",
+      "failures": [
+        "max_edge_delta=2.25px > 2.00px",
+        "ink_ratio=1.228; |ratio-1| > 0.200"
+      ]
+    },
+    {
+      "check": "features.reward_2_icon",
+      "failures": [
+        "center_y_delta=-1.75px > 1.00px"
+      ]
+    },
+    {
+      "check": "features.reward_2_copy",
+      "failures": [
+        "center_y_delta=1.29px > 1.00px",
+        "ink_ratio=1.225; |ratio-1| > 0.200"
+      ]
+    },
+    {
+      "check": "features.reward_3_icon",
+      "failures": [
+        "center_y_delta=-1.22px > 1.00px"
+      ]
+    },
+    {
+      "check": "features.reward_3_copy",
+      "failures": [
+        "center_x_delta=-1.60px > 1.00px",
+        "center_y_delta=1.19px > 1.00px",
+        "ink_ratio=1.223; |ratio-1| > 0.200"
+      ]
+    },
+    {
+      "check": "relations.reward_row_1_vertical_alignment",
+      "failures": []
+    },
+    {
+      "check": "relations.reward_row_2_vertical_alignment",
+      "failures": []
+    },
+    {
+      "check": "relations.reward_row_3_vertical_alignment",
+      "failures": []
+    }
+  ],
+  "metrics": {
+    "whole": {
+      "mae": 8.6434,
+      "p95_max_channel": 71.0
+    },
+    "capabilities": {
+      "mae": 2.7966,
+      "p95_max_channel": 22.0
+    },
+    "benefits": {
+      "mae": 18.1199,
+      "p95_max_channel": 131.0
+    },
+    "cta": {
+      "mae": 6.3211,
+      "p95_max_channel": 58.0
+    }
+  },
+  "stages": [
+    {
+      "name": "render",
+      "seconds": 2.038,
+      "exit_code": 0
+    },
+    {
+      "name": "diagnostic_gate",
+      "seconds": 0.45,
+      "exit_code": 1
+    }
+  ]
+}

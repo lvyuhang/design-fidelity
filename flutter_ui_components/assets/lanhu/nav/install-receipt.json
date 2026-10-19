@@ -1,0 +1,52 @@
+{
+  "status": "complete",
+  "installed": [
+    "A020F413-6674-4CD1-93F8-BD1E926E0E44:image"
+  ],
+  "skipped": [],
+  "assets": [
+    {
+      "asset_id": "A020F413-6674-4CD1-93F8-BD1E926E0E44:image",
+      "node_id": "A020F413-6674-4CD1-93F8-BD1E926E0E44",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 88,
+        "height": 80
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 1,
+        "y": 1,
+        "width": 86,
+        "height": 78
+      },
+      "frame_count": 1,
+      "sha256": "cce0be5e90ff12dbf8964644d9cc112438dc306afdac778948d31abe0546b419",
+      "bytes": 5464,
+      "relative_path": "assets/a8071fdef24e364d65fb5159f6ac36f47d869667d188aca77e99a1fa52207622.png",
+      "effective_density": {
+        "x": 4.399983103693524,
+        "y": 4.444444444444445
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "A020F413-6674-4CD1-93F8-BD1E926E0E44:image",
+      "original_variant_id": "v-d54203b87f29543251e3f3eb",
+      "requested_preference": "original",
+      "selected_variant_id": "v-d54203b87f29543251e3f3eb",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components/assets/lanhu/nav/assets/a8071fdef24e364d65fb5159f6ac36f47d869667d188aca77e99a1fa52207622.png"
+    }
+  ],
+  "receipt_path": "/Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components/assets/lanhu/nav/install-receipt.json",
+  "bundle_id": "9aa3eef1387a1de402d1d6653f69da63",
+  "snapshot_id": "025bc1130d29bbe5b64e14ca4af2b493",
+  "design_id": "953ca8aa-f3fa-4626-8490-2ec9a428867e",
+  "resolved_version": "32aa246d-8d21-40b3-ba5c-32e8d532bdc6"
+}

@@ -1,0 +1,468 @@
+{
+  "schema_version": 2,
+  "status": "draft",
+  "name": "平台介绍页",
+  "source_snapshot": "da6dd92db9b6df7fc3fc4d2bc873e0ee",
+  "source_version": "d4d1c235-1fb2-4395-9d0e-a5055d074f4e",
+  "canvas": [
+    375,
+    812
+  ],
+  "render_scale": 4.0,
+  "reference": "../full-page-models/reference-4x.png",
+  "source_documents": [
+    "../full-page-models/source-part-1.json",
+    "../full-page-models/source-part-2.json"
+  ],
+  "regions": {
+    "whole": {
+      "label": "完整页面",
+      "rect": [
+        0,
+        0,
+        375,
+        812
+      ],
+      "max_mae": 6.0,
+      "max_p95": 32.0
+    }
+  },
+  "features": {},
+  "pinned_files": {
+    "../full-page-models/reference-4x.png": "6c7b4d3290d1140e569eb134c514fd082590892a9cd2afb4868d64a8b9693c5f",
+    "../full-page-models/source-part-1.json": "201d95e73c820af71e986ac4284ef5eef030214c91618302f86d98c63b6094f1",
+    "../full-page-models/source-part-2.json": "4ee8482be37c84984ae0908d2c3320f526a5763e93ac6b7a06272bfe19df7664"
+  },
+  "assets": [],
+  "fonts": [],
+  "implementation_inputs": [],
+  "environment": {
+    "renderer": "",
+    "renderer_version": "",
+    "platform": "",
+    "locale": "",
+    "state": "",
+    "text_scale": 1
+  },
+  "exclude_rects": [],
+  "max_excluded_fraction": 0.2,
+  "not_applicable": {},
+  "relations": {},
+  "color_samples": {},
+  "source_scope": {
+    "kind": "page",
+    "expected_node_count": 100
+  },
+  "coverage": {
+    "84EBC769-C40D-43ED-A012-5A6334394DF0": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "A0B10F1F-EE2E-4C34-80E7-07837F2C51C4": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "CC16704D-812C-42AB-8488-1E79C65EE8B8": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "38F39AB7-1B1B-4536-B256-68E93B251F33": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "BAA46888-06CE-4239-9E0B-2B4C194C1ECF": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "4EC3AA61-B992-4521-B690-080B9E6D6279": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "6186D4BD-E2AD-4D58-9300-579C2C21FCDA": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "A6C8724D-3709-47E4-B940-45E36F79B8B9": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "10FBACC7-D823-4E7E-842F-EBC3EEEAD5E2": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "0DABD7BD-C26E-4F28-BD88-971CB124016F": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "759EB0D9-27A2-43E0-973C-3B6D859E24B0": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "1C813327-0E8A-49FE-A69A-7087BAC66B86": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "FF1C36C8-FBEC-4362-B530-937D4560C776": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "FE6B412E-3445-4E61-ADC1-42FE747717B8": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "E40795A5-5FEF-4164-9D5A-93BA2A33E0A7": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "383C9133-CAF8-4323-9C98-474BEE70E996": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "294C0431-6FAB-471D-8BB7-CBBAD7A4F681": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "6C930DF9-C0EB-4E2A-A497-FD6D41C2B9F4": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "D220EAC4-1149-45BD-AD8C-E3B2D4F258D1": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "7F9F5132-94FD-4768-920F-2DBE7DFB06BD": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "3041A10C-07CD-42F3-A86B-4DBBDD56B385": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "453B968A-CDC9-4312-BFDA-C845BCC46866": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "13226AD8-6BA5-43B3-A98A-9DF76F299658": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "48806B19-1694-4437-9E26-09E95238A067": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "9E217909-FC20-4BB1-BAAE-644790E8168F": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "11857F91-EAAB-4C0C-A518-9D0D2F73628B": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "A3FD2014-8642-473A-B0F5-4C17D694B015": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "7E01FF1B-EB56-4729-8906-6426783856F5": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "D44A759A-F00C-4F91-B906-8D3AEA24B017": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "67A66F14-1BFC-4ED2-B7CC-CA53F587487F": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "D918BBDD-E8F9-4952-B1C0-818569C32B90": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "0CF90661-2AAC-46A4-A10B-C00DF8F1EB4B": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "C4E31964-6BB3-4C0B-B672-F466B0071466": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "0F085E92-24C5-427D-8773-FB4CA375285F": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "F9B45E83-0BD9-42E8-B5BD-4479052DA6C6": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "60F1B29F-4076-4435-9C28-DBA494E30B7C": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "BD427EBB-C725-416A-A798-1AD75287E7EC": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "513DC40A-2FB1-439E-8BB4-950FA176E204": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "F5D72186-D951-4DFC-B7AC-303C6C590936": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "0E9CC64A-60B9-4781-BE54-CD55F949DEB9": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "4FE59FC7-9B49-446A-A18A-4353E1D12875": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "A22C0DB6-9846-4744-A900-37852C9874DA": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "A3FCFA75-7355-4B91-8C30-CAC01E8397F2": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "2E98A454-4D93-4BF3-99FD-A142E36B1B85": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "EEA3D6F9-2349-45DF-98B7-D4EE41FD3794": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "D5F784F3-8E06-4C4F-A3F8-8FF9128E8FBF": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "AF8E4ABD-0DC5-4426-A06A-FE01CDC5D2F2": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "7185821F-B5C4-464B-9B8D-E9A543ECE224": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "74B4B740-E889-4DB2-97B1-7346446D4C95": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "0F5AA2FF-F6A6-4507-A98E-D8F68114AD7A": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "43C56157-B07D-4870-881E-AAFDC4564FA8": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "AA5F26B7-A949-4AA3-AC80-B79FAD8B5F29": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "B5B1EADF-DC60-44D2-B26F-2748C7011D07": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "07374D1F-F808-41C6-BE0B-5D7F42AF350C": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "EC9595BF-FBEE-48D6-83B7-578DDF77926C": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "14D9E6CC-37AE-4AB2-9258-2D4D87DF2351": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "A2341762-66D3-4BEF-A1FA-632A86E77426": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "B3B02A92-587E-4458-994E-449FD80C020F": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "DCD786E3-90B6-4426-AE6E-E32DBA9DCAA1": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "CD885184-FE89-4DCA-8A97-1E41AE7C722B": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "5B56E310-3B3E-4A14-BBFD-3E954F774E8D": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "0800922A-B27A-49E4-A080-4371CB319166": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "0588FFD0-9562-49B6-B337-585A7D47D221": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "AE3A27D6-DA99-4A1F-9E49-B640B007DC44": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "7C04B759-F351-4971-80B7-BEFAB8B539B6": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "C7811218-5CB1-4E7E-847C-4E821BAE3A5D": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "F7EB806C-A636-4C3C-BA0B-08C3881FA358": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "3CE43603-6FBC-4489-BDAE-E9E36EDA5FC8": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "8EDE0981-29FD-4710-9141-07C885C203C8": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "FEDBCFFC-B6C5-44F7-9247-BDA9C9F25D60": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "88EC5946-0C39-47E3-A3C5-D93787F1502F": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "DBF52507-1AFB-4404-BA9D-CF5E1B59B4E0": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "282B7BC3-0BA7-47FC-B7BC-4C756152BDC7": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "6A55034C-23DB-4A4A-933A-D1B7B57EE39E": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "45FC927D-164B-4C3C-8AE9-63A43F7A17D8": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "9549F9DD-B456-4F8A-BCF0-46A8F503EE4E": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "4599BD6B-EBDA-4B91-A1B6-843BE0FF99AB": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "12093BFB-6D99-4DBF-844E-9305F0686ED1": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "3CD75B99-E0EE-42E3-847C-50DF87BB14CC": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "6A2001F9-9689-4D16-A9DF-BAED09378120": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "251ABCDE-68AA-46EB-8431-11FBF0BC73DB": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    },
+    "06EDBF6F-00C9-4981-A374-0A3424689867": {
+      "status": "pending",
+      "checks": [],
+      "reason": ""
+    }
+  }
+}

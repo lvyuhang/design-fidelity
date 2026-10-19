@@ -1,0 +1,23 @@
+{
+  "snapshot_id": "b9568db973a4df49cceca712e8cda246",
+  "resolved_version": "145990dc-069f-4539-9771-3c8dd44ba60c",
+  "canvas": {
+    "width": 375,
+    "height": 812
+  },
+  "reference_size": [
+    1500,
+    3248
+  ],
+  "nodes": 228,
+  "node_pages": 4,
+  "selected_asset_ids": 43,
+  "asset_export": {
+    "requested": 43,
+    "succeeded": 43,
+    "failed": 0,
+    "cached": 0
+  },
+  "reference": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/reference-4x.png",
+  "asset_dir": "/Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components/assets/lanhu/backup_20"
+}

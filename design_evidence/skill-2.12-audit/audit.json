@@ -1,0 +1,118 @@
+{
+  "scope": "Historical replay, not a new-page end-to-end speed benchmark",
+  "checks": {
+    "reviewed-spec.json": {
+      "valid_reference_detectors": false,
+      "reason": "Reference detectors found no ink; review occlusion/target layer before render: node_f6ad6968_66b7_4c13_81b4_81c364d51aa4, node_a75fed55_41e5_4f67_9189_9b2889f6b1d9, node_e5290afa_3dc2_44f4_9da8_3ded6de84cd0",
+      "seconds": 0.11
+    },
+    "reviewed-spec-r2.json": {
+      "valid_reference_detectors": true,
+      "seconds": 0.1055
+    },
+    "reviewed-spec-r3.json": {
+      "valid_reference_detectors": true,
+      "seconds": 0.1016
+    }
+  },
+  "raster_guard": {
+    "rejected": true,
+    "reason": "0E44EF9A-94DD-4366-93FF-8C1CC152B06E: render_fallback contains text/UI; use native widgets and individual missing-asset placeholders. Static decorative artwork requires an explicit static_artwork_reason, never business labels."
+  },
+  "declarative_bindings": {
+    "nodes": 191,
+    "groups": 12,
+    "expanded_equal": true,
+    "characters_before": 51121,
+    "characters_after": 10415,
+    "reduction_percent": 79.6,
+    "not_token_or_latency_estimate": true
+  },
+  "corrected_session_summary": {
+    "status": "COMPLETE",
+    "elapsed_seconds": 2139.977,
+    "command_seconds": 27.574,
+    "unattributed_seconds": 2112.403,
+    "timing_scope": "Since explicit start; includes editing, waiting and failures. Time before start is unknown.",
+    "tokens": null,
+    "rounds": {
+      "rounds": 3,
+      "validation_attempts": 3,
+      "validation_calls": 3,
+      "untracked_calls": 0,
+      "baseline_count": 3,
+      "implementation_revisions": null,
+      "criteria_revisions": null,
+      "repeat_attempts": 0,
+      "latest_status": "PASS_WITH_EXCLUSIONS",
+      "over_target": false,
+      "total_validation_seconds": 26.244,
+      "count_scope": "Session attempt reports across all baselines; missing reports are not invented"
+    },
+    "phase_seconds": {
+      "unclassified": 2139.977
+    },
+    "session_log": "design_evidence/backup-20-skill211/run/session.html"
+  },
+  "historical_summary": {
+    "status": "COMPLETE",
+    "elapsed_seconds": 2139.977,
+    "command_seconds": 27.574,
+    "unattributed_seconds": 2112.403,
+    "timing_scope": "Since explicit start; includes editing, waiting and failures. Time before start is unknown.",
+    "tokens": null,
+    "rounds": {
+      "rounds": 1,
+      "target_rounds": [
+        2,
+        3
+      ],
+      "validation_attempts": 1,
+      "implementation_revisions": 0,
+      "criteria_revisions": 0,
+      "classified_rounds": 1,
+      "unchanged_render_attempts": 0,
+      "repeat_attempts": 0,
+      "over_target": false,
+      "total_validation_seconds": 18.547,
+      "latest_status": "PASS_WITH_EXCLUSIONS",
+      "tool_call_count": null,
+      "timing_scope": "Validation execution only; excludes work before first validation and model editing time",
+      "count_scope": "Tracked render/validation attempts only; not all model/tool calls or visual reviews"
+    },
+    "session_log": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/run/session.html"
+  },
+  "delivery_audit": {
+    "source_crop_canvas_fraction": 0.7751379310344828,
+    "composite_ui_crops": [
+      "grid_row_1.png",
+      "grid_row_2.png",
+      "grid_row_3_top.png",
+      "bottom_nav.png"
+    ],
+    "code_fidelity_acceptance": "NOT_ESTABLISHED",
+    "reason": "Flattened cards/navigation include business text and controls; pixel scores measure reuse of reference pixels. Original 2.11 artifacts preserved."
+  },
+  "skill_version": "2.12.0",
+  "regression": {
+    "tests_passed": 115,
+    "tests_failed": 0,
+    "seconds": 27.116,
+    "command": "python -m unittest discover -s SKILL_DIR/tests",
+    "skill_metadata": "valid"
+  },
+  "changed_files": [
+    "SKILL.md",
+    "references/efficient-execution.md",
+    "references/implementation-decisions.md",
+    "references/mcp-evidence.md",
+    "references/preparation.md",
+    "references/session-entrypoint.md",
+    "scripts/compile_contract.py",
+    "scripts/init_visual_contract.py",
+    "scripts/page_session.py",
+    "scripts/prepare_page.py",
+    "tests/test_page_session.py",
+    "tests/test_preparation.py"
+  ]
+}

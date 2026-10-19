@@ -1,0 +1,91 @@
+{
+  "status": "complete",
+  "assets": [
+    {
+      "asset_id": "50B9E4FC-05D1-4968-8254-B420F0556EA4:image",
+      "node_id": "50B9E4FC-05D1-4968-8254-B420F0556EA4",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 180,
+        "height": 180
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 180,
+        "height": 180
+      },
+      "frame_count": 1,
+      "sha256": "36f04b870f1bab5017c4793bc07d483ae8b494dc9a5c8ea52dd9f02e484fa804",
+      "bytes": 32510,
+      "relative_path": "assets/4942c8d9ffd41a52012b311e9a260d39b13004fcce7e952ea8b915267eb40240.png",
+      "effective_density": {
+        "x": 4.090909090909091,
+        "y": 4.090909090909091
+      },
+      "resolution_limited": false,
+      "target_dpr": 2.0,
+      "cached": false,
+      "base_asset_id": "50B9E4FC-05D1-4968-8254-B420F0556EA4:image",
+      "original_variant_id": "v-519393d08b38fcb285c302ac",
+      "requested_preference": "original",
+      "selected_variant_id": "v-519393d08b38fcb285c302ac",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null
+    },
+    {
+      "asset_id": "A22A1CD3-4A07-4A0C-B1AC-2D4D2F78CB84:image",
+      "node_id": "A22A1CD3-4A07-4A0C-B1AC-2D4D2F78CB84",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 38,
+        "height": 22
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 38,
+        "height": 22
+      },
+      "frame_count": 1,
+      "sha256": "9c79338e39f219d509acc88f894b338b9bdc7d6e27b6470fc68b1d23aad7fe8f",
+      "bytes": 480,
+      "relative_path": "assets/878bf0142fd15e2b935fff1f2a2bc871630338b10f3622c5a593b0db99179f9f.png",
+      "effective_density": {
+        "x": 4.75,
+        "y": 5.5
+      },
+      "resolution_limited": false,
+      "target_dpr": 2.0,
+      "cached": false,
+      "base_asset_id": "A22A1CD3-4A07-4A0C-B1AC-2D4D2F78CB84:image",
+      "original_variant_id": "v-729d8e035ecdda14f72d9535",
+      "requested_preference": "original",
+      "selected_variant_id": "v-729d8e035ecdda14f72d9535",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null
+    }
+  ],
+  "failed": [],
+  "counts": {
+    "requested": 2,
+    "succeeded": 2,
+    "failed": 0,
+    "cached": 0
+  },
+  "manifest_path": "manifest.json",
+  "snapshot_id": "6a83953b549ca4e033eddf0b35961d2b",
+  "design_id": "348416a3-a096-473e-a62b-780c5dd040c4",
+  "resolved_version": "f408a567-a766-42f1-b53f-6eacfb03fd28",
+  "bundle_id": "05f738a189849a2ee5629fd93090b45a"
+}

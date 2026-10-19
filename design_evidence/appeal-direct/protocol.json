@@ -1,0 +1,40 @@
+{
+  "case": "处罚申诉卡片：MCP 首次实现，无实现后视觉修正",
+  "design_version": "84ebb977-1081-434c-9147-12e6147c820b",
+  "snapshot_id": "4a82a245a06e7de77a4320e533934570",
+  "implementation_input": [
+    "本轮 lanhu_inspect_design_region 返回的原始节点、DDS 提示和原稿预览",
+    "本轮 lanhu_export_design_assets 返回的原始盾牌资源及校验元数据"
+  ],
+  "controlled_conditions": [
+    "375×125 逻辑像素舞台",
+    "343×116 卡片",
+    "同版本原稿",
+    "同一套本机苹方字体",
+    "同一 Flutter 测试渲染器及 4× 栅格"
+  ],
+  "implementation_rules": [
+    "独立 Dart 文件，只依赖 Flutter 和原始盾牌资源",
+    "不导入或复制 AppealCard、SourceShapePainter、source_specs.g.dart",
+    "不调用蓝湖底层 API 补查",
+    "使用常规 Flutter BoxDecoration、Text、Stack 实现",
+    "冻结前不渲染或读取现有校准实现",
+    "冻结后允许测量和描述差异，禁止据此修改该样本",
+    "只允许修复编译或运行阻塞；发生则记录，不作视觉微调",
+    "不刻意重现已经知道的错误"
+  ],
+  "initial_reference_policy": "允许读取 MCP 首次返回的设计图；禁止查看实现截图后反向调参。这是无视觉迭代实验，而不是仅 JSON 输入实验。",
+  "limitations": [
+    "当前模型会话已有上一轮实现知识，不是无历史上下文的严格盲测",
+    "只评估一个组件、一次实现、默认状态，不能推断其他组件或模型的平均还原水平",
+    "复用字体和经哈希核实的原始切图；原始资源准备不属于盲测变量"
+  ],
+  "evaluation_harness_corrections": [
+    {
+      "reason": "Flutter widget tests disable standard BoxShadow blur by default; custom Canvas shadows were unaffected.",
+      "action": "Override AutomatedTestWidgetsFlutterBinding.disableShadows=false for both evaluated variants.",
+      "frozen_implementation_changed": false,
+      "invalid_result_archive": "invalid-measurement-shadow-disabled/"
+    }
+  ]
+}

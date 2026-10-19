@@ -1,0 +1,1900 @@
+{
+  "status": "complete",
+  "snapshot_id": "e275e2eb8b9ade5c88d9c8bf61474c12",
+  "resolved_version": "be8e6f39-d73f-4525-9694-055fc4498343",
+  "coordinate_space": "source_canvas",
+  "coordinate_mapping": {
+    "verified": true,
+    "strategy": "identity",
+    "source_origin": {
+      "x": 0,
+      "y": 0
+    },
+    "translation": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "canvas": {
+    "width": 375,
+    "height": 812
+  },
+  "source_region": {
+    "x": 0,
+    "y": 0,
+    "width": 375,
+    "height": 812
+  },
+  "image_size": {
+    "width": 647,
+    "height": 1400
+  },
+  "scale": {
+    "x": 1.7253333333333334,
+    "y": 1.7241379310344827
+  },
+  "labels": [
+    {
+      "label": "N121",
+      "node_id": "3DC042E5-3A04-45C0-B282-C8DC14DDD57B",
+      "bounds": {
+        "x": 321,
+        "y": 202,
+        "width": 10,
+        "height": 10
+      },
+      "image_bounds": {
+        "x": 553.832,
+        "y": 348.2758620689655,
+        "width": 17.253333333333334,
+        "height": 17.241379310344826
+      }
+    },
+    {
+      "label": "N122",
+      "node_id": "A837EA5B-1599-4C78-9E2C-301119EF9E0D",
+      "bounds": {
+        "x": 321,
+        "y": 202,
+        "width": 10,
+        "height": 10
+      },
+      "image_bounds": {
+        "x": 553.832,
+        "y": 348.2758620689655,
+        "width": 17.253333333333334,
+        "height": 17.241379310344826
+      }
+    },
+    {
+      "label": "N123",
+      "node_id": "E773ECF7-C65C-4C66-B75F-C494C33E7252",
+      "bounds": {
+        "x": 314,
+        "y": 195,
+        "width": 12,
+        "height": 12
+      },
+      "image_bounds": {
+        "x": 541.7546666666667,
+        "y": 336.2068965517241,
+        "width": 20.704,
+        "height": 20.689655172413794
+      }
+    },
+    {
+      "label": "N124",
+      "node_id": "60853E79-C201-4188-A7A1-7AD1EA45D076",
+      "bounds": {
+        "x": 314,
+        "y": 195,
+        "width": 24,
+        "height": 24
+      },
+      "image_bounds": {
+        "x": 541.7546666666667,
+        "y": 336.2068965517241,
+        "width": 41.408,
+        "height": 41.37931034482759
+      }
+    },
+    {
+      "label": "N125",
+      "node_id": "F3D2CD36-CB0E-4E2D-B07D-9A72BBD4867E",
+      "bounds": {
+        "x": 174,
+        "y": 328,
+        "width": 58,
+        "height": 18
+      },
+      "image_bounds": {
+        "x": 300.208,
+        "y": 565.5172413793103,
+        "width": 100.06933333333333,
+        "height": 31.034482758620687
+      }
+    },
+    {
+      "label": "N126",
+      "node_id": "DAA5DAD8-BB70-4C18-AE4B-79790001A850",
+      "bounds": {
+        "x": 183,
+        "y": 330,
+        "width": 40,
+        "height": 14
+      },
+      "image_bounds": {
+        "x": 315.736,
+        "y": 568.9655172413793,
+        "width": 69.01333333333334,
+        "height": 24.137931034482758
+      }
+    },
+    {
+      "label": "N127",
+      "node_id": "CFEABC24-FEFC-4035-99EC-BCBA3461659E",
+      "bounds": {
+        "x": 118,
+        "y": 328,
+        "width": 46,
+        "height": 18
+      },
+      "image_bounds": {
+        "x": 203.58933333333334,
+        "y": 565.5172413793103,
+        "width": 79.36533333333334,
+        "height": 31.034482758620687
+      }
+    },
+    {
+      "label": "N128",
+      "node_id": "BE371142-9230-49D9-A79E-D0E8678DF14F",
+      "bounds": {
+        "x": 131.00000000000182,
+        "y": 330,
+        "width": 20.4,
+        "height": 14
+      },
+      "image_bounds": {
+        "x": 226.01866666666982,
+        "y": 568.9655172413793,
+        "width": 35.19680000000001,
+        "height": 24.137931034482758
+      }
+    }
+  ],
+  "measurements": [
+    {
+      "from_node_id": "BE371142-9230-49D9-A79E-D0E8678DF14F",
+      "to_node_id": "F3D2CD36-CB0E-4E2D-B07D-9A72BBD4867E",
+      "axis": "x",
+      "distance": 22.599999999998182,
+      "overlap_span": {
+        "start": 330,
+        "end": 344
+      }
+    },
+    {
+      "from_node_id": "CFEABC24-FEFC-4035-99EC-BCBA3461659E",
+      "to_node_id": "DAA5DAD8-BB70-4C18-AE4B-79790001A850",
+      "axis": "x",
+      "distance": 19,
+      "overlap_span": {
+        "start": 330,
+        "end": 344
+      }
+    },
+    {
+      "from_node_id": "CFEABC24-FEFC-4035-99EC-BCBA3461659E",
+      "to_node_id": "F3D2CD36-CB0E-4E2D-B07D-9A72BBD4867E",
+      "axis": "x",
+      "distance": 10,
+      "overlap_span": {
+        "start": 328,
+        "end": 346
+      }
+    }
+  ],
+  "annotated": false,
+  "visual_source": "original_reference",
+  "original_reference_size": {
+    "width": 750,
+    "height": 1624
+  },
+  "font_requirements": [
+    {
+      "family": "PingFangSC-Regular",
+      "availability": "not_checked",
+      "source": "design",
+      "weights": [
+        400
+      ],
+      "node_count": 2,
+      "sample_node_ids": [
+        "DAA5DAD8-BB70-4C18-AE4B-79790001A850",
+        "BE371142-9230-49D9-A79E-D0E8678DF14F"
+      ]
+    }
+  ],
+  "scale_metadata": {
+    "device": "iOS @1x",
+    "ArtboardScale": 2,
+    "sliceScale": 4,
+    "exportScale": 2
+  },
+  "source_gaps": [
+    {
+      "code": "logical_coordinate_conversion_unknown",
+      "message": "Source canvas units are preserved. Export density does not establish CSS pixel scale."
+    }
+  ],
+  "render_gaps": [],
+  "gaps": [
+    {
+      "code": "logical_coordinate_conversion_unknown",
+      "message": "Source canvas units are preserved. Export density does not establish CSS pixel scale."
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "3DC042E5-3A04-45C0-B282-C8DC14DDD57B",
+      "source_id": "3DC042E5-3A04-45C0-B282-C8DC14DDD57B",
+      "identity_source": "source_id",
+      "parent_id": "E773ECF7-C65C-4C66-B75F-C494C33E7252",
+      "source_parent_id": "E773ECF7-C65C-4C66-B75F-C494C33E7252",
+      "source_order": 120,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 321,
+        "y": 202,
+        "width": 10,
+        "height": 10
+      },
+      "source_bounds": {
+        "x": 321,
+        "y": 202,
+        "width": 10,
+        "height": 10
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "edited": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 10,
+        "booleanOperation": -1,
+        "points": [
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 0
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 1,
+              "y": 1
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 1,
+              "y": 1
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 1,
+              "y": 1
+            }
+          }
+        ],
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 1,
+          "lineJoinStyle": 1,
+          "isEnabled": true
+        },
+        "top": 202,
+        "hasFixedWidth": false,
+        "left": 321,
+        "ddsOriginFrame": {
+          "height": 10,
+          "x": 10924,
+          "y": 5202,
+          "width": 10
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "isLocked": false,
+        "opacity": 100,
+        "startMarkerType": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 10,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 10,
+        "layerOriginFrame": {
+          "height": 10,
+          "x": 321,
+          "y": 202,
+          "width": 10
+        },
+        "isClosed": false,
+        "borders": [
+          {
+            "position": "中心边框",
+            "type": "color",
+            "blendMode": 0,
+            "opacity": 1,
+            "color": {
+              "a": 1,
+              "b": 78,
+              "value": "rgba(91,84,78,1)",
+              "g": 84,
+              "r": 91
+            },
+            "thickness": 1.5,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "pointRadiusBehaviour": 1,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 2,
+        "hasFixedHeight": false,
+        "influenceLeft": 321,
+        "sharedStyleID": "",
+        "width": 10,
+        "influenceTop": 202,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/120",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "A837EA5B-1599-4C78-9E2C-301119EF9E0D",
+      "source_id": "A837EA5B-1599-4C78-9E2C-301119EF9E0D",
+      "identity_source": "source_id",
+      "parent_id": "E773ECF7-C65C-4C66-B75F-C494C33E7252",
+      "source_parent_id": "E773ECF7-C65C-4C66-B75F-C494C33E7252",
+      "source_order": 121,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 321,
+        "y": 202,
+        "width": 10,
+        "height": 10
+      },
+      "source_bounds": {
+        "x": 321,
+        "y": 202,
+        "width": 10,
+        "height": 10
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "edited": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 10,
+        "booleanOperation": -1,
+        "points": [
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 1
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 1
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0,
+              "y": 1
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 1,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 1,
+              "y": 0
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 1,
+              "y": 0
+            }
+          }
+        ],
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 1,
+          "lineJoinStyle": 1,
+          "isEnabled": true
+        },
+        "top": 202,
+        "hasFixedWidth": false,
+        "left": 321,
+        "ddsOriginFrame": {
+          "height": 10,
+          "x": 10924,
+          "y": 5202,
+          "width": 10
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "isLocked": false,
+        "opacity": 100,
+        "startMarkerType": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 10,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 10,
+        "layerOriginFrame": {
+          "height": 10,
+          "x": 321,
+          "y": 202,
+          "width": 10
+        },
+        "isClosed": false,
+        "borders": [
+          {
+            "position": "中心边框",
+            "type": "color",
+            "blendMode": 0,
+            "opacity": 1,
+            "color": {
+              "a": 1,
+              "b": 78,
+              "value": "rgba(91,84,78,1)",
+              "g": 84,
+              "r": 91
+            },
+            "thickness": 1.5,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "pointRadiusBehaviour": 1,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 2,
+        "hasFixedHeight": false,
+        "influenceLeft": 321,
+        "sharedStyleID": "",
+        "width": 10,
+        "influenceTop": 202,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/121",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "E773ECF7-C65C-4C66-B75F-C494C33E7252",
+      "source_id": "E773ECF7-C65C-4C66-B75F-C494C33E7252",
+      "identity_source": "source_id",
+      "parent_id": "60853E79-C201-4188-A7A1-7AD1EA45D076",
+      "source_parent_id": "60853E79-C201-4188-A7A1-7AD1EA45D076",
+      "source_order": 122,
+      "name": "编组",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 314,
+        "y": 195,
+        "width": 12,
+        "height": 12
+      },
+      "source_bounds": {
+        "x": 314,
+        "y": 195,
+        "width": 12,
+        "height": 12
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "hasInferredLayout": false,
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "shouldGrowSizeOfGroupForInferredLayout": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 12,
+        "booleanOperation": 0,
+        "horizontalSizing": 3,
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0,
+          "isEnabled": true
+        },
+        "top": 195,
+        "hasFixedWidth": false,
+        "left": 314,
+        "groupBehavior": 0,
+        "ddsOriginFrame": {
+          "height": 12,
+          "x": 10917,
+          "y": 5195,
+          "width": 12
+        },
+        "ancestorsHaveInferredLayout": false,
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "paddingSelection": 1,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "leftPadding": 0,
+        "rightPadding": 0,
+        "opacity": 100,
+        "hasFlexLayout": false,
+        "startMarkerType": 0,
+        "topPadding": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 12,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "isRootFlexLayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 12,
+        "ancestorsOrSelfHaveInferredLayout": false,
+        "layerOriginFrame": {
+          "height": 12,
+          "x": 314,
+          "y": 195,
+          "width": 12
+        },
+        "pointRadiusBehaviour": 0,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 1,
+        "hasFixedHeight": false,
+        "influenceLeft": 314,
+        "sharedStyleID": "",
+        "isCopy": false,
+        "verticalSizing": 3,
+        "width": 12,
+        "influenceTop": 195,
+        "bottomPadding": 0,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/122",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "60853E79-C201-4188-A7A1-7AD1EA45D076",
+      "source_id": "60853E79-C201-4188-A7A1-7AD1EA45D076",
+      "identity_source": "source_id",
+      "parent_id": "66BA801B-B0D8-4582-BD33-4DE6849C0BDD",
+      "source_parent_id": "66BA801B-B0D8-4582-BD33-4DE6849C0BDD",
+      "source_order": 123,
+      "name": "图形",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 314,
+        "y": 195,
+        "width": 24,
+        "height": 24
+      },
+      "source_bounds": {
+        "x": 314,
+        "y": 195,
+        "width": 24,
+        "height": 24
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "hasInferredLayout": false,
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "shouldGrowSizeOfGroupForInferredLayout": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 24,
+        "booleanOperation": 0,
+        "horizontalSizing": 3,
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0,
+          "isEnabled": true
+        },
+        "top": 195,
+        "hasFixedWidth": false,
+        "left": 314,
+        "groupBehavior": 2,
+        "ddsOriginFrame": {
+          "height": 24,
+          "x": 10917,
+          "y": 5195,
+          "width": 24
+        },
+        "ancestorsHaveInferredLayout": false,
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "paddingSelection": 1,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "leftPadding": 0,
+        "rightPadding": 0,
+        "opacity": 100,
+        "hasFlexLayout": false,
+        "startMarkerType": 0,
+        "topPadding": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 24,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "isRootFlexLayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 24,
+        "ancestorsOrSelfHaveInferredLayout": false,
+        "layerOriginFrame": {
+          "height": 24,
+          "x": 314,
+          "y": 195,
+          "width": 24
+        },
+        "pointRadiusBehaviour": 0,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 0,
+        "hasFixedHeight": false,
+        "influenceLeft": 314,
+        "sharedStyleID": "",
+        "isCopy": false,
+        "verticalSizing": 3,
+        "width": 24,
+        "influenceTop": 195,
+        "bottomPadding": 0,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/123",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "F3D2CD36-CB0E-4E2D-B07D-9A72BBD4867E",
+      "source_id": "F3D2CD36-CB0E-4E2D-B07D-9A72BBD4867E",
+      "identity_source": "source_id",
+      "parent_id": "66BA801B-B0D8-4582-BD33-4DE6849C0BDD",
+      "source_parent_id": "66BA801B-B0D8-4582-BD33-4DE6849C0BDD",
+      "source_order": 124,
+      "name": "矩形 6",
+      "node_type": "shape",
+      "bounds": {
+        "x": 174,
+        "y": 328,
+        "width": 58,
+        "height": 18
+      },
+      "source_bounds": {
+        "x": 174,
+        "y": 328,
+        "width": 58,
+        "height": 18
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "radius": [
+          3.402823466385289e+38
+        ],
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "edited": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 18,
+        "booleanOperation": -1,
+        "points": [
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 0
+            },
+            "cornerRadius": 3.402823466385289e+38,
+            "point": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 1,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 1,
+              "y": 0
+            },
+            "cornerRadius": 3.402823466385289e+38,
+            "point": {
+              "x": 1,
+              "y": 0
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 1,
+              "y": 1
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 1,
+              "y": 1
+            },
+            "cornerRadius": 3.402823466385289e+38,
+            "point": {
+              "x": 1,
+              "y": 1
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 1
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 1
+            },
+            "cornerRadius": 3.402823466385289e+38,
+            "point": {
+              "x": 0,
+              "y": 1
+            }
+          }
+        ],
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0,
+          "isEnabled": true
+        },
+        "top": 328,
+        "hasFixedWidth": false,
+        "left": 174,
+        "ddsOriginFrame": {
+          "height": 18,
+          "x": 10777,
+          "y": 5328,
+          "width": 58
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "isLocked": false,
+        "fills": [
+          {
+            "patternTileScale": 1,
+            "noiseIntensity": 0,
+            "type": "color",
+            "blendMode": 0,
+            "noiseIndex": 0,
+            "opacity": 1,
+            "color": {
+              "a": 0.05,
+              "b": 255,
+              "value": "rgba(255,255,255,0.05)",
+              "g": 255,
+              "r": 255
+            },
+            "patternFillType": 1,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "opacity": 100,
+        "startMarkerType": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 18,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 58,
+        "layerOriginFrame": {
+          "height": 18,
+          "x": 174,
+          "y": 328,
+          "width": 58
+        },
+        "isClosed": true,
+        "borders": [
+          {
+            "position": "内边框",
+            "type": "color",
+            "blendMode": 0,
+            "opacity": 1,
+            "color": {
+              "a": 0.08,
+              "b": 255,
+              "value": "rgba(255,255,255,0.08)",
+              "g": 255,
+              "r": 255
+            },
+            "thickness": 0.571022727272727,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "pointRadiusBehaviour": 1,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 0,
+        "hasFixedHeight": false,
+        "influenceLeft": 174,
+        "sharedStyleID": "",
+        "width": 58,
+        "influenceTop": 328,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/124",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "DAA5DAD8-BB70-4C18-AE4B-79790001A850",
+      "source_id": "DAA5DAD8-BB70-4C18-AE4B-79790001A850",
+      "identity_source": "source_id",
+      "parent_id": "66BA801B-B0D8-4582-BD33-4DE6849C0BDD",
+      "source_parent_id": "66BA801B-B0D8-4582-BD33-4DE6849C0BDD",
+      "source_order": 125,
+      "name": "我关注的",
+      "node_type": "text",
+      "bounds": {
+        "x": 183,
+        "y": 330,
+        "width": 40,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 183,
+        "y": 330,
+        "width": 40,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "我关注的",
+      "raw_style": {
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "isFlippedVertical": false,
+        "dontSynchroniseWithSymbol": false,
+        "isVisible": true,
+        "influenceHeight": 14,
+        "kerning": 0,
+        "top": 330,
+        "hasFixedWidth": false,
+        "left": 183,
+        "lineSpacingBehaviour": 3,
+        "automaticallyDrawOnUnderlyingPath": false,
+        "ddsOriginFrame": {
+          "height": 14,
+          "x": 10786,
+          "y": 5330,
+          "width": 40
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "isLocked": false,
+        "opacity": 100,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 14,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "characterSpacing": 0,
+        "influenceWidth": 40,
+        "layerOriginFrame": {
+          "height": 14,
+          "x": 183,
+          "y": 330,
+          "width": 40
+        },
+        "textBehaviour": 0,
+        "shouldBreakMaskChain": false,
+        "index": 0,
+        "hasFixedHeight": false,
+        "influenceLeft": 183,
+        "sharedStyleID": "",
+        "font": {
+          "align": "justify",
+          "kerning": 0,
+          "line": 14,
+          "size": 10,
+          "verticalAlignment": 0,
+          "styles": [
+            {
+              "fontWeight": 400,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 14,
+              "location": "0",
+              "minimumLineHeight": 0,
+              "length": "4",
+              "size": "10",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(118,180,255,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 3,
+              "maximumLineHeight": 0,
+              "displayName": "苹方-简 常规体",
+              "content": "我关注的",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "spacing": "0",
+              "font": "PingFangSC-Regular",
+              "decorationLine": "none",
+              "paragraphSpacingBefore": 0
+            }
+          ],
+          "color": {
+            "a": 1,
+            "b": 255,
+            "value": "rgba(118,180,255,1)",
+            "g": 180,
+            "r": 118
+          },
+          "displayName": "苹方-简 常规体",
+          "content": "我关注的",
+          "textAlignment": 3,
+          "spacing": 0,
+          "font": "PingFangSC-Regular"
+        },
+        "width": 40,
+        "influenceTop": 330,
+        "ddsAdaptiveFrame": {
+          "top": 5330,
+          "left": 10786,
+          "height": 14,
+          "width": 40
+        },
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/125",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [
+          {
+            "start": 0,
+            "length": 4,
+            "offset_unit": "utf16",
+            "text": "我关注的",
+            "source_pointer": "/info/125/font/styles/0",
+            "raw_style": {
+              "fontWeight": 400,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 14,
+              "location": "0",
+              "minimumLineHeight": 0,
+              "length": "4",
+              "size": "10",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(118,180,255,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 3,
+              "maximumLineHeight": 0,
+              "displayName": "苹方-简 常规体",
+              "content": "我关注的",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "spacing": "0",
+              "font": "PingFangSC-Regular",
+              "decorationLine": "none",
+              "paragraphSpacingBefore": 0
+            },
+            "font_family": "PingFangSC-Regular",
+            "font_size": 10,
+            "font_weight": 400,
+            "color": "rgba(118,180,255,1.000000)",
+            "line_height": 14,
+            "letter_spacing": 0,
+            "source_fields": {
+              "font_family": "/info/125/font/styles/0/font",
+              "font_size": "/info/125/font/styles/0/size",
+              "font_weight": "/info/125/font/styles/0/fontWeight",
+              "line_height": "/info/125/font/styles/0/line",
+              "letter_spacing": "/info/125/font/styles/0/kern",
+              "paragraph_spacing": "/info/125/font/styles/0/paragraphSpacing",
+              "paragraph_spacing_before": "/info/125/font/styles/0/paragraphSpacingBefore",
+              "color": "/info/125/font/styles/0/color/value",
+              "alignment_code": "/info/125/font/styles/0/alignment",
+              "decoration_line": "/info/125/font/styles/0/decorationLine",
+              "display_name": "/info/125/font/styles/0/displayName"
+            },
+            "font_name_kind": "source_name",
+            "paragraph_spacing": 0,
+            "paragraph_spacing_before": 0,
+            "alignment_code": 3,
+            "decoration_line": "none",
+            "display_name": "苹方-简 常规体"
+          }
+        ],
+        "font_requirements": [
+          {
+            "family": "PingFangSC-Regular",
+            "name_kind": "source_name",
+            "source": "design",
+            "availability": "not_checked",
+            "source_pointers": [
+              "/info/125/font",
+              "/info/125/font/styles/0"
+            ],
+            "weights": [
+              400
+            ]
+          }
+        ],
+        "gaps": [],
+        "raw_font": {
+          "align": "justify",
+          "kerning": 0,
+          "line": 14,
+          "size": 10,
+          "verticalAlignment": 0,
+          "styles": [
+            {
+              "fontWeight": 400,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 14,
+              "location": "0",
+              "minimumLineHeight": 0,
+              "length": "4",
+              "size": "10",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(118,180,255,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 3,
+              "maximumLineHeight": 0,
+              "displayName": "苹方-简 常规体",
+              "content": "我关注的",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "spacing": "0",
+              "font": "PingFangSC-Regular",
+              "decorationLine": "none",
+              "paragraphSpacingBefore": 0
+            }
+          ],
+          "color": {
+            "a": 1,
+            "b": 255,
+            "value": "rgba(118,180,255,1)",
+            "g": 180,
+            "r": 118
+          },
+          "displayName": "苹方-简 常规体",
+          "content": "我关注的",
+          "textAlignment": 3,
+          "spacing": 0,
+          "font": "PingFangSC-Regular"
+        },
+        "base_style": {
+          "font_family": "PingFangSC-Regular",
+          "font_size": 10,
+          "font_weight": null,
+          "color": "rgba(118,180,255,1)",
+          "line_height": 14,
+          "letter_spacing": 0,
+          "source_fields": {
+            "font_family": "/info/125/font/font",
+            "font_size": "/info/125/font/size",
+            "line_height": "/info/125/font/line",
+            "letter_spacing": "/info/125/font/kerning",
+            "color": "/info/125/font/color/value",
+            "text_align": "/info/125/font/align",
+            "display_name": "/info/125/font/displayName"
+          },
+          "font_name_kind": "source_name",
+          "text_align": "justify",
+          "display_name": "苹方-简 常规体",
+          "source_pointer": "/info/125/font"
+        },
+        "text_length_utf16": 4
+      }
+    },
+    {
+      "node_id": "CFEABC24-FEFC-4035-99EC-BCBA3461659E",
+      "source_id": "CFEABC24-FEFC-4035-99EC-BCBA3461659E",
+      "identity_source": "source_id",
+      "parent_id": "66BA801B-B0D8-4582-BD33-4DE6849C0BDD",
+      "source_parent_id": "66BA801B-B0D8-4582-BD33-4DE6849C0BDD",
+      "source_order": 126,
+      "name": "矩形 5",
+      "node_type": "shape",
+      "bounds": {
+        "x": 118,
+        "y": 328,
+        "width": 46,
+        "height": 18
+      },
+      "source_bounds": {
+        "x": 118,
+        "y": 328,
+        "width": 46,
+        "height": 18
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "radius": [
+          3.402823466385289e+38
+        ],
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "edited": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 18,
+        "booleanOperation": -1,
+        "points": [
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 0
+            },
+            "cornerRadius": 3.402823466385289e+38,
+            "point": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 1,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 1,
+              "y": 0
+            },
+            "cornerRadius": 3.402823466385289e+38,
+            "point": {
+              "x": 1,
+              "y": 0
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 1,
+              "y": 1
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 1,
+              "y": 1
+            },
+            "cornerRadius": 3.402823466385289e+38,
+            "point": {
+              "x": 1,
+              "y": 1
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 1
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 1
+            },
+            "cornerRadius": 3.402823466385289e+38,
+            "point": {
+              "x": 0,
+              "y": 1
+            }
+          }
+        ],
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0,
+          "isEnabled": true
+        },
+        "top": 328,
+        "hasFixedWidth": false,
+        "left": 118,
+        "ddsOriginFrame": {
+          "height": 18,
+          "x": 10721,
+          "y": 5328,
+          "width": 46
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "isLocked": false,
+        "fills": [
+          {
+            "patternTileScale": 1,
+            "noiseIntensity": 0,
+            "type": "color",
+            "blendMode": 0,
+            "noiseIndex": 0,
+            "opacity": 1,
+            "color": {
+              "a": 0.05,
+              "b": 255,
+              "value": "rgba(255,255,255,0.05)",
+              "g": 255,
+              "r": 255
+            },
+            "patternFillType": 1,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "opacity": 100,
+        "startMarkerType": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 18,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 46,
+        "layerOriginFrame": {
+          "height": 18,
+          "x": 118,
+          "y": 328,
+          "width": 46
+        },
+        "isClosed": true,
+        "borders": [
+          {
+            "position": "内边框",
+            "type": "color",
+            "blendMode": 0,
+            "opacity": 1,
+            "color": {
+              "a": 0.08,
+              "b": 255,
+              "value": "rgba(255,255,255,0.08)",
+              "g": 255,
+              "r": 255
+            },
+            "thickness": 0.566666666666667,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "pointRadiusBehaviour": 1,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 0,
+        "hasFixedHeight": false,
+        "influenceLeft": 118,
+        "sharedStyleID": "",
+        "width": 46,
+        "influenceTop": 328,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/126",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "BE371142-9230-49D9-A79E-D0E8678DF14F",
+      "source_id": "BE371142-9230-49D9-A79E-D0E8678DF14F",
+      "identity_source": "source_id",
+      "parent_id": "66BA801B-B0D8-4582-BD33-4DE6849C0BDD",
+      "source_parent_id": "66BA801B-B0D8-4582-BD33-4DE6849C0BDD",
+      "source_order": 127,
+      "name": "生人",
+      "node_type": "text",
+      "bounds": {
+        "x": 131.00000000000182,
+        "y": 330,
+        "width": 20.4,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 131.00000000000182,
+        "y": 330,
+        "width": 20.4,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "生人",
+      "raw_style": {
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "isFlippedVertical": false,
+        "dontSynchroniseWithSymbol": false,
+        "isVisible": true,
+        "influenceHeight": 14,
+        "kerning": 0,
+        "top": 330,
+        "hasFixedWidth": false,
+        "left": 131.00000000000182,
+        "lineSpacingBehaviour": 3,
+        "automaticallyDrawOnUnderlyingPath": false,
+        "ddsOriginFrame": {
+          "height": 14,
+          "x": 10734.000000000002,
+          "y": 5330,
+          "width": 20.4
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "isLocked": false,
+        "opacity": 100,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 14,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "characterSpacing": 0,
+        "influenceWidth": 20.4,
+        "layerOriginFrame": {
+          "height": 14,
+          "x": 131.00000000000182,
+          "y": 330,
+          "width": 20.4
+        },
+        "textBehaviour": 1,
+        "shouldBreakMaskChain": false,
+        "index": 0,
+        "hasFixedHeight": false,
+        "influenceLeft": 131.00000000000182,
+        "sharedStyleID": "",
+        "font": {
+          "align": "justify",
+          "kerning": 0,
+          "line": 14,
+          "size": 10,
+          "verticalAlignment": 0,
+          "styles": [
+            {
+              "fontWeight": 400,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 14,
+              "location": "0",
+              "minimumLineHeight": 0,
+              "length": "2",
+              "size": "10",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(242,164,138,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 3,
+              "maximumLineHeight": 0,
+              "displayName": "苹方-简 常规体",
+              "content": "生人",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "spacing": "0",
+              "font": "PingFangSC-Regular",
+              "decorationLine": "none",
+              "paragraphSpacingBefore": 0
+            }
+          ],
+          "color": {
+            "a": 1,
+            "b": 138,
+            "value": "rgba(242,164,138,1)",
+            "g": 164,
+            "r": 242
+          },
+          "displayName": "苹方-简 常规体",
+          "content": "生人",
+          "textAlignment": 3,
+          "spacing": 0,
+          "font": "PingFangSC-Regular"
+        },
+        "width": 20.4,
+        "influenceTop": 330,
+        "ddsAdaptiveFrame": {
+          "top": 5330,
+          "left": 10734.000000000002,
+          "height": 14,
+          "width": 20.4
+        },
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/127",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [
+          {
+            "start": 0,
+            "length": 2,
+            "offset_unit": "utf16",
+            "text": "生人",
+            "source_pointer": "/info/127/font/styles/0",
+            "raw_style": {
+              "fontWeight": 400,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 14,
+              "location": "0",
+              "minimumLineHeight": 0,
+              "length": "2",
+              "size": "10",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(242,164,138,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 3,
+              "maximumLineHeight": 0,
+              "displayName": "苹方-简 常规体",
+              "content": "生人",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "spacing": "0",
+              "font": "PingFangSC-Regular",
+              "decorationLine": "none",
+              "paragraphSpacingBefore": 0
+            },
+            "font_family": "PingFangSC-Regular",
+            "font_size": 10,
+            "font_weight": 400,
+            "color": "rgba(242,164,138,1.000000)",
+            "line_height": 14,
+            "letter_spacing": 0,
+            "source_fields": {
+              "font_family": "/info/127/font/styles/0/font",
+              "font_size": "/info/127/font/styles/0/size",
+              "font_weight": "/info/127/font/styles/0/fontWeight",
+              "line_height": "/info/127/font/styles/0/line",
+              "letter_spacing": "/info/127/font/styles/0/kern",
+              "paragraph_spacing": "/info/127/font/styles/0/paragraphSpacing",
+              "paragraph_spacing_before": "/info/127/font/styles/0/paragraphSpacingBefore",
+              "color": "/info/127/font/styles/0/color/value",
+              "alignment_code": "/info/127/font/styles/0/alignment",
+              "decoration_line": "/info/127/font/styles/0/decorationLine",
+              "display_name": "/info/127/font/styles/0/displayName"
+            },
+            "font_name_kind": "source_name",
+            "paragraph_spacing": 0,
+            "paragraph_spacing_before": 0,
+            "alignment_code": 3,
+            "decoration_line": "none",
+            "display_name": "苹方-简 常规体"
+          }
+        ],
+        "font_requirements": [
+          {
+            "family": "PingFangSC-Regular",
+            "name_kind": "source_name",
+            "source": "design",
+            "availability": "not_checked",
+            "source_pointers": [
+              "/info/127/font",
+              "/info/127/font/styles/0"
+            ],
+            "weights": [
+              400
+            ]
+          }
+        ],
+        "gaps": [],
+        "raw_font": {
+          "align": "justify",
+          "kerning": 0,
+          "line": 14,
+          "size": 10,
+          "verticalAlignment": 0,
+          "styles": [
+            {
+              "fontWeight": 400,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 14,
+              "location": "0",
+              "minimumLineHeight": 0,
+              "length": "2",
+              "size": "10",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(242,164,138,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 3,
+              "maximumLineHeight": 0,
+              "displayName": "苹方-简 常规体",
+              "content": "生人",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "spacing": "0",
+              "font": "PingFangSC-Regular",
+              "decorationLine": "none",
+              "paragraphSpacingBefore": 0
+            }
+          ],
+          "color": {
+            "a": 1,
+            "b": 138,
+            "value": "rgba(242,164,138,1)",
+            "g": 164,
+            "r": 242
+          },
+          "displayName": "苹方-简 常规体",
+          "content": "生人",
+          "textAlignment": 3,
+          "spacing": 0,
+          "font": "PingFangSC-Regular"
+        },
+        "base_style": {
+          "font_family": "PingFangSC-Regular",
+          "font_size": 10,
+          "font_weight": null,
+          "color": "rgba(242,164,138,1)",
+          "line_height": 14,
+          "letter_spacing": 0,
+          "source_fields": {
+            "font_family": "/info/127/font/font",
+            "font_size": "/info/127/font/size",
+            "line_height": "/info/127/font/line",
+            "letter_spacing": "/info/127/font/kerning",
+            "color": "/info/127/font/color/value",
+            "text_align": "/info/127/font/align",
+            "display_name": "/info/127/font/displayName"
+          },
+          "font_name_kind": "source_name",
+          "text_align": "justify",
+          "display_name": "苹方-简 常规体",
+          "source_pointer": "/info/127/font"
+        },
+        "text_length_utf16": 2
+      }
+    }
+  ],
+  "ancestors": [
+    {
+      "node_id": "E773ECF7-C65C-4C66-B75F-C494C33E7252",
+      "parent_id": "60853E79-C201-4188-A7A1-7AD1EA45D076",
+      "name": "编组",
+      "bounds": {
+        "x": 314,
+        "y": 195,
+        "width": 12,
+        "height": 12
+      }
+    },
+    {
+      "node_id": "60853E79-C201-4188-A7A1-7AD1EA45D076",
+      "parent_id": "66BA801B-B0D8-4582-BD33-4DE6849C0BDD",
+      "name": "图形",
+      "bounds": {
+        "x": 314,
+        "y": 195,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "node_id": "66BA801B-B0D8-4582-BD33-4DE6849C0BDD",
+      "parent_id": null,
+      "name": "拨打方-1备份 2",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      }
+    }
+  ],
+  "dds_layout_suggestions": [
+    {
+      "node_id": "3DC042E5-3A04-45C0-B282-C8DC14DDD57B",
+      "source": "dds_derived_layout",
+      "style": {
+        "border": "1.5px solid rgba(91,84,78,1)",
+        "display": "flex",
+        "flexDirection": "column",
+        "margin": "5px 0 7px 186px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "A837EA5B-1599-4C78-9E2C-301119EF9E0D",
+      "source": "dds_derived_layout",
+      "style": {
+        "width": 10,
+        "height": 10,
+        "border": "1.5px solid rgba(91,84,78,1)",
+        "display": "flex",
+        "flexDirection": "column"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "CFEABC24-FEFC-4035-99EC-BCBA3461659E",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundColor": "rgba(255,255,255,0.050000)",
+        "borderRadius": "340282346638528897590636046441678635008px 340282346638528897590636046441678635008px 340282346638528897590636046441678635008px 340282346638528897590636046441678635008px",
+        "height": 18,
+        "border": "0.566666666666667px solid rgba(255,255,255,0.08)",
+        "display": "flex",
+        "flexDirection": "column",
+        "width": 46,
+        "margin": "0 10px 14px 0",
+        "padding": "1.4333333333333331px 12.433333333333334px 1.4333333333333331px 12.433333333333334px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "BE371142-9230-49D9-A79E-D0E8678DF14F",
+      "source": "dds_derived_layout",
+      "style": {
+        "overflowWrap": "break-word",
+        "color": "rgba(242,164,138,1)",
+        "fontSize": 10,
+        "fontFamily": "PingFangSC-Regular",
+        "fontWeight": "normal",
+        "textAlign": "justify",
+        "whiteSpace": "nowrap",
+        "lineHeight": 14
+      },
+      "value": "生人"
+    },
+    {
+      "node_id": "F3D2CD36-CB0E-4E2D-B07D-9A72BBD4867E",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundColor": "rgba(255,255,255,0.050000)",
+        "borderRadius": "340282346638528897590636046441678635008px 340282346638528897590636046441678635008px 340282346638528897590636046441678635008px 340282346638528897590636046441678635008px",
+        "height": 18,
+        "border": "0.571022727272727px solid rgba(255,255,255,0.08)",
+        "marginBottom": 14,
+        "display": "flex",
+        "flexDirection": "column",
+        "width": 58,
+        "padding": "1.428977272727273px 8.428977272727273px 1.428977272727273px 8.428977272727273px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "DAA5DAD8-BB70-4C18-AE4B-79790001A850",
+      "source": "dds_derived_layout",
+      "style": {
+        "overflowWrap": "break-word",
+        "color": "rgba(118,180,255,1)",
+        "fontSize": 10,
+        "fontFamily": "PingFangSC-Regular",
+        "fontWeight": "normal",
+        "textAlign": "justify",
+        "whiteSpace": "nowrap",
+        "lineHeight": 14
+      },
+      "value": "我关注的"
+    }
+  ],
+  "assets": [],
+  "total": 128,
+  "returned": 8,
+  "next_offset": null,
+  "truncated": false,
+  "preview_resource": "lanhu://design/e275e2eb8b9ade5c88d9c8bf61474c12/preview/2bf765b7fd887007160fdcb6d47dba8d",
+  "reference_crop_resource": "lanhu://design/e275e2eb8b9ade5c88d9c8bf61474c12/preview/2bf765b7fd887007160fdcb6d47dba8d",
+  "image_order": [
+    "reference_or_overlay"
+  ]
+}

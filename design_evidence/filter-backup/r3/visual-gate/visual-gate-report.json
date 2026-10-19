@@ -1,0 +1,400 @@
+{
+  "contract": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/filter-backup/visual-contract.json",
+  "reference": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/filter-backup/reference.png",
+  "render_scale": 4.0,
+  "passed": true,
+  "candidates": {
+    "r3": {
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/filter-backup/r3/render.png",
+      "passed": true,
+      "regions": {
+        "sheet_header": {
+          "label": "弹层标题区",
+          "rect": [
+            20,
+            258,
+            335,
+            55
+          ],
+          "metrics": {
+            "mae": 6.9689,
+            "p95_max_channel": 19.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "cta": {
+          "label": "底部CTA",
+          "rect": [
+            28,
+            727,
+            320,
+            50
+          ],
+          "metrics": {
+            "mae": 2.8333,
+            "p95_max_channel": 1.0
+          },
+          "passed": true,
+          "failures": []
+        }
+      },
+      "features": {
+        "title": {
+          "label": "弹层标题",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0239,
+            "center_y_delta": -0.0028,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0826
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              26.0,
+              266.0,
+              213.75,
+              18.25
+            ],
+            "center": [
+              135.83807928531547,
+              274.2761778980372
+            ],
+            "ink_pixels": 23283
+          },
+          "actual": {
+            "bbox": [
+              26.0,
+              266.0,
+              213.75,
+              18.25
+            ],
+            "center": [
+              135.86201253620027,
+              274.2733665251716
+            ],
+            "ink_pixels": 25207
+          }
+        },
+        "enabled_heading": {
+          "label": "已开启任务",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0498,
+            "center_y_delta": -0.066,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.1263
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              40.0,
+              341.0,
+              58.5,
+              11.25
+            ],
+            "center": [
+              70.01228378039609,
+              346.51034093757835
+            ],
+            "ink_pixels": 3989
+          },
+          "actual": {
+            "bbox": [
+              40.0,
+              341.0,
+              58.5,
+              11.25
+            ],
+            "center": [
+              69.96249721789451,
+              346.4443578900512
+            ],
+            "ink_pixels": 4493
+          }
+        },
+        "pending_heading": {
+          "label": "待配置任务",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.1801,
+            "center_y_delta": -0.0404,
+            "width_delta": 0.25,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.1006
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              39.5,
+              451.0,
+              59.0,
+              11.25
+            ],
+            "center": [
+              67.7783913315274,
+              456.5201083559075
+            ],
+            "ink_pixels": 4799
+          },
+          "actual": {
+            "bbox": [
+              39.25,
+              451.0,
+              59.25,
+              11.25
+            ],
+            "center": [
+              67.95853843241197,
+              456.47969519121546
+            ],
+            "ink_pixels": 5282
+          }
+        },
+        "video_label": {
+          "label": "视频通话",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.1256,
+            "center_y_delta": -0.0489,
+            "width_delta": 0.25,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.1799
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              58.5,
+              404.0,
+              47.0,
+              11.25
+            ],
+            "center": [
+              81.95467080317133,
+              409.5655808341951
+            ],
+            "ink_pixels": 2901
+          },
+          "actual": {
+            "bbox": [
+              58.5,
+              404.0,
+              47.25,
+              11.25
+            ],
+            "center": [
+              81.8290242477359,
+              409.5166520595968
+            ],
+            "ink_pixels": 3423
+          }
+        },
+        "voice_label": {
+          "label": "语音通话",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.2162,
+            "center_y_delta": -0.0473,
+            "width_delta": 0.25,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.1317
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              164.5,
+              404.0,
+              47.0,
+              11.25
+            ],
+            "center": [
+              188.00034211426618,
+              409.66840574751967
+            ],
+            "ink_pixels": 2923
+          },
+          "actual": {
+            "bbox": [
+              164.5,
+              404.0,
+              47.25,
+              11.25
+            ],
+            "center": [
+              188.21652055622732,
+              409.62114570737606
+            ],
+            "ink_pixels": 3308
+          }
+        },
+        "message_label": {
+          "label": "私信互动",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.1517,
+            "center_y_delta": -0.0563,
+            "width_delta": 0.0,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.1709
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              269.5,
+              404.25,
+              46.75,
+              11.0
+            ],
+            "center": [
+              292.63034100246506,
+              409.8455217748562
+            ],
+            "ink_pixels": 2434
+          },
+          "actual": {
+            "bbox": [
+              269.5,
+              404.0,
+              46.75,
+              11.25
+            ],
+            "center": [
+              292.4786842105263,
+              409.7892105263158
+            ],
+            "ink_pixels": 2850
+          }
+        },
+        "row1_title": {
+          "label": "第一行叫醒服务",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.1691,
+            "center_y_delta": -0.1304,
+            "width_delta": 0.25,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2147
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              80.0,
+              491.25,
+              50.25,
+              12.0
+            ],
+            "center": [
+              104.8148799062683,
+              497.3054335090803
+            ],
+            "ink_pixels": 3414
+          },
+          "actual": {
+            "bbox": [
+              80.0,
+              491.25,
+              50.5,
+              12.0
+            ],
+            "center": [
+              104.98396431155052,
+              497.17506631299733
+            ],
+            "ink_pixels": 4147
+          }
+        },
+        "row1_status": {
+          "label": "第一行未开通",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.1432,
+            "center_y_delta": -0.0805,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.348
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              303.75,
+              500.0,
+              28.75,
+              9.0
+            ],
+            "center": [
+              319.6435762224353,
+              504.1670661553212
+            ],
+            "ink_pixels": 1043
+          },
+          "actual": {
+            "bbox": [
+              303.5,
+              499.75,
+              29.0,
+              9.25
+            ],
+            "center": [
+              319.50035561877667,
+              504.0865931721195
+            ],
+            "ink_pixels": 1406
+          }
+        },
+        "cta_text": {
+          "label": "去配置任务项",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.3012,
+            "center_y_delta": -0.6112,
+            "width_delta": 0.25,
+            "height_delta": 0.5,
+            "max_edge_delta": 0.75,
+            "ink_ratio": 1.1288
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              143.75,
+              745.75,
+              88.75,
+              13.75
+            ],
+            "center": [
+              187.8433597234612,
+              752.5812332738626
+            ],
+            "ink_pixels": 8968
+          },
+          "actual": {
+            "bbox": [
+              143.75,
+              745.0,
+              89.0,
+              14.25
+            ],
+            "center": [
+              187.54215647535315,
+              751.9700434653759
+            ],
+            "ink_pixels": 10123
+          }
+        }
+      },
+      "relations": {},
+      "colors": {},
+      "overlay": "r3-alignment-overlay.png"
+    }
+  }
+}

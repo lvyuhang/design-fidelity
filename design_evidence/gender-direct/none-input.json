@@ -1,0 +1,5440 @@
+{
+  "status": "complete",
+  "snapshot_id": "bcd9357e8adb4a8c4ce9c6b51e3b9a69",
+  "resolved_version": "9121ae6b-b534-4070-aa1b-5085a2406781",
+  "coordinate_space": "source_canvas",
+  "coordinate_mapping": {
+    "verified": true,
+    "strategy": "identity",
+    "source_origin": {
+      "x": 0,
+      "y": 0
+    },
+    "translation": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "canvas": {
+    "width": 375,
+    "height": 812
+  },
+  "source_region": {
+    "x": 0,
+    "y": 146,
+    "width": 375,
+    "height": 350
+  },
+  "image_size": {
+    "width": 1400,
+    "height": 1307
+  },
+  "scale": {
+    "x": 3.7333333333333334,
+    "y": 3.7342857142857144
+  },
+  "labels": [
+    {
+      "label": "N1",
+      "node_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "image_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1400,
+        "height": 1307
+      }
+    },
+    {
+      "label": "N2",
+      "node_id": "22A15A88-F735-4197-8ED9-BBF0AD7BB279",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "image_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1400,
+        "height": 1307
+      }
+    },
+    {
+      "label": "N3",
+      "node_id": "BD5E7EF7-6D47-42BD-993A-A1200B811527",
+      "bounds": {
+        "x": 143.1297709923665,
+        "y": 0,
+        "width": 231.8702290076335,
+        "height": 229.0140845070423
+      },
+      "image_bounds": {
+        "x": 534.3511450381683,
+        "y": 0,
+        "width": 865.6488549618317,
+        "height": 309.9983098591551
+      }
+    },
+    {
+      "label": "N5",
+      "node_id": "295335A7-8C3A-44D6-99BE-26CCE4324564",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "image_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1400,
+        "height": 1307
+      }
+    },
+    {
+      "label": "N9",
+      "node_id": "7A78618E-4FB9-448C-BDF6-87DC3F3828E6",
+      "bounds": {
+        "x": 206,
+        "y": 263,
+        "width": 134,
+        "height": 164
+      },
+      "image_bounds": {
+        "x": 769.0666666666667,
+        "y": 436.9114285714286,
+        "width": 500.26666666666665,
+        "height": 612.4228571428572
+      }
+    },
+    {
+      "label": "N10",
+      "node_id": "732C9E9A-B4C3-490E-9E55-DD995CDC17E2",
+      "bounds": {
+        "x": 30,
+        "y": 263,
+        "width": 134,
+        "height": 164
+      },
+      "image_bounds": {
+        "x": 112,
+        "y": 436.9114285714286,
+        "width": 500.26666666666665,
+        "height": 612.4228571428572
+      }
+    },
+    {
+      "label": "N11",
+      "node_id": "6F9F3F2A-AB82-4A03-BD89-C6FF0E00AE67",
+      "bounds": {
+        "x": 241,
+        "y": 309,
+        "width": 64,
+        "height": 64
+      },
+      "image_bounds": {
+        "x": 899.7333333333333,
+        "y": 608.6885714285714,
+        "width": 238.93333333333334,
+        "height": 238.99428571428572
+      }
+    },
+    {
+      "label": "N12",
+      "node_id": "4019B220-A8AF-4DB5-9541-919CD692B0CD",
+      "bounds": {
+        "x": 268.3713349999998,
+        "y": 332,
+        "width": 13.999987499999861,
+        "height": 13.999979999999994
+      },
+      "image_bounds": {
+        "x": 1001.919650666666,
+        "y": 694.5771428571429,
+        "width": 52.266619999999484,
+        "height": 52.27992531428569
+      }
+    },
+    {
+      "label": "N13",
+      "node_id": "610454AE-0632-4E71-B03B-C9DDC37A2500",
+      "bounds": {
+        "x": 264,
+        "y": 343.8922425,
+        "width": 6.363934999999856,
+        "height": 6.3639499999999884
+      },
+      "image_bounds": {
+        "x": 985.6,
+        "y": 738.9861741357144,
+        "width": 23.75869066666613,
+        "height": 23.76480757142853
+      }
+    },
+    {
+      "label": "N14",
+      "node_id": "DA74F91D-9D60-477C-93A8-A474E588C1C8",
+      "bounds": {
+        "x": 264.3535649999999,
+        "y": 343.5386925,
+        "width": 6.363969999999881,
+        "height": 6.363999999999976
+      },
+      "image_bounds": {
+        "x": 986.9199759999996,
+        "y": 737.6659174214287,
+        "width": 23.75882133333289,
+        "height": 23.764994285714195
+      }
+    },
+    {
+      "label": "N15",
+      "node_id": "7192A08C-8876-42D7-A803-3E1EEE0F948A",
+      "bounds": {
+        "x": 264,
+        "y": 332,
+        "width": 18.371322500000133,
+        "height": 18.256192499999997
+      },
+      "image_bounds": {
+        "x": 985.6,
+        "y": 694.5771428571429,
+        "width": 68.58627066666716,
+        "height": 68.17383885
+      }
+    },
+    {
+      "label": "N16",
+      "node_id": "AFB9FAAC-EAAA-4F30-8992-C3939AC1F5CB",
+      "bounds": {
+        "x": 241,
+        "y": 309,
+        "width": 64,
+        "height": 64
+      },
+      "image_bounds": {
+        "x": 899.7333333333333,
+        "y": 608.6885714285714,
+        "width": 238.93333333333334,
+        "height": 238.99428571428572
+      }
+    },
+    {
+      "label": "N17",
+      "node_id": "070AA01D-8B5A-4376-A740-3AFBBA938857",
+      "bounds": {
+        "x": 65,
+        "y": 309,
+        "width": 64,
+        "height": 64
+      },
+      "image_bounds": {
+        "x": 242.66666666666666,
+        "y": 608.6885714285714,
+        "width": 238.93333333333334,
+        "height": 238.99428571428572
+      }
+    },
+    {
+      "label": "N18",
+      "node_id": "2A4B35A3-A8B4-4A8D-80A4-D125E63A9C0E",
+      "bounds": {
+        "x": 101.31935625000006,
+        "y": 332,
+        "width": 4.5,
+        "height": 4.499979999999994
+      },
+      "image_bounds": {
+        "x": 378.2589300000002,
+        "y": 694.5771428571429,
+        "width": 16.8,
+        "height": 16.804211028571405
+      }
+    },
+    {
+      "label": "N19",
+      "node_id": "2038B0C3-15C7-4FC2-89C3-FFAD4DD68F0C",
+      "bounds": {
+        "x": 88,
+        "y": 336.0264425,
+        "width": 14.000006249999842,
+        "height": 14.000012500000025
+      },
+      "image_bounds": {
+        "x": 328.53333333333336,
+        "y": 709.6130295642856,
+        "width": 52.266689999999414,
+        "height": 52.28004667857152
+      }
+    },
+    {
+      "label": "N20",
+      "node_id": "BD62F561-40C5-4C2F-9838-6F76A39C5584",
+      "bounds": {
+        "x": 99.84360625,
+        "y": 333.00002,
+        "width": 4.975750000000062,
+        "height": 4.97575999999998
+      },
+      "image_bounds": {
+        "x": 372.7494633333333,
+        "y": 698.3115032571429,
+        "width": 18.576133333333566,
+        "height": 18.580909485714212
+      }
+    },
+    {
+      "label": "N21",
+      "node_id": "E83E9737-9069-4AFE-985B-A8E2E14CAE7D",
+      "bounds": {
+        "x": 88,
+        "y": 332,
+        "width": 17.819356250000055,
+        "height": 18.026455
+      },
+      "image_bounds": {
+        "x": 328.53333333333336,
+        "y": 694.5771428571429,
+        "width": 66.52559666666687,
+        "height": 67.31593338571429
+      }
+    },
+    {
+      "label": "N22",
+      "node_id": "708B90D6-6D2B-4F75-A555-8A333E4BEC1E",
+      "bounds": {
+        "x": 65,
+        "y": 309,
+        "width": 64,
+        "height": 64
+      },
+      "image_bounds": {
+        "x": 242.66666666666666,
+        "y": 608.6885714285714,
+        "width": 238.93333333333334,
+        "height": 238.99428571428572
+      }
+    },
+    {
+      "label": "N23",
+      "node_id": "59833838-223E-4D14-A356-43D503F5C92E",
+      "bounds": {
+        "x": 30,
+        "y": 191,
+        "width": 168,
+        "height": 17
+      },
+      "image_bounds": {
+        "x": 112,
+        "y": 168.04285714285714,
+        "width": 627.2,
+        "height": 63.48285714285714
+      }
+    },
+    {
+      "label": "N34",
+      "node_id": "75FB03BA-104E-449D-9294-A6277ADF1EAC",
+      "bounds": {
+        "x": 27,
+        "y": 147,
+        "width": 180,
+        "height": 42
+      },
+      "image_bounds": {
+        "x": 100.8,
+        "y": 3.7342857142857144,
+        "width": 672,
+        "height": 156.84
+      }
+    },
+    {
+      "label": "N37",
+      "node_id": "63C698CE-31FE-4303-941B-E5F440045057",
+      "bounds": {
+        "x": 83,
+        "y": 386,
+        "width": 28,
+        "height": 22
+      },
+      "image_bounds": {
+        "x": 309.8666666666667,
+        "y": 896.2285714285715,
+        "width": 104.53333333333333,
+        "height": 82.15428571428572
+      }
+    },
+    {
+      "label": "N38",
+      "node_id": "E91048A7-8E43-48A3-9672-CCA438875BD8",
+      "bounds": {
+        "x": 259,
+        "y": 386,
+        "width": 28,
+        "height": 22
+      },
+      "image_bounds": {
+        "x": 966.9333333333334,
+        "y": 896.2285714285715,
+        "width": 104.53333333333333,
+        "height": 82.15428571428572
+      }
+    }
+  ],
+  "measurements": [
+    {
+      "from_node_id": "070AA01D-8B5A-4376-A740-3AFBBA938857",
+      "to_node_id": "63C698CE-31FE-4303-941B-E5F440045057",
+      "axis": "y",
+      "distance": 13,
+      "overlap_span": {
+        "start": 83,
+        "end": 111
+      }
+    },
+    {
+      "from_node_id": "070AA01D-8B5A-4376-A740-3AFBBA938857",
+      "to_node_id": "7A78618E-4FB9-448C-BDF6-87DC3F3828E6",
+      "axis": "x",
+      "distance": 77,
+      "overlap_span": {
+        "start": 309,
+        "end": 373
+      }
+    },
+    {
+      "from_node_id": "2038B0C3-15C7-4FC2-89C3-FFAD4DD68F0C",
+      "to_node_id": "63C698CE-31FE-4303-941B-E5F440045057",
+      "axis": "y",
+      "distance": 35.973545,
+      "overlap_span": {
+        "start": 88,
+        "end": 102.00000624999984
+      }
+    },
+    {
+      "from_node_id": "2038B0C3-15C7-4FC2-89C3-FFAD4DD68F0C",
+      "to_node_id": "7A78618E-4FB9-448C-BDF6-87DC3F3828E6",
+      "axis": "x",
+      "distance": 103.99999375000016,
+      "overlap_span": {
+        "start": 336.0264425,
+        "end": 350.026455
+      }
+    },
+    {
+      "from_node_id": "2A4B35A3-A8B4-4A8D-80A4-D125E63A9C0E",
+      "to_node_id": "63C698CE-31FE-4303-941B-E5F440045057",
+      "axis": "y",
+      "distance": 49.500020000000006,
+      "overlap_span": {
+        "start": 101.31935625000006,
+        "end": 105.81935625000006
+      }
+    },
+    {
+      "from_node_id": "2A4B35A3-A8B4-4A8D-80A4-D125E63A9C0E",
+      "to_node_id": "7A78618E-4FB9-448C-BDF6-87DC3F3828E6",
+      "axis": "x",
+      "distance": 100.18064374999994,
+      "overlap_span": {
+        "start": 332,
+        "end": 336.49998
+      }
+    },
+    {
+      "from_node_id": "4019B220-A8AF-4DB5-9541-919CD692B0CD",
+      "to_node_id": "E91048A7-8E43-48A3-9672-CCA438875BD8",
+      "axis": "y",
+      "distance": 40.000020000000006,
+      "overlap_span": {
+        "start": 268.3713349999998,
+        "end": 282.3713224999997
+      }
+    },
+    {
+      "from_node_id": "59833838-223E-4D14-A356-43D503F5C92E",
+      "to_node_id": "070AA01D-8B5A-4376-A740-3AFBBA938857",
+      "axis": "y",
+      "distance": 101,
+      "overlap_span": {
+        "start": 65,
+        "end": 129
+      }
+    },
+    {
+      "from_node_id": "59833838-223E-4D14-A356-43D503F5C92E",
+      "to_node_id": "2038B0C3-15C7-4FC2-89C3-FFAD4DD68F0C",
+      "axis": "y",
+      "distance": 128.02644249999997,
+      "overlap_span": {
+        "start": 88,
+        "end": 102.00000624999984
+      }
+    },
+    {
+      "from_node_id": "59833838-223E-4D14-A356-43D503F5C92E",
+      "to_node_id": "2A4B35A3-A8B4-4A8D-80A4-D125E63A9C0E",
+      "axis": "y",
+      "distance": 124,
+      "overlap_span": {
+        "start": 101.31935625000006,
+        "end": 105.81935625000006
+      }
+    },
+    {
+      "from_node_id": "59833838-223E-4D14-A356-43D503F5C92E",
+      "to_node_id": "708B90D6-6D2B-4F75-A555-8A333E4BEC1E",
+      "axis": "y",
+      "distance": 101,
+      "overlap_span": {
+        "start": 65,
+        "end": 129
+      }
+    },
+    {
+      "from_node_id": "59833838-223E-4D14-A356-43D503F5C92E",
+      "to_node_id": "732C9E9A-B4C3-490E-9E55-DD995CDC17E2",
+      "axis": "y",
+      "distance": 55,
+      "overlap_span": {
+        "start": 30,
+        "end": 164
+      }
+    },
+    {
+      "from_node_id": "59833838-223E-4D14-A356-43D503F5C92E",
+      "to_node_id": "BD62F561-40C5-4C2F-9838-6F76A39C5584",
+      "axis": "y",
+      "distance": 125.00002,
+      "overlap_span": {
+        "start": 99.84360625,
+        "end": 104.81935625000006
+      }
+    },
+    {
+      "from_node_id": "59833838-223E-4D14-A356-43D503F5C92E",
+      "to_node_id": "E83E9737-9069-4AFE-985B-A8E2E14CAE7D",
+      "axis": "y",
+      "distance": 124,
+      "overlap_span": {
+        "start": 88,
+        "end": 105.81935625000006
+      }
+    },
+    {
+      "from_node_id": "610454AE-0632-4E71-B03B-C9DDC37A2500",
+      "to_node_id": "E91048A7-8E43-48A3-9672-CCA438875BD8",
+      "axis": "y",
+      "distance": 35.7438075,
+      "overlap_span": {
+        "start": 264,
+        "end": 270.36393499999986
+      }
+    },
+    {
+      "from_node_id": "63C698CE-31FE-4303-941B-E5F440045057",
+      "to_node_id": "7A78618E-4FB9-448C-BDF6-87DC3F3828E6",
+      "axis": "x",
+      "distance": 95,
+      "overlap_span": {
+        "start": 386,
+        "end": 408
+      }
+    },
+    {
+      "from_node_id": "6F9F3F2A-AB82-4A03-BD89-C6FF0E00AE67",
+      "to_node_id": "E91048A7-8E43-48A3-9672-CCA438875BD8",
+      "axis": "y",
+      "distance": 13,
+      "overlap_span": {
+        "start": 259,
+        "end": 287
+      }
+    },
+    {
+      "from_node_id": "708B90D6-6D2B-4F75-A555-8A333E4BEC1E",
+      "to_node_id": "63C698CE-31FE-4303-941B-E5F440045057",
+      "axis": "y",
+      "distance": 13,
+      "overlap_span": {
+        "start": 83,
+        "end": 111
+      }
+    },
+    {
+      "from_node_id": "708B90D6-6D2B-4F75-A555-8A333E4BEC1E",
+      "to_node_id": "7A78618E-4FB9-448C-BDF6-87DC3F3828E6",
+      "axis": "x",
+      "distance": 77,
+      "overlap_span": {
+        "start": 309,
+        "end": 373
+      }
+    },
+    {
+      "from_node_id": "7192A08C-8876-42D7-A803-3E1EEE0F948A",
+      "to_node_id": "E91048A7-8E43-48A3-9672-CCA438875BD8",
+      "axis": "y",
+      "distance": 35.7438075,
+      "overlap_span": {
+        "start": 264,
+        "end": 282.37132250000013
+      }
+    },
+    {
+      "from_node_id": "732C9E9A-B4C3-490E-9E55-DD995CDC17E2",
+      "to_node_id": "4019B220-A8AF-4DB5-9541-919CD692B0CD",
+      "axis": "x",
+      "distance": 104.37133499999982,
+      "overlap_span": {
+        "start": 332,
+        "end": 345.99998
+      }
+    },
+    {
+      "from_node_id": "732C9E9A-B4C3-490E-9E55-DD995CDC17E2",
+      "to_node_id": "610454AE-0632-4E71-B03B-C9DDC37A2500",
+      "axis": "x",
+      "distance": 100,
+      "overlap_span": {
+        "start": 343.8922425,
+        "end": 350.2561925
+      }
+    },
+    {
+      "from_node_id": "732C9E9A-B4C3-490E-9E55-DD995CDC17E2",
+      "to_node_id": "6F9F3F2A-AB82-4A03-BD89-C6FF0E00AE67",
+      "axis": "x",
+      "distance": 77,
+      "overlap_span": {
+        "start": 309,
+        "end": 373
+      }
+    },
+    {
+      "from_node_id": "732C9E9A-B4C3-490E-9E55-DD995CDC17E2",
+      "to_node_id": "7192A08C-8876-42D7-A803-3E1EEE0F948A",
+      "axis": "x",
+      "distance": 100,
+      "overlap_span": {
+        "start": 332,
+        "end": 350.2561925
+      }
+    },
+    {
+      "from_node_id": "732C9E9A-B4C3-490E-9E55-DD995CDC17E2",
+      "to_node_id": "7A78618E-4FB9-448C-BDF6-87DC3F3828E6",
+      "axis": "x",
+      "distance": 42,
+      "overlap_span": {
+        "start": 263,
+        "end": 427
+      }
+    },
+    {
+      "from_node_id": "732C9E9A-B4C3-490E-9E55-DD995CDC17E2",
+      "to_node_id": "AFB9FAAC-EAAA-4F30-8992-C3939AC1F5CB",
+      "axis": "x",
+      "distance": 77,
+      "overlap_span": {
+        "start": 309,
+        "end": 373
+      }
+    },
+    {
+      "from_node_id": "732C9E9A-B4C3-490E-9E55-DD995CDC17E2",
+      "to_node_id": "DA74F91D-9D60-477C-93A8-A474E588C1C8",
+      "axis": "x",
+      "distance": 100.35356499999989,
+      "overlap_span": {
+        "start": 343.5386925,
+        "end": 349.9026925
+      }
+    },
+    {
+      "from_node_id": "732C9E9A-B4C3-490E-9E55-DD995CDC17E2",
+      "to_node_id": "E91048A7-8E43-48A3-9672-CCA438875BD8",
+      "axis": "x",
+      "distance": 95,
+      "overlap_span": {
+        "start": 386,
+        "end": 408
+      }
+    },
+    {
+      "from_node_id": "75FB03BA-104E-449D-9294-A6277ADF1EAC",
+      "to_node_id": "59833838-223E-4D14-A356-43D503F5C92E",
+      "axis": "y",
+      "distance": 2,
+      "overlap_span": {
+        "start": 30,
+        "end": 198
+      }
+    },
+    {
+      "from_node_id": "AFB9FAAC-EAAA-4F30-8992-C3939AC1F5CB",
+      "to_node_id": "E91048A7-8E43-48A3-9672-CCA438875BD8",
+      "axis": "y",
+      "distance": 13,
+      "overlap_span": {
+        "start": 259,
+        "end": 287
+      }
+    },
+    {
+      "from_node_id": "BD5E7EF7-6D47-42BD-993A-A1200B811527",
+      "to_node_id": "4019B220-A8AF-4DB5-9541-919CD692B0CD",
+      "axis": "y",
+      "distance": 102.9859154929577,
+      "overlap_span": {
+        "start": 268.3713349999998,
+        "end": 282.3713224999997
+      }
+    },
+    {
+      "from_node_id": "BD5E7EF7-6D47-42BD-993A-A1200B811527",
+      "to_node_id": "610454AE-0632-4E71-B03B-C9DDC37A2500",
+      "axis": "y",
+      "distance": 114.87815799295771,
+      "overlap_span": {
+        "start": 264,
+        "end": 270.36393499999986
+      }
+    },
+    {
+      "from_node_id": "BD5E7EF7-6D47-42BD-993A-A1200B811527",
+      "to_node_id": "6F9F3F2A-AB82-4A03-BD89-C6FF0E00AE67",
+      "axis": "y",
+      "distance": 79.9859154929577,
+      "overlap_span": {
+        "start": 241,
+        "end": 305
+      }
+    },
+    {
+      "from_node_id": "BD5E7EF7-6D47-42BD-993A-A1200B811527",
+      "to_node_id": "7192A08C-8876-42D7-A803-3E1EEE0F948A",
+      "axis": "y",
+      "distance": 102.9859154929577,
+      "overlap_span": {
+        "start": 264,
+        "end": 282.37132250000013
+      }
+    },
+    {
+      "from_node_id": "BD5E7EF7-6D47-42BD-993A-A1200B811527",
+      "to_node_id": "732C9E9A-B4C3-490E-9E55-DD995CDC17E2",
+      "axis": "y",
+      "distance": 33.9859154929577,
+      "overlap_span": {
+        "start": 143.1297709923665,
+        "end": 164
+      }
+    },
+    {
+      "from_node_id": "BD5E7EF7-6D47-42BD-993A-A1200B811527",
+      "to_node_id": "7A78618E-4FB9-448C-BDF6-87DC3F3828E6",
+      "axis": "y",
+      "distance": 33.9859154929577,
+      "overlap_span": {
+        "start": 206,
+        "end": 340
+      }
+    },
+    {
+      "from_node_id": "BD5E7EF7-6D47-42BD-993A-A1200B811527",
+      "to_node_id": "AFB9FAAC-EAAA-4F30-8992-C3939AC1F5CB",
+      "axis": "y",
+      "distance": 79.9859154929577,
+      "overlap_span": {
+        "start": 241,
+        "end": 305
+      }
+    },
+    {
+      "from_node_id": "BD5E7EF7-6D47-42BD-993A-A1200B811527",
+      "to_node_id": "DA74F91D-9D60-477C-93A8-A474E588C1C8",
+      "axis": "y",
+      "distance": 114.52460799295773,
+      "overlap_span": {
+        "start": 264.3535649999999,
+        "end": 270.71753499999977
+      }
+    },
+    {
+      "from_node_id": "BD62F561-40C5-4C2F-9838-6F76A39C5584",
+      "to_node_id": "63C698CE-31FE-4303-941B-E5F440045057",
+      "axis": "y",
+      "distance": 48.024220000000014,
+      "overlap_span": {
+        "start": 99.84360625,
+        "end": 104.81935625000006
+      }
+    },
+    {
+      "from_node_id": "BD62F561-40C5-4C2F-9838-6F76A39C5584",
+      "to_node_id": "7A78618E-4FB9-448C-BDF6-87DC3F3828E6",
+      "axis": "x",
+      "distance": 101.18064374999994,
+      "overlap_span": {
+        "start": 333.00002,
+        "end": 337.97578
+      }
+    },
+    {
+      "from_node_id": "DA74F91D-9D60-477C-93A8-A474E588C1C8",
+      "to_node_id": "E91048A7-8E43-48A3-9672-CCA438875BD8",
+      "axis": "y",
+      "distance": 36.0973075,
+      "overlap_span": {
+        "start": 264.3535649999999,
+        "end": 270.71753499999977
+      }
+    },
+    {
+      "from_node_id": "E83E9737-9069-4AFE-985B-A8E2E14CAE7D",
+      "to_node_id": "63C698CE-31FE-4303-941B-E5F440045057",
+      "axis": "y",
+      "distance": 35.973545,
+      "overlap_span": {
+        "start": 88,
+        "end": 105.81935625000006
+      }
+    },
+    {
+      "from_node_id": "E83E9737-9069-4AFE-985B-A8E2E14CAE7D",
+      "to_node_id": "7A78618E-4FB9-448C-BDF6-87DC3F3828E6",
+      "axis": "x",
+      "distance": 100.18064374999994,
+      "overlap_span": {
+        "start": 332,
+        "end": 350.026455
+      }
+    }
+  ],
+  "annotated": false,
+  "visual_source": "original_reference",
+  "original_reference_size": {
+    "width": 1500,
+    "height": 3248
+  },
+  "font_requirements": [
+    {
+      "family": "PingFangSC-Regular",
+      "availability": "not_checked",
+      "source": "design",
+      "weights": [
+        400
+      ],
+      "node_count": 3,
+      "sample_node_ids": [
+        "59833838-223E-4D14-A356-43D503F5C92E",
+        "63C698CE-31FE-4303-941B-E5F440045057",
+        "E91048A7-8E43-48A3-9672-CCA438875BD8"
+      ]
+    },
+    {
+      "family": "PingFangSC-Semibold",
+      "availability": "not_checked",
+      "source": "design",
+      "weights": [
+        600
+      ],
+      "node_count": 1,
+      "sample_node_ids": [
+        "75FB03BA-104E-449D-9294-A6277ADF1EAC"
+      ]
+    }
+  ],
+  "scale_metadata": {
+    "device": "iOS @1x",
+    "ArtboardScale": 2,
+    "sliceScale": 4,
+    "exportScale": 4
+  },
+  "source_gaps": [
+    {
+      "code": "logical_coordinate_conversion_unknown",
+      "message": "Source canvas units are preserved. Export density does not establish CSS pixel scale."
+    }
+  ],
+  "render_gaps": [],
+  "gaps": [
+    {
+      "code": "logical_coordinate_conversion_unknown",
+      "message": "Source canvas units are preserved. Export density does not establish CSS pixel scale."
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "source_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "identity_source": "source_id",
+      "parent_id": null,
+      "source_parent_id": null,
+      "source_order": 0,
+      "name": "完善性别-未选择",
+      "node_type": "artboard-group",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": null,
+      "text": null,
+      "raw_style": {
+        "includeBackgroundColorInExport": true,
+        "top": 0,
+        "left": 0,
+        "height": 812,
+        "hasBackgroundColor": false,
+        "position_x": 918.75,
+        "index": "0",
+        "position_y": -198.5,
+        "width": 375
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/0",
+      "effective_source_visible": null,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "22A15A88-F735-4197-8ED9-BBF0AD7BB279",
+      "source_id": "22A15A88-F735-4197-8ED9-BBF0AD7BB279",
+      "identity_source": "source_id",
+      "parent_id": "295335A7-8C3A-44D6-99BE-26CCE4324564",
+      "source_parent_id": "295335A7-8C3A-44D6-99BE-26CCE4324564",
+      "source_order": 1,
+      "name": "蒙版",
+      "node_type": "shape",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "edited": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "dash": [
+          0,
+          0
+        ],
+        "influenceHeight": 812,
+        "booleanOperation": -1,
+        "points": [
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 0
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 1,
+              "y": 0
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 0
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 1,
+              "y": 1
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 0
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0,
+              "y": 1
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 0
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        ],
+        "borderOptions": {
+          "dashPattern": [
+            "0",
+            "0"
+          ],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0,
+          "isEnabled": true
+        },
+        "top": 0,
+        "hasFixedWidth": false,
+        "left": 0,
+        "ddsOriginFrame": {
+          "height": 812,
+          "x": 0,
+          "y": 0,
+          "width": 375
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": true,
+        "rotation": 0,
+        "isLocked": false,
+        "fills": [
+          {
+            "gradient": {
+              "colorStops": [
+                {
+                  "position": 0,
+                  "color": {
+                    "a": 1,
+                    "b": 249,
+                    "value": "rgba(255,253,249,1)",
+                    "g": 253,
+                    "r": 255
+                  }
+                },
+                {
+                  "position": 0.5574737762237763,
+                  "color": {
+                    "a": 1,
+                    "b": 242,
+                    "value": "rgba(255,251,242,1)",
+                    "g": 251,
+                    "r": 255
+                  }
+                },
+                {
+                  "position": 1,
+                  "color": {
+                    "a": 1,
+                    "b": 255,
+                    "value": "rgba(255,255,255,1)",
+                    "g": 255,
+                    "r": 255
+                  }
+                }
+              ],
+              "type": "linear",
+              "gradientType": 0,
+              "to": {
+                "x": 1,
+                "y": 0.5
+              },
+              "elipseLength": 1,
+              "from": {
+                "x": 0,
+                "y": 0.5
+              }
+            },
+            "patternTileScale": 1,
+            "noiseIntensity": 0,
+            "type": "gradient",
+            "blendMode": 0,
+            "noiseIndex": 0,
+            "opacity": 1,
+            "patternFillType": 1,
+            "isEnabled": true,
+            "fillType": 1
+          }
+        ],
+        "opacity": 100,
+        "startMarkerType": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 812,
+        "windingRule": 0,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 375,
+        "layerOriginFrame": {
+          "height": 812,
+          "x": 0,
+          "y": 0,
+          "width": 375
+        },
+        "isClosed": true,
+        "pointRadiusBehaviour": 1,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 1,
+        "hasFixedHeight": false,
+        "influenceLeft": 0,
+        "sharedStyleID": "",
+        "width": 375,
+        "influenceTop": 0,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/1",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "BD5E7EF7-6D47-42BD-993A-A1200B811527",
+      "source_id": "BD5E7EF7-6D47-42BD-993A-A1200B811527",
+      "identity_source": "source_id",
+      "parent_id": "295335A7-8C3A-44D6-99BE-26CCE4324564",
+      "source_parent_id": "295335A7-8C3A-44D6-99BE-26CCE4324564",
+      "source_order": 2,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 143.1297709923665,
+        "y": 0,
+        "width": 231.8702290076335,
+        "height": 229.0140845070423
+      },
+      "source_bounds": {
+        "x": 143.1297709923665,
+        "y": 0,
+        "width": 231.8702290076335,
+        "height": 229.0140845070423
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "edited": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "dash": [
+          0,
+          0
+        ],
+        "influenceHeight": 257.64003870551556,
+        "booleanOperation": -1,
+        "points": [
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": true,
+            "curveFrom": {
+              "x": 1,
+              "y": 0.7761423587799072
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 1,
+              "y": 0.5
+            }
+          },
+          {
+            "hasCurveTo": true,
+            "curveTo": {
+              "x": 0.7761423587799072,
+              "y": 1
+            },
+            "curveMode": 3,
+            "hasCurveFrom": true,
+            "curveFrom": {
+              "x": 0.22385762631893158,
+              "y": 1
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0.5,
+              "y": 1
+            }
+          },
+          {
+            "hasCurveTo": true,
+            "curveTo": {
+              "x": 0,
+              "y": 0.7761423587799072
+            },
+            "curveMode": 3,
+            "hasCurveFrom": true,
+            "curveFrom": {
+              "x": 0,
+              "y": 0.22385762631893158
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0,
+              "y": 0.5
+            }
+          },
+          {
+            "hasCurveTo": true,
+            "curveTo": {
+              "x": 0.22385762631893158,
+              "y": 0
+            },
+            "curveMode": 3,
+            "hasCurveFrom": true,
+            "curveFrom": {
+              "x": 0.7761423587799072,
+              "y": 0
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          {
+            "hasCurveTo": true,
+            "curveTo": {
+              "x": 1,
+              "y": 0.22385762631893158
+            },
+            "curveMode": 3,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 0
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 1,
+              "y": 0.5
+            }
+          }
+        ],
+        "borderOptions": {
+          "dashPattern": [
+            "0",
+            "0"
+          ],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0,
+          "isEnabled": true
+        },
+        "top": 0,
+        "hasFixedWidth": false,
+        "left": 143.1297709923665,
+        "ddsOriginFrame": {
+          "height": 314.8943661971831,
+          "x": 143.1297709923665,
+          "y": -85.8802816901408,
+          "width": 314.885496183206
+        },
+        "blur": {
+          "radius": 9.541984732824428,
+          "center": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "blurType": 0,
+          "type": "高斯模糊",
+          "saturation": 1,
+          "isEnabled": true,
+          "motionAngle": 0
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "isLocked": false,
+        "fills": [
+          {
+            "gradient": {
+              "colorStops": [
+                {
+                  "position": 0,
+                  "color": {
+                    "a": 0.28,
+                    "b": 116,
+                    "value": "rgba(242,205,116,0.28)",
+                    "g": 205,
+                    "r": 242
+                  }
+                },
+                {
+                  "position": 0.5600000023841858,
+                  "color": {
+                    "a": 0.13,
+                    "b": 216,
+                    "value": "rgba(255,241,216,0.13)",
+                    "g": 241,
+                    "r": 255
+                  }
+                },
+                {
+                  "position": 1,
+                  "color": {
+                    "a": 0,
+                    "b": 255,
+                    "value": "rgba(255,255,255,0)",
+                    "g": 255,
+                    "r": 255
+                  }
+                }
+              ],
+              "type": "radial",
+              "gradientType": 1,
+              "to": {
+                "x": 1,
+                "y": 0.5
+              },
+              "elipseLength": 1,
+              "from": {
+                "x": 0.5,
+                "y": 0.5
+              }
+            },
+            "patternTileScale": 1,
+            "noiseIntensity": 0,
+            "type": "gradient",
+            "blendMode": 0,
+            "noiseIndex": 0,
+            "opacity": 1,
+            "patternFillType": 1,
+            "isEnabled": true,
+            "fillType": 1
+          }
+        ],
+        "opacity": 42,
+        "startMarkerType": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 229.0140845070423,
+        "windingRule": 0,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 260.4961832061067,
+        "layerOriginFrame": {
+          "height": 314.8943661971831,
+          "x": 143.1297709923665,
+          "y": -85.8802816901408,
+          "width": 314.88549618320576
+        },
+        "isClosed": true,
+        "pointRadiusBehaviour": 1,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 1,
+        "hasFixedHeight": false,
+        "influenceLeft": 114.5038167938933,
+        "sharedStyleID": "",
+        "width": 231.8702290076335,
+        "influenceTop": 0,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/2",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "295335A7-8C3A-44D6-99BE-26CCE4324564",
+      "source_id": "295335A7-8C3A-44D6-99BE-26CCE4324564",
+      "identity_source": "source_id",
+      "parent_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "source_parent_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "source_order": 4,
+      "name": "背景",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "hasInferredLayout": false,
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "shouldGrowSizeOfGroupForInferredLayout": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 812,
+        "booleanOperation": 0,
+        "horizontalSizing": 0,
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0,
+          "isEnabled": true
+        },
+        "top": 0,
+        "hasFixedWidth": false,
+        "left": 0,
+        "groupBehavior": 0,
+        "ddsOriginFrame": {
+          "height": 812,
+          "x": 0,
+          "y": 0,
+          "width": 375
+        },
+        "ancestorsHaveInferredLayout": false,
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "paddingSelection": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "leftPadding": 0,
+        "rightPadding": 0,
+        "opacity": 100,
+        "hasFlexLayout": false,
+        "startMarkerType": 0,
+        "topPadding": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 812,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "isRootFlexLayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 375,
+        "ancestorsOrSelfHaveInferredLayout": false,
+        "layerOriginFrame": {
+          "height": 812,
+          "x": 0,
+          "y": 0,
+          "width": 375
+        },
+        "pointRadiusBehaviour": 0,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 0,
+        "hasFixedHeight": false,
+        "influenceLeft": 0,
+        "sharedStyleID": "",
+        "isCopy": false,
+        "verticalSizing": 0,
+        "width": 375,
+        "influenceTop": 0,
+        "bottomPadding": 0,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/4",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "7A78618E-4FB9-448C-BDF6-87DC3F3828E6",
+      "source_id": "7A78618E-4FB9-448C-BDF6-87DC3F3828E6",
+      "identity_source": "source_id",
+      "parent_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "source_parent_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "source_order": 8,
+      "name": "矩形",
+      "node_type": "shape",
+      "bounds": {
+        "x": 206,
+        "y": 263,
+        "width": 134,
+        "height": 164
+      },
+      "source_bounds": {
+        "x": 206,
+        "y": 263,
+        "width": 134,
+        "height": 164
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "radius": [
+          22
+        ],
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "edited": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 188,
+        "booleanOperation": -1,
+        "points": [
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 0
+            },
+            "cornerRadius": 22,
+            "point": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 1,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 1,
+              "y": 0
+            },
+            "cornerRadius": 22,
+            "point": {
+              "x": 1,
+              "y": 0
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 1,
+              "y": 1
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 1,
+              "y": 1
+            },
+            "cornerRadius": 22,
+            "point": {
+              "x": 1,
+              "y": 1
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 1
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 1
+            },
+            "cornerRadius": 22,
+            "point": {
+              "x": 0,
+              "y": 1
+            }
+          }
+        ],
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0,
+          "isEnabled": true
+        },
+        "top": 263,
+        "hasFixedWidth": false,
+        "left": 206,
+        "ddsOriginFrame": {
+          "height": 164,
+          "x": 206,
+          "y": 263,
+          "width": 134
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "isLocked": false,
+        "fills": [
+          {
+            "patternTileScale": 1,
+            "noiseIntensity": 0,
+            "type": "color",
+            "blendMode": 0,
+            "noiseIndex": 0,
+            "opacity": 1,
+            "color": {
+              "a": 0.3,
+              "b": 249,
+              "value": "rgba(255,253,249,0.3)",
+              "g": 253,
+              "r": 255
+            },
+            "patternFillType": 1,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "opacity": 100,
+        "startMarkerType": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 164,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 158,
+        "layerOriginFrame": {
+          "height": 164,
+          "x": 206,
+          "y": 263,
+          "width": 134
+        },
+        "isClosed": true,
+        "borders": [
+          {
+            "position": "内边框",
+            "type": "color",
+            "blendMode": 0,
+            "opacity": 1,
+            "color": {
+              "a": 1,
+              "b": 196,
+              "value": "rgba(238,220,196,1)",
+              "g": 220,
+              "r": 238
+            },
+            "thickness": 1,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "pointRadiusBehaviour": 1,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 0,
+        "hasFixedHeight": false,
+        "influenceLeft": 194,
+        "sharedStyleID": "",
+        "shadow": [
+          {
+            "blurRadius": 12,
+            "offsetX": 0,
+            "offsetY": 6,
+            "type": "外阴影",
+            "blendMode": 0,
+            "opacity": 1,
+            "color": {
+              "a": 0.1,
+              "b": 71,
+              "value": "rgba(216,155,71,0.1)",
+              "g": 155,
+              "r": 216
+            },
+            "isEnabled": true,
+            "spread": 0
+          }
+        ],
+        "width": 134,
+        "influenceTop": 257,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/8",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "732C9E9A-B4C3-490E-9E55-DD995CDC17E2",
+      "source_id": "732C9E9A-B4C3-490E-9E55-DD995CDC17E2",
+      "identity_source": "source_id",
+      "parent_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "source_parent_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "source_order": 9,
+      "name": "矩形备份",
+      "node_type": "shape",
+      "bounds": {
+        "x": 30,
+        "y": 263,
+        "width": 134,
+        "height": 164
+      },
+      "source_bounds": {
+        "x": 30,
+        "y": 263,
+        "width": 134,
+        "height": 164
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "radius": [
+          22
+        ],
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "edited": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 188,
+        "booleanOperation": -1,
+        "points": [
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 0
+            },
+            "cornerRadius": 22,
+            "point": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 1,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 1,
+              "y": 0
+            },
+            "cornerRadius": 22,
+            "point": {
+              "x": 1,
+              "y": 0
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 1,
+              "y": 1
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 1,
+              "y": 1
+            },
+            "cornerRadius": 22,
+            "point": {
+              "x": 1,
+              "y": 1
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 1
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 1
+            },
+            "cornerRadius": 22,
+            "point": {
+              "x": 0,
+              "y": 1
+            }
+          }
+        ],
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0,
+          "isEnabled": true
+        },
+        "top": 263,
+        "hasFixedWidth": false,
+        "left": 30,
+        "ddsOriginFrame": {
+          "height": 164,
+          "x": 30,
+          "y": 263,
+          "width": 134
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "isLocked": false,
+        "fills": [
+          {
+            "patternTileScale": 1,
+            "noiseIntensity": 0,
+            "type": "color",
+            "blendMode": 0,
+            "noiseIndex": 0,
+            "opacity": 1,
+            "color": {
+              "a": 0.3,
+              "b": 249,
+              "value": "rgba(255,253,249,0.3)",
+              "g": 253,
+              "r": 255
+            },
+            "patternFillType": 1,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "opacity": 100,
+        "startMarkerType": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 164,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 158,
+        "layerOriginFrame": {
+          "height": 164,
+          "x": 30,
+          "y": 263,
+          "width": 134
+        },
+        "isClosed": true,
+        "borders": [
+          {
+            "position": "内边框",
+            "type": "color",
+            "blendMode": 0,
+            "opacity": 1,
+            "color": {
+              "a": 1,
+              "b": 196,
+              "value": "rgba(238,220,196,1)",
+              "g": 220,
+              "r": 238
+            },
+            "thickness": 1,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "pointRadiusBehaviour": 1,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 0,
+        "hasFixedHeight": false,
+        "influenceLeft": 18,
+        "sharedStyleID": "",
+        "shadow": [
+          {
+            "blurRadius": 12,
+            "offsetX": 0,
+            "offsetY": 6,
+            "type": "外阴影",
+            "blendMode": 0,
+            "opacity": 1,
+            "color": {
+              "a": 0.1,
+              "b": 71,
+              "value": "rgba(216,155,71,0.1)",
+              "g": 155,
+              "r": 216
+            },
+            "isEnabled": true,
+            "spread": 0
+          }
+        ],
+        "width": 134,
+        "influenceTop": 257,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/9",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "6F9F3F2A-AB82-4A03-BD89-C6FF0E00AE67",
+      "source_id": "6F9F3F2A-AB82-4A03-BD89-C6FF0E00AE67",
+      "identity_source": "source_id",
+      "parent_id": "AFB9FAAC-EAAA-4F30-8992-C3939AC1F5CB",
+      "source_parent_id": "AFB9FAAC-EAAA-4F30-8992-C3939AC1F5CB",
+      "source_order": 10,
+      "name": "椭圆形",
+      "node_type": "shape",
+      "bounds": {
+        "x": 241,
+        "y": 309,
+        "width": 64,
+        "height": 64
+      },
+      "source_bounds": {
+        "x": 241,
+        "y": 309,
+        "width": 64,
+        "height": 64
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "edited": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 64,
+        "booleanOperation": -1,
+        "points": [
+          {
+            "hasCurveTo": true,
+            "curveTo": {
+              "x": 0.22385762631893158,
+              "y": 1
+            },
+            "curveMode": 2,
+            "hasCurveFrom": true,
+            "curveFrom": {
+              "x": 0.7761423587799072,
+              "y": 1
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0.5,
+              "y": 1
+            }
+          },
+          {
+            "hasCurveTo": true,
+            "curveTo": {
+              "x": 1,
+              "y": 0.7761423587799072
+            },
+            "curveMode": 2,
+            "hasCurveFrom": true,
+            "curveFrom": {
+              "x": 1,
+              "y": 0.22385762631893158
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 1,
+              "y": 0.5
+            }
+          },
+          {
+            "hasCurveTo": true,
+            "curveTo": {
+              "x": 0.7761423587799072,
+              "y": 0
+            },
+            "curveMode": 2,
+            "hasCurveFrom": true,
+            "curveFrom": {
+              "x": 0.22385762631893158,
+              "y": 0
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          {
+            "hasCurveTo": true,
+            "curveTo": {
+              "x": 0,
+              "y": 0.22385762631893158
+            },
+            "curveMode": 2,
+            "hasCurveFrom": true,
+            "curveFrom": {
+              "x": 0,
+              "y": 0.7761423587799072
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0,
+              "y": 0.5
+            }
+          }
+        ],
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0,
+          "isEnabled": true
+        },
+        "top": 309,
+        "hasFixedWidth": false,
+        "left": 241,
+        "ddsOriginFrame": {
+          "height": 64,
+          "x": 241,
+          "y": 309,
+          "width": 64
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "isLocked": false,
+        "fills": [
+          {
+            "patternTileScale": 1,
+            "noiseIntensity": 0,
+            "type": "color",
+            "blendMode": 0,
+            "noiseIndex": 0,
+            "opacity": 1,
+            "color": {
+              "a": 1,
+              "b": 234,
+              "value": "rgba(255,247,234,1)",
+              "g": 247,
+              "r": 255
+            },
+            "patternFillType": 1,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "opacity": 100,
+        "startMarkerType": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 64,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 64,
+        "layerOriginFrame": {
+          "height": 64,
+          "x": 241,
+          "y": 309,
+          "width": 64
+        },
+        "isClosed": true,
+        "borders": [
+          {
+            "position": "内边框",
+            "type": "color",
+            "blendMode": 0,
+            "opacity": 1,
+            "color": {
+              "a": 1,
+              "b": 196,
+              "value": "rgba(238,220,196,1)",
+              "g": 220,
+              "r": 238
+            },
+            "thickness": 1,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "pointRadiusBehaviour": 1,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 1,
+        "hasFixedHeight": false,
+        "influenceLeft": 241,
+        "sharedStyleID": "",
+        "width": 64,
+        "influenceTop": 309,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/10",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "4019B220-A8AF-4DB5-9541-919CD692B0CD",
+      "source_id": "4019B220-A8AF-4DB5-9541-919CD692B0CD",
+      "identity_source": "source_id",
+      "parent_id": "7192A08C-8876-42D7-A803-3E1EEE0F948A",
+      "source_parent_id": "7192A08C-8876-42D7-A803-3E1EEE0F948A",
+      "source_order": 11,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 268.3713349999998,
+        "y": 332,
+        "width": 13.999987499999861,
+        "height": 13.999979999999994
+      },
+      "source_bounds": {
+        "x": 268.3713349999998,
+        "y": 332,
+        "width": 13.999987499999861,
+        "height": 13.999979999999994
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "edited": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 15.99998,
+        "booleanOperation": -1,
+        "points": [
+          {
+            "hasCurveTo": true,
+            "curveTo": {
+              "x": 1.0488152503967285,
+              "y": 0.3417106568813324
+            },
+            "curveMode": 2,
+            "hasCurveFrom": true,
+            "curveFrom": {
+              "x": 0.6582934260368347,
+              "y": -0.04881560429930687
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0.8535543084144592,
+              "y": 0.1464468091726303
+            }
+          },
+          {
+            "hasCurveTo": true,
+            "curveTo": {
+              "x": 0.3417074382305145,
+              "y": -0.04881560429930687
+            },
+            "curveMode": 3,
+            "hasCurveFrom": true,
+            "curveFrom": {
+              "x": 0.048814330250024796,
+              "y": 0.2440783828496933
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0.14644655585289001,
+              "y": 0.1464468091726303
+            }
+          },
+          {
+            "hasCurveTo": true,
+            "curveTo": {
+              "x": 0,
+              "y": 0.3720392882823944
+            },
+            "curveMode": 2,
+            "hasCurveFrom": true,
+            "curveFrom": {
+              "x": 0,
+              "y": 0.6279610991477966
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0,
+              "y": 0.5000001788139343
+            }
+          },
+          {
+            "hasCurveTo": true,
+            "curveTo": {
+              "x": 0.048814330250024796,
+              "y": 0.7559219598770142
+            },
+            "curveMode": 3,
+            "hasCurveFrom": true,
+            "curveFrom": {
+              "x": 0.3417074382305145,
+              "y": 1.0488152503967285
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0.14644655585289001,
+              "y": 0.8535542488098145
+            }
+          },
+          {
+            "hasCurveTo": true,
+            "curveTo": {
+              "x": 0.6582934260368347,
+              "y": 1.0488152503967285
+            },
+            "curveMode": 2,
+            "hasCurveFrom": true,
+            "curveFrom": {
+              "x": 1.0488152503967285,
+              "y": 0.6582932472229004
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0.8535543084144592,
+              "y": 0.8535542488098145
+            }
+          }
+        ],
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 1,
+          "isEnabled": true
+        },
+        "top": 332,
+        "hasFixedWidth": false,
+        "left": 268.3713349999998,
+        "ddsOriginFrame": {
+          "height": 13.99998,
+          "x": 268.3713349999999,
+          "y": 332,
+          "width": 13.9999875
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "isLocked": false,
+        "opacity": 100,
+        "startMarkerType": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 13.999979999999994,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 15.999987500000403,
+        "layerOriginFrame": {
+          "height": 13.999979999999994,
+          "x": 268.3713349999998,
+          "y": 332,
+          "width": 13.999987499999861
+        },
+        "isClosed": true,
+        "borders": [
+          {
+            "position": "中心边框",
+            "type": "color",
+            "blendMode": 0,
+            "opacity": 1,
+            "color": {
+              "a": 1,
+              "b": 69,
+              "value": "rgba(184,137,69,1)",
+              "g": 137,
+              "r": 184
+            },
+            "thickness": 2,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "pointRadiusBehaviour": 1,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 2,
+        "hasFixedHeight": false,
+        "influenceLeft": 267.3713349999998,
+        "sharedStyleID": "",
+        "width": 13.999987499999861,
+        "influenceTop": 331,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/11",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "610454AE-0632-4E71-B03B-C9DDC37A2500",
+      "source_id": "610454AE-0632-4E71-B03B-C9DDC37A2500",
+      "identity_source": "source_id",
+      "parent_id": "7192A08C-8876-42D7-A803-3E1EEE0F948A",
+      "source_parent_id": "7192A08C-8876-42D7-A803-3E1EEE0F948A",
+      "source_order": 12,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 264,
+        "y": 343.8922425,
+        "width": 6.363934999999856,
+        "height": 6.3639499999999884
+      },
+      "source_bounds": {
+        "x": 264,
+        "y": 343.8922425,
+        "width": 6.363934999999856,
+        "height": 6.3639499999999884
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "edited": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 8.363950000000008,
+        "booleanOperation": -1,
+        "points": [
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 1,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 1,
+              "y": 0
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 1,
+              "y": 0
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 1
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 1
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0,
+              "y": 1
+            }
+          }
+        ],
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 1,
+          "lineJoinStyle": 1,
+          "isEnabled": true
+        },
+        "top": 343.8922425,
+        "hasFixedWidth": false,
+        "left": 264,
+        "ddsOriginFrame": {
+          "height": 6.363949999999999,
+          "x": 264.00000000000006,
+          "y": 343.8922425,
+          "width": 6.363935000000001
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "isLocked": false,
+        "opacity": 100,
+        "startMarkerType": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 6.3639499999999884,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 8.363935000000009,
+        "layerOriginFrame": {
+          "height": 6.3639499999999884,
+          "x": 264,
+          "y": 343.8922425,
+          "width": 6.363934999999856
+        },
+        "isClosed": false,
+        "borders": [
+          {
+            "position": "中心边框",
+            "type": "color",
+            "blendMode": 0,
+            "opacity": 1,
+            "color": {
+              "a": 1,
+              "b": 69,
+              "value": "rgba(184,137,69,1)",
+              "g": 137,
+              "r": 184
+            },
+            "thickness": 2,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "pointRadiusBehaviour": 1,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 2,
+        "hasFixedHeight": false,
+        "influenceLeft": 263,
+        "sharedStyleID": "",
+        "width": 6.363934999999856,
+        "influenceTop": 342.8922425,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/12",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "DA74F91D-9D60-477C-93A8-A474E588C1C8",
+      "source_id": "DA74F91D-9D60-477C-93A8-A474E588C1C8",
+      "identity_source": "source_id",
+      "parent_id": "7192A08C-8876-42D7-A803-3E1EEE0F948A",
+      "source_parent_id": "7192A08C-8876-42D7-A803-3E1EEE0F948A",
+      "source_order": 13,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 264.3535649999999,
+        "y": 343.5386925,
+        "width": 6.363969999999881,
+        "height": 6.363999999999976
+      },
+      "source_bounds": {
+        "x": 264.3535649999999,
+        "y": 343.5386925,
+        "width": 6.363969999999881,
+        "height": 6.363999999999976
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "edited": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 8.364000000000033,
+        "booleanOperation": -1,
+        "points": [
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 1,
+              "y": 1
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 1,
+              "y": 1
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 1,
+              "y": 1
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 0
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        ],
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 1,
+          "lineJoinStyle": 1,
+          "isEnabled": true
+        },
+        "top": 343.5386925,
+        "hasFixedWidth": false,
+        "left": 264.3535649999999,
+        "ddsOriginFrame": {
+          "height": 6.363999999999999,
+          "x": 264.35356499999995,
+          "y": 343.5386925,
+          "width": 6.363969999999999
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "isLocked": false,
+        "opacity": 100,
+        "startMarkerType": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 6.363999999999976,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 8.363970000000034,
+        "layerOriginFrame": {
+          "height": 6.363999999999976,
+          "x": 264.3535649999999,
+          "y": 343.5386925,
+          "width": 6.363969999999881
+        },
+        "isClosed": false,
+        "borders": [
+          {
+            "position": "中心边框",
+            "type": "color",
+            "blendMode": 0,
+            "opacity": 1,
+            "color": {
+              "a": 1,
+              "b": 69,
+              "value": "rgba(184,137,69,1)",
+              "g": 137,
+              "r": 184
+            },
+            "thickness": 2,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "pointRadiusBehaviour": 1,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 2,
+        "hasFixedHeight": false,
+        "influenceLeft": 263.3535649999999,
+        "sharedStyleID": "",
+        "width": 6.363969999999881,
+        "influenceTop": 342.5386925,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/13",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "7192A08C-8876-42D7-A803-3E1EEE0F948A",
+      "source_id": "7192A08C-8876-42D7-A803-3E1EEE0F948A",
+      "identity_source": "source_id",
+      "parent_id": "AFB9FAAC-EAAA-4F30-8992-C3939AC1F5CB",
+      "source_parent_id": "AFB9FAAC-EAAA-4F30-8992-C3939AC1F5CB",
+      "source_order": 14,
+      "name": "编组",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 264,
+        "y": 332,
+        "width": 18.371322500000133,
+        "height": 18.256192499999997
+      },
+      "source_bounds": {
+        "x": 264,
+        "y": 332,
+        "width": 18.371322500000133,
+        "height": 18.256192499999997
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "hasInferredLayout": false,
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "shouldGrowSizeOfGroupForInferredLayout": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 20.256192500000015,
+        "booleanOperation": 0,
+        "horizontalSizing": 0,
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0,
+          "isEnabled": true
+        },
+        "top": 332,
+        "hasFixedWidth": false,
+        "left": 264,
+        "groupBehavior": 0,
+        "ddsOriginFrame": {
+          "height": 18.2561925,
+          "x": 264.00000000000006,
+          "y": 332,
+          "width": 18.3713225
+        },
+        "ancestorsHaveInferredLayout": false,
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "paddingSelection": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "leftPadding": 0,
+        "rightPadding": 0,
+        "opacity": 100,
+        "hasFlexLayout": false,
+        "startMarkerType": 0,
+        "topPadding": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 18.256192499999997,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "isRootFlexLayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 20.371322500000222,
+        "ancestorsOrSelfHaveInferredLayout": false,
+        "layerOriginFrame": {
+          "height": 18.256192499999997,
+          "x": 264,
+          "y": 332,
+          "width": 18.371322500000133
+        },
+        "pointRadiusBehaviour": 0,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 1,
+        "hasFixedHeight": false,
+        "influenceLeft": 263,
+        "sharedStyleID": "",
+        "isCopy": false,
+        "verticalSizing": 0,
+        "width": 18.371322500000133,
+        "influenceTop": 331,
+        "bottomPadding": 0,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/14",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "AFB9FAAC-EAAA-4F30-8992-C3939AC1F5CB",
+      "source_id": "AFB9FAAC-EAAA-4F30-8992-C3939AC1F5CB",
+      "identity_source": "source_id",
+      "parent_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "source_parent_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "source_order": 15,
+      "name": "编组 3",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 241,
+        "y": 309,
+        "width": 64,
+        "height": 64
+      },
+      "source_bounds": {
+        "x": 241,
+        "y": 309,
+        "width": 64,
+        "height": 64
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "hasInferredLayout": false,
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "shouldGrowSizeOfGroupForInferredLayout": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 64,
+        "booleanOperation": 0,
+        "horizontalSizing": 0,
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0,
+          "isEnabled": true
+        },
+        "top": 309,
+        "hasFixedWidth": false,
+        "left": 241,
+        "groupBehavior": 0,
+        "ddsOriginFrame": {
+          "height": 64,
+          "x": 241,
+          "y": 309,
+          "width": 64
+        },
+        "ancestorsHaveInferredLayout": false,
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "paddingSelection": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "leftPadding": 0,
+        "rightPadding": 0,
+        "opacity": 100,
+        "hasFlexLayout": false,
+        "startMarkerType": 0,
+        "topPadding": 0,
+        "hasFixedRight": false,
+        "exportable": true,
+        "height": 64,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "isRootFlexLayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 64,
+        "ancestorsOrSelfHaveInferredLayout": false,
+        "layerOriginFrame": {
+          "height": 64,
+          "x": 241,
+          "y": 309,
+          "width": 64
+        },
+        "pointRadiusBehaviour": 0,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 0,
+        "hasFixedHeight": false,
+        "influenceLeft": 241,
+        "sharedStyleID": "",
+        "isCopy": false,
+        "verticalSizing": 0,
+        "width": 64,
+        "influenceTop": 309,
+        "bottomPadding": 0,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [
+        "AFB9FAAC-EAAA-4F30-8992-C3939AC1F5CB:image"
+      ],
+      "source_pointer": "/info/15",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "070AA01D-8B5A-4376-A740-3AFBBA938857",
+      "source_id": "070AA01D-8B5A-4376-A740-3AFBBA938857",
+      "identity_source": "source_id",
+      "parent_id": "708B90D6-6D2B-4F75-A555-8A333E4BEC1E",
+      "source_parent_id": "708B90D6-6D2B-4F75-A555-8A333E4BEC1E",
+      "source_order": 16,
+      "name": "椭圆形备份",
+      "node_type": "shape",
+      "bounds": {
+        "x": 65,
+        "y": 309,
+        "width": 64,
+        "height": 64
+      },
+      "source_bounds": {
+        "x": 65,
+        "y": 309,
+        "width": 64,
+        "height": 64
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "edited": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 64,
+        "booleanOperation": -1,
+        "points": [
+          {
+            "hasCurveTo": true,
+            "curveTo": {
+              "x": 0.22385762631893158,
+              "y": 1
+            },
+            "curveMode": 2,
+            "hasCurveFrom": true,
+            "curveFrom": {
+              "x": 0.7761423587799072,
+              "y": 1
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0.5,
+              "y": 1
+            }
+          },
+          {
+            "hasCurveTo": true,
+            "curveTo": {
+              "x": 1,
+              "y": 0.7761423587799072
+            },
+            "curveMode": 2,
+            "hasCurveFrom": true,
+            "curveFrom": {
+              "x": 1,
+              "y": 0.22385762631893158
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 1,
+              "y": 0.5
+            }
+          },
+          {
+            "hasCurveTo": true,
+            "curveTo": {
+              "x": 0.7761423587799072,
+              "y": 0
+            },
+            "curveMode": 2,
+            "hasCurveFrom": true,
+            "curveFrom": {
+              "x": 0.22385762631893158,
+              "y": 0
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          {
+            "hasCurveTo": true,
+            "curveTo": {
+              "x": 0,
+              "y": 0.22385762631893158
+            },
+            "curveMode": 2,
+            "hasCurveFrom": true,
+            "curveFrom": {
+              "x": 0,
+              "y": 0.7761423587799072
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0,
+              "y": 0.5
+            }
+          }
+        ],
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0,
+          "isEnabled": true
+        },
+        "top": 309,
+        "hasFixedWidth": false,
+        "left": 65,
+        "ddsOriginFrame": {
+          "height": 64,
+          "x": 65,
+          "y": 309,
+          "width": 64
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "isLocked": false,
+        "fills": [
+          {
+            "patternTileScale": 1,
+            "noiseIntensity": 0,
+            "type": "color",
+            "blendMode": 0,
+            "noiseIndex": 0,
+            "opacity": 1,
+            "color": {
+              "a": 1,
+              "b": 234,
+              "value": "rgba(255,247,234,1)",
+              "g": 247,
+              "r": 255
+            },
+            "patternFillType": 1,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "opacity": 100,
+        "startMarkerType": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 64,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 64,
+        "layerOriginFrame": {
+          "height": 64,
+          "x": 65,
+          "y": 309,
+          "width": 64
+        },
+        "isClosed": true,
+        "borders": [
+          {
+            "position": "内边框",
+            "type": "color",
+            "blendMode": 0,
+            "opacity": 1,
+            "color": {
+              "a": 1,
+              "b": 196,
+              "value": "rgba(238,220,196,1)",
+              "g": 220,
+              "r": 238
+            },
+            "thickness": 1,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "pointRadiusBehaviour": 1,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 1,
+        "hasFixedHeight": false,
+        "influenceLeft": 65,
+        "sharedStyleID": "",
+        "width": 64,
+        "influenceTop": 309,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/16",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "2A4B35A3-A8B4-4A8D-80A4-D125E63A9C0E",
+      "source_id": "2A4B35A3-A8B4-4A8D-80A4-D125E63A9C0E",
+      "identity_source": "source_id",
+      "parent_id": "E83E9737-9069-4AFE-985B-A8E2E14CAE7D",
+      "source_parent_id": "E83E9737-9069-4AFE-985B-A8E2E14CAE7D",
+      "source_order": 17,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 101.31935625000006,
+        "y": 332,
+        "width": 4.5,
+        "height": 4.499979999999994
+      },
+      "source_bounds": {
+        "x": 101.31935625000006,
+        "y": 332,
+        "width": 4.5,
+        "height": 4.499979999999994
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "edited": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 6.49998,
+        "booleanOperation": -1,
+        "points": [
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 1,
+              "y": 1
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 1,
+              "y": 1
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 1,
+              "y": 1
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 1,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 1,
+              "y": 0
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 1,
+              "y": 0
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 0
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        ],
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 1,
+          "lineJoinStyle": 1,
+          "isEnabled": true
+        },
+        "top": 332,
+        "hasFixedWidth": false,
+        "left": 101.31935625000006,
+        "ddsOriginFrame": {
+          "height": 4.49998,
+          "x": 101.31935625000008,
+          "y": 332,
+          "width": 4.5
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "isLocked": false,
+        "opacity": 100,
+        "startMarkerType": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 4.499979999999994,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 6.5,
+        "layerOriginFrame": {
+          "height": 4.499979999999994,
+          "x": 101.31935625000006,
+          "y": 332,
+          "width": 4.5
+        },
+        "isClosed": false,
+        "borders": [
+          {
+            "position": "中心边框",
+            "type": "color",
+            "blendMode": 0,
+            "opacity": 1,
+            "color": {
+              "a": 1,
+              "b": 69,
+              "value": "rgba(184,137,69,1)",
+              "g": 137,
+              "r": 184
+            },
+            "thickness": 2,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "pointRadiusBehaviour": 1,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 2,
+        "hasFixedHeight": false,
+        "influenceLeft": 100.31935625000006,
+        "sharedStyleID": "",
+        "width": 4.5,
+        "influenceTop": 331,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/17",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "2038B0C3-15C7-4FC2-89C3-FFAD4DD68F0C",
+      "source_id": "2038B0C3-15C7-4FC2-89C3-FFAD4DD68F0C",
+      "identity_source": "source_id",
+      "parent_id": "E83E9737-9069-4AFE-985B-A8E2E14CAE7D",
+      "source_parent_id": "E83E9737-9069-4AFE-985B-A8E2E14CAE7D",
+      "source_order": 18,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 88,
+        "y": 336.0264425,
+        "width": 14.000006249999842,
+        "height": 14.000012500000025
+      },
+      "source_bounds": {
+        "x": 88,
+        "y": 336.0264425,
+        "width": 14.000006249999842,
+        "height": 14.000012500000025
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "edited": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 16.000011691675354,
+        "booleanOperation": -1,
+        "points": [
+          {
+            "hasCurveTo": true,
+            "curveTo": {
+              "x": -0.04881560429930687,
+              "y": 0.6582913994789124
+            },
+            "curveMode": 2,
+            "hasCurveFrom": true,
+            "curveFrom": {
+              "x": 0.3417074382305145,
+              "y": 1.0488160848617554
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0.1464468091726303,
+              "y": 0.8535519242286682
+            }
+          },
+          {
+            "hasCurveTo": true,
+            "curveTo": {
+              "x": 0.6582894325256348,
+              "y": 1.0488160848617554
+            },
+            "curveMode": 3,
+            "hasCurveFrom": true,
+            "curveFrom": {
+              "x": 0.9511857628822327,
+              "y": 0.7559234499931335
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0.8535536527633667,
+              "y": 0.8535519242286682
+            }
+          },
+          {
+            "hasCurveTo": true,
+            "curveTo": {
+              "x": 1,
+              "y": 0.6279592514038086
+            },
+            "curveMode": 2,
+            "hasCurveFrom": true,
+            "curveFrom": {
+              "x": 1,
+              "y": 0.3720380663871765
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 1,
+              "y": 0.49999865889549255
+            }
+          },
+          {
+            "hasCurveTo": true,
+            "curveTo": {
+              "x": 0.9511857628822327,
+              "y": 0.24407745897769928
+            },
+            "curveMode": 3,
+            "hasCurveFrom": true,
+            "curveFrom": {
+              "x": 0.6582894325256348,
+              "y": -0.04881513491272926
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0.8535536527633667,
+              "y": 0.1464454084634781
+            }
+          },
+          {
+            "hasCurveTo": true,
+            "curveTo": {
+              "x": 0.3417074382305145,
+              "y": -0.04881513491272926
+            },
+            "curveMode": 2,
+            "hasCurveFrom": true,
+            "curveFrom": {
+              "x": -0.04881560429930687,
+              "y": 0.34170952439308167
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0.1464468091726303,
+              "y": 0.1464454084634781
+            }
+          }
+        ],
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 1,
+          "isEnabled": true
+        },
+        "top": 336.0264425,
+        "hasFixedWidth": false,
+        "left": 88,
+        "ddsOriginFrame": {
+          "height": 14.0000125,
+          "x": 88.00000000000003,
+          "y": 336.0264425,
+          "width": 14.00000625
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "isLocked": false,
+        "opacity": 100,
+        "startMarkerType": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 14.000012500000025,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 15.999999595838444,
+        "layerOriginFrame": {
+          "height": 14.000012500000025,
+          "x": 88,
+          "y": 336.0264425,
+          "width": 14.000006249999842
+        },
+        "isClosed": true,
+        "borders": [
+          {
+            "position": "中心边框",
+            "type": "color",
+            "blendMode": 0,
+            "opacity": 1,
+            "color": {
+              "a": 1,
+              "b": 69,
+              "value": "rgba(184,137,69,1)",
+              "g": 137,
+              "r": 184
+            },
+            "thickness": 2,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "pointRadiusBehaviour": 1,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 2,
+        "hasFixedHeight": false,
+        "influenceLeft": 87.00000040416171,
+        "sharedStyleID": "",
+        "width": 14.000006249999842,
+        "influenceTop": 335.0264433083252,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/18",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "BD62F561-40C5-4C2F-9838-6F76A39C5584",
+      "source_id": "BD62F561-40C5-4C2F-9838-6F76A39C5584",
+      "identity_source": "source_id",
+      "parent_id": "E83E9737-9069-4AFE-985B-A8E2E14CAE7D",
+      "source_parent_id": "E83E9737-9069-4AFE-985B-A8E2E14CAE7D",
+      "source_order": 19,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 99.84360625,
+        "y": 333.00002,
+        "width": 4.975750000000062,
+        "height": 4.97575999999998
+      },
+      "source_bounds": {
+        "x": 99.84360625,
+        "y": 333.00002,
+        "width": 4.975750000000062,
+        "height": 4.97575999999998
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "edited": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 6.975760000000007,
+        "booleanOperation": -1,
+        "points": [
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 0,
+              "y": 1
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 0,
+              "y": 1
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 0,
+              "y": 1
+            }
+          },
+          {
+            "hasCurveTo": false,
+            "curveTo": {
+              "x": 1,
+              "y": 0
+            },
+            "curveMode": 1,
+            "hasCurveFrom": false,
+            "curveFrom": {
+              "x": 1,
+              "y": 0
+            },
+            "cornerRadius": 0,
+            "point": {
+              "x": 1,
+              "y": 0
+            }
+          }
+        ],
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 1,
+          "lineJoinStyle": 1,
+          "isEnabled": true
+        },
+        "top": 333.00002,
+        "hasFixedWidth": false,
+        "left": 99.84360625,
+        "ddsOriginFrame": {
+          "height": 4.97576,
+          "x": 99.84360625000002,
+          "y": 333.00002,
+          "width": 4.975750000000001
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "isLocked": false,
+        "opacity": 100,
+        "startMarkerType": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 4.97575999999998,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 6.975750000000008,
+        "layerOriginFrame": {
+          "height": 4.97575999999998,
+          "x": 99.84360625,
+          "y": 333.00002,
+          "width": 4.975750000000062
+        },
+        "isClosed": false,
+        "borders": [
+          {
+            "position": "中心边框",
+            "type": "color",
+            "blendMode": 0,
+            "opacity": 1,
+            "color": {
+              "a": 1,
+              "b": 69,
+              "value": "rgba(184,137,69,1)",
+              "g": 137,
+              "r": 184
+            },
+            "thickness": 2,
+            "isEnabled": true,
+            "fillType": 0
+          }
+        ],
+        "pointRadiusBehaviour": 1,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 2,
+        "hasFixedHeight": false,
+        "influenceLeft": 98.84360625,
+        "sharedStyleID": "",
+        "width": 4.975750000000062,
+        "influenceTop": 332.00001999999995,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/19",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "E83E9737-9069-4AFE-985B-A8E2E14CAE7D",
+      "source_id": "E83E9737-9069-4AFE-985B-A8E2E14CAE7D",
+      "identity_source": "source_id",
+      "parent_id": "708B90D6-6D2B-4F75-A555-8A333E4BEC1E",
+      "source_parent_id": "708B90D6-6D2B-4F75-A555-8A333E4BEC1E",
+      "source_order": 20,
+      "name": "编组",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 88,
+        "y": 332,
+        "width": 17.819356250000055,
+        "height": 18.026455
+      },
+      "source_bounds": {
+        "x": 88,
+        "y": 332,
+        "width": 17.819356250000055,
+        "height": 18.026455
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "hasInferredLayout": false,
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "shouldGrowSizeOfGroupForInferredLayout": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 20.0264550000006,
+        "booleanOperation": 0,
+        "horizontalSizing": 0,
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0,
+          "isEnabled": true
+        },
+        "top": 332,
+        "hasFixedWidth": false,
+        "left": 88,
+        "groupBehavior": 0,
+        "ddsOriginFrame": {
+          "height": 18.026455,
+          "x": 88.00000000000003,
+          "y": 332,
+          "width": 17.81935625
+        },
+        "ancestorsHaveInferredLayout": false,
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "paddingSelection": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "leftPadding": 0,
+        "rightPadding": 0,
+        "opacity": 100,
+        "hasFlexLayout": false,
+        "startMarkerType": 0,
+        "topPadding": 0,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 18.026455,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "isRootFlexLayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 19.81935584583851,
+        "ancestorsOrSelfHaveInferredLayout": false,
+        "layerOriginFrame": {
+          "height": 18.026455,
+          "x": 88,
+          "y": 332,
+          "width": 17.819356250000055
+        },
+        "pointRadiusBehaviour": 0,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 1,
+        "hasFixedHeight": false,
+        "influenceLeft": 87.00000040416171,
+        "sharedStyleID": "",
+        "isCopy": false,
+        "verticalSizing": 0,
+        "width": 17.819356250000055,
+        "influenceTop": 331,
+        "bottomPadding": 0,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/20",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "708B90D6-6D2B-4F75-A555-8A333E4BEC1E",
+      "source_id": "708B90D6-6D2B-4F75-A555-8A333E4BEC1E",
+      "identity_source": "source_id",
+      "parent_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "source_parent_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "source_order": 21,
+      "name": "编组 2",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 65,
+        "y": 309,
+        "width": 64,
+        "height": 64
+      },
+      "source_bounds": {
+        "x": 65,
+        "y": 309,
+        "width": 64,
+        "height": 64
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "raw_style": {
+        "hasInferredLayout": false,
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "shouldGrowSizeOfGroupForInferredLayout": false,
+        "isFlippedVertical": false,
+        "isVisible": true,
+        "influenceHeight": 64,
+        "booleanOperation": 0,
+        "horizontalSizing": 0,
+        "borderOptions": {
+          "dashPattern": [],
+          "lineCapStyle": 0,
+          "lineJoinStyle": 0,
+          "isEnabled": true
+        },
+        "top": 309,
+        "hasFixedWidth": false,
+        "left": 65,
+        "groupBehavior": 0,
+        "ddsOriginFrame": {
+          "height": 64,
+          "x": 65,
+          "y": 309,
+          "width": 64
+        },
+        "ancestorsHaveInferredLayout": false,
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "paddingSelection": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "leftPadding": 0,
+        "rightPadding": 0,
+        "opacity": 100,
+        "hasFlexLayout": false,
+        "startMarkerType": 0,
+        "topPadding": 0,
+        "hasFixedRight": false,
+        "exportable": true,
+        "height": 64,
+        "windingRule": 1,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "isRootFlexLayout": false,
+        "miterLimit": 10,
+        "influenceWidth": 64,
+        "ancestorsOrSelfHaveInferredLayout": false,
+        "layerOriginFrame": {
+          "height": 64,
+          "x": 65,
+          "y": 309,
+          "width": 64
+        },
+        "pointRadiusBehaviour": 0,
+        "endMarkerType": 0,
+        "shouldBreakMaskChain": false,
+        "index": 0,
+        "hasFixedHeight": false,
+        "influenceLeft": 65,
+        "sharedStyleID": "",
+        "isCopy": false,
+        "verticalSizing": 0,
+        "width": 64,
+        "influenceTop": 309,
+        "bottomPadding": 0,
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [
+        "708B90D6-6D2B-4F75-A555-8A333E4BEC1E:image"
+      ],
+      "source_pointer": "/info/21",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [],
+        "font_requirements": [],
+        "gaps": []
+      }
+    },
+    {
+      "node_id": "59833838-223E-4D14-A356-43D503F5C92E",
+      "source_id": "59833838-223E-4D14-A356-43D503F5C92E",
+      "identity_source": "source_id",
+      "parent_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "source_parent_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "source_order": 22,
+      "name": "用于为你推荐更合适的互动内容",
+      "node_type": "text",
+      "bounds": {
+        "x": 30,
+        "y": 191,
+        "width": 168,
+        "height": 17
+      },
+      "source_bounds": {
+        "x": 30,
+        "y": 191,
+        "width": 168,
+        "height": 17
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "用于为你推荐更合适的互动内容",
+      "raw_style": {
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "isFlippedVertical": false,
+        "dontSynchroniseWithSymbol": false,
+        "isVisible": true,
+        "influenceHeight": 17,
+        "kerning": 0,
+        "top": 191,
+        "hasFixedWidth": true,
+        "left": 30,
+        "lineSpacingBehaviour": 3,
+        "automaticallyDrawOnUnderlyingPath": false,
+        "ddsOriginFrame": {
+          "height": 17,
+          "x": 30,
+          "y": 191,
+          "width": 168
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "isLocked": false,
+        "opacity": 100,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 17,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "characterSpacing": 0,
+        "influenceWidth": 168,
+        "layerOriginFrame": {
+          "height": 17,
+          "x": 30,
+          "y": 191,
+          "width": 168
+        },
+        "textBehaviour": 0,
+        "shouldBreakMaskChain": false,
+        "index": 0,
+        "hasFixedHeight": true,
+        "influenceLeft": 30,
+        "sharedStyleID": "",
+        "font": {
+          "align": "left",
+          "kerning": 0,
+          "line": 17,
+          "size": 12,
+          "verticalAlignment": 0,
+          "styles": [
+            {
+              "fontWeight": 400,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 17,
+              "location": "0",
+              "minimumLineHeight": 0,
+              "length": "14",
+              "size": "12",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(154,154,162,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 4,
+              "maximumLineHeight": 0,
+              "displayName": "苹方-简 常规体",
+              "content": "用于为你推荐更合适的互动内容",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "font": "PingFangSC-Regular",
+              "decorationLine": "none",
+              "paragraphSpacingBefore": 0
+            }
+          ],
+          "color": {
+            "a": 1,
+            "b": 162,
+            "value": "rgba(154,154,162,1)",
+            "g": 154,
+            "r": 154
+          },
+          "displayName": "苹方-简 常规体",
+          "content": "用于为你推荐更合适的互动内容",
+          "textAlignment": 4,
+          "spacing": 0,
+          "font": "PingFangSC-Regular"
+        },
+        "width": 168,
+        "influenceTop": 191,
+        "ddsAdaptiveFrame": {
+          "top": 191,
+          "left": 30,
+          "height": 17,
+          "width": 168
+        },
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/22",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [
+          {
+            "start": 0,
+            "length": 14,
+            "offset_unit": "utf16",
+            "text": "用于为你推荐更合适的互动内容",
+            "source_pointer": "/info/22/font/styles/0",
+            "raw_style": {
+              "fontWeight": 400,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 17,
+              "location": "0",
+              "minimumLineHeight": 0,
+              "length": "14",
+              "size": "12",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(154,154,162,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 4,
+              "maximumLineHeight": 0,
+              "displayName": "苹方-简 常规体",
+              "content": "用于为你推荐更合适的互动内容",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "font": "PingFangSC-Regular",
+              "decorationLine": "none",
+              "paragraphSpacingBefore": 0
+            },
+            "font_family": "PingFangSC-Regular",
+            "font_size": 12,
+            "font_weight": 400,
+            "color": "rgba(154,154,162,1.000000)",
+            "line_height": 17,
+            "letter_spacing": 0,
+            "source_fields": {
+              "font_family": "/info/22/font/styles/0/font",
+              "font_size": "/info/22/font/styles/0/size",
+              "font_weight": "/info/22/font/styles/0/fontWeight",
+              "line_height": "/info/22/font/styles/0/line",
+              "letter_spacing": "/info/22/font/styles/0/kern",
+              "paragraph_spacing": "/info/22/font/styles/0/paragraphSpacing",
+              "paragraph_spacing_before": "/info/22/font/styles/0/paragraphSpacingBefore",
+              "color": "/info/22/font/styles/0/color/value",
+              "alignment_code": "/info/22/font/styles/0/alignment",
+              "decoration_line": "/info/22/font/styles/0/decorationLine",
+              "display_name": "/info/22/font/styles/0/displayName"
+            },
+            "font_name_kind": "source_name",
+            "paragraph_spacing": 0,
+            "paragraph_spacing_before": 0,
+            "alignment_code": 4,
+            "decoration_line": "none",
+            "display_name": "苹方-简 常规体"
+          }
+        ],
+        "font_requirements": [
+          {
+            "family": "PingFangSC-Regular",
+            "name_kind": "source_name",
+            "source": "design",
+            "availability": "not_checked",
+            "source_pointers": [
+              "/info/22/font",
+              "/info/22/font/styles/0"
+            ],
+            "weights": [
+              400
+            ]
+          }
+        ],
+        "gaps": [],
+        "raw_font": {
+          "align": "left",
+          "kerning": 0,
+          "line": 17,
+          "size": 12,
+          "verticalAlignment": 0,
+          "styles": [
+            {
+              "fontWeight": 400,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 17,
+              "location": "0",
+              "minimumLineHeight": 0,
+              "length": "14",
+              "size": "12",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(154,154,162,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 4,
+              "maximumLineHeight": 0,
+              "displayName": "苹方-简 常规体",
+              "content": "用于为你推荐更合适的互动内容",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "font": "PingFangSC-Regular",
+              "decorationLine": "none",
+              "paragraphSpacingBefore": 0
+            }
+          ],
+          "color": {
+            "a": 1,
+            "b": 162,
+            "value": "rgba(154,154,162,1)",
+            "g": 154,
+            "r": 154
+          },
+          "displayName": "苹方-简 常规体",
+          "content": "用于为你推荐更合适的互动内容",
+          "textAlignment": 4,
+          "spacing": 0,
+          "font": "PingFangSC-Regular"
+        },
+        "base_style": {
+          "font_family": "PingFangSC-Regular",
+          "font_size": 12,
+          "font_weight": null,
+          "color": "rgba(154,154,162,1)",
+          "line_height": 17,
+          "letter_spacing": 0,
+          "source_fields": {
+            "font_family": "/info/22/font/font",
+            "font_size": "/info/22/font/size",
+            "line_height": "/info/22/font/line",
+            "letter_spacing": "/info/22/font/kerning",
+            "color": "/info/22/font/color/value",
+            "text_align": "/info/22/font/align",
+            "display_name": "/info/22/font/displayName"
+          },
+          "font_name_kind": "source_name",
+          "text_align": "left",
+          "display_name": "苹方-简 常规体",
+          "source_pointer": "/info/22/font"
+        },
+        "text_length_utf16": 14
+      }
+    },
+    {
+      "node_id": "75FB03BA-104E-449D-9294-A6277ADF1EAC",
+      "source_id": "75FB03BA-104E-449D-9294-A6277ADF1EAC",
+      "identity_source": "source_id",
+      "parent_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "source_parent_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "source_order": 33,
+      "name": "选择你的性别",
+      "node_type": "text",
+      "bounds": {
+        "x": 27,
+        "y": 147,
+        "width": 180,
+        "height": 42
+      },
+      "source_bounds": {
+        "x": 27,
+        "y": 147,
+        "width": 180,
+        "height": 42
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "选择你的性别",
+      "raw_style": {
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "isFlippedVertical": false,
+        "dontSynchroniseWithSymbol": false,
+        "isVisible": true,
+        "influenceHeight": 42,
+        "kerning": 0,
+        "top": 147,
+        "hasFixedWidth": true,
+        "left": 27,
+        "lineSpacingBehaviour": 3,
+        "automaticallyDrawOnUnderlyingPath": false,
+        "ddsOriginFrame": {
+          "height": 42,
+          "x": 27,
+          "y": 147,
+          "width": 180
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "isLocked": false,
+        "opacity": 100,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 42,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "characterSpacing": 0,
+        "influenceWidth": 180,
+        "layerOriginFrame": {
+          "height": 42,
+          "x": 27,
+          "y": 147,
+          "width": 180
+        },
+        "textBehaviour": 0,
+        "shouldBreakMaskChain": false,
+        "index": 0,
+        "hasFixedHeight": true,
+        "influenceLeft": 27,
+        "sharedStyleID": "",
+        "font": {
+          "align": "left",
+          "kerning": 0,
+          "line": 42,
+          "size": 30,
+          "verticalAlignment": 0,
+          "styles": [
+            {
+              "fontWeight": 600,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 42,
+              "location": "0",
+              "minimumLineHeight": 0,
+              "length": "6",
+              "size": "30",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(24,24,27,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 4,
+              "maximumLineHeight": 0,
+              "displayName": "苹方-简 中粗体",
+              "content": "选择你的性别",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "font": "PingFangSC-Semibold",
+              "decorationLine": "none",
+              "paragraphSpacingBefore": 0
+            }
+          ],
+          "color": {
+            "a": 1,
+            "b": 27,
+            "value": "rgba(24,24,27,1)",
+            "g": 24,
+            "r": 24,
+            "swatchName": "18181B"
+          },
+          "displayName": "苹方-简 中粗体",
+          "content": "选择你的性别",
+          "textAlignment": 4,
+          "spacing": 0,
+          "font": "PingFangSC-Semibold"
+        },
+        "width": 180,
+        "influenceTop": 147,
+        "ddsAdaptiveFrame": {
+          "top": 147,
+          "left": 27,
+          "height": 42,
+          "width": 180
+        },
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/33",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [
+          {
+            "start": 0,
+            "length": 6,
+            "offset_unit": "utf16",
+            "text": "选择你的性别",
+            "source_pointer": "/info/33/font/styles/0",
+            "raw_style": {
+              "fontWeight": 600,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 42,
+              "location": "0",
+              "minimumLineHeight": 0,
+              "length": "6",
+              "size": "30",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(24,24,27,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 4,
+              "maximumLineHeight": 0,
+              "displayName": "苹方-简 中粗体",
+              "content": "选择你的性别",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "font": "PingFangSC-Semibold",
+              "decorationLine": "none",
+              "paragraphSpacingBefore": 0
+            },
+            "font_family": "PingFangSC-Semibold",
+            "font_size": 30,
+            "font_weight": 600,
+            "color": "rgba(24,24,27,1.000000)",
+            "line_height": 42,
+            "letter_spacing": 0,
+            "source_fields": {
+              "font_family": "/info/33/font/styles/0/font",
+              "font_size": "/info/33/font/styles/0/size",
+              "font_weight": "/info/33/font/styles/0/fontWeight",
+              "line_height": "/info/33/font/styles/0/line",
+              "letter_spacing": "/info/33/font/styles/0/kern",
+              "paragraph_spacing": "/info/33/font/styles/0/paragraphSpacing",
+              "paragraph_spacing_before": "/info/33/font/styles/0/paragraphSpacingBefore",
+              "color": "/info/33/font/styles/0/color/value",
+              "alignment_code": "/info/33/font/styles/0/alignment",
+              "decoration_line": "/info/33/font/styles/0/decorationLine",
+              "display_name": "/info/33/font/styles/0/displayName"
+            },
+            "font_name_kind": "source_name",
+            "paragraph_spacing": 0,
+            "paragraph_spacing_before": 0,
+            "alignment_code": 4,
+            "decoration_line": "none",
+            "display_name": "苹方-简 中粗体"
+          }
+        ],
+        "font_requirements": [
+          {
+            "family": "PingFangSC-Semibold",
+            "name_kind": "source_name",
+            "source": "design",
+            "availability": "not_checked",
+            "source_pointers": [
+              "/info/33/font",
+              "/info/33/font/styles/0"
+            ],
+            "weights": [
+              600
+            ]
+          }
+        ],
+        "gaps": [],
+        "raw_font": {
+          "align": "left",
+          "kerning": 0,
+          "line": 42,
+          "size": 30,
+          "verticalAlignment": 0,
+          "styles": [
+            {
+              "fontWeight": 600,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 42,
+              "location": "0",
+              "minimumLineHeight": 0,
+              "length": "6",
+              "size": "30",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(24,24,27,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 4,
+              "maximumLineHeight": 0,
+              "displayName": "苹方-简 中粗体",
+              "content": "选择你的性别",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "font": "PingFangSC-Semibold",
+              "decorationLine": "none",
+              "paragraphSpacingBefore": 0
+            }
+          ],
+          "color": {
+            "a": 1,
+            "b": 27,
+            "value": "rgba(24,24,27,1)",
+            "g": 24,
+            "r": 24,
+            "swatchName": "18181B"
+          },
+          "displayName": "苹方-简 中粗体",
+          "content": "选择你的性别",
+          "textAlignment": 4,
+          "spacing": 0,
+          "font": "PingFangSC-Semibold"
+        },
+        "base_style": {
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 30,
+          "font_weight": null,
+          "color": "rgba(24,24,27,1)",
+          "line_height": 42,
+          "letter_spacing": 0,
+          "source_fields": {
+            "font_family": "/info/33/font/font",
+            "font_size": "/info/33/font/size",
+            "line_height": "/info/33/font/line",
+            "letter_spacing": "/info/33/font/kerning",
+            "color": "/info/33/font/color/value",
+            "text_align": "/info/33/font/align",
+            "display_name": "/info/33/font/displayName"
+          },
+          "font_name_kind": "source_name",
+          "text_align": "left",
+          "display_name": "苹方-简 中粗体",
+          "source_pointer": "/info/33/font"
+        },
+        "text_length_utf16": 6
+      }
+    },
+    {
+      "node_id": "63C698CE-31FE-4303-941B-E5F440045057",
+      "source_id": "63C698CE-31FE-4303-941B-E5F440045057",
+      "identity_source": "source_id",
+      "parent_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "source_parent_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "source_order": 36,
+      "name": "男生",
+      "node_type": "text",
+      "bounds": {
+        "x": 83,
+        "y": 386,
+        "width": 28,
+        "height": 22
+      },
+      "source_bounds": {
+        "x": 83,
+        "y": 386,
+        "width": 28,
+        "height": 22
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "男生",
+      "raw_style": {
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "isFlippedVertical": false,
+        "dontSynchroniseWithSymbol": false,
+        "isVisible": true,
+        "influenceHeight": 22,
+        "kerning": 0,
+        "top": 386,
+        "hasFixedWidth": true,
+        "left": 83,
+        "lineSpacingBehaviour": 3,
+        "automaticallyDrawOnUnderlyingPath": false,
+        "ddsOriginFrame": {
+          "height": 22,
+          "x": 83,
+          "y": 386,
+          "width": 28
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "isLocked": false,
+        "opacity": 100,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 22,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "characterSpacing": 0,
+        "influenceWidth": 28,
+        "layerOriginFrame": {
+          "height": 22,
+          "x": 83,
+          "y": 386,
+          "width": 28
+        },
+        "textBehaviour": 0,
+        "shouldBreakMaskChain": false,
+        "index": 0,
+        "hasFixedHeight": true,
+        "influenceLeft": 83,
+        "sharedStyleID": "",
+        "font": {
+          "align": "left",
+          "kerning": 0,
+          "line": 22,
+          "size": 14,
+          "verticalAlignment": 0,
+          "styles": [
+            {
+              "underline": "0",
+              "fontWeight": 400,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 22,
+              "location": "0",
+              "minimumLineHeight": 22,
+              "length": "2",
+              "size": "14",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(23,23,24,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 0,
+              "maximumLineHeight": 22,
+              "displayName": "苹方-简 常规体",
+              "content": "男生",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "spacing": "0",
+              "font": "PingFangSC-Regular",
+              "strikethrough": "0",
+              "decorationLine": "underline",
+              "transform": "0",
+              "paragraphSpacingBefore": 0
+            }
+          ],
+          "color": {
+            "a": 1,
+            "b": 24,
+            "value": "rgba(23,23,24,1)",
+            "g": 23,
+            "r": 23
+          },
+          "displayName": "苹方-简 常规体",
+          "content": "男生",
+          "textAlignment": 0,
+          "spacing": 0,
+          "font": "PingFangSC-Regular",
+          "transform": 0
+        },
+        "width": 28,
+        "influenceTop": 386,
+        "ddsAdaptiveFrame": {
+          "top": 386,
+          "left": 83,
+          "height": 22,
+          "width": 28
+        },
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/36",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [
+          {
+            "start": 0,
+            "length": 2,
+            "offset_unit": "utf16",
+            "text": "男生",
+            "source_pointer": "/info/36/font/styles/0",
+            "raw_style": {
+              "underline": "0",
+              "fontWeight": 400,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 22,
+              "location": "0",
+              "minimumLineHeight": 22,
+              "length": "2",
+              "size": "14",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(23,23,24,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 0,
+              "maximumLineHeight": 22,
+              "displayName": "苹方-简 常规体",
+              "content": "男生",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "spacing": "0",
+              "font": "PingFangSC-Regular",
+              "strikethrough": "0",
+              "decorationLine": "underline",
+              "transform": "0",
+              "paragraphSpacingBefore": 0
+            },
+            "font_family": "PingFangSC-Regular",
+            "font_size": 14,
+            "font_weight": 400,
+            "color": "rgba(23,23,24,1.000000)",
+            "line_height": 22,
+            "letter_spacing": 0,
+            "source_fields": {
+              "font_family": "/info/36/font/styles/0/font",
+              "font_size": "/info/36/font/styles/0/size",
+              "font_weight": "/info/36/font/styles/0/fontWeight",
+              "line_height": "/info/36/font/styles/0/line",
+              "letter_spacing": "/info/36/font/styles/0/kern",
+              "paragraph_spacing": "/info/36/font/styles/0/paragraphSpacing",
+              "paragraph_spacing_before": "/info/36/font/styles/0/paragraphSpacingBefore",
+              "color": "/info/36/font/styles/0/color/value",
+              "alignment_code": "/info/36/font/styles/0/alignment",
+              "decoration_line": "/info/36/font/styles/0/decorationLine",
+              "display_name": "/info/36/font/styles/0/displayName"
+            },
+            "font_name_kind": "source_name",
+            "paragraph_spacing": 0,
+            "paragraph_spacing_before": 0,
+            "alignment_code": 0,
+            "decoration_line": "underline",
+            "display_name": "苹方-简 常规体"
+          }
+        ],
+        "font_requirements": [
+          {
+            "family": "PingFangSC-Regular",
+            "name_kind": "source_name",
+            "source": "design",
+            "availability": "not_checked",
+            "source_pointers": [
+              "/info/36/font",
+              "/info/36/font/styles/0"
+            ],
+            "weights": [
+              400
+            ]
+          }
+        ],
+        "gaps": [],
+        "raw_font": {
+          "align": "left",
+          "kerning": 0,
+          "line": 22,
+          "size": 14,
+          "verticalAlignment": 0,
+          "styles": [
+            {
+              "underline": "0",
+              "fontWeight": 400,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 22,
+              "location": "0",
+              "minimumLineHeight": 22,
+              "length": "2",
+              "size": "14",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(23,23,24,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 0,
+              "maximumLineHeight": 22,
+              "displayName": "苹方-简 常规体",
+              "content": "男生",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "spacing": "0",
+              "font": "PingFangSC-Regular",
+              "strikethrough": "0",
+              "decorationLine": "underline",
+              "transform": "0",
+              "paragraphSpacingBefore": 0
+            }
+          ],
+          "color": {
+            "a": 1,
+            "b": 24,
+            "value": "rgba(23,23,24,1)",
+            "g": 23,
+            "r": 23
+          },
+          "displayName": "苹方-简 常规体",
+          "content": "男生",
+          "textAlignment": 0,
+          "spacing": 0,
+          "font": "PingFangSC-Regular",
+          "transform": 0
+        },
+        "base_style": {
+          "font_family": "PingFangSC-Regular",
+          "font_size": 14,
+          "font_weight": null,
+          "color": "rgba(23,23,24,1)",
+          "line_height": 22,
+          "letter_spacing": 0,
+          "source_fields": {
+            "font_family": "/info/36/font/font",
+            "font_size": "/info/36/font/size",
+            "line_height": "/info/36/font/line",
+            "letter_spacing": "/info/36/font/kerning",
+            "color": "/info/36/font/color/value",
+            "text_align": "/info/36/font/align",
+            "display_name": "/info/36/font/displayName"
+          },
+          "font_name_kind": "source_name",
+          "text_align": "left",
+          "display_name": "苹方-简 常规体",
+          "source_pointer": "/info/36/font"
+        },
+        "text_length_utf16": 2
+      }
+    },
+    {
+      "node_id": "E91048A7-8E43-48A3-9672-CCA438875BD8",
+      "source_id": "E91048A7-8E43-48A3-9672-CCA438875BD8",
+      "identity_source": "source_id",
+      "parent_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "source_parent_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "source_order": 37,
+      "name": "女生",
+      "node_type": "text",
+      "bounds": {
+        "x": 259,
+        "y": 386,
+        "width": 28,
+        "height": 22
+      },
+      "source_bounds": {
+        "x": 259,
+        "y": 386,
+        "width": 28,
+        "height": 22
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "女生",
+      "raw_style": {
+        "hasExportDDSImage": false,
+        "isFlippedHorizontal": false,
+        "hasFixedLeft": false,
+        "isFlippedVertical": false,
+        "dontSynchroniseWithSymbol": false,
+        "isVisible": true,
+        "influenceHeight": 22,
+        "kerning": 0,
+        "top": 386,
+        "hasFixedWidth": true,
+        "left": 259,
+        "lineSpacingBehaviour": 3,
+        "automaticallyDrawOnUnderlyingPath": false,
+        "ddsOriginFrame": {
+          "height": 22,
+          "x": 259,
+          "y": 386,
+          "width": 28
+        },
+        "hasFixedBottom": false,
+        "blendMode": 0,
+        "hasClippingMask": false,
+        "rotation": 0,
+        "isLocked": false,
+        "opacity": 100,
+        "hasFixedRight": false,
+        "exportable": false,
+        "height": 22,
+        "hasFixedTop": false,
+        "isAutolayout": false,
+        "characterSpacing": 0,
+        "influenceWidth": 28,
+        "layerOriginFrame": {
+          "height": 22,
+          "x": 259,
+          "y": 386,
+          "width": 28
+        },
+        "textBehaviour": 0,
+        "shouldBreakMaskChain": false,
+        "index": 0,
+        "hasFixedHeight": true,
+        "influenceLeft": 259,
+        "sharedStyleID": "",
+        "font": {
+          "align": "left",
+          "kerning": 0,
+          "line": 22,
+          "size": 14,
+          "verticalAlignment": 0,
+          "styles": [
+            {
+              "underline": "0",
+              "fontWeight": 400,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 22,
+              "location": "0",
+              "minimumLineHeight": 22,
+              "length": "2",
+              "size": "14",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(23,23,24,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 0,
+              "maximumLineHeight": 22,
+              "displayName": "苹方-简 常规体",
+              "content": "女生",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "spacing": "0",
+              "font": "PingFangSC-Regular",
+              "strikethrough": "0",
+              "decorationLine": "underline",
+              "transform": "0",
+              "paragraphSpacingBefore": 0
+            }
+          ],
+          "color": {
+            "a": 1,
+            "b": 24,
+            "value": "rgba(23,23,24,1)",
+            "g": 23,
+            "r": 23
+          },
+          "displayName": "苹方-简 常规体",
+          "content": "女生",
+          "textAlignment": 0,
+          "spacing": 0,
+          "font": "PingFangSC-Regular",
+          "transform": 0
+        },
+        "width": 28,
+        "influenceTop": 386,
+        "ddsAdaptiveFrame": {
+          "top": 386,
+          "left": 259,
+          "height": 22,
+          "width": 28
+        },
+        "clippingMaskMode": 0
+      },
+      "asset_ids": [],
+      "source_pointer": "/info/37",
+      "effective_source_visible": true,
+      "text_spec": {
+        "text_runs": [
+          {
+            "start": 0,
+            "length": 2,
+            "offset_unit": "utf16",
+            "text": "女生",
+            "source_pointer": "/info/37/font/styles/0",
+            "raw_style": {
+              "underline": "0",
+              "fontWeight": 400,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 22,
+              "location": "0",
+              "minimumLineHeight": 22,
+              "length": "2",
+              "size": "14",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(23,23,24,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 0,
+              "maximumLineHeight": 22,
+              "displayName": "苹方-简 常规体",
+              "content": "女生",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "spacing": "0",
+              "font": "PingFangSC-Regular",
+              "strikethrough": "0",
+              "decorationLine": "underline",
+              "transform": "0",
+              "paragraphSpacingBefore": 0
+            },
+            "font_family": "PingFangSC-Regular",
+            "font_size": 14,
+            "font_weight": 400,
+            "color": "rgba(23,23,24,1.000000)",
+            "line_height": 22,
+            "letter_spacing": 0,
+            "source_fields": {
+              "font_family": "/info/37/font/styles/0/font",
+              "font_size": "/info/37/font/styles/0/size",
+              "font_weight": "/info/37/font/styles/0/fontWeight",
+              "line_height": "/info/37/font/styles/0/line",
+              "letter_spacing": "/info/37/font/styles/0/kern",
+              "paragraph_spacing": "/info/37/font/styles/0/paragraphSpacing",
+              "paragraph_spacing_before": "/info/37/font/styles/0/paragraphSpacingBefore",
+              "color": "/info/37/font/styles/0/color/value",
+              "alignment_code": "/info/37/font/styles/0/alignment",
+              "decoration_line": "/info/37/font/styles/0/decorationLine",
+              "display_name": "/info/37/font/styles/0/displayName"
+            },
+            "font_name_kind": "source_name",
+            "paragraph_spacing": 0,
+            "paragraph_spacing_before": 0,
+            "alignment_code": 0,
+            "decoration_line": "underline",
+            "display_name": "苹方-简 常规体"
+          }
+        ],
+        "font_requirements": [
+          {
+            "family": "PingFangSC-Regular",
+            "name_kind": "source_name",
+            "source": "design",
+            "availability": "not_checked",
+            "source_pointers": [
+              "/info/37/font",
+              "/info/37/font/styles/0"
+            ],
+            "weights": [
+              400
+            ]
+          }
+        ],
+        "gaps": [],
+        "raw_font": {
+          "align": "left",
+          "kerning": 0,
+          "line": 22,
+          "size": 14,
+          "verticalAlignment": 0,
+          "styles": [
+            {
+              "underline": "0",
+              "fontWeight": 400,
+              "tailIndent": 0,
+              "baseWritingDirection": -1,
+              "line": 22,
+              "location": "0",
+              "minimumLineHeight": 22,
+              "length": "2",
+              "size": "14",
+              "color": {
+                "a": 0,
+                "b": 0,
+                "value": "rgba(23,23,24,1.000000)",
+                "g": 0,
+                "r": 0
+              },
+              "lineHeightMultiple": 0,
+              "defaultTabInterval": 0,
+              "firstLineHeadIndent": 0,
+              "hyphenationFactor": 0,
+              "lineBreakMode": 0,
+              "paragraphSpacing": "0",
+              "kern": 0,
+              "alignment": 0,
+              "maximumLineHeight": 22,
+              "displayName": "苹方-简 常规体",
+              "content": "女生",
+              "headerLevel": 0,
+              "lineSpacing": 0,
+              "headIndent": 0,
+              "tighteningFactorForTruncation": false,
+              "spacing": "0",
+              "font": "PingFangSC-Regular",
+              "strikethrough": "0",
+              "decorationLine": "underline",
+              "transform": "0",
+              "paragraphSpacingBefore": 0
+            }
+          ],
+          "color": {
+            "a": 1,
+            "b": 24,
+            "value": "rgba(23,23,24,1)",
+            "g": 23,
+            "r": 23
+          },
+          "displayName": "苹方-简 常规体",
+          "content": "女生",
+          "textAlignment": 0,
+          "spacing": 0,
+          "font": "PingFangSC-Regular",
+          "transform": 0
+        },
+        "base_style": {
+          "font_family": "PingFangSC-Regular",
+          "font_size": 14,
+          "font_weight": null,
+          "color": "rgba(23,23,24,1)",
+          "line_height": 22,
+          "letter_spacing": 0,
+          "source_fields": {
+            "font_family": "/info/37/font/font",
+            "font_size": "/info/37/font/size",
+            "line_height": "/info/37/font/line",
+            "letter_spacing": "/info/37/font/kerning",
+            "color": "/info/37/font/color/value",
+            "text_align": "/info/37/font/align",
+            "display_name": "/info/37/font/displayName"
+          },
+          "font_name_kind": "source_name",
+          "text_align": "left",
+          "display_name": "苹方-简 常规体",
+          "source_pointer": "/info/37/font"
+        },
+        "text_length_utf16": 2
+      }
+    }
+  ],
+  "ancestors": [
+    {
+      "node_id": "295335A7-8C3A-44D6-99BE-26CCE4324564",
+      "parent_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "name": "背景",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      }
+    },
+    {
+      "node_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "parent_id": null,
+      "name": "完善性别-未选择",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      }
+    },
+    {
+      "node_id": "AFB9FAAC-EAAA-4F30-8992-C3939AC1F5CB",
+      "parent_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "name": "编组 3",
+      "bounds": {
+        "x": 241,
+        "y": 309,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "node_id": "7192A08C-8876-42D7-A803-3E1EEE0F948A",
+      "parent_id": "AFB9FAAC-EAAA-4F30-8992-C3939AC1F5CB",
+      "name": "编组",
+      "bounds": {
+        "x": 264,
+        "y": 332,
+        "width": 18.371322500000133,
+        "height": 18.256192499999997
+      }
+    },
+    {
+      "node_id": "708B90D6-6D2B-4F75-A555-8A333E4BEC1E",
+      "parent_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "name": "编组 2",
+      "bounds": {
+        "x": 65,
+        "y": 309,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "node_id": "E83E9737-9069-4AFE-985B-A8E2E14CAE7D",
+      "parent_id": "708B90D6-6D2B-4F75-A555-8A333E4BEC1E",
+      "name": "编组",
+      "bounds": {
+        "x": 88,
+        "y": 332,
+        "width": 17.819356250000055,
+        "height": 18.026455
+      }
+    }
+  ],
+  "dds_layout_suggestions": [
+    {
+      "node_id": "DD0866A1-E9D2-4520-81EF-D13CFAFE70E1",
+      "source": "dds_derived_layout",
+      "style": {
+        "position": "relative",
+        "width": 375,
+        "height": 812,
+        "overflow": "hidden",
+        "display": "flex",
+        "flexDirection": "column"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "22A15A88-F735-4197-8ED9-BBF0AD7BB279",
+      "source": "dds_derived_layout",
+      "style": {
+        "position": "relative",
+        "overflow": "hidden",
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "14px 0 385px 0"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "75FB03BA-104E-449D-9294-A6277ADF1EAC",
+      "source": "dds_derived_layout",
+      "style": {
+        "overflowWrap": "break-word",
+        "color": "rgba(24,24,27,1)",
+        "fontSize": 30,
+        "fontFamily": "PingFangSC-Semibold",
+        "fontWeight": "600",
+        "textAlign": "left",
+        "whiteSpace": "nowrap",
+        "lineHeight": 42,
+        "margin": "60px 168px 0 27px"
+      },
+      "value": "选择你的性别"
+    },
+    {
+      "node_id": "59833838-223E-4D14-A356-43D503F5C92E",
+      "source": "dds_derived_layout",
+      "style": {
+        "overflowWrap": "break-word",
+        "color": "rgba(154,154,162,1)",
+        "fontSize": 12,
+        "fontFamily": "PingFangSC-Regular",
+        "fontWeight": "normal",
+        "textAlign": "left",
+        "whiteSpace": "nowrap",
+        "lineHeight": 17,
+        "margin": "2px 177px 0 30px"
+      },
+      "value": "用于为你推荐更合适的互动内容"
+    },
+    {
+      "node_id": "732C9E9A-B4C3-490E-9E55-DD995CDC17E2",
+      "source": "dds_derived_layout",
+      "style": {
+        "boxShadow": "0px 6px 12px 0px rgba(216,155,71,0.100000)",
+        "backgroundColor": "rgba(255,253,249,0.300000)",
+        "borderRadius": "22px",
+        "border": "1px solid rgba(238,220,196,1)",
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "45px 34px 18px 34px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "070AA01D-8B5A-4376-A740-3AFBBA938857",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundColor": "rgba(255,247,234,1.000000)",
+        "borderRadius": "50%",
+        "border": "1px solid rgba(238,220,196,1)",
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "22px 23px 22px 22px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "2A4B35A3-A8B4-4A8D-80A4-D125E63A9C0E",
+      "source": "dds_derived_layout",
+      "style": {
+        "width": 4,
+        "height": 4,
+        "border": "2px solid rgba(184,137,69,1)",
+        "marginLeft": 13,
+        "display": "flex",
+        "flexDirection": "column"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "2038B0C3-15C7-4FC2-89C3-FFAD4DD68F0C",
+      "source": "dds_derived_layout",
+      "style": {
+        "border": "2px solid rgba(184,137,69,1)",
+        "marginRight": 3,
+        "display": "flex",
+        "flexDirection": "column"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "BD62F561-40C5-4C2F-9838-6F76A39C5584",
+      "source": "dds_derived_layout",
+      "style": {
+        "width": 5,
+        "height": 5,
+        "border": "2px solid rgba(184,137,69,1)",
+        "display": "flex",
+        "flexDirection": "column",
+        "margin": "-3px -3px 12px 12px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "63C698CE-31FE-4303-941B-E5F440045057",
+      "source": "dds_derived_layout",
+      "style": {
+        "overflowWrap": "break-word",
+        "color": "rgba(23,23,24,1)",
+        "fontSize": 14,
+        "fontFamily": "PingFangSC-Regular",
+        "fontWeight": "normal",
+        "textAlign": "left",
+        "whiteSpace": "nowrap",
+        "lineHeight": 22,
+        "alignSelf": "center",
+        "marginTop": 13
+      },
+      "value": "男生"
+    },
+    {
+      "node_id": "7A78618E-4FB9-448C-BDF6-87DC3F3828E6",
+      "source": "dds_derived_layout",
+      "style": {
+        "boxShadow": "0px 6px 12px 0px rgba(216,155,71,0.100000)",
+        "backgroundColor": "rgba(255,253,249,0.300000)",
+        "borderRadius": "22px",
+        "border": "1px solid rgba(238,220,196,1)",
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "45px 34px 18px 34px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "6F9F3F2A-AB82-4A03-BD89-C6FF0E00AE67",
+      "source": "dds_derived_layout",
+      "style": {
+        "backgroundColor": "rgba(255,247,234,1.000000)",
+        "borderRadius": "50%",
+        "border": "1px solid rgba(238,220,196,1)",
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "22px 22px 26px 26px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "4019B220-A8AF-4DB5-9541-919CD692B0CD",
+      "source": "dds_derived_layout",
+      "style": {
+        "border": "2px solid rgba(184,137,69,1)",
+        "display": "flex",
+        "flexDirection": "column"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "610454AE-0632-4E71-B03B-C9DDC37A2500",
+      "source": "dds_derived_layout",
+      "style": {
+        "height": 6,
+        "border": "2px solid rgba(184,137,69,1)",
+        "display": "flex",
+        "flexDirection": "column",
+        "width": 6,
+        "margin": "12px 12px -4px -4px"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "DA74F91D-9D60-477C-93A8-A474E588C1C8",
+      "source": "dds_derived_layout",
+      "style": {
+        "width": 6,
+        "height": 6,
+        "border": "2px solid rgba(184,137,69,1)",
+        "display": "flex",
+        "flexDirection": "column"
+      },
+      "value": ""
+    },
+    {
+      "node_id": "E91048A7-8E43-48A3-9672-CCA438875BD8",
+      "source": "dds_derived_layout",
+      "style": {
+        "overflowWrap": "break-word",
+        "color": "rgba(23,23,24,1)",
+        "fontSize": 14,
+        "fontFamily": "PingFangSC-Regular",
+        "fontWeight": "normal",
+        "textAlign": "left",
+        "whiteSpace": "nowrap",
+        "lineHeight": 22,
+        "alignSelf": "center",
+        "marginTop": 13
+      },
+      "value": "女生"
+    },
+    {
+      "node_id": "BD5E7EF7-6D47-42BD-993A-A1200B811527",
+      "source": "dds_derived_layout",
+      "style": {
+        "position": "absolute",
+        "left": 143,
+        "top": -86,
+        "width": 315,
+        "height": 315,
+        "flexDirection": "row",
+        "display": "flex",
+        "padding": "103px 98px 200px 151px"
+      },
+      "value": ""
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "AFB9FAAC-EAAA-4F30-8992-C3939AC1F5CB:image",
+      "node_id": "AFB9FAAC-EAAA-4F30-8992-C3939AC1F5CB",
+      "kind": "exported_asset",
+      "format_hint": null,
+      "render_bounds": {
+        "x": 241,
+        "y": 309,
+        "width": 64,
+        "height": 64
+      },
+      "render_bounds_source_field": "node.bounds",
+      "source_field": "image",
+      "source_pointer": "/info/15/image",
+      "variants": [
+        {
+          "variant_id": "v-64e7afc779102acadf484a0b",
+          "source_field": "image.imageUrl",
+          "format_hint": null,
+          "is_original": true,
+          "format_verification": "requires_download"
+        },
+        {
+          "variant_id": "v-2f8143a207e54d5b10d57824",
+          "source_field": "image.svgUrl",
+          "format_hint": "svg",
+          "is_original": false,
+          "format_verification": "requires_download"
+        }
+      ],
+      "source_size": {
+        "height": 64,
+        "width": 64
+      },
+      "source_point": {
+        "x": 3916,
+        "y": -485
+      },
+      "pixel_dimensions": null,
+      "pixel_dimensions_status": "requires_download"
+    },
+    {
+      "asset_id": "708B90D6-6D2B-4F75-A555-8A333E4BEC1E:image",
+      "node_id": "708B90D6-6D2B-4F75-A555-8A333E4BEC1E",
+      "kind": "exported_asset",
+      "format_hint": null,
+      "render_bounds": {
+        "x": 65,
+        "y": 309,
+        "width": 64,
+        "height": 64
+      },
+      "render_bounds_source_field": "node.bounds",
+      "source_field": "image",
+      "source_pointer": "/info/21/image",
+      "variants": [
+        {
+          "variant_id": "v-e33a7618def230f72095b954",
+          "source_field": "image.imageUrl",
+          "format_hint": null,
+          "is_original": true,
+          "format_verification": "requires_download"
+        },
+        {
+          "variant_id": "v-d7acf937c3ed161d4e5c53af",
+          "source_field": "image.svgUrl",
+          "format_hint": "svg",
+          "is_original": false,
+          "format_verification": "requires_download"
+        }
+      ],
+      "source_size": {
+        "height": 64,
+        "width": 64
+      },
+      "source_point": {
+        "x": 3740,
+        "y": -485
+      },
+      "pixel_dimensions": null,
+      "pixel_dimensions_status": "requires_download"
+    }
+  ],
+  "total": 22,
+  "returned": 22,
+  "next_offset": null,
+  "truncated": false,
+  "preview_resource": "lanhu://design/bcd9357e8adb4a8c4ce9c6b51e3b9a69/preview/e5b473ee2597e2508c5d11c88f77d24e",
+  "reference_crop_resource": "lanhu://design/bcd9357e8adb4a8c4ce9c6b51e3b9a69/preview/e5b473ee2597e2508c5d11c88f77d24e",
+  "image_order": [
+    "reference_or_overlay"
+  ]
+}

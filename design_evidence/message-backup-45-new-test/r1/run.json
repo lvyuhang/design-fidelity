@@ -1,0 +1,142 @@
+{
+  "status": "NOT_ACCEPTED",
+  "scope": "validation of supplied implementation; not end-to-end development time",
+  "started_unix": 1791876460.369239,
+  "stages": [
+    {
+      "name": "preflight",
+      "seconds": 0.091,
+      "exit_code": 0
+    },
+    {
+      "name": "render",
+      "seconds": 2.24,
+      "exit_code": 0
+    },
+    {
+      "name": "gate",
+      "seconds": 0.733,
+      "exit_code": 1
+    }
+  ],
+  "gate_status": "FAIL",
+  "preflight": {
+    "status": "READY_FOR_RENDER",
+    "coverage": {
+      "nodes": 118,
+      "covered": 107,
+      "exceptions": [
+        "node 91C7F81B-BBAB-4A81-AF88-0DF6194FDCBD: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+        "node FF75EE8E-F764-423A-973B-8CCD6C8E3499: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+        "node 506F6A95-2DFC-4F73-B1A7-2EA2F755E1A4: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+        "node 9AA03999-E623-438A-96D5-DCFB3BE0CE59: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+        "node 2C34E24F-8122-4743-A948-449551EDF921: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+        "node D046C2A8-0AD8-4167-ABE8-80C765C91008: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+        "node BFE10B6B-F12E-459D-9AC3-F0235C7BFF65: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+        "node A17B4782-E31F-49C6-9872-73BCCCFAF1CE: 蓝湖返回的关系图标组边界为 152×752，与可见 14×14 图标不一致；已使用导出原图并人工核对",
+        "node 109A27EE-A12C-4E3C-B782-DC637A1ED913: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+        "node 15F0F477-CEA7-4135-BD2F-8DEC2712E08E: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖",
+        "node 71E736BD-69F4-4BBB-AA46-E1825CEB7E8D: 蓝湖节点只有位图引用而无可导出原始素材；Flutter 使用同形占位，几何由组件测试覆盖"
+      ]
+    },
+    "fonts": {
+      "text_nodes_checked": 16
+    },
+    "asset_count": 14,
+    "style_gaps": [],
+    "scope": "input integrity and font coverage; source-style completeness is separate; not visual acceptance"
+  },
+  "failures": [
+    {
+      "check": "features.asset_1139571f",
+      "label": "蓝湖原始切图：编组",
+      "failures": [
+        "mask_iou_loss=0.5772 > 0.5500"
+      ],
+      "error": null
+    },
+    {
+      "check": "features.asset_cdf57466",
+      "label": "蓝湖原始切图：编组备份 4",
+      "failures": [
+        "mask_iou_loss=0.6543 > 0.5500"
+      ],
+      "error": null
+    },
+    {
+      "check": "features.asset_6a8f5d20",
+      "label": "蓝湖原始切图：编组 3",
+      "failures": [
+        "mask_iou_loss=0.7127 > 0.5500"
+      ],
+      "error": null
+    },
+    {
+      "check": "features.asset_7efa4ad4",
+      "label": "蓝湖原始切图：编组",
+      "failures": [
+        "mask_iou_loss=0.7532 > 0.5500"
+      ],
+      "error": null
+    },
+    {
+      "check": "features.asset_5b85f55f",
+      "label": "蓝湖原始切图：编组",
+      "failures": [
+        "center_x_delta=3.08px > 2.00px",
+        "width_delta=-4.00px > 3.00px",
+        "height_delta=-5.50px > 3.00px",
+        "max_edge_delta=5.00px > 2.00px",
+        "ink_ratio=0.347; |ratio-1| > 0.450",
+        "mask_iou_loss=1.0000 > 0.5500"
+      ],
+      "error": null
+    },
+    {
+      "check": "features.asset_22f37677",
+      "label": "蓝湖原始切图：编组 2",
+      "failures": [
+        "width_delta=-4.00px > 3.00px",
+        "mask_iou_loss=0.5838 > 0.5500"
+      ],
+      "error": null
+    },
+    {
+      "check": "features.asset_67548d3b",
+      "label": "蓝湖原始切图：直线备份 3",
+      "failures": [
+        "center_x_delta=4.57px > 2.00px",
+        "center_y_delta=-2.06px > 2.00px"
+      ],
+      "error": null
+    }
+  ],
+  "metrics": {
+    "whole": {
+      "compared_pixels": 4688224,
+      "total_pixels": 4872000,
+      "mae": 2.1452,
+      "p95_max_channel": 5.0
+    },
+    "header": {
+      "compared_pixels": 711600,
+      "total_pixels": 726000,
+      "mae": 4.4228,
+      "p95_max_channel": 11.0
+    },
+    "conversation": {
+      "compared_pixels": 3136624,
+      "total_pixels": 3306000,
+      "mae": 0.7026,
+      "p95_max_channel": 1.0
+    },
+    "composer": {
+      "compared_pixels": 840000,
+      "total_pixels": 840000,
+      "mae": 5.6028,
+      "p95_max_channel": 5.0
+    }
+  },
+  "error": "Visual gate failed; see /Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-45-new-test/r1/gate/visual-gate-report.json",
+  "seconds": 3.065
+}

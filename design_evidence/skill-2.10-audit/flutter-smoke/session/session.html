@@ -1,0 +1,19 @@
+<!doctype html><meta charset="utf-8"><title>页面全程日志</title><style>body{font:15px/1.6 system-ui;max-width:1100px;margin:32px auto}td,th{padding:10px;text-align:left;border-bottom:1px solid #ddd}pre{white-space:pre-wrap}</style><h1>2.10 real Flutter fault injection · COMPLETE</h1><p>从 start 到当前/结束：290.216 秒；命令执行：14.148 秒；其余未归因时间：276.068 秒。</p><p>未归因时间含编辑、等待等，不能全部算为模型思考；start 前耗时未知。Token 未采集。</p><p><a href="task-run.html">逐轮视觉验证</a> · <a href="session.json">完整运行记录</a></p><table><tr><th>操作</th><th>状态</th><th>秒</th><th>说明</th><th>错误</th></tr><tr><td>validate</td><td>OK</td><td>7.201</td><td>正确合成夹具，冻结标准；验证配置入口与真实 Flutter 渲染</td><td></td></tr><tr><td>validate</td><td>FAILED</td><td>1.71</td><td>故障注入：只将图标下移 4px，冻结验收标准不变；预期拒绝</td><td>run_flutter.py returned 1; see /Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/session/002-run_flutter.log</td></tr><tr><td>validate</td><td>OK</td><td>5.234</td><td>撤回注入的 4px 偏移；验收契约不变，确认修复后可通过</td><td></td></tr><tr><td>finish</td><td>OK</td><td>0.003</td><td>合成夹具的参考布局与渲染已复查；正确、偏移4px、恢复依次 PASS/FAIL/PASS，Dart 分析通过。仅验证工具接入，不代表业务页还原或制作速度。</td><td></td></tr></table><pre>{
+  &quot;rounds&quot;: 3,
+  &quot;target_rounds&quot;: [
+    2,
+    3
+  ],
+  &quot;validation_attempts&quot;: 3,
+  &quot;implementation_revisions&quot;: 2,
+  &quot;criteria_revisions&quot;: 0,
+  &quot;classified_rounds&quot;: 3,
+  &quot;unchanged_render_attempts&quot;: 0,
+  &quot;repeat_attempts&quot;: 0,
+  &quot;over_target&quot;: false,
+  &quot;total_validation_seconds&quot;: 14.01,
+  &quot;latest_status&quot;: &quot;PASS&quot;,
+  &quot;tool_call_count&quot;: null,
+  &quot;timing_scope&quot;: &quot;Validation execution only; excludes work before first validation and model editing time&quot;,
+  &quot;count_scope&quot;: &quot;Tracked render/validation attempts only; not all model/tool calls or visual reviews&quot;
+}</pre>

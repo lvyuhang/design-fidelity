@@ -1,0 +1,117 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<title>视觉还原门禁报告</title><style>
+body{font:14px/1.5 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;margin:32px;color:#20242a;background:#f5f6f8}
+main{max-width:1180px;margin:auto}section{background:white;border:1px solid #e1e4e8;border-radius:14px;padding:22px;margin:20px 0;overflow:auto}
+table{border-collapse:collapse;width:100%;min-width:800px}th,td{border-bottom:1px solid #eceef1;padding:8px;text-align:left}img{width:375px;max-width:100%;border:1px solid #ddd}
+.shots{display:flex;gap:16px;flex-wrap:wrap}figure{margin:0}figcaption{color:#686b77;margin-top:6px}
+.ref{color:#15a46b}.actual{color:#e13d8c}code{background:#eef0f3;padding:2px 5px;border-radius:4px}
+</style></head><body><main><h1>视觉还原自动门禁</h1>
+<p>整体结果：PASS_WITH_EXCLUSIONS。绿色框为蓝湖原稿可见像素，粉色框为候选渲染可见像素。</p>
+<details><summary>验收范围、环境与排除项</summary><pre>{
+  &quot;skill_version&quot;: &quot;2.0.0&quot;,
+  &quot;coverage&quot;: {
+    &quot;nodes&quot;: 99,
+    &quot;covered&quot;: 84,
+    &quot;exceptions&quot;: [
+      &quot;node F9D266C7-4E8E-4457-9101-AF9D8E87F35B: 叫醒铃声位图没有 asset_id，显示未切图色块。&quot;,
+      &quot;node 16D00A1F-B22D-42A9-AF8E-21AAA5A16BEB: 初级任务包图标没有可导出的原始素材，显示未切图色块。&quot;,
+      &quot;node 279C55CE-5877-4BBF-B54E-5911B222546A: 头像位图没有 asset_id，MCP 返回 NoAssets，显示未切图色块。&quot;,
+      &quot;node 0811403E-78EA-46FF-A6C2-3165E38BA454: 关系图标没有可导出的原始素材，显示未切图色块。&quot;,
+      &quot;node 94ED355F-9520-45E2-97DA-437A6C2DB527: 关系图标没有可导出的原始素材，显示未切图色块。&quot;,
+      &quot;node FF31F439-1AC7-4A82-B646-08A7DD70DC08: 关系图标没有可导出的原始素材，显示未切图色块。&quot;,
+      &quot;node 3739EAF2-06B1-4022-B398-B395A9B91101: 睡前陪伴位图没有 asset_id，显示未切图色块。&quot;,
+      &quot;node D5BAC799-A869-43C7-A96A-B0372C38A786: 失眠哄睡位图没有 asset_id，显示未切图色块。&quot;,
+      &quot;node B431A994-9542-4C1B-A909-38E6F219D58E: 已过期印章没有可导出的原始素材，显示圆形未切图色块。&quot;,
+      &quot;node 07170E12-8CFD-4936-81DB-20E58C2711AD: 已过期印章没有可导出的原始素材，显示圆形未切图色块。&quot;,
+      &quot;node 1A06AA28-8C6F-4475-8C68-82E09FE93A0F: 已过期印章没有可导出的原始素材，显示圆形未切图色块。&quot;,
+      &quot;node FBD5B190-A244-4F91-A25A-366F0D7B8E84: 已过期印章没有可导出的原始素材，显示圆形未切图色块。&quot;,
+      &quot;node 3F8E161F-206C-4E5C-94C2-334720C6D22A: 已过期印章文字属于未导出素材，显示圆形未切图色块。&quot;,
+      &quot;node C331DE19-4566-4E30-84FE-681C81E528F1: 发私信图标没有可导出的原始素材，显示未切图色块。&quot;,
+      &quot;node 4AA365FC-66BC-45EB-A841-76D6C447D55B: 发私信图标没有可导出的原始素材，显示未切图色块。&quot;
+    ]
+  },
+  &quot;environment&quot;: {
+    &quot;renderer&quot;: &quot;flutter_test_repaint_boundary&quot;,
+    &quot;renderer_version&quot;: &quot;Flutter 3.47.7 / engine deb2874385&quot;,
+    &quot;platform&quot;: &quot;macOS arm64 software rasterizer&quot;,
+    &quot;locale&quot;: &quot;zh_CN&quot;,
+    &quot;state&quot;: &quot;TaskPlan44Screen default deterministic state at 375x812&quot;,
+    &quot;text_scale&quot;: 1
+  },
+  &quot;exclusions&quot;: [
+    {
+      &quot;rect&quot;: [
+        18,
+        103,
+        50,
+        50
+      ],
+      &quot;reason&quot;: &quot;头像位图未导出&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        88,
+        134,
+        14,
+        14
+      ],
+      &quot;reason&quot;: &quot;关系图标未导出&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        277,
+        120,
+        16,
+        16
+      ],
+      &quot;reason&quot;: &quot;发私信图标未导出&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        33,
+        219,
+        20,
+        20
+      ],
+      &quot;reason&quot;: &quot;初级任务包图标未导出&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        33,
+        440,
+        39,
+        39
+      ],
+      &quot;reason&quot;: &quot;叫醒铃声位图未导出&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        35,
+        569,
+        38,
+        38
+      ],
+      &quot;reason&quot;: &quot;睡前陪伴位图未导出&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        35,
+        699,
+        39,
+        39
+      ],
+      &quot;reason&quot;: &quot;失眠哄睡位图未导出&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        270,
+        675,
+        65,
+        65
+      ],
+      &quot;reason&quot;: &quot;已过期印章未导出&quot;
+    }
+  ],
+  &quot;excluded_fraction&quot;: 0.03961576354679808
+}</pre></details>
+<section><h2>r5 · <strong style="color:#137A52">PASS</strong></h2><div class="shots"><figure><img src="reference.png" alt="reference"><figcaption>蓝湖原稿</figcaption></figure><figure><img src="1-r5-candidate.png" alt="candidate"><figcaption>候选实现</figcaption></figure><figure><img src="1-r5-alignment-overlay.png" alt="alignment overlay"><figcaption>可见像素对齐</figcaption></figure></div><p class="legend"><span class="ref">原稿可见边界</span> · <span class="actual">实现可见边界</span></p><h3>区域像素门禁</h3><table><tr><th>区域</th><th>MAE</th><th>P95</th><th>结果</th><th>原因</th></tr><tr><td>完整任务计划页</td><td>3.0890</td><td>8.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr></table><h3>元素几何门禁</h3><table><tr><th>元素</th><th>ΔX</th><th>ΔY</th><th>Δ宽</th><th>Δ高</th><th>结果</th><th>原因</th></tr><tr><td>17:00-18:00</td><td>0.29</td><td>0.18</td><td>0.25</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>叫醒铃声</td><td>0.16</td><td>-0.09</td><td>0.00</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>07:00-08:00</td><td>0.91</td><td>-0.17</td><td>2.50</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>录制5-60s叫醒语音</td><td>0.73</td><td>-0.07</td><td>2.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>去完成</td><td>1.89</td><td>-0.55</td><td>-0.25</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>睡前陪伴</td><td>0.57</td><td>-0.13</td><td>0.25</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>21:00-22:00</td><td>0.46</td><td>-0.15</td><td>2.25</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>语音陪伴不少于10分钟</td><td>0.34</td><td>-0.04</td><td>0.25</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>未开始</td><td>0.23</td><td>-0.58</td><td>0.50</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>未完成</td><td>-0.38</td><td>-0.03</td><td>0.25</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>今天</td><td>-0.01</td><td>-0.10</td><td>0.50</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>未开始</td><td>0.34</td><td>-0.04</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>未开始</td><td>0.34</td><td>-0.04</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>未开始</td><td>0.34</td><td>-0.04</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>到期</td><td>-0.23</td><td>-0.07</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>16</td><td>0.19</td><td>-0.08</td><td>0.25</td><td>-0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>17</td><td>0.19</td><td>0.03</td><td>0.25</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>18</td><td>0.15</td><td>-0.09</td><td>0.25</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>19</td><td>0.26</td><td>-0.05</td><td>0.50</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>20</td><td>0.10</td><td>-0.12</td><td>0.25</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>21</td><td>-0.04</td><td>-0.13</td><td>0.25</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>22</td><td>1.03</td><td>-0.14</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>初级任务包  7天     </td><td>-0.14</td><td>-0.00</td><td>0.75</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>送礼大神</td><td>-0.47</td><td>0.02</td><td>0.00</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>（温度的司机）</td><td>0.08</td><td>-0.10</td><td>0.50</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>9:41</td><td>0.08</td><td>-1.25</td><td>0.00</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>任务计划</td><td>0.09</td><td>-0.08</td><td>0.25</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>和Ta的关系</td><td>1.78</td><td>-0.06</td><td>0.25</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>到期</td><td>-0.21</td><td>-2.04</td><td>0.25</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>07月22日</td><td>0.20</td><td>-0.03</td><td>0.50</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>任务进度（最低完成 5 个）</td><td>-0.22</td><td>0.06</td><td>0.50</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>4 / 7</td><td>0.17</td><td>0.15</td><td>2.25</td><td>2.75</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>失眠哄睡</td><td>-0.39</td><td>-0.00</td><td>0.25</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>01:00-02:00</td><td>0.61</td><td>-0.14</td><td>2.25</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>语音陪伴不少于10分钟</td><td>0.34</td><td>-0.04</td><td>0.25</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>发私信</td><td>0.16</td><td>-0.51</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>备注：周末畅聊，喜欢语音聊天</td><td>-0.32</td><td>-0.06</td><td>0.50</td><td>0.25</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>到期时间底部高亮线</td><td>-1.42</td><td>-0.01</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>任务进度滑块</td><td>0.01</td><td>0.02</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>Home Indicator</td><td>0.02</td><td>0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr></table><h3>组内关系门禁</h3><table><tr><th>关系</th><th>原稿差值</th><th>实现差值</th><th>偏差</th><th>结果</th></tr><tr><td>昵称与身份说明垂直居中</td><td>0.2554</td><td>0.3789</td><td>0.1235</td><td><strong style="color:#137A52">PASS</strong></td></tr></table><h3>颜色采样门禁</h3><table><tr><th>采样</th><th>原稿 RGB</th><th>实现 RGB</th><th>最大通道偏差</th><th>结果</th></tr><tr><td>任务卡白色表面</td><td>[255.0, 255.0, 253.71]</td><td>[255.0, 255.0, 254.0]</td><td>0.29</td><td><strong style="color:#137A52">PASS</strong></td></tr><tr><td>今天日期黑色表面</td><td>[34.0, 36.0, 42.0]</td><td>[34.0, 36.0, 42.0]</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td></tr><tr><td>到期时间底部高亮线颜色</td><td>[255.0, 237.67, 201.9]</td><td>[255.0, 236.98, 200.74]</td><td>1.16</td><td><strong style="color:#137A52">PASS</strong></td></tr><tr><td>任务计划卡片底部阴影边缘</td><td>[241.75, 224.75, 192.5]</td><td>[242.56, 225.25, 192.75]</td><td>0.81</td><td><strong style="color:#137A52">PASS</strong></td></tr><tr><td>任务计划卡片底部阴影衰减</td><td>[249.0, 240.25, 223.0]</td><td>[248.69, 239.25, 219.81]</td><td>3.19</td><td><strong style="color:#137A52">PASS</strong></td></tr></table></section></main></body></html>

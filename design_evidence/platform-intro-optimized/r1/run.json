@@ -1,0 +1,230 @@
+{
+  "status": "DIAGNOSTIC",
+  "scope": "Legacy frozen v1 contract diagnostic; never a v2 visual PASS",
+  "seconds": 2.767,
+  "gate_status": "DIAGNOSTIC_DIFFERENCES",
+  "failures": [
+    {
+      "check": "regions.whole",
+      "failures": [
+        "mae=12.1268 > 5.0000",
+        "p95=121.00 > 26.00"
+      ]
+    },
+    {
+      "check": "regions.capabilities",
+      "failures": [
+        "mae=15.0548 > 7.0000",
+        "p95=151.00 > 28.00"
+      ]
+    },
+    {
+      "check": "regions.benefits",
+      "failures": [
+        "mae=19.0605 > 8.0000",
+        "p95=131.00 > 55.00"
+      ]
+    },
+    {
+      "check": "regions.cta",
+      "failures": [
+        "mae=12.1696 > 3.0000",
+        "p95=58.00 > 8.00"
+      ]
+    },
+    {
+      "check": "features.capability_badge",
+      "failures": [
+        "center_x_delta=-1.76px > 1.00px",
+        "center_y_delta=-6.38px > 1.00px",
+        "max_edge_delta=7.00px > 2.00px"
+      ]
+    },
+    {
+      "check": "features.benefit_badge",
+      "failures": [
+        "center_y_delta=-7.21px > 1.00px",
+        "max_edge_delta=7.25px > 2.00px"
+      ]
+    },
+    {
+      "check": "features.capability_1_icon",
+      "failures": [
+        "center_y_delta=-3.00px > 1.00px",
+        "max_edge_delta=3.00px > 1.50px"
+      ]
+    },
+    {
+      "check": "features.capability_1_copy",
+      "failures": [
+        "center_y_delta=-1.73px > 1.00px",
+        "max_edge_delta=2.25px > 2.00px"
+      ]
+    },
+    {
+      "check": "features.capability_2_icon",
+      "failures": [
+        "center_y_delta=-3.00px > 1.00px",
+        "max_edge_delta=3.00px > 1.50px"
+      ]
+    },
+    {
+      "check": "features.capability_2_copy",
+      "failures": [
+        "center_y_delta=-6.73px > 1.00px",
+        "height_delta=-5.00px > 1.50px",
+        "max_edge_delta=10.00px > 2.00px"
+      ]
+    },
+    {
+      "check": "features.capability_3_icon",
+      "failures": [
+        "center_y_delta=-5.00px > 1.00px",
+        "max_edge_delta=5.00px > 1.50px"
+      ]
+    },
+    {
+      "check": "features.capability_3_copy",
+      "failures": [
+        "center_x_delta=3.72px > 1.00px",
+        "center_y_delta=-6.77px > 1.00px",
+        "height_delta=-6.00px > 1.50px",
+        "max_edge_delta=11.00px > 2.00px"
+      ]
+    },
+    {
+      "check": "features.capability_4_icon",
+      "failures": [
+        "center_y_delta=-5.00px > 1.00px",
+        "max_edge_delta=5.00px > 1.50px"
+      ]
+    },
+    {
+      "check": "features.capability_4_copy",
+      "failures": [
+        "center_x_delta=4.18px > 1.00px",
+        "center_y_delta=-6.95px > 1.00px",
+        "height_delta=-6.00px > 1.50px",
+        "max_edge_delta=11.00px > 2.00px"
+      ]
+    },
+    {
+      "check": "features.reward_1_icon",
+      "failures": [
+        "center_x_delta=-1.00px > 1.00px",
+        "center_y_delta=-6.08px > 1.00px",
+        "height_delta=-4.75px > 1.50px",
+        "max_edge_delta=6.75px > 2.00px"
+      ]
+    },
+    {
+      "check": "features.reward_1_copy",
+      "failures": [
+        "center_x_delta=1.73px > 1.00px",
+        "center_y_delta=1.68px > 1.00px",
+        "ink_ratio=1.228; |ratio-1| > 0.200"
+      ]
+    },
+    {
+      "check": "features.reward_2_icon",
+      "failures": [
+        "center_x_delta=-1.00px > 1.00px",
+        "center_y_delta=-6.09px > 1.00px",
+        "height_delta=-4.75px > 1.50px",
+        "max_edge_delta=6.75px > 2.00px"
+      ]
+    },
+    {
+      "check": "features.reward_2_copy",
+      "failures": [
+        "center_x_delta=1.23px > 1.00px",
+        "center_y_delta=3.29px > 1.00px",
+        "max_edge_delta=3.00px > 2.00px",
+        "ink_ratio=1.225; |ratio-1| > 0.200"
+      ]
+    },
+    {
+      "check": "features.reward_3_icon",
+      "failures": [
+        "center_x_delta=-1.00px > 1.00px",
+        "center_y_delta=-5.94px > 1.00px",
+        "height_delta=-5.75px > 1.50px",
+        "max_edge_delta=7.75px > 2.00px"
+      ]
+    },
+    {
+      "check": "features.reward_3_copy",
+      "failures": [
+        "center_y_delta=3.19px > 1.00px",
+        "max_edge_delta=3.00px > 2.00px",
+        "ink_ratio=1.223; |ratio-1| > 0.200"
+      ]
+    },
+    {
+      "check": "relations.capability_header_vertical_alignment",
+      "failures": []
+    },
+    {
+      "check": "relations.benefit_header_vertical_alignment",
+      "failures": []
+    },
+    {
+      "check": "relations.capability_row_1_vertical_alignment",
+      "failures": []
+    },
+    {
+      "check": "relations.capability_row_2_vertical_alignment",
+      "failures": []
+    },
+    {
+      "check": "relations.capability_row_3_vertical_alignment",
+      "failures": []
+    },
+    {
+      "check": "relations.capability_row_4_vertical_alignment",
+      "failures": []
+    },
+    {
+      "check": "relations.reward_row_1_vertical_alignment",
+      "failures": []
+    },
+    {
+      "check": "relations.reward_row_2_vertical_alignment",
+      "failures": []
+    },
+    {
+      "check": "relations.reward_row_3_vertical_alignment",
+      "failures": []
+    }
+  ],
+  "metrics": {
+    "whole": {
+      "mae": 12.1268,
+      "p95_max_channel": 121.0
+    },
+    "capabilities": {
+      "mae": 15.0548,
+      "p95_max_channel": 151.0
+    },
+    "benefits": {
+      "mae": 19.0605,
+      "p95_max_channel": 131.0
+    },
+    "cta": {
+      "mae": 12.1696,
+      "p95_max_channel": 58.0
+    }
+  },
+  "stages": [
+    {
+      "name": "render",
+      "seconds": 2.281,
+      "exit_code": 0
+    },
+    {
+      "name": "diagnostic_gate",
+      "seconds": 0.485,
+      "exit_code": 1
+    }
+  ]
+}

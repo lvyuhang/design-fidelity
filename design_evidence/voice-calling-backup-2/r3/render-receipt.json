@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "contract_sha256": "8426957f71d23c80c70cacca6f5039b6536a6f1a8f7d2dfd8200e2fa9636a8ad",
+  "candidate_sha256": "d585d4531f4dd70b11fca21ddf265020f08e9d85ed9414640d7ae01cbc89f5d4",
+  "environment": {
+    "renderer": "flutter-test-skia",
+    "renderer_version": "Flutter 3.47.7 / engine deb287481e",
+    "platform": "macOS widget-test 375x812 @4x",
+    "locale": "zh_CN",
+    "state": "voice-calling-backup-2",
+    "text_scale": 1
+  },
+  "inputs": {
+    "../../flutter_ui_components/assets/fonts/PingFangSC-Medium.otf": "6c87f53a06171e0902ae28ea9c83dba6a7c0a0414ff7cf3e9a2e607b7a6553b3",
+    "../../flutter_ui_components/assets/fonts/PingFangSC-Regular.otf": "5fcefec72fdbf5360a21b4a65cf0922a43f1b8393ec24dfb73d18caa281a0e4d",
+    "../../flutter_ui_components/assets/fonts/PingFangSC-Semibold.otf": "ddcdb289c41824fe44b378ae4a742a924fa6b4d3b75be66829d72ea29b5dd6ff",
+    "../../flutter_ui_components/assets/lanhu/voice_calling_backup_2/assets/133b8e33c13b283abc95f060ebd21acf1ee75d7b90a8c1024baebafc282c82a5.png": "7f3d55cb21fef78fb197d2d71f08ab6a00819f66179f9e9df01d09f7f0189d9f",
+    "../../flutter_ui_components/assets/lanhu/voice_calling_backup_2/assets/558d8e2c005694e3681dc3c9ec9863006e82b324a44114abed71e1d008aa5152.png": "22414394d4f32c246e7d651befb0631ec36d927066f88a479a51db83c75cbf58",
+    "../../flutter_ui_components/assets/lanhu/voice_calling_backup_2/assets/dc893d0b1e3bc8139d1e511f5250f7290a0fbf689312bef2397e310b0ec37e56.png": "93197793e91598afc91359cc0e4ea6cd9446f4b9c96bc15d65fbd92666d8c238",
+    "../../flutter_ui_components/assets/lanhu/voice_calling_backup_2/assets/e4e467e6bab6852ac70c36d2b159fb5a0a730149ada97ffcc83dffd906683902.png": "09740aa08a332419e84e510ef7e721d5ad4ebe95bb04b8fd1bdbd871d3ec8e24",
+    "../../flutter_ui_components/lib/experiments/voice_calling_backup_2_page.dart": "d106d2d9c4090e9bafd8e9023eb17d1c177689fc15adb66a9d772f394d1ba092",
+    "../../flutter_ui_components/pubspec.lock": "d764df020ca4eb901ccd2cead6955f5e8600adcc872c563512552b5aa1a815f7",
+    "../../flutter_ui_components/pubspec.yaml": "4a056b74125ea5d9729ec20602d9b1ee1abd76ae12cc003804a52126f2311178",
+    "../../flutter_ui_components/test/voice_calling_backup_2_render_test.dart": "e599bbe89e90414e6be35fe591b48bf32b3db3377c05cb69e66255c84b1c7322",
+    "reference.png": "0f9e1c2bb5e2dece4e090c80dd3b97f33beaed0c8e6991570560c6bb5cccae18",
+    "source/snapshot.json": "acf52f6dcd6bbf3683292cfd224c25ad84ce42446956017cd0f62a212695b985"
+  },
+  "command": [
+    "env",
+    "VOICE_CALLING_BACKUP_2_RENDER_OUTPUT=/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/voice-calling-backup-2/r3/render.png",
+    "flutter",
+    "test",
+    "--no-pub",
+    "test/voice_calling_backup_2_render_test.dart",
+    "--plain-name",
+    "voice calling backup 2 renders at source 4x"
+  ],
+  "cwd": "/Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components",
+  "exit_code": 0,
+  "started_ns": 1791859999443197000,
+  "finished_ns": 1791860001302201000
+}

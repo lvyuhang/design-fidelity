@@ -1,0 +1,16 @@
+{
+  "fonts": {
+    "PingFangSC-Regular@400": {
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components/assets/fonts/PingFangSC-Regular.otf",
+      "runtime_family": "SourcePingFang"
+    },
+    "PingFangSC-Medium@500": {
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components/assets/fonts/PingFangSC-Medium.otf",
+      "runtime_family": "SourcePingFang"
+    },
+    "PingFangSC-Semibold@600": {
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components/assets/fonts/PingFangSC-Semibold.otf",
+      "runtime_family": "SourcePingFang"
+    }
+  }
+}

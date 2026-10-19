@@ -1,0 +1,58 @@
+{
+  "case": "性别选择：MCP 首次实现，不作实现后的视觉修正",
+  "fixtures": {
+    "none": {
+      "snapshot_id": "bcd9357e8adb4a8c4ce9c6b51e3b9a69",
+      "version": "9121ae6b-b534-4070-aa1b-5085a2406781"
+    },
+    "female": {
+      "snapshot_id": "63e113909e6f5346b547c71fb5dbc651",
+      "version": "6c06f0c3-cc7b-4d0c-8617-04693fdbb877"
+    }
+  },
+  "stage": [
+    375,
+    350
+  ],
+  "source_region": [
+    0,
+    146,
+    375,
+    350
+  ],
+  "input": "本轮 MCP 原稿预览、节点和原始资源；已核实 SHA-256 的本地原图和同套苹方字体",
+  "rules": [
+    "独立组件，仅依赖 Flutter 和 5 份原始导出图标；不读取、复制或导入校准版实现与辅助绘图器",
+    "不调用底层蓝湖 API；不以原稿裁切代替组件",
+    "首次渲染前冻结代码；渲染后仅测量和报告，不调整视觉",
+    "仅编译或运行阻塞可修复，须记录",
+    "已知经验可用于首次实现，不刻意重复错误"
+  ],
+  "first_pass_decisions": [
+    "原画布坐标减去裁切原点；Flutter 标准文字、渐变、圆角、边框",
+    "阴影使用 BoxShadow blurRadius=12；按源外阴影语义预先裁除透明卡片内部",
+    "背景模糊按现有 Sketch radius/2 经验映射为 sigma；非本轮对照后调参",
+    "盾牌外框和勾按 MCP 完整控制点独立生成；缺失布尔填充明确省略",
+    "raw decorationLine=underline 与 underline=0 矛盾，按后者和输入原稿不加下划线"
+  ],
+  "resource_gap": {
+    "node": "5E2B6430-3BE7-47B1-9D0E-86167542ECE2",
+    "reason": "盾牌内部布尔填充无 points、无导出资源",
+    "action": "保留可用外框和勾；省略缺失填充，不用截图补丁",
+    "excluded_from_common_score": [
+      295,
+      299,
+      37,
+      34
+    ],
+    "calibrated_baseline": "现有校准版该区使用原稿小图裁切，不能视为独立还原证据"
+  },
+  "evaluation": "两个固定源状态，原生 4x 像素网格，关闭 widget 测试的禁用阴影模式；同时保留全画布和排除盾牌区域的指标；不输出还原度百分比",
+  "limitations": [
+    "当前会话已有还原经验，非无历史上下文的严格盲测",
+    "首次输入允许 MCP 设计图，非仅 JSON 实验",
+    "一个模块一次实现的两个状态，不能推断平均还原度"
+  ],
+  "post_freeze_visual_revisions": 0,
+  "blocking_repairs": []
+}

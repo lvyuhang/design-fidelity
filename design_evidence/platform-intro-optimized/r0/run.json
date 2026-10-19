@@ -1,0 +1,238 @@
+{
+  "status": "DIAGNOSTIC",
+  "scope": "Legacy frozen v1 contract diagnostic; never a v2 visual PASS",
+  "seconds": 2.617,
+  "gate_status": "DIAGNOSTIC_DIFFERENCES",
+  "failures": [
+    {
+      "check": "regions.whole",
+      "failures": [
+        "mae=13.3147 > 5.0000",
+        "p95=129.00 > 26.00"
+      ]
+    },
+    {
+      "check": "regions.capabilities",
+      "failures": [
+        "mae=15.0241 > 7.0000",
+        "p95=150.00 > 28.00"
+      ]
+    },
+    {
+      "check": "regions.benefits",
+      "failures": [
+        "mae=24.4171 > 8.0000",
+        "p95=199.00 > 55.00"
+      ]
+    },
+    {
+      "check": "regions.cta",
+      "failures": [
+        "mae=6.3211 > 3.0000",
+        "p95=58.00 > 8.00"
+      ]
+    },
+    {
+      "check": "features.capability_badge",
+      "failures": [
+        "center_x_delta=2.24px > 1.00px",
+        "max_edge_delta=2.75px > 2.00px"
+      ]
+    },
+    {
+      "check": "features.benefit_badge",
+      "failures": [
+        "center_x_delta=8.20px > 1.00px",
+        "width_delta=-8.25px > 1.50px",
+        "max_edge_delta=8.25px > 2.00px"
+      ]
+    },
+    {
+      "check": "features.benefit_heading",
+      "failures": [
+        "center_x_delta=-2.53px > 1.00px",
+        "width_delta=2.75px > 1.50px",
+        "max_edge_delta=2.50px > 2.00px"
+      ]
+    },
+    {
+      "check": "features.capability_1_icon",
+      "failures": [
+        "center_y_delta=3.00px > 1.00px",
+        "max_edge_delta=3.00px > 1.50px"
+      ]
+    },
+    {
+      "check": "features.capability_1_copy",
+      "failures": [
+        "center_y_delta=4.27px > 1.00px",
+        "max_edge_delta=4.00px > 2.00px"
+      ]
+    },
+    {
+      "check": "features.capability_2_icon",
+      "failures": [
+        "center_x_delta=6.08px > 1.00px",
+        "center_y_delta=2.46px > 1.00px",
+        "width_delta=14.00px > 1.25px",
+        "height_delta=17.00px > 1.25px",
+        "max_edge_delta=8.50px > 1.50px"
+      ]
+    },
+    {
+      "check": "features.capability_2_copy",
+      "failures": [
+        "center_x_delta=2.93px > 1.00px",
+        "center_y_delta=-1.48px > 1.00px",
+        "width_delta=5.00px > 1.50px",
+        "height_delta=4.00px > 1.50px",
+        "max_edge_delta=2.50px > 2.00px",
+        "ink_ratio=1.360; |ratio-1| > 0.200"
+      ]
+    },
+    {
+      "check": "features.capability_3_copy",
+      "failures": [
+        "center_y_delta=-4.78px > 1.00px",
+        "max_edge_delta=5.00px > 2.00px"
+      ]
+    },
+    {
+      "check": "features.capability_4_icon",
+      "failures": [
+        "center_x_delta=6.78px > 1.00px",
+        "width_delta=14.00px > 1.25px",
+        "height_delta=21.00px > 1.25px",
+        "max_edge_delta=10.50px > 1.50px"
+      ]
+    },
+    {
+      "check": "features.capability_4_copy",
+      "failures": [
+        "center_y_delta=-4.67px > 1.00px",
+        "width_delta=5.00px > 1.50px",
+        "height_delta=3.50px > 1.50px",
+        "max_edge_delta=5.00px > 2.00px",
+        "ink_ratio=1.320; |ratio-1| > 0.200"
+      ]
+    },
+    {
+      "check": "features.reward_1_icon",
+      "failures": [
+        "center_x_delta=9.61px > 1.00px",
+        "center_y_delta=3.54px > 1.00px",
+        "width_delta=-12.00px > 1.50px",
+        "height_delta=-2.00px > 1.50px",
+        "max_edge_delta=14.00px > 2.00px",
+        "ink_ratio=0.756; |ratio-1| > 0.200"
+      ]
+    },
+    {
+      "check": "features.reward_1_copy",
+      "failures": [
+        "center_x_delta=13.56px > 1.00px",
+        "center_y_delta=1.23px > 1.00px",
+        "width_delta=-14.00px > 1.50px",
+        "max_edge_delta=16.75px > 2.00px"
+      ]
+    },
+    {
+      "check": "features.reward_2_icon",
+      "failures": [
+        "center_x_delta=9.61px > 1.00px",
+        "center_y_delta=3.53px > 1.00px",
+        "width_delta=-12.00px > 1.50px",
+        "height_delta=-2.00px > 1.50px",
+        "max_edge_delta=14.00px > 2.00px",
+        "ink_ratio=0.755; |ratio-1| > 0.200"
+      ]
+    },
+    {
+      "check": "features.reward_2_copy",
+      "failures": [
+        "center_x_delta=14.02px > 1.00px",
+        "center_y_delta=2.53px > 1.00px",
+        "width_delta=-14.50px > 1.50px",
+        "max_edge_delta=17.00px > 2.00px"
+      ]
+    },
+    {
+      "check": "features.reward_3_icon",
+      "failures": [
+        "center_x_delta=9.54px > 1.00px",
+        "center_y_delta=3.69px > 1.00px",
+        "width_delta=-12.00px > 1.50px",
+        "height_delta=-5.00px > 1.50px",
+        "max_edge_delta=14.00px > 2.00px",
+        "ink_ratio=0.723; |ratio-1| > 0.200"
+      ]
+    },
+    {
+      "check": "features.reward_3_copy",
+      "failures": [
+        "center_x_delta=14.39px > 1.00px",
+        "center_y_delta=2.61px > 1.00px",
+        "width_delta=-13.50px > 1.50px",
+        "max_edge_delta=17.00px > 2.00px"
+      ]
+    },
+    {
+      "check": "relations.capability_row_1_vertical_alignment",
+      "failures": []
+    },
+    {
+      "check": "relations.capability_row_2_vertical_alignment",
+      "failures": []
+    },
+    {
+      "check": "relations.capability_row_3_vertical_alignment",
+      "failures": []
+    },
+    {
+      "check": "relations.capability_row_4_vertical_alignment",
+      "failures": []
+    },
+    {
+      "check": "relations.reward_row_1_vertical_alignment",
+      "failures": []
+    },
+    {
+      "check": "relations.reward_row_2_vertical_alignment",
+      "failures": []
+    },
+    {
+      "check": "relations.reward_row_3_vertical_alignment",
+      "failures": []
+    }
+  ],
+  "metrics": {
+    "whole": {
+      "mae": 13.3147,
+      "p95_max_channel": 129.0
+    },
+    "capabilities": {
+      "mae": 15.0241,
+      "p95_max_channel": 150.0
+    },
+    "benefits": {
+      "mae": 24.4171,
+      "p95_max_channel": 199.0
+    },
+    "cta": {
+      "mae": 6.3211,
+      "p95_max_channel": 58.0
+    }
+  },
+  "stages": [
+    {
+      "name": "render",
+      "seconds": 2.182,
+      "exit_code": 0
+    },
+    {
+      "name": "diagnostic_gate",
+      "seconds": 0.435,
+      "exit_code": 1
+    }
+  ]
+}

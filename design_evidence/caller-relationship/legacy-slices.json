@@ -1,0 +1,301 @@
+{
+  "status": "success",
+  "design_id": "9f70e167-fbe4-4116-8b6c-143b6cd584a3",
+  "design_name": "拨打方-1备份 2",
+  "version": "版本7",
+  "slice_scale": 4,
+  "canvas_size": {
+    "width": 187.5,
+    "height": 406
+  },
+  "total_slices": 5,
+  "slices": [
+    {
+      "id": "9E11CDEB-EA46-4549-9E96-14B9CF3C2126",
+      "name": "矩形 2",
+      "type": "shape",
+      "download_url": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngd96ea2ce1d35b65eaf63290e4ac1077314e60f4fec365d2990b13a61f3b39813",
+      "size": "375x132",
+      "format": "png",
+      "svg_url": "https://lanhu-oss-2537-2.lanhuapp.com/SketchSVG44e31fae57de4e074ff9503a533d4f10789595e42997df75ef326f2316b2d8c3",
+      "scale_urls": {
+        "1x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngd96ea2ce1d35b65eaf63290e4ac1077314e60f4fec365d2990b13a61f3b39813?x-oss-process=image/resize,w_375,h_132/format,png",
+        "2x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngd96ea2ce1d35b65eaf63290e4ac1077314e60f4fec365d2990b13a61f3b39813?x-oss-process=image/resize,w_750,h_264/format,png",
+        "3x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngd96ea2ce1d35b65eaf63290e4ac1077314e60f4fec365d2990b13a61f3b39813?x-oss-process=image/resize,w_1125,h_396/format,png",
+        "ios_1x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngd96ea2ce1d35b65eaf63290e4ac1077314e60f4fec365d2990b13a61f3b39813?x-oss-process=image/resize,w_375,h_132/format,png",
+        "ios_2x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngd96ea2ce1d35b65eaf63290e4ac1077314e60f4fec365d2990b13a61f3b39813?x-oss-process=image/resize,w_750,h_264/format,png",
+        "ios_3x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngd96ea2ce1d35b65eaf63290e4ac1077314e60f4fec365d2990b13a61f3b39813?x-oss-process=image/resize,w_1125,h_396/format,png",
+        "android_mdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngd96ea2ce1d35b65eaf63290e4ac1077314e60f4fec365d2990b13a61f3b39813?x-oss-process=image/resize,w_375,h_132/format,png",
+        "android_hdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngd96ea2ce1d35b65eaf63290e4ac1077314e60f4fec365d2990b13a61f3b39813?x-oss-process=image/resize,w_563,h_198/format,png",
+        "android_xhdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngd96ea2ce1d35b65eaf63290e4ac1077314e60f4fec365d2990b13a61f3b39813?x-oss-process=image/resize,w_750,h_264/format,png",
+        "android_xxhdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngd96ea2ce1d35b65eaf63290e4ac1077314e60f4fec365d2990b13a61f3b39813?x-oss-process=image/resize,w_1125,h_396/format,png",
+        "android_xxxhdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngd96ea2ce1d35b65eaf63290e4ac1077314e60f4fec365d2990b13a61f3b39813"
+      },
+      "logical_size": {
+        "width": 375,
+        "height": 132,
+        "note": "1x logical px; stored at 4x = 1500x528px"
+      },
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "asset_kind": "exported_asset",
+      "layer_path": "矩形 2",
+      "metadata": {
+        "fills": [
+          {
+            "gradient": {
+              "colorStops": [
+                {
+                  "position": 0,
+                  "color": {
+                    "a": 0,
+                    "b": 34,
+                    "value": "rgba(41,37,34,0)",
+                    "g": 37,
+                    "r": 41
+                  }
+                },
+                {
+                  "position": 1,
+                  "color": {
+                    "a": 0.9,
+                    "b": 0,
+                    "value": "rgba(0,0,0,0.9)",
+                    "g": 0,
+                    "r": 0
+                  }
+                }
+              ],
+              "type": "linear",
+              "gradientType": 0,
+              "to": {
+                "x": 0.5,
+                "y": 1
+              },
+              "elipseLength": 0,
+              "from": {
+                "x": 0.5,
+                "y": 0.045010652393102646
+              }
+            },
+            "patternTileScale": 1,
+            "noiseIntensity": 0,
+            "type": "gradient",
+            "blendMode": 0,
+            "noiseIndex": 0,
+            "opacity": 1,
+            "patternFillType": 1,
+            "isEnabled": true,
+            "fillType": 1
+          }
+        ],
+        "opacity": 100
+      }
+    },
+    {
+      "id": "A92C98EC-11D4-4397-AB42-8707D6930570",
+      "name": "矩形",
+      "type": "shape",
+      "download_url": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng30f2109cadb2adf78daf71fef57474d3ba687a5c4f6d9b88dc054baf35859b3b",
+      "size": "375x208",
+      "format": "png",
+      "svg_url": "https://lanhu-oss-2537-2.lanhuapp.com/SketchSVG776f94dbc6de132704649044fb3765ed8ba2a2340630bb72358e6e307d110909",
+      "scale_urls": {
+        "1x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng30f2109cadb2adf78daf71fef57474d3ba687a5c4f6d9b88dc054baf35859b3b?x-oss-process=image/resize,w_375,h_208/format,png",
+        "2x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng30f2109cadb2adf78daf71fef57474d3ba687a5c4f6d9b88dc054baf35859b3b?x-oss-process=image/resize,w_750,h_416/format,png",
+        "3x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng30f2109cadb2adf78daf71fef57474d3ba687a5c4f6d9b88dc054baf35859b3b?x-oss-process=image/resize,w_1125,h_624/format,png",
+        "ios_1x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng30f2109cadb2adf78daf71fef57474d3ba687a5c4f6d9b88dc054baf35859b3b?x-oss-process=image/resize,w_375,h_208/format,png",
+        "ios_2x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng30f2109cadb2adf78daf71fef57474d3ba687a5c4f6d9b88dc054baf35859b3b?x-oss-process=image/resize,w_750,h_416/format,png",
+        "ios_3x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng30f2109cadb2adf78daf71fef57474d3ba687a5c4f6d9b88dc054baf35859b3b?x-oss-process=image/resize,w_1125,h_624/format,png",
+        "android_mdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng30f2109cadb2adf78daf71fef57474d3ba687a5c4f6d9b88dc054baf35859b3b?x-oss-process=image/resize,w_375,h_208/format,png",
+        "android_hdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng30f2109cadb2adf78daf71fef57474d3ba687a5c4f6d9b88dc054baf35859b3b?x-oss-process=image/resize,w_563,h_312/format,png",
+        "android_xhdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng30f2109cadb2adf78daf71fef57474d3ba687a5c4f6d9b88dc054baf35859b3b?x-oss-process=image/resize,w_750,h_416/format,png",
+        "android_xxhdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng30f2109cadb2adf78daf71fef57474d3ba687a5c4f6d9b88dc054baf35859b3b?x-oss-process=image/resize,w_1125,h_624/format,png",
+        "android_xxxhdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng30f2109cadb2adf78daf71fef57474d3ba687a5c4f6d9b88dc054baf35859b3b"
+      },
+      "logical_size": {
+        "width": 375,
+        "height": 208,
+        "note": "1x logical px; stored at 4x = 1500x832px"
+      },
+      "position": {
+        "x": 0,
+        "y": 604
+      },
+      "asset_kind": "exported_asset",
+      "layer_path": "矩形",
+      "metadata": {
+        "fills": [
+          {
+            "gradient": {
+              "colorStops": [
+                {
+                  "position": 0,
+                  "color": {
+                    "a": 0,
+                    "b": 34,
+                    "value": "rgba(41,37,34,0)",
+                    "g": 37,
+                    "r": 41
+                  }
+                },
+                {
+                  "position": 1,
+                  "color": {
+                    "a": 1,
+                    "b": 0,
+                    "value": "rgba(0,0,0,1)",
+                    "g": 0,
+                    "r": 0
+                  }
+                }
+              ],
+              "type": "linear",
+              "gradientType": 0,
+              "to": {
+                "x": 0.5,
+                "y": 1
+              },
+              "elipseLength": 0,
+              "from": {
+                "x": 0.5,
+                "y": 0
+              }
+            },
+            "patternTileScale": 1,
+            "noiseIntensity": 0,
+            "type": "gradient",
+            "blendMode": 0,
+            "noiseIndex": 0,
+            "opacity": 1,
+            "patternFillType": 1,
+            "isEnabled": true,
+            "fillType": 1
+          }
+        ],
+        "opacity": 100
+      }
+    },
+    {
+      "id": "F35B9F20-DC8D-431A-A3BA-3172BF04B304",
+      "name": "编组 3",
+      "type": "layer-group",
+      "download_url": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng06d1e9ee0d1969ae9f90b3a087d539f83d992a38c473259f683b256c5b0b5be6",
+      "size": "11x12",
+      "format": "png",
+      "svg_url": "https://lanhu-oss-2537-2.lanhuapp.com/SketchSVGd5457c95193022193f851d24fb854198d363808cbf905dd6ebfc13a813da82df",
+      "scale_urls": {
+        "1x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng06d1e9ee0d1969ae9f90b3a087d539f83d992a38c473259f683b256c5b0b5be6?x-oss-process=image/resize,w_11,h_12/format,png",
+        "2x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng06d1e9ee0d1969ae9f90b3a087d539f83d992a38c473259f683b256c5b0b5be6?x-oss-process=image/resize,w_22,h_24/format,png",
+        "3x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng06d1e9ee0d1969ae9f90b3a087d539f83d992a38c473259f683b256c5b0b5be6?x-oss-process=image/resize,w_33,h_36/format,png",
+        "ios_1x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng06d1e9ee0d1969ae9f90b3a087d539f83d992a38c473259f683b256c5b0b5be6?x-oss-process=image/resize,w_11,h_12/format,png",
+        "ios_2x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng06d1e9ee0d1969ae9f90b3a087d539f83d992a38c473259f683b256c5b0b5be6?x-oss-process=image/resize,w_22,h_24/format,png",
+        "ios_3x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng06d1e9ee0d1969ae9f90b3a087d539f83d992a38c473259f683b256c5b0b5be6?x-oss-process=image/resize,w_33,h_36/format,png",
+        "android_mdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng06d1e9ee0d1969ae9f90b3a087d539f83d992a38c473259f683b256c5b0b5be6?x-oss-process=image/resize,w_11,h_12/format,png",
+        "android_hdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng06d1e9ee0d1969ae9f90b3a087d539f83d992a38c473259f683b256c5b0b5be6?x-oss-process=image/resize,w_17,h_18/format,png",
+        "android_xhdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng06d1e9ee0d1969ae9f90b3a087d539f83d992a38c473259f683b256c5b0b5be6?x-oss-process=image/resize,w_22,h_24/format,png",
+        "android_xxhdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng06d1e9ee0d1969ae9f90b3a087d539f83d992a38c473259f683b256c5b0b5be6?x-oss-process=image/resize,w_33,h_36/format,png",
+        "android_xxxhdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPng06d1e9ee0d1969ae9f90b3a087d539f83d992a38c473259f683b256c5b0b5be6"
+      },
+      "logical_size": {
+        "width": 11,
+        "height": 12,
+        "note": "1x logical px; stored at 4x = 44x48px"
+      },
+      "position": {
+        "x": 63.76000000000022,
+        "y": 69.79338842975176
+      },
+      "asset_kind": "exported_asset",
+      "layer_path": "编组 3",
+      "metadata": {
+        "opacity": 100
+      }
+    },
+    {
+      "id": "6BA987BC-4E8B-4A99-8221-024DB2FA3F59",
+      "name": "编组 2",
+      "type": "layer-group",
+      "download_url": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngea5209f8d86c44ebb090afb4745f6a28bb007169fea88afbb4a9c9e00dc57580",
+      "size": "20x18",
+      "format": "png",
+      "svg_url": "https://lanhu-oss-2537-2.lanhuapp.com/SketchSVG13c25b0f04a39e3f5fe750e1d2fa67db854fb2e791bdb0426ad80bfc4db55b07",
+      "scale_urls": {
+        "1x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngea5209f8d86c44ebb090afb4745f6a28bb007169fea88afbb4a9c9e00dc57580?x-oss-process=image/resize,w_20,h_18/format,png",
+        "2x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngea5209f8d86c44ebb090afb4745f6a28bb007169fea88afbb4a9c9e00dc57580?x-oss-process=image/resize,w_40,h_36/format,png",
+        "3x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngea5209f8d86c44ebb090afb4745f6a28bb007169fea88afbb4a9c9e00dc57580?x-oss-process=image/resize,w_60,h_54/format,png",
+        "ios_1x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngea5209f8d86c44ebb090afb4745f6a28bb007169fea88afbb4a9c9e00dc57580?x-oss-process=image/resize,w_20,h_18/format,png",
+        "ios_2x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngea5209f8d86c44ebb090afb4745f6a28bb007169fea88afbb4a9c9e00dc57580?x-oss-process=image/resize,w_40,h_36/format,png",
+        "ios_3x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngea5209f8d86c44ebb090afb4745f6a28bb007169fea88afbb4a9c9e00dc57580?x-oss-process=image/resize,w_60,h_54/format,png",
+        "android_mdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngea5209f8d86c44ebb090afb4745f6a28bb007169fea88afbb4a9c9e00dc57580?x-oss-process=image/resize,w_20,h_18/format,png",
+        "android_hdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngea5209f8d86c44ebb090afb4745f6a28bb007169fea88afbb4a9c9e00dc57580?x-oss-process=image/resize,w_30,h_27/format,png",
+        "android_xhdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngea5209f8d86c44ebb090afb4745f6a28bb007169fea88afbb4a9c9e00dc57580?x-oss-process=image/resize,w_40,h_36/format,png",
+        "android_xxhdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngea5209f8d86c44ebb090afb4745f6a28bb007169fea88afbb4a9c9e00dc57580?x-oss-process=image/resize,w_60,h_54/format,png",
+        "android_xxxhdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngea5209f8d86c44ebb090afb4745f6a28bb007169fea88afbb4a9c9e00dc57580"
+      },
+      "logical_size": {
+        "width": 20,
+        "height": 18,
+        "note": "1x logical px; stored at 4x = 80x72px"
+      },
+      "position": {
+        "x": 224,
+        "y": 744
+      },
+      "asset_kind": "exported_asset",
+      "layer_path": "编组 2",
+      "metadata": {
+        "opacity": 100
+      }
+    },
+    {
+      "id": "5BD141A6-DC1D-4765-B59D-00B126B40328",
+      "name": "安全-F",
+      "type": "layer-group",
+      "download_url": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngc06d5db32bdb8b70e0f7d443a94194851a920b27364859264489b4c229646ed4",
+      "size": "10x11",
+      "format": "png",
+      "svg_url": "https://lanhu-oss-2537-2.lanhuapp.com/SketchSVG29bf0bdc39a6e3a23bece31298d3a1b957abc326cff0195072efeedab3a5aed2",
+      "scale_urls": {
+        "1x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngc06d5db32bdb8b70e0f7d443a94194851a920b27364859264489b4c229646ed4?x-oss-process=image/resize,w_10,h_11/format,png",
+        "2x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngc06d5db32bdb8b70e0f7d443a94194851a920b27364859264489b4c229646ed4?x-oss-process=image/resize,w_20,h_22/format,png",
+        "3x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngc06d5db32bdb8b70e0f7d443a94194851a920b27364859264489b4c229646ed4?x-oss-process=image/resize,w_30,h_33/format,png",
+        "ios_1x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngc06d5db32bdb8b70e0f7d443a94194851a920b27364859264489b4c229646ed4?x-oss-process=image/resize,w_10,h_11/format,png",
+        "ios_2x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngc06d5db32bdb8b70e0f7d443a94194851a920b27364859264489b4c229646ed4?x-oss-process=image/resize,w_20,h_22/format,png",
+        "ios_3x": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngc06d5db32bdb8b70e0f7d443a94194851a920b27364859264489b4c229646ed4?x-oss-process=image/resize,w_30,h_33/format,png",
+        "android_mdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngc06d5db32bdb8b70e0f7d443a94194851a920b27364859264489b4c229646ed4?x-oss-process=image/resize,w_10,h_11/format,png",
+        "android_hdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngc06d5db32bdb8b70e0f7d443a94194851a920b27364859264489b4c229646ed4?x-oss-process=image/resize,w_15,h_17/format,png",
+        "android_xhdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngc06d5db32bdb8b70e0f7d443a94194851a920b27364859264489b4c229646ed4?x-oss-process=image/resize,w_20,h_22/format,png",
+        "android_xxhdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngc06d5db32bdb8b70e0f7d443a94194851a920b27364859264489b4c229646ed4?x-oss-process=image/resize,w_30,h_33/format,png",
+        "android_xxxhdpi": "https://lanhu-oss-2537-2.lanhuapp.com/SketchPngc06d5db32bdb8b70e0f7d443a94194851a920b27364859264489b4c229646ed4"
+      },
+      "logical_size": {
+        "width": 10,
+        "height": 11,
+        "note": "1x logical px; stored at 4x = 40x44px"
+      },
+      "position": {
+        "x": 24,
+        "y": 679
+      },
+      "asset_kind": "exported_asset",
+      "layer_path": "安全-F",
+      "metadata": {
+        "opacity": 100
+      }
+    }
+  ],
+  "ai_workflow_guide": {
+    "next_tools": [
+      "lanhu_get_design_overview",
+      "lanhu_inspect_design_region",
+      "lanhu_export_design_assets"
+    ],
+    "identity": "Select stable design/node/asset IDs; layer names are labels only.",
+    "quality": "Use original source bytes and verify actual dimensions; 2x is not always the original scale.",
+    "automation": "Use the caller's existing platform and quality preferences without repeated prompts.",
+    "legacy_scope": "This tool lists URLs. Use the new export tool to download, validate and bundle assets."
+  }
+}

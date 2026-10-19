@@ -1,0 +1,21 @@
+// Device switches must not measure or resize the canvas before the new frame is ready.
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const app=fs.readFileSync(require('node:path').join(__dirname,'../static/app.js'),'utf8');
+const virtual=fs.readFileSync(require('node:path').join(__dirname,'../static/virtual.js'),'utf8');
+const section=(s,a,b)=>s.slice(s.indexOf(a),s.indexOf(b,s.indexOf(a)));
+const state={switching:true,design:{id:'d'}};
+vm.runInNewContext(section(app,'function renderViewer(){','function issuePosition(')+'renderViewer();',{state,$(){throw Error('Switching must preserve the existing DOM geometry');}});
+vm.runInNewContext(section(app,'function render(){','function setImage(')+'render();',{state,updateButtons(){},$(){throw Error('Switching must preserve headings and metadata');}});
+vm.runInNewContext(section(app,'function renderStatus(){','function sourceNote(')+'renderStatus();',{state,$(){throw Error('Switching must preserve status text');}});
+const events=[],elements=new Map();
+const $=id=>{if(!elements.has(id))elements.set(id,{setAttribute:(k,v)=>events.push([k,v])});return elements.get(id);};
+const context=vm.createContext({state,virtual:{},virtualSwitchOverlay:{hidden:true},$,updateButtons:()=>events.push('controls'),renderViewer:()=>events.push('layout')});
+vm.runInContext(section(virtual,'function setVirtualSwitching(','window.virtualRuntime'),context);
+context.setVirtualSwitching(true);assert.equal(state.switching,true);assert.deepEqual(events,[['aria-busy','true'],'controls']);
+events.length=0;context.setVirtualSwitching(false);assert.equal(state.switching,false);assert.deepEqual(events,[['aria-busy','false'],'controls','layout'],'restore controls before computing final layout');
+console.log('Switch layout regressions passed: frozen geometry and one final layout commit');
+const live={view:true,session:'old',frame:{},error:''};
+const reconnect=vm.createContext({live,pauseLive(){live.playing=false;},releaseSession(){}});
+vm.runInContext(section(app,'function leaveLive(','async function startLive('),reconnect);
+reconnect.leaveLive(true);assert.equal(live.view,true,'reconnecting must never enter screenshot mode');assert.equal(live.frame,null);
+reconnect.leaveLive();assert.equal(live.view,false,'explicit screenshot navigation still leaves live mode');

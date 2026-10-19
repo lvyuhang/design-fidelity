@@ -1,0 +1,24 @@
+{
+  "scope": "source-bound Flutter checks, not full-page acceptance",
+  "results": [
+    {
+      "mutation": "missing_presence_background",
+      "caught": true,
+      "exit_code": 1,
+      "seconds": 1.587
+    },
+    {
+      "mutation": "avatar_dot_wrong_frame",
+      "caught": true,
+      "exit_code": 1,
+      "seconds": 1.507
+    },
+    {
+      "mutation": "avatar_dot_inward_border",
+      "caught": true,
+      "exit_code": 1,
+      "seconds": 1.504
+    }
+  ],
+  "restored_original": true
+}

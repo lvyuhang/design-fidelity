@@ -1,0 +1,164 @@
+{
+  "contract": "/private/var/folders/hf/gdq12zbx3817xty3_cx0rp940000gn/T/tmpurviq8lo/contract.json",
+  "contract_sha256": "415a9b9afb71e13eb5c25bd6ab8059604290b8432a06f9bfb454259d19557d8d",
+  "skill_version": "2.8.0",
+  "coverage": {
+    "nodes": 3,
+    "covered": 3,
+    "exceptions": []
+  },
+  "environment": {
+    "renderer": "Pillow-fixture",
+    "renderer_version": "1",
+    "platform": "test",
+    "locale": "en",
+    "state": "static",
+    "text_scale": 1
+  },
+  "exclusions": [],
+  "excluded_fraction": 0.0,
+  "reference": "/private/var/folders/hf/gdq12zbx3817xty3_cx0rp940000gn/T/tmpurviq8lo/reference.png",
+  "render_scale": 1.0,
+  "reference_preview": "reference.png",
+  "passed": true,
+  "candidates": {
+    "test": {
+      "path": "/private/var/folders/hf/gdq12zbx3817xty3_cx0rp940000gn/T/tmpurviq8lo/candidate.png",
+      "preview": "1-test-candidate.png",
+      "passed": true,
+      "regions": {
+        "whole": {
+          "label": "whole",
+          "rect": [
+            0,
+            0,
+            100,
+            100
+          ],
+          "metrics": {
+            "compared_pixels": 10000,
+            "total_pixels": 10000,
+            "mae": 0.0,
+            "p95_max_channel": 0.0
+          },
+          "passed": true,
+          "failures": []
+        }
+      },
+      "features": {
+        "icon": {
+          "label": "icon",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "center": [
+              14.5,
+              14.5
+            ],
+            "ink_pixels": 100
+          },
+          "actual": {
+            "bbox": [
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "center": [
+              14.5,
+              14.5
+            ],
+            "ink_pixels": 100
+          }
+        },
+        "text": {
+          "label": "text",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              30.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "center": [
+              34.5,
+              14.5
+            ],
+            "ink_pixels": 100
+          },
+          "actual": {
+            "bbox": [
+              30.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "center": [
+              34.5,
+              14.5
+            ],
+            "ink_pixels": 100
+          }
+        }
+      },
+      "relations": {
+        "row": {
+          "label": "row",
+          "reference_delta": 0.0,
+          "actual_delta": 0.0,
+          "error": 0.0,
+          "passed": true
+        }
+      },
+      "colors": {
+        "surface": {
+          "label": "surface",
+          "rect": [
+            48.0,
+            48.0,
+            4,
+            4
+          ],
+          "reference_rgb": [
+            255.0,
+            255.0,
+            255.0
+          ],
+          "actual_rgb": [
+            255.0,
+            255.0,
+            255.0
+          ],
+          "max_channel_delta": 0.0,
+          "passed": true
+        }
+      },
+      "overlay": "1-test-alignment-overlay.png"
+    }
+  },
+  "status": "PASS"
+}

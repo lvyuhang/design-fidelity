@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "task_id": "5305935a-a0a1-4cb4-9e0c-2f76104b14fb",
+  "identity": {
+    "name": "独立 Flutter 合成夹具",
+    "snapshot": "synthetic-flutter-v2",
+    "version": "fixture-2-workflow",
+    "canvas": [
+      375,
+      812
+    ]
+  },
+  "created_at": "2026-10-13T09:40:17+00:00",
+  "rounds": [
+    {
+      "round_number": 1,
+      "fingerprint": "924182196d27bb852946dbfdef3ca3ce9e1d81074df489ecbcc8610123e8770e",
+      "contract_sha256": "6e0c3e9ae2a862a19890bb8ebf27f718bccdba1f00ffcc14fc03a3faf8e40549",
+      "contract_changed": false,
+      "attempts": [
+        {
+          "attempt_id": "529a1063-83d2-4ce8-9f5d-e3fe4d553670",
+          "attempt_number": 1,
+          "started_at": "2026-10-13T09:40:17+00:00",
+          "status": "PASS",
+          "note": "Skill 2.9 integration: original synthetic Flutter fixture with source obligations and original asset mapping",
+          "pid": 17509,
+          "run_report": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.9-validation/flutter-run/run.json",
+          "seconds": 7.033,
+          "gate_status": "PASS",
+          "failures": [],
+          "stages": [
+            {
+              "name": "preflight",
+              "seconds": 0.045,
+              "exit_code": 0
+            },
+            {
+              "name": "render",
+              "seconds": 4.12,
+              "exit_code": 0
+            },
+            {
+              "name": "gate",
+              "seconds": 0.18,
+              "exit_code": 0
+            },
+            {
+              "name": "analyze",
+              "seconds": 2.684,
+              "exit_code": 0
+            }
+          ],
+          "metrics": {
+            "whole": {
+              "compared_pixels": 1218000,
+              "total_pixels": 1218000,
+              "mae": 0.0,
+              "p95_max_channel": 0.0
+            }
+          },
+          "finished_at": "2026-10-13T09:40:24+00:00"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "rounds": 1,
+    "target_rounds": [
+      2,
+      3
+    ],
+    "validation_attempts": 1,
+    "repeat_attempts": 0,
+    "over_target": false,
+    "total_validation_seconds": 7.033,
+    "latest_status": "PASS",
+    "tool_call_count": null,
+    "timing_scope": "Validation execution only; excludes work before first validation and model editing time",
+    "count_scope": "Tracked render/validation attempts only; not all model/tool calls or visual reviews"
+  }
+}

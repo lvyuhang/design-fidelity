@@ -1,0 +1,5300 @@
+{
+  "status": "complete",
+  "snapshot_id": "b3437778812e65917e3972d7062be2c3",
+  "design_id": "c68a2928-1fd5-4a1e-86d9-141d0c98ff5c",
+  "design_name": "1备份 34",
+  "resolved_version": "24e01fb5-a15f-4495-b896-4ac8b65266ca",
+  "canvas": {
+    "width": 375,
+    "height": 812
+  },
+  "reference_size": {
+    "width": 750,
+    "height": 1624
+  },
+  "font_requirements": [
+    {
+      "family": "PingFangSC-Semibold",
+      "availability": "not_checked",
+      "source": "design",
+      "weights": [
+        600
+      ],
+      "node_count": 11,
+      "sample_node_ids": [
+        "53EBEC3C-1212-48B1-8E9B-F47B108E6DAF",
+        "783F2F13-0439-4732-B43C-FFD0DCF94BB2",
+        "41BE3DCA-8299-42DF-8286-815374823BCA",
+        "C3654C3F-8CA0-495A-B3ED-987C522CF26D",
+        "17C82158-B36C-46B3-95DB-989316236659"
+      ]
+    },
+    {
+      "family": "PingFangSC-Regular",
+      "availability": "not_checked",
+      "source": "design",
+      "weights": [
+        400
+      ],
+      "node_count": 33,
+      "sample_node_ids": [
+        "DF557CF7-1FD8-44C3-99CA-022E675569DA",
+        "9D85965F-6495-4C4B-9BE8-E58559779A4C",
+        "0F0EF7AD-4D88-4938-8914-FC76C15C7696",
+        "95DE9DE3-311B-43CC-8B27-5CAAF3CE8704",
+        "809A6B37-A85A-4086-A28C-7F25EF3D3797"
+      ]
+    },
+    {
+      "family": ".AppleSystemUIFont",
+      "availability": "not_checked",
+      "source": "design",
+      "weights": [
+        400
+      ],
+      "node_count": 1,
+      "sample_node_ids": [
+        "15B43C44-D26D-48FC-AEF3-1C8C6651A07F"
+      ]
+    }
+  ],
+  "total_nodes": 161,
+  "assets": [
+    {
+      "asset_id": "16F0957E-9372-4BDD-8A38-74F925C77F4A:image",
+      "node_id": "16F0957E-9372-4BDD-8A38-74F925C77F4A",
+      "kind": "exported_asset",
+      "format_hint": null,
+      "render_bounds": {
+        "x": 28,
+        "y": 154,
+        "width": 14,
+        "height": 12.1333333333333
+      },
+      "render_bounds_source_field": "node.bounds",
+      "source_field": "image",
+      "source_pointer": "/info/12/image",
+      "variants": [
+        {
+          "variant_id": "v-4e63abeb9fd46a8f33ec8d3a",
+          "source_field": "image.imageUrl",
+          "format_hint": null,
+          "is_original": true,
+          "format_verification": "requires_download"
+        },
+        {
+          "variant_id": "v-c38bcbafc3b07ca42d8e943c",
+          "source_field": "image.svgUrl",
+          "format_hint": "svg",
+          "is_original": false,
+          "format_verification": "requires_download"
+        }
+      ],
+      "source_size": {
+        "height": 14,
+        "width": 16
+      },
+      "source_point": {
+        "x": 1250,
+        "y": 5194
+      },
+      "pixel_dimensions": null,
+      "pixel_dimensions_status": "requires_download"
+    },
+    {
+      "asset_id": "46973292-5A6D-42BF-9A6F-25D9168D09E8:image",
+      "node_id": "46973292-5A6D-42BF-9A6F-25D9168D09E8",
+      "kind": "exported_asset",
+      "format_hint": null,
+      "render_bounds": {
+        "x": 17,
+        "y": 651,
+        "width": 44,
+        "height": 44
+      },
+      "render_bounds_source_field": "node.bounds",
+      "source_field": "image",
+      "source_pointer": "/info/29/image",
+      "variants": [
+        {
+          "variant_id": "v-de237259aa9fd959bbfd4bd1",
+          "source_field": "image.imageUrl",
+          "format_hint": null,
+          "is_original": true,
+          "format_verification": "requires_download"
+        }
+      ],
+      "source_size": {
+        "height": 45,
+        "width": 45
+      },
+      "source_point": {
+        "x": 1239,
+        "y": 5691
+      },
+      "pixel_dimensions": null,
+      "pixel_dimensions_status": "requires_download"
+    },
+    {
+      "asset_id": "7A7E5242-D597-4010-ACA3-D9FB4A6A55F0:image",
+      "node_id": "7A7E5242-D597-4010-ACA3-D9FB4A6A55F0",
+      "kind": "exported_asset",
+      "format_hint": null,
+      "render_bounds": {
+        "x": 16,
+        "y": 325,
+        "width": 45,
+        "height": 45
+      },
+      "render_bounds_source_field": "node.bounds",
+      "source_field": "image",
+      "source_pointer": "/info/37/image",
+      "variants": [
+        {
+          "variant_id": "v-ffc8b987f9756aef021e3d29",
+          "source_field": "image.imageUrl",
+          "format_hint": null,
+          "is_original": true,
+          "format_verification": "requires_download"
+        },
+        {
+          "variant_id": "v-9a6ef1601cedd6c6bb3185d8",
+          "source_field": "image.svgUrl",
+          "format_hint": "svg",
+          "is_original": false,
+          "format_verification": "requires_download"
+        }
+      ],
+      "source_size": {
+        "height": 47,
+        "width": 47
+      },
+      "source_point": {
+        "x": 1238,
+        "y": 5365
+      },
+      "pixel_dimensions": null,
+      "pixel_dimensions_status": "requires_download"
+    },
+    {
+      "asset_id": "AE344697-D0D3-4867-B3BC-AA722DBF1288:image",
+      "node_id": "AE344697-D0D3-4867-B3BC-AA722DBF1288",
+      "kind": "exported_asset",
+      "format_hint": null,
+      "render_bounds": {
+        "x": 339,
+        "y": 115,
+        "width": 8,
+        "height": 8
+      },
+      "render_bounds_source_field": "node.bounds",
+      "source_field": "image",
+      "source_pointer": "/info/84/image",
+      "variants": [
+        {
+          "variant_id": "v-2941933582fa376bc88e0e08",
+          "source_field": "image.imageUrl",
+          "format_hint": null,
+          "is_original": true,
+          "format_verification": "requires_download"
+        },
+        {
+          "variant_id": "v-649cbfbfe080496f7e13cb17",
+          "source_field": "image.svgUrl",
+          "format_hint": "svg",
+          "is_original": false,
+          "format_verification": "requires_download"
+        }
+      ],
+      "source_size": {
+        "height": 10,
+        "width": 10
+      },
+      "source_point": {
+        "x": 1561,
+        "y": 5155
+      },
+      "pixel_dimensions": null,
+      "pixel_dimensions_status": "requires_download"
+    },
+    {
+      "asset_id": "1357B849-5FC7-4570-9A0A-EE53EAC3ED50:image",
+      "node_id": "1357B849-5FC7-4570-9A0A-EE53EAC3ED50",
+      "kind": "exported_asset",
+      "format_hint": null,
+      "render_bounds": {
+        "x": 318,
+        "y": 115,
+        "width": 4,
+        "height": 8
+      },
+      "render_bounds_source_field": "node.bounds",
+      "source_field": "image",
+      "source_pointer": "/info/88/image",
+      "variants": [
+        {
+          "variant_id": "v-797638111073e7de16d8fa64",
+          "source_field": "image.imageUrl",
+          "format_hint": null,
+          "is_original": true,
+          "format_verification": "requires_download"
+        },
+        {
+          "variant_id": "v-156159abf1d2a4153b088fa5",
+          "source_field": "image.svgUrl",
+          "format_hint": "svg",
+          "is_original": false,
+          "format_verification": "requires_download"
+        }
+      ],
+      "source_size": {
+        "height": 10,
+        "width": 6
+      },
+      "source_point": {
+        "x": 1540,
+        "y": 5155
+      },
+      "pixel_dimensions": null,
+      "pixel_dimensions_status": "requires_download"
+    },
+    {
+      "asset_id": "4C5886B0-AB45-4341-AF01-363FE0A5090B:image",
+      "node_id": "4C5886B0-AB45-4341-AF01-363FE0A5090B",
+      "kind": "exported_asset",
+      "format_hint": null,
+      "render_bounds": {
+        "x": 248,
+        "y": 749,
+        "width": 14,
+        "height": 17
+      },
+      "render_bounds_source_field": "node.bounds",
+      "source_field": "image",
+      "source_pointer": "/info/101/image",
+      "variants": [
+        {
+          "variant_id": "v-b07239e41c837551d3f25501",
+          "source_field": "image.imageUrl",
+          "format_hint": null,
+          "is_original": true,
+          "format_verification": "requires_download"
+        },
+        {
+          "variant_id": "v-e862b5aee7d7a0948d3665aa",
+          "source_field": "image.svgUrl",
+          "format_hint": "svg",
+          "is_original": false,
+          "format_verification": "requires_download"
+        }
+      ],
+      "source_size": {
+        "height": 18,
+        "width": 15
+      },
+      "source_point": {
+        "x": 1470,
+        "y": 5789
+      },
+      "pixel_dimensions": null,
+      "pixel_dimensions_status": "requires_download"
+    },
+    {
+      "asset_id": "001D3A26-E9F7-4A8D-B848-BDBD5D64AEE9:image",
+      "node_id": "001D3A26-E9F7-4A8D-B848-BDBD5D64AEE9",
+      "kind": "exported_asset",
+      "format_hint": null,
+      "render_bounds": {
+        "x": 45,
+        "y": 748,
+        "width": 20.000076801688,
+        "height": 18
+      },
+      "render_bounds_source_field": "node.bounds",
+      "source_field": "image",
+      "source_pointer": "/info/109/image",
+      "variants": [
+        {
+          "variant_id": "v-dc4379e6db8a64278e2a1401",
+          "source_field": "image.imageUrl",
+          "format_hint": null,
+          "is_original": true,
+          "format_verification": "requires_download"
+        },
+        {
+          "variant_id": "v-e18b4747032881afcc7e4045",
+          "source_field": "image.svgUrl",
+          "format_hint": "svg",
+          "is_original": false,
+          "format_verification": "requires_download"
+        }
+      ],
+      "source_size": {
+        "height": 20,
+        "width": 22
+      },
+      "source_point": {
+        "x": 1267,
+        "y": 5788
+      },
+      "pixel_dimensions": null,
+      "pixel_dimensions_status": "requires_download"
+    },
+    {
+      "asset_id": "ED7DC567-6137-467A-B368-F2F41B9230A9:image",
+      "node_id": "ED7DC567-6137-467A-B368-F2F41B9230A9",
+      "kind": "exported_asset",
+      "format_hint": null,
+      "render_bounds": {
+        "x": 306,
+        "y": 748,
+        "width": 18,
+        "height": 18
+      },
+      "render_bounds_source_field": "node.bounds",
+      "source_field": "image",
+      "source_pointer": "/info/113/image",
+      "variants": [
+        {
+          "variant_id": "v-42669ffcbeba2330ba9687c5",
+          "source_field": "image.imageUrl",
+          "format_hint": null,
+          "is_original": true,
+          "format_verification": "requires_download"
+        },
+        {
+          "variant_id": "v-934341609e53213cdf5b9262",
+          "source_field": "image.svgUrl",
+          "format_hint": "svg",
+          "is_original": false,
+          "format_verification": "requires_download"
+        }
+      ],
+      "source_size": {
+        "height": 20,
+        "width": 20
+      },
+      "source_point": {
+        "x": 1528,
+        "y": 5788
+      },
+      "pixel_dimensions": null,
+      "pixel_dimensions_status": "requires_download"
+    },
+    {
+      "asset_id": "09D2352B-F303-4358-838E-3EEAA4F2FE77:image",
+      "node_id": "09D2352B-F303-4358-838E-3EEAA4F2FE77",
+      "kind": "exported_asset",
+      "format_hint": null,
+      "render_bounds": {
+        "x": 179,
+        "y": 750,
+        "width": 18,
+        "height": 15.44679
+      },
+      "render_bounds_source_field": "node.bounds",
+      "source_field": "image",
+      "source_pointer": "/info/115/image",
+      "variants": [
+        {
+          "variant_id": "v-cccb83936d9dded051bf99e4",
+          "source_field": "image.imageUrl",
+          "format_hint": null,
+          "is_original": true,
+          "format_verification": "requires_download"
+        },
+        {
+          "variant_id": "v-2f25be228a7b3989318dfcc9",
+          "source_field": "image.svgUrl",
+          "format_hint": "svg",
+          "is_original": false,
+          "format_verification": "requires_download"
+        }
+      ],
+      "source_size": {
+        "height": 18,
+        "width": 20
+      },
+      "source_point": {
+        "x": 1401,
+        "y": 5790
+      },
+      "pixel_dimensions": null,
+      "pixel_dimensions_status": "requires_download"
+    },
+    {
+      "asset_id": "2105E345-1E59-4004-B9B2-11B3E6B1A221:image",
+      "node_id": "2105E345-1E59-4004-B9B2-11B3E6B1A221",
+      "kind": "exported_asset",
+      "format_hint": null,
+      "render_bounds": {
+        "x": 111,
+        "y": 748,
+        "width": 20,
+        "height": 18.973801138537
+      },
+      "render_bounds_source_field": "node.bounds",
+      "source_field": "image",
+      "source_pointer": "/info/138/image",
+      "variants": [
+        {
+          "variant_id": "v-37a12587e382e67dfa2eca8a",
+          "source_field": "image.imageUrl",
+          "format_hint": null,
+          "is_original": true,
+          "format_verification": "requires_download"
+        },
+        {
+          "variant_id": "v-1053afcc9825c0f0315f26d3",
+          "source_field": "image.svgUrl",
+          "format_hint": "svg",
+          "is_original": false,
+          "format_verification": "requires_download"
+        }
+      ],
+      "source_size": {
+        "height": 19,
+        "width": 20
+      },
+      "source_point": {
+        "x": 1334,
+        "y": 5789
+      },
+      "pixel_dimensions": null,
+      "pixel_dimensions_status": "requires_download"
+    },
+    {
+      "asset_id": "5355B69B-C35E-4D62-AF9D-59C52351451C:image",
+      "node_id": "5355B69B-C35E-4D62-AF9D-59C52351451C",
+      "kind": "exported_asset",
+      "format_hint": null,
+      "render_bounds": {
+        "x": 57.59466422272794,
+        "y": 75.2705078125,
+        "width": 19.7111104393502,
+        "height": 12
+      },
+      "render_bounds_source_field": "node.bounds",
+      "source_field": "image",
+      "source_pointer": "/info/139/image",
+      "variants": [
+        {
+          "variant_id": "v-84bb3e9a6ce4ced02adc47f9",
+          "source_field": "image.imageUrl",
+          "format_hint": null,
+          "is_original": true,
+          "format_verification": "requires_download"
+        },
+        {
+          "variant_id": "v-6d14b8e2d10ba7cbd58aebec",
+          "source_field": "image.svgUrl",
+          "format_hint": "svg",
+          "is_original": false,
+          "format_verification": "requires_download"
+        }
+      ],
+      "source_size": {
+        "height": 17,
+        "width": 25
+      },
+      "source_point": {
+        "x": 1278,
+        "y": 5114
+      },
+      "pixel_dimensions": null,
+      "pixel_dimensions_status": "requires_download"
+    },
+    {
+      "asset_id": "7A0E367B-A662-48BB-BDCB-782745125976:image",
+      "node_id": "7A0E367B-A662-48BB-BDCB-782745125976",
+      "kind": "exported_asset",
+      "format_hint": null,
+      "render_bounds": {
+        "x": 74,
+        "y": 418,
+        "width": 15,
+        "height": 11
+      },
+      "render_bounds_source_field": "node.bounds",
+      "source_field": "image",
+      "source_pointer": "/info/150/image",
+      "variants": [
+        {
+          "variant_id": "v-3dedc9b04ba2a99c5b059594",
+          "source_field": "image.imageUrl",
+          "format_hint": null,
+          "is_original": true,
+          "format_verification": "requires_download"
+        },
+        {
+          "variant_id": "v-24133b7fe1b4c6a94fc1bbe0",
+          "source_field": "image.svgUrl",
+          "format_hint": "svg",
+          "is_original": false,
+          "format_verification": "requires_download"
+        }
+      ],
+      "source_size": {
+        "height": 13,
+        "width": 17
+      },
+      "source_point": {
+        "x": 1296,
+        "y": 5458
+      },
+      "pixel_dimensions": null,
+      "pixel_dimensions_status": "requires_download"
+    },
+    {
+      "asset_id": "F5203DE6-E6BA-4BEA-A600-9111889E746E:image",
+      "node_id": "F5203DE6-E6BA-4BEA-A600-9111889E746E",
+      "kind": "exported_asset",
+      "format_hint": null,
+      "render_bounds": {
+        "x": 73,
+        "y": 484,
+        "width": 15,
+        "height": 11
+      },
+      "render_bounds_source_field": "node.bounds",
+      "source_field": "image",
+      "source_pointer": "/info/155/image",
+      "variants": [
+        {
+          "variant_id": "v-828315999098b8b52b6a1cb4",
+          "source_field": "image.imageUrl",
+          "format_hint": null,
+          "is_original": true,
+          "format_verification": "requires_download"
+        },
+        {
+          "variant_id": "v-9b3cbbba3ea64514f3a152e6",
+          "source_field": "image.svgUrl",
+          "format_hint": "svg",
+          "is_original": false,
+          "format_verification": "requires_download"
+        }
+      ],
+      "source_size": {
+        "height": 13,
+        "width": 17
+      },
+      "source_point": {
+        "x": 1295,
+        "y": 5524
+      },
+      "pixel_dimensions": null,
+      "pixel_dimensions_status": "requires_download"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "identity_source": "source_id",
+      "parent_id": null,
+      "source_parent_id": null,
+      "source_order": 0,
+      "name": "1备份 34",
+      "node_type": "artboard-group",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": null,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/0",
+      "effective_source_visible": null
+    },
+    {
+      "node_id": "44275228-F1D6-4A4D-979F-C3D6DEB57104",
+      "source_id": "44275228-F1D6-4A4D-979F-C3D6DEB57104",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 1,
+      "name": "矩形",
+      "node_type": "shape",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 812
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/1",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "A8A697AC-F80C-4651-A197-CA050FFC1EB9",
+      "source_id": "A8A697AC-F80C-4651-A197-CA050FFC1EB9",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 2,
+      "name": "矩形 3",
+      "node_type": "shape",
+      "bounds": {
+        "x": 60,
+        "y": 144,
+        "width": 285,
+        "height": 32
+      },
+      "source_bounds": {
+        "x": 60,
+        "y": 144,
+        "width": 285,
+        "height": 32
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/2",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "E9F17E1C-509F-4EA1-9D44-27082A021D5D",
+      "source_id": "E9F17E1C-509F-4EA1-9D44-27082A021D5D",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 3,
+      "name": "矩形 2",
+      "node_type": "shape",
+      "bounds": {
+        "x": 64,
+        "y": 147,
+        "width": 66,
+        "height": 26
+      },
+      "source_bounds": {
+        "x": 64,
+        "y": 147,
+        "width": 66,
+        "height": 26
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/3",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "53EBEC3C-1212-48B1-8E9B-F47B108E6DAF",
+      "source_id": "53EBEC3C-1212-48B1-8E9B-F47B108E6DAF",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 4,
+      "name": "全部",
+      "node_type": "text",
+      "bounds": {
+        "x": 84,
+        "y": 151,
+        "width": 26,
+        "height": 18
+      },
+      "source_bounds": {
+        "x": 84,
+        "y": 151,
+        "width": 26,
+        "height": 18
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "全部",
+      "asset_ids": [],
+      "source_pointer": "/info/4",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "DF557CF7-1FD8-44C3-99CA-022E675569DA",
+      "source_id": "DF557CF7-1FD8-44C3-99CA-022E675569DA",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 5,
+      "name": "熟人",
+      "node_type": "text",
+      "bounds": {
+        "x": 148,
+        "y": 151,
+        "width": 26,
+        "height": 18
+      },
+      "source_bounds": {
+        "x": 148,
+        "y": 151,
+        "width": 26,
+        "height": 18
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "熟人",
+      "asset_ids": [],
+      "source_pointer": "/info/5",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "9D85965F-6495-4C4B-9BE8-E58559779A4C",
+      "source_id": "9D85965F-6495-4C4B-9BE8-E58559779A4C",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 6,
+      "name": "深夜聊的...",
+      "node_type": "text",
+      "bounds": {
+        "x": 193,
+        "y": 151,
+        "width": 63,
+        "height": 18
+      },
+      "source_bounds": {
+        "x": 193,
+        "y": 151,
+        "width": 63,
+        "height": 18
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "深夜聊的...",
+      "asset_ids": [],
+      "source_pointer": "/info/6",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "0F0EF7AD-4D88-4938-8914-FC76C15C7696",
+      "source_id": "0F0EF7AD-4D88-4938-8914-FC76C15C7696",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 7,
+      "name": "我关注的",
+      "node_type": "text",
+      "bounds": {
+        "x": 275,
+        "y": 151,
+        "width": 52,
+        "height": 18
+      },
+      "source_bounds": {
+        "x": 275,
+        "y": 151,
+        "width": 52,
+        "height": 18
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "我关注的",
+      "asset_ids": [],
+      "source_pointer": "/info/7",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "39FB6924-86D4-487A-9B7B-4CD2A16D96E3",
+      "source_id": "39FB6924-86D4-487A-9B7B-4CD2A16D96E3",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 8,
+      "name": "矩形 6",
+      "node_type": "shape",
+      "bounds": {
+        "x": 16,
+        "y": 145,
+        "width": 38,
+        "height": 30
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 145,
+        "width": 38,
+        "height": 30
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/8",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "264D1D95-4751-4800-90E3-236567052318",
+      "source_id": "264D1D95-4751-4800-90E3-236567052318",
+      "identity_source": "source_id",
+      "parent_id": "16F0957E-9372-4BDD-8A38-74F925C77F4A",
+      "source_parent_id": "16F0957E-9372-4BDD-8A38-74F925C77F4A",
+      "source_order": 9,
+      "name": "线条 2",
+      "node_type": "shape",
+      "bounds": {
+        "x": 28,
+        "y": 154,
+        "width": 14,
+        "height": 1
+      },
+      "source_bounds": {
+        "x": 28,
+        "y": 154,
+        "width": 14,
+        "height": 1
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/9",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "7DB2AE76-7062-43D0-B1D6-2D8FED3BD8D7",
+      "source_id": "7DB2AE76-7062-43D0-B1D6-2D8FED3BD8D7",
+      "identity_source": "source_id",
+      "parent_id": "16F0957E-9372-4BDD-8A38-74F925C77F4A",
+      "source_parent_id": "16F0957E-9372-4BDD-8A38-74F925C77F4A",
+      "source_order": 10,
+      "name": "线条 3",
+      "node_type": "shape",
+      "bounds": {
+        "x": 28,
+        "y": 159.5666666666666,
+        "width": 10,
+        "height": 1
+      },
+      "source_bounds": {
+        "x": 28,
+        "y": 159.5666666666666,
+        "width": 10,
+        "height": 1
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/10",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "AFA69A22-F9E2-4E2A-B456-769FC527B40A",
+      "source_id": "AFA69A22-F9E2-4E2A-B456-769FC527B40A",
+      "identity_source": "source_id",
+      "parent_id": "16F0957E-9372-4BDD-8A38-74F925C77F4A",
+      "source_parent_id": "16F0957E-9372-4BDD-8A38-74F925C77F4A",
+      "source_order": 11,
+      "name": "线条 4",
+      "node_type": "shape",
+      "bounds": {
+        "x": 28,
+        "y": 165.1333333333332,
+        "width": 7,
+        "height": 1
+      },
+      "source_bounds": {
+        "x": 28,
+        "y": 165.1333333333332,
+        "width": 7,
+        "height": 1
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/11",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "16F0957E-9372-4BDD-8A38-74F925C77F4A",
+      "source_id": "16F0957E-9372-4BDD-8A38-74F925C77F4A",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 12,
+      "name": "编组",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 28,
+        "y": 154,
+        "width": 14,
+        "height": 12.1333333333333
+      },
+      "source_bounds": {
+        "x": 28,
+        "y": 154,
+        "width": 14,
+        "height": 12.1333333333333
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [
+        "16F0957E-9372-4BDD-8A38-74F925C77F4A:image"
+      ],
+      "source_pointer": "/info/12",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "F8BCDC51-8241-4A14-A89A-E882CE2AF6F4",
+      "source_id": "F8BCDC51-8241-4A14-A89A-E882CE2AF6F4",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 13,
+      "name": "矩形",
+      "node_type": "shape",
+      "bounds": {
+        "x": 0,
+        "y": 574,
+        "width": 375,
+        "height": 65
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 574,
+        "width": 375,
+        "height": 65
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/13",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "EA7355EB-A1EF-4939-BD86-F477A5DD604A",
+      "source_id": "EA7355EB-A1EF-4939-BD86-F477A5DD604A",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 14,
+      "name": "矩形备份",
+      "node_type": "shape",
+      "bounds": {
+        "x": 0,
+        "y": 250,
+        "width": 375,
+        "height": 65
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 250,
+        "width": 375,
+        "height": 65
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/14",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "F7D4A3FB-634A-4C2E-BD4F-D432FC1A3D50",
+      "source_id": "F7D4A3FB-634A-4C2E-BD4F-D432FC1A3D50",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 15,
+      "name": "矩形备份 2",
+      "node_type": "shape",
+      "bounds": {
+        "x": 0,
+        "y": 185,
+        "width": 375,
+        "height": 65
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 185,
+        "width": 375,
+        "height": 65
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/15",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "13603A6E-D798-4D8E-A68B-6102EFCCDC0E",
+      "source_id": "13603A6E-D798-4D8E-A68B-6102EFCCDC0E",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 16,
+      "name": "矩形备份 3",
+      "node_type": "shape",
+      "bounds": {
+        "x": 0,
+        "y": 316,
+        "width": 375,
+        "height": 65
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 316,
+        "width": 375,
+        "height": 65
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/16",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "3D094D6B-0DD8-4A10-BA5B-8C38A6B26B62",
+      "source_id": "3D094D6B-0DD8-4A10-BA5B-8C38A6B26B62",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 17,
+      "name": "矩形备份 4",
+      "node_type": "shape",
+      "bounds": {
+        "x": 0,
+        "y": 381,
+        "width": 375,
+        "height": 65
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 381,
+        "width": 375,
+        "height": 65
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/17",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "D3397E96-B761-411B-A5A5-8097376713D0",
+      "source_id": "D3397E96-B761-411B-A5A5-8097376713D0",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 18,
+      "name": "矩形备份 5",
+      "node_type": "shape",
+      "bounds": {
+        "x": 0,
+        "y": 446,
+        "width": 375,
+        "height": 65
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 446,
+        "width": 375,
+        "height": 65
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/18",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "C4BC7737-4B5C-4FF2-B6D5-26102F764D3E",
+      "source_id": "C4BC7737-4B5C-4FF2-B6D5-26102F764D3E",
+      "identity_source": "source_id",
+      "parent_id": "FB3D09DE-6E50-429B-8008-A719BD06BFC8",
+      "source_parent_id": "FB3D09DE-6E50-429B-8008-A719BD06BFC8",
+      "source_order": 19,
+      "name": "蒙版",
+      "node_type": "shape",
+      "bounds": {
+        "x": 16,
+        "y": 193,
+        "width": 45,
+        "height": 45
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 193,
+        "width": 45,
+        "height": 45
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/19",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "29437CC5-BC88-4EAB-945A-D478F73D6F29",
+      "source_id": "29437CC5-BC88-4EAB-945A-D478F73D6F29",
+      "identity_source": "source_id",
+      "parent_id": "FB3D09DE-6E50-429B-8008-A719BD06BFC8",
+      "source_parent_id": "FB3D09DE-6E50-429B-8008-A719BD06BFC8",
+      "source_order": 20,
+      "name": "位图",
+      "node_type": "bitmap",
+      "bounds": {
+        "x": 16,
+        "y": 193,
+        "width": 45,
+        "height": 45
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 193,
+        "width": 45,
+        "height": 45
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/20",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "FB3D09DE-6E50-429B-8008-A719BD06BFC8",
+      "source_id": "FB3D09DE-6E50-429B-8008-A719BD06BFC8",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 21,
+      "name": "位图",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 16,
+        "y": 193,
+        "width": 45,
+        "height": 45
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 193,
+        "width": 45,
+        "height": 45
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/21",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "25D9025F-B947-469D-98F5-838C23F9566B",
+      "source_id": "25D9025F-B947-469D-98F5-838C23F9566B",
+      "identity_source": "source_id",
+      "parent_id": "DD79DCD8-ED07-4519-9C0C-399D4F30F08C",
+      "source_parent_id": "DD79DCD8-ED07-4519-9C0C-399D4F30F08C",
+      "source_order": 22,
+      "name": "蒙版",
+      "node_type": "shape",
+      "bounds": {
+        "x": 16,
+        "y": 584,
+        "width": 45,
+        "height": 45
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 584,
+        "width": 45,
+        "height": 45
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/22",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "15621591-9263-49EE-AF51-96E07BD315AF",
+      "source_id": "15621591-9263-49EE-AF51-96E07BD315AF",
+      "identity_source": "source_id",
+      "parent_id": "DD79DCD8-ED07-4519-9C0C-399D4F30F08C",
+      "source_parent_id": "DD79DCD8-ED07-4519-9C0C-399D4F30F08C",
+      "source_order": 23,
+      "name": "image (18)",
+      "node_type": "bitmap",
+      "bounds": {
+        "x": 18,
+        "y": 588,
+        "width": 41,
+        "height": 41
+      },
+      "source_bounds": {
+        "x": 18,
+        "y": 588,
+        "width": 41,
+        "height": 41
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/23",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "DD79DCD8-ED07-4519-9C0C-399D4F30F08C",
+      "source_id": "DD79DCD8-ED07-4519-9C0C-399D4F30F08C",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 24,
+      "name": "image (18)",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 17,
+        "y": 585,
+        "width": 44,
+        "height": 44
+      },
+      "source_bounds": {
+        "x": 17,
+        "y": 585,
+        "width": 44,
+        "height": 44
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/24",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "20B932D6-B855-4D58-AFF4-6EEEB526C76B",
+      "source_id": "20B932D6-B855-4D58-AFF4-6EEEB526C76B",
+      "identity_source": "source_id",
+      "parent_id": "99AF9CA3-3DBA-47A3-959B-1FE85DA6FD56",
+      "source_parent_id": "99AF9CA3-3DBA-47A3-959B-1FE85DA6FD56",
+      "source_order": 25,
+      "name": "蒙版",
+      "node_type": "shape",
+      "bounds": {
+        "x": 16,
+        "y": 650,
+        "width": 45,
+        "height": 45
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 650,
+        "width": 45,
+        "height": 45
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/25",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "DD74AF8A-1373-4C59-84E8-0703B633D59B",
+      "source_id": "DD74AF8A-1373-4C59-84E8-0703B633D59B",
+      "identity_source": "source_id",
+      "parent_id": "99AF9CA3-3DBA-47A3-959B-1FE85DA6FD56",
+      "source_parent_id": "99AF9CA3-3DBA-47A3-959B-1FE85DA6FD56",
+      "source_order": 26,
+      "name": "位图",
+      "node_type": "bitmap",
+      "bounds": {
+        "x": 20.768292682926813,
+        "y": 655.5102715169141,
+        "width": 36,
+        "height": 32
+      },
+      "source_bounds": {
+        "x": 20.768292682926813,
+        "y": 655.5102715169141,
+        "width": 36,
+        "height": 32
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/26",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "89AE79C6-5529-4C51-9013-535990F94E5F",
+      "source_id": "89AE79C6-5529-4C51-9013-535990F94E5F",
+      "identity_source": "source_id",
+      "parent_id": "99AF9CA3-3DBA-47A3-959B-1FE85DA6FD56",
+      "source_parent_id": "99AF9CA3-3DBA-47A3-959B-1FE85DA6FD56",
+      "source_order": 27,
+      "name": "位图",
+      "node_type": "bitmap",
+      "bounds": {
+        "x": 25,
+        "y": 656,
+        "width": 8,
+        "height": 10
+      },
+      "source_bounds": {
+        "x": 25,
+        "y": 656,
+        "width": 8,
+        "height": 10
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/27",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "99AF9CA3-3DBA-47A3-959B-1FE85DA6FD56",
+      "source_id": "99AF9CA3-3DBA-47A3-959B-1FE85DA6FD56",
+      "identity_source": "source_id",
+      "parent_id": "46973292-5A6D-42BF-9A6F-25D9168D09E8",
+      "source_parent_id": "46973292-5A6D-42BF-9A6F-25D9168D09E8",
+      "source_order": 28,
+      "name": "image (18)",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 17,
+        "y": 651,
+        "width": 44,
+        "height": 44
+      },
+      "source_bounds": {
+        "x": 17,
+        "y": 651,
+        "width": 44,
+        "height": 44
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/28",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "46973292-5A6D-42BF-9A6F-25D9168D09E8",
+      "source_id": "46973292-5A6D-42BF-9A6F-25D9168D09E8",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 29,
+      "name": "message_reminding_icon",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 17,
+        "y": 651,
+        "width": 44,
+        "height": 44
+      },
+      "source_bounds": {
+        "x": 17,
+        "y": 651,
+        "width": 44,
+        "height": 44
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [
+        "46973292-5A6D-42BF-9A6F-25D9168D09E8:image"
+      ],
+      "source_pointer": "/info/29",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "8CC12B10-691E-43FC-B179-83CAABC064FF",
+      "source_id": "8CC12B10-691E-43FC-B179-83CAABC064FF",
+      "identity_source": "source_id",
+      "parent_id": "C76016E7-897E-4F3A-8167-83FE68CAC647",
+      "source_parent_id": "C76016E7-897E-4F3A-8167-83FE68CAC647",
+      "source_order": 30,
+      "name": "蒙版",
+      "node_type": "shape",
+      "bounds": {
+        "x": 16,
+        "y": 259,
+        "width": 45,
+        "height": 45
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 259,
+        "width": 45,
+        "height": 45
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/30",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "01D98DE8-2F69-47FB-A441-F55E352AA0E5",
+      "source_id": "01D98DE8-2F69-47FB-A441-F55E352AA0E5",
+      "identity_source": "source_id",
+      "parent_id": "C76016E7-897E-4F3A-8167-83FE68CAC647",
+      "source_parent_id": "C76016E7-897E-4F3A-8167-83FE68CAC647",
+      "source_order": 31,
+      "name": "位图",
+      "node_type": "bitmap",
+      "bounds": {
+        "x": 16,
+        "y": 259,
+        "width": 45,
+        "height": 45
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 259,
+        "width": 45,
+        "height": 45
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/31",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "C76016E7-897E-4F3A-8167-83FE68CAC647",
+      "source_id": "C76016E7-897E-4F3A-8167-83FE68CAC647",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 32,
+      "name": "位图备份",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 16,
+        "y": 259,
+        "width": 45,
+        "height": 45
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 259,
+        "width": 45,
+        "height": 45
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/32",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "7FB47576-8EE2-4BB4-A045-52EB92AF670A",
+      "source_id": "7FB47576-8EE2-4BB4-A045-52EB92AF670A",
+      "identity_source": "source_id",
+      "parent_id": "7A7E5242-D597-4010-ACA3-D9FB4A6A55F0",
+      "source_parent_id": "7A7E5242-D597-4010-ACA3-D9FB4A6A55F0",
+      "source_order": 33,
+      "name": "蒙版",
+      "node_type": "shape",
+      "bounds": {
+        "x": 16,
+        "y": 325,
+        "width": 45,
+        "height": 45
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 325,
+        "width": 45,
+        "height": 45
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/33",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "9AA9E29C-3DA6-46B0-9D87-3DE7A29BC07C",
+      "source_id": "9AA9E29C-3DA6-46B0-9D87-3DE7A29BC07C",
+      "identity_source": "source_id",
+      "parent_id": "C42BF34F-94F7-44D3-B6FB-3879B94F734F",
+      "source_parent_id": "C42BF34F-94F7-44D3-B6FB-3879B94F734F",
+      "source_order": 34,
+      "name": "-path",
+      "node_type": "shape",
+      "bounds": {
+        "x": 30.617977521009834,
+        "y": 335.94285714285706,
+        "width": 16.166440508618,
+        "height": 18.0822426208085
+      },
+      "source_bounds": {
+        "x": 30.617977521009834,
+        "y": 335.94285714285706,
+        "width": 16.166440508618,
+        "height": 18.0822426208085
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/34",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "20048584-3BE9-4A13-9751-E254762A274D",
+      "source_id": "20048584-3BE9-4A13-9751-E254762A274D",
+      "identity_source": "source_id",
+      "parent_id": "C42BF34F-94F7-44D3-B6FB-3879B94F734F",
+      "source_parent_id": "C42BF34F-94F7-44D3-B6FB-3879B94F734F",
+      "source_order": 35,
+      "name": "-path",
+      "node_type": "shape",
+      "bounds": {
+        "x": 23,
+        "y": 353.707519207891,
+        "width": 31,
+        "height": 15.2353379349665
+      },
+      "source_bounds": {
+        "x": 23,
+        "y": 353.707519207891,
+        "width": 31,
+        "height": 15.2353379349665
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/35",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "C42BF34F-94F7-44D3-B6FB-3879B94F734F",
+      "source_id": "C42BF34F-94F7-44D3-B6FB-3879B94F734F",
+      "identity_source": "source_id",
+      "parent_id": "7A7E5242-D597-4010-ACA3-D9FB4A6A55F0",
+      "source_parent_id": "7A7E5242-D597-4010-ACA3-D9FB4A6A55F0",
+      "source_order": 36,
+      "name": "编组",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 23,
+        "y": 335.94285714285706,
+        "width": 31,
+        "height": 33
+      },
+      "source_bounds": {
+        "x": 23,
+        "y": 335.94285714285706,
+        "width": 31,
+        "height": 33
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/36",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "7A7E5242-D597-4010-ACA3-D9FB4A6A55F0",
+      "source_id": "7A7E5242-D597-4010-ACA3-D9FB4A6A55F0",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 37,
+      "name": "位图备份 2",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 16,
+        "y": 325,
+        "width": 45,
+        "height": 45
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 325,
+        "width": 45,
+        "height": 45
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [
+        "7A7E5242-D597-4010-ACA3-D9FB4A6A55F0:image"
+      ],
+      "source_pointer": "/info/37",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "B450F8D8-E02A-4343-93C8-8CCF6FACB94D",
+      "source_id": "B450F8D8-E02A-4343-93C8-8CCF6FACB94D",
+      "identity_source": "source_id",
+      "parent_id": "DC675B39-58E2-4FAE-8B07-CAB077E0F606",
+      "source_parent_id": "DC675B39-58E2-4FAE-8B07-CAB077E0F606",
+      "source_order": 38,
+      "name": "蒙版",
+      "node_type": "shape",
+      "bounds": {
+        "x": 16,
+        "y": 521,
+        "width": 45,
+        "height": 45
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 521,
+        "width": 45,
+        "height": 45
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/38",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "0E43FF05-72F7-4883-B947-E6EAC5C960C7",
+      "source_id": "0E43FF05-72F7-4883-B947-E6EAC5C960C7",
+      "identity_source": "source_id",
+      "parent_id": "DC675B39-58E2-4FAE-8B07-CAB077E0F606",
+      "source_parent_id": "DC675B39-58E2-4FAE-8B07-CAB077E0F606",
+      "source_order": 39,
+      "name": "位图",
+      "node_type": "bitmap",
+      "bounds": {
+        "x": 16,
+        "y": 521,
+        "width": 45,
+        "height": 45
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 521,
+        "width": 45,
+        "height": 45
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/39",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "DC675B39-58E2-4FAE-8B07-CAB077E0F606",
+      "source_id": "DC675B39-58E2-4FAE-8B07-CAB077E0F606",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 40,
+      "name": "位图备份 5",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 16,
+        "y": 521,
+        "width": 45,
+        "height": 45
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 521,
+        "width": 45,
+        "height": 45
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/40",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "99E98289-9398-4762-8049-B5B7E715C8DD",
+      "source_id": "99E98289-9398-4762-8049-B5B7E715C8DD",
+      "identity_source": "source_id",
+      "parent_id": "D792BBF4-5B8C-4602-8222-36496E617DFB",
+      "source_parent_id": "D792BBF4-5B8C-4602-8222-36496E617DFB",
+      "source_order": 41,
+      "name": "蒙版",
+      "node_type": "shape",
+      "bounds": {
+        "x": 16,
+        "y": 390,
+        "width": 45,
+        "height": 45
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 390,
+        "width": 45,
+        "height": 45
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/41",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "9D86AD1F-3CE2-46C4-BD42-57EB34894A46",
+      "source_id": "9D86AD1F-3CE2-46C4-BD42-57EB34894A46",
+      "identity_source": "source_id",
+      "parent_id": "D792BBF4-5B8C-4602-8222-36496E617DFB",
+      "source_parent_id": "D792BBF4-5B8C-4602-8222-36496E617DFB",
+      "source_order": 42,
+      "name": "位图",
+      "node_type": "bitmap",
+      "bounds": {
+        "x": 16,
+        "y": 390,
+        "width": 44.717277486911,
+        "height": 45
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 390,
+        "width": 44.717277486911,
+        "height": 45
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/42",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "D792BBF4-5B8C-4602-8222-36496E617DFB",
+      "source_id": "D792BBF4-5B8C-4602-8222-36496E617DFB",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 43,
+      "name": "位图备份 3",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 16,
+        "y": 390,
+        "width": 45,
+        "height": 45
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 390,
+        "width": 45,
+        "height": 45
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/43",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "2D4AE6CA-90E0-4E90-BA0C-AB4C250E1BCC",
+      "source_id": "2D4AE6CA-90E0-4E90-BA0C-AB4C250E1BCC",
+      "identity_source": "source_id",
+      "parent_id": "3EE53C96-F48D-4A11-854F-5B3518D19AF5",
+      "source_parent_id": "3EE53C96-F48D-4A11-854F-5B3518D19AF5",
+      "source_order": 44,
+      "name": "蒙版",
+      "node_type": "shape",
+      "bounds": {
+        "x": 16,
+        "y": 455,
+        "width": 45,
+        "height": 45
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 455,
+        "width": 45,
+        "height": 45
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/44",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "F6231680-BDFF-4B29-B6AE-F4BBE272EB10",
+      "source_id": "F6231680-BDFF-4B29-B6AE-F4BBE272EB10",
+      "identity_source": "source_id",
+      "parent_id": "3EE53C96-F48D-4A11-854F-5B3518D19AF5",
+      "source_parent_id": "3EE53C96-F48D-4A11-854F-5B3518D19AF5",
+      "source_order": 45,
+      "name": "位图",
+      "node_type": "bitmap",
+      "bounds": {
+        "x": 16,
+        "y": 455,
+        "width": 45,
+        "height": 45
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 455,
+        "width": 45,
+        "height": 45
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/45",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "3EE53C96-F48D-4A11-854F-5B3518D19AF5",
+      "source_id": "3EE53C96-F48D-4A11-854F-5B3518D19AF5",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 46,
+      "name": "位图备份 4",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 16,
+        "y": 455,
+        "width": 45,
+        "height": 45
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 455,
+        "width": 45,
+        "height": 45
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/46",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "783F2F13-0439-4732-B43C-FFD0DCF94BB2",
+      "source_id": "783F2F13-0439-4732-B43C-FFD0DCF94BB2",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 47,
+      "name": "阿珍同学备份",
+      "node_type": "text",
+      "bounds": {
+        "x": 71,
+        "y": 196,
+        "width": 60,
+        "height": 21
+      },
+      "source_bounds": {
+        "x": 71,
+        "y": 196,
+        "width": 60,
+        "height": 21
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "阿珍同学",
+      "asset_ids": [],
+      "source_pointer": "/info/47",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "41BE3DCA-8299-42DF-8286-815374823BCA",
+      "source_id": "41BE3DCA-8299-42DF-8286-815374823BCA",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 48,
+      "name": "官方通知",
+      "node_type": "text",
+      "bounds": {
+        "x": 71,
+        "y": 586,
+        "width": 60,
+        "height": 21
+      },
+      "source_bounds": {
+        "x": 71,
+        "y": 586,
+        "width": 60,
+        "height": 21
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "官方通知",
+      "asset_ids": [],
+      "source_pointer": "/info/48",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "C3654C3F-8CA0-495A-B3ED-987C522CF26D",
+      "source_id": "C3654C3F-8CA0-495A-B3ED-987C522CF26D",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 49,
+      "name": "旎旎马克",
+      "node_type": "text",
+      "bounds": {
+        "x": 71,
+        "y": 262,
+        "width": 60,
+        "height": 21
+      },
+      "source_bounds": {
+        "x": 71,
+        "y": 262,
+        "width": 60,
+        "height": 21
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "旎旎马克",
+      "asset_ids": [],
+      "source_pointer": "/info/49",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "17C82158-B36C-46B3-95DB-989316236659",
+      "source_id": "17C82158-B36C-46B3-95DB-989316236659",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 50,
+      "name": "晚风",
+      "node_type": "text",
+      "bounds": {
+        "x": 71,
+        "y": 328,
+        "width": 30,
+        "height": 21
+      },
+      "source_bounds": {
+        "x": 71,
+        "y": 328,
+        "width": 30,
+        "height": 21
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "晚风",
+      "asset_ids": [],
+      "source_pointer": "/info/50",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "D900C1F9-E43C-4FDB-A402-FD41D3D3DA1C",
+      "source_id": "D900C1F9-E43C-4FDB-A402-FD41D3D3DA1C",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 51,
+      "name": "跳舞机宝贝",
+      "node_type": "text",
+      "bounds": {
+        "x": 71,
+        "y": 524,
+        "width": 75,
+        "height": 21
+      },
+      "source_bounds": {
+        "x": 71,
+        "y": 524,
+        "width": 75,
+        "height": 21
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "跳舞机宝贝",
+      "asset_ids": [],
+      "source_pointer": "/info/51",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "C031B416-8458-4017-8480-BBA5EF0A4FE8",
+      "source_id": "C031B416-8458-4017-8480-BBA5EF0A4FE8",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 52,
+      "name": "花花",
+      "node_type": "text",
+      "bounds": {
+        "x": 71,
+        "y": 393,
+        "width": 30,
+        "height": 21
+      },
+      "source_bounds": {
+        "x": 71,
+        "y": 393,
+        "width": 30,
+        "height": 21
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "花花",
+      "asset_ids": [],
+      "source_pointer": "/info/52",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "18E50681-53FB-4C21-AD2E-81D9F88C7166",
+      "source_id": "18E50681-53FB-4C21-AD2E-81D9F88C7166",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 53,
+      "name": "物简则明",
+      "node_type": "text",
+      "bounds": {
+        "x": 71,
+        "y": 458,
+        "width": 60,
+        "height": 21
+      },
+      "source_bounds": {
+        "x": 71,
+        "y": 458,
+        "width": 60,
+        "height": 21
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "物简则明",
+      "asset_ids": [],
+      "source_pointer": "/info/53",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "95DE9DE3-311B-43CC-8B27-5CAAF3CE8704",
+      "source_id": "95DE9DE3-311B-43CC-8B27-5CAAF3CE8704",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 54,
+      "name": "你在干嘛呀？",
+      "node_type": "text",
+      "bounds": {
+        "x": 71,
+        "y": 220,
+        "width": 72,
+        "height": 17
+      },
+      "source_bounds": {
+        "x": 71,
+        "y": 220,
+        "width": 72,
+        "height": 17
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "你在干嘛呀？",
+      "asset_ids": [],
+      "source_pointer": "/info/54",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "809A6B37-A85A-4086-A28C-7F25EF3D3797",
+      "source_id": "809A6B37-A85A-4086-A28C-7F25EF3D3797",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 55,
+      "name": "XXXXXXXXXXXXXXXXXXXX",
+      "node_type": "text",
+      "bounds": {
+        "x": 71,
+        "y": 609,
+        "width": 242,
+        "height": 17
+      },
+      "source_bounds": {
+        "x": 71,
+        "y": 609,
+        "width": 242,
+        "height": 17
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "XXXXXXXXXXXXXXXXXXXX XXXX XXXX XX",
+      "asset_ids": [],
+      "source_pointer": "/info/55",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "21488C35-C0FC-41A7-97F8-EF5370EAE7D8",
+      "source_id": "21488C35-C0FC-41A7-97F8-EF5370EAE7D8",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 56,
+      "name": "[微笑][微笑]",
+      "node_type": "text",
+      "bounds": {
+        "x": 71,
+        "y": 284,
+        "width": 64,
+        "height": 17
+      },
+      "source_bounds": {
+        "x": 71,
+        "y": 284,
+        "width": 64,
+        "height": 17
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "[微笑][微笑]",
+      "asset_ids": [],
+      "source_pointer": "/info/56",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "3AB3D3AB-E236-4FF4-8571-8DFAEE9E6698",
+      "source_id": "3AB3D3AB-E236-4FF4-8571-8DFAEE9E6698",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 57,
+      "name": "[图片]",
+      "node_type": "text",
+      "bounds": {
+        "x": 71,
+        "y": 350,
+        "width": 32,
+        "height": 17
+      },
+      "source_bounds": {
+        "x": 71,
+        "y": 350,
+        "width": 32,
+        "height": 17
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "[图片]",
+      "asset_ids": [],
+      "source_pointer": "/info/57",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "531C48FF-7434-428F-8B24-92FAD50037BF",
+      "source_id": "531C48FF-7434-428F-8B24-92FAD50037BF",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 58,
+      "name": "[语音]",
+      "node_type": "text",
+      "bounds": {
+        "x": 71,
+        "y": 546,
+        "width": 32,
+        "height": 17
+      },
+      "source_bounds": {
+        "x": 71,
+        "y": 546,
+        "width": 32,
+        "height": 17
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "[语音]",
+      "asset_ids": [],
+      "source_pointer": "/info/58",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "D00F1DA6-F3B1-486C-B916-3F7D0418C95F",
+      "source_id": "D00F1DA6-F3B1-486C-B916-3F7D0418C95F",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 59,
+      "name": "15:33",
+      "node_type": "text",
+      "bounds": {
+        "x": 332,
+        "y": 200,
+        "width": 25,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 332,
+        "y": 200,
+        "width": 25,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "15:33",
+      "asset_ids": [],
+      "source_pointer": "/info/59",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "AAA68FF7-EE7B-43A2-9F17-47A318D31C6C",
+      "source_id": "AAA68FF7-EE7B-43A2-9F17-47A318D31C6C",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 60,
+      "name": "15:33备份",
+      "node_type": "text",
+      "bounds": {
+        "x": 332,
+        "y": 266,
+        "width": 25,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 332,
+        "y": 266,
+        "width": 25,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "15:33",
+      "asset_ids": [],
+      "source_pointer": "/info/60",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "C2F72DC7-8925-4A60-9CD0-A95D3EF34A66",
+      "source_id": "C2F72DC7-8925-4A60-9CD0-A95D3EF34A66",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 61,
+      "name": "15:33备份 2",
+      "node_type": "text",
+      "bounds": {
+        "x": 332,
+        "y": 332,
+        "width": 25,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 332,
+        "y": 332,
+        "width": 25,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "15:33",
+      "asset_ids": [],
+      "source_pointer": "/info/61",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "42285EB3-128C-4A74-B6F2-276DFF915EE6",
+      "source_id": "42285EB3-128C-4A74-B6F2-276DFF915EE6",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 62,
+      "name": "15:33备份 5",
+      "node_type": "text",
+      "bounds": {
+        "x": 332,
+        "y": 528,
+        "width": 25,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 332,
+        "y": 528,
+        "width": 25,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "15:33",
+      "asset_ids": [],
+      "source_pointer": "/info/62",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "F1ACB15F-51E7-4708-9933-FDEFCA1330C8",
+      "source_id": "F1ACB15F-51E7-4708-9933-FDEFCA1330C8",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 63,
+      "name": "15:33备份 3",
+      "node_type": "text",
+      "bounds": {
+        "x": 332,
+        "y": 397,
+        "width": 25,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 332,
+        "y": 397,
+        "width": 25,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "15:33",
+      "asset_ids": [],
+      "source_pointer": "/info/63",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "8D3C9024-2B65-4FC6-8A83-D18CD53DE6BB",
+      "source_id": "8D3C9024-2B65-4FC6-8A83-D18CD53DE6BB",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 64,
+      "name": "15:33备份 4",
+      "node_type": "text",
+      "bounds": {
+        "x": 332,
+        "y": 462,
+        "width": 25,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 332,
+        "y": 462,
+        "width": 25,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "15:33",
+      "asset_ids": [],
+      "source_pointer": "/info/64",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "B28CDD4F-89C3-4FFE-BDF6-0C94F4F54BFA",
+      "source_id": "B28CDD4F-89C3-4FFE-BDF6-0C94F4F54BFA",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 65,
+      "name": "矩形 7",
+      "node_type": "shape",
+      "bounds": {
+        "x": 337,
+        "y": 221,
+        "width": 18,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 337,
+        "y": 221,
+        "width": 18,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/65",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "CF437174-0A8A-4674-A21C-1E794F72EBFD",
+      "source_id": "CF437174-0A8A-4674-A21C-1E794F72EBFD",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 66,
+      "name": "2",
+      "node_type": "text",
+      "bounds": {
+        "x": 343,
+        "y": 221,
+        "width": 6,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 343,
+        "y": 221,
+        "width": 6,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "2",
+      "asset_ids": [],
+      "source_pointer": "/info/66",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "2F09BE83-3AA8-4615-9D8A-DAEF31FC96ED",
+      "source_id": "2F09BE83-3AA8-4615-9D8A-DAEF31FC96ED",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 67,
+      "name": "15:33备份 6",
+      "node_type": "text",
+      "bounds": {
+        "x": 332,
+        "y": 588,
+        "width": 25,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 332,
+        "y": 588,
+        "width": 25,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "15:33",
+      "asset_ids": [],
+      "source_pointer": "/info/67",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "2E1B3E58-2B41-4C04-9503-F0CEA095ACC8",
+      "source_id": "2E1B3E58-2B41-4C04-9503-F0CEA095ACC8",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 68,
+      "name": "矩形 9",
+      "node_type": "shape",
+      "bounds": {
+        "x": 337,
+        "y": 609,
+        "width": 18,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 337,
+        "y": 609,
+        "width": 18,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/68",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "AB96CA81-4BB1-44F6-9117-D6DDCA4A8B7B",
+      "source_id": "AB96CA81-4BB1-44F6-9117-D6DDCA4A8B7B",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 69,
+      "name": "2备份 3",
+      "node_type": "text",
+      "bounds": {
+        "x": 343,
+        "y": 609,
+        "width": 6,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 343,
+        "y": 609,
+        "width": 6,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "2",
+      "asset_ids": [],
+      "source_pointer": "/info/69",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "83542956-2931-44D5-A49E-F8697C3EDB7B",
+      "source_id": "83542956-2931-44D5-A49E-F8697C3EDB7B",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 70,
+      "name": "提醒消息",
+      "node_type": "text",
+      "bounds": {
+        "x": 71,
+        "y": 651,
+        "width": 60,
+        "height": 21
+      },
+      "source_bounds": {
+        "x": 71,
+        "y": 651,
+        "width": 60,
+        "height": 21
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "提醒消息",
+      "asset_ids": [],
+      "source_pointer": "/info/70",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "4AC47899-F5F6-4179-A2E3-7E51F028ED94",
+      "source_id": "4AC47899-F5F6-4179-A2E3-7E51F028ED94",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 71,
+      "name": "XX XXXX XXXXXXXXXXXX",
+      "node_type": "text",
+      "bounds": {
+        "x": 71,
+        "y": 674,
+        "width": 234,
+        "height": 17
+      },
+      "source_bounds": {
+        "x": 71,
+        "y": 674,
+        "width": 234,
+        "height": 17
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "XX XXXX XXXXXXXXXXXXXXXXXXXXXX X",
+      "asset_ids": [],
+      "source_pointer": "/info/71",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "A8281B57-27F2-48D7-8BDC-4273054165DE",
+      "source_id": "A8281B57-27F2-48D7-8BDC-4273054165DE",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 72,
+      "name": "15:33备份 7",
+      "node_type": "text",
+      "bounds": {
+        "x": 332,
+        "y": 653,
+        "width": 25,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 332,
+        "y": 653,
+        "width": 25,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "15:33",
+      "asset_ids": [],
+      "source_pointer": "/info/72",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "879917DC-AC2E-4C22-A880-00C002F6D56B",
+      "source_id": "879917DC-AC2E-4C22-A880-00C002F6D56B",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 73,
+      "name": "矩形 11",
+      "node_type": "shape",
+      "bounds": {
+        "x": 337,
+        "y": 674,
+        "width": 18,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 337,
+        "y": 674,
+        "width": 18,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/73",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "A19F18DC-EF3B-4DB5-A45C-6601B7BE899F",
+      "source_id": "A19F18DC-EF3B-4DB5-A45C-6601B7BE899F",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 74,
+      "name": "2备份 4",
+      "node_type": "text",
+      "bounds": {
+        "x": 343,
+        "y": 674,
+        "width": 6,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 343,
+        "y": 674,
+        "width": 6,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "2",
+      "asset_ids": [],
+      "source_pointer": "/info/74",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "12FAFF12-6A3B-4671-9C4D-56058CC80DC6",
+      "source_id": "12FAFF12-6A3B-4671-9C4D-56058CC80DC6",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 75,
+      "name": "椭圆形",
+      "node_type": "shape",
+      "bounds": {
+        "x": 49,
+        "y": 228,
+        "width": 8,
+        "height": 8
+      },
+      "source_bounds": {
+        "x": 49,
+        "y": 228,
+        "width": 8,
+        "height": 8
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/75",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "D19C16E3-4680-403C-A20D-A626AE97315E",
+      "source_id": "D19C16E3-4680-403C-A20D-A626AE97315E",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 76,
+      "name": "椭圆形备份",
+      "node_type": "shape",
+      "bounds": {
+        "x": 49,
+        "y": 295,
+        "width": 8,
+        "height": 8
+      },
+      "source_bounds": {
+        "x": 49,
+        "y": 295,
+        "width": 8,
+        "height": 8
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/76",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "F93DC6EB-564F-45FB-B26E-B0EC13031D03",
+      "source_id": "F93DC6EB-564F-45FB-B26E-B0EC13031D03",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 77,
+      "name": "椭圆形备份 5",
+      "node_type": "shape",
+      "bounds": {
+        "x": 49,
+        "y": 427,
+        "width": 8,
+        "height": 8
+      },
+      "source_bounds": {
+        "x": 49,
+        "y": 427,
+        "width": 8,
+        "height": 8
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/77",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "CDA6C8D9-1C7C-4CFB-8B35-B453B227E3E8",
+      "source_id": "CDA6C8D9-1C7C-4CFB-8B35-B453B227E3E8",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 78,
+      "name": "椭圆形备份 3",
+      "node_type": "shape",
+      "bounds": {
+        "x": 49,
+        "y": 558,
+        "width": 8,
+        "height": 8
+      },
+      "source_bounds": {
+        "x": 49,
+        "y": 558,
+        "width": 8,
+        "height": 8
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/78",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "2564DA33-C389-4343-BE2F-1E6A1A5EAE86",
+      "source_id": "2564DA33-C389-4343-BE2F-1E6A1A5EAE86",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 79,
+      "name": "椭圆形备份 4",
+      "node_type": "shape",
+      "bounds": {
+        "x": 49,
+        "y": 492,
+        "width": 8,
+        "height": 8
+      },
+      "source_bounds": {
+        "x": 49,
+        "y": 492,
+        "width": 8,
+        "height": 8
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/79",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "4C8A42E8-6301-40C5-A299-41B85B38CF9A",
+      "source_id": "4C8A42E8-6301-40C5-A299-41B85B38CF9A",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 80,
+      "name": "椭圆形备份 2",
+      "node_type": "shape",
+      "bounds": {
+        "x": 49,
+        "y": 359,
+        "width": 8,
+        "height": 8
+      },
+      "source_bounds": {
+        "x": 49,
+        "y": 359,
+        "width": 8,
+        "height": 8
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/80",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "B10165FC-9976-4E75-A209-25BB989FCA5E",
+      "source_id": "B10165FC-9976-4E75-A209-25BB989FCA5E",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 81,
+      "name": "矩形",
+      "node_type": "shape",
+      "bounds": {
+        "x": 16,
+        "y": 104,
+        "width": 343,
+        "height": 30
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 104,
+        "width": 343,
+        "height": 30
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/81",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "07EBC91B-ED27-4193-BD68-C5C7A8EB8504",
+      "source_id": "07EBC91B-ED27-4193-BD68-C5C7A8EB8504",
+      "identity_source": "source_id",
+      "parent_id": "AE344697-D0D3-4867-B3BC-AA722DBF1288",
+      "source_parent_id": "AE344697-D0D3-4867-B3BC-AA722DBF1288",
+      "source_order": 82,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 339,
+        "y": 115,
+        "width": 8,
+        "height": 8
+      },
+      "source_bounds": {
+        "x": 339,
+        "y": 115,
+        "width": 8,
+        "height": 8
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/82",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "1C586EF5-CA8B-4BE8-AD24-1DCE14EF8069",
+      "source_id": "1C586EF5-CA8B-4BE8-AD24-1DCE14EF8069",
+      "identity_source": "source_id",
+      "parent_id": "AE344697-D0D3-4867-B3BC-AA722DBF1288",
+      "source_parent_id": "AE344697-D0D3-4867-B3BC-AA722DBF1288",
+      "source_order": 83,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 339,
+        "y": 115,
+        "width": 8,
+        "height": 8
+      },
+      "source_bounds": {
+        "x": 339,
+        "y": 115,
+        "width": 8,
+        "height": 8
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/83",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "AE344697-D0D3-4867-B3BC-AA722DBF1288",
+      "source_id": "AE344697-D0D3-4867-B3BC-AA722DBF1288",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 84,
+      "name": "编组",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 339,
+        "y": 115,
+        "width": 8,
+        "height": 8
+      },
+      "source_bounds": {
+        "x": 339,
+        "y": 115,
+        "width": 8,
+        "height": 8
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [
+        "AE344697-D0D3-4867-B3BC-AA722DBF1288:image"
+      ],
+      "source_pointer": "/info/84",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "33E0B12A-79E3-413C-B6B1-25F695108F98",
+      "source_id": "33E0B12A-79E3-413C-B6B1-25F695108F98",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 85,
+      "name": "推送通知未开启，会错过重要消息哦",
+      "node_type": "text",
+      "bounds": {
+        "x": 30,
+        "y": 111,
+        "width": 192,
+        "height": 17
+      },
+      "source_bounds": {
+        "x": 30,
+        "y": 111,
+        "width": 192,
+        "height": 17
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "推送通知未开启，会错过重要消息哦",
+      "asset_ids": [],
+      "source_pointer": "/info/85",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "05DE141B-B6EF-4532-952B-932085C23D81",
+      "source_id": "05DE141B-B6EF-4532-952B-932085C23D81",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 86,
+      "name": "去开启",
+      "node_type": "text",
+      "bounds": {
+        "x": 281,
+        "y": 111,
+        "width": 33,
+        "height": 16
+      },
+      "source_bounds": {
+        "x": 281,
+        "y": 111,
+        "width": 33,
+        "height": 16
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "去开启",
+      "asset_ids": [],
+      "source_pointer": "/info/86",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "FC1D17B3-6027-4867-B5DC-36E95B5C159D",
+      "source_id": "FC1D17B3-6027-4867-B5DC-36E95B5C159D",
+      "identity_source": "source_id",
+      "parent_id": "1357B849-5FC7-4570-9A0A-EE53EAC3ED50",
+      "source_parent_id": "1357B849-5FC7-4570-9A0A-EE53EAC3ED50",
+      "source_order": 87,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 318,
+        "y": 115,
+        "width": 4,
+        "height": 8
+      },
+      "source_bounds": {
+        "x": 318,
+        "y": 115,
+        "width": 4,
+        "height": 8
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/87",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "1357B849-5FC7-4570-9A0A-EE53EAC3ED50",
+      "source_id": "1357B849-5FC7-4570-9A0A-EE53EAC3ED50",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 88,
+      "name": "编组",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 318,
+        "y": 115,
+        "width": 4,
+        "height": 8
+      },
+      "source_bounds": {
+        "x": 318,
+        "y": 115,
+        "width": 4,
+        "height": 8
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [
+        "1357B849-5FC7-4570-9A0A-EE53EAC3ED50:image"
+      ],
+      "source_pointer": "/info/88",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "080129E6-705B-4A0A-9EE4-BB26F51F8CA9",
+      "source_id": "080129E6-705B-4A0A-9EE4-BB26F51F8CA9",
+      "identity_source": "source_id",
+      "parent_id": "44CD379F-636D-4770-B4E3-1708CEACD366",
+      "source_parent_id": "44CD379F-636D-4770-B4E3-1708CEACD366",
+      "source_order": 89,
+      "name": "蒙版",
+      "node_type": "shape",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 100
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 100
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/89",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "8A722003-24EE-4A5B-B1AD-0E7F7431E1B3",
+      "source_id": "8A722003-24EE-4A5B-B1AD-0E7F7431E1B3",
+      "identity_source": "source_id",
+      "parent_id": "BB05A780-4E52-4B26-89BC-99F70C9C4AA4",
+      "source_parent_id": "BB05A780-4E52-4B26-89BC-99F70C9C4AA4",
+      "source_order": 90,
+      "name": "蒙版",
+      "node_type": "shape",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 100
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 100
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/90",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "C5DC59BB-5778-4A06-B217-8ED43F249EF7",
+      "source_id": "C5DC59BB-5778-4A06-B217-8ED43F249EF7",
+      "identity_source": "source_id",
+      "parent_id": "BB05A780-4E52-4B26-89BC-99F70C9C4AA4",
+      "source_parent_id": "BB05A780-4E52-4B26-89BC-99F70C9C4AA4",
+      "source_order": 91,
+      "name": "椭圆形",
+      "node_type": "shape",
+      "bounds": {
+        "x": 28.358208955223972,
+        "y": 0,
+        "width": 94,
+        "height": 26
+      },
+      "source_bounds": {
+        "x": 28.358208955223972,
+        "y": 0,
+        "width": 94,
+        "height": 26
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/91",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "BB05A780-4E52-4B26-89BC-99F70C9C4AA4",
+      "source_id": "BB05A780-4E52-4B26-89BC-99F70C9C4AA4",
+      "identity_source": "source_id",
+      "parent_id": "44CD379F-636D-4770-B4E3-1708CEACD366",
+      "source_parent_id": "44CD379F-636D-4770-B4E3-1708CEACD366",
+      "source_order": 92,
+      "name": "椭圆形",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 100
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 100
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/92",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "44CD379F-636D-4770-B4E3-1708CEACD366",
+      "source_id": "44CD379F-636D-4770-B4E3-1708CEACD366",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 93,
+      "name": "编组",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 100
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 100
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/93",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "2CE34DCD-BBA8-40CC-98C7-D9CFF074676E",
+      "source_id": "2CE34DCD-BBA8-40CC-98C7-D9CFF074676E",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 94,
+      "name": "矩形",
+      "node_type": "shape",
+      "bounds": {
+        "x": 0,
+        "y": 714,
+        "width": 375,
+        "height": 98
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 714,
+        "width": 375,
+        "height": 98
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/94",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "9DD0C025-00BA-4EEA-9ABB-8ED78C53FBCD",
+      "source_id": "9DD0C025-00BA-4EEA-9ABB-8ED78C53FBCD",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 95,
+      "name": "矩形",
+      "node_type": "shape",
+      "bounds": {
+        "x": 14,
+        "y": 735,
+        "width": 347,
+        "height": 56
+      },
+      "source_bounds": {
+        "x": 14,
+        "y": 735,
+        "width": 347,
+        "height": 56
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/95",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "F83591A0-1669-4DB3-86E5-424ED262DB9F",
+      "source_id": "F83591A0-1669-4DB3-86E5-424ED262DB9F",
+      "identity_source": "source_id",
+      "parent_id": "86CF3798-EC22-43F1-AEDC-3713B3656C43",
+      "source_parent_id": "86CF3798-EC22-43F1-AEDC-3713B3656C43",
+      "source_order": 96,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 248,
+        "y": 751.1951219512193,
+        "width": 13.1707317073171,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 248,
+        "y": 751.1951219512193,
+        "width": 13.1707317073171,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/96",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "6E747B17-58E6-40AD-B14C-234052E62508",
+      "source_id": "6E747B17-58E6-40AD-B14C-234052E62508",
+      "identity_source": "source_id",
+      "parent_id": "86CF3798-EC22-43F1-AEDC-3713B3656C43",
+      "source_parent_id": "86CF3798-EC22-43F1-AEDC-3713B3656C43",
+      "source_order": 97,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 251.5121951219512,
+        "y": 749,
+        "width": 6.14634146341464,
+        "height": 4.82926829268293
+      },
+      "source_bounds": {
+        "x": 251.5121951219512,
+        "y": 749,
+        "width": 6.14634146341464,
+        "height": 4.82926829268293
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/97",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "86CF3798-EC22-43F1-AEDC-3713B3656C43",
+      "source_id": "86CF3798-EC22-43F1-AEDC-3713B3656C43",
+      "identity_source": "source_id",
+      "parent_id": "4C5886B0-AB45-4341-AF01-363FE0A5090B",
+      "source_parent_id": "4C5886B0-AB45-4341-AF01-363FE0A5090B",
+      "source_order": 98,
+      "name": "编组",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 248,
+        "y": 749,
+        "width": 13.1707317073171,
+        "height": 16.1951219512196
+      },
+      "source_bounds": {
+        "x": 248,
+        "y": 749,
+        "width": 13.1707317073171,
+        "height": 16.1951219512196
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/98",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "534A0896-0A6C-4CD4-8A09-46D949AE9C9D",
+      "source_id": "534A0896-0A6C-4CD4-8A09-46D949AE9C9D",
+      "identity_source": "source_id",
+      "parent_id": "4C5886B0-AB45-4341-AF01-363FE0A5090B",
+      "source_parent_id": "4C5886B0-AB45-4341-AF01-363FE0A5090B",
+      "source_order": 99,
+      "name": "直线",
+      "node_type": "shape",
+      "bounds": {
+        "x": 251.5,
+        "y": 757,
+        "width": 4,
+        "height": 1
+      },
+      "source_bounds": {
+        "x": 251.5,
+        "y": 757,
+        "width": 4,
+        "height": 1
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/99",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "80B03DF5-E3A6-4A73-A009-8EB9C267B0A3",
+      "source_id": "80B03DF5-E3A6-4A73-A009-8EB9C267B0A3",
+      "identity_source": "source_id",
+      "parent_id": "4C5886B0-AB45-4341-AF01-363FE0A5090B",
+      "source_parent_id": "4C5886B0-AB45-4341-AF01-363FE0A5090B",
+      "source_order": 100,
+      "name": "直线备份",
+      "node_type": "shape",
+      "bounds": {
+        "x": 251,
+        "y": 761,
+        "width": 7,
+        "height": 1
+      },
+      "source_bounds": {
+        "x": 251,
+        "y": 761,
+        "width": 7,
+        "height": 1
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/100",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "4C5886B0-AB45-4341-AF01-363FE0A5090B",
+      "source_id": "4C5886B0-AB45-4341-AF01-363FE0A5090B",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 101,
+      "name": "编组",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 248,
+        "y": 749,
+        "width": 14,
+        "height": 17
+      },
+      "source_bounds": {
+        "x": 248,
+        "y": 749,
+        "width": 14,
+        "height": 17
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [
+        "4C5886B0-AB45-4341-AF01-363FE0A5090B:image"
+      ],
+      "source_pointer": "/info/101",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "4E4DD66E-6B31-4DDF-B852-8C56C95D16D7",
+      "source_id": "4E4DD66E-6B31-4DDF-B852-8C56C95D16D7",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 102,
+      "name": "任务",
+      "node_type": "text",
+      "bounds": {
+        "x": 246,
+        "y": 772,
+        "width": 18,
+        "height": 10
+      },
+      "source_bounds": {
+        "x": 246,
+        "y": 772,
+        "width": 18,
+        "height": 10
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "任务",
+      "asset_ids": [],
+      "source_pointer": "/info/102",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "D3FC8C89-4113-4F9E-B504-99A104989546",
+      "source_id": "D3FC8C89-4113-4F9E-B504-99A104989546",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 103,
+      "name": "矩形",
+      "node_type": "shape",
+      "bounds": {
+        "x": 91,
+        "y": 742,
+        "width": 60,
+        "height": 43
+      },
+      "source_bounds": {
+        "x": 91,
+        "y": 742,
+        "width": 60,
+        "height": 43
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/103",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "19D92A15-D493-4512-8EAF-43B6445C8740",
+      "source_id": "19D92A15-D493-4512-8EAF-43B6445C8740",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 104,
+      "name": "矩形 10",
+      "node_type": "shape",
+      "bounds": {
+        "x": 135,
+        "y": 740,
+        "width": 18,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 135,
+        "y": 740,
+        "width": 18,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/104",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "6A4D3B16-878E-4C69-A222-27C7274BCA74",
+      "source_id": "6A4D3B16-878E-4C69-A222-27C7274BCA74",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 105,
+      "name": "2备份",
+      "node_type": "text",
+      "bounds": {
+        "x": 141,
+        "y": 740,
+        "width": 6,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 141,
+        "y": 740,
+        "width": 6,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "2",
+      "asset_ids": [],
+      "source_pointer": "/info/105",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "817FD579-F179-45CB-A8FF-436677B241E1",
+      "source_id": "817FD579-F179-45CB-A8FF-436677B241E1",
+      "identity_source": "source_id",
+      "parent_id": "0F1A3F3A-0024-4270-8E97-523B57BEEAFE",
+      "source_parent_id": "0F1A3F3A-0024-4270-8E97-523B57BEEAFE",
+      "source_order": 106,
+      "name": "蒙版",
+      "node_type": "shape",
+      "bounds": {
+        "x": 45,
+        "y": 748,
+        "width": 20.000076801688,
+        "height": 18
+      },
+      "source_bounds": {
+        "x": 45,
+        "y": 748,
+        "width": 20.000076801688,
+        "height": 18
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/106",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "0F1A3F3A-0024-4270-8E97-523B57BEEAFE",
+      "source_id": "0F1A3F3A-0024-4270-8E97-523B57BEEAFE",
+      "identity_source": "source_id",
+      "parent_id": "001D3A26-E9F7-4A8D-B848-BDBD5D64AEE9",
+      "source_parent_id": "001D3A26-E9F7-4A8D-B848-BDBD5D64AEE9",
+      "source_order": 107,
+      "name": "椭圆形",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 45,
+        "y": 748,
+        "width": 20.000076801688,
+        "height": 18
+      },
+      "source_bounds": {
+        "x": 45,
+        "y": 748,
+        "width": 20.000076801688,
+        "height": 18
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/107",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "29A459D2-693F-4E6E-95AB-AC7D6E956922",
+      "source_id": "29A459D2-693F-4E6E-95AB-AC7D6E956922",
+      "identity_source": "source_id",
+      "parent_id": "001D3A26-E9F7-4A8D-B848-BDBD5D64AEE9",
+      "source_parent_id": "001D3A26-E9F7-4A8D-B848-BDBD5D64AEE9",
+      "source_order": 108,
+      "name": "矩形",
+      "node_type": "shape",
+      "bounds": {
+        "x": 53,
+        "y": 760,
+        "width": 4,
+        "height": 6
+      },
+      "source_bounds": {
+        "x": 53,
+        "y": 760,
+        "width": 4,
+        "height": 6
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/108",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "001D3A26-E9F7-4A8D-B848-BDBD5D64AEE9",
+      "source_id": "001D3A26-E9F7-4A8D-B848-BDBD5D64AEE9",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 109,
+      "name": "首页",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 45,
+        "y": 748,
+        "width": 20.000076801688,
+        "height": 18
+      },
+      "source_bounds": {
+        "x": 45,
+        "y": 748,
+        "width": 20.000076801688,
+        "height": 18
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [
+        "001D3A26-E9F7-4A8D-B848-BDBD5D64AEE9:image"
+      ],
+      "source_pointer": "/info/109",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "E568E489-73D5-4230-AE9A-53B52F5DF310",
+      "source_id": "E568E489-73D5-4230-AE9A-53B52F5DF310",
+      "identity_source": "source_id",
+      "parent_id": "ED7DC567-6137-467A-B368-F2F41B9230A9",
+      "source_parent_id": "ED7DC567-6137-467A-B368-F2F41B9230A9",
+      "source_order": 110,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 306,
+        "y": 748,
+        "width": 18,
+        "height": 18
+      },
+      "source_bounds": {
+        "x": 306,
+        "y": 748,
+        "width": 18,
+        "height": 18
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/110",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "D8250668-F265-417D-BD2B-6E6E0C9E7924",
+      "source_id": "D8250668-F265-417D-BD2B-6E6E0C9E7924",
+      "identity_source": "source_id",
+      "parent_id": "ED7DC567-6137-467A-B368-F2F41B9230A9",
+      "source_parent_id": "ED7DC567-6137-467A-B368-F2F41B9230A9",
+      "source_order": 111,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 312.75,
+        "y": 752.0500000000002,
+        "width": 4.5,
+        "height": 4.5
+      },
+      "source_bounds": {
+        "x": 312.75,
+        "y": 752.0500000000002,
+        "width": 4.5,
+        "height": 4.5
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/111",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "BEDE4BD1-D5FF-4977-85CA-0072F4746148",
+      "source_id": "BEDE4BD1-D5FF-4977-85CA-0072F4746148",
+      "identity_source": "source_id",
+      "parent_id": "ED7DC567-6137-467A-B368-F2F41B9230A9",
+      "source_parent_id": "ED7DC567-6137-467A-B368-F2F41B9230A9",
+      "source_order": 112,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 308.70990000000006,
+        "y": 759.25,
+        "width": 12.579615,
+        "height": 4.1994
+      },
+      "source_bounds": {
+        "x": 308.70990000000006,
+        "y": 759.25,
+        "width": 12.579615,
+        "height": 4.1994
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/112",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "ED7DC567-6137-467A-B368-F2F41B9230A9",
+      "source_id": "ED7DC567-6137-467A-B368-F2F41B9230A9",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 113,
+      "name": "编组",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 306,
+        "y": 748,
+        "width": 18,
+        "height": 18
+      },
+      "source_bounds": {
+        "x": 306,
+        "y": 748,
+        "width": 18,
+        "height": 18
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [
+        "ED7DC567-6137-467A-B368-F2F41B9230A9:image"
+      ],
+      "source_pointer": "/info/113",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "088F6552-B0B7-4221-ACA3-D86A492AC322",
+      "source_id": "088F6552-B0B7-4221-ACA3-D86A492AC322",
+      "identity_source": "source_id",
+      "parent_id": "09D2352B-F303-4358-838E-3EEAA4F2FE77",
+      "source_parent_id": "09D2352B-F303-4358-838E-3EEAA4F2FE77",
+      "source_order": 114,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 179,
+        "y": 750,
+        "width": 18,
+        "height": 15.44679
+      },
+      "source_bounds": {
+        "x": 179,
+        "y": 750,
+        "width": 18,
+        "height": 15.44679
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/114",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "09D2352B-F303-4358-838E-3EEAA4F2FE77",
+      "source_id": "09D2352B-F303-4358-838E-3EEAA4F2FE77",
+      "identity_source": "source_id",
+      "parent_id": "30C54D53-1DD8-4A97-904B-7E71566A4C9C",
+      "source_parent_id": "30C54D53-1DD8-4A97-904B-7E71566A4C9C",
+      "source_order": 115,
+      "name": "编组",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 179,
+        "y": 750,
+        "width": 18,
+        "height": 15.44679
+      },
+      "source_bounds": {
+        "x": 179,
+        "y": 750,
+        "width": 18,
+        "height": 15.44679
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [
+        "09D2352B-F303-4358-838E-3EEAA4F2FE77:image"
+      ],
+      "source_pointer": "/info/115",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "827F7B04-AD26-4C36-A12F-9D789EF8BE28",
+      "source_id": "827F7B04-AD26-4C36-A12F-9D789EF8BE28",
+      "identity_source": "source_id",
+      "parent_id": "30C54D53-1DD8-4A97-904B-7E71566A4C9C",
+      "source_parent_id": "30C54D53-1DD8-4A97-904B-7E71566A4C9C",
+      "source_order": 116,
+      "name": "路径 3",
+      "node_type": "shape",
+      "bounds": {
+        "x": 190.77392578125,
+        "y": 753.0068359375009,
+        "width": 3.50390625,
+        "height": 2.26589133522736
+      },
+      "source_bounds": {
+        "x": 190.77392578125,
+        "y": 753.0068359375009,
+        "width": 3.50390625,
+        "height": 2.26589133522736
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/116",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "30C54D53-1DD8-4A97-904B-7E71566A4C9C",
+      "source_id": "30C54D53-1DD8-4A97-904B-7E71566A4C9C",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 117,
+      "name": "编组",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 179,
+        "y": 750,
+        "width": 18,
+        "height": 16
+      },
+      "source_bounds": {
+        "x": 179,
+        "y": 750,
+        "width": 18,
+        "height": 16
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/117",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "A4571FE1-904F-4ADC-8F09-B6E45A83C544",
+      "source_id": "A4571FE1-904F-4ADC-8F09-B6E45A83C544",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 118,
+      "name": "我的备份 4",
+      "node_type": "text",
+      "bounds": {
+        "x": 307,
+        "y": 772,
+        "width": 18,
+        "height": 10
+      },
+      "source_bounds": {
+        "x": 307,
+        "y": 772,
+        "width": 18,
+        "height": 10
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "我的",
+      "asset_ids": [],
+      "source_pointer": "/info/118",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "3274B14F-00C4-4413-8922-6A68108BDF8B",
+      "source_id": "3274B14F-00C4-4413-8922-6A68108BDF8B",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 119,
+      "name": "关系",
+      "node_type": "text",
+      "bounds": {
+        "x": 179,
+        "y": 772,
+        "width": 18,
+        "height": 10
+      },
+      "source_bounds": {
+        "x": 179,
+        "y": 772,
+        "width": 18,
+        "height": 10
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "关系",
+      "asset_ids": [],
+      "source_pointer": "/info/119",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "46EB4DD5-DB61-4736-91A6-9287513A19D4",
+      "source_id": "46EB4DD5-DB61-4736-91A6-9287513A19D4",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 120,
+      "name": "首页",
+      "node_type": "text",
+      "bounds": {
+        "x": 46,
+        "y": 772,
+        "width": 18,
+        "height": 10
+      },
+      "source_bounds": {
+        "x": 46,
+        "y": 772,
+        "width": 18,
+        "height": 10
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "首页",
+      "asset_ids": [],
+      "source_pointer": "/info/120",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "A8100418-FD67-43CB-BE27-D421E8D8ECB4",
+      "source_id": "A8100418-FD67-43CB-BE27-D421E8D8ECB4",
+      "identity_source": "source_id",
+      "parent_id": "98D0E0DD-74AB-4271-A4AA-93074B787F75",
+      "source_parent_id": "98D0E0DD-74AB-4271-A4AA-93074B787F75",
+      "source_order": 121,
+      "name": "Border",
+      "node_type": "shape",
+      "bounds": {
+        "x": 336.3333,
+        "y": 17.33333333333303,
+        "width": 22,
+        "height": 11.3333333333333
+      },
+      "source_bounds": {
+        "x": 336.3333,
+        "y": 17.33333333333303,
+        "width": 22,
+        "height": 11.3333333333333
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/121",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "C7E43905-2EA8-42C9-A9BC-94FA1EE13418",
+      "source_id": "C7E43905-2EA8-42C9-A9BC-94FA1EE13418",
+      "identity_source": "source_id",
+      "parent_id": "98D0E0DD-74AB-4271-A4AA-93074B787F75",
+      "source_parent_id": "98D0E0DD-74AB-4271-A4AA-93074B787F75",
+      "source_order": 122,
+      "name": "Cap",
+      "node_type": "shape",
+      "bounds": {
+        "x": 359.3333,
+        "y": 21,
+        "width": 1.32803800560835,
+        "height": 4
+      },
+      "source_bounds": {
+        "x": 359.3333,
+        "y": 21,
+        "width": 1.32803800560835,
+        "height": 4
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/122",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "4F68EA83-55E9-430C-81F9-C6632D7D8EB0",
+      "source_id": "4F68EA83-55E9-430C-81F9-C6632D7D8EB0",
+      "identity_source": "source_id",
+      "parent_id": "98D0E0DD-74AB-4271-A4AA-93074B787F75",
+      "source_parent_id": "98D0E0DD-74AB-4271-A4AA-93074B787F75",
+      "source_order": 123,
+      "name": "Capacity",
+      "node_type": "shape",
+      "bounds": {
+        "x": 338.3333,
+        "y": 19.33333333333303,
+        "width": 18,
+        "height": 7.33333333333333
+      },
+      "source_bounds": {
+        "x": 338.3333,
+        "y": 19.33333333333303,
+        "width": 18,
+        "height": 7.33333333333333
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/123",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "98D0E0DD-74AB-4271-A4AA-93074B787F75",
+      "source_id": "98D0E0DD-74AB-4271-A4AA-93074B787F75",
+      "identity_source": "source_id",
+      "parent_id": "9680E825-8708-49E3-9056-0C4E979A1579",
+      "source_parent_id": "9680E825-8708-49E3-9056-0C4E979A1579",
+      "source_order": 124,
+      "name": "Battery",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 336,
+        "y": 17,
+        "width": 25,
+        "height": 12
+      },
+      "source_bounds": {
+        "x": 336,
+        "y": 17,
+        "width": 25,
+        "height": 12
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/124",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "9EBC4966-820D-4A77-BC19-0CD0C8444ED5",
+      "source_id": "9EBC4966-820D-4A77-BC19-0CD0C8444ED5",
+      "identity_source": "source_id",
+      "parent_id": "9680E825-8708-49E3-9056-0C4E979A1579",
+      "source_parent_id": "9680E825-8708-49E3-9056-0C4E979A1579",
+      "source_order": 125,
+      "name": "Wifi",
+      "node_type": "shape",
+      "bounds": {
+        "x": 316,
+        "y": 17.330672704032622,
+        "width": 15.3333,
+        "height": 11
+      },
+      "source_bounds": {
+        "x": 316,
+        "y": 17.330672704032622,
+        "width": 15.3333,
+        "height": 11
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/125",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "9C941034-6D8C-4C25-BF78-DC59EFCA0A33",
+      "source_id": "9C941034-6D8C-4C25-BF78-DC59EFCA0A33",
+      "identity_source": "source_id",
+      "parent_id": "9680E825-8708-49E3-9056-0C4E979A1579",
+      "source_parent_id": "9680E825-8708-49E3-9056-0C4E979A1579",
+      "source_order": 126,
+      "name": "Cellular Connection",
+      "node_type": "shape",
+      "bounds": {
+        "x": 294,
+        "y": 17.666667000000416,
+        "width": 17,
+        "height": 10.6666666666667
+      },
+      "source_bounds": {
+        "x": 294,
+        "y": 17.666667000000416,
+        "width": 17,
+        "height": 10.6666666666667
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/126",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "15B43C44-D26D-48FC-AEF3-1C8C6651A07F",
+      "source_id": "15B43C44-D26D-48FC-AEF3-1C8C6651A07F",
+      "identity_source": "source_id",
+      "parent_id": "D08F8F06-D920-4C20-BEA1-2E3FD40D4350",
+      "source_parent_id": "D08F8F06-D920-4C20-BEA1-2E3FD40D4350",
+      "source_order": 127,
+      "name": "Time",
+      "node_type": "text",
+      "bounds": {
+        "x": 21,
+        "y": 14.333300000000236,
+        "width": 54,
+        "height": 18
+      },
+      "source_bounds": {
+        "x": 21,
+        "y": 14.333300000000236,
+        "width": 54,
+        "height": 18
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "9:41",
+      "asset_ids": [],
+      "source_pointer": "/info/127",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "D08F8F06-D920-4C20-BEA1-2E3FD40D4350",
+      "source_id": "D08F8F06-D920-4C20-BEA1-2E3FD40D4350",
+      "identity_source": "source_id",
+      "parent_id": "9680E825-8708-49E3-9056-0C4E979A1579",
+      "source_parent_id": "9680E825-8708-49E3-9056-0C4E979A1579",
+      "source_order": 128,
+      "name": "Time Style",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 21,
+        "y": 7.333300000000236,
+        "width": 54,
+        "height": 21
+      },
+      "source_bounds": {
+        "x": 21,
+        "y": 7.333300000000236,
+        "width": 54,
+        "height": 21
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/128",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "9680E825-8708-49E3-9056-0C4E979A1579",
+      "source_id": "9680E825-8708-49E3-9056-0C4E979A1579",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 129,
+      "name": "Bars/Status Bars/iPhone/Light",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 44
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 44
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/129",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "D55213A0-CC80-407D-A954-9045E5B000F5",
+      "source_id": "D55213A0-CC80-407D-A954-9045E5B000F5",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 130,
+      "name": "Bars/Status Bars/iPhone/Light",
+      "node_type": "symbol",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 44
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 44
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/130",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "84005589-5A6E-4B0B-8664-9E5B623AF342",
+      "source_id": "84005589-5A6E-4B0B-8664-9E5B623AF342",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 131,
+      "name": "消息",
+      "node_type": "text",
+      "bounds": {
+        "x": 112,
+        "y": 772,
+        "width": 18,
+        "height": 10
+      },
+      "source_bounds": {
+        "x": 112,
+        "y": 772,
+        "width": 18,
+        "height": 10
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "消息",
+      "asset_ids": [],
+      "source_pointer": "/info/131",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "E971B9EC-BC94-484A-824A-5573C192E563",
+      "source_id": "E971B9EC-BC94-484A-824A-5573C192E563",
+      "identity_source": "source_id",
+      "parent_id": "D9D88F6D-32D5-49E0-A3AE-C8FF9FA32F7C",
+      "source_parent_id": "D9D88F6D-32D5-49E0-A3AE-C8FF9FA32F7C",
+      "source_order": 132,
+      "name": "蒙版",
+      "node_type": "shape",
+      "bounds": {
+        "x": 111,
+        "y": 748,
+        "width": 20,
+        "height": 18.973801138537
+      },
+      "source_bounds": {
+        "x": 111,
+        "y": 748,
+        "width": 20,
+        "height": 18.973801138537
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/132",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "DE63E3E1-256E-4B93-A1D0-1F46EEE254AF",
+      "source_id": "DE63E3E1-256E-4B93-A1D0-1F46EEE254AF",
+      "identity_source": "source_id",
+      "parent_id": "D9D88F6D-32D5-49E0-A3AE-C8FF9FA32F7C",
+      "source_parent_id": "D9D88F6D-32D5-49E0-A3AE-C8FF9FA32F7C",
+      "source_order": 133,
+      "name": "椭圆形",
+      "node_type": "shape",
+      "bounds": {
+        "x": 115,
+        "y": 748,
+        "width": 12,
+        "height": 4
+      },
+      "source_bounds": {
+        "x": 115,
+        "y": 748,
+        "width": 12,
+        "height": 4
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/133",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "D9D88F6D-32D5-49E0-A3AE-C8FF9FA32F7C",
+      "source_id": "D9D88F6D-32D5-49E0-A3AE-C8FF9FA32F7C",
+      "identity_source": "source_id",
+      "parent_id": "2105E345-1E59-4004-B9B2-11B3E6B1A221",
+      "source_parent_id": "2105E345-1E59-4004-B9B2-11B3E6B1A221",
+      "source_order": 134,
+      "name": "椭圆形",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 111,
+        "y": 744,
+        "width": 20,
+        "height": 22.973801138537
+      },
+      "source_bounds": {
+        "x": 111,
+        "y": 744,
+        "width": 20,
+        "height": 22.973801138537
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/134",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "75F816C6-3BB0-4207-BE79-E69239D6612F",
+      "source_id": "75F816C6-3BB0-4207-BE79-E69239D6612F",
+      "identity_source": "source_id",
+      "parent_id": "2105E345-1E59-4004-B9B2-11B3E6B1A221",
+      "source_parent_id": "2105E345-1E59-4004-B9B2-11B3E6B1A221",
+      "source_order": 135,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 123.9545454545455,
+        "y": 754.818181818182,
+        "width": 0.454545454545457,
+        "height": 0.454545454545454
+      },
+      "source_bounds": {
+        "x": 123.9545454545455,
+        "y": 754.818181818182,
+        "width": 0.454545454545457,
+        "height": 0.454545454545454
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/135",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "B2D2E480-44FC-4CF9-BD44-401473189813",
+      "source_id": "B2D2E480-44FC-4CF9-BD44-401473189813",
+      "identity_source": "source_id",
+      "parent_id": "2105E345-1E59-4004-B9B2-11B3E6B1A221",
+      "source_parent_id": "2105E345-1E59-4004-B9B2-11B3E6B1A221",
+      "source_order": 136,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 117.59090909090901,
+        "y": 754.818181818182,
+        "width": 0.454545454545454,
+        "height": 0.454545454545454
+      },
+      "source_bounds": {
+        "x": 117.59090909090901,
+        "y": 754.818181818182,
+        "width": 0.454545454545454,
+        "height": 0.454545454545454
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/136",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "2B952F01-7C2D-4D1A-B3E1-AFEC99B66F81",
+      "source_id": "2B952F01-7C2D-4D1A-B3E1-AFEC99B66F81",
+      "identity_source": "source_id",
+      "parent_id": "2105E345-1E59-4004-B9B2-11B3E6B1A221",
+      "source_parent_id": "2105E345-1E59-4004-B9B2-11B3E6B1A221",
+      "source_order": 137,
+      "name": "路径",
+      "node_type": "shape",
+      "bounds": {
+        "x": 117.81818181818176,
+        "y": 758.909090909091,
+        "width": 6.36363636363636,
+        "height": 1.81818181818182
+      },
+      "source_bounds": {
+        "x": 117.81818181818176,
+        "y": 758.909090909091,
+        "width": 6.36363636363636,
+        "height": 1.81818181818182
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/137",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "2105E345-1E59-4004-B9B2-11B3E6B1A221",
+      "source_id": "2105E345-1E59-4004-B9B2-11B3E6B1A221",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 138,
+      "name": "编组",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 111,
+        "y": 748,
+        "width": 20,
+        "height": 18.973801138537
+      },
+      "source_bounds": {
+        "x": 111,
+        "y": 748,
+        "width": 20,
+        "height": 18.973801138537
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [
+        "2105E345-1E59-4004-B9B2-11B3E6B1A221:image"
+      ],
+      "source_pointer": "/info/138",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "5355B69B-C35E-4D62-AF9D-59C52351451C",
+      "source_id": "5355B69B-C35E-4D62-AF9D-59C52351451C",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 139,
+      "name": "路径 4",
+      "node_type": "shape",
+      "bounds": {
+        "x": 57.59466422272794,
+        "y": 75.2705078125,
+        "width": 19.7111104393502,
+        "height": 12
+      },
+      "source_bounds": {
+        "x": 57.59466422272794,
+        "y": 75.2705078125,
+        "width": 19.7111104393502,
+        "height": 12
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [
+        "5355B69B-C35E-4D62-AF9D-59C52351451C:image"
+      ],
+      "source_pointer": "/info/139",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "EC6EE647-8960-420C-B5CE-6CE0B361E59B",
+      "source_id": "EC6EE647-8960-420C-B5CE-6CE0B361E59B",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 140,
+      "name": "消息",
+      "node_type": "text",
+      "bounds": {
+        "x": 16,
+        "y": 51,
+        "width": 52,
+        "height": 37
+      },
+      "source_bounds": {
+        "x": 16,
+        "y": 51,
+        "width": 52,
+        "height": 37
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "消息",
+      "asset_ids": [],
+      "source_pointer": "/info/140",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "B21589D4-434E-4C07-B542-B421CCE0192F",
+      "source_id": "B21589D4-434E-4C07-B542-B421CCE0192F",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 141,
+      "name": "通话记录",
+      "node_type": "text",
+      "bounds": {
+        "x": 92.06108810937894,
+        "y": 58,
+        "width": 60,
+        "height": 21
+      },
+      "source_bounds": {
+        "x": 92.06108810937894,
+        "y": 58,
+        "width": 60,
+        "height": 21
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "通话记录",
+      "asset_ids": [],
+      "source_pointer": "/info/141",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "F7F00C5A-3673-4B53-AACA-B1561E6DB83E",
+      "source_id": "F7F00C5A-3673-4B53-AACA-B1561E6DB83E",
+      "identity_source": "source_id",
+      "parent_id": "3AFD5A9A-CFA6-403E-B3EB-AC1AF9534F24",
+      "source_parent_id": "3AFD5A9A-CFA6-403E-B3EB-AC1AF9534F24",
+      "source_order": 142,
+      "name": "Home Indicator",
+      "node_type": "shape",
+      "bounds": {
+        "x": 121,
+        "y": 799,
+        "width": 134,
+        "height": 5
+      },
+      "source_bounds": {
+        "x": 121,
+        "y": 799,
+        "width": 134,
+        "height": 5
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/142",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "3AFD5A9A-CFA6-403E-B3EB-AC1AF9534F24",
+      "source_id": "3AFD5A9A-CFA6-403E-B3EB-AC1AF9534F24",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 143,
+      "name": "Bars/Home Indicators/iPhone/Light - Portrait",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 121,
+        "y": 778,
+        "width": 134,
+        "height": 34
+      },
+      "source_bounds": {
+        "x": 121,
+        "y": 778,
+        "width": 134,
+        "height": 34
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/143",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "DEF6BF74-FC26-4480-A0CF-56B2069C09BF",
+      "source_id": "DEF6BF74-FC26-4480-A0CF-56B2069C09BF",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 144,
+      "name": "Bars/Home Indicators/iPhone/Light - Portrait",
+      "node_type": "symbol",
+      "bounds": {
+        "x": 121,
+        "y": 778,
+        "width": 134,
+        "height": 34
+      },
+      "source_bounds": {
+        "x": 121,
+        "y": 778,
+        "width": 134,
+        "height": 34
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/144",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "DABF11FF-12C5-4540-9231-E59D25AF37C5",
+      "source_id": "DABF11FF-12C5-4540-9231-E59D25AF37C5",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 145,
+      "name": "矩形备份 6",
+      "node_type": "shape",
+      "bounds": {
+        "x": 0,
+        "y": 509,
+        "width": 375,
+        "height": 65
+      },
+      "source_bounds": {
+        "x": 0,
+        "y": 509,
+        "width": 375,
+        "height": 65
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/145",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "11580BA1-4C75-474D-B8F0-4F87F88E0DF8",
+      "source_id": "11580BA1-4C75-474D-B8F0-4F87F88E0DF8",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 146,
+      "name": "矩形 8",
+      "node_type": "shape",
+      "bounds": {
+        "x": 145,
+        "y": 47,
+        "width": 18,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 145,
+        "y": 47,
+        "width": 18,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/146",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "626C814A-8099-41E1-9C93-A0671EDDF57A",
+      "source_id": "626C814A-8099-41E1-9C93-A0671EDDF57A",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 147,
+      "name": "2备份 2",
+      "node_type": "text",
+      "bounds": {
+        "x": 151,
+        "y": 47,
+        "width": 6,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 151,
+        "y": 47,
+        "width": 6,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "2",
+      "asset_ids": [],
+      "source_pointer": "/info/147",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "01A9271C-BAB1-4896-A8F3-6B146C526DF7",
+      "source_id": "01A9271C-BAB1-4896-A8F3-6B146C526DF7",
+      "identity_source": "source_id",
+      "parent_id": "7A0E367B-A662-48BB-BDCB-782745125976",
+      "source_parent_id": "7A0E367B-A662-48BB-BDCB-782745125976",
+      "source_order": 148,
+      "name": "形状结合",
+      "node_type": "shape",
+      "bounds": {
+        "x": 74,
+        "y": 418,
+        "width": 15.0000000000001,
+        "height": 11
+      },
+      "source_bounds": {
+        "x": 74,
+        "y": 418,
+        "width": 15.0000000000001,
+        "height": 11
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/148",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "19EE4B67-E559-498A-BFF9-44E65AA65CD2",
+      "source_id": "19EE4B67-E559-498A-BFF9-44E65AA65CD2",
+      "identity_source": "source_id",
+      "parent_id": "7A0E367B-A662-48BB-BDCB-782745125976",
+      "source_parent_id": "7A0E367B-A662-48BB-BDCB-782745125976",
+      "source_order": 149,
+      "name": "线条",
+      "node_type": "shape",
+      "bounds": {
+        "x": 77.36959519390348,
+        "y": 421.0755360795529,
+        "width": 2.45528810417371,
+        "height": 0.613822026043429
+      },
+      "source_bounds": {
+        "x": 77.36959519390348,
+        "y": 421.0755360795529,
+        "width": 2.45528810417371,
+        "height": 0.613822026043429
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/149",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "7A0E367B-A662-48BB-BDCB-782745125976",
+      "source_id": "7A0E367B-A662-48BB-BDCB-782745125976",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 150,
+      "name": "编组 12",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 74,
+        "y": 418,
+        "width": 15,
+        "height": 11
+      },
+      "source_bounds": {
+        "x": 74,
+        "y": 418,
+        "width": 15,
+        "height": 11
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [
+        "7A0E367B-A662-48BB-BDCB-782745125976:image"
+      ],
+      "source_pointer": "/info/150",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "481A3981-82B6-47E4-84ED-31D765AE1A85",
+      "source_id": "481A3981-82B6-47E4-84ED-31D765AE1A85",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 151,
+      "name": "未接",
+      "node_type": "text",
+      "bounds": {
+        "x": 95,
+        "y": 415,
+        "width": 24,
+        "height": 17
+      },
+      "source_bounds": {
+        "x": 95,
+        "y": 415,
+        "width": 24,
+        "height": 17
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "未接",
+      "asset_ids": [],
+      "source_pointer": "/info/151",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "F3D18C28-E109-44E5-88A1-5FBB234F3678",
+      "source_id": "F3D18C28-E109-44E5-88A1-5FBB234F3678",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 152,
+      "name": "已取消",
+      "node_type": "text",
+      "bounds": {
+        "x": 94,
+        "y": 480,
+        "width": 36,
+        "height": 17
+      },
+      "source_bounds": {
+        "x": 94,
+        "y": 480,
+        "width": 36,
+        "height": 17
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "已取消",
+      "asset_ids": [],
+      "source_pointer": "/info/152",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "E6ED9345-72C4-47EE-A07E-4497059B9714",
+      "source_id": "E6ED9345-72C4-47EE-A07E-4497059B9714",
+      "identity_source": "source_id",
+      "parent_id": "F5203DE6-E6BA-4BEA-A600-9111889E746E",
+      "source_parent_id": "F5203DE6-E6BA-4BEA-A600-9111889E746E",
+      "source_order": 153,
+      "name": "形状结合",
+      "node_type": "shape",
+      "bounds": {
+        "x": 73,
+        "y": 484,
+        "width": 15.0000000000001,
+        "height": 11
+      },
+      "source_bounds": {
+        "x": 73,
+        "y": 484,
+        "width": 15.0000000000001,
+        "height": 11
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/153",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "ADA661F9-2B88-40BF-A193-0A0FCD91E850",
+      "source_id": "ADA661F9-2B88-40BF-A193-0A0FCD91E850",
+      "identity_source": "source_id",
+      "parent_id": "F5203DE6-E6BA-4BEA-A600-9111889E746E",
+      "source_parent_id": "F5203DE6-E6BA-4BEA-A600-9111889E746E",
+      "source_order": 154,
+      "name": "线条",
+      "node_type": "shape",
+      "bounds": {
+        "x": 76.36959519390348,
+        "y": 487.0755360795529,
+        "width": 2.45528810417371,
+        "height": 0.613822026043429
+      },
+      "source_bounds": {
+        "x": 76.36959519390348,
+        "y": 487.0755360795529,
+        "width": 2.45528810417371,
+        "height": 0.613822026043429
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/154",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "F5203DE6-E6BA-4BEA-A600-9111889E746E",
+      "source_id": "F5203DE6-E6BA-4BEA-A600-9111889E746E",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 155,
+      "name": "编组 3",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 73,
+        "y": 484,
+        "width": 15,
+        "height": 11
+      },
+      "source_bounds": {
+        "x": 73,
+        "y": 484,
+        "width": 15,
+        "height": 11
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [
+        "F5203DE6-E6BA-4BEA-A600-9111889E746E:image"
+      ],
+      "source_pointer": "/info/155",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "EBD9B88B-6465-46F9-88BC-B8BA9BC1F0F5",
+      "source_id": "EBD9B88B-6465-46F9-88BC-B8BA9BC1F0F5",
+      "identity_source": "source_id",
+      "parent_id": "DFFF8A51-20E4-40A5-B464-73ED8B673C9E",
+      "source_parent_id": "DFFF8A51-20E4-40A5-B464-73ED8B673C9E",
+      "source_order": 156,
+      "name": "矩形 4",
+      "node_type": "shape",
+      "bounds": {
+        "x": 136,
+        "y": 265,
+        "width": 32,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 136,
+        "y": 265,
+        "width": 32,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/156",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "BCAFA8CC-A1EA-4EAF-8B67-D4CE8C9180A0",
+      "source_id": "BCAFA8CC-A1EA-4EAF-8B67-D4CE8C9180A0",
+      "identity_source": "source_id",
+      "parent_id": "DFFF8A51-20E4-40A5-B464-73ED8B673C9E",
+      "source_parent_id": "DFFF8A51-20E4-40A5-B464-73ED8B673C9E",
+      "source_order": 157,
+      "name": "熟人",
+      "node_type": "text",
+      "bounds": {
+        "x": 143,
+        "y": 266,
+        "width": 18,
+        "height": 13
+      },
+      "source_bounds": {
+        "x": 143,
+        "y": 266,
+        "width": 18,
+        "height": 13
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "熟人",
+      "asset_ids": [],
+      "source_pointer": "/info/157",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "DFFF8A51-20E4-40A5-B464-73ED8B673C9E",
+      "source_id": "DFFF8A51-20E4-40A5-B464-73ED8B673C9E",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 158,
+      "name": "编组",
+      "node_type": "layer-group",
+      "bounds": {
+        "x": 136,
+        "y": 265,
+        "width": 37,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 136,
+        "y": 265,
+        "width": 37,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/158",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "F65DAD96-FA8B-4A56-A733-4088F9206E4E",
+      "source_id": "F65DAD96-FA8B-4A56-A733-4088F9206E4E",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 159,
+      "name": "矩形 5",
+      "node_type": "shape",
+      "bounds": {
+        "x": 136,
+        "y": 198,
+        "width": 32,
+        "height": 14
+      },
+      "source_bounds": {
+        "x": 136,
+        "y": 198,
+        "width": 32,
+        "height": 14
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": null,
+      "asset_ids": [],
+      "source_pointer": "/info/159",
+      "effective_source_visible": true
+    },
+    {
+      "node_id": "589AC81F-5A99-43A6-9E5F-3858D219C87B",
+      "source_id": "589AC81F-5A99-43A6-9E5F-3858D219C87B",
+      "identity_source": "source_id",
+      "parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_parent_id": "06146DD0-C00A-4B89-BED1-4BCA12536727",
+      "source_order": 160,
+      "name": "生人",
+      "node_type": "text",
+      "bounds": {
+        "x": 144,
+        "y": 198,
+        "width": 18,
+        "height": 13
+      },
+      "source_bounds": {
+        "x": 144,
+        "y": 198,
+        "width": 18,
+        "height": 13
+      },
+      "bounds_source_field": "left/top/width/height",
+      "bounds_coordinate_mode": "source",
+      "source_visible": true,
+      "text": "生人",
+      "asset_ids": [],
+      "source_pointer": "/info/160",
+      "effective_source_visible": true
+    }
+  ],
+  "coordinate_space": "source_canvas",
+  "coordinate_mapping": {
+    "verified": true,
+    "strategy": "identity",
+    "source_origin": {
+      "x": 0,
+      "y": 0
+    },
+    "translation": {
+      "x": 0,
+      "y": 0
+    }
+  }
+}

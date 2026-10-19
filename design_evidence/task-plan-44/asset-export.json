@@ -1,0 +1,11 @@
+{
+  "status": "error",
+  "code": "NoAssets",
+  "message": "No assets match this selection.",
+  "snapshot_id": "c6a7d292fc945718c9df15b499eea634",
+  "selection": {
+    "kind": "all",
+    "format_preference": "original",
+    "target_dpr": 4
+  }
+}

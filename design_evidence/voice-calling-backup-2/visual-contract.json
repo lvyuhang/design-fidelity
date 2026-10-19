@@ -1,0 +1,226 @@
+{
+  "render_scale": 4,
+  "canvas": [
+    375,
+    812
+  ],
+  "reference": "reference.png",
+  "source_documents": [
+    "source/snapshot.json"
+  ],
+  "regions": {
+    "call_header": {
+      "label": "通话顶部核心区",
+      "rect": [
+        110,
+        100,
+        155,
+        235
+      ],
+      "max_mae": 45,
+      "max_p95": 150,
+      "blocking": false
+    },
+    "bottom_actions": {
+      "label": "底部交互区",
+      "rect": [
+        14,
+        611,
+        289,
+        162
+      ],
+      "max_mae": 35,
+      "max_p95": 115,
+      "blocking": false
+    }
+  },
+  "relations": {},
+  "color_samples": {},
+  "features": {
+    "countdown": {
+      "label": "奖励倒计时",
+      "node_ids": [
+        "083E2038-71D8-437E-864B-FD35A0C40881"
+      ],
+      "padding": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "max_distance": 85,
+        "min_pixels": 30
+      },
+      "limits": {
+        "max_center_delta": 3,
+        "max_size_delta": 5,
+        "max_edge_delta": 5,
+        "max_ink_ratio_delta": 0.65
+      },
+      "blocking": true
+    },
+    "state": {
+      "label": "语音通话中",
+      "node_ids": [
+        "18247A44-B395-4F81-B549-4B9981091C6C"
+      ],
+      "padding": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "max_distance": 85,
+        "min_pixels": 30
+      },
+      "limits": {
+        "max_center_delta": 3,
+        "max_size_delta": 5,
+        "max_edge_delta": 5,
+        "max_ink_ratio_delta": 0.65
+      },
+      "blocking": true
+    },
+    "name": {
+      "label": "用户昵称",
+      "node_ids": [
+        "1B407962-7657-4887-A5E5-49EFC08E0A0C"
+      ],
+      "padding": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "max_distance": 85,
+        "min_pixels": 30
+      },
+      "limits": {
+        "max_center_delta": 3,
+        "max_size_delta": 5,
+        "max_edge_delta": 5,
+        "max_ink_ratio_delta": 0.65
+      },
+      "blocking": true
+    },
+    "relation": {
+      "label": "关系入口",
+      "node_ids": [
+        "AC5C9681-EAF5-4936-ADA2-69E6050A5B80"
+      ],
+      "padding": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          230,
+          181,
+          94
+        ],
+        "max_distance": 80,
+        "min_pixels": 20
+      },
+      "limits": {
+        "max_center_delta": 3,
+        "max_size_delta": 5,
+        "max_edge_delta": 5,
+        "max_ink_ratio_delta": 0.65
+      },
+      "blocking": true
+    },
+    "warning": {
+      "label": "安全提醒",
+      "node_ids": [
+        "992FAFBD-F482-486B-BF93-C26A07ED8485"
+      ],
+      "padding": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          164,
+          154,
+          140
+        ],
+        "max_distance": 65,
+        "min_pixels": 30
+      },
+      "limits": {
+        "max_center_delta": 3,
+        "max_size_delta": 5,
+        "max_edge_delta": 5,
+        "max_ink_ratio_delta": 0.65
+      },
+      "blocking": false
+    },
+    "input": {
+      "label": "文字输入提示",
+      "node_ids": [
+        "D4C2ABA7-8DC2-4405-B328-4888907D8295"
+      ],
+      "padding": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          164,
+          154,
+          140
+        ],
+        "max_distance": 65,
+        "min_pixels": 30
+      },
+      "limits": {
+        "max_center_delta": 3,
+        "max_size_delta": 5,
+        "max_edge_delta": 5,
+        "max_ink_ratio_delta": 0.65
+      },
+      "blocking": true
+    }
+  },
+  "exclusions": [
+    {
+      "rect": [
+        148,
+        178,
+        80,
+        80
+      ],
+      "reason": "头像照片没有可导出 asset_id，按规则使用圆形未切图占位。"
+    }
+  ]
+}

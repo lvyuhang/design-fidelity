@@ -1,0 +1,692 @@
+{
+  "evaluated_at_utc": "2026-10-12T06:30:13.552368+00:00",
+  "code_sha256": "ae137648f34ac0b9ecd2ebcddfb5c7e0eda6174ef09212a25d4abdb94257609b",
+  "sol56_code_sha256": "3144c08726585cf8aea581594165ffa86f8a0b7ffc547f88cb362df797a28e3a",
+  "models": {
+    "sol56": {
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "visual_revision_count": 0
+    },
+    "direct": {
+      "model": "gpt-6",
+      "reasoning_effort": "unspecified",
+      "visual_revision_count": 0
+    },
+    "calibrated": {
+      "model": "gpt-6",
+      "role": "existing corrected baseline"
+    }
+  },
+  "visual_revision_count": 0,
+  "strict_blind_test": false,
+  "standard_shadow_blur_enabled": true,
+  "method": "Native 4x RGB MAE (0..255). No alignment or resizing. Lower is closer, not fidelity %. Common/warning exclude shield rect for BOTH variants. Full canvas and shield diagnostic retain it.",
+  "excluded_region": [
+    295,
+    299,
+    37,
+    34
+  ],
+  "states": {
+    "none": {
+      "source_version": "9121ae6b-b534-4070-aa1b-5085a2406781",
+      "source_reference_sha256": "c9f025967172ed54cb1632e5ad49f2570d7065dff8e0b61d9854d6508734387f",
+      "regions": {
+        "canvas": {
+          "label": "全画布（含资源缺口）",
+          "rect": [
+            0,
+            0,
+            375,
+            350
+          ],
+          "pixels_evaluated": 2100000,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 3.3351,
+            "p95": 13.0
+          },
+          "direct": {
+            "mae": 0.6417,
+            "p95": 1.0
+          },
+          "calibrated": {
+            "mae": 0.648,
+            "p95": 2.0
+          }
+        },
+        "common": {
+          "label": "共同可验证区",
+          "rect": [
+            0,
+            0,
+            375,
+            350
+          ],
+          "pixels_evaluated": 2100000,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 3.3351,
+            "p95": 13.0
+          },
+          "direct": {
+            "mae": 0.6417,
+            "p95": 1.0
+          },
+          "calibrated": {
+            "mae": 0.648,
+            "p95": 2.0
+          }
+        },
+        "heading": {
+          "label": "标题与副标题",
+          "rect": [
+            24,
+            0,
+            205,
+            66
+          ],
+          "pixels_evaluated": 216480,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 10.1797,
+            "p95": 244.0
+          },
+          "direct": {
+            "mae": 3.1368,
+            "p95": 15.0
+          },
+          "calibrated": {
+            "mae": 3.1404,
+            "p95": 15.0
+          }
+        },
+        "male_card": {
+          "label": "男生卡片及阴影",
+          "rect": [
+            16,
+            104,
+            162,
+            200
+          ],
+          "pixels_evaluated": 518400,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 4.0778,
+            "p95": 13.0
+          },
+          "direct": {
+            "mae": 0.4441,
+            "p95": 2.0
+          },
+          "calibrated": {
+            "mae": 0.4441,
+            "p95": 2.0
+          }
+        },
+        "female_card": {
+          "label": "女生卡片及阴影",
+          "rect": [
+            192,
+            104,
+            162,
+            200
+          ],
+          "pixels_evaluated": 518400,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 4.093,
+            "p95": 13.0
+          },
+          "direct": {
+            "mae": 0.4368,
+            "p95": 2.0
+          },
+          "calibrated": {
+            "mae": 0.4368,
+            "p95": 2.0
+          }
+        },
+        "card_fill": {
+          "label": "未选卡片内部填充",
+          "rect": [
+            40,
+            128,
+            110,
+            28
+          ],
+          "pixels_evaluated": 49280,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 7.1226,
+            "p95": 13.0
+          },
+          "direct": {
+            "mae": 0.228,
+            "p95": 1.0
+          },
+          "calibrated": {
+            "mae": 0.228,
+            "p95": 1.0
+          }
+        },
+        "shadow": {
+          "label": "卡片底部阴影",
+          "rect": [
+            24,
+            278,
+            146,
+            22
+          ],
+          "pixels_evaluated": 51392,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 0.8971,
+            "p95": 10.0
+          },
+          "direct": {
+            "mae": 0.5221,
+            "p95": 2.0
+          },
+          "calibrated": {
+            "mae": 0.5222,
+            "p95": 2.0
+          }
+        },
+        "border": {
+          "label": "卡片左上圆角",
+          "rect": [
+            28,
+            115,
+            32,
+            32
+          ],
+          "pixels_evaluated": 16384,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 3.9174,
+            "p95": 12.0
+          },
+          "direct": {
+            "mae": 0.3794,
+            "p95": 1.0
+          },
+          "calibrated": {
+            "mae": 0.3805,
+            "p95": 1.0
+          }
+        },
+        "male_icon": {
+          "label": "男生原始图标",
+          "rect": [
+            65,
+            163,
+            64,
+            64
+          ],
+          "pixels_evaluated": 65536,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 1.6053,
+            "p95": 13.0
+          },
+          "direct": {
+            "mae": 0.1794,
+            "p95": 1.0
+          },
+          "calibrated": {
+            "mae": 0.1794,
+            "p95": 1.0
+          }
+        },
+        "female_icon": {
+          "label": "女生原始图标",
+          "rect": [
+            241,
+            163,
+            64,
+            64
+          ],
+          "pixels_evaluated": 65536,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 1.628,
+            "p95": 13.0
+          },
+          "direct": {
+            "mae": 0.1739,
+            "p95": 1.0
+          },
+          "calibrated": {
+            "mae": 0.1739,
+            "p95": 1.0
+          }
+        },
+        "background": {
+          "label": "顶部渐变背景",
+          "rect": [
+            235,
+            0,
+            140,
+            80
+          ],
+          "pixels_evaluated": 179200,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 2.1934,
+            "p95": 5.0
+          },
+          "direct": {
+            "mae": 0.3129,
+            "p95": 2.0
+          },
+          "calibrated": {
+            "mae": 0.3805,
+            "p95": 2.0
+          }
+        }
+      },
+      "render_sha256": {
+        "sol56": "e2a97fedf3031df1eff57ed308d213a2644788b1283676f934e09edae9d1c6d6",
+        "direct": "7d99a3f6d854bcbe6ca1b240c9b1aa7e4611e0b32120d77ca16ae2b68e340d97",
+        "calibrated": "33c604215f033a1cfe91f22abd577e4b00a6832ee95962c2dcebdd6709339e78"
+      }
+    },
+    "female": {
+      "source_version": "6c06f0c3-cc7b-4d0c-8617-04693fdbb877",
+      "source_reference_sha256": "07b1c45f8f543892e8ecb7e943f2f5c1f5b92a5ab39fe5d1e67221fcaf7d2eca",
+      "regions": {
+        "canvas": {
+          "label": "全画布（含资源缺口）",
+          "rect": [
+            0,
+            0,
+            375,
+            350
+          ],
+          "pixels_evaluated": 2100000,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 2.6958,
+            "p95": 13.0
+          },
+          "direct": {
+            "mae": 0.721,
+            "p95": 2.0
+          },
+          "calibrated": {
+            "mae": 0.7212,
+            "p95": 2.0
+          }
+        },
+        "common": {
+          "label": "共同可验证区",
+          "rect": [
+            0,
+            0,
+            375,
+            350
+          ],
+          "pixels_evaluated": 2079872,
+          "excluded_shield": true,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 2.6923,
+            "p95": 13.0
+          },
+          "direct": {
+            "mae": 0.7193,
+            "p95": 2.0
+          },
+          "calibrated": {
+            "mae": 0.7277,
+            "p95": 2.0
+          }
+        },
+        "heading": {
+          "label": "标题与副标题",
+          "rect": [
+            24,
+            0,
+            205,
+            66
+          ],
+          "pixels_evaluated": 216480,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 10.1797,
+            "p95": 244.0
+          },
+          "direct": {
+            "mae": 3.1368,
+            "p95": 15.0
+          },
+          "calibrated": {
+            "mae": 3.1404,
+            "p95": 15.0
+          }
+        },
+        "male_card": {
+          "label": "男生卡片及阴影",
+          "rect": [
+            16,
+            104,
+            162,
+            200
+          ],
+          "pixels_evaluated": 518400,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 4.0675,
+            "p95": 13.0
+          },
+          "direct": {
+            "mae": 0.4341,
+            "p95": 2.0
+          },
+          "calibrated": {
+            "mae": 0.4339,
+            "p95": 2.0
+          }
+        },
+        "female_card": {
+          "label": "女生卡片及阴影",
+          "rect": [
+            192,
+            104,
+            162,
+            200
+          ],
+          "pixels_evaluated": 518400,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 0.3967,
+            "p95": 2.0
+          },
+          "direct": {
+            "mae": 0.3239,
+            "p95": 2.0
+          },
+          "calibrated": {
+            "mae": 0.3338,
+            "p95": 2.0
+          }
+        },
+        "card_fill": {
+          "label": "未选卡片内部填充",
+          "rect": [
+            40,
+            128,
+            110,
+            28
+          ],
+          "pixels_evaluated": 49280,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 7.1226,
+            "p95": 13.0
+          },
+          "direct": {
+            "mae": 0.228,
+            "p95": 1.0
+          },
+          "calibrated": {
+            "mae": 0.228,
+            "p95": 1.0
+          }
+        },
+        "shadow": {
+          "label": "卡片底部阴影",
+          "rect": [
+            24,
+            278,
+            146,
+            22
+          ],
+          "pixels_evaluated": 51392,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 0.8377,
+            "p95": 10.0
+          },
+          "direct": {
+            "mae": 0.4638,
+            "p95": 2.0
+          },
+          "calibrated": {
+            "mae": 0.4631,
+            "p95": 2.0
+          }
+        },
+        "border": {
+          "label": "卡片左上圆角",
+          "rect": [
+            28,
+            115,
+            32,
+            32
+          ],
+          "pixels_evaluated": 16384,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 3.9174,
+            "p95": 12.0
+          },
+          "direct": {
+            "mae": 0.3794,
+            "p95": 1.0
+          },
+          "calibrated": {
+            "mae": 0.3805,
+            "p95": 1.0
+          }
+        },
+        "male_icon": {
+          "label": "男生原始图标",
+          "rect": [
+            65,
+            163,
+            64,
+            64
+          ],
+          "pixels_evaluated": 65536,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 1.6053,
+            "p95": 13.0
+          },
+          "direct": {
+            "mae": 0.1794,
+            "p95": 1.0
+          },
+          "calibrated": {
+            "mae": 0.1794,
+            "p95": 1.0
+          }
+        },
+        "female_icon": {
+          "label": "女生原始图标",
+          "rect": [
+            241,
+            163,
+            64,
+            64
+          ],
+          "pixels_evaluated": 65536,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 0.0004,
+            "p95": 0.0
+          },
+          "direct": {
+            "mae": 0.3487,
+            "p95": 1.0
+          },
+          "calibrated": {
+            "mae": 0.3487,
+            "p95": 1.0
+          }
+        },
+        "background": {
+          "label": "顶部渐变背景",
+          "rect": [
+            235,
+            0,
+            140,
+            80
+          ],
+          "pixels_evaluated": 179200,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 2.1934,
+            "p95": 5.0
+          },
+          "direct": {
+            "mae": 0.3129,
+            "p95": 2.0
+          },
+          "calibrated": {
+            "mae": 0.3805,
+            "p95": 2.0
+          }
+        },
+        "check": {
+          "label": "选中角标",
+          "rect": [
+            315,
+            113,
+            25,
+            25
+          ],
+          "pixels_evaluated": 10000,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 0.0615,
+            "p95": 1.0
+          },
+          "direct": {
+            "mae": 0.3536,
+            "p95": 5.0
+          },
+          "calibrated": {
+            "mae": 0.3799,
+            "p95": 5.0
+          }
+        },
+        "warning": {
+          "label": "警示条（排除盾牌）",
+          "rect": [
+            33,
+            297,
+            307,
+            36
+          ],
+          "pixels_evaluated": 156704,
+          "excluded_shield": true,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 3.5565,
+            "p95": 31.0
+          },
+          "direct": {
+            "mae": 1.5873,
+            "p95": 3.0
+          },
+          "calibrated": {
+            "mae": 1.5808,
+            "p95": 3.0
+          }
+        },
+        "warning_text": {
+          "label": "警示文字",
+          "rect": [
+            80,
+            306,
+            156,
+            18
+          ],
+          "pixels_evaluated": 44928,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": false,
+          "sol56": {
+            "mae": 8.8295,
+            "p95": 120.0
+          },
+          "direct": {
+            "mae": 5.3422,
+            "p95": 53.0
+          },
+          "calibrated": {
+            "mae": 5.3422,
+            "p95": 53.0
+          }
+        },
+        "shield_gap": {
+          "label": "盾牌缺失填充区",
+          "rect": [
+            295,
+            299,
+            37,
+            34
+          ],
+          "pixels_evaluated": 20128,
+          "excluded_shield": false,
+          "resource_gap_diagnostic": true,
+          "sol56": {
+            "mae": 3.061,
+            "p95": 13.0
+          },
+          "direct": {
+            "mae": 0.8989,
+            "p95": 10.0
+          },
+          "calibrated": {
+            "mae": 0.0463,
+            "p95": 1.0
+          }
+        }
+      },
+      "render_sha256": {
+        "sol56": "54e9a8eb92e62393802930bbc29f75fb88424ced6220e092cd40c6b35a1925f3",
+        "direct": "3d1845e04755ef12252de50b3f02705a5dd49ee770ee4c7afe46d6e6128b851c",
+        "calibrated": "fcde79600b5f600afa641377c2ae0b98bc19bc01977880488aba3833cfc8cb89"
+      }
+    }
+  },
+  "font_hashes_at_evaluation": {
+    "PingFangSC-Semibold.otf": "cd8467ba6df4bbe0e303d3fa0a5d009d8f1d23bd3aa8de24bbdfb2c84f09e66e",
+    "PingFangSC-Regular.otf": "a7923b8ec8b5ff7a98448b6ad779736772ee4db16eb269f5e8486d9e113898be",
+    "PingFangSC-Medium.otf": "bdb92cbfdb54df4f0a1a32888e1ca1236fd49832fb174693a4ae2e5cac7b60bc"
+  },
+  "limitations": [
+    "5.6 Sol was isolated from existing implementations and metrics, but received source screenshots and JSON; this is not JSON-only.",
+    "The GPT-6 direct implementation came from an ongoing session with prior implementation knowledge; it is not a strict blind sample.",
+    "Fonts and 5 original exported assets verified and reused.",
+    "Calibrated shield uses a source preview crop; its low pixel error is not independent reconstruction.",
+    "Single attempt per model, two source states; metrics from the test renderer, browser checked separately.",
+    "The GPT-6 direct card shadow clipping and background blur mapping used prior experience before first render."
+  ]
+}

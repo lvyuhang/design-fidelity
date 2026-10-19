@@ -1,0 +1,2546 @@
+{
+  "schema_version": 2,
+  "status": "ready",
+  "name": "筛选备份",
+  "source_snapshot": "e1197e5a27c6e2ad489b2f1386fc07c4",
+  "source_version": "653aa9f3-6fb6-4216-b3e9-06468e9ec4df",
+  "canvas": [
+    375,
+    812
+  ],
+  "render_scale": 4.0,
+  "reference": "reference.png",
+  "source_documents": [
+    "source/snapshot.json"
+  ],
+  "regions": {
+    "whole": {
+      "label": "完整页面与模态结构",
+      "rect": [
+        0,
+        0,
+        375,
+        812
+      ],
+      "max_mae": 8,
+      "max_p95": 32,
+      "node_ids": [
+        "A3FF2BD2-2D26-4F51-8560-6B5B9CE2CDC7",
+        "9CEE9472-00C5-4182-9A80-B00A3D0A0189",
+        "B3ECE23A-DFB5-4558-B742-C8C42CA0A1A6",
+        "C113C34B-6BFB-482B-AA8E-40E68A537731",
+        "835B6212-D38A-4E00-AF70-D682022267EC",
+        "A6A06F21-0F2D-4B7E-9E80-96A82A437509",
+        "8CF2FAC7-B869-459F-8271-FEC13B2FE1D3",
+        "53D4D975-3D78-4E5F-9873-0364F9F71918",
+        "76CD8A70-D6B0-4D15-89E9-8E97302CE82B",
+        "846F3C94-BFCD-4035-A6A6-161C50912CD4",
+        "04E026D9-178A-46E4-8850-5A4E20550936",
+        "322B4BC1-9E6E-44F2-BBA5-E1CFAA9CBB26",
+        "CC816B37-23D6-40F6-AFDF-651FEC6D84CB",
+        "D9D4C368-C4C2-4C6F-B3A9-A7984E01AC86",
+        "60FCC07A-62C7-406B-ADAE-4D7EA7D8DAC0",
+        "9D99F61D-4ED9-49C6-A66B-049373F2EC59",
+        "68B0FA28-1EF0-490E-A530-B3CF298CA5B1",
+        "2BCD3E9A-570A-4B5B-9EEC-79DDC8349209",
+        "6A9CE2B2-ACA5-4DAA-848B-7A38B2F05021",
+        "780B3B0B-13F5-40E8-9814-F7C693F2CE88",
+        "99F48815-DEF1-4F99-BE00-D425881B8DB7",
+        "99BE5DFE-724A-4DAF-BEBF-0F8FDD0968C0",
+        "AE3781C2-C79D-41B8-A49C-F21469D2ED27",
+        "68C49A4B-D48E-4B84-8EEB-1CD978DEE98D",
+        "1435B75D-72CD-4B53-8112-4BD3D4FB954E",
+        "5C0653D1-379C-4F93-9622-C200AD86F325",
+        "0C76960A-41B2-4F63-83F0-278454E2C840",
+        "004C370E-AABE-46D6-BB79-7D519CCD86A3",
+        "0E4640C3-DB85-40E2-A115-5E91BAFF0D46",
+        "0CCDC2F0-45C9-4438-A68A-E13AF536B29B",
+        "BCCFA81F-F8DC-450A-AE0A-4B84813F2B02",
+        "FC1D65E5-ED62-4F10-BD1C-3D11B0AC1A36",
+        "73691941-D66C-4772-AAC2-9C59011D74C9",
+        "5E407349-5CAD-42E7-BAA7-81A238BF58DA",
+        "0FB59699-B7B0-486E-81CC-6BEDB7156A30"
+      ]
+    },
+    "header": {
+      "label": "发现页头部",
+      "rect": [
+        0,
+        0,
+        375,
+        99
+      ],
+      "max_mae": 8,
+      "max_p95": 32
+    },
+    "sheet": {
+      "label": "任务配置弹层",
+      "rect": [
+        0,
+        228,
+        375,
+        584
+      ],
+      "max_mae": 8,
+      "max_p95": 32
+    },
+    "enabled": {
+      "label": "已开启任务卡",
+      "rect": [
+        23,
+        327,
+        329,
+        107
+      ],
+      "max_mae": 6,
+      "max_p95": 28
+    },
+    "pending": {
+      "label": "待配置任务卡",
+      "rect": [
+        23,
+        476,
+        329,
+        223
+      ],
+      "max_mae": 8,
+      "max_p95": 40
+    },
+    "cta": {
+      "label": "底部配置按钮",
+      "rect": [
+        28,
+        727,
+        320,
+        50
+      ],
+      "max_mae": 6,
+      "max_p95": 28
+    }
+  },
+  "features": {
+    "text_34ee60e8": {
+      "label": "Time",
+      "node_ids": [
+        "34EE60E8-5E81-48F1-AAC0-D3CF556D567E"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          0,
+          0,
+          0
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_dd9e08e9": {
+      "label": "我关注的",
+      "node_ids": [
+        "DD9E08E9-B48B-4A8D-94AC-903CC148B47B"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          145,
+          145,
+          155
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_176611be": {
+      "label": "关注我的",
+      "node_ids": [
+        "176611BE-8EA1-436F-A91F-F99B017C2011"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          145,
+          145,
+          155
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_b8946866": {
+      "label": "发现",
+      "node_ids": [
+        "B8946866-5C85-4025-B3C0-020C658F699A"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          24,
+          24,
+          27
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "small_22438cce": {
+      "label": "路径",
+      "node_ids": [
+        "22438CCE-EE42-46D8-AA24-84E67BC616B5"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          51,
+          51,
+          51
+        ],
+        "max_distance": 68,
+        "min_pixels": 4
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.0,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.25
+      },
+      "profile": "small_visual"
+    },
+    "text_04de8ee9": {
+      "label": "筛选",
+      "node_ids": [
+        "04DE8EE9-1687-4F90-8460-8D468B3160A9"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          24,
+          24,
+          27
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_9fc8eeaf": {
+      "label": "已开启任务",
+      "node_ids": [
+        "9FC8EEAF-DD2B-4EC9-8D51-958FF4DAB99F"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          34,
+          36,
+          42
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_fb33a3e7": {
+      "label": "待配置任务",
+      "node_ids": [
+        "FB33A3E7-F8F3-487D-AC4A-916D4CD5AF01"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          34,
+          36,
+          42
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_13db3947": {
+      "label": "视频通话",
+      "node_ids": [
+        "13DB3947-C4E9-4177-BAB1-A654EF02ED02"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          24,
+          24,
+          27
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_edc9b047": {
+      "label": "语音通话",
+      "node_ids": [
+        "EDC9B047-AAAC-4E24-8407-350E465E9CC3"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          24,
+          24,
+          27
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "asset_24ba8bd8": {
+      "label": "编组 4",
+      "node_ids": [
+        "24BA8BD8-A01B-458B-B725-801EBAC346C1"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "max_distance": 68,
+        "min_pixels": 4
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.0,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.25
+      },
+      "profile": "small_visual"
+    },
+    "asset_d8100ece": {
+      "label": "编组",
+      "node_ids": [
+        "D8100ECE-DEBC-4A99-A7E6-85F223476F24"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          230,
+          181,
+          94
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "asset_e77bc305": {
+      "label": "-path备份",
+      "node_ids": [
+        "E77BC305-AF3F-47DD-97EC-01373F3709F9"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          229,
+          195
+        ],
+        "max_distance": 68,
+        "min_pixels": 4
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.0,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.25
+      },
+      "profile": "small_visual"
+    },
+    "asset_4d57e0f4": {
+      "label": "编组",
+      "node_ids": [
+        "4D57E0F4-80B9-4090-BF77-DC5811FC8978"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          230,
+          181,
+          94
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_ba001932": {
+      "label": "私信互动",
+      "node_ids": [
+        "BA001932-8CF2-4C39-ABE3-8648C9D2A532"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          24,
+          24,
+          27
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "asset_2f079b99": {
+      "label": "编组",
+      "node_ids": [
+        "2F079B99-A17E-42CA-957C-B328AAC98EAB"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "max_distance": 68,
+        "min_pixels": 4
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.0,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.25
+      },
+      "profile": "small_visual"
+    },
+    "asset_72295535": {
+      "label": "编组",
+      "node_ids": [
+        "72295535-D486-4329-9239-2DE5B4D95F7E"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          230,
+          181,
+          94
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_c45a40ba": {
+      "label": "开通任务项，获取更多奖励",
+      "node_ids": [
+        "C45A40BA-EFDA-4692-9956-A5BD8DEA0A5E"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          24,
+          24,
+          27
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_434ca87f": {
+      "label": "已为你默认开启以下任务项，可前往设置奖励",
+      "node_ids": [
+        "434CA87F-011F-4B63-8884-F70FF6CFB729"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          188,
+          145,
+          74
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "small_1f31bb7e": {
+      "label": "直线 5",
+      "node_ids": [
+        "1F31BB7E-DC49-4DC0-B4D8-847D9A7D1DB5"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          210,
+          207,
+          204
+        ],
+        "max_distance": 68,
+        "min_pixels": 4
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.0,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.25
+      },
+      "profile": "small_visual"
+    },
+    "text_5981078f": {
+      "label": "去配置任务项",
+      "node_ids": [
+        "5981078F-3815-4375-BE20-0E2B7A069586"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          230,
+          181,
+          94
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "small_4d1d7632": {
+      "label": "直线 4备份 3",
+      "node_ids": [
+        "4D1D7632-99B0-4D09-9D04-48B9F9D8A5E8"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          241,
+          237,
+          225
+        ],
+        "max_distance": 68,
+        "min_pixels": 4
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.0,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.25
+      },
+      "profile": "small_visual"
+    },
+    "small_bea17d4c": {
+      "label": "直线 4备份 4",
+      "node_ids": [
+        "BEA17D4C-7C03-4971-B8C0-4EB7EC40DF52"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          241,
+          237,
+          225
+        ],
+        "max_distance": 68,
+        "min_pixels": 4
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.0,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.25
+      },
+      "profile": "small_visual"
+    },
+    "small_1787f90c": {
+      "label": "直线 4备份 5",
+      "node_ids": [
+        "1787F90C-3062-4B67-B44E-AF4F63A3DC78"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          241,
+          237,
+          225
+        ],
+        "max_distance": 68,
+        "min_pixels": 4
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.0,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.25
+      },
+      "profile": "small_visual"
+    },
+    "text_448996f1": {
+      "label": "叫醒服务",
+      "node_ids": [
+        "448996F1-2B4A-4016-9822-5542CAEA1D77"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          24,
+          24,
+          27
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_38d26fde": {
+      "label": "录制至少 10 秒叫醒音频",
+      "node_ids": [
+        "38D26FDE-8374-4C72-8D80-5AE8EFF2E9BC"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          166,
+          170,
+          181
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_68a43b3e": {
+      "label": "未开通",
+      "node_ids": [
+        "68A43B3E-0050-48D3-AA03-B912AB5B0E66"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          178,
+          122,
+          49
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_41fcd954": {
+      "label": "叫醒服务备份",
+      "node_ids": [
+        "41FCD954-872E-47D2-8A5F-F15299BCF22C"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          24,
+          24,
+          27
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_8be4e858": {
+      "label": "录制至少 10 秒叫醒音频备份",
+      "node_ids": [
+        "8BE4E858-D40F-4166-BDBD-1D394A5264AD"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          166,
+          170,
+          181
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_3db5485e": {
+      "label": "未开通备份",
+      "node_ids": [
+        "3DB5485E-9974-4327-BF02-3DF88E3CABE0"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          178,
+          122,
+          49
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_16c55b4b": {
+      "label": "叫醒服务备份 2",
+      "node_ids": [
+        "16C55B4B-206C-4526-A5FC-5DB3664ECC65"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          24,
+          24,
+          27
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_a73089c2": {
+      "label": "录制至少 10 秒叫醒音频备份 2",
+      "node_ids": [
+        "A73089C2-FA84-4559-B937-4A75E3CFE9D5"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          166,
+          170,
+          181
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_01431a82": {
+      "label": "未开通备份 2",
+      "node_ids": [
+        "01431A82-8B36-4D20-BFF7-C51B635F4D4D"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          178,
+          122,
+          49
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_234e4ab7": {
+      "label": "叫醒服务备份 3",
+      "node_ids": [
+        "234E4AB7-62A9-41D3-8956-D3E030F0602E"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          24,
+          24,
+          27
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_b98b2e8c": {
+      "label": "录制至少 10 秒叫醒音频备份 3",
+      "node_ids": [
+        "B98B2E8C-8B9D-41FF-9441-1AAC6DE65334"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          166,
+          170,
+          181
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "text_7fd61bd9": {
+      "label": "未开通备份 3",
+      "node_ids": [
+        "7FD61BD9-D04D-41B2-A9AC-837FF63B1E2F"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          178,
+          122,
+          49
+        ],
+        "max_distance": 74,
+        "min_pixels": 8
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5
+      }
+    },
+    "asset_bfd28ecb": {
+      "label": "编组 2",
+      "node_ids": [
+        "BFD28ECB-F3CC-4BFF-99F0-1449715FBCDB"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          76,
+          193,
+          104
+        ],
+        "max_distance": 68,
+        "min_pixels": 4
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.0,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.25
+      },
+      "profile": "small_visual"
+    },
+    "asset_324b46da": {
+      "label": "编组 6",
+      "node_ids": [
+        "324B46DA-9403-48D1-BEE5-30A9DD42C03D"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          76,
+          193,
+          104
+        ],
+        "max_distance": 68,
+        "min_pixels": 4
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.0,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.25
+      },
+      "profile": "small_visual"
+    },
+    "asset_cd2154e5": {
+      "label": "编组 8",
+      "node_ids": [
+        "CD2154E5-F768-4E1E-AF15-C8537ED0E763"
+      ],
+      "padding": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          76,
+          193,
+          104
+        ],
+        "max_distance": 68,
+        "min_pixels": 4
+      },
+      "limits": {
+        "max_center_delta": 1.0,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 1.0,
+        "max_ink_ratio_delta": 0.25,
+        "max_mask_iou_loss": 0.25
+      },
+      "profile": "small_visual"
+    }
+  },
+  "pinned_files": {
+    "reference.png": "8241addf43c80a2c60744e36f737951ad641a0b79973e6a6d198db0831f0eded",
+    "source/snapshot.json": "d37d69db563650ac983139db4a3265ce2f0388c356b754e16af6a56d70a74a4a",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/0b6ae685b92b8db1349f1870d8f9ed0e72e7d7353f67ab4c23e88e85bce5738f.png": "5b88d6969425ba7f5ee5b97aab47bac3baa2410efafbc871025d6a8d693b3823",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/0d9ac1307d34b7b89ecb1c24a36db21a1678f026aa8fd0fbc37ffb1a309313ad.png": "6037b0e6b9c24dfbaad9f2560d16e81d7785c871805439d2f30f8c3818c7e4f9",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/1420d8026032dc3c69fcc2c6cfdf8a43fb1d096807c2654a1d8035c2fc1c59e6.png": "0ce2e0626191c376e25968b5b1888d5160d49d84e2b15e2e7a3b613e1e10440b",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/397fc5b0acee81c8bda59c4baebf6ef5d7ce9244d6687b6c80ac53a690e9974c.png": "ebbdd1fb7ce23129f6e6c6a33d8b11f82152c7fc9c269fdd72cb266fa2c5d144",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/3a246d78d5812897e95cc9bfba80c98d29244a6625710da7e407cdffb0ccbfbd.png": "554d31cb2bc3cc9bd1e29ca789c3aedc4b4a73bcdd467eaf3339d4c9b6ba0522",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/3c666d24c748913934f325c9ad39fca42ce9d6b7255dff932ac09040a3fb7517.png": "9a1ba0622e769730e8419d403e27cf9bcb5120ca65d816ddaadc5a266cfc9536",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/46da75f7e70dd6f11acbe4cc5e5136894953d7f244c213f19c7657026760d060.png": "9a4ee9d227a941260e9ab8b925fd30ad9341777775d7400d13597199197fe974",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/4d1f8ceb5f25a3304c4d106ddf1be28aff58628d4735f5e7cd72d6f06b6fc1af.png": "7f1af0be0af7af7cc9f4566abac9673736a22f45c802db01d463989b749cab97",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/5bf41bc8ec27387675d95273a0e37e779d94ea639b88f9fb48e1abb5f6a9fd65.png": "e19c21ddb9b651333ec9b4af9c14e38cd26b1447a09504d66a45d403dd57953a",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/5c5c0cafa99de89172349b5de7996fc70922c0837b46cc2244bd3434939692bd.png": "5b88d6969425ba7f5ee5b97aab47bac3baa2410efafbc871025d6a8d693b3823",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/a2b42278ccdbfd16621fe4e9f9ba3372829136362d2520da3f00594ee40f91e1.png": "59b23f09fc90e05a621fa946967b20ff60dc7d71f7055811a9d41b9e24340bd4",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/b79115be417ebc97b0f0ab56d90aca92484ca1ef3636b88f303cdbaad02555bc.png": "59b23f09fc90e05a621fa946967b20ff60dc7d71f7055811a9d41b9e24340bd4",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/d6860f340cb0eae76f323f8a3b09c15dadbf07eebcb039fba834b1ce07cde08d.png": "98c06d12f6444ee7f91afa7f5016df92b80029db29b22124ed425b6101a2d425",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/f9e593fe624f4c2b6491e35625a241dea6f4fbde931e830ef6a3dfee4688c4bf.png": "59b23f09fc90e05a621fa946967b20ff60dc7d71f7055811a9d41b9e24340bd4",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/fc05fb6a52689670465a7af5e9a55b4d6279033448b3f70a4a8f024227d7b387.png": "38ea9f90218dc34b7f23778a33c93a97c1bc79f41048a3844bf643e8b2685a84",
+    "../../flutter_ui_components/assets/fonts/PingFangSC-Regular.otf": "5fcefec72fdbf5360a21b4a65cf0922a43f1b8393ec24dfb73d18caa281a0e4d",
+    "../../flutter_ui_components/assets/fonts/PingFangSC-Medium.otf": "6c87f53a06171e0902ae28ea9c83dba6a7c0a0414ff7cf3e9a2e607b7a6553b3",
+    "../../flutter_ui_components/assets/fonts/PingFangSC-Semibold.otf": "ddcdb289c41824fe44b378ae4a742a924fa6b4d3b75be66829d72ea29b5dd6ff"
+  },
+  "assets": [
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/0b6ae685b92b8db1349f1870d8f9ed0e72e7d7353f67ab4c23e88e85bce5738f.png",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/0d9ac1307d34b7b89ecb1c24a36db21a1678f026aa8fd0fbc37ffb1a309313ad.png",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/1420d8026032dc3c69fcc2c6cfdf8a43fb1d096807c2654a1d8035c2fc1c59e6.png",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/397fc5b0acee81c8bda59c4baebf6ef5d7ce9244d6687b6c80ac53a690e9974c.png",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/3a246d78d5812897e95cc9bfba80c98d29244a6625710da7e407cdffb0ccbfbd.png",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/3c666d24c748913934f325c9ad39fca42ce9d6b7255dff932ac09040a3fb7517.png",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/46da75f7e70dd6f11acbe4cc5e5136894953d7f244c213f19c7657026760d060.png",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/4d1f8ceb5f25a3304c4d106ddf1be28aff58628d4735f5e7cd72d6f06b6fc1af.png",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/5bf41bc8ec27387675d95273a0e37e779d94ea639b88f9fb48e1abb5f6a9fd65.png",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/5c5c0cafa99de89172349b5de7996fc70922c0837b46cc2244bd3434939692bd.png",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/a2b42278ccdbfd16621fe4e9f9ba3372829136362d2520da3f00594ee40f91e1.png",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/b79115be417ebc97b0f0ab56d90aca92484ca1ef3636b88f303cdbaad02555bc.png",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/d6860f340cb0eae76f323f8a3b09c15dadbf07eebcb039fba834b1ce07cde08d.png",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/f9e593fe624f4c2b6491e35625a241dea6f4fbde931e830ef6a3dfee4688c4bf.png",
+    "../../flutter_ui_components/assets/lanhu/filter_backup/assets/fc05fb6a52689670465a7af5e9a55b4d6279033448b3f70a4a8f024227d7b387.png"
+  ],
+  "fonts": [
+    {
+      "path": "../../flutter_ui_components/assets/fonts/PingFangSC-Regular.otf",
+      "node_ids": [
+        "34EE60E8-5E81-48F1-AAC0-D3CF556D567E",
+        "DD9E08E9-B48B-4A8D-94AC-903CC148B47B",
+        "176611BE-8EA1-436F-A91F-F99B017C2011",
+        "04DE8EE9-1687-4F90-8460-8D468B3160A9",
+        "13DB3947-C4E9-4177-BAB1-A654EF02ED02",
+        "EDC9B047-AAAC-4E24-8407-350E465E9CC3",
+        "BA001932-8CF2-4C39-ABE3-8648C9D2A532",
+        "434CA87F-011F-4B63-8884-F70FF6CFB729",
+        "448996F1-2B4A-4016-9822-5542CAEA1D77",
+        "38D26FDE-8374-4C72-8D80-5AE8EFF2E9BC",
+        "68A43B3E-0050-48D3-AA03-B912AB5B0E66",
+        "41FCD954-872E-47D2-8A5F-F15299BCF22C",
+        "8BE4E858-D40F-4166-BDBD-1D394A5264AD",
+        "3DB5485E-9974-4327-BF02-3DF88E3CABE0",
+        "16C55B4B-206C-4526-A5FC-5DB3664ECC65",
+        "A73089C2-FA84-4559-B937-4A75E3CFE9D5",
+        "01431A82-8B36-4D20-BFF7-C51B635F4D4D",
+        "234E4AB7-62A9-41D3-8956-D3E030F0602E",
+        "B98B2E8C-8B9D-41FF-9441-1AAC6DE65334",
+        "7FD61BD9-D04D-41B2-A9AC-837FF63B1E2F"
+      ]
+    },
+    {
+      "path": "../../flutter_ui_components/assets/fonts/PingFangSC-Semibold.otf",
+      "node_ids": [
+        "B8946866-5C85-4025-B3C0-020C658F699A",
+        "9FC8EEAF-DD2B-4EC9-8D51-958FF4DAB99F",
+        "FB33A3E7-F8F3-487D-AC4A-916D4CD5AF01",
+        "C45A40BA-EFDA-4692-9956-A5BD8DEA0A5E",
+        "5981078F-3815-4375-BE20-0E2B7A069586"
+      ]
+    }
+  ],
+  "implementation_inputs": [
+    "../../flutter_ui_components/lib/experiments/filter_backup_page.dart",
+    "../../flutter_ui_components/test/filter_backup_render_test.dart",
+    "../../flutter_ui_components/pubspec.yaml",
+    "../../flutter_ui_components/pubspec.lock"
+  ],
+  "environment": {
+    "renderer": "flutter-test-skia",
+    "renderer_version": "Flutter 3.47.7 / engine deb287481e",
+    "platform": "macOS widget-test 375x812 @4x",
+    "locale": "zh_CN",
+    "state": "filter-backup",
+    "text_scale": 1
+  },
+  "exclude_rects": [
+    {
+      "rect": [
+        8,
+        99,
+        177,
+        236
+      ],
+      "reason": "发现页照片 1 未提供切图"
+    },
+    {
+      "rect": [
+        190,
+        99,
+        177,
+        236
+      ],
+      "reason": "发现页照片 2 未提供切图"
+    },
+    {
+      "rect": [
+        41,
+        488,
+        33,
+        33
+      ],
+      "reason": "待配置任务图标 1 未提供切图"
+    },
+    {
+      "rect": [
+        41,
+        541,
+        33,
+        33
+      ],
+      "reason": "待配置任务图标 2 未提供切图"
+    },
+    {
+      "rect": [
+        41,
+        598,
+        33,
+        33
+      ],
+      "reason": "待配置任务图标 3 未提供切图"
+    },
+    {
+      "rect": [
+        41,
+        653,
+        33,
+        33
+      ],
+      "reason": "待配置任务图标 4 未提供切图"
+    }
+  ],
+  "max_excluded_fraction": 0.3,
+  "not_applicable": {},
+  "relations": {
+    "enabled_video_label_center": {
+      "label": "enabled video label center",
+      "features": [
+        "text_13db3947",
+        "asset_d8100ece"
+      ],
+      "metric": "center_x",
+      "max_delta": 1.0
+    },
+    "enabled_voice_label_center": {
+      "label": "enabled voice label center",
+      "features": [
+        "text_edc9b047",
+        "asset_4d57e0f4"
+      ],
+      "metric": "center_x",
+      "max_delta": 1.0
+    },
+    "enabled_message_label_center": {
+      "label": "enabled message label center",
+      "features": [
+        "text_ba001932",
+        "asset_72295535"
+      ],
+      "metric": "center_x",
+      "max_delta": 1.0
+    },
+    "row2_title_left": {
+      "label": "row2 title left",
+      "features": [
+        "text_41fcd954",
+        "text_8be4e858"
+      ],
+      "metric": "left",
+      "max_delta": 1.0
+    },
+    "row3_title_left": {
+      "label": "row3 title left",
+      "features": [
+        "text_16c55b4b",
+        "text_a73089c2"
+      ],
+      "metric": "left",
+      "max_delta": 1.0
+    },
+    "row4_title_left": {
+      "label": "row4 title left",
+      "features": [
+        "text_234e4ab7",
+        "text_b98b2e8c"
+      ],
+      "metric": "left",
+      "max_delta": 1.0
+    }
+  },
+  "color_samples": {
+    "sheet_top": {
+      "label": "弹层顶部暖白",
+      "rect": [
+        8,
+        232,
+        8,
+        8
+      ],
+      "max_channel_delta": 8
+    },
+    "enabled_surface": {
+      "label": "已开启卡底色",
+      "rect": [
+        30,
+        330,
+        8,
+        8
+      ],
+      "max_channel_delta": 8
+    },
+    "pending_surface": {
+      "label": "待配置卡底色",
+      "rect": [
+        30,
+        480,
+        8,
+        8
+      ],
+      "max_channel_delta": 8
+    },
+    "cta_surface": {
+      "label": "CTA 深色渐变",
+      "rect": [
+        48,
+        748,
+        8,
+        8
+      ],
+      "max_channel_delta": 8
+    }
+  },
+  "source_scope": {
+    "kind": "page",
+    "expected_node_count": 236
+  },
+  "coverage": {
+    "A3FF2BD2-2D26-4F51-8560-6B5B9CE2CDC7": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "9CEE9472-00C5-4182-9A80-B00A3D0A0189": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "B3ECE23A-DFB5-4558-B742-C8C42CA0A1A6": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "D999526D-4728-48B8-AA31-36C1A02359B5": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "544246B8-B6FF-444A-8567-9345CDA09D65": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "088CFA39-2314-4828-8054-4BF12522A166": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "CF239E0D-C4D4-477E-8111-ADD579A7197A": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "E33E4E81-BEE3-474C-A501-7C3F739CD604": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "5D9CBA25-2522-44DA-B468-B70DE3920E25": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "115BD764-5C8D-427F-BA81-FD1654E1E34B": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "7C4BCA8B-27DA-4F74-85C3-462D58C5B0CF": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "3F5B3ADA-2559-4E2F-9C66-4AB8479B9DC7": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "1847BCB0-C92E-40F1-9362-D0795F0E9B28": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "1999247D-5887-46E1-9AF2-FA708F1C3B2B": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "5C743858-45D9-4D8A-8E35-29E0183411E3": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "39F88042-1AC4-44D6-B1FA-75EFD34673E8": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "311E0348-9A86-475B-BE41-87087E8A52CB": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "2B8A43D9-7648-4D7B-9860-FA6288B3AAE9": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "70BBB12E-A77D-4B83-9648-6C8A521249F0": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "F1D91665-B1A1-4268-8B64-E57A30BACDDE": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "AEB20B7D-6D55-4ABB-A215-369617386CBE": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "F02E4C11-0C09-4C74-A097-9E31D4B048AA": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "5EB6D00D-1E6A-42F9-BE3F-BCFF32ACA7CA": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "2FFB25A2-C1EF-42EE-BA93-25ACFF30779D": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "ADAC47AD-797D-45C1-BB42-351ABE0699CF": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "A256CD3D-3664-4808-A78B-BEC2F495FF9D": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "E3986A9D-EB5D-46C8-8928-77118A366617": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "65EAAD3D-6FB1-4ECB-9B9F-9FC912A2FE1A": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "1CA8CE0A-1329-4CED-A41F-2C924985E58F": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "24106BE0-AB76-443C-9815-5D77D520A517": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "FAAF0612-963F-41EF-B7D9-CC2A9D4FD515": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "D043F548-2975-42D9-BCE7-A3F4C4A31BAA": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "4CEC2099-CA41-4A9A-BC6B-0AB154F3B00B": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "281D69BC-4FC1-44D5-B182-B99829EFA78B": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "C67E7C96-5687-4476-9041-B8DE53DB47D3": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "19C07147-0D42-4489-B175-85C283AF63DF": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "2EB85140-B5F1-4E47-9AE0-0F29FA633340": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "347E1D1F-87D1-488A-A13E-346BCB4CD10E": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "D687C11D-D4E1-4AA7-B628-75FF31CCF052": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "C0806E85-B3EC-4040-9565-D4B99E51ED0E": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "6ED744A7-761A-43F6-A759-3F9228D26641": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "C113C34B-6BFB-482B-AA8E-40E68A537731": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "835B6212-D38A-4E00-AF70-D682022267EC": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "A6A06F21-0F2D-4B7E-9E80-96A82A437509": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "8CF2FAC7-B869-459F-8271-FEC13B2FE1D3": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "53D4D975-3D78-4E5F-9873-0364F9F71918": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "34EE60E8-5E81-48F1-AAC0-D3CF556D567E": {
+      "status": "covered",
+      "checks": [
+        "features.text_34ee60e8"
+      ],
+      "reason": ""
+    },
+    "76CD8A70-D6B0-4D15-89E9-8E97302CE82B": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "80BB08F3-4B4D-4F9A-B731-6FEEC01DFDA6": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "1A883DB2-4D9E-46CE-A8BE-AE38278697BC": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "EC9EB4CB-E97E-4338-A3EA-6AA95C49C065": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "41BF6ECA-EA3F-49BD-93EB-318DC5E3A8CC": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "A8461701-C430-4E8B-B5FC-AE814208BB80": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "DD9E08E9-B48B-4A8D-94AC-903CC148B47B": {
+      "status": "covered",
+      "checks": [
+        "features.text_dd9e08e9"
+      ],
+      "reason": ""
+    },
+    "176611BE-8EA1-436F-A91F-F99B017C2011": {
+      "status": "covered",
+      "checks": [
+        "features.text_176611be"
+      ],
+      "reason": ""
+    },
+    "846F3C94-BFCD-4035-A6A6-161C50912CD4": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "04E026D9-178A-46E4-8850-5A4E20550936": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "B8946866-5C85-4025-B3C0-020C658F699A": {
+      "status": "covered",
+      "checks": [
+        "features.text_b8946866"
+      ],
+      "reason": ""
+    },
+    "474F08DA-49CA-4174-9DC6-7DC0AB0CF20E": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "47882A50-99FD-4753-869C-90728A24F11E": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "322B4BC1-9E6E-44F2-BBA5-E1CFAA9CBB26": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "22438CCE-EE42-46D8-AA24-84E67BC616B5": {
+      "status": "covered",
+      "checks": [
+        "features.small_22438cce"
+      ],
+      "reason": ""
+    },
+    "04DE8EE9-1687-4F90-8460-8D468B3160A9": {
+      "status": "covered",
+      "checks": [
+        "features.text_04de8ee9"
+      ],
+      "reason": ""
+    },
+    "CC816B37-23D6-40F6-AFDF-651FEC6D84CB": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "D9D4C368-C4C2-4C6F-B3A9-A7984E01AC86": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "5DAD8866-246B-4A97-8B05-8D7C97972135": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "3E664171-0C0B-4310-AC2E-E4A4B47ED3EA": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "BCCA1E1F-7866-488C-A9EC-B34723848AB4": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "D4E8CD5D-B6E9-48A1-B3C7-5F59E1F3AEFC": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "A7E5BDFA-4DC0-424C-A709-6F3D92B405BF": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "F87AD2F7-6A32-4123-B3F6-E3A9CEC5C083": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "4701AFE1-5458-4A44-A684-227EFC018FA1": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "267E2336-488C-4931-B733-D9965168E240": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "91BB294B-DEBE-4FBF-80CE-658A6E2BA66C": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "DA058BB8-C5CC-448A-9D42-9BA832108E90": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "40E237AF-C35F-4868-A49F-B3FEA2A94C78": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "86634088-D406-455A-B5FD-AFD03ECED575": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "BF321EED-A43E-4FD9-910F-4BDE953FBB79": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "566A3D12-DC7D-454E-8BBE-59E8C6A500D0": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "5F2ECE5E-0E45-46A4-81B8-6887D9BF20F3": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "41850417-7BD0-4D0E-94BE-00A18BAB7F23": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "49486696-976D-48CB-A151-FAACF09261AC": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "DCE84587-AC82-44D1-ACC4-46D2E2E98726": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "913CF66C-B817-4E36-A052-9F7DDF858BAF": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "ADB34B57-FD4A-43DB-B749-8FFBE21C731D": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "7447EA9B-091C-4192-95D0-7B72487EC112": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "E5717FEA-46FF-4D4A-981C-E45A632B4A0A": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "91BCB0ED-4A07-46A2-ABBF-8A723B2ACD80": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "B342033A-8800-4DA4-8AB8-0A6DE03CC659": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "B30184F5-2A59-455F-83A5-17078FA6349C": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "70842D26-B34D-4175-912C-D88BE41A46C5": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "0BF2AE40-C7C4-450D-83D2-10D18C2B6263": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "151F2C97-4072-4640-B2DE-E3CF8521B8A1": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "CE85DAB3-789D-4113-ABFA-4D22DE957E82": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "3E2ADEE0-A863-4D1C-8AA9-BAABD5A80AC2": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "0907A4A5-B18A-4E8C-B194-52F251CF549F": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "5D2DC3D3-4656-46D5-B3A3-EC15A59DE617": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "2B4ECED7-A658-4344-897B-5A56AA872DEE": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "F7AAE46D-20FF-4BCC-AE38-D2008F9E7771": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "74126980-2D38-4D7A-9188-3EF474EF4691": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "5A529363-3840-4E57-B4F5-892F7C391EA6": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "B148E4D5-9F6A-4358-B5D7-4D3BB23D4658": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "10529177-0E83-4E6B-B5F5-77134DB698BC": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除"
+    },
+    "910631A8-2C2F-4BDE-843E-6638736A2488": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除"
+    },
+    "D0DE154A-7285-41C2-B032-0C5A31AAB066": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "AF11D8BB-A3F2-4308-935D-924ADE588478": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "DC004803-8B21-489F-8A04-E9955A763486": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "A0A70480-DAED-45B0-9A33-38B4868952D5": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "D0062F5F-E576-450F-8847-174E587DB05D": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "4DD9587B-53AB-495D-B46E-844E128E4EF9": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "86FA6BD5-9535-4D15-9042-2829595FFF3E": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "052E1E31-B2AA-4FC5-953E-E9B4961D0671": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "097D3A14-938E-4833-B876-DB3107A89C97": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "A4E54BB2-7B4A-4C43-8E8C-9102E1C37E1A": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "E6435516-D4CA-4426-B35C-E14E674ACB8A": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "4DCC4994-6548-489D-95D0-88175AE46927": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "537C46FF-4513-4E33-83D5-C809EEBAA26F": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "B0E1B96D-EFA2-43CD-B24C-442AF7C81930": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "BB0A3943-E051-4E7A-998E-56C3927E7547": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "F3104068-AEC7-4784-A457-9145EE62B4AB": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "F6045FCD-36BD-49D4-85ED-93F950C6F008": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "4916B388-EA68-4836-B798-0A61F97C2AC1": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡"
+    },
+    "2FF20CF6-8DBD-4681-A08B-39B26E85CA54": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除"
+    },
+    "132AD4D3-1C40-4D4E-8B51-96A08AFF9DD8": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除"
+    },
+    "6C57EB09-A0A1-4BB2-BA28-AFD566D5DA8A": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除"
+    },
+    "E7FD65CE-0C0B-44B6-BB4C-F2E337437EB6": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除"
+    },
+    "AFBB9CBB-C2C0-441D-B456-341464CA66D3": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除"
+    },
+    "60FCC07A-62C7-406B-ADAE-4D7EA7D8DAC0": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "9D99F61D-4ED9-49C6-A66B-049373F2EC59": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "68B0FA28-1EF0-490E-A530-B3CF298CA5B1": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "2BCD3E9A-570A-4B5B-9EEC-79DDC8349209": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "9FC8EEAF-DD2B-4EC9-8D51-958FF4DAB99F": {
+      "status": "covered",
+      "checks": [
+        "features.text_9fc8eeaf"
+      ],
+      "reason": ""
+    },
+    "FB33A3E7-F8F3-487D-AC4A-916D4CD5AF01": {
+      "status": "covered",
+      "checks": [
+        "features.text_fb33a3e7"
+      ],
+      "reason": ""
+    },
+    "13DB3947-C4E9-4177-BAB1-A654EF02ED02": {
+      "status": "covered",
+      "checks": [
+        "features.text_13db3947"
+      ],
+      "reason": ""
+    },
+    "EDC9B047-AAAC-4E24-8407-350E465E9CC3": {
+      "status": "covered",
+      "checks": [
+        "features.text_edc9b047"
+      ],
+      "reason": ""
+    },
+    "6A9CE2B2-ACA5-4DAA-848B-7A38B2F05021": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "780B3B0B-13F5-40E8-9814-F7C693F2CE88": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "99F48815-DEF1-4F99-BE00-D425881B8DB7": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "24BA8BD8-A01B-458B-B725-801EBAC346C1": {
+      "status": "covered",
+      "checks": [
+        "features.asset_24ba8bd8"
+      ],
+      "reason": ""
+    },
+    "D8100ECE-DEBC-4A99-A7E6-85F223476F24": {
+      "status": "covered",
+      "checks": [
+        "features.asset_d8100ece"
+      ],
+      "reason": ""
+    },
+    "99BE5DFE-724A-4DAF-BEBF-0F8FDD0968C0": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "E77BC305-AF3F-47DD-97EC-01373F3709F9": {
+      "status": "covered",
+      "checks": [
+        "features.asset_e77bc305"
+      ],
+      "reason": ""
+    },
+    "4D57E0F4-80B9-4090-BF77-DC5811FC8978": {
+      "status": "covered",
+      "checks": [
+        "features.asset_4d57e0f4"
+      ],
+      "reason": ""
+    },
+    "BA001932-8CF2-4C39-ABE3-8648C9D2A532": {
+      "status": "covered",
+      "checks": [
+        "features.text_ba001932"
+      ],
+      "reason": ""
+    },
+    "AE3781C2-C79D-41B8-A49C-F21469D2ED27": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "68C49A4B-D48E-4B84-8EEB-1CD978DEE98D": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "1435B75D-72CD-4B53-8112-4BD3D4FB954E": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "2F079B99-A17E-42CA-957C-B328AAC98EAB": {
+      "status": "covered",
+      "checks": [
+        "features.asset_2f079b99"
+      ],
+      "reason": ""
+    },
+    "72295535-D486-4329-9239-2DE5B4D95F7E": {
+      "status": "covered",
+      "checks": [
+        "features.asset_72295535"
+      ],
+      "reason": ""
+    },
+    "5C0653D1-379C-4F93-9622-C200AD86F325": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "0C76960A-41B2-4F63-83F0-278454E2C840": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "C45A40BA-EFDA-4692-9956-A5BD8DEA0A5E": {
+      "status": "covered",
+      "checks": [
+        "features.text_c45a40ba"
+      ],
+      "reason": ""
+    },
+    "434CA87F-011F-4B63-8884-F70FF6CFB729": {
+      "status": "covered",
+      "checks": [
+        "features.text_434ca87f"
+      ],
+      "reason": ""
+    },
+    "1F31BB7E-DC49-4DC0-B4D8-847D9A7D1DB5": {
+      "status": "covered",
+      "checks": [
+        "features.small_1f31bb7e"
+      ],
+      "reason": ""
+    },
+    "004C370E-AABE-46D6-BB79-7D519CCD86A3": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "5981078F-3815-4375-BE20-0E2B7A069586": {
+      "status": "covered",
+      "checks": [
+        "features.text_5981078f"
+      ],
+      "reason": ""
+    },
+    "9D408414-5FDE-4C3F-BD17-D9CC7AAA0B2D": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除"
+    },
+    "3F964538-0FD3-4E76-A2F5-5C44A9AD5AC3": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除"
+    },
+    "EC741E48-B99B-4FDE-AC53-6D25014604EE": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除"
+    },
+    "A2BC9819-103F-4571-B74D-3ADF78CC6486": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除"
+    },
+    "0E4640C3-DB85-40E2-A115-5E91BAFF0D46": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "4D1D7632-99B0-4D09-9D04-48B9F9D8A5E8": {
+      "status": "covered",
+      "checks": [
+        "features.small_4d1d7632"
+      ],
+      "reason": ""
+    },
+    "BEA17D4C-7C03-4971-B8C0-4EB7EC40DF52": {
+      "status": "covered",
+      "checks": [
+        "features.small_bea17d4c"
+      ],
+      "reason": ""
+    },
+    "1787F90C-3062-4B67-B44E-AF4F63A3DC78": {
+      "status": "covered",
+      "checks": [
+        "features.small_1787f90c"
+      ],
+      "reason": ""
+    },
+    "448996F1-2B4A-4016-9822-5542CAEA1D77": {
+      "status": "covered",
+      "checks": [
+        "features.text_448996f1"
+      ],
+      "reason": ""
+    },
+    "38D26FDE-8374-4C72-8D80-5AE8EFF2E9BC": {
+      "status": "covered",
+      "checks": [
+        "features.text_38d26fde"
+      ],
+      "reason": ""
+    },
+    "68A43B3E-0050-48D3-AA03-B912AB5B0E66": {
+      "status": "covered",
+      "checks": [
+        "features.text_68a43b3e"
+      ],
+      "reason": ""
+    },
+    "41FCD954-872E-47D2-8A5F-F15299BCF22C": {
+      "status": "covered",
+      "checks": [
+        "features.text_41fcd954"
+      ],
+      "reason": ""
+    },
+    "8BE4E858-D40F-4166-BDBD-1D394A5264AD": {
+      "status": "covered",
+      "checks": [
+        "features.text_8be4e858"
+      ],
+      "reason": ""
+    },
+    "3DB5485E-9974-4327-BF02-3DF88E3CABE0": {
+      "status": "covered",
+      "checks": [
+        "features.text_3db5485e"
+      ],
+      "reason": ""
+    },
+    "16C55B4B-206C-4526-A5FC-5DB3664ECC65": {
+      "status": "covered",
+      "checks": [
+        "features.text_16c55b4b"
+      ],
+      "reason": ""
+    },
+    "A73089C2-FA84-4559-B937-4A75E3CFE9D5": {
+      "status": "covered",
+      "checks": [
+        "features.text_a73089c2"
+      ],
+      "reason": ""
+    },
+    "01431A82-8B36-4D20-BFF7-C51B635F4D4D": {
+      "status": "covered",
+      "checks": [
+        "features.text_01431a82"
+      ],
+      "reason": ""
+    },
+    "234E4AB7-62A9-41D3-8956-D3E030F0602E": {
+      "status": "covered",
+      "checks": [
+        "features.text_234e4ab7"
+      ],
+      "reason": ""
+    },
+    "B98B2E8C-8B9D-41FF-9441-1AAC6DE65334": {
+      "status": "covered",
+      "checks": [
+        "features.text_b98b2e8c"
+      ],
+      "reason": ""
+    },
+    "70433398-755E-40FF-8960-E2BADDE1CEDA": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除"
+    },
+    "ADD97D1E-2372-4F75-ADA4-5287A3783996": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除"
+    },
+    "6E907BB0-FA36-47E5-9566-3149FE3EA39A": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除"
+    },
+    "AEB4B2F3-0357-4EF4-8771-FA4DDF906BFF": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除"
+    },
+    "A95397A1-A367-476B-8671-40210DB0E48F": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除"
+    },
+    "68524E98-B65B-42A8-8B02-A402EEE26C8E": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除"
+    },
+    "8C20325C-6F5C-49DE-9BAC-F0A22D477DE6": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除"
+    },
+    "63632BC2-376D-44B3-8C3B-F607F2D44668": {
+      "status": "excluded",
+      "checks": [],
+      "reason": "原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除"
+    },
+    "7FD61BD9-D04D-41B2-A9AC-837FF63B1E2F": {
+      "status": "covered",
+      "checks": [
+        "features.text_7fd61bd9"
+      ],
+      "reason": ""
+    },
+    "0CCDC2F0-45C9-4438-A68A-E13AF536B29B": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "BCCFA81F-F8DC-450A-AE0A-4B84813F2B02": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "BFD28ECB-F3CC-4BFF-99F0-1449715FBCDB": {
+      "status": "covered",
+      "checks": [
+        "features.asset_bfd28ecb"
+      ],
+      "reason": ""
+    },
+    "FC1D65E5-ED62-4F10-BD1C-3D11B0AC1A36": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "73691941-D66C-4772-AAC2-9C59011D74C9": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "324B46DA-9403-48D1-BEE5-30A9DD42C03D": {
+      "status": "covered",
+      "checks": [
+        "features.asset_324b46da"
+      ],
+      "reason": ""
+    },
+    "5E407349-5CAD-42E7-BAA7-81A238BF58DA": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "0FB59699-B7B0-486E-81CC-6BEDB7156A30": {
+      "status": "covered",
+      "checks": [
+        "regions.whole"
+      ],
+      "reason": ""
+    },
+    "CD2154E5-F768-4E1E-AF15-C8537ED0E763": {
+      "status": "covered",
+      "checks": [
+        "features.asset_cd2154e5"
+      ],
+      "reason": ""
+    }
+  }
+}

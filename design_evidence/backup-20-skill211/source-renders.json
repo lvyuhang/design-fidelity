@@ -1,0 +1,137 @@
+{
+  "status": "complete",
+  "design_id": "d5656e3e-51ce-4701-8c18-27d5bd7faa17",
+  "snapshot_id": "b9568db973a4df49cceca712e8cda246",
+  "resolved_version": "145990dc-069f-4539-9771-3c8dd44ba60c",
+  "scale": 4,
+  "source_renders": [
+    {
+      "file": "flutter_ui_components/assets/lanhu/backup_20_source/status_bar.png",
+      "bounds": {
+        "x": 21,
+        "y": 14,
+        "width": 340,
+        "height": 19
+      },
+      "pixels": [
+        1360,
+        76
+      ],
+      "sha256": "0300712f68bc4f94b020a631acf47f8756d7a2fc9e7cd2d6b39a0159a5d3452a",
+      "source": "design_evidence/backup-20-skill211/reference-4x.png",
+      "reason": "source bitmap has no exportable asset ID or image-fill URL"
+    },
+    {
+      "file": "flutter_ui_components/assets/lanhu/backup_20_source/notification_avatar.png",
+      "bounds": {
+        "x": 27,
+        "y": 59,
+        "width": 50,
+        "height": 50
+      },
+      "pixels": [
+        200,
+        200
+      ],
+      "sha256": "1fc72fd639340a952161521f629fc7844c5a274e89b7b58200bcaeefbc9cf3a5",
+      "source": "design_evidence/backup-20-skill211/reference-4x.png",
+      "reason": "source bitmap has no exportable asset ID or image-fill URL"
+    },
+    {
+      "file": "flutter_ui_components/assets/lanhu/backup_20_source/notification_name.png",
+      "bounds": {
+        "x": 90,
+        "y": 66,
+        "width": 60,
+        "height": 21
+      },
+      "pixels": [
+        240,
+        84
+      ],
+      "sha256": "fc6aea49981d79487a919bde49d95b3e589aa34ce6dd67b1154fcc0b00ea0cc7",
+      "source": "design_evidence/backup-20-skill211/reference-4x.png",
+      "reason": "source bitmap has no exportable asset ID or image-fill URL"
+    },
+    {
+      "file": "flutter_ui_components/assets/lanhu/backup_20_source/grid_row_1.png",
+      "bounds": {
+        "x": 15,
+        "y": 118,
+        "width": 345.5,
+        "height": 205
+      },
+      "pixels": [
+        1382,
+        820
+      ],
+      "sha256": "e9e57006665e43e945367698184cd93f45180e4777c20473598c029e8aeae562",
+      "source": "design_evidence/backup-20-skill211/reference-4x.png",
+      "reason": "source bitmap has no exportable asset ID or image-fill URL"
+    },
+    {
+      "file": "flutter_ui_components/assets/lanhu/backup_20_source/grid_row_2.png",
+      "bounds": {
+        "x": 15,
+        "y": 331,
+        "width": 345.5,
+        "height": 225
+      },
+      "pixels": [
+        1382,
+        900
+      ],
+      "sha256": "40301813f4ef2266a47fd4e048224ef4f71b3079568a5da393939c7b8335b32e",
+      "source": "design_evidence/backup-20-skill211/reference-4x.png",
+      "reason": "source bitmap has no exportable asset ID or image-fill URL"
+    },
+    {
+      "file": "flutter_ui_components/assets/lanhu/backup_20_source/grid_row_3_top.png",
+      "bounds": {
+        "x": 15,
+        "y": 564,
+        "width": 345.5,
+        "height": 171
+      },
+      "pixels": [
+        1382,
+        684
+      ],
+      "sha256": "d97046a8d485c1787de2a3117fb7e18661554e6fb2b2c5c2934fc0129463395b",
+      "source": "design_evidence/backup-20-skill211/reference-4x.png",
+      "reason": "source bitmap has no exportable asset ID or image-fill URL"
+    },
+    {
+      "file": "flutter_ui_components/assets/lanhu/backup_20_source/bottom_nav.png",
+      "bounds": {
+        "x": 14,
+        "y": 735,
+        "width": 343,
+        "height": 56
+      },
+      "pixels": [
+        1372,
+        224
+      ],
+      "sha256": "5e48a3385c133e2d09c66dbf03d556cbb0a7958ee28088be1660ea1dbcbbdc9d",
+      "source": "design_evidence/backup-20-skill211/reference-4x.png",
+      "reason": "source bitmap has no exportable asset ID or image-fill URL"
+    },
+    {
+      "file": "flutter_ui_components/assets/lanhu/backup_20_source/bottom_right_sliver.png",
+      "bounds": {
+        "x": 357,
+        "y": 735,
+        "width": 4,
+        "height": 54
+      },
+      "pixels": [
+        16,
+        216
+      ],
+      "sha256": "fb555f40894e55b3c0d05ff1e38193630d0196beffafb30b1e0884e94a1472b5",
+      "source": "design_evidence/backup-20-skill211/reference-4x.png",
+      "reason": "source bitmap has no exportable asset ID or image-fill URL"
+    }
+  ]
+}

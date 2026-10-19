@@ -1,0 +1,183 @@
+{
+  "schema_version": 2,
+  "status": "ready",
+  "name": "独立 Flutter 合成夹具",
+  "source_snapshot": "synthetic-flutter-v2",
+  "source_version": "fixture-1",
+  "source_scope": {
+    "kind": "page",
+    "expected_node_count": 4
+  },
+  "canvas": [
+    375,
+    812
+  ],
+  "render_scale": 2,
+  "reference": "reference.png",
+  "source_documents": [
+    "source.json"
+  ],
+  "assets": [
+    "assets/icon.png"
+  ],
+  "fonts": [],
+  "implementation_inputs": [
+    "lib/main.dart",
+    "test/render_test.dart",
+    "pubspec.yaml",
+    "pubspec.lock"
+  ],
+  "environment": {
+    "renderer": "Flutter widget test",
+    "renderer_version": "3.47.7 / deb287481e3ce9468f3434937ced4240a70539ca",
+    "platform": "macOS arm64",
+    "locale": "en",
+    "state": "synthetic-static",
+    "text_scale": 1
+  },
+  "coverage": {
+    "icon": {
+      "status": "covered",
+      "checks": [
+        "features.icon"
+      ]
+    },
+    "heading": {
+      "status": "covered",
+      "checks": [
+        "features.heading"
+      ]
+    },
+    "cta": {
+      "status": "covered",
+      "checks": [
+        "features.cta"
+      ]
+    },
+    "surface": {
+      "status": "covered",
+      "checks": [
+        "color_samples.surface"
+      ]
+    }
+  },
+  "regions": {
+    "whole": {
+      "label": "画布",
+      "rect": [
+        0,
+        0,
+        375,
+        812
+      ],
+      "max_mae": 1,
+      "max_p95": 2
+    }
+  },
+  "features": {
+    "icon": {
+      "label": "icon",
+      "node_ids": [
+        "icon"
+      ],
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          255,
+          0,
+          0
+        ],
+        "max_distance": 15,
+        "min_pixels": 50
+      },
+      "limits": {
+        "max_center_delta": 1,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 2
+      }
+    },
+    "heading": {
+      "label": "heading",
+      "node_ids": [
+        "heading"
+      ],
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 60,
+        "min_pixels": 50
+      },
+      "limits": {
+        "max_center_delta": 1,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 2
+      }
+    },
+    "cta": {
+      "label": "cta",
+      "node_ids": [
+        "cta"
+      ],
+      "padding": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 60,
+        "min_pixels": 50
+      },
+      "limits": {
+        "max_center_delta": 1,
+        "max_size_delta": 1.5,
+        "max_edge_delta": 2
+      }
+    }
+  },
+  "relations": {
+    "row": {
+      "label": "图文行",
+      "features": [
+        "icon",
+        "heading"
+      ],
+      "metric": "center_y",
+      "max_delta": 0.75
+    }
+  },
+  "color_samples": {
+    "surface": {
+      "label": "白底",
+      "node_ids": [
+        "surface"
+      ],
+      "anchor": [
+        0.5,
+        0.5
+      ],
+      "size": [
+        6,
+        6
+      ],
+      "max_channel_delta": 1
+    }
+  },
+  "pinned_files": {
+    "source.json": "5902f7325e71bf4361c9a7f17fc64106db3bbaaec96fc57b8b71445092355b15",
+    "reference.png": "581e31834b43d7b1f52a39836ecdb42f5c714fa800c19060b1c25e6f5f9e04fc",
+    "assets/icon.png": "5e260c1d139fad33516280189132dd67af33185904c8d88b77c6f2321b40a8f6"
+  }
+}

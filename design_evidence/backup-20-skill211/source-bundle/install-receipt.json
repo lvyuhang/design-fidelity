@@ -1,0 +1,1690 @@
+{
+  "status": "complete",
+  "installed": [
+    "8BC8C158-9DE3-4221-9160-F650BB93455F:image",
+    "CD6C4111-65DE-448D-8FA9-9B15747541CD:image",
+    "D85D178D-526B-4F10-BA58-951D91A5D289:image",
+    "C06F1C78-EC3B-4E9D-AF29-22BA9D1B81C0:image",
+    "AA926621-1195-4A43-9430-8A7827DD922B:image",
+    "4AB96BEE-5551-48E7-9BF6-D01ACC84073A:image",
+    "BC7D5A22-5996-4E23-94E0-29D67FFF6471:image",
+    "FE3A3FBD-820B-4D36-A0CA-7C52985992C3:image",
+    "323BE1A6-111A-4F72-A7CC-984A33ED45FC:image",
+    "E2F159C4-4C56-45B7-B014-1BFA4B6D7E71:image",
+    "FA38F87C-D064-4F19-8D92-D84A8FC52FA3:image",
+    "3D00DD00-5183-4BCC-B980-CE3C5848E95F:image",
+    "E1688AC3-8604-452B-B700-191B7039F4D1:image",
+    "40D138DC-3E63-4B1C-88AB-078EC462D61A:image",
+    "098DCB5C-ED27-4AEC-837F-26495DC0D7F9:image",
+    "245B012E-6B01-4801-A90A-8B25108EE556:image",
+    "A377A3C3-2407-45BC-9EDC-0805DB476C67:image",
+    "CEB31247-93FC-4B22-A437-0FAAA1959DBB:image",
+    "A5DB110A-B4E6-45B2-9DCB-51A2ECC3FDA2:image",
+    "FE376819-B5A6-4EC8-AC3E-BF385819C338:image",
+    "28317BE7-4AC7-4B52-93FC-9F12985A8477:image",
+    "F9422777-600E-459A-AA7B-0672BEF87D46:image",
+    "0D405419-CBDE-40B0-BEF3-0335AE25F9CD:image",
+    "C39BCCE8-77F0-4FD7-9D23-6103844D01D8:image",
+    "C586D6F9-7CCC-47B5-A711-DE50D1ABF7F6:image",
+    "E008BF73-32EA-4AFF-A2F1-1B6361655086:image",
+    "09120952-1E46-481A-A43F-506E2D5D0F7E:image",
+    "3A6024B4-7B22-4C40-9CBB-945064C27386:image",
+    "B99F5E54-8C35-4DE5-8FB1-06DDD20856CF:image",
+    "4F90C757-CCA6-4149-A74B-D42751DC763F:image",
+    "88E78EEC-25C1-4C79-A0E7-89A47B9858FE:image",
+    "3E7FF59C-83E5-4B4B-9D5F-595EBB6AC438:image",
+    "5229C5B2-80C2-4DC9-8784-92807C07E4A0:image",
+    "78BD762D-7AD8-403E-A4E5-1AD882B93AAC:image",
+    "EBA8F5B1-B26D-4A61-B145-6677E2641DE8:image",
+    "69C5F8CD-EC0F-4947-911F-A4256737E103:image",
+    "7B79FC2C-48C4-4125-B9F6-79B2AFD8E0C1:image",
+    "072F2D8A-D793-4FBA-ABE6-00DED198CB06:image",
+    "5AF7357A-0D6B-4EC2-B141-7E0A85125EB3:image",
+    "7BE61947-47A6-4104-8AE8-AB5BA5B51E26:image",
+    "24753C51-C3D6-47CD-BF17-8E4A7260B763:image",
+    "6E1C2463-CF77-4E26-903E-D399CE780DD1:image",
+    "E266651B-037B-4CE0-B06D-C40DEEEEFBA9:image"
+  ],
+  "skipped": [],
+  "assets": [
+    {
+      "asset_id": "8BC8C158-9DE3-4221-9160-F650BB93455F:image",
+      "node_id": "8BC8C158-9DE3-4221-9160-F650BB93455F",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 1500,
+        "height": 644
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 929,
+        "height": 637
+      },
+      "frame_count": 1,
+      "sha256": "9ca9bc42c11dde41edbd91c7c8bd67bbf761a9615bd7935a47c9546ceddc441c",
+      "bytes": 38091,
+      "relative_path": "assets/81bbbe61cf9743c327055bd857c78a07d2ae00d03da0b3fe73cc1f818c8fbef8.png",
+      "effective_density": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "8BC8C158-9DE3-4221-9160-F650BB93455F:image",
+      "original_variant_id": "v-f418fdb6a1727d8b8b3fa687",
+      "requested_preference": "original",
+      "selected_variant_id": "v-f418fdb6a1727d8b8b3fa687",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/81bbbe61cf9743c327055bd857c78a07d2ae00d03da0b3fe73cc1f818c8fbef8.png"
+    },
+    {
+      "asset_id": "CD6C4111-65DE-448D-8FA9-9B15747541CD:image",
+      "node_id": "CD6C4111-65DE-448D-8FA9-9B15747541CD",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 92,
+        "height": 92
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 16,
+        "y": 20,
+        "width": 60,
+        "height": 60
+      },
+      "frame_count": 1,
+      "sha256": "92ffb29d5d60f2d629f5c80dc91c93346980970607e01e97dab9f93af884897e",
+      "bytes": 2105,
+      "relative_path": "assets/a8a4c0abf698779e3752158de777d7d6fdb0392eef8705043558781e043c172f.png",
+      "effective_density": {
+        "x": 4.058823529411792,
+        "y": 4.058823529411761
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "CD6C4111-65DE-448D-8FA9-9B15747541CD:image",
+      "original_variant_id": "v-a5edecbedf4dd14f2f7028ce",
+      "requested_preference": "original",
+      "selected_variant_id": "v-a5edecbedf4dd14f2f7028ce",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/a8a4c0abf698779e3752158de777d7d6fdb0392eef8705043558781e043c172f.png"
+    },
+    {
+      "asset_id": "D85D178D-526B-4F10-BA58-951D91A5D289:image",
+      "node_id": "D85D178D-526B-4F10-BA58-951D91A5D289",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 176,
+        "height": 176
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 2,
+        "y": 2,
+        "width": 172,
+        "height": 172
+      },
+      "frame_count": 1,
+      "sha256": "24ad7a34bb03f371aae9a47aa32d0990ba073203fd033c93b7172793ea5f0326",
+      "bytes": 13155,
+      "relative_path": "assets/25d03260ab42ac63ba1dedf84ee3fc864655ede23cf851ba0371123af174b251.png",
+      "effective_density": {
+        "x": 5.176470588235294,
+        "y": 5.176470588235294
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "D85D178D-526B-4F10-BA58-951D91A5D289:image",
+      "original_variant_id": "v-a56464f23eec0671bed0bdb6",
+      "requested_preference": "original",
+      "selected_variant_id": "v-a56464f23eec0671bed0bdb6",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/25d03260ab42ac63ba1dedf84ee3fc864655ede23cf851ba0371123af174b251.png"
+    },
+    {
+      "asset_id": "C06F1C78-EC3B-4E9D-AF29-22BA9D1B81C0:image",
+      "node_id": "C06F1C78-EC3B-4E9D-AF29-22BA9D1B81C0",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 48,
+        "height": 48
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 4,
+        "y": 2,
+        "width": 36,
+        "height": 43
+      },
+      "frame_count": 1,
+      "sha256": "43408cb100fa47537c7a85f24491a2c34d961dfb18c02a65a90e07d98541c25f",
+      "bytes": 2355,
+      "relative_path": "assets/26104fa87253acd5ec1ebca4b15fbcc17a328a0ba31c379fc9a41c5467fabda9.png",
+      "effective_density": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "C06F1C78-EC3B-4E9D-AF29-22BA9D1B81C0:image",
+      "original_variant_id": "v-f4814b6d1d3750d9c1236759",
+      "requested_preference": "original",
+      "selected_variant_id": "v-f4814b6d1d3750d9c1236759",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/26104fa87253acd5ec1ebca4b15fbcc17a328a0ba31c379fc9a41c5467fabda9.png"
+    },
+    {
+      "asset_id": "AA926621-1195-4A43-9430-8A7827DD922B:image",
+      "node_id": "AA926621-1195-4A43-9430-8A7827DD922B",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 48,
+        "height": 48
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 3,
+        "y": 5,
+        "width": 39,
+        "height": 37
+      },
+      "frame_count": 1,
+      "sha256": "946295f91f7b58f1cb419bc1389183b91a6f116845defb73e9c3e15b5b617b42",
+      "bytes": 2616,
+      "relative_path": "assets/22957b3eaba964683aeb275b3da9a5f9ccdd85b7856939922729b184750b1afd.png",
+      "effective_density": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "AA926621-1195-4A43-9430-8A7827DD922B:image",
+      "original_variant_id": "v-a7cc578d19b6a082ca690b11",
+      "requested_preference": "original",
+      "selected_variant_id": "v-a7cc578d19b6a082ca690b11",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/22957b3eaba964683aeb275b3da9a5f9ccdd85b7856939922729b184750b1afd.png"
+    },
+    {
+      "asset_id": "4AB96BEE-5551-48E7-9BF6-D01ACC84073A:image",
+      "node_id": "4AB96BEE-5551-48E7-9BF6-D01ACC84073A",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 308,
+        "height": 64
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 1,
+        "width": 305,
+        "height": 60
+      },
+      "frame_count": 1,
+      "sha256": "082014273b710d1dda46c2dcb0283d1c0222aeea0bef606aa7df77aa9c507312",
+      "bytes": 4195,
+      "relative_path": "assets/681c8e163ad022e4bd827967eb94df9cda584300c043a461f076e38dbffbae7d.png",
+      "effective_density": {
+        "x": 4.052631578947368,
+        "y": 4.3456790123456726
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "4AB96BEE-5551-48E7-9BF6-D01ACC84073A:image",
+      "original_variant_id": "v-82175409e58faae58ab53a88",
+      "requested_preference": "original",
+      "selected_variant_id": "v-82175409e58faae58ab53a88",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/681c8e163ad022e4bd827967eb94df9cda584300c043a461f076e38dbffbae7d.png"
+    },
+    {
+      "asset_id": "BC7D5A22-5996-4E23-94E0-29D67FFF6471:image",
+      "node_id": "BC7D5A22-5996-4E23-94E0-29D67FFF6471",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 300,
+        "height": 64
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 1,
+        "width": 297,
+        "height": 60
+      },
+      "frame_count": 1,
+      "sha256": "06999b86b5eb38fd4754ca374c7f3c84a2fcd81676edeaf10a5f938f02fcdf23",
+      "bytes": 4028,
+      "relative_path": "assets/bcf842a24027126965c96438efe0976659735500e63c8834a52468d606123910.png",
+      "effective_density": {
+        "x": 4.054054054054067,
+        "y": 4.3456790123456726
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "BC7D5A22-5996-4E23-94E0-29D67FFF6471:image",
+      "original_variant_id": "v-0f94332953e14eb22a95d6e4",
+      "requested_preference": "original",
+      "selected_variant_id": "v-0f94332953e14eb22a95d6e4",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/bcf842a24027126965c96438efe0976659735500e63c8834a52468d606123910.png"
+    },
+    {
+      "asset_id": "FE3A3FBD-820B-4D36-A0CA-7C52985992C3:image",
+      "node_id": "FE3A3FBD-820B-4D36-A0CA-7C52985992C3",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 72,
+        "height": 56
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 2,
+        "y": 1,
+        "width": 67,
+        "height": 54
+      },
+      "frame_count": 1,
+      "sha256": "756d4036d9e4a95b2daefd451cc06d08caa5efb4ff7d1208bf1daf4fa4d7d3d8",
+      "bytes": 1259,
+      "relative_path": "assets/9ff923ce93d00d8dbd3b38a3e0fb5d370bbe2971610d8279c0fd5fe9ab571f00.png",
+      "effective_density": {
+        "x": 4.342105263157914,
+        "y": 4.233217592592596
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "FE3A3FBD-820B-4D36-A0CA-7C52985992C3:image",
+      "original_variant_id": "v-265261f2e38c3dd48ab2543f",
+      "requested_preference": "original",
+      "selected_variant_id": "v-265261f2e38c3dd48ab2543f",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/9ff923ce93d00d8dbd3b38a3e0fb5d370bbe2971610d8279c0fd5fe9ab571f00.png"
+    },
+    {
+      "asset_id": "323BE1A6-111A-4F72-A7CC-984A33ED45FC:image",
+      "node_id": "323BE1A6-111A-4F72-A7CC-984A33ED45FC",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 168,
+        "height": 192
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 12,
+        "y": 0,
+        "width": 140,
+        "height": 183
+      },
+      "frame_count": 1,
+      "sha256": "bf295c07093c37d20e8059aced874e50fb7fd6dca81de9d1885422ea68356195",
+      "bytes": 12209,
+      "relative_path": "assets/6a161367ea5a94ba2ecc26fe21d6d7e4fec73e9dd55587c9d18833d7dbe0465d.png",
+      "effective_density": {
+        "x": 4.8124999999999885,
+        "y": 5.333333333333333
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "323BE1A6-111A-4F72-A7CC-984A33ED45FC:image",
+      "original_variant_id": "v-3941f341d28476b2add538f2",
+      "requested_preference": "original",
+      "selected_variant_id": "v-3941f341d28476b2add538f2",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/6a161367ea5a94ba2ecc26fe21d6d7e4fec73e9dd55587c9d18833d7dbe0465d.png"
+    },
+    {
+      "asset_id": "E2F159C4-4C56-45B7-B014-1BFA4B6D7E71:image",
+      "node_id": "E2F159C4-4C56-45B7-B014-1BFA4B6D7E71",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 72,
+        "height": 56
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 2,
+        "y": 1,
+        "width": 67,
+        "height": 54
+      },
+      "frame_count": 1,
+      "sha256": "756d4036d9e4a95b2daefd451cc06d08caa5efb4ff7d1208bf1daf4fa4d7d3d8",
+      "bytes": 1259,
+      "relative_path": "assets/f586dab710e0e80fa7f13d21b00fe3cfea5836999230172f8a1c84d0985cfbb8.png",
+      "effective_density": {
+        "x": 4.342105263157914,
+        "y": 4.233217592592596
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "E2F159C4-4C56-45B7-B014-1BFA4B6D7E71:image",
+      "original_variant_id": "v-0823c7f74cf137aae090342c",
+      "requested_preference": "original",
+      "selected_variant_id": "v-0823c7f74cf137aae090342c",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/f586dab710e0e80fa7f13d21b00fe3cfea5836999230172f8a1c84d0985cfbb8.png"
+    },
+    {
+      "asset_id": "FA38F87C-D064-4F19-8D92-D84A8FC52FA3:image",
+      "node_id": "FA38F87C-D064-4F19-8D92-D84A8FC52FA3",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 168,
+        "height": 192
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 12,
+        "y": 0,
+        "width": 140,
+        "height": 183
+      },
+      "frame_count": 1,
+      "sha256": "bf295c07093c37d20e8059aced874e50fb7fd6dca81de9d1885422ea68356195",
+      "bytes": 12209,
+      "relative_path": "assets/b72979bc49d54e3f3958f8462cd581d70fb173d967777a23f563f1c33efdcffa.png",
+      "effective_density": {
+        "x": 4.8124999999999885,
+        "y": 5.333333333333333
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "FA38F87C-D064-4F19-8D92-D84A8FC52FA3:image",
+      "original_variant_id": "v-439d18e52a9b84483e8b2a13",
+      "requested_preference": "original",
+      "selected_variant_id": "v-439d18e52a9b84483e8b2a13",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/b72979bc49d54e3f3958f8462cd581d70fb173d967777a23f563f1c33efdcffa.png"
+    },
+    {
+      "asset_id": "3D00DD00-5183-4BCC-B980-CE3C5848E95F:image",
+      "node_id": "3D00DD00-5183-4BCC-B980-CE3C5848E95F",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 24,
+        "height": 24
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 3,
+        "y": 2,
+        "width": 20,
+        "height": 20
+      },
+      "frame_count": 1,
+      "sha256": "99779fc8c76a08890a244003c0164222c1796edf18e1ce984363ee8188da671f",
+      "bytes": 580,
+      "relative_path": "assets/68b353f9dc67731057c6b2e440dfcb61d385c849455b72bcd9d3fb39ac92d1b6.png",
+      "effective_density": {
+        "x": 4.941176470588203,
+        "y": 5.142857142857185
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "3D00DD00-5183-4BCC-B980-CE3C5848E95F:image",
+      "original_variant_id": "v-121cad6258e8293244cad8ef",
+      "requested_preference": "original",
+      "selected_variant_id": "v-121cad6258e8293244cad8ef",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/68b353f9dc67731057c6b2e440dfcb61d385c849455b72bcd9d3fb39ac92d1b6.png"
+    },
+    {
+      "asset_id": "E1688AC3-8604-452B-B700-191B7039F4D1:image",
+      "node_id": "E1688AC3-8604-452B-B700-191B7039F4D1",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 24,
+        "height": 24
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 3,
+        "y": 2,
+        "width": 20,
+        "height": 20
+      },
+      "frame_count": 1,
+      "sha256": "075f97a59d582de2c252b716531d131ab8a717c553e9adc7968a305edd9d24a1",
+      "bytes": 588,
+      "relative_path": "assets/4fc2b76dbe975b90393340b69f1105a7a3baef91bcfc1a56f9e33af9e75a1800.png",
+      "effective_density": {
+        "x": 4.941176470588434,
+        "y": 5.142857142857185
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "E1688AC3-8604-452B-B700-191B7039F4D1:image",
+      "original_variant_id": "v-4b52c4d533d50b838a3b110c",
+      "requested_preference": "original",
+      "selected_variant_id": "v-4b52c4d533d50b838a3b110c",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/4fc2b76dbe975b90393340b69f1105a7a3baef91bcfc1a56f9e33af9e75a1800.png"
+    },
+    {
+      "asset_id": "40D138DC-3E63-4B1C-88AB-078EC462D61A:image",
+      "node_id": "40D138DC-3E63-4B1C-88AB-078EC462D61A",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 116,
+        "height": 52
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 3,
+        "y": 0,
+        "width": 113,
+        "height": 50
+      },
+      "frame_count": 1,
+      "sha256": "2a4c0af819a68f4291de0c8734681ce593cbc743353dbe9dc044f38edde8835e",
+      "bytes": 2382,
+      "relative_path": "assets/9da9db74054d3416516de373428dd10bc16a1bd3154357df85e6a35bee8f23af.png",
+      "effective_density": {
+        "x": 4.376199368626105,
+        "y": 6.256004220549611
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "40D138DC-3E63-4B1C-88AB-078EC462D61A:image",
+      "original_variant_id": "v-db2fbddc49ae45d06f3904ce",
+      "requested_preference": "original",
+      "selected_variant_id": "v-db2fbddc49ae45d06f3904ce",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/9da9db74054d3416516de373428dd10bc16a1bd3154357df85e6a35bee8f23af.png"
+    },
+    {
+      "asset_id": "098DCB5C-ED27-4AEC-837F-26495DC0D7F9:image",
+      "node_id": "098DCB5C-ED27-4AEC-837F-26495DC0D7F9",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 676,
+        "height": 312
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 674,
+        "height": 312
+      },
+      "frame_count": 1,
+      "sha256": "6e42e54b0a7b97c1f1ce0fc7c202cce63fafcad2fab32b66499536b72c190640",
+      "bytes": 43827,
+      "relative_path": "assets/d744866655a85be80412a00eacbb381bde0daa8d7b9e1042209b3ed31a9cc1b0.png",
+      "effective_density": {
+        "x": 4.01186943620178,
+        "y": 4.0
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "098DCB5C-ED27-4AEC-837F-26495DC0D7F9:image",
+      "original_variant_id": "v-44a09e00097ebccbb4c14a24",
+      "requested_preference": "original",
+      "selected_variant_id": "v-44a09e00097ebccbb4c14a24",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/d744866655a85be80412a00eacbb381bde0daa8d7b9e1042209b3ed31a9cc1b0.png"
+    },
+    {
+      "asset_id": "245B012E-6B01-4801-A90A-8B25108EE556:image",
+      "node_id": "245B012E-6B01-4801-A90A-8B25108EE556",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 676,
+        "height": 312
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 674,
+        "height": 312
+      },
+      "frame_count": 1,
+      "sha256": "6e42e54b0a7b97c1f1ce0fc7c202cce63fafcad2fab32b66499536b72c190640",
+      "bytes": 43827,
+      "relative_path": "assets/2716dce27740ce2c6578b3bdbd95022cf2f82c7fe24983ed01f4bda147e77426.png",
+      "effective_density": {
+        "x": 4.01186943620178,
+        "y": 4.0
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "245B012E-6B01-4801-A90A-8B25108EE556:image",
+      "original_variant_id": "v-bcc52aa5f47028962d7bb0b9",
+      "requested_preference": "original",
+      "selected_variant_id": "v-bcc52aa5f47028962d7bb0b9",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/2716dce27740ce2c6578b3bdbd95022cf2f82c7fe24983ed01f4bda147e77426.png"
+    },
+    {
+      "asset_id": "A377A3C3-2407-45BC-9EDC-0805DB476C67:image",
+      "node_id": "A377A3C3-2407-45BC-9EDC-0805DB476C67",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 48,
+        "height": 48
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 4,
+        "y": 2,
+        "width": 36,
+        "height": 43
+      },
+      "frame_count": 1,
+      "sha256": "43408cb100fa47537c7a85f24491a2c34d961dfb18c02a65a90e07d98541c25f",
+      "bytes": 2355,
+      "relative_path": "assets/4458638f33150307c3c8aaec8ed1c67a3304831a58154db9b1ff85aa8bcf5716.png",
+      "effective_density": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "A377A3C3-2407-45BC-9EDC-0805DB476C67:image",
+      "original_variant_id": "v-03b7bb91ad33f6e399e01487",
+      "requested_preference": "original",
+      "selected_variant_id": "v-03b7bb91ad33f6e399e01487",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/4458638f33150307c3c8aaec8ed1c67a3304831a58154db9b1ff85aa8bcf5716.png"
+    },
+    {
+      "asset_id": "CEB31247-93FC-4B22-A437-0FAAA1959DBB:image",
+      "node_id": "CEB31247-93FC-4B22-A437-0FAAA1959DBB",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 48,
+        "height": 48
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 4,
+        "y": 2,
+        "width": 36,
+        "height": 43
+      },
+      "frame_count": 1,
+      "sha256": "43408cb100fa47537c7a85f24491a2c34d961dfb18c02a65a90e07d98541c25f",
+      "bytes": 2355,
+      "relative_path": "assets/73ed648a53f3412cbca8213402ebedcde5e29d6895ccf2997127da4368a1b4fd.png",
+      "effective_density": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "CEB31247-93FC-4B22-A437-0FAAA1959DBB:image",
+      "original_variant_id": "v-919da06ce671f9b383dc732a",
+      "requested_preference": "original",
+      "selected_variant_id": "v-919da06ce671f9b383dc732a",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/73ed648a53f3412cbca8213402ebedcde5e29d6895ccf2997127da4368a1b4fd.png"
+    },
+    {
+      "asset_id": "A5DB110A-B4E6-45B2-9DCB-51A2ECC3FDA2:image",
+      "node_id": "A5DB110A-B4E6-45B2-9DCB-51A2ECC3FDA2",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 48,
+        "height": 48
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 3,
+        "y": 5,
+        "width": 39,
+        "height": 37
+      },
+      "frame_count": 1,
+      "sha256": "946295f91f7b58f1cb419bc1389183b91a6f116845defb73e9c3e15b5b617b42",
+      "bytes": 2616,
+      "relative_path": "assets/5a34b447473088513981829b51562f1cdbe351c799fa16affe33ef4f7d75d402.png",
+      "effective_density": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "A5DB110A-B4E6-45B2-9DCB-51A2ECC3FDA2:image",
+      "original_variant_id": "v-a2f1c1b5b66ead66a5f55b33",
+      "requested_preference": "original",
+      "selected_variant_id": "v-a2f1c1b5b66ead66a5f55b33",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/5a34b447473088513981829b51562f1cdbe351c799fa16affe33ef4f7d75d402.png"
+    },
+    {
+      "asset_id": "FE376819-B5A6-4EC8-AC3E-BF385819C338:image",
+      "node_id": "FE376819-B5A6-4EC8-AC3E-BF385819C338",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 48,
+        "height": 48
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 3,
+        "y": 5,
+        "width": 39,
+        "height": 37
+      },
+      "frame_count": 1,
+      "sha256": "946295f91f7b58f1cb419bc1389183b91a6f116845defb73e9c3e15b5b617b42",
+      "bytes": 2616,
+      "relative_path": "assets/e5420067e59f59b435239f526e0ef79929941ca6d7a18ab96cbf47d55a04cc44.png",
+      "effective_density": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "FE376819-B5A6-4EC8-AC3E-BF385819C338:image",
+      "original_variant_id": "v-101287cc462469c532943367",
+      "requested_preference": "original",
+      "selected_variant_id": "v-101287cc462469c532943367",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/e5420067e59f59b435239f526e0ef79929941ca6d7a18ab96cbf47d55a04cc44.png"
+    },
+    {
+      "asset_id": "28317BE7-4AC7-4B52-93FC-9F12985A8477:image",
+      "node_id": "28317BE7-4AC7-4B52-93FC-9F12985A8477",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 308,
+        "height": 64
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 1,
+        "width": 305,
+        "height": 60
+      },
+      "frame_count": 1,
+      "sha256": "082014273b710d1dda46c2dcb0283d1c0222aeea0bef606aa7df77aa9c507312",
+      "bytes": 4195,
+      "relative_path": "assets/b87e1eab997ee55e3b40b79e5d5f42c9728626fb7986ef7be66140bc87d38fbc.png",
+      "effective_density": {
+        "x": 4.052631578947368,
+        "y": 4.3456790123456726
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "28317BE7-4AC7-4B52-93FC-9F12985A8477:image",
+      "original_variant_id": "v-b2c0a1a3f5f5e88a3e1dd2fc",
+      "requested_preference": "original",
+      "selected_variant_id": "v-b2c0a1a3f5f5e88a3e1dd2fc",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/b87e1eab997ee55e3b40b79e5d5f42c9728626fb7986ef7be66140bc87d38fbc.png"
+    },
+    {
+      "asset_id": "F9422777-600E-459A-AA7B-0672BEF87D46:image",
+      "node_id": "F9422777-600E-459A-AA7B-0672BEF87D46",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 308,
+        "height": 64
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 1,
+        "width": 305,
+        "height": 60
+      },
+      "frame_count": 1,
+      "sha256": "082014273b710d1dda46c2dcb0283d1c0222aeea0bef606aa7df77aa9c507312",
+      "bytes": 4195,
+      "relative_path": "assets/c5478114482ef9b12391d5e2cefa1e7519ea066235f0fe5bc0a0e4347f8ca1cf.png",
+      "effective_density": {
+        "x": 4.052631578947368,
+        "y": 4.3456790123456726
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "F9422777-600E-459A-AA7B-0672BEF87D46:image",
+      "original_variant_id": "v-ad6df4e405371fed1656df06",
+      "requested_preference": "original",
+      "selected_variant_id": "v-ad6df4e405371fed1656df06",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/c5478114482ef9b12391d5e2cefa1e7519ea066235f0fe5bc0a0e4347f8ca1cf.png"
+    },
+    {
+      "asset_id": "0D405419-CBDE-40B0-BEF3-0335AE25F9CD:image",
+      "node_id": "0D405419-CBDE-40B0-BEF3-0335AE25F9CD",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 304,
+        "height": 60
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 304,
+        "height": 59
+      },
+      "frame_count": 1,
+      "sha256": "e1d0e25f58c74f4552e3493ac7e138d464225b4cd53a4f8967c2662e585540ff",
+      "bytes": 3909,
+      "relative_path": "assets/003ce09cb59d1d5703244f3fd70e9ea322cb2454dca883220f9a40b0c489d9bc.png",
+      "effective_density": {
+        "x": 4.0,
+        "y": 4.074074074074068
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "0D405419-CBDE-40B0-BEF3-0335AE25F9CD:image",
+      "original_variant_id": "v-086858be116e12948cbff8b5",
+      "requested_preference": "original",
+      "selected_variant_id": "v-086858be116e12948cbff8b5",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/003ce09cb59d1d5703244f3fd70e9ea322cb2454dca883220f9a40b0c489d9bc.png"
+    },
+    {
+      "asset_id": "C39BCCE8-77F0-4FD7-9D23-6103844D01D8:image",
+      "node_id": "C39BCCE8-77F0-4FD7-9D23-6103844D01D8",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 304,
+        "height": 60
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 304,
+        "height": 59
+      },
+      "frame_count": 1,
+      "sha256": "e1d0e25f58c74f4552e3493ac7e138d464225b4cd53a4f8967c2662e585540ff",
+      "bytes": 3909,
+      "relative_path": "assets/9888d88a1e995040b59c3f311837a59cc3a4432a9d557ad54faad015d6bb7d9a.png",
+      "effective_density": {
+        "x": 4.0,
+        "y": 4.074074074074068
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "C39BCCE8-77F0-4FD7-9D23-6103844D01D8:image",
+      "original_variant_id": "v-79cfb2fd1fe6117ae191037c",
+      "requested_preference": "original",
+      "selected_variant_id": "v-79cfb2fd1fe6117ae191037c",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/9888d88a1e995040b59c3f311837a59cc3a4432a9d557ad54faad015d6bb7d9a.png"
+    },
+    {
+      "asset_id": "C586D6F9-7CCC-47B5-A711-DE50D1ABF7F6:image",
+      "node_id": "C586D6F9-7CCC-47B5-A711-DE50D1ABF7F6",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 72,
+        "height": 72
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 2,
+        "width": 72,
+        "height": 63
+      },
+      "frame_count": 1,
+      "sha256": "afe70b8a34d06a7875453b394755be05e215c5a605c310782f9ca23162a3b4f5",
+      "bytes": 6682,
+      "relative_path": "assets/63b2a9153b1c8b8a4598a7d512fd8c71a4e9e6d40f160af5de98208ab5cae5d5.png",
+      "effective_density": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "C586D6F9-7CCC-47B5-A711-DE50D1ABF7F6:image",
+      "original_variant_id": "v-39963e5addd1b94c2f5f1151",
+      "requested_preference": "original",
+      "selected_variant_id": "v-39963e5addd1b94c2f5f1151",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/63b2a9153b1c8b8a4598a7d512fd8c71a4e9e6d40f160af5de98208ab5cae5d5.png"
+    },
+    {
+      "asset_id": "E008BF73-32EA-4AFF-A2F1-1B6361655086:image",
+      "node_id": "E008BF73-32EA-4AFF-A2F1-1B6361655086",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 72,
+        "height": 72
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 2,
+        "width": 72,
+        "height": 63
+      },
+      "frame_count": 1,
+      "sha256": "afe70b8a34d06a7875453b394755be05e215c5a605c310782f9ca23162a3b4f5",
+      "bytes": 6682,
+      "relative_path": "assets/e399986613cfbc2318d7b20a5cb9af711042cb66a90f57b82df10ffac7435587.png",
+      "effective_density": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "E008BF73-32EA-4AFF-A2F1-1B6361655086:image",
+      "original_variant_id": "v-09e8c4818083f80bc3ea5427",
+      "requested_preference": "original",
+      "selected_variant_id": "v-09e8c4818083f80bc3ea5427",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/e399986613cfbc2318d7b20a5cb9af711042cb66a90f57b82df10ffac7435587.png"
+    },
+    {
+      "asset_id": "09120952-1E46-481A-A43F-506E2D5D0F7E:image",
+      "node_id": "09120952-1E46-481A-A43F-506E2D5D0F7E",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 72,
+        "height": 72
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 2,
+        "width": 72,
+        "height": 63
+      },
+      "frame_count": 1,
+      "sha256": "afe70b8a34d06a7875453b394755be05e215c5a605c310782f9ca23162a3b4f5",
+      "bytes": 6682,
+      "relative_path": "assets/47cdec79db89b3e99d00756e3d0162649442705afd90d0fb5f04cc8eea476f32.png",
+      "effective_density": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "09120952-1E46-481A-A43F-506E2D5D0F7E:image",
+      "original_variant_id": "v-74a3dfd2ac94a809d7f793d0",
+      "requested_preference": "original",
+      "selected_variant_id": "v-74a3dfd2ac94a809d7f793d0",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/47cdec79db89b3e99d00756e3d0162649442705afd90d0fb5f04cc8eea476f32.png"
+    },
+    {
+      "asset_id": "3A6024B4-7B22-4C40-9CBB-945064C27386:image",
+      "node_id": "3A6024B4-7B22-4C40-9CBB-945064C27386",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 72,
+        "height": 72
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 2,
+        "width": 72,
+        "height": 63
+      },
+      "frame_count": 1,
+      "sha256": "afe70b8a34d06a7875453b394755be05e215c5a605c310782f9ca23162a3b4f5",
+      "bytes": 6682,
+      "relative_path": "assets/e739690c8d8f4044c1db66215a49a44fb5ee054ba0c8712ba9f93d1910de0204.png",
+      "effective_density": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "3A6024B4-7B22-4C40-9CBB-945064C27386:image",
+      "original_variant_id": "v-8f2c1db7e3f1a7d80f0b8643",
+      "requested_preference": "original",
+      "selected_variant_id": "v-8f2c1db7e3f1a7d80f0b8643",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/e739690c8d8f4044c1db66215a49a44fb5ee054ba0c8712ba9f93d1910de0204.png"
+    },
+    {
+      "asset_id": "B99F5E54-8C35-4DE5-8FB1-06DDD20856CF:image",
+      "node_id": "B99F5E54-8C35-4DE5-8FB1-06DDD20856CF",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 168,
+        "height": 172
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 168,
+        "height": 169
+      },
+      "frame_count": 1,
+      "sha256": "3cce0950b574be13b3136d4a4c24f7a0f409e7438ef6a89d5e09fd0b565a7e20",
+      "bytes": 4180,
+      "relative_path": "assets/ea102c5027cd61f5dfca6b0f2296412b59e8d0dd42c3be98a74ba333085252ab.png",
+      "effective_density": {
+        "x": 4.0,
+        "y": 4.091008997416544
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "B99F5E54-8C35-4DE5-8FB1-06DDD20856CF:image",
+      "original_variant_id": "v-97edc7c1a1c9503072bfc389",
+      "requested_preference": "original",
+      "selected_variant_id": "v-97edc7c1a1c9503072bfc389",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/ea102c5027cd61f5dfca6b0f2296412b59e8d0dd42c3be98a74ba333085252ab.png"
+    },
+    {
+      "asset_id": "4F90C757-CCA6-4149-A74B-D42751DC763F:image",
+      "node_id": "4F90C757-CCA6-4149-A74B-D42751DC763F",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 168,
+        "height": 172
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 168,
+        "height": 169
+      },
+      "frame_count": 1,
+      "sha256": "3cce0950b574be13b3136d4a4c24f7a0f409e7438ef6a89d5e09fd0b565a7e20",
+      "bytes": 4180,
+      "relative_path": "assets/05470984d36e887eb13f968380f419839957d7a892023f76d36176c40daba2a0.png",
+      "effective_density": {
+        "x": 4.0,
+        "y": 4.091008997416538
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "4F90C757-CCA6-4149-A74B-D42751DC763F:image",
+      "original_variant_id": "v-a940f721cad7186fc7ce0698",
+      "requested_preference": "original",
+      "selected_variant_id": "v-a940f721cad7186fc7ce0698",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/05470984d36e887eb13f968380f419839957d7a892023f76d36176c40daba2a0.png"
+    },
+    {
+      "asset_id": "88E78EEC-25C1-4C79-A0E7-89A47B9858FE:image",
+      "node_id": "88E78EEC-25C1-4C79-A0E7-89A47B9858FE",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 72,
+        "height": 56
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 2,
+        "y": 1,
+        "width": 67,
+        "height": 54
+      },
+      "frame_count": 1,
+      "sha256": "756d4036d9e4a95b2daefd451cc06d08caa5efb4ff7d1208bf1daf4fa4d7d3d8",
+      "bytes": 1259,
+      "relative_path": "assets/2e830ddc962b667bfe66a62ee29344f7794e4b12208030ddeb215096e06bd583.png",
+      "effective_density": {
+        "x": 4.342105263157914,
+        "y": 4.233217592592596
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "88E78EEC-25C1-4C79-A0E7-89A47B9858FE:image",
+      "original_variant_id": "v-771f19c590e3cafca4a29637",
+      "requested_preference": "original",
+      "selected_variant_id": "v-771f19c590e3cafca4a29637",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/2e830ddc962b667bfe66a62ee29344f7794e4b12208030ddeb215096e06bd583.png"
+    },
+    {
+      "asset_id": "3E7FF59C-83E5-4B4B-9D5F-595EBB6AC438:image",
+      "node_id": "3E7FF59C-83E5-4B4B-9D5F-595EBB6AC438",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 168,
+        "height": 192
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 12,
+        "y": 0,
+        "width": 140,
+        "height": 183
+      },
+      "frame_count": 1,
+      "sha256": "bf295c07093c37d20e8059aced874e50fb7fd6dca81de9d1885422ea68356195",
+      "bytes": 12209,
+      "relative_path": "assets/e09c4cad5406ee1668c57d1f177a72eaff844942671708cad30a1012e51c664a.png",
+      "effective_density": {
+        "x": 4.8124999999999885,
+        "y": 5.333333333333333
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "3E7FF59C-83E5-4B4B-9D5F-595EBB6AC438:image",
+      "original_variant_id": "v-2382e81879ccd6dc3db217e0",
+      "requested_preference": "original",
+      "selected_variant_id": "v-2382e81879ccd6dc3db217e0",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/e09c4cad5406ee1668c57d1f177a72eaff844942671708cad30a1012e51c664a.png"
+    },
+    {
+      "asset_id": "5229C5B2-80C2-4DC9-8784-92807C07E4A0:image",
+      "node_id": "5229C5B2-80C2-4DC9-8784-92807C07E4A0",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 72,
+        "height": 56
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 2,
+        "y": 1,
+        "width": 67,
+        "height": 54
+      },
+      "frame_count": 1,
+      "sha256": "756d4036d9e4a95b2daefd451cc06d08caa5efb4ff7d1208bf1daf4fa4d7d3d8",
+      "bytes": 1259,
+      "relative_path": "assets/730c8e273c9e01288935fefb9690b6f373997c601fefd754ac03ff9c9168acbc.png",
+      "effective_density": {
+        "x": 4.342105263157914,
+        "y": 4.233217592592596
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "5229C5B2-80C2-4DC9-8784-92807C07E4A0:image",
+      "original_variant_id": "v-ea758747df1c1e8b63ce3f29",
+      "requested_preference": "original",
+      "selected_variant_id": "v-ea758747df1c1e8b63ce3f29",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/730c8e273c9e01288935fefb9690b6f373997c601fefd754ac03ff9c9168acbc.png"
+    },
+    {
+      "asset_id": "78BD762D-7AD8-403E-A4E5-1AD882B93AAC:image",
+      "node_id": "78BD762D-7AD8-403E-A4E5-1AD882B93AAC",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 168,
+        "height": 192
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 12,
+        "y": 0,
+        "width": 140,
+        "height": 183
+      },
+      "frame_count": 1,
+      "sha256": "bf295c07093c37d20e8059aced874e50fb7fd6dca81de9d1885422ea68356195",
+      "bytes": 12209,
+      "relative_path": "assets/b7a33d41942e2460afd5273bccb13aa04562f9b772463766de69ff29ddbf586a.png",
+      "effective_density": {
+        "x": 4.8124999999999885,
+        "y": 5.333333333333333
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "78BD762D-7AD8-403E-A4E5-1AD882B93AAC:image",
+      "original_variant_id": "v-a6efbbc1b1dbfc4093d4e57f",
+      "requested_preference": "original",
+      "selected_variant_id": "v-a6efbbc1b1dbfc4093d4e57f",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/b7a33d41942e2460afd5273bccb13aa04562f9b772463766de69ff29ddbf586a.png"
+    },
+    {
+      "asset_id": "EBA8F5B1-B26D-4A61-B145-6677E2641DE8:image",
+      "node_id": "EBA8F5B1-B26D-4A61-B145-6677E2641DE8",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 72,
+        "height": 56
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 2,
+        "y": 1,
+        "width": 67,
+        "height": 54
+      },
+      "frame_count": 1,
+      "sha256": "756d4036d9e4a95b2daefd451cc06d08caa5efb4ff7d1208bf1daf4fa4d7d3d8",
+      "bytes": 1259,
+      "relative_path": "assets/4307e8fbdbdbbd05cb6746f2a9f0d05f4b597cc9d5d80077b5c8e18d8d377451.png",
+      "effective_density": {
+        "x": 4.342105263157914,
+        "y": 4.233217592592596
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "EBA8F5B1-B26D-4A61-B145-6677E2641DE8:image",
+      "original_variant_id": "v-e1bc6c68b785a48751e68ad8",
+      "requested_preference": "original",
+      "selected_variant_id": "v-e1bc6c68b785a48751e68ad8",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/4307e8fbdbdbbd05cb6746f2a9f0d05f4b597cc9d5d80077b5c8e18d8d377451.png"
+    },
+    {
+      "asset_id": "69C5F8CD-EC0F-4947-911F-A4256737E103:image",
+      "node_id": "69C5F8CD-EC0F-4947-911F-A4256737E103",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 168,
+        "height": 192
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 12,
+        "y": 0,
+        "width": 140,
+        "height": 183
+      },
+      "frame_count": 1,
+      "sha256": "bf295c07093c37d20e8059aced874e50fb7fd6dca81de9d1885422ea68356195",
+      "bytes": 12209,
+      "relative_path": "assets/fe3626a18bd7ac06a53d30b9b3d4c8a9ec5ab64af92e2f9f1b1479989cc8bf32.png",
+      "effective_density": {
+        "x": 4.8124999999999885,
+        "y": 5.333333333333333
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "69C5F8CD-EC0F-4947-911F-A4256737E103:image",
+      "original_variant_id": "v-880b66af4db86129cf053aec",
+      "requested_preference": "original",
+      "selected_variant_id": "v-880b66af4db86129cf053aec",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/fe3626a18bd7ac06a53d30b9b3d4c8a9ec5ab64af92e2f9f1b1479989cc8bf32.png"
+    },
+    {
+      "asset_id": "7B79FC2C-48C4-4125-B9F6-79B2AFD8E0C1:image",
+      "node_id": "7B79FC2C-48C4-4125-B9F6-79B2AFD8E0C1",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 72,
+        "height": 72
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 72,
+        "height": 70
+      },
+      "frame_count": 1,
+      "sha256": "d47e59e6dbb382bc9468be696b70ce9f513525ed32a382ddb4b9fb08d7c0c632",
+      "bytes": 2784,
+      "relative_path": "assets/9b1883fe2d1a333fdfed4663c7f5d95d075420af7ebcd2a3baa45c710ae89585.png",
+      "effective_density": {
+        "x": 4.0,
+        "y": 4.16732618692884
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "7B79FC2C-48C4-4125-B9F6-79B2AFD8E0C1:image",
+      "original_variant_id": "v-f143f17e0ff1d2e716346fe6",
+      "requested_preference": "original",
+      "selected_variant_id": "v-f143f17e0ff1d2e716346fe6",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/9b1883fe2d1a333fdfed4663c7f5d95d075420af7ebcd2a3baa45c710ae89585.png"
+    },
+    {
+      "asset_id": "072F2D8A-D793-4FBA-ABE6-00DED198CB06:image",
+      "node_id": "072F2D8A-D793-4FBA-ABE6-00DED198CB06",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 168,
+        "height": 192
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 12,
+        "y": 0,
+        "width": 140,
+        "height": 183
+      },
+      "frame_count": 1,
+      "sha256": "3bef210fa89982eb627a364884babec80333a412ba32d0e638b9107190477714",
+      "bytes": 13429,
+      "relative_path": "assets/ab525432b63981b0a1a9fa25e691704390238a82cebd9d6affab99d2c97f67ff.png",
+      "effective_density": {
+        "x": 4.8124999999999885,
+        "y": 5.333333333333333
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "072F2D8A-D793-4FBA-ABE6-00DED198CB06:image",
+      "original_variant_id": "v-fb739d9c29358e4da7ee7668",
+      "requested_preference": "original",
+      "selected_variant_id": "v-fb739d9c29358e4da7ee7668",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/ab525432b63981b0a1a9fa25e691704390238a82cebd9d6affab99d2c97f67ff.png"
+    },
+    {
+      "asset_id": "5AF7357A-0D6B-4EC2-B141-7E0A85125EB3:image",
+      "node_id": "5AF7357A-0D6B-4EC2-B141-7E0A85125EB3",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 24,
+        "height": 24
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 3,
+        "y": 2,
+        "width": 20,
+        "height": 20
+      },
+      "frame_count": 1,
+      "sha256": "99779fc8c76a08890a244003c0164222c1796edf18e1ce984363ee8188da671f",
+      "bytes": 580,
+      "relative_path": "assets/f8df60ed4a5bd5c53615b56081eb7b495f118ac02fd666af44878977d9b54562.png",
+      "effective_density": {
+        "x": 4.941176470588203,
+        "y": 5.142857142857122
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "5AF7357A-0D6B-4EC2-B141-7E0A85125EB3:image",
+      "original_variant_id": "v-8bad8790f0ca1a925605f93d",
+      "requested_preference": "original",
+      "selected_variant_id": "v-8bad8790f0ca1a925605f93d",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/f8df60ed4a5bd5c53615b56081eb7b495f118ac02fd666af44878977d9b54562.png"
+    },
+    {
+      "asset_id": "7BE61947-47A6-4104-8AE8-AB5BA5B51E26:image",
+      "node_id": "7BE61947-47A6-4104-8AE8-AB5BA5B51E26",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 24,
+        "height": 24
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 3,
+        "y": 2,
+        "width": 20,
+        "height": 20
+      },
+      "frame_count": 1,
+      "sha256": "99779fc8c76a08890a244003c0164222c1796edf18e1ce984363ee8188da671f",
+      "bytes": 580,
+      "relative_path": "assets/a1d856d3adb52e2db47cafcf53291b9734bebd66d3108a8aca1eaedc96326ceb.png",
+      "effective_density": {
+        "x": 4.941176470588203,
+        "y": 5.142857142857185
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "7BE61947-47A6-4104-8AE8-AB5BA5B51E26:image",
+      "original_variant_id": "v-187db8b809d3f5238026c80c",
+      "requested_preference": "original",
+      "selected_variant_id": "v-187db8b809d3f5238026c80c",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/a1d856d3adb52e2db47cafcf53291b9734bebd66d3108a8aca1eaedc96326ceb.png"
+    },
+    {
+      "asset_id": "24753C51-C3D6-47CD-BF17-8E4A7260B763:image",
+      "node_id": "24753C51-C3D6-47CD-BF17-8E4A7260B763",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 24,
+        "height": 24
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 3,
+        "y": 2,
+        "width": 20,
+        "height": 20
+      },
+      "frame_count": 1,
+      "sha256": "075f97a59d582de2c252b716531d131ab8a717c553e9adc7968a305edd9d24a1",
+      "bytes": 588,
+      "relative_path": "assets/6f871ca7a79d1e5a46613c08304c6f46db6fd6dbebd2dff21b9344b520b6407b.png",
+      "effective_density": {
+        "x": 4.941176470588434,
+        "y": 5.142857142857122
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "24753C51-C3D6-47CD-BF17-8E4A7260B763:image",
+      "original_variant_id": "v-45c6bbf9d6a07d2f16ed5549",
+      "requested_preference": "original",
+      "selected_variant_id": "v-45c6bbf9d6a07d2f16ed5549",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/6f871ca7a79d1e5a46613c08304c6f46db6fd6dbebd2dff21b9344b520b6407b.png"
+    },
+    {
+      "asset_id": "6E1C2463-CF77-4E26-903E-D399CE780DD1:image",
+      "node_id": "6E1C2463-CF77-4E26-903E-D399CE780DD1",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 24,
+        "height": 24
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 3,
+        "y": 2,
+        "width": 20,
+        "height": 20
+      },
+      "frame_count": 1,
+      "sha256": "075f97a59d582de2c252b716531d131ab8a717c553e9adc7968a305edd9d24a1",
+      "bytes": 588,
+      "relative_path": "assets/c18bb673c4620ddedebed09ce935badbfaf032a2ac83f31eed26e8fbcd38ea8c.png",
+      "effective_density": {
+        "x": 4.941176470588434,
+        "y": 5.142857142857185
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "6E1C2463-CF77-4E26-903E-D399CE780DD1:image",
+      "original_variant_id": "v-30398c58baf84f135557b940",
+      "requested_preference": "original",
+      "selected_variant_id": "v-30398c58baf84f135557b940",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/c18bb673c4620ddedebed09ce935badbfaf032a2ac83f31eed26e8fbcd38ea8c.png"
+    },
+    {
+      "asset_id": "E266651B-037B-4CE0-B06D-C40DEEEEFBA9:image",
+      "node_id": "E266651B-037B-4CE0-B06D-C40DEEEEFBA9",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 116,
+        "height": 116
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 12,
+        "y": 16,
+        "width": 92,
+        "height": 90
+      },
+      "frame_count": 1,
+      "sha256": "b2fd15d864712018efbd260aabf406ce8d2acfde69fc2048c6559ca2f5387b40",
+      "bytes": 4933,
+      "relative_path": "assets/72d1cd9a5ea8f37572eff1978f809e0f2a2a6e4d207037919b919c27b2bc6adf.png",
+      "effective_density": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "E266651B-037B-4CE0-B06D-C40DEEEEFBA9:image",
+      "original_variant_id": "v-23d1dc6879ddd4c2009e143e",
+      "requested_preference": "original",
+      "selected_variant_id": "v-23d1dc6879ddd4c2009e143e",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null,
+      "local_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/assets/72d1cd9a5ea8f37572eff1978f809e0f2a2a6e4d207037919b919c27b2bc6adf.png"
+    }
+  ],
+  "receipt_path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-20-skill211/source-bundle/install-receipt.json",
+  "bundle_id": "39ddb7788f8b1be51acf3a02f170c2ec",
+  "snapshot_id": "b9568db973a4df49cceca712e8cda246",
+  "design_id": "d5656e3e-51ce-4701-8c18-27d5bd7faa17",
+  "resolved_version": "145990dc-069f-4539-9771-3c8dd44ba60c"
+}

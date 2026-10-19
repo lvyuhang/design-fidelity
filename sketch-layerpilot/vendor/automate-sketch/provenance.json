@@ -1,0 +1,31 @@
+{
+  "repository": "https://github.com/Ashung/Automate-Sketch",
+  "revision": "4cc9ccf72052dc39f976ffdbc7aca3df2ada5738",
+  "files": [
+    {
+      "path": "LICENSE",
+      "blob": "eaae0176ee2a30a6347b1bbfe9a770433b9f0692",
+      "local": "LICENSE"
+    },
+    {
+      "path": "automate-sketch.sketchplugin/Contents/Sketch/Arrange/Order_Layers_by_Position_XY.js",
+      "blob": "efe352994f541d29b22d6dc158e6bd096c744a26",
+      "local": "Order_Layers_by_Position_XY.js"
+    },
+    {
+      "path": "automate-sketch.sketchplugin/Contents/Sketch/Export/Quick_Export.js",
+      "blob": "c9927bbad62e45cde2fc9ecdef35c4ef31bfd91a",
+      "local": "Quick_Export.js"
+    },
+    {
+      "path": "automate-sketch.sketchplugin/Contents/Sketch/Layer/Remove_Empty_Groups.js",
+      "blob": "1ba60997dc9bd529f5f2d9ada5c87522857c5a15",
+      "local": "Remove_Empty_Groups.js"
+    },
+    {
+      "path": "automate-sketch.sketchplugin/Contents/Sketch/Slice/Auto_Slice.js",
+      "blob": "7fbbd0edc9618e2e9b2cc615575a3d11795d827b",
+      "local": "Auto_Slice.js"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-12",
+  "preview_url": "http://127.0.0.1:8767/?case=model-comparison",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "visual_revision_count": 0,
+  "frozen_sha256": {
+    "social": "380249644cf76e6eb5dfe82de1861c91e5559ed6944696b9f2f67253c821bd15",
+    "utility": "86585c68989187fbf7d5246b2164c489b8b562a5e20dcd0fcc5ea95ee8751512",
+    "login": "1a952fcb605436bd50508904cc6f5280f52f7e1b923d7d6672d4267833d55262"
+  },
+  "checks": {
+    "dart_analyze_lib_test": "passed",
+    "flutter_tests": "49 passed",
+    "web_release_build": "passed",
+    "browser_component_switching": "passed",
+    "browser_overlay_modes": "passed",
+    "browser_interaction_callback": "passed",
+    "browser_console_errors_or_warnings": 0
+  },
+  "known_resource_gaps": [
+    "Feed photo and feed/comment avatars are preview-crop fixtures.",
+    "Bottom navigation message outline has no original vector path.",
+    "Login source export required grid-only resampling from 1329x1400 to 1500x1580."
+  ]
+}

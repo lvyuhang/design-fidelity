@@ -1,0 +1,14 @@
+{
+  "scope": "Real saved platform source, preparation only; no new Flutter render or end-to-end speed claim",
+  "seconds": 0.0562,
+  "status": "draft",
+  "visible_nodes": 82,
+  "unresolved_decisions": 82,
+  "source_gaps": {
+    "visual_source_unknown": 75,
+    "text_source_unknown": 25
+  },
+  "generated_small_checks": 33,
+  "effect_obligations": 0,
+  "note": "Missing raw source effects remain UNKNOWN, not an empty-effects acceptance."
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "algorithm": "sha256",
+  "date": "2026-10-12",
+  "source": {
+    "path": "flutter_ui_components/lib/experiments/gender_sol56_direct.dart",
+    "bytes": 9264,
+    "sha256": "3144c08726585cf8aea581594165ffa86f8a0b7ffc547f88cb362df797a28e3a"
+  },
+  "frozen_copy": {
+    "path": "design_evidence/gender-sol56/gender_sol56_direct.frozen.dart",
+    "bytes": 9264,
+    "sha256": "3144c08726585cf8aea581594165ffa86f8a0b7ffc547f88cb362df797a28e3a"
+  },
+  "identical": true,
+  "render_status": "not_rendered",
+  "visual_corrections": 0
+}

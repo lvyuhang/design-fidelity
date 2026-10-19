@@ -1,0 +1,285 @@
+{
+  "contract": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/voice-calling-backup-2/visual-contract.json",
+  "reference": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/voice-calling-backup-2/reference.png",
+  "render_scale": 4.0,
+  "passed": true,
+  "candidates": {
+    "r2": {
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/voice-calling-backup-2/r2/render.png",
+      "passed": true,
+      "regions": {
+        "call_header": {
+          "label": "通话顶部核心区",
+          "rect": [
+            110,
+            100,
+            155,
+            235
+          ],
+          "metrics": {
+            "mae": 31.6132,
+            "p95_max_channel": 151.0
+          },
+          "passed": false,
+          "failures": [
+            "p95=151.00 > 150.00"
+          ]
+        },
+        "bottom_actions": {
+          "label": "底部交互区",
+          "rect": [
+            14,
+            611,
+            289,
+            162
+          ],
+          "metrics": {
+            "mae": 7.7997,
+            "p95_max_channel": 38.0
+          },
+          "passed": true,
+          "failures": []
+        }
+      },
+      "features": {
+        "countdown": {
+          "label": "奖励倒计时",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.2004,
+            "center_y_delta": -0.0921,
+            "width_delta": 0.5,
+            "height_delta": 0.5,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2037
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              120.75,
+              112.75,
+              134.5,
+              14.75
+            ],
+            "center": [
+              192.2776661796932,
+              120.13184806428049
+            ],
+            "ink_pixels": 10952
+          },
+          "actual": {
+            "bbox": [
+              120.5,
+              112.5,
+              135.0,
+              15.25
+            ],
+            "center": [
+              192.47811575513919,
+              120.03971023287568
+            ],
+            "ink_pixels": 13183
+          }
+        },
+        "state": {
+          "label": "语音通话中",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.1119,
+            "center_y_delta": -0.125,
+            "width_delta": 0.0,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.402
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              159.5,
+              138.25,
+              58.25,
+              11.0
+            ],
+            "center": [
+              188.08001373626374,
+              143.64423076923077
+            ],
+            "ink_pixels": 2184
+          },
+          "actual": {
+            "bbox": [
+              159.5,
+              138.0,
+              58.25,
+              11.25
+            ],
+            "center": [
+              187.96815806662312,
+              143.51926845199216
+            ],
+            "ink_pixels": 3062
+          }
+        },
+        "name": {
+          "label": "用户昵称",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.4831,
+            "center_y_delta": -0.1323,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.166
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              158.75,
+              283.75,
+              58.25,
+              13.75
+            ],
+            "center": [
+              189.2550784856879,
+              290.5364727608495
+            ],
+            "ink_pixels": 5415
+          },
+          "actual": {
+            "bbox": [
+              158.5,
+              283.5,
+              58.5,
+              14.0
+            ],
+            "center": [
+              188.7719353816915,
+              290.40418118466897
+            ],
+            "ink_pixels": 6314
+          }
+        },
+        "relation": {
+          "label": "关系入口",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.8119,
+            "center_y_delta": -0.0443,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.248
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              158.0,
+              314.0,
+              59.0,
+              10.0
+            ],
+            "center": [
+              188.77442528735634,
+              318.9026304155615
+            ],
+            "ink_pixels": 2262
+          },
+          "actual": {
+            "bbox": [
+              158.0,
+              313.75,
+              59.25,
+              10.25
+            ],
+            "center": [
+              189.58634431455897,
+              318.8583067658519
+            ],
+            "ink_pixels": 2823
+          }
+        },
+        "warning": {
+          "label": "安全提醒",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -1.2681,
+            "center_y_delta": -0.0484,
+            "width_delta": 0.0,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.3031
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              38.5,
+              620.25,
+              239.0,
+              28.5
+            ],
+            "center": [
+              154.95903234649123,
+              633.646052631579
+            ],
+            "ink_pixels": 18240
+          },
+          "actual": {
+            "bbox": [
+              38.5,
+              620.0,
+              239.0,
+              28.75
+            ],
+            "center": [
+              153.69096301905844,
+              633.5976061256258
+            ],
+            "ink_pixels": 23769
+          }
+        },
+        "input": {
+          "label": "文字输入提示",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -1.3773,
+            "center_y_delta": -0.0967,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.3376
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              50.75,
+              747.25,
+              130.5,
+              11.5
+            ],
+            "center": [
+              116.14194139194139,
+              752.4146735617323
+            ],
+            "ink_pixels": 4641
+          },
+          "actual": {
+            "bbox": [
+              50.5,
+              747.0,
+              130.75,
+              11.75
+            ],
+            "center": [
+              114.76465850515464,
+              752.3179768041238
+            ],
+            "ink_pixels": 6208
+          }
+        }
+      },
+      "relations": {},
+      "colors": {},
+      "overlay": "r2-alignment-overlay.png"
+    }
+  }
+}

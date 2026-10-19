@@ -1,0 +1,2004 @@
+{
+  "contract": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/filter-backup/visual-contract-v2.json",
+  "contract_sha256": "33baee70e5f55de3336f0c786b4ba19a55302e55db184b98cd9253d2c0bf02d8",
+  "skill_version": "2.5.0",
+  "coverage": {
+    "nodes": 193,
+    "covered": 74,
+    "exceptions": [
+      "node D999526D-4728-48B8-AA31-36C1A02359B5: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 544246B8-B6FF-444A-8567-9345CDA09D65: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 088CFA39-2314-4828-8054-4BF12522A166: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node CF239E0D-C4D4-477E-8111-ADD579A7197A: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node E33E4E81-BEE3-474C-A501-7C3F739CD604: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 5D9CBA25-2522-44DA-B468-B70DE3920E25: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 115BD764-5C8D-427F-BA81-FD1654E1E34B: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 7C4BCA8B-27DA-4F74-85C3-462D58C5B0CF: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 3F5B3ADA-2559-4E2F-9C66-4AB8479B9DC7: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 1847BCB0-C92E-40F1-9362-D0795F0E9B28: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 1999247D-5887-46E1-9AF2-FA708F1C3B2B: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 5C743858-45D9-4D8A-8E35-29E0183411E3: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 39F88042-1AC4-44D6-B1FA-75EFD34673E8: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 311E0348-9A86-475B-BE41-87087E8A52CB: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 2B8A43D9-7648-4D7B-9860-FA6288B3AAE9: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 70BBB12E-A77D-4B83-9648-6C8A521249F0: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node F1D91665-B1A1-4268-8B64-E57A30BACDDE: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node AEB20B7D-6D55-4ABB-A215-369617386CBE: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node F02E4C11-0C09-4C74-A097-9E31D4B048AA: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 5EB6D00D-1E6A-42F9-BE3F-BCFF32ACA7CA: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 2FFB25A2-C1EF-42EE-BA93-25ACFF30779D: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node ADAC47AD-797D-45C1-BB42-351ABE0699CF: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node A256CD3D-3664-4808-A78B-BEC2F495FF9D: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node E3986A9D-EB5D-46C8-8928-77118A366617: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 65EAAD3D-6FB1-4ECB-9B9F-9FC912A2FE1A: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 1CA8CE0A-1329-4CED-A41F-2C924985E58F: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 24106BE0-AB76-443C-9815-5D77D520A517: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node FAAF0612-963F-41EF-B7D9-CC2A9D4FD515: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node D043F548-2975-42D9-BCE7-A3F4C4A31BAA: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 4CEC2099-CA41-4A9A-BC6B-0AB154F3B00B: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 281D69BC-4FC1-44D5-B182-B99829EFA78B: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node C67E7C96-5687-4476-9041-B8DE53DB47D3: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 19C07147-0D42-4489-B175-85C283AF63DF: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 2EB85140-B5F1-4E47-9AE0-0F29FA633340: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 347E1D1F-87D1-488A-A13E-346BCB4CD10E: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node D687C11D-D4E1-4AA7-B628-75FF31CCF052: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node C0806E85-B3EC-4040-9565-D4B99E51ED0E: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 6ED744A7-761A-43F6-A759-3F9228D26641: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 80BB08F3-4B4D-4F9A-B731-6FEEC01DFDA6: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 1A883DB2-4D9E-46CE-A8BE-AE38278697BC: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node EC9EB4CB-E97E-4338-A3EA-6AA95C49C065: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 41BF6ECA-EA3F-49BD-93EB-318DC5E3A8CC: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node A8461701-C430-4E8B-B5FC-AE814208BB80: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 474F08DA-49CA-4174-9DC6-7DC0AB0CF20E: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 47882A50-99FD-4753-869C-90728A24F11E: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 5DAD8866-246B-4A97-8B05-8D7C97972135: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 3E664171-0C0B-4310-AC2E-E4A4B47ED3EA: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node BCCA1E1F-7866-488C-A9EC-B34723848AB4: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node D4E8CD5D-B6E9-48A1-B3C7-5F59E1F3AEFC: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node A7E5BDFA-4DC0-424C-A709-6F3D92B405BF: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node F87AD2F7-6A32-4123-B3F6-E3A9CEC5C083: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 4701AFE1-5458-4A44-A684-227EFC018FA1: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 267E2336-488C-4931-B733-D9965168E240: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 91BB294B-DEBE-4FBF-80CE-658A6E2BA66C: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node DA058BB8-C5CC-448A-9D42-9BA832108E90: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 40E237AF-C35F-4868-A49F-B3FEA2A94C78: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 86634088-D406-455A-B5FD-AFD03ECED575: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node BF321EED-A43E-4FD9-910F-4BDE953FBB79: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 566A3D12-DC7D-454E-8BBE-59E8C6A500D0: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 5F2ECE5E-0E45-46A4-81B8-6887D9BF20F3: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 41850417-7BD0-4D0E-94BE-00A18BAB7F23: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 49486696-976D-48CB-A151-FAACF09261AC: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node DCE84587-AC82-44D1-ACC4-46D2E2E98726: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 913CF66C-B817-4E36-A052-9F7DDF858BAF: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node ADB34B57-FD4A-43DB-B749-8FFBE21C731D: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 7447EA9B-091C-4192-95D0-7B72487EC112: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node E5717FEA-46FF-4D4A-981C-E45A632B4A0A: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 91BCB0ED-4A07-46A2-ABBF-8A723B2ACD80: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node B342033A-8800-4DA4-8AB8-0A6DE03CC659: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node B30184F5-2A59-455F-83A5-17078FA6349C: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 70842D26-B34D-4175-912C-D88BE41A46C5: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 0BF2AE40-C7C4-450D-83D2-10D18C2B6263: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 151F2C97-4072-4640-B2DE-E3CF8521B8A1: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node CE85DAB3-789D-4113-ABFA-4D22DE957E82: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 3E2ADEE0-A863-4D1C-8AA9-BAABD5A80AC2: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 0907A4A5-B18A-4E8C-B194-52F251CF549F: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 5D2DC3D3-4656-46D5-B3A3-EC15A59DE617: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 2B4ECED7-A658-4344-897B-5A56AA872DEE: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node F7AAE46D-20FF-4BCC-AE38-D2008F9E7771: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 74126980-2D38-4D7A-9188-3EF474EF4691: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 5A529363-3840-4E57-B4F5-892F7C391EA6: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node B148E4D5-9F6A-4358-B5D7-4D3BB23D4658: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 10529177-0E83-4E6B-B5F5-77134DB698BC: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除",
+      "node 910631A8-2C2F-4BDE-843E-6638736A2488: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除",
+      "node D0DE154A-7285-41C2-B032-0C5A31AAB066: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node AF11D8BB-A3F2-4308-935D-924ADE588478: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node DC004803-8B21-489F-8A04-E9955A763486: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node A0A70480-DAED-45B0-9A33-38B4868952D5: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node D0062F5F-E576-450F-8847-174E587DB05D: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 4DD9587B-53AB-495D-B46E-844E128E4EF9: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 86FA6BD5-9535-4D15-9042-2829595FFF3E: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 052E1E31-B2AA-4FC5-953E-E9B4961D0671: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 097D3A14-938E-4833-B876-DB3107A89C97: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node A4E54BB2-7B4A-4C43-8E8C-9102E1C37E1A: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node E6435516-D4CA-4426-B35C-E14E674ACB8A: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 4DCC4994-6548-489D-95D0-88175AE46927: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 537C46FF-4513-4E33-83D5-C809EEBAA26F: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node B0E1B96D-EFA2-43CD-B24C-442AF7C81930: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node BB0A3943-E051-4E7A-998E-56C3927E7547: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node F3104068-AEC7-4784-A457-9145EE62B4AB: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node F6045FCD-36BD-49D4-85ED-93F950C6F008: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 4916B388-EA68-4836-B798-0A61F97C2AC1: 该节点属于弹层下方的发现页信息流，在目标状态被不透明任务弹层遮挡",
+      "node 2FF20CF6-8DBD-4681-A08B-39B26E85CA54: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除",
+      "node 132AD4D3-1C40-4D4E-8B51-96A08AFF9DD8: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除",
+      "node 6C57EB09-A0A1-4BB2-BA28-AFD566D5DA8A: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除",
+      "node E7FD65CE-0C0B-44B6-BB4C-F2E337437EB6: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除",
+      "node AFBB9CBB-C2C0-441D-B456-341464CA66D3: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除",
+      "node 9D408414-5FDE-4C3F-BD17-D9CC7AAA0B2D: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除",
+      "node 3F964538-0FD3-4E76-A2F5-5C44A9AD5AC3: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除",
+      "node EC741E48-B99B-4FDE-AC53-6D25014604EE: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除",
+      "node A2BC9819-103F-4571-B74D-3ADF78CC6486: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除",
+      "node 70433398-755E-40FF-8960-E2BADDE1CEDA: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除",
+      "node ADD97D1E-2372-4F75-ADA4-5287A3783996: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除",
+      "node 6E907BB0-FA36-47E5-9566-3149FE3EA39A: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除",
+      "node AEB4B2F3-0357-4EF4-8771-FA4DDF906BFF: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除",
+      "node A95397A1-A367-476B-8671-40210DB0E48F: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除",
+      "node 68524E98-B65B-42A8-8B02-A402EEE26C8E: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除",
+      "node 8C20325C-6F5C-49DE-9BAC-F0A22D477DE6: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除",
+      "node 63632BC2-376D-44B3-8C3B-F607F2D44668: 原稿未提供可复用素材；实现保留源画框占位，像素内部精确排除"
+    ]
+  },
+  "environment": {
+    "renderer": "flutter-test-skia",
+    "renderer_version": "Flutter 3.47.7 / engine deb287481e",
+    "platform": "macOS widget-test 375x812 @4x",
+    "locale": "zh_CN",
+    "state": "filter-backup",
+    "text_scale": 1
+  },
+  "exclusions": [
+    {
+      "rect": [
+        8,
+        99,
+        177,
+        236
+      ],
+      "reason": "发现页照片 1 未提供切图"
+    },
+    {
+      "rect": [
+        190,
+        99,
+        177,
+        236
+      ],
+      "reason": "发现页照片 2 未提供切图"
+    },
+    {
+      "rect": [
+        41,
+        488,
+        33,
+        33
+      ],
+      "reason": "待配置任务图标 1 未提供切图"
+    },
+    {
+      "rect": [
+        41,
+        541,
+        33,
+        33
+      ],
+      "reason": "待配置任务图标 2 未提供切图"
+    },
+    {
+      "rect": [
+        41,
+        598,
+        33,
+        33
+      ],
+      "reason": "待配置任务图标 3 未提供切图"
+    },
+    {
+      "rect": [
+        41,
+        653,
+        33,
+        33
+      ],
+      "reason": "待配置任务图标 4 未提供切图"
+    }
+  ],
+  "excluded_fraction": 0.2886699507389162,
+  "reference": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/filter-backup/reference.png",
+  "render_scale": 4.0,
+  "reference_preview": "reference.png",
+  "passed": false,
+  "candidates": {
+    "r4": {
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/filter-backup/r4/render.png",
+      "preview": "1-r4-candidate.png",
+      "passed": false,
+      "regions": {
+        "whole": {
+          "label": "完整页面与模态结构",
+          "rect": [
+            0,
+            0,
+            375,
+            812
+          ],
+          "metrics": {
+            "compared_pixels": 3465600,
+            "total_pixels": 4872000,
+            "mae": 5.4944,
+            "p95_max_channel": 18.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "header": {
+          "label": "发现页头部",
+          "rect": [
+            0,
+            0,
+            375,
+            99
+          ],
+          "metrics": {
+            "compared_pixels": 594000,
+            "total_pixels": 594000,
+            "mae": 4.7106,
+            "p95_max_channel": 17.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "sheet": {
+          "label": "任务配置弹层",
+          "rect": [
+            0,
+            228,
+            375,
+            584
+          ],
+          "metrics": {
+            "compared_pixels": 2828256,
+            "total_pixels": 3504000,
+            "mae": 5.7157,
+            "p95_max_channel": 18.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "enabled": {
+          "label": "已开启任务卡",
+          "rect": [
+            23,
+            327,
+            329,
+            107
+          ],
+          "metrics": {
+            "compared_pixels": 521776,
+            "total_pixels": 563248,
+            "mae": 1.6385,
+            "p95_max_channel": 2.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "pending": {
+          "label": "待配置任务卡",
+          "rect": [
+            23,
+            476,
+            329,
+            223
+          ],
+          "metrics": {
+            "compared_pixels": 1104176,
+            "total_pixels": 1173872,
+            "mae": 11.9574,
+            "p95_max_channel": 30.0
+          },
+          "passed": false,
+          "failures": [
+            "mae=11.9574 > 8.0000"
+          ]
+        },
+        "cta": {
+          "label": "底部配置按钮",
+          "rect": [
+            28,
+            727,
+            320,
+            50
+          ],
+          "metrics": {
+            "compared_pixels": 256000,
+            "total_pixels": 256000,
+            "mae": 2.8333,
+            "p95_max_channel": 1.0
+          },
+          "passed": true,
+          "failures": []
+        }
+      },
+      "features": {
+        "text_34ee60e8": {
+          "label": "Time",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -12.949,
+            "center_y_delta": -1.2284,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 13.0,
+            "ink_ratio": 1.3361
+          },
+          "failures": [
+            "center_x_delta=-12.95px > 1.00px",
+            "center_y_delta=-1.23px > 1.00px"
+          ],
+          "reference": {
+            "bbox": [
+              34.75,
+              18.75,
+              25.75,
+              11.0
+            ],
+            "center": [
+              47.53409090909091,
+              23.96553651266766
+            ],
+            "ink_pixels": 1342
+          },
+          "actual": {
+            "bbox": [
+              21.75,
+              17.25,
+              26.0,
+              11.25
+            ],
+            "center": [
+              34.58505298382599,
+              22.73717233686559
+            ],
+            "ink_pixels": 1793
+          }
+        },
+        "text_dd9e08e9": {
+          "label": "我关注的",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.068,
+            "center_y_delta": 0.0067,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 0.9636
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              87.0,
+              56.0,
+              64.0,
+              25.0
+            ],
+            "center": [
+              119.00924839844808,
+              68.33144229901652
+            ],
+            "ink_pixels": 22166
+          },
+          "actual": {
+            "bbox": [
+              87.0,
+              56.0,
+              64.0,
+              25.0
+            ],
+            "center": [
+              119.07727059925094,
+              68.33813202247191
+            ],
+            "ink_pixels": 21360
+          }
+        },
+        "text_176611be": {
+          "label": "关注我的",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0579,
+            "center_y_delta": 0.0068,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 0.9636
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              160.0,
+              56.0,
+              64.0,
+              25.0
+            ],
+            "center": [
+              191.6584603933598,
+              68.33134473114399
+            ],
+            "ink_pixels": 22168
+          },
+          "actual": {
+            "bbox": [
+              160.0,
+              56.0,
+              64.0,
+              25.0
+            ],
+            "center": [
+              191.71631554307118,
+              68.33813202247191
+            ],
+            "ink_pixels": 21360
+          }
+        },
+        "text_b8946866": {
+          "label": "发现",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.109,
+            "center_y_delta": -0.0834,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0671
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              23.0,
+              57.5,
+              50.25,
+              24.25
+            ],
+            "center": [
+              48.79800564772326,
+              69.53453347452641
+            ],
+            "ink_pixels": 8499
+          },
+          "actual": {
+            "bbox": [
+              23.0,
+              57.5,
+              50.25,
+              24.25
+            ],
+            "center": [
+              48.90696328150844,
+              69.45115227698754
+            ],
+            "ink_pixels": 9069
+          }
+        },
+        "small_22438cce": {
+          "label": "路径",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": 0.0102,
+            "center_y_delta": 1.0493,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 0.747,
+            "mask_iou_loss": 0.2575558475689882
+          },
+          "failures": [
+            "center_y_delta=1.05px > 1.00px",
+            "ink_ratio=0.747; |ratio-1| > 0.250",
+            "mask_iou_loss=0.2576 > 0.2500"
+          ],
+          "reference": {
+            "bbox": [
+              312.25,
+              63.25,
+              11.5,
+              10.75
+            ],
+            "center": [
+              317.9038208168643,
+              67.01284584980237
+            ],
+            "ink_pixels": 759
+          },
+          "actual": {
+            "bbox": [
+              312.25,
+              63.25,
+              11.5,
+              10.75
+            ],
+            "center": [
+              317.91402116402116,
+              68.06216931216932
+            ],
+            "ink_pixels": 567
+          }
+        },
+        "text_04de8ee9": {
+          "label": "筛选",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.1017,
+            "center_y_delta": 0.0722,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2854
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              328.75,
+              64.0,
+              20.75,
+              10.0
+            ],
+            "center": [
+              338.9711055276382,
+              68.74723618090452
+            ],
+            "ink_pixels": 995
+          },
+          "actual": {
+            "bbox": [
+              328.5,
+              63.75,
+              21.0,
+              10.25
+            ],
+            "center": [
+              338.869429241595,
+              68.81939014855355
+            ],
+            "ink_pixels": 1279
+          }
+        },
+        "text_9fc8eeaf": {
+          "label": "已开启任务",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0853,
+            "center_y_delta": -0.0811,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.1322
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              40.0,
+              341.0,
+              58.5,
+              11.25
+            ],
+            "center": [
+              69.9697077185017,
+              346.50936435868334
+            ],
+            "ink_pixels": 3524
+          },
+          "actual": {
+            "bbox": [
+              40.0,
+              341.0,
+              58.5,
+              11.25
+            ],
+            "center": [
+              70.05501253132832,
+              346.42825814536343
+            ],
+            "ink_pixels": 3990
+          }
+        },
+        "text_fb33a3e7": {
+          "label": "待配置任务",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0232,
+            "center_y_delta": -0.0284,
+            "width_delta": 0.0,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.1358
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              39.5,
+              451.25,
+              59.0,
+              11.0
+            ],
+            "center": [
+              68.00378608613346,
+              456.5443090392806
+            ],
+            "ink_pixels": 4226
+          },
+          "actual": {
+            "bbox": [
+              39.5,
+              451.0,
+              59.0,
+              11.25
+            ],
+            "center": [
+              68.02697916666666,
+              456.5159375
+            ],
+            "ink_pixels": 4800
+          }
+        },
+        "text_13db3947": {
+          "label": "视频通话",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.3229,
+            "center_y_delta": -0.1471,
+            "width_delta": 0.0,
+            "height_delta": 0.5,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2204
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              58.5,
+              404.25,
+              47.0,
+              10.75
+            ],
+            "center": [
+              81.75209467951403,
+              409.61667364893174
+            ],
+            "ink_pixels": 2387
+          },
+          "actual": {
+            "bbox": [
+              58.5,
+              404.0,
+              47.0,
+              11.25
+            ],
+            "center": [
+              81.42919670442842,
+              409.46961894953654
+            ],
+            "ink_pixels": 2913
+          }
+        },
+        "text_edc9b047": {
+          "label": "语音通话",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.5864,
+            "center_y_delta": -0.1292,
+            "width_delta": 0.0,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.264
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              164.5,
+              404.25,
+              47.0,
+              11.0
+            ],
+            "center": [
+              188.5333409194356,
+              409.7389622212107
+            ],
+            "ink_pixels": 2197
+          },
+          "actual": {
+            "bbox": [
+              164.5,
+              404.0,
+              47.0,
+              11.25
+            ],
+            "center": [
+              187.94697515304284,
+              409.6097407274037
+            ],
+            "ink_pixels": 2777
+          }
+        },
+        "asset_24ba8bd8": {
+          "label": "编组 4",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0,
+            "mask_iou_loss": 0.0
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              72.5,
+              375.0,
+              19.5,
+              14.75
+            ],
+            "center": [
+              81.75778883600174,
+              381.62710947641716
+            ],
+            "ink_pixels": 2311
+          },
+          "actual": {
+            "bbox": [
+              72.5,
+              375.0,
+              19.5,
+              14.75
+            ],
+            "center": [
+              81.75778883600174,
+              381.62710947641716
+            ],
+            "ink_pixels": 2311
+          }
+        },
+        "asset_d8100ece": {
+          "label": "编组",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              65.0,
+              365.0,
+              34.0,
+              34.0
+            ],
+            "center": [
+              80.7171017492322,
+              380.88391307250635
+            ],
+            "ink_pixels": 14978
+          },
+          "actual": {
+            "bbox": [
+              65.0,
+              365.0,
+              34.0,
+              34.0
+            ],
+            "center": [
+              80.7171017492322,
+              380.88391307250635
+            ],
+            "ink_pixels": 14978
+          }
+        },
+        "asset_e77bc305": {
+          "label": "-path备份",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.1306,
+            "center_y_delta": 0.1764,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0156,
+            "mask_iou_loss": 0.04760765550239232
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              178.75,
+              373.0,
+              17.75,
+              18.0
+            ],
+            "center": [
+              186.95202519140528,
+              380.90151889355394
+            ],
+            "ink_pixels": 4049
+          },
+          "actual": {
+            "bbox": [
+              178.75,
+              373.0,
+              17.75,
+              18.0
+            ],
+            "center": [
+              187.08262402723736,
+              381.0779426070039
+            ],
+            "ink_pixels": 4112
+          }
+        },
+        "asset_4d57e0f4": {
+          "label": "编组",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0423,
+            "center_y_delta": 0.0505,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0053
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              170.0,
+              365.0,
+              34.0,
+              34.0
+            ],
+            "center": [
+              185.76779234833535,
+              380.9355942453371
+            ],
+            "ink_pixels": 15709
+          },
+          "actual": {
+            "bbox": [
+              170.0,
+              365.0,
+              34.0,
+              34.0
+            ],
+            "center": [
+              185.81004242385868,
+              380.98606977774966
+            ],
+            "ink_pixels": 15793
+          }
+        },
+        "text_ba001932": {
+          "label": "私信互动",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.1526,
+            "center_y_delta": 0.0127,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.1833
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              269.75,
+              404.25,
+              46.25,
+              11.0
+            ],
+            "center": [
+              292.7509722897423,
+              409.753524550316
+            ],
+            "ink_pixels": 2057
+          },
+          "actual": {
+            "bbox": [
+              269.5,
+              404.0,
+              46.75,
+              11.25
+            ],
+            "center": [
+              292.5983976992605,
+              409.76622843056697
+            ],
+            "ink_pixels": 2434
+          }
+        },
+        "asset_2f079b99": {
+          "label": "编组",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.3178,
+            "center_y_delta": -0.1124,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0413,
+            "mask_iou_loss": 0.14848289218850874
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              283.5,
+              372.5,
+              19.0,
+              19.0
+            ],
+            "center": [
+              292.3040925266904,
+              381.1661921708185
+            ],
+            "ink_pixels": 2810
+          },
+          "actual": {
+            "bbox": [
+              283.5,
+              372.5,
+              19.0,
+              19.0
+            ],
+            "center": [
+              292.62192412850305,
+              381.0538277511962
+            ],
+            "ink_pixels": 2926
+          }
+        },
+        "asset_72295535": {
+          "label": "编组",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0396,
+            "center_y_delta": -0.076,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0033
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              276.0,
+              365.0,
+              34.0,
+              34.0
+            ],
+            "center": [
+              291.7002499652826,
+              380.9436710179142
+            ],
+            "ink_pixels": 14402
+          },
+          "actual": {
+            "bbox": [
+              276.0,
+              365.0,
+              34.0,
+              34.0
+            ],
+            "center": [
+              291.73987889273354,
+              380.8676643598616
+            ],
+            "ink_pixels": 14450
+          }
+        },
+        "text_c45a40ba": {
+          "label": "开通任务项，获取更多奖励",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0066,
+            "center_y_delta": -0.0098,
+            "width_delta": 0.0,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.0951
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              26.0,
+              266.25,
+              213.75,
+              18.0
+            ],
+            "center": [
+              136.19218889989156,
+              274.2635922101193
+            ],
+            "ink_pixels": 21207
+          },
+          "actual": {
+            "bbox": [
+              26.0,
+              266.0,
+              213.75,
+              18.25
+            ],
+            "center": [
+              136.1856241656978,
+              274.25381087714766
+            ],
+            "ink_pixels": 23223
+          }
+        },
+        "text_434ca87f": {
+          "label": "已为你默认开启以下任务项，可前往设置奖励",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.2185,
+            "center_y_delta": -0.0517,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2956
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              43.25,
+              297.25,
+              237.75,
+              11.5
+            ],
+            "center": [
+              166.66134461864,
+              302.5393863614504
+            ],
+            "ink_pixels": 10397
+          },
+          "actual": {
+            "bbox": [
+              43.0,
+              297.0,
+              238.0,
+              11.75
+            ],
+            "center": [
+              166.879862657758,
+              302.4876391982183
+            ],
+            "ink_pixels": 13470
+          }
+        },
+        "small_1f31bb7e": {
+          "label": "直线 5",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": 0.0102,
+            "center_y_delta": 1.0115,
+            "width_delta": -4.0,
+            "height_delta": -2.0,
+            "max_edge_delta": 2.0,
+            "ink_ratio": 0.5347,
+            "mask_iou_loss": 0.4653125
+          },
+          "failures": [
+            "center_y_delta=1.01px > 1.00px",
+            "width_delta=-4.00px > 1.50px",
+            "height_delta=-2.00px > 1.50px",
+            "max_edge_delta=2.00px > 1.00px",
+            "ink_ratio=0.535; |ratio-1| > 0.250",
+            "mask_iou_loss=0.4653 > 0.2500"
+          ],
+          "reference": {
+            "bbox": [
+              168.0,
+              239.0,
+              40.0,
+              5.0
+            ],
+            "center": [
+              187.875,
+              241.375
+            ],
+            "ink_pixels": 3200
+          },
+          "actual": {
+            "bbox": [
+              170.0,
+              241.0,
+              36.0,
+              3.0
+            ],
+            "center": [
+              187.88515488018703,
+              242.3864699006429
+            ],
+            "ink_pixels": 1711
+          }
+        },
+        "text_5981078f": {
+          "label": "去配置任务项",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.2772,
+            "center_y_delta": -0.5707,
+            "width_delta": 0.0,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.75,
+            "ink_ratio": 1.1875
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              143.75,
+              745.75,
+              88.75,
+              13.75
+            ],
+            "center": [
+              187.4672978696898,
+              752.5254142269839
+            ],
+            "ink_pixels": 8027
+          },
+          "actual": {
+            "bbox": [
+              143.75,
+              745.0,
+              88.75,
+              14.0
+            ],
+            "center": [
+              187.74446600923207,
+              751.9547314309693
+            ],
+            "ink_pixels": 9532
+          }
+        },
+        "small_4d1d7632": {
+          "label": "直线 4备份 3",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0,
+            "mask_iou_loss": 0.0
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              29.5,
+              528.5,
+              318.0,
+              6.0
+            ],
+            "center": [
+              188.375,
+              531.375
+            ],
+            "ink_pixels": 30528
+          },
+          "actual": {
+            "bbox": [
+              29.5,
+              528.5,
+              318.0,
+              6.0
+            ],
+            "center": [
+              188.375,
+              531.375
+            ],
+            "ink_pixels": 30528
+          }
+        },
+        "small_bea17d4c": {
+          "label": "直线 4备份 4",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0,
+            "mask_iou_loss": 0.0
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              29.5,
+              584.5,
+              318.0,
+              6.0
+            ],
+            "center": [
+              188.375,
+              587.375
+            ],
+            "ink_pixels": 30528
+          },
+          "actual": {
+            "bbox": [
+              29.5,
+              584.5,
+              318.0,
+              6.0
+            ],
+            "center": [
+              188.375,
+              587.375
+            ],
+            "ink_pixels": 30528
+          }
+        },
+        "small_1787f90c": {
+          "label": "直线 4备份 5",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0,
+            "mask_iou_loss": 0.0
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              29.5,
+              640.5,
+              318.0,
+              6.0
+            ],
+            "center": [
+              188.375,
+              643.375
+            ],
+            "ink_pixels": 30528
+          },
+          "actual": {
+            "bbox": [
+              29.5,
+              640.5,
+              318.0,
+              6.0
+            ],
+            "center": [
+              188.375,
+              643.375
+            ],
+            "ink_pixels": 30528
+          }
+        },
+        "text_448996f1": {
+          "label": "叫醒服务",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.1673,
+            "center_y_delta": -0.096,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2252
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              80.25,
+              491.5,
+              50.0,
+              11.75
+            ],
+            "center": [
+              104.84685080928924,
+              497.22352216748766
+            ],
+            "ink_pixels": 2842
+          },
+          "actual": {
+            "bbox": [
+              80.0,
+              491.25,
+              50.5,
+              12.0
+            ],
+            "center": [
+              104.67956634118323,
+              497.1275129236071
+            ],
+            "ink_pixels": 3482
+          }
+        },
+        "text_38d26fde": {
+          "label": "录制至少 10 秒叫醒音频",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0981,
+            "center_y_delta": -0.0159,
+            "width_delta": 0.5,
+            "height_delta": 0.5,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2858
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              79.75,
+              511.0,
+              116.0,
+              10.0
+            ],
+            "center": [
+              140.60905646761682,
+              515.8781345841602
+            ],
+            "ink_pixels": 5543
+          },
+          "actual": {
+            "bbox": [
+              79.5,
+              510.75,
+              116.5,
+              10.5
+            ],
+            "center": [
+              140.7072049950891,
+              515.862249193209
+            ],
+            "ink_pixels": 7127
+          }
+        },
+        "text_68a43b3e": {
+          "label": "未开通",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0052,
+            "center_y_delta": -0.0362,
+            "width_delta": 0.0,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.3176
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              303.5,
+              500.0,
+              29.0,
+              9.0
+            ],
+            "center": [
+              319.35429864253393,
+              504.1475113122172
+            ],
+            "ink_pixels": 1105
+          },
+          "actual": {
+            "bbox": [
+              303.5,
+              499.75,
+              29.0,
+              9.25
+            ],
+            "center": [
+              319.3490728021978,
+              504.1112637362637
+            ],
+            "ink_pixels": 1456
+          }
+        },
+        "text_41fcd954": {
+          "label": "叫醒服务备份",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.1673,
+            "center_y_delta": -0.096,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2252
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              80.25,
+              542.5,
+              50.0,
+              11.75
+            ],
+            "center": [
+              104.84685080928924,
+              548.2235221674877
+            ],
+            "ink_pixels": 2842
+          },
+          "actual": {
+            "bbox": [
+              80.0,
+              542.25,
+              50.5,
+              12.0
+            ],
+            "center": [
+              104.67956634118323,
+              548.1275129236071
+            ],
+            "ink_pixels": 3482
+          }
+        },
+        "text_8be4e858": {
+          "label": "录制至少 10 秒叫醒音频备份",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0989,
+            "center_y_delta": -0.0156,
+            "width_delta": 0.5,
+            "height_delta": 0.5,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2856
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              79.75,
+              562.0,
+              116.0,
+              10.0
+            ],
+            "center": [
+              140.60905646761682,
+              566.8781345841602
+            ],
+            "ink_pixels": 5543
+          },
+          "actual": {
+            "bbox": [
+              79.5,
+              561.75,
+              116.5,
+              10.5
+            ],
+            "center": [
+              140.70793572831883,
+              566.8625806904295
+            ],
+            "ink_pixels": 7126
+          }
+        },
+        "text_3db5485e": {
+          "label": "未开通备份",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0052,
+            "center_y_delta": -0.0362,
+            "width_delta": 0.0,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.3176
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              303.5,
+              551.0,
+              29.0,
+              9.0
+            ],
+            "center": [
+              319.35429864253393,
+              555.1475113122171
+            ],
+            "ink_pixels": 1105
+          },
+          "actual": {
+            "bbox": [
+              303.5,
+              550.75,
+              29.0,
+              9.25
+            ],
+            "center": [
+              319.3490728021978,
+              555.1112637362637
+            ],
+            "ink_pixels": 1456
+          }
+        },
+        "text_16c55b4b": {
+          "label": "叫醒服务备份 2",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -2.8877,
+            "center_y_delta": -0.0946,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 3.0,
+            "ink_ratio": 1.2115
+          },
+          "failures": [
+            "center_x_delta=-2.89px > 1.00px"
+          ],
+          "reference": {
+            "bbox": [
+              83.25,
+              600.5,
+              50.0,
+              11.75
+            ],
+            "center": [
+              107.84685080928924,
+              606.2235221674877
+            ],
+            "ink_pixels": 2842
+          },
+          "actual": {
+            "bbox": [
+              80.25,
+              600.25,
+              50.25,
+              12.0
+            ],
+            "center": [
+              104.9591199535289,
+              606.1289573046762
+            ],
+            "ink_pixels": 3443
+          }
+        },
+        "text_a73089c2": {
+          "label": "录制至少 10 秒叫醒音频备份 2",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -2.7451,
+            "center_y_delta": -0.0212,
+            "width_delta": -0.25,
+            "height_delta": 0.5,
+            "max_edge_delta": 2.75,
+            "ink_ratio": 1.2822
+          },
+          "failures": [
+            "center_x_delta=-2.75px > 1.00px"
+          ],
+          "reference": {
+            "bbox": [
+              82.75,
+              621.75,
+              116.0,
+              10.0
+            ],
+            "center": [
+              143.61577665524084,
+              626.6281345841602
+            ],
+            "ink_pixels": 5543
+          },
+          "actual": {
+            "bbox": [
+              80.25,
+              621.5,
+              115.75,
+              10.5
+            ],
+            "center": [
+              140.8706556915717,
+              626.6069719994372
+            ],
+            "ink_pixels": 7107
+          }
+        },
+        "text_01431a82": {
+          "label": "未开通备份 2",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": 1.9948,
+            "center_y_delta": -0.0362,
+            "width_delta": 0.0,
+            "height_delta": 0.25,
+            "max_edge_delta": 2.0,
+            "ink_ratio": 1.3176
+          },
+          "failures": [
+            "center_x_delta=1.99px > 1.00px"
+          ],
+          "reference": {
+            "bbox": [
+              301.5,
+              610.0,
+              29.0,
+              9.0
+            ],
+            "center": [
+              317.35429864253393,
+              614.1475113122171
+            ],
+            "ink_pixels": 1105
+          },
+          "actual": {
+            "bbox": [
+              303.5,
+              609.75,
+              29.0,
+              9.25
+            ],
+            "center": [
+              319.3490728021978,
+              614.1112637362637
+            ],
+            "ink_pixels": 1456
+          }
+        },
+        "text_234e4ab7": {
+          "label": "叫醒服务备份 3",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -2.8877,
+            "center_y_delta": -0.0946,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 3.0,
+            "ink_ratio": 1.2115
+          },
+          "failures": [
+            "center_x_delta=-2.89px > 1.00px"
+          ],
+          "reference": {
+            "bbox": [
+              83.25,
+              655.5,
+              50.0,
+              11.75
+            ],
+            "center": [
+              107.84685080928924,
+              661.2235221674877
+            ],
+            "ink_pixels": 2842
+          },
+          "actual": {
+            "bbox": [
+              80.25,
+              655.25,
+              50.25,
+              12.0
+            ],
+            "center": [
+              104.9591199535289,
+              661.1289573046762
+            ],
+            "ink_pixels": 3443
+          }
+        },
+        "text_b98b2e8c": {
+          "label": "录制至少 10 秒叫醒音频备份 3",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -2.7451,
+            "center_y_delta": -0.0212,
+            "width_delta": -0.25,
+            "height_delta": 0.5,
+            "max_edge_delta": 2.75,
+            "ink_ratio": 1.2822
+          },
+          "failures": [
+            "center_x_delta=-2.75px > 1.00px"
+          ],
+          "reference": {
+            "bbox": [
+              82.75,
+              676.75,
+              116.0,
+              10.0
+            ],
+            "center": [
+              143.61577665524084,
+              681.6281345841602
+            ],
+            "ink_pixels": 5543
+          },
+          "actual": {
+            "bbox": [
+              80.25,
+              676.5,
+              115.75,
+              10.5
+            ],
+            "center": [
+              140.8706556915717,
+              681.6069719994372
+            ],
+            "ink_pixels": 7107
+          }
+        },
+        "text_7fd61bd9": {
+          "label": "未开通备份 3",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": 1.9948,
+            "center_y_delta": -0.0362,
+            "width_delta": 0.0,
+            "height_delta": 0.25,
+            "max_edge_delta": 2.0,
+            "ink_ratio": 1.3176
+          },
+          "failures": [
+            "center_x_delta=1.99px > 1.00px"
+          ],
+          "reference": {
+            "bbox": [
+              301.5,
+              665.0,
+              29.0,
+              9.0
+            ],
+            "center": [
+              317.35429864253393,
+              669.1475113122171
+            ],
+            "ink_pixels": 1105
+          },
+          "actual": {
+            "bbox": [
+              303.5,
+              664.75,
+              29.0,
+              9.25
+            ],
+            "center": [
+              319.3490728021978,
+              669.1112637362637
+            ],
+            "ink_pixels": 1456
+          }
+        },
+        "asset_bfd28ecb": {
+          "label": "编组 2",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0,
+            "mask_iou_loss": 0.0
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              86.0,
+              383.0,
+              16.0,
+              16.0
+            ],
+            "center": [
+              94.29108428631936,
+              391.3379923761118
+            ],
+            "ink_pixels": 2361
+          },
+          "actual": {
+            "bbox": [
+              86.0,
+              383.0,
+              16.0,
+              16.0
+            ],
+            "center": [
+              94.29108428631936,
+              391.3379923761118
+            ],
+            "ink_pixels": 2361
+          }
+        },
+        "asset_324b46da": {
+          "label": "编组 6",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.2049,
+            "center_y_delta": -0.1305,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.032,
+            "mask_iou_loss": 0.032654792196776916
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              191.0,
+              383.0,
+              16.0,
+              16.0
+            ],
+            "center": [
+              199.57128777923785,
+              391.4046211125712
+            ],
+            "ink_pixels": 2283
+          },
+          "actual": {
+            "bbox": [
+              191.0,
+              383.0,
+              16.0,
+              16.0
+            ],
+            "center": [
+              199.36640492359933,
+              391.27408743633276
+            ],
+            "ink_pixels": 2356
+          }
+        },
+        "asset_cd2154e5": {
+          "label": "编组 8",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.4734,
+            "center_y_delta": -0.1359,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0237,
+            "mask_iou_loss": 0.23244816296835213
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              298.0,
+              383.0,
+              16.0,
+              16.0
+            ],
+            "center": [
+              306.24104539775095,
+              391.1927321949188
+            ],
+            "ink_pixels": 2401
+          },
+          "actual": {
+            "bbox": [
+              298.0,
+              383.0,
+              16.0,
+              16.0
+            ],
+            "center": [
+              306.7144019528072,
+              391.0568551668023
+            ],
+            "ink_pixels": 2458
+          }
+        }
+      },
+      "relations": {
+        "enabled_video_label_center": {
+          "label": "enabled video label center",
+          "reference_delta": 1.035,
+          "actual_delta": 0.7121,
+          "error": 0.3229,
+          "passed": true
+        },
+        "enabled_voice_label_center": {
+          "label": "enabled voice label center",
+          "reference_delta": 2.7655,
+          "actual_delta": 2.1369,
+          "error": 0.6286,
+          "passed": true
+        },
+        "enabled_message_label_center": {
+          "label": "enabled message label center",
+          "reference_delta": 1.0507,
+          "actual_delta": 0.8585,
+          "error": 0.1922,
+          "passed": true
+        },
+        "row2_title_left": {
+          "label": "row2 title left",
+          "reference_delta": 0.5,
+          "actual_delta": 0.5,
+          "error": 0.0,
+          "passed": true
+        },
+        "row3_title_left": {
+          "label": "row3 title left",
+          "reference_delta": 0.5,
+          "actual_delta": 0.0,
+          "error": 0.5,
+          "passed": true
+        },
+        "row4_title_left": {
+          "label": "row4 title left",
+          "reference_delta": 0.5,
+          "actual_delta": 0.0,
+          "error": 0.5,
+          "passed": true
+        }
+      },
+      "colors": {
+        "sheet_top": {
+          "label": "弹层顶部暖白",
+          "rect": [
+            8,
+            232,
+            8,
+            8
+          ],
+          "reference_rgb": [
+            243.35,
+            235.08,
+            216.59
+          ],
+          "actual_rgb": [
+            250.8,
+            241.3,
+            230.33
+          ],
+          "max_channel_delta": 13.74,
+          "passed": false
+        },
+        "enabled_surface": {
+          "label": "已开启卡底色",
+          "rect": [
+            30,
+            330,
+            8,
+            8
+          ],
+          "reference_rgb": [
+            254.02,
+            253.74,
+            252.06
+          ],
+          "actual_rgb": [
+            255.0,
+            253.97,
+            251.93
+          ],
+          "max_channel_delta": 0.98,
+          "passed": true
+        },
+        "pending_surface": {
+          "label": "待配置卡底色",
+          "rect": [
+            30,
+            480,
+            8,
+            8
+          ],
+          "reference_rgb": [
+            255.0,
+            252.0,
+            246.01
+          ],
+          "actual_rgb": [
+            252.99,
+            246.35,
+            234.04
+          ],
+          "max_channel_delta": 11.97,
+          "passed": false
+        },
+        "cta_surface": {
+          "label": "CTA 深色渐变",
+          "rect": [
+            48,
+            748,
+            8,
+            8
+          ],
+          "reference_rgb": [
+            19.87,
+            19.08,
+            18.28
+          ],
+          "actual_rgb": [
+            19.86,
+            19.1,
+            18.27
+          ],
+          "max_channel_delta": 0.02,
+          "passed": true
+        }
+      },
+      "overlay": "1-r4-alignment-overlay.png"
+    }
+  },
+  "status": "FAIL"
+}

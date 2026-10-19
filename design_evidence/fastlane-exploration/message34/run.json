@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "scope": "existing implementation validation only",
+  "started_unix": 1791872500.80251,
+  "stages": [
+    {
+      "name": "preflight",
+      "seconds": 0.064,
+      "exit_code": 0
+    },
+    {
+      "name": "render",
+      "seconds": 2.082,
+      "exit_code": 0
+    },
+    {
+      "name": "gate",
+      "seconds": 0.293,
+      "exit_code": 0
+    }
+  ],
+  "gate_status": "PASS_WITH_EXCLUSIONS",
+  "preflight": {
+    "coverage": {
+      "nodes": 141,
+      "covered": 139,
+      "exceptions": [
+        "node 25D9025F-B947-469D-98F5-838C23F9566B: 官方通知定制图标没有可导出素材；实现使用45×45圆形未切图占位，排除内部像素，外部位置与占位形状由Widget测试验证",
+        "node 15621591-9263-49EE-AF51-96E07BD315AF: 官方通知定制图标没有可导出素材；实现使用45×45圆形未切图占位，排除内部像素，外部位置与占位形状由Widget测试验证"
+      ]
+    },
+    "fonts": {
+      "text_nodes_checked": 45
+    },
+    "assets": 13
+  },
+  "metrics": {
+    "compared_pixels": 1173276,
+    "total_pixels": 1218000,
+    "mae": 3.1022,
+    "p95_max_channel": 13.0
+  },
+  "seconds": 2.44
+}

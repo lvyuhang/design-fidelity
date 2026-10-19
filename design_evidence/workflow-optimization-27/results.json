@@ -1,0 +1,77 @@
+{
+  "scope": "Reusable workflow/tool development plus frozen-page replay; not an independent new-page timing trial",
+  "skill_version": "2.7.0",
+  "python_regression_tests_passed": 67,
+  "source_preparation": {
+    "seconds": 0.0516,
+    "node_count": 143,
+    "asset_count": 14,
+    "source_json_bytes": 887443,
+    "page_plan_bytes": 67646,
+    "issues_detected_before_coding": [
+      {
+        "kind": "export_frame_outside_canvas",
+        "asset_id": "A0DA8B25-F14D-40A7-A25E-BB3BF99B22C4:image",
+        "rect": [
+          -3136,
+          -4347,
+          24,
+          24
+        ]
+      },
+      {
+        "kind": "font_mapping_missing",
+        "node_id": "881642B5-7104-4972-8C42-1EA89825345A",
+        "font": ".AppleSystemUIFont@400"
+      },
+      {
+        "kind": "missing_glyphs",
+        "node_id": "36B70533-B6B5-43C5-B7AE-2BCE24788E85",
+        "font": "PingFangSC-Regular@400",
+        "characters": "名",
+        "path": "/Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components/assets/fonts/PingFangSC-Regular.otf"
+      }
+    ],
+    "review_items_remaining": 88
+  },
+  "contract_compiler": {
+    "acceptance_fields_equal": {
+      "regions": true,
+      "features": true,
+      "relations": true,
+      "color_samples": true,
+      "coverage": true,
+      "exclude_rects": true,
+      "max_excluded_fraction": true,
+      "environment": true
+    },
+    "old_page_specific_python_lines": 215,
+    "new_page_specific_python_required": false,
+    "limitation": "Review/check selection remains necessary; compiler does not invent semantic checks"
+  },
+  "render_regression": {
+    "validation_seconds": 4.259,
+    "gate_status": "PASS_WITH_EXCLUSIONS",
+    "failed_checks": [],
+    "legacy_locale_pixels_identical": true,
+    "zh_cn_changed_pixel_count": 1270,
+    "zh_cn_changed_pixel_fraction": 0.00026067323481116585,
+    "zh_cn_difference": "礼物名称; old harness declared zh_CN but used default en_US. Shared harness sets actual locale.",
+    "old_whole_mae": 1.6783,
+    "new_whole_mae": 1.676
+  },
+  "limitations": [
+    "No measured end-to-end speedup or token reduction for an unseen page yet",
+    "MCP binary transport remains outside preparation script",
+    "88 source classification proposals still require review; no automatic semantic acceptance",
+    "Previous asset exclusions and font substitution remain; this trial does not repair page design",
+    "An old test invocation overwrote its default r0/render.png during this audit; default was changed to a unique temporary path. Frozen final reference/candidate were preserved."
+  ],
+  "artifacts": {
+    "source_plan": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/workflow-optimization-27/prepared-final/page-plan.json",
+    "run": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/workflow-optimization-27/verified/run.json",
+    "contract": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/workflow-optimization-27/compiled-contract.json",
+    "regression_log": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/workflow-optimization-27/python-tests-final.log",
+    "skill": "/Users/tan/.codex/skills/lanhu-design-fidelity/SKILL.md"
+  }
+}

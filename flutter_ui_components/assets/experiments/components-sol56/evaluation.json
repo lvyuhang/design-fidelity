@@ -1,0 +1,458 @@
+{
+  "method": "Source-aligned 4× RGB absolute error. GPT-5.6 Sol files were isolated, frozen before first render, and received zero visual correction. The GPT-6 column is the previously reviewed/current implementation, so this is an implementation comparison rather than a controlled model leaderboard. Flutter debug overflow indicators produced by undersized fixed text boxes remain in the 4x raster and are intentionally counted; Web release hides the diagnostic stripes but retains the underlying constraint risk.",
+  "models": {
+    "sol56": {
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "visual_revision_count": 0
+    },
+    "gpt6": {
+      "label": "此前 GPT-6 已核对实现"
+    }
+  },
+  "freeze_sha256": {
+    "social": "380249644cf76e6eb5dfe82de1861c91e5559ed6944696b9f2f67253c821bd15",
+    "utility": "86585c68989187fbf7d5246b2164c489b8b562a5e20dcd0fcc5ea95ee8751512",
+    "login": "1a952fcb605436bd50508904cc6f5280f52f7e1b923d7d6672d4267833d55262"
+  },
+  "samples": {
+    "feed": {
+      "logical_size": [
+        375,
+        342
+      ],
+      "reference_sha256": "73c0feeefc1b395e86bc629730da534e6765d5b9b5dc3c4bee83ffdfab34ac26",
+      "exclusions": [
+        [
+          96.75,
+          12,
+          181.5,
+          242
+        ],
+        [
+          103.75,
+          305,
+          15,
+          15
+        ]
+      ],
+      "regions": {
+        "independent": {
+          "sol56": {
+            "pixels": 1345632,
+            "mean_abs_rgb_0_255": 1.3621,
+            "p95_max_channel_abs": 2.0
+          },
+          "gpt6": {
+            "pixels": 1345632,
+            "mean_abs_rgb_0_255": 0.4245,
+            "p95_max_channel_abs": 0.0
+          },
+          "rect": [
+            0,
+            0,
+            375,
+            342
+          ]
+        },
+        "caption": {
+          "sol56": {
+            "pixels": 95328,
+            "mean_abs_rgb_0_255": 8.9901,
+            "p95_max_channel_abs": 158.0
+          },
+          "gpt6": {
+            "pixels": 95328,
+            "mean_abs_rgb_0_255": 4.7858,
+            "p95_max_channel_abs": 39.0
+          },
+          "rect": [
+            104.75,
+            260,
+            165.5,
+            36
+          ]
+        },
+        "footer": {
+          "sol56": {
+            "pixels": 51820,
+            "mean_abs_rgb_0_255": 14.0493,
+            "p95_max_channel_abs": 134.05
+          },
+          "gpt6": {
+            "pixels": 51820,
+            "mean_abs_rgb_0_255": 1.531,
+            "p95_max_channel_abs": 6.0
+          },
+          "rect": [
+            104,
+            303,
+            173,
+            20
+          ]
+        }
+      },
+      "resource_gap": "照片和头像来自同一份蓝湖预览裁切；independent 指标排除这些区域。"
+    },
+    "comments": {
+      "logical_size": [
+        375,
+        374
+      ],
+      "reference_sha256": "5bbc3c293a4f9418e1f201929ea1f480a58a1df0ef48911fb5a616349f8f5ac5",
+      "exclusions": [
+        [
+          16,
+          47,
+          30,
+          30
+        ],
+        [
+          16,
+          147,
+          30,
+          30
+        ],
+        [
+          53,
+          232,
+          24,
+          24
+        ]
+      ],
+      "regions": {
+        "independent": {
+          "sol56": {
+            "pixels": 2205984,
+            "mean_abs_rgb_0_255": 5.8565,
+            "p95_max_channel_abs": 26.0
+          },
+          "gpt6": {
+            "pixels": 2205984,
+            "mean_abs_rgb_0_255": 1.3574,
+            "p95_max_channel_abs": 1.0
+          },
+          "rect": [
+            0,
+            0,
+            375,
+            374
+          ]
+        },
+        "title": {
+          "sol56": {
+            "pixels": 35200,
+            "mean_abs_rgb_0_255": 11.4579,
+            "p95_max_channel_abs": 247.0
+          },
+          "gpt6": {
+            "pixels": 35200,
+            "mean_abs_rgb_0_255": 4.5337,
+            "p95_max_channel_abs": 33.0
+          },
+          "rect": [
+            17,
+            9,
+            100,
+            22
+          ]
+        },
+        "first_comment": {
+          "sol56": {
+            "pixels": 257600,
+            "mean_abs_rgb_0_255": 17.7118,
+            "p95_max_channel_abs": 212.0
+          },
+          "gpt6": {
+            "pixels": 257600,
+            "mean_abs_rgb_0_255": 3.0974,
+            "p95_max_channel_abs": 14.0
+          },
+          "rect": [
+            52,
+            47,
+            230,
+            70
+          ]
+        },
+        "nested_reply": {
+          "sol56": {
+            "pixels": 330240,
+            "mean_abs_rgb_0_255": 4.1455,
+            "p95_max_channel_abs": 10.0
+          },
+          "gpt6": {
+            "pixels": 330240,
+            "mean_abs_rgb_0_255": 2.3525,
+            "p95_max_channel_abs": 1.0
+          },
+          "rect": [
+            85,
+            233,
+            240,
+            86
+          ]
+        }
+      },
+      "resource_gap": "三个头像来自同一份蓝湖预览裁切；independent 指标排除这些区域。"
+    },
+    "modal": {
+      "logical_size": [
+        375,
+        280
+      ],
+      "reference_sha256": "6ed142aef30d680c685f140ebbfd4b7e88740e81b3b879b38927dfc0f292588a",
+      "exclusions": [],
+      "regions": {
+        "whole": {
+          "sol56": {
+            "pixels": 1680000,
+            "mean_abs_rgb_0_255": 3.7643,
+            "p95_max_channel_abs": 6.0
+          },
+          "gpt6": {
+            "pixels": 1680000,
+            "mean_abs_rgb_0_255": 0.9301,
+            "p95_max_channel_abs": 2.0
+          },
+          "rect": [
+            0,
+            0,
+            375,
+            280
+          ]
+        },
+        "dialog": {
+          "sol56": {
+            "pixels": 1203840,
+            "mean_abs_rgb_0_255": 4.5047,
+            "p95_max_channel_abs": 2.0
+          },
+          "gpt6": {
+            "pixels": 1203840,
+            "mean_abs_rgb_0_255": 0.9009,
+            "p95_max_channel_abs": 1.0
+          },
+          "rect": [
+            23,
+            22,
+            330,
+            228
+          ]
+        },
+        "buttons": {
+          "sol56": {
+            "pixels": 218832,
+            "mean_abs_rgb_0_255": 5.0448,
+            "p95_max_channel_abs": 10.0
+          },
+          "gpt6": {
+            "pixels": 218832,
+            "mean_abs_rgb_0_255": 1.3,
+            "p95_max_channel_abs": 1.0
+          },
+          "rect": [
+            42,
+            178,
+            291,
+            47
+          ]
+        }
+      }
+    },
+    "nav": {
+      "logical_size": [
+        375,
+        98
+      ],
+      "reference_sha256": "1a5e97f61c467a7a16fb320cd05334d051fc7c4a131647b5718a313ecfecd291",
+      "exclusions": [],
+      "regions": {
+        "whole": {
+          "sol56": {
+            "pixels": 588000,
+            "mean_abs_rgb_0_255": 4.7178,
+            "p95_max_channel_abs": 5.0
+          },
+          "gpt6": {
+            "pixels": 588000,
+            "mean_abs_rgb_0_255": 0.7412,
+            "p95_max_channel_abs": 2.0
+          },
+          "rect": [
+            0,
+            0,
+            375,
+            98
+          ]
+        },
+        "bar": {
+          "sol56": {
+            "pixels": 310912,
+            "mean_abs_rgb_0_255": 7.9073,
+            "p95_max_channel_abs": 24.0
+          },
+          "gpt6": {
+            "pixels": 310912,
+            "mean_abs_rgb_0_255": 1.1685,
+            "p95_max_channel_abs": 2.0
+          },
+          "rect": [
+            14,
+            21,
+            347,
+            56
+          ]
+        },
+        "icons_labels": {
+          "sol56": {
+            "pixels": 220160,
+            "mean_abs_rgb_0_255": 10.4302,
+            "p95_max_channel_abs": 87.0
+          },
+          "gpt6": {
+            "pixels": 220160,
+            "mean_abs_rgb_0_255": 1.4363,
+            "p95_max_channel_abs": 2.0
+          },
+          "rect": [
+            25,
+            28,
+            320,
+            43
+          ]
+        }
+      },
+      "resource_gap": "消息图标缺少原始路径，5.6 与此前 GPT-6 均为近似绘制。"
+    },
+    "appeal": {
+      "logical_size": [
+        375,
+        125
+      ],
+      "reference_sha256": "b82d304197f7d3dc0615b2e832b53c7d809266958eaefc90354f25d7a03be695",
+      "exclusions": [],
+      "regions": {
+        "whole": {
+          "sol56": {
+            "pixels": 750000,
+            "mean_abs_rgb_0_255": 4.9574,
+            "p95_max_channel_abs": 50.0
+          },
+          "gpt6": {
+            "pixels": 750000,
+            "mean_abs_rgb_0_255": 1.3476,
+            "p95_max_channel_abs": 3.0
+          },
+          "rect": [
+            0,
+            0,
+            375,
+            125
+          ]
+        },
+        "card": {
+          "sol56": {
+            "pixels": 636608,
+            "mean_abs_rgb_0_255": 5.7795,
+            "p95_max_channel_abs": 65.0
+          },
+          "gpt6": {
+            "pixels": 636608,
+            "mean_abs_rgb_0_255": 1.5268,
+            "p95_max_channel_abs": 2.0
+          },
+          "rect": [
+            16,
+            4,
+            343,
+            116
+          ]
+        },
+        "button": {
+          "sol56": {
+            "pixels": 25088,
+            "mean_abs_rgb_0_255": 6.9116,
+            "p95_max_channel_abs": 76.0
+          },
+          "gpt6": {
+            "pixels": 25088,
+            "mean_abs_rgb_0_255": 1.6293,
+            "p95_max_channel_abs": 2.0
+          },
+          "rect": [
+            287,
+            78,
+            56,
+            28
+          ]
+        }
+      }
+    },
+    "login": {
+      "logical_size": [
+        375,
+        395
+      ],
+      "reference_sha256": "958fb8c989dff548d2f27262ee19ebe54101b566c884b8922a654b5bd41ee5e3",
+      "exclusions": [],
+      "regions": {
+        "whole": {
+          "sol56": {
+            "pixels": 2370000,
+            "mean_abs_rgb_0_255": 9.7899,
+            "p95_max_channel_abs": 53.0
+          },
+          "gpt6": {
+            "pixels": 2370000,
+            "mean_abs_rgb_0_255": 1.0925,
+            "p95_max_channel_abs": 3.0
+          },
+          "rect": [
+            0,
+            0,
+            375,
+            395
+          ]
+        },
+        "buttons": {
+          "sol56": {
+            "pixels": 1454496,
+            "mean_abs_rgb_0_255": 10.1863,
+            "p95_max_channel_abs": 53.0
+          },
+          "gpt6": {
+            "pixels": 1454496,
+            "mean_abs_rgb_0_255": 1.0401,
+            "p95_max_channel_abs": 3.0
+          },
+          "rect": [
+            24,
+            4,
+            327,
+            278
+          ]
+        },
+        "agreement": {
+          "sol56": {
+            "pixels": 278720,
+            "mean_abs_rgb_0_255": 20.3625,
+            "p95_max_channel_abs": 110.0
+          },
+          "gpt6": {
+            "pixels": 278720,
+            "mean_abs_rgb_0_255": 2.7601,
+            "p95_max_channel_abs": 18.0
+          },
+          "rect": [
+            20,
+            340,
+            335,
+            52
+          ]
+        }
+      },
+      "reference_note": "蓝湖区域导出为 1329×1400；仅为对齐 375×395 逻辑网格重采样到 1500×1580。"
+    }
+  }
+}

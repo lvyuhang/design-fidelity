@@ -1,0 +1,60 @@
+name: juxing_components
+description: Source-backed Flutter component fidelity experiment for 聚星阁.
+publish_to: none
+version: 0.1.0+1
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/lanhu/assets/
+    - assets/lanhu/nav/assets/
+    - assets/lanhu/appeal/assets/
+    - assets/lanhu/feed/assets/
+    - assets/lanhu/gender_none/assets/
+    - assets/lanhu/gender_female/assets/
+    - assets/lanhu/comments/assets/
+    - assets/lanhu/full_page/
+    - assets/lanhu/caller_relationship/assets/
+    - assets/lanhu/filter_backup/assets/
+    - assets/lanhu/voice_calling_backup_2/assets/
+    - assets/lanhu/message_backup_34/assets/
+    - assets/lanhu/message_backup_36/assets/
+    - assets/lanhu/message_backup_45/assets/
+    - assets/lanhu/backup_20/assets/
+    - assets/lanhu/backup_20_source/
+    - assets/lanhu/home_page/assets/
+    - assets/lanhu/home_page/media_fallback/
+    - assets/lanhu/complaint_empty/
+    - assets/lanhu/settings_case/
+    - assets/lanhu/detail_page_2/
+    - assets/lanhu/withdraw_2/
+    - assets/fixtures/
+    - assets/experiments/appeal-direct/
+    - assets/experiments/gender-direct/
+    - assets/experiments/components-sol56/
+    - assets/reference/
+  fonts:
+    - family: SourcePingFang
+      fonts:
+        - asset: assets/fonts/PingFangSC-Regular.otf
+          weight: 400
+        - asset: assets/fonts/PingFangSC-Medium.otf
+          weight: 500
+        - asset: assets/fonts/PingFangSC-Semibold.otf
+          weight: 600
+    - family: SourceGiftGlyphs
+      fonts:
+        - asset: assets/fonts/ArialUnicode-Gift.ttf
+    - family: PingFangSCFull
+      fonts:
+        - asset: assets/fonts/PingFangSC-Full-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/PingFangSC-Full-Medium.ttf
+          weight: 500

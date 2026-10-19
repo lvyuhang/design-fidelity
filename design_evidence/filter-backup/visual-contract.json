@@ -1,0 +1,265 @@
+{
+  "render_scale": 4,
+  "canvas": [
+    375,
+    812
+  ],
+  "reference": "reference.png",
+  "source_documents": [
+    "source/snapshot.json"
+  ],
+  "regions": {
+    "sheet_header": {
+      "label": "弹层标题区",
+      "rect": [
+        20,
+        258,
+        335,
+        55
+      ],
+      "max_mae": 40,
+      "max_p95": 130,
+      "blocking": false
+    },
+    "cta": {
+      "label": "底部CTA",
+      "rect": [
+        28,
+        727,
+        320,
+        50
+      ],
+      "max_mae": 35,
+      "max_p95": 110,
+      "blocking": false
+    }
+  },
+  "relations": {},
+  "color_samples": {},
+  "features": {
+    "title": {
+      "label": "弹层标题",
+      "node_ids": [
+        "C45A40BA-EFDA-4692-9956-A5BD8DEA0A5E"
+      ],
+      "padding": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 145,
+        "min_pixels": 40
+      },
+      "limits": {
+        "max_center_delta": 3,
+        "max_size_delta": 5,
+        "max_edge_delta": 5,
+        "max_ink_ratio_delta": 0.65
+      },
+      "blocking": true
+    },
+    "enabled_heading": {
+      "label": "已开启任务",
+      "node_ids": [
+        "9FC8EEAF-DD2B-4EC9-8D51-958FF4DAB99F"
+      ],
+      "padding": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 145,
+        "min_pixels": 40
+      },
+      "limits": {
+        "max_center_delta": 3,
+        "max_size_delta": 5,
+        "max_edge_delta": 5,
+        "max_ink_ratio_delta": 0.65
+      },
+      "blocking": true
+    },
+    "pending_heading": {
+      "label": "待配置任务",
+      "node_ids": [
+        "FB33A3E7-F8F3-487D-AC4A-916D4CD5AF01"
+      ],
+      "padding": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 145,
+        "min_pixels": 40
+      },
+      "limits": {
+        "max_center_delta": 3,
+        "max_size_delta": 5,
+        "max_edge_delta": 5,
+        "max_ink_ratio_delta": 0.65
+      },
+      "blocking": true
+    },
+    "video_label": {
+      "label": "视频通话",
+      "node_ids": [
+        "13DB3947-C4E9-4177-BAB1-A654EF02ED02"
+      ],
+      "padding": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 145,
+        "min_pixels": 40
+      },
+      "limits": {
+        "max_center_delta": 3,
+        "max_size_delta": 5,
+        "max_edge_delta": 5,
+        "max_ink_ratio_delta": 0.65
+      },
+      "blocking": true
+    },
+    "voice_label": {
+      "label": "语音通话",
+      "node_ids": [
+        "EDC9B047-AAAC-4E24-8407-350E465E9CC3"
+      ],
+      "padding": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 145,
+        "min_pixels": 40
+      },
+      "limits": {
+        "max_center_delta": 3,
+        "max_size_delta": 5,
+        "max_edge_delta": 5,
+        "max_ink_ratio_delta": 0.65
+      },
+      "blocking": true
+    },
+    "message_label": {
+      "label": "私信互动",
+      "node_ids": [
+        "BA001932-8CF2-4C39-ABE3-8648C9D2A532"
+      ],
+      "padding": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 145,
+        "min_pixels": 40
+      },
+      "limits": {
+        "max_center_delta": 3,
+        "max_size_delta": 5,
+        "max_edge_delta": 5,
+        "max_ink_ratio_delta": 0.65
+      },
+      "blocking": true
+    },
+    "row1_title": {
+      "label": "第一行叫醒服务",
+      "node_ids": [
+        "448996F1-2B4A-4016-9822-5542CAEA1D77"
+      ],
+      "padding": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "detector": {
+        "kind": "dark",
+        "luma_max": 145,
+        "min_pixels": 40
+      },
+      "limits": {
+        "max_center_delta": 3,
+        "max_size_delta": 5,
+        "max_edge_delta": 5,
+        "max_ink_ratio_delta": 0.65
+      },
+      "blocking": true
+    },
+    "row1_status": {
+      "label": "第一行未开通",
+      "node_ids": [
+        "68A43B3E-0050-48D3-AA03-B912AB5B0E66"
+      ],
+      "padding": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "detector": {
+        "kind": "color_distance",
+        "rgb": [
+          178,
+          122,
+          49
+        ],
+        "max_distance": 55,
+        "min_pixels": 20
+      },
+      "limits": {
+        "max_center_delta": 3,
+        "max_size_delta": 5,
+        "max_edge_delta": 5,
+        "max_ink_ratio_delta": 0.65
+      },
+      "blocking": true
+    },
+    "cta_text": {
+      "label": "去配置任务项",
+      "node_ids": [
+        "5981078F-3815-4375-BE20-0E2B7A069586"
+      ],
+      "padding": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "detector": {
+        "kind": "gold",
+        "red_min": 120,
+        "red_blue_min": 15,
+        "green_blue_min": 5,
+        "red_green_min": -8,
+        "min_pixels": 25
+      },
+      "limits": {
+        "max_center_delta": 3,
+        "max_size_delta": 5,
+        "max_edge_delta": 5,
+        "max_ink_ratio_delta": 0.65
+      },
+      "blocking": true
+    }
+  }
+}

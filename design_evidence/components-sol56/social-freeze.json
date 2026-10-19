@@ -1,0 +1,19 @@
+{
+  "experiment": "social-components-controlled-reconstruction",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "freeze_date": "2026-10-12",
+  "algorithm": "SHA-256",
+  "implementation": {
+    "path": "flutter_ui_components/lib/experiments/social_sol56.dart",
+    "sha256": "380249644cf76e6eb5dfe82de1861c91e5559ed6944696b9f2f67253c821bd15"
+  },
+  "frozen_copy": {
+    "path": "design_evidence/components-sol56/social_sol56.frozen.dart",
+    "sha256": "380249644cf76e6eb5dfe82de1861c91e5559ed6944696b9f2f67253c821bd15"
+  },
+  "byte_identical": true,
+  "flutter_rendered_before_freeze": false,
+  "visual_corrections_before_freeze": 0,
+  "pre_render_compile_repair": "Removed const from a Positioned whose RichText constructor is non-const; no geometry, style, content, or callback changed."
+}

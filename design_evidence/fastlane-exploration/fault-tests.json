@@ -1,0 +1,12 @@
+[
+  {
+    "fault": "missing_glyph",
+    "blocked": true,
+    "reason": "Font missing glyphs for 5FB6266F-941F-42E9-8E1A-AC46207C0726: 折"
+  },
+  {
+    "fault": "changed_input",
+    "blocked": true,
+    "reason": "Pinned file changed: /Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components/lib/experiments/message_backup_34_page.dart"
+  }
+]

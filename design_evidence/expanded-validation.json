@@ -1,0 +1,168 @@
+{
+  "method": "RGB absolute error, 0..255; exact 4x grids, no alignment fitting or rescaling. MAE is diagnostic, not a fidelity percentage.",
+  "limitations": [
+    "Native Flutter test engine; browser visually checked separately.",
+    "Message icon outline lacks source paths and is approximate.",
+    "Backdrop blur validated on light empty-state background only."
+  ],
+  "samples": {
+    "modal": {
+      "snapshot": "d55fd328e4eedf660dbb471e50da78bd",
+      "version": "f11338b7-d535-4cb0-9843-10f3e481df91",
+      "pixel_size": [
+        1500,
+        1120
+      ],
+      "reference_sha256": "6ed142aef30d680c685f140ebbfd4b7e88740e81b3b879b38927dfc0f292588a",
+      "flutter_sha256": "7ba8fc4769813c524bb04d0ab8a9d44f74bd6e884fd27c891e9dcdc3d14397e9",
+      "whole_stage": {
+        "mean_abs_rgb_0_255": 0.9301,
+        "p95_max_channel_abs": 2.0
+      },
+      "regions": {
+        "body": {
+          "source_rect": [
+            23,
+            22,
+            330,
+            228
+          ],
+          "mean_abs_rgb_0_255": 0.9009,
+          "p95_max_channel_abs": 1.0
+        },
+        "title": {
+          "source_rect": [
+            145,
+            48,
+            85,
+            32
+          ],
+          "mean_abs_rgb_0_255": 5.0594,
+          "p95_max_channel_abs": 44.0
+        },
+        "primary_button": {
+          "source_rect": [
+            193,
+            178,
+            140,
+            46
+          ],
+          "mean_abs_rgb_0_255": 1.5956,
+          "p95_max_channel_abs": 2.0
+        },
+        "background": {
+          "source_rect": [
+            0,
+            0,
+            375,
+            16
+          ],
+          "mean_abs_rgb_0_255": 0.5944,
+          "p95_max_channel_abs": 2.0
+        }
+      }
+    },
+    "nav": {
+      "snapshot": "025bc1130d29bbe5b64e14ca4af2b493",
+      "version": "32aa246d-8d21-40b3-ba5c-32e8d532bdc6",
+      "pixel_size": [
+        1500,
+        392
+      ],
+      "reference_sha256": "1a5e97f61c467a7a16fb320cd05334d051fc7c4a131647b5718a313ecfecd291",
+      "flutter_sha256": "1ad112ac48326ba4a9ba2f371588577640392e7a10adb4db2b4cc2f2a1f7f442",
+      "whole_stage": {
+        "mean_abs_rgb_0_255": 0.7412,
+        "p95_max_channel_abs": 2.0
+      },
+      "regions": {
+        "bar": {
+          "source_rect": [
+            14,
+            21,
+            347,
+            56
+          ],
+          "mean_abs_rgb_0_255": 1.1685,
+          "p95_max_channel_abs": 2.0
+        },
+        "message_icon": {
+          "source_rect": [
+            109,
+            32,
+            24,
+            23
+          ],
+          "mean_abs_rgb_0_255": 9.4906,
+          "p95_max_channel_abs": 66.0
+        },
+        "other_icons": {
+          "source_rect": [
+            177,
+            32,
+            149,
+            23
+          ],
+          "mean_abs_rgb_0_255": 0.7724,
+          "p95_max_channel_abs": 2.0
+        }
+      }
+    },
+    "appeal": {
+      "snapshot": "4a82a245a06e7de77a4320e533934570",
+      "version": "84ebb977-1081-434c-9147-12e6147c820b",
+      "pixel_size": [
+        1500,
+        500
+      ],
+      "reference_sha256": "b82d304197f7d3dc0615b2e832b53c7d809266958eaefc90354f25d7a03be695",
+      "flutter_sha256": "087b183ba7b827f4ceefa7d0a9ea1f5395859f3b58cb26fe1952a55d92136e79",
+      "whole_stage": {
+        "mean_abs_rgb_0_255": 1.3476,
+        "p95_max_channel_abs": 3.0
+      },
+      "regions": {
+        "card": {
+          "source_rect": [
+            16,
+            4,
+            343,
+            116
+          ],
+          "mean_abs_rgb_0_255": 1.5268,
+          "p95_max_channel_abs": 2.0
+        },
+        "heading": {
+          "source_rect": [
+            30,
+            15,
+            86,
+            22
+          ],
+          "mean_abs_rgb_0_255": 6.547,
+          "p95_max_channel_abs": 59.0
+        },
+        "button": {
+          "source_rect": [
+            265,
+            66,
+            78,
+            28
+          ],
+          "mean_abs_rgb_0_255": 1.7121,
+          "p95_max_channel_abs": 2.0
+        },
+        "shield": {
+          "source_rect": [
+            278,
+            12,
+            68,
+            79
+          ],
+          "mean_abs_rgb_0_255": 0.8345,
+          "p95_max_channel_abs": 1.0
+        }
+      }
+    }
+  }
+}

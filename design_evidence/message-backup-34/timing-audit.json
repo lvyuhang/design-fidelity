@@ -1,0 +1,37 @@
+{
+  "case": "message-backup-34",
+  "audit_date": "2026-10-13",
+  "source_rollout": "/Users/tan/.codex/sessions/2026/10/10/rollout-2026-10-10T10-25-45-01a123a1-7160-7110-93b9-b06c151dea06.jsonl",
+  "thread_id": "01a123a1-7160-7110-93b9-b06c151dea06",
+  "turn_id": "01a13349-c77d-7c22-82b2-c53cf4d6c238",
+  "method": "Sum usage records for exact turn_id, deduplicated by response_id; includes final response, excludes this audit.",
+  "user_request_at": "2026-10-13T11:23:55.670+08:00",
+  "final_answer_at": "2026-10-13T11:58:02.286+08:00",
+  "end_to_end_seconds": 2046.616,
+  "response_count": 135,
+  "usage": {
+    "input_tokens": 20781223,
+    "cached_input_tokens": 20423296,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 68205,
+    "reasoning_output_tokens": 19247,
+    "total_tokens": 20849428
+  },
+  "uncached_input_tokens": 357927,
+  "last_usage_record_at": "2026-10-13T03:58:02.313Z",
+  "previous_token_measurement_valid": false,
+  "previous_token_measurement_error": "Previous benchmark used another thread (01a132f8-ae5c-76b1-b085-abcd203d11f6), unrelated to this page.",
+  "quality_findings": [
+    "Official notification uses bottom navigation message asset instead of original gold X mark; final PASS misses this mismatch.",
+    "Reference was enlarged from native 750x1624 to 1500x3248; violates native-resolution comparison rule.",
+    "Contract was initialized after implementation and changed during correction; comparison rounds are not a fully frozen-baseline experiment."
+  ],
+  "workflow_findings": [
+    "Duplicate design names caused initial wrong target.",
+    "Repeated MCP pagination and truncated binary transfer retries.",
+    "Font subset and image loading checks occurred after first render.",
+    "Contract creation and validator debugging happened late.",
+    "Fine-grained serial icon adjustments produced repeated model/tool cycles."
+  ],
+  "proposal_status": "Recommendations only; Skill and page implementation unchanged."
+}

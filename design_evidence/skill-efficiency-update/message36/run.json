@@ -1,0 +1,543 @@
+{
+  "status": "PASS",
+  "scope": "validation of supplied implementation; not end-to-end development time",
+  "started_unix": 1791873183.53507,
+  "stages": [
+    {
+      "name": "preflight",
+      "seconds": 0.083,
+      "exit_code": 0
+    },
+    {
+      "name": "render",
+      "seconds": 2.428,
+      "exit_code": 0
+    },
+    {
+      "name": "gate",
+      "seconds": 0.342,
+      "exit_code": 0
+    },
+    {
+      "name": "analyze",
+      "seconds": 1.594,
+      "exit_code": 0
+    }
+  ],
+  "gate_status": "PASS_WITH_EXCLUSIONS",
+  "preflight": {
+    "status": "READY_FOR_RENDER",
+    "coverage": {
+      "nodes": 150,
+      "covered": 150,
+      "exceptions": []
+    },
+    "fonts": {
+      "text_nodes_checked": 46
+    },
+    "asset_count": 15,
+    "style_gaps": [
+      {
+        "node_id": "0C1AEF14-9E1E-468C-BFC7-F82AB1479722",
+        "text": "全部",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "5537F6F8-F41A-45CD-B8C3-2882F4F7C770",
+        "text": "熟人",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "D642FADB-A810-4F71-B78C-28A13C8A95DF",
+        "text": "深夜聊的...",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "35FB7F5A-2CD5-43E2-B3B0-C83D8ECE172C",
+        "text": "我关注的",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "EFFEB311-801C-4291-90CA-5D09774B24E5",
+        "text": "阿珍同学",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "8B99809F-C198-48F0-96D7-6FD820ED6779",
+        "text": "官方通知",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "AB71930D-FBFF-42F8-983E-1327B840B618",
+        "text": "旎旎马克",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "E261A733-8738-4A62-A323-5B4D53683B35",
+        "text": "晚风",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "71D1D464-24FE-4F37-AFCD-F156DB1BAC46",
+        "text": "跳舞机宝贝",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "DCB46A82-CA5D-4070-8771-BACF5E90A25D",
+        "text": "花花",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "DB38DED7-9157-4A11-B145-B63AEB8FD52D",
+        "text": "物简则明",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "FE1D62F4-9919-427E-80CD-50D88551CD4F",
+        "text": "你在干嘛呀？",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "2E6749E2-5A34-4A0C-AC2D-1F00A0FD4457",
+        "text": "XXXXXXXXXXXXXXXXXXXX XXXX XXXX XX",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "CC93AFAA-4579-4C99-B988-D534E69156A2",
+        "text": "[微笑][微笑]",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "70FA4A98-D4D2-4418-ABE0-3DD2591CFF3E",
+        "text": "[图片]",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "ED916437-72A5-4ED0-8B0D-7CC691D2A33E",
+        "text": "[语音]",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "46E9D9C6-D414-4B7D-A9BE-CA9B334C735D",
+        "text": "15:33",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "F0238E4D-3961-4739-8A97-89A28EB22EAD",
+        "text": "15:33",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "3EC3E755-FAA1-4DDD-9EAE-612F08C3BBE1",
+        "text": "15:33",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "FCF9F2FA-8B62-4324-B92A-23E1655455F0",
+        "text": "15:33",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "52057523-1C55-4032-BD6D-888DBF0E2746",
+        "text": "15:33",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "957E5DF0-504A-4AD7-8413-DA167A93B5AF",
+        "text": "15:33",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "634EF614-0DA1-4AA4-978F-ED5280D81A62",
+        "text": "2",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "108A2899-BEB5-4823-A559-FD3F91D04687",
+        "text": "15:33",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "D040772A-6F12-4F4B-A32C-E3133AA53B65",
+        "text": "2",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "FBBCE9F1-5C00-4E45-B418-F9489AB39F2C",
+        "text": "提醒消息",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "D7447525-29A4-42E4-8F15-63165C38B169",
+        "text": "XX XXXX XXXXXXXXXXXXXXXXXXXXXX X",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "7C5094FD-9786-4F47-A543-90BEBE192FC9",
+        "text": "15:33",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "C9E6D2B4-60AC-4B8A-AD0E-47B5E44E9A5D",
+        "text": "2",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "69A394C6-3541-4751-A3E9-EBDF57CF5535",
+        "text": "推送通知未开启，会错过重要消息哦",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "F621EB45-D468-497C-B14E-4EEE962B8D5D",
+        "text": "去开启",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "5FB6266F-941F-42E9-8E1A-AC46207C0726",
+        "text": "折叠置顶会话",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "FA95C5D8-45A8-4CA2-BA25-398B34A85826",
+        "text": "任务",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "44BF32A0-9202-4EFC-96C3-0B8175371A61",
+        "text": "2",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "15E4D7B9-FB35-406B-B5FF-37A3255B5802",
+        "text": "我的",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "B7D095DE-91A2-43D2-88ED-410C09D98BFA",
+        "text": "关系",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "8155588F-657C-42C3-A122-1753183C8986",
+        "text": "首页",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "950F8103-14F5-4B2E-8252-ED0BB71FB15A",
+        "text": "9:41",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "C50592A0-9B55-4586-BA95-E5107D5F3524",
+        "text": "消息",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "60E096F3-B05B-462C-9930-AFD796E3A0FC",
+        "text": "消息",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "8B9F016C-B7F7-4091-87F2-924ABE1BBC84",
+        "text": "通话记录",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "E9965EB8-AFF1-4AF2-8B53-476C534D5A6C",
+        "text": "2",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "E173F20F-8990-4F81-AB62-B942CF77D10D",
+        "text": "未接",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "3B155625-8B03-44A6-92A9-D4D0AF7C1E94",
+        "text": "已取消",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "7DFB8813-32B5-4632-9A77-82BC9F25DAE4",
+        "text": "熟人",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      },
+      {
+        "node_id": "119461FF-E165-4344-998B-E2A84C845986",
+        "text": "生人",
+        "missing": [
+          "font_family",
+          "font_size",
+          "line_height",
+          "color"
+        ]
+      }
+    ],
+    "scope": "input integrity and font coverage; source-style completeness is separate; not visual acceptance"
+  },
+  "failures": [],
+  "metrics": {
+    "whole": {
+      "compared_pixels": 1173624,
+      "total_pixels": 1218000,
+      "mae": 3.27,
+      "p95_max_channel": 12.0
+    },
+    "header": {
+      "compared_pixels": 213000,
+      "total_pixels": 213000,
+      "mae": 7.3784,
+      "p95_max_channel": 16.0
+    },
+    "filters": {
+      "compared_pixels": 60000,
+      "total_pixels": 60000,
+      "mae": 2.9124,
+      "p95_max_channel": 6.0
+    },
+    "list": {
+      "compared_pixels": 719124,
+      "total_pixels": 763500,
+      "mae": 2.1126,
+      "p95_max_channel": 4.0
+    },
+    "fold": {
+      "compared_pixels": 66000,
+      "total_pixels": 66000,
+      "mae": 1.1746,
+      "p95_max_channel": 6.0
+    },
+    "bottom": {
+      "compared_pixels": 115500,
+      "total_pixels": 115500,
+      "mae": 4.2831,
+      "p95_max_channel": 12.0
+    }
+  },
+  "seconds": 4.448
+}

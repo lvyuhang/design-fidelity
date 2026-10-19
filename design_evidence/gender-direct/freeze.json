@@ -1,0 +1,29 @@
+{
+  "frozen_at_utc": "2026-10-12T05:52:15.031940+00:00",
+  "code_sha256": "ae137648f34ac0b9ecd2ebcddfb5c7e0eda6174ef09212a25d4abdb94257609b",
+  "first_render_has_occurred": false,
+  "inputs": {
+    "none-input.json": "412255dc466fff90dd7df20014844e655d3e4eb011dd38861d9b59f9f817d728",
+    "female-export.json": "58421f40d439a941876c7a129e48ad21efb31ddaf44eb816f090c2b4f66bbdc2",
+    "none-export.json": "2a77ddc988289cdc8ca10b3211eb313199e2f31c203605e3ef3c1ec4bef74396",
+    "female-input.json": "455e0680674cc55daf861516d221a7107499ed25f1bd03586ca20e987664e2ed",
+    "asset-verification.json": "708cfa295f3a12d80c71b54601d58d5a74c4cd70c02664a3f8a2ce817ff75b8d",
+    "protocol.json": "6675f9d54b246cb64829ea81eb40a391fe488005475c1380bf128394bfd3a57b"
+  },
+  "reference_hashes": {
+    "none": "c9f025967172ed54cb1632e5ad49f2570d7065dff8e0b61d9854d6508734387f",
+    "female": "07b1c45f8f543892e8ecb7e943f2f5c1f5b92a5ab39fe5d1e67221fcaf7d2eca"
+  },
+  "original_asset_hashes": {
+    "assets/lanhu/gender_none/assets/d2855e7611728cfc07b1476da674344d477abedc8d9fbc67f9087bba0c093a49.png": "7c4161efd495dbd4a2192f96f20bf5f9c7c2ce8e7b595a31cc866b8c4c6ef02a",
+    "assets/lanhu/gender_none/assets/a25cff5f9aabb90c8c6f286be1a49d34401850108d0459495065cdf59093df43.png": "6bda6a46753492b12c0a695fb169511dd44aa932ee66e797e6d0c8347484b8bf",
+    "assets/lanhu/gender_female/assets/946fd6e0fb04feeae95ea8730b2c3eb280c50393cc9848ac36ac39e1282fec1f.png": "75b55d06cdcf218a35e21e43c5079ae0675ee831ad739fa198c70c3bde7fb368",
+    "assets/lanhu/gender_female/assets/eacdc3db8eff06ddcc26f3a404612bc55bc07315ac2ef98900c27fabedff1272.png": "96a7c033d65b63ca440fdf2079f7bf01852df459b73a40a2d3396b973cd5bcd5",
+    "assets/lanhu/gender_female/assets/10416d514d09343fe90359c1170c63f1b6a2a75432844bdc11e568ac56157832.png": "ba7e3279df29f7d77f84097f2d082b30ec9785afbcc86f4aaf06c9e6c468fdb4"
+  },
+  "font_hashes_at_freeze": {
+    "PingFangSC-Semibold.otf": "4d81b79bb551918e6dc08ea8ea414cbba77c257362e9f1b62897df95fee9894c",
+    "PingFangSC-Regular.otf": "422938858e03b32259eebaacbf26d79e05f87ec693ba9806edb20a00f077c948",
+    "PingFangSC-Medium.otf": "7fb1175b8586dcf76beb4a1d0ac53c74aed2fd8727e4226899c2bf873ee0e302"
+  }
+}

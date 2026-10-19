@@ -1,0 +1,83 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<title>视觉还原门禁报告</title><style>
+body{font:14px/1.5 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;margin:32px;color:#20242a;background:#f5f6f8}
+main{max-width:1180px;margin:auto}section{background:white;border:1px solid #e1e4e8;border-radius:14px;padding:22px;margin:20px 0;overflow:auto}
+table{border-collapse:collapse;width:100%;min-width:800px}th,td{border-bottom:1px solid #eceef1;padding:8px;text-align:left}img{width:375px;max-width:100%;border:1px solid #ddd}
+.shots{display:flex;gap:16px;flex-wrap:wrap}figure{margin:0}figcaption{color:#686b77;margin-top:6px}
+.ref{color:#15a46b}.actual{color:#e13d8c}code{background:#eef0f3;padding:2px 5px;border-radius:4px}
+</style></head><body><main><h1>视觉还原自动门禁</h1>
+<p>整体结果：FAIL。绿色框为蓝湖原稿可见像素，粉色框为候选渲染可见像素。</p>
+<details><summary>验收范围、环境与排除项</summary><pre>{
+  &quot;skill_version&quot;: &quot;2.5.0&quot;,
+  &quot;coverage&quot;: {
+    &quot;nodes&quot;: 150,
+    &quot;covered&quot;: 150,
+    &quot;exceptions&quot;: []
+  },
+  &quot;environment&quot;: {
+    &quot;renderer&quot;: &quot;flutter-test-skia&quot;,
+    &quot;renderer_version&quot;: &quot;Flutter 3.47.7 / engine deb287481e&quot;,
+    &quot;platform&quot;: &quot;macOS widget-test 375x812 @2x&quot;,
+    &quot;locale&quot;: &quot;zh_CN&quot;,
+    &quot;state&quot;: &quot;message-backup-36-folded-list&quot;,
+    &quot;text_scale&quot;: 1
+  },
+  &quot;exclusions&quot;: [
+    {
+      &quot;rect&quot;: [
+        17,
+        194,
+        43,
+        43
+      ],
+      &quot;reason&quot;: &quot;阿珍头像原图未提供切图；保留圆形缺图占位&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        17,
+        260,
+        43,
+        43
+      ],
+      &quot;reason&quot;: &quot;旎旎马克头像原图未提供切图；保留圆形缺图占位&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        17,
+        326,
+        43,
+        43
+      ],
+      &quot;reason&quot;: &quot;晚风头像原图未提供切图；保留圆形缺图占位&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        17,
+        391,
+        43,
+        43
+      ],
+      &quot;reason&quot;: &quot;花花头像原图未提供切图；保留圆形缺图占位&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        17,
+        456,
+        43,
+        43
+      ],
+      &quot;reason&quot;: &quot;物简则明头像原图未提供切图；保留圆形缺图占位&quot;
+    },
+    {
+      &quot;rect&quot;: [
+        17,
+        522,
+        43,
+        43
+      ],
+      &quot;reason&quot;: &quot;跳舞机宝贝头像原图未提供切图；保留圆形缺图占位&quot;
+    }
+  ],
+  &quot;excluded_fraction&quot;: 0.0364334975369458
+}</pre></details>
+<section><h2>default · <strong style="color:#C6293E">FAIL</strong></h2><div class="shots"><figure><img src="reference.png" alt="reference"><figcaption>蓝湖原稿</figcaption></figure><figure><img src="1-default-candidate.png" alt="candidate"><figcaption>候选实现</figcaption></figure><figure><img src="1-default-alignment-overlay.png" alt="alignment overlay"><figcaption>可见像素对齐</figcaption></figure></div><p class="legend"><span class="ref">原稿可见边界</span> · <span class="actual">实现可见边界</span></p><h3>区域像素门禁</h3><table><tr><th>区域</th><th>MAE</th><th>P95</th><th>结果</th><th>原因</th></tr><tr><td>完整消息页</td><td>3.4600</td><td>12.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>状态栏、标题与通知条</td><td>8.4143</td><td>28.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>消息筛选</td><td>2.9124</td><td>6.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>消息列表</td><td>2.1126</td><td>4.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>折叠置顶会话</td><td>1.2087</td><td>6.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>底部导航</td><td>4.2831</td><td>12.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr></table><h3>元素几何门禁</h3><table><tr><th>元素</th><th>ΔX</th><th>ΔY</th><th>Δ宽</th><th>Δ高</th><th>结果</th><th>原因</th></tr><tr><td>编组</td><td>-0.01</td><td>0.65</td><td>0.00</td><td>-0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>位图备份 6</td><td>0.47</td><td>0.44</td><td>-1.00</td><td>-1.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>message_reminding_icon</td><td>-0.06</td><td>-0.09</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>编组</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>编组</td><td>-0.02</td><td>0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>编组</td><td>-0.27</td><td>0.03</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>首页</td><td>0.02</td><td>0.32</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>编组</td><td>0.00</td><td>0.05</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>编组</td><td>-0.61</td><td>-0.07</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>编组</td><td>0.13</td><td>0.09</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>编组 12</td><td>-0.04</td><td>0.09</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>编组 3</td><td>0.02</td><td>-0.01</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>全部</td><td>-0.26</td><td>-0.10</td><td>0.50</td><td>1.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>熟人</td><td>0.11</td><td>0.26</td><td>0.00</td><td>0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>深夜聊的...</td><td>-1.23</td><td>0.03</td><td>1.00</td><td>0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>我关注的</td><td>-0.66</td><td>-0.08</td><td>0.00</td><td>1.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>阿珍同学</td><td>-0.41</td><td>-0.12</td><td>0.00</td><td>0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>官方通知</td><td>-0.35</td><td>-0.16</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>旎旎马克</td><td>0.06</td><td>-0.03</td><td>0.50</td><td>0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>晚风</td><td>0.48</td><td>-0.26</td><td>0.00</td><td>0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>跳舞机宝贝</td><td>-0.26</td><td>-0.08</td><td>0.50</td><td>0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>花花</td><td>0.07</td><td>-0.05</td><td>0.50</td><td>0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>物简则明</td><td>-0.50</td><td>-0.07</td><td>0.00</td><td>0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>你在干嘛呀？</td><td>-0.49</td><td>-0.13</td><td>0.00</td><td>0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>XXXXXXXXXXXXXXXXXXXX XXXX XXXX XX</td><td>0.05</td><td>-1.03</td><td>0.50</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>[微笑][微笑]</td><td>0.74</td><td>-0.01</td><td>0.50</td><td>0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>[图片]</td><td>0.57</td><td>-0.04</td><td>0.50</td><td>0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>[语音]</td><td>-0.15</td><td>0.16</td><td>0.50</td><td>0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>15:33</td><td>-0.03</td><td>-0.01</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>15:33</td><td>-0.03</td><td>-0.01</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>15:33</td><td>-0.03</td><td>-0.01</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>15:33</td><td>-0.03</td><td>-0.01</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>15:33</td><td>-0.03</td><td>-0.01</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>15:33</td><td>-0.03</td><td>-0.01</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>2</td><td>0.00</td><td>0.01</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>15:33</td><td>-0.03</td><td>-0.01</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>2</td><td>0.00</td><td>0.01</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>提醒消息</td><td>0.15</td><td>0.19</td><td>1.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>XX XXXX XXXXXXXXXXXXXXXXXXXXXX X</td><td>0.03</td><td>-1.03</td><td>0.50</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>15:33</td><td>-0.03</td><td>-0.01</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>2</td><td>0.00</td><td>0.01</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>推送通知未开启，会错过重要消息哦</td><td>0.51</td><td>-1.01</td><td>0.00</td><td>0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>去开启</td><td>0.38</td><td>-0.85</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>路径</td><td>0.00</td><td>0.08</td><td>-1.00</td><td>-1.00</td><td><strong style="color:#C6293E">FAIL</strong></td><td>ink_ratio=0.585; |ratio-1| &gt; 0.320; mask_iou_loss=0.4146 &gt; 0.3200</td></tr><tr><td>折叠置顶会话</td><td>0.62</td><td>-0.22</td><td>0.50</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>任务</td><td>0.10</td><td>0.23</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>2</td><td>0.00</td><td>0.04</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>我的</td><td>0.25</td><td>-0.13</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>关系</td><td>-0.03</td><td>0.03</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>首页</td><td>0.30</td><td>0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>9:41</td><td>0.02</td><td>0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>消息</td><td>0.00</td><td>-0.28</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>路径 4</td><td>0.06</td><td>-0.16</td><td>0.00</td><td>-0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>消息</td><td>-0.12</td><td>-1.31</td><td>0.50</td><td>0.00</td><td><strong style="color:#C6293E">FAIL</strong></td><td>center_y_delta=-1.31px &gt; 1.25px</td></tr><tr><td>通话记录</td><td>0.43</td><td>-0.28</td><td>0.50</td><td>0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>2</td><td>0.00</td><td>0.01</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>未接</td><td>0.79</td><td>-0.03</td><td>0.50</td><td>0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>已取消</td><td>0.22</td><td>-0.16</td><td>0.00</td><td>0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>熟人</td><td>-0.06</td><td>0.07</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>生人</td><td>-0.03</td><td>0.04</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>线条</td><td>0.14</td><td>-0.25</td><td>2.00</td><td>-0.50</td><td><strong style="color:#C6293E">FAIL</strong></td><td>width_delta=2.00px &gt; 1.50px; max_edge_delta=1.50px &gt; 1.25px; mask_iou_loss=0.3810 &gt; 0.3200</td></tr><tr><td>线条 2</td><td>0.14</td><td>-0.25</td><td>2.00</td><td>-0.50</td><td><strong style="color:#C6293E">FAIL</strong></td><td>width_delta=2.00px &gt; 1.50px; max_edge_delta=1.50px &gt; 1.25px; mask_iou_loss=0.3810 &gt; 0.3200</td></tr><tr><td>线条 3</td><td>0.00</td><td>-0.25</td><td>0.00</td><td>-0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>线条 6</td><td>-0.10</td><td>-0.25</td><td>2.00</td><td>-0.50</td><td><strong style="color:#C6293E">FAIL</strong></td><td>width_delta=2.00px &gt; 1.50px; max_edge_delta=1.50px &gt; 1.25px</td></tr><tr><td>线条 5</td><td>-0.10</td><td>-0.25</td><td>2.00</td><td>-0.50</td><td><strong style="color:#C6293E">FAIL</strong></td><td>width_delta=2.00px &gt; 1.50px; max_edge_delta=1.50px &gt; 1.25px</td></tr><tr><td>线条 4</td><td>0.00</td><td>-0.25</td><td>0.00</td><td>-0.50</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr><tr><td>线条</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td><td></td></tr></table><h3>组内关系门禁</h3><table><tr><th>关系</th><th>原稿差值</th><th>实现差值</th><th>偏差</th><th>结果</th></tr><tr><td>title tab center</td><td>1.0815</td><td>0.0558</td><td>1.0257</td><td><strong style="color:#C6293E">FAIL</strong></td></tr><tr><td>first name detail left</td><td>0.5</td><td>0.5</td><td>0.0</td><td><strong style="color:#137A52">PASS</strong></td></tr><tr><td>system titles left</td><td>0.0</td><td>0.5</td><td>0.5</td><td><strong style="color:#137A52">PASS</strong></td></tr><tr><td>fold icon text center</td><td>-0.4739</td><td>-0.5015</td><td>0.0276</td><td><strong style="color:#137A52">PASS</strong></td></tr><tr><td>fold text arrow center</td><td>-0.6541</td><td>-0.9568</td><td>0.3027</td><td><strong style="color:#137A52">PASS</strong></td></tr></table><h3>颜色采样门禁</h3><table><tr><th>采样</th><th>原稿 RGB</th><th>实现 RGB</th><th>最大通道偏差</th><th>结果</th></tr><tr><td>页面暖白背景</td><td>[255.0, 253.0, 249.0]</td><td>[255.0, 253.0, 249.0]</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td></tr><tr><td>筛选条底色</td><td>[253.4, 253.4, 253.95]</td><td>[253.39, 253.11, 252.57]</td><td>1.38</td><td><strong style="color:#137A52">PASS</strong></td></tr><tr><td>折叠栏底色</td><td>[255.0, 253.0, 249.0]</td><td>[255.0, 253.0, 249.0]</td><td>0.00</td><td><strong style="color:#137A52">PASS</strong></td></tr><tr><td>导航面板底色</td><td>[247.25, 245.36, 243.39]</td><td>[250.32, 249.28, 244.45]</td><td>3.92</td><td><strong style="color:#137A52">PASS</strong></td></tr></table></section></main></body></html>

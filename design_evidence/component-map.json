@@ -1,0 +1,54 @@
+{
+  "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+  "version_id": "18f1a6ed-585a-4b77-801b-7a9d5e726810",
+  "design_id": "a4eadc40-fbd6-4aa6-a490-5fa2139ac958",
+  "canvas": {
+    "width": 375,
+    "height": 812
+  },
+  "source_units_per_flutter_logical_pixel": 1,
+  "reason_for_scale": "User specifies a 375px reference viewport. Source canvas is verified at 375x812; thumbnail dimensions and export density are not layout units.",
+  "components": [
+    {
+      "widget": "LoginProviderButton",
+      "state": "default",
+      "variants": [
+        {
+          "provider": "wechat",
+          "container": "0B63C1CF-9205-44B7-8051-F2E247C6C7D6",
+          "text": "CBE8C3DC-9908-4A04-9AA2-584E54DC536C",
+          "icon": "B6CEFC4B-7D4B-4BF9-8042-9DE94A41D483:image"
+        },
+        {
+          "provider": "qq",
+          "container": "36055850-68FE-41E1-BFF2-83302A65F5B9",
+          "text": "E4003A3F-48CC-4575-BA9C-04D254A23751",
+          "icon": "32E9A67E-8A39-4F22-A84D-5E80460ECED6:image"
+        },
+        {
+          "provider": "phone",
+          "container": "46E0F6BC-6848-4C99-894E-C5215F09D1A3",
+          "text": "86E009FB-E7B9-410E-9808-7677FE42A822",
+          "icon": "632B029C-5096-4305-8A15-64A1544A6DBE:image"
+        },
+        {
+          "provider": "apple",
+          "container": "B48BE123-B9B6-4D06-B386-D3A897D1AA79",
+          "text": "F6AC0250-7B39-4787-895C-44D7673A3C62",
+          "icon": "08614481-B2F6-444C-BBF8-807100DD2114:image"
+        }
+      ]
+    },
+    {
+      "widget": "AgreementConsent",
+      "state": "unchecked",
+      "text": "EF5E9082-F944-4A48-A406-B97433DC450F",
+      "icon": "7B3C3E6B-61A9-4B60-8E1D-60B75C3271A2:image"
+    }
+  ],
+  "known_limits": [
+    "Only default button and unchecked agreement states are grounded.",
+    "Background blur radius conversion needs engine-specific calibration; geometry and source values are preserved.",
+    "Native test renderer and web renderer are checked separately; pixel metrics are diagnostic, not a pass percentage."
+  ]
+}

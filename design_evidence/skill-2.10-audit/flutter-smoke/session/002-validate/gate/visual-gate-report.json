@@ -1,0 +1,211 @@
+{
+  "contract": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/contract.json",
+  "contract_sha256": "6e0c3e9ae2a862a19890bb8ebf27f718bccdba1f00ffcc14fc03a3faf8e40549",
+  "skill_version": "2.10.0",
+  "coverage": {
+    "effect_obligations": 0,
+    "implementation_decisions": 4,
+    "unaccounted_visible_nodes": 0,
+    "nodes": 4,
+    "covered": 4,
+    "exceptions": []
+  },
+  "environment": {
+    "renderer": "Flutter widget test",
+    "renderer_version": "3.47.7 / deb287481e3ce9468f3434937ced4240a70539ca",
+    "platform": "macOS arm64",
+    "locale": "en",
+    "state": "synthetic-static",
+    "text_scale": 1
+  },
+  "exclusions": [],
+  "excluded_fraction": 0.0,
+  "reference": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/reference.png",
+  "render_scale": 2.0,
+  "reference_preview": "reference.png",
+  "passed": false,
+  "candidates": {
+    "flutter": {
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.10-audit/flutter-smoke/session/002-validate/render.png",
+      "preview": "1-flutter-candidate.png",
+      "passed": false,
+      "regions": {
+        "whole": {
+          "label": "画布",
+          "rect": [
+            0,
+            0,
+            375,
+            812
+          ],
+          "metrics": {
+            "compared_pixels": 1218000,
+            "total_pixels": 1218000,
+            "mae": 0.0893,
+            "p95_max_channel": 0.0
+          },
+          "passed": true,
+          "failures": []
+        }
+      },
+      "features": {
+        "icon": {
+          "label": "icon",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 4.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 4.0,
+            "ink_ratio": 1.0,
+            "mask_iou_loss": 0.33333333333333337
+          },
+          "failures": [
+            "center_y_delta=4.00px > 1.00px",
+            "max_edge_delta=4.00px > 2.00px",
+            "mask_iou_loss=0.3333 > 0.2000"
+          ],
+          "reference": {
+            "bbox": [
+              20.0,
+              20.0,
+              20.0,
+              20.0
+            ],
+            "center": [
+              29.75,
+              29.75
+            ],
+            "ink_pixels": 1600
+          },
+          "actual": {
+            "bbox": [
+              20.0,
+              24.0,
+              20.0,
+              20.0
+            ],
+            "center": [
+              29.75,
+              33.75
+            ],
+            "ink_pixels": 1600
+          }
+        },
+        "heading": {
+          "label": "heading",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              60.0,
+              20.0,
+              100.0,
+              20.0
+            ],
+            "center": [
+              109.75,
+              29.75
+            ],
+            "ink_pixels": 8000
+          },
+          "actual": {
+            "bbox": [
+              60.0,
+              20.0,
+              100.0,
+              20.0
+            ],
+            "center": [
+              109.75,
+              29.75
+            ],
+            "ink_pixels": 8000
+          }
+        },
+        "cta": {
+          "label": "cta",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              16.0,
+              714.0,
+              343.0,
+              50.0
+            ],
+            "center": [
+              187.25,
+              738.75
+            ],
+            "ink_pixels": 68600
+          },
+          "actual": {
+            "bbox": [
+              16.0,
+              714.0,
+              343.0,
+              50.0
+            ],
+            "center": [
+              187.25,
+              738.75
+            ],
+            "ink_pixels": 68600
+          }
+        }
+      },
+      "relations": {
+        "row": {
+          "label": "图文行",
+          "reference_delta": 0.0,
+          "actual_delta": 4.0,
+          "error": 4.0,
+          "passed": false
+        }
+      },
+      "colors": {
+        "surface": {
+          "label": "白底",
+          "rect": [
+            184.5,
+            403.0,
+            6,
+            6
+          ],
+          "reference_rgb": [
+            255.0,
+            255.0,
+            255.0
+          ],
+          "actual_rgb": [
+            255.0,
+            255.0,
+            255.0
+          ],
+          "max_channel_delta": 0.0,
+          "passed": true
+        }
+      },
+      "overlay": "1-flutter-alignment-overlay.png"
+    }
+  },
+  "status": "FAIL"
+}

@@ -1,0 +1,535 @@
+{
+  "status": "complete",
+  "assets": [
+    {
+      "asset_id": "1139571F-9039-4B97-BAB3-34BBBC0F5279:image",
+      "node_id": "1139571F-9039-4B97-BAB3-34BBBC0F5279",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 52,
+        "height": 68
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 52,
+        "height": 68
+      },
+      "frame_count": 1,
+      "sha256": "ef34aa7f7f4726124349604090c274e92b3c641141fca975076814a49e90e1f3",
+      "bytes": 2336,
+      "relative_path": "assets/4ce502bbb85ac0e705ae32bf59df17eee1feaac3f6d184a75344aaa09c39bb87.png",
+      "effective_density": {
+        "x": 4.333333333333333,
+        "y": 4.579327238749448
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "1139571F-9039-4B97-BAB3-34BBBC0F5279:image",
+      "original_variant_id": "v-a7b425d7baa5e552af43ef0a",
+      "requested_preference": "original",
+      "selected_variant_id": "v-a7b425d7baa5e552af43ef0a",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null
+    },
+    {
+      "asset_id": "CDF57466-17E1-4A2F-9A26-45203ACA85AF:image",
+      "node_id": "CDF57466-17E1-4A2F-9A26-45203ACA85AF",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 52,
+        "height": 68
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 1,
+        "y": 1,
+        "width": 51,
+        "height": 66
+      },
+      "frame_count": 1,
+      "sha256": "405d4f4d804eb4dd2d8f4e0c075732399834c8c7864d3b87816527e552d169d9",
+      "bytes": 2329,
+      "relative_path": "assets/f6d85e26334465a730d9b10d9e245094f3bb3b98262e4e9d43b5779da992896d.png",
+      "effective_density": {
+        "x": 4.333333333333333,
+        "y": 4.579327238749448
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "CDF57466-17E1-4A2F-9A26-45203ACA85AF:image",
+      "original_variant_id": "v-a672aef52e5d4ad23ef7ad32",
+      "requested_preference": "original",
+      "selected_variant_id": "v-a672aef52e5d4ad23ef7ad32",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null
+    },
+    {
+      "asset_id": "EC866B95-3D9C-45B4-93B1-44F23B0C270E:image",
+      "node_id": "EC866B95-3D9C-45B4-93B1-44F23B0C270E",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 108,
+        "height": 80
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 107,
+        "height": 80
+      },
+      "frame_count": 1,
+      "sha256": "9561006816d048e39156235e06bdce5d29eaf31c714d0c5065c15b1d7896afdf",
+      "bytes": 3406,
+      "relative_path": "assets/eb9b1d88520c73841df2e22cb48bc13afe7696352adfc5138a4ea78b2aef9b7b.png",
+      "effective_density": {
+        "x": 4.153846153846154,
+        "y": 4.444444444444445
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "EC866B95-3D9C-45B4-93B1-44F23B0C270E:image",
+      "original_variant_id": "v-17d03e9861af293d94bb006b",
+      "requested_preference": "original",
+      "selected_variant_id": "v-17d03e9861af293d94bb006b",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null
+    },
+    {
+      "asset_id": "6A8F5D20-EAB3-4AF9-BE13-2717D76347DF:image",
+      "node_id": "6A8F5D20-EAB3-4AF9-BE13-2717D76347DF",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 84,
+        "height": 64
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 1,
+        "y": 1,
+        "width": 82,
+        "height": 62
+      },
+      "frame_count": 1,
+      "sha256": "6279f3cce3370c585dc93221eb8efb00a6ab4318074e732f88e969530b55cc32",
+      "bytes": 2578,
+      "relative_path": "assets/365fcb5cb9336213dcabe3bfcce0af04bdefc504800d6721533ed78ddd64712a.png",
+      "effective_density": {
+        "x": 4.421052631578948,
+        "y": 4.571428571428571
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "6A8F5D20-EAB3-4AF9-BE13-2717D76347DF:image",
+      "original_variant_id": "v-e424851716e7f45313cd313d",
+      "requested_preference": "original",
+      "selected_variant_id": "v-e424851716e7f45313cd313d",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null
+    },
+    {
+      "asset_id": "C3BF8887-0E87-4278-9E03-86771E072469:image",
+      "node_id": "C3BF8887-0E87-4278-9E03-86771E072469",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 92,
+        "height": 92
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 92,
+        "height": 92
+      },
+      "frame_count": 1,
+      "sha256": "26c71aa8607956dae6e8f1ecdd2f8654eff3318c0a1ce83657540a1339f8aef3",
+      "bytes": 4545,
+      "relative_path": "assets/e4bde104171cbf1a9335ad95ec8e6f04861f56d910ebcf93913091bef6895d4e.png",
+      "effective_density": {
+        "x": 4.03507775790313,
+        "y": 4.020950902441242
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "C3BF8887-0E87-4278-9E03-86771E072469:image",
+      "original_variant_id": "v-3320a25e2062c29f9b5c375d",
+      "requested_preference": "original",
+      "selected_variant_id": "v-3320a25e2062c29f9b5c375d",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null
+    },
+    {
+      "asset_id": "65FD3456-012E-4C8E-A8A0-AA3A58E03BB6:image",
+      "node_id": "65FD3456-012E-4C8E-A8A0-AA3A58E03BB6",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 72,
+        "height": 72
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 72,
+        "height": 72
+      },
+      "frame_count": 1,
+      "sha256": "8f1363a3568568a9166fb646c8b1a4f383c81039132dcc4c613efada79e1d876",
+      "bytes": 3547,
+      "relative_path": "assets/cfcb5cb661dba2406f4f6b4d4baf0c947a1171632d214e5da56e1519c7ac8c63.png",
+      "effective_density": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "65FD3456-012E-4C8E-A8A0-AA3A58E03BB6:image",
+      "original_variant_id": "v-ae8384fc6f9c5c561d414dd1",
+      "requested_preference": "original",
+      "selected_variant_id": "v-ae8384fc6f9c5c561d414dd1",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null
+    },
+    {
+      "asset_id": "7EFA4AD4-6BDF-4E18-8C15-1488D8096FC1:image",
+      "node_id": "7EFA4AD4-6BDF-4E18-8C15-1488D8096FC1",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 100,
+        "height": 84
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 84
+      },
+      "frame_count": 1,
+      "sha256": "1e2d661d5f7a80d72cdcf5b8b7886ce171bb3f8a6f2dd988b6a86859f915046e",
+      "bytes": 3857,
+      "relative_path": "assets/119269dd3094426a4c2894248e3066907234bfa620f6febfefad39849fdde4fd.png",
+      "effective_density": {
+        "x": 4.545454545454546,
+        "y": 4.666666666666667
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "7EFA4AD4-6BDF-4E18-8C15-1488D8096FC1:image",
+      "original_variant_id": "v-ae41128b7650021b433006c4",
+      "requested_preference": "original",
+      "selected_variant_id": "v-ae41128b7650021b433006c4",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null
+    },
+    {
+      "asset_id": "C9966A59-99CD-4D83-9AD0-6933BFD0EA34:image",
+      "node_id": "C9966A59-99CD-4D83-9AD0-6933BFD0EA34",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 80,
+        "height": 16
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 16
+      },
+      "frame_count": 1,
+      "sha256": "accdfaa9f89927916f2c40f38584c350e90c836aadc58a4bb93612ea4d08ef60",
+      "bytes": 552,
+      "relative_path": "assets/11ed38326abaa866cb04a777b29f87ed61d8883548f59cd4dbb3c7a58a341354.png",
+      "effective_density": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "C9966A59-99CD-4D83-9AD0-6933BFD0EA34:image",
+      "original_variant_id": "v-1f204bac22cf1959fe41c212",
+      "requested_preference": "original",
+      "selected_variant_id": "v-1f204bac22cf1959fe41c212",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null
+    },
+    {
+      "asset_id": "5B85F55F-480C-431A-B4FE-0D57A9CAA592:image",
+      "node_id": "5B85F55F-480C-431A-B4FE-0D57A9CAA592",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 32,
+        "height": 56
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 32,
+        "height": 56
+      },
+      "frame_count": 1,
+      "sha256": "ce658bb3463e123cf3f63d8664c6f78dac2a6deeb2f764ba87366841d78d74db",
+      "bytes": 626,
+      "relative_path": "assets/01045e724ac333aaf7960b181f0dbe64b7cfa8995df8e32f04d8f0a44fb067c5.png",
+      "effective_density": {
+        "x": 5.333333333333333,
+        "y": 4.666666666666667
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "5B85F55F-480C-431A-B4FE-0D57A9CAA592:image",
+      "original_variant_id": "v-d8bf0fa57961a7322bf87a62",
+      "requested_preference": "original",
+      "selected_variant_id": "v-d8bf0fa57961a7322bf87a62",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null
+    },
+    {
+      "asset_id": "A0DA8B25-F14D-40A7-A25E-BB3BF99B22C4:image",
+      "node_id": "A0DA8B25-F14D-40A7-A25E-BB3BF99B22C4",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 96,
+        "height": 96
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 4,
+        "y": 4,
+        "width": 88,
+        "height": 88
+      },
+      "frame_count": 1,
+      "sha256": "d986ab4249fdc9751c7decae030873ff065d1c311bbf93bc7a9df87a5ba9e4ec",
+      "bytes": 4492,
+      "relative_path": "assets/8c5be3f7395e68ec561136eac626989e6f73656ae874d2df8ae94331140c39b8.png",
+      "effective_density": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "A0DA8B25-F14D-40A7-A25E-BB3BF99B22C4:image",
+      "original_variant_id": "v-8c12670228527e349ebb2e34",
+      "requested_preference": "original",
+      "selected_variant_id": "v-8c12670228527e349ebb2e34",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null
+    },
+    {
+      "asset_id": "22F37677-69E6-413B-9800-AD33676BEEF5:image",
+      "node_id": "22F37677-69E6-413B-9800-AD33676BEEF5",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 96,
+        "height": 88
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 96,
+        "height": 88
+      },
+      "frame_count": 1,
+      "sha256": "4f1dee6ebb7047856060dad88500f279f4edcc5c3f152d9a1b8e236180418db6",
+      "bytes": 3041,
+      "relative_path": "assets/ac8d19b350ed3a4b8212a82d1ffc1180cda43c77e688527793ceb461c1a2f318.png",
+      "effective_density": {
+        "x": 4.8,
+        "y": 4.4
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "22F37677-69E6-413B-9800-AD33676BEEF5:image",
+      "original_variant_id": "v-c120a1ecf330cf88befb592e",
+      "requested_preference": "original",
+      "selected_variant_id": "v-c120a1ecf330cf88befb592e",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null
+    },
+    {
+      "asset_id": "A17B4782-E31F-49C6-9872-73BCCCFAF1CE:image",
+      "node_id": "A17B4782-E31F-49C6-9872-73BCCCFAF1CE",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 56,
+        "height": 56
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 56,
+        "height": 56
+      },
+      "frame_count": 1,
+      "sha256": "7f3d55cb21fef78fb197d2d71f08ab6a00819f66179f9e9df01d09f7f0189d9f",
+      "bytes": 2643,
+      "relative_path": "assets/08fca307478b8e93d16bd790ce8dd5fae2d49445adeb780644a9fd8db2e523a4.png",
+      "effective_density": {
+        "x": 0.3684210526315789,
+        "y": 0.07446808510638298
+      },
+      "resolution_limited": true,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "A17B4782-E31F-49C6-9872-73BCCCFAF1CE:image",
+      "original_variant_id": "v-c2688f9c781cb7a82240264f",
+      "requested_preference": "original",
+      "selected_variant_id": "v-c2688f9c781cb7a82240264f",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null
+    },
+    {
+      "asset_id": "5114794C-0A09-45AB-B591-278037E9EF06:image",
+      "node_id": "5114794C-0A09-45AB-B591-278037E9EF06",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 76,
+        "height": 280
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 73,
+        "height": 280
+      },
+      "frame_count": 1,
+      "sha256": "df5c6d9b0987ecebf75c147be342373f0a11d3b632817b27159ba12d5a0c4020",
+      "bytes": 10169,
+      "relative_path": "assets/71a71135b57da5d61e28735d476bf3400c6ddfee9dcafadb7e4bdfa6d94cc839.png",
+      "effective_density": {
+        "x": 4.713366638372178,
+        "y": 4.000000000000104
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "5114794C-0A09-45AB-B591-278037E9EF06:image",
+      "original_variant_id": "v-86add12721721afb8c5d9113",
+      "requested_preference": "original",
+      "selected_variant_id": "v-86add12721721afb8c5d9113",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null
+    },
+    {
+      "asset_id": "67548D3B-BC03-40CB-B6C2-724FEEA4FE16:image",
+      "node_id": "67548D3B-BC03-40CB-B6C2-724FEEA4FE16",
+      "kind": "exported_asset",
+      "format": "png",
+      "is_vector": false,
+      "actual_pixel_size": {
+        "width": 792,
+        "height": 280
+      },
+      "has_alpha": true,
+      "has_transparency": true,
+      "content_bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 792,
+        "height": 280
+      },
+      "frame_count": 1,
+      "sha256": "e1f1af44127bf5c90430e9229f738b76b404de384e67c07f510f6b4031604e13",
+      "bytes": 180330,
+      "relative_path": "assets/ab6a6c0fef0982c778ba7a079fca62ed29f885397c30df3ec1d4dd13451737e7.png",
+      "effective_density": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "resolution_limited": false,
+      "target_dpr": 4.0,
+      "cached": false,
+      "base_asset_id": "67548D3B-BC03-40CB-B6C2-724FEEA4FE16:image",
+      "original_variant_id": "v-871aab29ec871533106b893f",
+      "requested_preference": "original",
+      "selected_variant_id": "v-871aab29ec871533106b893f",
+      "selected_format_hint": null,
+      "selected_source_field": "image.imageUrl",
+      "selection_fallback": null
+    }
+  ],
+  "failed": [],
+  "counts": {
+    "requested": 14,
+    "succeeded": 14,
+    "failed": 0,
+    "cached": 0
+  },
+  "manifest_path": "manifest.json",
+  "snapshot_id": "4c1aaffb700882fdac4b8c53752b2b88",
+  "design_id": "4761ee83-f041-4682-a189-01078d6d96e4",
+  "resolved_version": "2d5f61f5-e46d-4412-9f7b-98359416f994",
+  "bundle_id": "1144eaa8673d12084463169460ea3d80"
+}

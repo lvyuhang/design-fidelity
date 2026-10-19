@@ -1,0 +1,23 @@
+{
+  "name": "1备份20",
+  "run_dir": "run",
+  "scope": "page",
+  "evidence": [
+    "normalized-source/region-01.json",
+    "normalized-source/region-02.json",
+    "normalized-source/region-03.json",
+    "normalized-source/region-04.json"
+  ],
+  "reference": "reference-4x.png",
+  "manifest": "source-bundle/install-receipt.json",
+  "font_map": "project-font-map.json",
+  "spec": "reviewed-spec-r3.json",
+  "contract": "visual-contract-r3.json",
+  "app": "../../flutter_ui_components",
+  "test": "test/backup_20_render_test.dart",
+  "output_env": "BACKUP_20_RENDER_OUTPUT",
+  "analyze": [
+    "lib/experiments/backup_20_page.dart",
+    "test/backup_20_render_test.dart"
+  ]
+}

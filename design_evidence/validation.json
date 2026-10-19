@@ -1,0 +1,106 @@
+{
+  "snapshot_id": "ed07411fb68b9878b1395ab190b98915",
+  "version_id": "18f1a6ed-585a-4b77-801b-7a9d5e726810",
+  "source_canvas": [
+    375,
+    812
+  ],
+  "test_raster_scale": 4,
+  "method": "Unscaled source PNG versus Flutter test-engine PNG; RGB absolute error in 0–255 channels. No acceptance percentage is inferred.",
+  "limitations": [
+    "This is a native Flutter test-engine comparison; the browser is also visually checked separately.",
+    "Font antialiasing, gradient rounding and blur kernels can differ between Sketch and Flutter."
+  ],
+  "fixtures": {
+    "buttons": {
+      "pixel_size": [
+        1308,
+        1112
+      ],
+      "source_sha256": "d435854dee8dbb46b0e3810a89a0e4e1d05f441fae6ae1c7e04e1171ac0cd9c7",
+      "render_sha256": "edb6cbe537bde6544431870ce8a18f2db6b15b1dbd93e15417244b612f7295f8",
+      "mean_abs_rgb_0_255": 0.73,
+      "p95_max_channel_abs": 2.0,
+      "text_ink_bounds": [
+        {
+          "provider": "wechat",
+          "source": [
+            2,
+            14,
+            219,
+            65
+          ],
+          "flutter": [
+            1,
+            13,
+            220,
+            65
+          ],
+          "max_boundary_delta_in_source_pixels": 0.25
+        },
+        {
+          "provider": "qq",
+          "source": [
+            2,
+            14,
+            193,
+            65
+          ],
+          "flutter": [
+            2,
+            13,
+            194,
+            65
+          ],
+          "max_boundary_delta_in_source_pixels": 0.25
+        },
+        {
+          "provider": "phone",
+          "source": [
+            3,
+            14,
+            275,
+            65
+          ],
+          "flutter": [
+            2,
+            13,
+            276,
+            65
+          ],
+          "max_boundary_delta_in_source_pixels": 0.25
+        },
+        {
+          "provider": "apple",
+          "source": [
+            3,
+            14,
+            219,
+            65
+          ],
+          "flutter": [
+            3,
+            13,
+            220,
+            65
+          ],
+          "max_boundary_delta_in_source_pixels": 0.25
+        }
+      ],
+      "fill_patch": {
+        "mean_abs_rgb_0_255": 0.0572,
+        "p95_max_channel_abs": 1.0
+      }
+    },
+    "agreement": {
+      "pixel_size": [
+        1340,
+        208
+      ],
+      "source_sha256": "80d5c5f89b336a02deff91de394fc1a7f493994e924ad15bfe5a8d2f5c2db2b1",
+      "render_sha256": "b9e1a07cf96da45fe4f16e4a3c78e20d94aad7f23f5b7dbd41084af00e8e1bc7",
+      "mean_abs_rgb_0_255": 2.2866,
+      "p95_max_channel_abs": 12.0
+    }
+  }
+}

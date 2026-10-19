@@ -1,0 +1,54 @@
+{
+  "experiment": "social-components-controlled-reconstruction",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "implementation_file": "flutter_ui_components/lib/experiments/social_sol56.dart",
+  "allowed_inputs": [
+    "design_evidence/feed-source.json",
+    "design_evidence/comments-source.json",
+    "design_evidence/requested-resources.json",
+    "design_evidence/preview-media-manifest.json",
+    "design_evidence/reference-feed-stage-4x.png",
+    "design_evidence/reference-comments-4x.png",
+    "flutter_ui_components/assets/lanhu/feed/install-receipt.json",
+    "flutter_ui_components/assets/lanhu/comments/install-receipt.json",
+    "flutter_ui_components/assets/fixtures/feed-photo.png",
+    "flutter_ui_components/assets/fixtures/feed-avatar.png",
+    "flutter_ui_components/assets/fixtures/comment-avatar.png",
+    "flutter_ui_components/assets/fixtures/reply-avatar.png",
+    "flutter_ui_components/pubspec.yaml"
+  ],
+  "actual_inputs_read": [
+    "design_evidence/feed-source.json",
+    "design_evidence/comments-source.json",
+    "design_evidence/requested-resources.json",
+    "design_evidence/preview-media-manifest.json",
+    "design_evidence/reference-feed-stage-4x.png",
+    "design_evidence/reference-comments-4x.png",
+    "flutter_ui_components/assets/lanhu/feed/install-receipt.json",
+    "flutter_ui_components/assets/lanhu/comments/install-receipt.json",
+    "flutter_ui_components/assets/fixtures/feed-photo.png",
+    "flutter_ui_components/assets/fixtures/feed-avatar.png",
+    "flutter_ui_components/assets/fixtures/comment-avatar.png",
+    "flutter_ui_components/assets/fixtures/reply-avatar.png",
+    "flutter_ui_components/pubspec.yaml"
+  ],
+  "resource_gaps": [
+    {
+      "component": "feed",
+      "resources": ["feed-photo.png", "feed-avatar.png"],
+      "handling": "Used the explicitly allowed preview-crop fixtures because original downloadable photo and avatar bitmaps were absent. The photo fixture includes the baked image-count badge."
+    },
+    {
+      "component": "comments",
+      "resources": ["comment-avatar.png", "reply-avatar.png"],
+      "handling": "Used the explicitly allowed preview-crop fixtures because original downloadable avatar bitmaps were absent; all comment text, hierarchy, controls, and mixed-color @momo text are native Flutter."
+    }
+  ],
+  "existing_implementation_inspected": false,
+  "flutter_rendered": false,
+  "screenshots_created": false,
+  "comparisons_run": false,
+  "visual_corrections": 0,
+  "state": "implemented-before-first-render"
+}

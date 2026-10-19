@@ -1,0 +1,6725 @@
+{
+  "status": "PREPARED_FOR_REVIEW",
+  "scope": "source preparation only; proposals are not approved implementation or visual acceptance",
+  "snapshot_id": "96a01f5f2335227991eee0bc659d9afa",
+  "resolved_version": "12393b6b-5467-4fbf-8701-122c1702dd6d",
+  "canvas": [
+    375,
+    812
+  ],
+  "render_scale": 4.0,
+  "source_nodes": 229,
+  "export_origin": [
+    0,
+    0
+  ],
+  "origin_anchor_nodes": [
+    "FDEB1A50-248C-47D0-8CDF-BF900B5DC10F"
+  ],
+  "assets": [
+    {
+      "asset_id": "9A4A0A90-222B-4071-B4D8-2D3E9A4BC19A:image",
+      "node_id": "9A4A0A90-222B-4071-B4D8-2D3E9A4BC19A",
+      "layout_rect": [
+        0,
+        0,
+        375,
+        161
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/c6089856071386fe647cbc150548bc80aaf9aa5218c21af262b4f98763ef2d03.png",
+      "sha256": "9ca9bc42c11dde41edbd91c7c8bd67bbf761a9615bd7935a47c9546ceddc441c",
+      "pixel_size": [
+        1500,
+        644
+      ],
+      "export_rect": [
+        0.0,
+        0.0,
+        375,
+        161
+      ],
+      "layout_differs_from_export": false,
+      "alpha_ink_rect": [
+        0.0,
+        0.0,
+        232.25,
+        159.25
+      ]
+    },
+    {
+      "asset_id": "5DAE51BC-2859-41F6-9293-AA0F51C6BA0C:image",
+      "node_id": "5DAE51BC-2859-41F6-9293-AA0F51C6BA0C",
+      "layout_rect": [
+        329.181818181818,
+        57.18181818181819,
+        22.666666666666515,
+        22.666666666666686
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/8be7fd14ced7105673f3b677fffbc5a48ddcac5ffaa577daddea58966e23aee2.png",
+      "sha256": "92ffb29d5d60f2d629f5c80dc91c93346980970607e01e97dab9f93af884897e",
+      "pixel_size": [
+        92,
+        92
+      ],
+      "export_rect": [
+        329.0,
+        57.0,
+        23,
+        23
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        333.0,
+        62.0,
+        15.0,
+        15.0
+      ]
+    },
+    {
+      "asset_id": "3BBABDAA-CF61-4BDE-941D-165810B9E2C7:image",
+      "node_id": "3BBABDAA-CF61-4BDE-941D-165810B9E2C7",
+      "layout_rect": [
+        323,
+        51,
+        34,
+        34
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/2ffb24c04b926136c1359a5b396ea7d92bd558d617166288d6a942262ccba32d.png",
+      "sha256": "24ad7a34bb03f371aae9a47aa32d0990ba073203fd033c93b7172793ea5f0326",
+      "pixel_size": [
+        176,
+        176
+      ],
+      "export_rect": [
+        318.0,
+        47.0,
+        44,
+        44
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        318.5,
+        47.5,
+        43.0,
+        43.0
+      ]
+    },
+    {
+      "asset_id": "7A9B0FF7-C101-4235-8348-E5AFD4793E23:image",
+      "node_id": "7A9B0FF7-C101-4235-8348-E5AFD4793E23",
+      "layout_rect": [
+        205,
+        761,
+        12,
+        12
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/767554b1a363f996d065ded1148af9b7697640f1abd769fa8a147e0329343d52.png",
+      "sha256": "43408cb100fa47537c7a85f24491a2c34d961dfb18c02a65a90e07d98541c25f",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "export_rect": [
+        205.0,
+        761.0,
+        12,
+        12
+      ],
+      "layout_differs_from_export": false,
+      "alpha_ink_rect": [
+        206.0,
+        761.5,
+        9.0,
+        10.75
+      ]
+    },
+    {
+      "asset_id": "B160912A-FD89-4231-A735-9587882452EF:image",
+      "node_id": "B160912A-FD89-4231-A735-9587882452EF",
+      "layout_rect": [
+        30,
+        760,
+        12,
+        12
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/a08a70f5ad241419e7b3cd51c872334a072b59e3ea611ef2a08958f7b2d96d94.png",
+      "sha256": "946295f91f7b58f1cb419bc1389183b91a6f116845defb73e9c3e15b5b617b42",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "export_rect": [
+        30.0,
+        760.0,
+        12,
+        12
+      ],
+      "layout_differs_from_export": false,
+      "alpha_ink_rect": [
+        30.75,
+        761.25,
+        9.75,
+        9.25
+      ]
+    },
+    {
+      "asset_id": "88F3D345-4828-476C-B1C5-FF4FD79C5483:image",
+      "node_id": "88F3D345-4828-476C-B1C5-FF4FD79C5483",
+      "layout_rect": [
+        28.181818181818016,
+        573.4545454545457,
+        76,
+        14.727272727272748
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/561c13dc2355d5da523dc121e07e14d63801d5a8af8ada753e2dc163d8173d92.png",
+      "sha256": "082014273b710d1dda46c2dcb0283d1c0222aeea0bef606aa7df77aa9c507312",
+      "pixel_size": [
+        308,
+        64
+      ],
+      "export_rect": [
+        28.0,
+        573.0,
+        77,
+        16
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        28.0,
+        573.25,
+        76.25,
+        15.0
+      ]
+    },
+    {
+      "asset_id": "2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8:image",
+      "node_id": "2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8",
+      "layout_rect": [
+        203.18181818181802,
+        573.4545454545457,
+        74,
+        14.727272727272748
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/30a6ad044d0dd4da25e4e0a1f67d35b6bc15b8654b378a82fdebda4d8d6ccd69.png",
+      "sha256": "06999b86b5eb38fd4754ca374c7f3c84a2fcd81676edeaf10a5f938f02fcdf23",
+      "pixel_size": [
+        300,
+        64
+      ],
+      "export_rect": [
+        203.0,
+        573.0,
+        75,
+        16
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        203.0,
+        573.25,
+        74.25,
+        15.0
+      ]
+    },
+    {
+      "asset_id": "840DA636-451F-4CE6-A1F4-0D723FD3C2E3:image",
+      "node_id": "840DA636-451F-4CE6-A1F4-0D723FD3C2E3",
+      "layout_rect": [
+        155.5999999999999,
+        761.4727272727272,
+        16.581818181818107,
+        13.228708133971281
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/e9d4722a7f6a3fffbe66b55d9f1776a70378578641e360d1c6bfe0a15b331ab6.png",
+      "sha256": "756d4036d9e4a95b2daefd451cc06d08caa5efb4ff7d1208bf1daf4fa4d7d3d8",
+      "pixel_size": [
+        72,
+        56
+      ],
+      "export_rect": [
+        155.0,
+        761.0,
+        18,
+        14
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        155.5,
+        761.25,
+        16.75,
+        13.5
+      ]
+    },
+    {
+      "asset_id": "F7083F8D-0E63-490D-8946-26D40886DA91:image",
+      "node_id": "F7083F8D-0E63-490D-8946-26D40886DA91",
+      "layout_rect": [
+        146,
+        751,
+        34.90909090909099,
+        36
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/70affa92411e75fdf3244902573151f19569ade95e05814e17bdc4f66a68ba96.png",
+      "sha256": "bf295c07093c37d20e8059aced874e50fb7fd6dca81de9d1885422ea68356195",
+      "pixel_size": [
+        168,
+        192
+      ],
+      "export_rect": [
+        143.0,
+        751.0,
+        42,
+        48
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        146.0,
+        751.0,
+        35.0,
+        45.75
+      ]
+    },
+    {
+      "asset_id": "2F4829CC-F3E0-4C5D-9CD8-2C75BFAC0091:image",
+      "node_id": "2F4829CC-F3E0-4C5D-9CD8-2C75BFAC0091",
+      "layout_rect": [
+        332.5999999999999,
+        761.4727272727272,
+        16.581818181818107,
+        13.228708133971281
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/4aa817fa300b843e60bfbae21cd0a481f2c567ab8744b2b32f81088c96c267c5.png",
+      "sha256": "756d4036d9e4a95b2daefd451cc06d08caa5efb4ff7d1208bf1daf4fa4d7d3d8",
+      "pixel_size": [
+        72,
+        56
+      ],
+      "export_rect": [
+        332.0,
+        761.0,
+        18,
+        14
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        332.5,
+        761.25,
+        16.75,
+        13.5
+      ]
+    },
+    {
+      "asset_id": "4D3F43B4-8720-42E7-BA8C-794821CFF0D7:image",
+      "node_id": "4D3F43B4-8720-42E7-BA8C-794821CFF0D7",
+      "layout_rect": [
+        323,
+        751,
+        34.90909090909099,
+        36
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/3fc686c8a93c5e549fad9fc11fab8948b292b69fc7b50cf6e34384ff4a75c4da.png",
+      "sha256": "bf295c07093c37d20e8059aced874e50fb7fd6dca81de9d1885422ea68356195",
+      "pixel_size": [
+        168,
+        192
+      ],
+      "export_rect": [
+        320.0,
+        751.0,
+        42,
+        48
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        323.0,
+        751.0,
+        35.0,
+        45.75
+      ]
+    },
+    {
+      "asset_id": "65936BE4-5DBC-40EA-9F8D-7D62008C4683:image",
+      "node_id": "65936BE4-5DBC-40EA-9F8D-7D62008C4683",
+      "layout_rect": [
+        89.85714285714266,
+        743.6666666666666,
+        4.857142857142662,
+        4.666666666666629
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/86b7d5a0d70a485b53fe8f8e7e2a3decabba8cedc6a50f91b3e4941b56ee3a06.png",
+      "sha256": "99779fc8c76a08890a244003c0164222c1796edf18e1ce984363ee8188da671f",
+      "pixel_size": [
+        24,
+        24
+      ],
+      "export_rect": [
+        89.0,
+        743.0,
+        6,
+        6
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        89.75,
+        743.5,
+        5.0,
+        5.0
+      ]
+    },
+    {
+      "asset_id": "920D142B-E9A5-4D80-8D39-9C6798D7A6A8:image",
+      "node_id": "920D142B-E9A5-4D80-8D39-9C6798D7A6A8",
+      "layout_rect": [
+        280.85714285714266,
+        742.6666666666666,
+        4.857142857142662,
+        4.666666666666629
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/fa1c80bf582f3fcf09953cfc2a01c857044c5eae6c0e1c781180073db609d552.png",
+      "sha256": "075f97a59d582de2c252b716531d131ab8a717c553e9adc7968a305edd9d24a1",
+      "pixel_size": [
+        24,
+        24
+      ],
+      "export_rect": [
+        280.0,
+        742.0,
+        6,
+        6
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        280.75,
+        742.5,
+        5.0,
+        5.0
+      ]
+    },
+    {
+      "asset_id": "0522F0CE-376A-433C-9B09-652C21E812C1:image",
+      "node_id": "0522F0CE-376A-433C-9B09-652C21E812C1",
+      "layout_rect": [
+        23.54449462890625,
+        70.00537242233474,
+        26.50701904296875,
+        8.312014852738002
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/73ce0584f10df67493c19438bd632091f66bd03f74c34a9db5a545262aad1d1c.png",
+      "sha256": "2a4c0af819a68f4291de0c8734681ce593cbc743353dbe9dc044f38edde8835e",
+      "pixel_size": [
+        116,
+        52
+      ],
+      "export_rect": [
+        22.0,
+        68.0,
+        29,
+        13
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        22.75,
+        68.0,
+        28.25,
+        12.5
+      ]
+    },
+    {
+      "asset_id": "A3DA70AA-7E4D-4053-980E-B9FFA3FC6187:image",
+      "node_id": "A3DA70AA-7E4D-4053-980E-B9FFA3FC6187",
+      "layout_rect": [
+        15,
+        245,
+        168.5,
+        78
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/c393c0235aadc30fbb3ac3b7db6910574ba829c13496f1822a060c9a0c138ddc.png",
+      "sha256": "6e42e54b0a7b97c1f1ce0fc7c202cce63fafcad2fab32b66499536b72c190640",
+      "pixel_size": [
+        676,
+        312
+      ],
+      "export_rect": [
+        15.0,
+        245.0,
+        169,
+        78
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        15.0,
+        245.0,
+        168.5,
+        78.0
+      ]
+    },
+    {
+      "asset_id": "E6E1BC26-72DE-4BFA-A6FF-075C40B9A2A7:image",
+      "node_id": "E6E1BC26-72DE-4BFA-A6FF-075C40B9A2A7",
+      "layout_rect": [
+        192,
+        245,
+        168.5,
+        78
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/f8dfcc0ed5be8ed59ff197b535099c5ffc14db319c42e191ae385a790254be7c.png",
+      "sha256": "6e42e54b0a7b97c1f1ce0fc7c202cce63fafcad2fab32b66499536b72c190640",
+      "pixel_size": [
+        676,
+        312
+      ],
+      "export_rect": [
+        192.0,
+        245.0,
+        169,
+        78
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        192.0,
+        245.0,
+        168.5,
+        78.0
+      ]
+    },
+    {
+      "asset_id": "802DBE99-2249-46A3-B2BD-A48CA5BB3022:image",
+      "node_id": "802DBE99-2249-46A3-B2BD-A48CA5BB3022",
+      "layout_rect": [
+        205,
+        302,
+        12,
+        12
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/63f80d2262ef7c7e06e79712bbc14c0e7fb2e22be1719f2a9785743f5566e79d.png",
+      "sha256": "43408cb100fa47537c7a85f24491a2c34d961dfb18c02a65a90e07d98541c25f",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "export_rect": [
+        205.0,
+        302.0,
+        12,
+        12
+      ],
+      "layout_differs_from_export": false,
+      "alpha_ink_rect": [
+        206.0,
+        302.5,
+        9.0,
+        10.75
+      ]
+    },
+    {
+      "asset_id": "93F2EA16-F78C-4D5B-BCC2-C5A663C90505:image",
+      "node_id": "93F2EA16-F78C-4D5B-BCC2-C5A663C90505",
+      "layout_rect": [
+        205,
+        534,
+        12,
+        12
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/ad3693e817c97e7567b5f84352a9b03df4b9ca0da228cc1f21dc76e44c2fb8e2.png",
+      "sha256": "43408cb100fa47537c7a85f24491a2c34d961dfb18c02a65a90e07d98541c25f",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "export_rect": [
+        205.0,
+        534.0,
+        12,
+        12
+      ],
+      "layout_differs_from_export": false,
+      "alpha_ink_rect": [
+        206.0,
+        534.5,
+        9.0,
+        10.75
+      ]
+    },
+    {
+      "asset_id": "617EB816-62A2-4887-A623-71F171ED0410:image",
+      "node_id": "617EB816-62A2-4887-A623-71F171ED0410",
+      "layout_rect": [
+        30,
+        301,
+        12,
+        12
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/560c4066bb9fd85761b812cb4e6472975acace31827b688ac84b252d3822c1cb.png",
+      "sha256": "946295f91f7b58f1cb419bc1389183b91a6f116845defb73e9c3e15b5b617b42",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "export_rect": [
+        30.0,
+        301.0,
+        12,
+        12
+      ],
+      "layout_differs_from_export": false,
+      "alpha_ink_rect": [
+        30.75,
+        302.25,
+        9.75,
+        9.25
+      ]
+    },
+    {
+      "asset_id": "51D4528F-19CD-450D-99EA-DA30F90F812C:image",
+      "node_id": "51D4528F-19CD-450D-99EA-DA30F90F812C",
+      "layout_rect": [
+        30,
+        533,
+        12,
+        12
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/e75ccba9b171ce99b0d0fc1ee8660da300d84810184972b1f6027d9b4715f96c.png",
+      "sha256": "946295f91f7b58f1cb419bc1389183b91a6f116845defb73e9c3e15b5b617b42",
+      "pixel_size": [
+        48,
+        48
+      ],
+      "export_rect": [
+        30.0,
+        533.0,
+        12,
+        12
+      ],
+      "layout_differs_from_export": false,
+      "alpha_ink_rect": [
+        30.75,
+        534.25,
+        9.75,
+        9.25
+      ]
+    },
+    {
+      "asset_id": "657ACAF2-961D-4BF7-80AA-89FE7B215DCC:image",
+      "node_id": "657ACAF2-961D-4BF7-80AA-89FE7B215DCC",
+      "layout_rect": [
+        28.181818181818016,
+        107.45454545454561,
+        76,
+        14.727272727272748
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/7a8f8fb8050d792053e6ecd36ba9cdf0e515d507e53971a75a4b4ffe24397158.png",
+      "sha256": "082014273b710d1dda46c2dcb0283d1c0222aeea0bef606aa7df77aa9c507312",
+      "pixel_size": [
+        308,
+        64
+      ],
+      "export_rect": [
+        28.0,
+        107.0,
+        77,
+        16
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        28.0,
+        107.25,
+        76.25,
+        15.0
+      ]
+    },
+    {
+      "asset_id": "667F32D5-D4BD-40F0-85C6-EA0DD47FBC16:image",
+      "node_id": "667F32D5-D4BD-40F0-85C6-EA0DD47FBC16",
+      "layout_rect": [
+        28.181818181818016,
+        339.4545454545456,
+        76,
+        14.727272727272748
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/70d66b7fd8aa84329d97d6c7e94cbce05ba7221d136981719cb6df829b7d2e15.png",
+      "sha256": "082014273b710d1dda46c2dcb0283d1c0222aeea0bef606aa7df77aa9c507312",
+      "pixel_size": [
+        308,
+        64
+      ],
+      "export_rect": [
+        28.0,
+        339.0,
+        77,
+        16
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        28.0,
+        339.25,
+        76.25,
+        15.0
+      ]
+    },
+    {
+      "asset_id": "5B1685B0-FB7D-4C57-8A48-57AAF03E81CB:image",
+      "node_id": "5B1685B0-FB7D-4C57-8A48-57AAF03E81CB",
+      "layout_rect": [
+        209,
+        106.99999999999989,
+        76,
+        14.727272727272748
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/bdae0125558e57df3faab1a9d7c7fcac9acd33307a941f5429bd15cb5d447c99.png",
+      "sha256": "e1d0e25f58c74f4552e3493ac7e138d464225b4cd53a4f8967c2662e585540ff",
+      "pixel_size": [
+        304,
+        60
+      ],
+      "export_rect": [
+        209.0,
+        107.0,
+        76,
+        15
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        209.0,
+        107.0,
+        76.0,
+        14.75
+      ]
+    },
+    {
+      "asset_id": "88A37D58-6B12-4352-99ED-8B2C50D30409:image",
+      "node_id": "88A37D58-6B12-4352-99ED-8B2C50D30409",
+      "layout_rect": [
+        209,
+        338.9999999999999,
+        76,
+        14.727272727272748
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/7ab3f82e591ab62fbc4fc5e94e91cf3f64e1cbfe3f40f4013b5c01a9ec70bc21.png",
+      "sha256": "e1d0e25f58c74f4552e3493ac7e138d464225b4cd53a4f8967c2662e585540ff",
+      "pixel_size": [
+        304,
+        60
+      ],
+      "export_rect": [
+        209.0,
+        339.0,
+        76,
+        15
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        209.0,
+        339.0,
+        76.0,
+        14.75
+      ]
+    },
+    {
+      "asset_id": "33AA626F-0FB5-4931-AD34-321ED4A3E2A0:image",
+      "node_id": "33AA626F-0FB5-4931-AD34-321ED4A3E2A0",
+      "layout_rect": [
+        21,
+        105,
+        18,
+        18
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/c2539d03a2cfb5cf30c38f5c69b6601eb035f5d7a3db3afb9fc5728bc3b71b42.png",
+      "sha256": "afe70b8a34d06a7875453b394755be05e215c5a605c310782f9ca23162a3b4f5",
+      "pixel_size": [
+        72,
+        72
+      ],
+      "export_rect": [
+        21.0,
+        105.0,
+        18,
+        18
+      ],
+      "layout_differs_from_export": false,
+      "alpha_ink_rect": [
+        21.0,
+        105.5,
+        18.0,
+        15.75
+      ]
+    },
+    {
+      "asset_id": "46382DB2-FE36-4A1C-9BD7-74FBDFE30379:image",
+      "node_id": "46382DB2-FE36-4A1C-9BD7-74FBDFE30379",
+      "layout_rect": [
+        21,
+        337,
+        18,
+        18
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/775cca2d1368d8b3bde8cbe614215693e08adc3c62bfcc417126d4b831014034.png",
+      "sha256": "afe70b8a34d06a7875453b394755be05e215c5a605c310782f9ca23162a3b4f5",
+      "pixel_size": [
+        72,
+        72
+      ],
+      "export_rect": [
+        21.0,
+        337.0,
+        18,
+        18
+      ],
+      "layout_differs_from_export": false,
+      "alpha_ink_rect": [
+        21.0,
+        337.5,
+        18.0,
+        15.75
+      ]
+    },
+    {
+      "asset_id": "6E3780C1-5FC0-49F1-BE8A-C38B712A5527:image",
+      "node_id": "6E3780C1-5FC0-49F1-BE8A-C38B712A5527",
+      "layout_rect": [
+        202,
+        105,
+        18,
+        18
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/f0d32b2fb3a2192c512818cda2bd3ad9a2deccd218e4394ba31413c6f87d80c4.png",
+      "sha256": "afe70b8a34d06a7875453b394755be05e215c5a605c310782f9ca23162a3b4f5",
+      "pixel_size": [
+        72,
+        72
+      ],
+      "export_rect": [
+        202.0,
+        105.0,
+        18,
+        18
+      ],
+      "layout_differs_from_export": false,
+      "alpha_ink_rect": [
+        202.0,
+        105.5,
+        18.0,
+        15.75
+      ]
+    },
+    {
+      "asset_id": "5C3B8640-CA32-405C-BE08-4C1B4437603E:image",
+      "node_id": "5C3B8640-CA32-405C-BE08-4C1B4437603E",
+      "layout_rect": [
+        202,
+        337,
+        18,
+        18
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/c7615d5ff2735bbc59fed6468c9575f483dfd8ba0ad697c0d8514f9e9e6e4e32.png",
+      "sha256": "afe70b8a34d06a7875453b394755be05e215c5a605c310782f9ca23162a3b4f5",
+      "pixel_size": [
+        72,
+        72
+      ],
+      "export_rect": [
+        202.0,
+        337.0,
+        18,
+        18
+      ],
+      "layout_differs_from_export": false,
+      "alpha_ink_rect": [
+        202.0,
+        337.5,
+        18.0,
+        15.75
+      ]
+    },
+    {
+      "asset_id": "B8CDD6AE-2FFA-487A-8F4D-E11B79C58FB9:image",
+      "node_id": "B8CDD6AE-2FFA-487A-8F4D-E11B79C58FB9",
+      "layout_rect": [
+        142,
+        281.00000000000006,
+        42,
+        42.043417677305854
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/1e67880a76f002b2da6a57f2673df39516401389845c02a96bf9869502ec4af7.png",
+      "sha256": "3cce0950b574be13b3136d4a4c24f7a0f409e7438ef6a89d5e09fd0b565a7e20",
+      "pixel_size": [
+        168,
+        172
+      ],
+      "export_rect": [
+        142.0,
+        281.0,
+        42,
+        43
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        142.0,
+        281.0,
+        42.0,
+        42.25
+      ]
+    },
+    {
+      "asset_id": "3C021254-152A-46EC-B9E0-BA518AAF230A:image",
+      "node_id": "3C021254-152A-46EC-B9E0-BA518AAF230A",
+      "layout_rect": [
+        319,
+        281,
+        42,
+        42.04341767730591
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/2d27b5eac7d1c05b5c50b0247b336a686c7858aad91959fd202eb327fc72464c.png",
+      "sha256": "3cce0950b574be13b3136d4a4c24f7a0f409e7438ef6a89d5e09fd0b565a7e20",
+      "pixel_size": [
+        168,
+        172
+      ],
+      "export_rect": [
+        319.0,
+        281.0,
+        42,
+        43
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        319.0,
+        281.0,
+        42.0,
+        42.25
+      ]
+    },
+    {
+      "asset_id": "DF7CABE4-F42D-4423-AEBA-0E18EC3775FA:image",
+      "node_id": "DF7CABE4-F42D-4423-AEBA-0E18EC3775FA",
+      "layout_rect": [
+        155.5999999999999,
+        295.4727272727272,
+        16.581818181818107,
+        13.228708133971281
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/0a94a15ee859e0de6e06be5e7dcc9b7702a27dcf51ebefc6bc6894ce1473f727.png",
+      "sha256": "756d4036d9e4a95b2daefd451cc06d08caa5efb4ff7d1208bf1daf4fa4d7d3d8",
+      "pixel_size": [
+        72,
+        56
+      ],
+      "export_rect": [
+        155.0,
+        295.0,
+        18,
+        14
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        155.5,
+        295.25,
+        16.75,
+        13.5
+      ]
+    },
+    {
+      "asset_id": "A8AC7814-9CDF-418C-B9EE-126FFF039ADE:image",
+      "node_id": "A8AC7814-9CDF-418C-B9EE-126FFF039ADE",
+      "layout_rect": [
+        146,
+        285,
+        34.90909090909099,
+        36
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/fb1152167b81352e749ffcd9420506ba21698d47ca6463109ad0f66641bd663a.png",
+      "sha256": "bf295c07093c37d20e8059aced874e50fb7fd6dca81de9d1885422ea68356195",
+      "pixel_size": [
+        168,
+        192
+      ],
+      "export_rect": [
+        143.0,
+        285.0,
+        42,
+        48
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        146.0,
+        285.0,
+        35.0,
+        45.75
+      ]
+    },
+    {
+      "asset_id": "DBB674EE-295F-48B0-970F-BFF0714942C5:image",
+      "node_id": "DBB674EE-295F-48B0-970F-BFF0714942C5",
+      "layout_rect": [
+        155.5999999999999,
+        528.4727272727272,
+        16.581818181818107,
+        13.228708133971281
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/aeb7d1aebd3080e3ef10ac9c7fbf5cdddba300750b3967544122805e44918c0c.png",
+      "sha256": "756d4036d9e4a95b2daefd451cc06d08caa5efb4ff7d1208bf1daf4fa4d7d3d8",
+      "pixel_size": [
+        72,
+        56
+      ],
+      "export_rect": [
+        155.0,
+        528.0,
+        18,
+        14
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        155.5,
+        528.25,
+        16.75,
+        13.5
+      ]
+    },
+    {
+      "asset_id": "CEF50751-2274-4399-B1AA-FE65C2F64A00:image",
+      "node_id": "CEF50751-2274-4399-B1AA-FE65C2F64A00",
+      "layout_rect": [
+        146,
+        518,
+        34.90909090909099,
+        36
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/90b95c96499b28a5cceb96bc1b254d64db7fa7577f3987d97e7de207022e6f7c.png",
+      "sha256": "bf295c07093c37d20e8059aced874e50fb7fd6dca81de9d1885422ea68356195",
+      "pixel_size": [
+        168,
+        192
+      ],
+      "export_rect": [
+        143.0,
+        518.0,
+        42,
+        48
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        146.0,
+        518.0,
+        35.0,
+        45.75
+      ]
+    },
+    {
+      "asset_id": "219FD332-AE52-4C95-82EC-5C059B8EE172:image",
+      "node_id": "219FD332-AE52-4C95-82EC-5C059B8EE172",
+      "layout_rect": [
+        332.5999999999999,
+        295.4727272727272,
+        16.581818181818107,
+        13.228708133971281
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/5cd544212b1cdd90b57f679ec28f6ec0a2514810f6044f1dc653ff7038f7179c.png",
+      "sha256": "756d4036d9e4a95b2daefd451cc06d08caa5efb4ff7d1208bf1daf4fa4d7d3d8",
+      "pixel_size": [
+        72,
+        56
+      ],
+      "export_rect": [
+        332.0,
+        295.0,
+        18,
+        14
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        332.5,
+        295.25,
+        16.75,
+        13.5
+      ]
+    },
+    {
+      "asset_id": "F38ECF0A-E38D-48F8-8C39-BF1DAEA85EC0:image",
+      "node_id": "F38ECF0A-E38D-48F8-8C39-BF1DAEA85EC0",
+      "layout_rect": [
+        323,
+        285,
+        34.90909090909099,
+        36
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/eda08dc65aa052e1cbe811634e13e3fde38c1ad3100b6460b001b6b94d016ae0.png",
+      "sha256": "bf295c07093c37d20e8059aced874e50fb7fd6dca81de9d1885422ea68356195",
+      "pixel_size": [
+        168,
+        192
+      ],
+      "export_rect": [
+        320.0,
+        285.0,
+        42,
+        48
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        323.0,
+        285.0,
+        35.0,
+        45.75
+      ]
+    },
+    {
+      "asset_id": "297C5DCA-81D2-4A4E-AF56-A074C47D1734:image",
+      "node_id": "297C5DCA-81D2-4A4E-AF56-A074C47D1734",
+      "layout_rect": [
+        332,
+        527.0000000000001,
+        18,
+        17.27726527043501
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/e14a3893c448d10749237e54eb449e41da122002b137f592b83fed5f840df501.png",
+      "sha256": "d47e59e6dbb382bc9468be696b70ce9f513525ed32a382ddb4b9fb08d7c0c632",
+      "pixel_size": [
+        72,
+        72
+      ],
+      "export_rect": [
+        332.0,
+        527.0,
+        18,
+        18
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        332.0,
+        527.0,
+        18.0,
+        17.5
+      ]
+    },
+    {
+      "asset_id": "0F0FA3A2-DB0F-46BD-AD1E-FDC4345ABE10:image",
+      "node_id": "0F0FA3A2-DB0F-46BD-AD1E-FDC4345ABE10",
+      "layout_rect": [
+        323,
+        518,
+        34.90909090909099,
+        36
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/5c626bfdff568aa42bab37f29283177bfc19174d1b0bae22b45b61e451d01bf6.png",
+      "sha256": "3bef210fa89982eb627a364884babec80333a412ba32d0e638b9107190477714",
+      "pixel_size": [
+        168,
+        192
+      ],
+      "export_rect": [
+        320.0,
+        518.0,
+        42,
+        48
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        323.0,
+        518.0,
+        35.0,
+        45.75
+      ]
+    },
+    {
+      "asset_id": "B9F93DAB-E64E-44DF-A885-7B0B5CCB3EE3:image",
+      "node_id": "B9F93DAB-E64E-44DF-A885-7B0B5CCB3EE3",
+      "layout_rect": [
+        89.85714285714266,
+        284.6666666666667,
+        4.857142857142662,
+        4.666666666666686
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/4f17bf388de0062505758a3c3811c87b70f568195d22f13e375329f6775bcb92.png",
+      "sha256": "99779fc8c76a08890a244003c0164222c1796edf18e1ce984363ee8188da671f",
+      "pixel_size": [
+        24,
+        24
+      ],
+      "export_rect": [
+        89.0,
+        284.0,
+        6,
+        6
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        89.75,
+        284.5,
+        5.0,
+        5.0
+      ]
+    },
+    {
+      "asset_id": "B0931C98-96CB-451A-BF7D-2FA17C440B2A:image",
+      "node_id": "B0931C98-96CB-451A-BF7D-2FA17C440B2A",
+      "layout_rect": [
+        89.85714285714266,
+        516.6666666666666,
+        4.857142857142662,
+        4.666666666666629
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/85d952f9ae36aea7320f33b16f63986d285ea666986b2df0fd1643024a36011d.png",
+      "sha256": "99779fc8c76a08890a244003c0164222c1796edf18e1ce984363ee8188da671f",
+      "pixel_size": [
+        24,
+        24
+      ],
+      "export_rect": [
+        89.0,
+        516.0,
+        6,
+        6
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        89.75,
+        516.5,
+        5.0,
+        5.0
+      ]
+    },
+    {
+      "asset_id": "D1A49E9B-0C81-422A-B53E-3F83F5BADDBC:image",
+      "node_id": "D1A49E9B-0C81-422A-B53E-3F83F5BADDBC",
+      "layout_rect": [
+        280.85714285714266,
+        283.6666666666667,
+        4.857142857142662,
+        4.666666666666686
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/cf45198cd70ece04d29292104291b0e1e704d8981e1408d3912b053545b15fa1.png",
+      "sha256": "075f97a59d582de2c252b716531d131ab8a717c553e9adc7968a305edd9d24a1",
+      "pixel_size": [
+        24,
+        24
+      ],
+      "export_rect": [
+        280.0,
+        283.0,
+        6,
+        6
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        280.75,
+        283.5,
+        5.0,
+        5.0
+      ]
+    },
+    {
+      "asset_id": "B4B0C0E3-EEE7-49C7-8289-A352413AF69D:image",
+      "node_id": "B4B0C0E3-EEE7-49C7-8289-A352413AF69D",
+      "layout_rect": [
+        280.85714285714266,
+        515.6666666666666,
+        4.857142857142662,
+        4.666666666666629
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/9f24a04977df0662eaf83d354e7ac49bbd8a2874b6639c5c354443f79266d354.png",
+      "sha256": "075f97a59d582de2c252b716531d131ab8a717c553e9adc7968a305edd9d24a1",
+      "pixel_size": [
+        24,
+        24
+      ],
+      "export_rect": [
+        280.0,
+        515.0,
+        6,
+        6
+      ],
+      "layout_differs_from_export": true,
+      "alpha_ink_rect": [
+        280.75,
+        515.5,
+        5.0,
+        5.0
+      ]
+    },
+    {
+      "asset_id": "96B97AB1-436C-4D50-A068-6CBB5A301278:image",
+      "node_id": "96B97AB1-436C-4D50-A068-6CBB5A301278",
+      "layout_rect": [
+        44,
+        742,
+        29,
+        29
+      ],
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/assets/1d3ae3db4f6182b43efb7f001e32fbb6ccda896c5d28881251b2768490bb9b93.png",
+      "sha256": "b2fd15d864712018efbd260aabf406ce8d2acfde69fc2048c6559ca2f5387b40",
+      "pixel_size": [
+        116,
+        116
+      ],
+      "export_rect": [
+        44.0,
+        742.0,
+        29,
+        29
+      ],
+      "layout_differs_from_export": false,
+      "alpha_ink_rect": [
+        47.0,
+        746.0,
+        23.0,
+        22.5
+      ]
+    }
+  ],
+  "fonts": [
+    {
+      "source_family": "PingFangSC-Regular",
+      "weight": 400,
+      "node_ids": [
+        "EC384EEC-3181-4C57-AD2C-BCCA48B25F2A",
+        "9E70D178-BBD1-43ED-9DDC-81E6AC78E710",
+        "904EF4D0-3F2D-4195-B759-E0684F610347",
+        "861A68CE-1349-4D54-8CDE-BC56F46056D5",
+        "EE00DAB6-0FA5-47AF-AC00-FC5D969FEEC1",
+        "9E8CD3AF-2FC7-4A87-9876-DE782F8D3F19",
+        "03162920-B7B7-47C9-ABE2-D4F5898B2379",
+        "6BE60EFB-79D0-4A27-AA88-CF8543E0D96F",
+        "F0D2CF6C-0E3E-495F-9261-F397FCD44815",
+        "993435FE-EAE4-4C9A-988E-F4842A5E8F9B",
+        "5D04754E-AE61-4301-BF43-1D8C0F98FFF1",
+        "54435179-3B64-4861-97EF-6872A12B12FE",
+        "BBBE5D23-3D10-4472-A243-5401BEE4469F",
+        "6CC2DEDF-E607-4160-BB38-FD7CD862614B",
+        "20A559D4-2CD6-4739-98B9-7FD8039FE4E4",
+        "92CFCC69-9746-4C4D-9C79-66E48935F024",
+        "411E1524-68FE-432D-B354-9AF2E8897214",
+        "DCB809E4-C808-491A-97D4-50843C30E78E"
+      ],
+      "characters": "7[]”交力友发妹性息我指数柔消温现甜的知语辣酷音魅：",
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components/assets/fonts/PingFangSC-Regular.otf",
+      "sha256": "e4be1f407052418e4d84abea6755e5d7c8a6a609cc63900fe2236f4d48f29490",
+      "runtime_family": "SourcePingFang"
+    },
+    {
+      "source_family": "PingFangSC-Semibold",
+      "weight": 600,
+      "node_ids": [
+        "4B56B9CB-8D3B-49FF-B7B3-D704322C2E15",
+        "C1F2FCCD-8B4A-4808-9294-730BD7708274",
+        "E9C7457E-4342-4464-AFCE-FF08F21E6AAC",
+        "62AB6D3E-E284-4AE2-9723-B7DBFBFCB4DE",
+        "66B203C0-C477-4062-9151-0ED2B6807166",
+        "A41DBF25-3B18-471D-88C1-DFD59DB22529",
+        "DC0E7CFF-8361-45D0-9689-66DE5D3F7E4A",
+        "C4AF1D97-AF3C-4551-B2FA-6FCDC8A65691",
+        "E10F6F20-086F-42F8-948D-C2A3645164F3",
+        "D3280CCC-326D-42D0-96D9-BFB81890D222",
+        "AD83C2F3-FC9A-4456-A41B-D37E4BA24FB5",
+        "2FD2F0C0-085F-478F-93CA-022339FB4588",
+        "908D225D-A5B0-4192-B9CC-112D32BB1195",
+        "FDD6EA61-7452-45A9-A20C-808B17AC1C5D",
+        "DA375A82-2668-4850-9815-DBA7CE67BB23",
+        "9A1948E3-AB48-4B4F-953D-6FE531AF6541",
+        "7DCFBF61-5C9E-41A8-B372-777339C3FBDB",
+        "214B3847-0DD7-43BF-8571-32527220DCAF",
+        "0F171E3B-2CC3-438B-965D-83A6B24771B6",
+        "0CA49764-0A4A-41C8-A6CF-14D01612EB2A",
+        "9FD19EA3-49F7-4857-92B3-EFD1190DC1D4"
+      ],
+      "characters": "015…丸交以南友同回在城复学忙性柔温珍碌线阿",
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components/assets/fonts/PingFangSC-Semibold.otf",
+      "sha256": "cc337275bf2c09935690cfb5a79ba18907612bcc0a0660fa36432f1d08a524a3",
+      "runtime_family": "SourcePingFang"
+    },
+    {
+      "source_family": ".AppleSystemUIFont",
+      "weight": 400,
+      "node_ids": [
+        "9DD7AA0D-C02E-44FF-A783-B5693A65377E"
+      ],
+      "characters": "149:",
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components/assets/fonts/PingFangSC-Regular.otf",
+      "sha256": "e4be1f407052418e4d84abea6755e5d7c8a6a609cc63900fe2236f4d48f29490",
+      "runtime_family": "SourcePingFang"
+    }
+  ],
+  "nodes": [
+    {
+      "node_id": "9A4A0A90-222B-4071-B4D8-2D3E9A4BC19A",
+      "name": "椭圆形",
+      "node_type": "layer-group",
+      "layout_rect": [
+        0,
+        0,
+        375,
+        161
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "3BBABDAA-CF61-4BDE-941D-165810B9E2C7",
+      "name": "编组 9",
+      "node_type": "layer-group",
+      "layout_rect": [
+        323,
+        51,
+        34,
+        34
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "5DAE51BC-2859-41F6-9293-AA0F51C6BA0C",
+      "name": "编组 9备份",
+      "node_type": "layer-group",
+      "layout_rect": [
+        329.181818181818,
+        57.18181818181819,
+        22.666666666666515,
+        22.666666666666686
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": "3BBABDAA-CF61-4BDE-941D-165810B9E2C7"
+    },
+    {
+      "node_id": "7A9B0FF7-C101-4235-8348-E5AFD4793E23",
+      "name": "去除图片主题文案 (51) (1)备份 3",
+      "node_type": "layer-group",
+      "layout_rect": [
+        205,
+        761,
+        12,
+        12
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "B160912A-FD89-4231-A735-9587882452EF",
+      "name": "去除图片主题文案 (49) (1)备份 2",
+      "node_type": "layer-group",
+      "layout_rect": [
+        30,
+        760,
+        12,
+        12
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "F7083F8D-0E63-490D-8946-26D40886DA91",
+      "name": "编组 2备份 9",
+      "node_type": "layer-group",
+      "layout_rect": [
+        146,
+        751,
+        34.90909090909099,
+        36
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "FDEB1A50-248C-47D0-8CDF-BF900B5DC10F",
+      "name": "蒙版",
+      "node_type": "shape",
+      "layout_rect": [
+        0,
+        0,
+        375,
+        812
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "349F36A8-904D-41C6-AF83-0954B7AF3E89",
+      "name": "蒙版",
+      "node_type": "shape",
+      "layout_rect": [
+        0,
+        0,
+        375,
+        161
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "9A4A0A90-222B-4071-B4D8-2D3E9A4BC19A"
+    },
+    {
+      "node_id": "69A0710E-FC76-46C7-95F9-856E4B1E3BF3",
+      "name": "椭圆形",
+      "node_type": "shape",
+      "layout_rect": [
+        0,
+        0,
+        150,
+        52
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "9A4A0A90-222B-4071-B4D8-2D3E9A4BC19A"
+    },
+    {
+      "node_id": "188D812C-6E96-4297-91E1-CF5518266247",
+      "name": "椭圆形",
+      "node_type": "shape",
+      "layout_rect": [
+        323,
+        51,
+        34,
+        34
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "3BBABDAA-CF61-4BDE-941D-165810B9E2C7"
+    },
+    {
+      "node_id": "53677ADF-BBC3-4B39-BBEC-07EFE30236F1",
+      "name": "矩形备份 6",
+      "node_type": "shape",
+      "layout_rect": [
+        329.181818181818,
+        57.18181818181819,
+        22.666666666666515,
+        22.666666666666686
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "5DAE51BC-2859-41F6-9293-AA0F51C6BA0C"
+    },
+    {
+      "node_id": "A629AA0E-D2E3-45A8-8FD7-3EBEF8C4C9BC",
+      "name": "路径",
+      "node_type": "shape",
+      "layout_rect": [
+        333.2294372294368,
+        62.84848484848487,
+        14.571428571428442,
+        13.357142857142833
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "5DAE51BC-2859-41F6-9293-AA0F51C6BA0C"
+    },
+    {
+      "node_id": "4B78ED47-A224-4F17-B134-747DBCA5732F",
+      "name": "蒙版",
+      "node_type": "shape",
+      "layout_rect": [
+        15,
+        97.99999999999994,
+        168.5,
+        224.66666666666669
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "94CFC890-5C54-439E-8A42-8BFE9A78D8CE",
+      "name": "位图",
+      "node_type": "bitmap",
+      "layout_rect": [
+        15,
+        97.99999999999994,
+        168.5,
+        224.66666666666669
+      ],
+      "proposal": "missing_bitmap",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "66AB07DA-9039-40F2-BC13-669C41BD947B",
+      "name": "蒙版",
+      "node_type": "shape",
+      "layout_rect": [
+        15,
+        331,
+        168.5,
+        224.66666666666663
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "D4EE8138-4216-481B-8DE6-974CE61A048C",
+      "name": "位图",
+      "node_type": "bitmap",
+      "layout_rect": [
+        15,
+        331,
+        168.5,
+        224.66666666666663
+      ],
+      "proposal": "missing_bitmap",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "D9B48322-C3E3-401D-8BB6-799B0360125A",
+      "name": "蒙版",
+      "node_type": "shape",
+      "layout_rect": [
+        15,
+        564,
+        168.5,
+        224.66666666666663
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "DD386080-9BFE-4A0F-9FF9-00AB07D88C79",
+      "name": "位图",
+      "node_type": "bitmap",
+      "layout_rect": [
+        15,
+        564,
+        168.5,
+        224.66666666666663
+      ],
+      "proposal": "missing_bitmap",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "70F61C63-282E-4BBF-9E9F-775CEA7206AB",
+      "name": "位图",
+      "node_type": "bitmap",
+      "layout_rect": [
+        15,
+        564,
+        168.5,
+        224.66666666666663
+      ],
+      "proposal": "missing_bitmap",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "A7C8FCF7-2421-4C3E-9C42-5B8F2F12EC8D",
+      "name": "蒙版",
+      "node_type": "shape",
+      "layout_rect": [
+        192,
+        563.9999999999999,
+        168.5,
+        224.66666666666663
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "D10821D7-DC50-440D-B9EB-BED8A411F186",
+      "name": "位图",
+      "node_type": "bitmap",
+      "layout_rect": [
+        192,
+        563.9999999999999,
+        168.5,
+        224.66666666666663
+      ],
+      "proposal": "missing_bitmap",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "E3858F58-652E-4259-B544-0ECFE4794170",
+      "name": "位图",
+      "node_type": "bitmap",
+      "layout_rect": [
+        192,
+        563.9999999999999,
+        168.5,
+        224.66666666666663
+      ],
+      "proposal": "missing_bitmap",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "1B910FB6-6619-40D0-88E9-94CBA7F28173",
+      "name": "矩形备份 12",
+      "node_type": "shape",
+      "layout_rect": [
+        15,
+        711,
+        168.5,
+        78
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "DE544AB5-333D-4928-BCF6-1F50D9F621CA",
+      "name": "矩形备份 13",
+      "node_type": "shape",
+      "layout_rect": [
+        192,
+        711,
+        168.5,
+        78
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "B33C5281-A170-41D2-9B34-097F22BBDA48",
+      "name": "矩形备份 40",
+      "node_type": "shape",
+      "layout_rect": [
+        202,
+        759,
+        54,
+        14
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "EC384EEC-3181-4C57-AD2C-BCCA48B25F2A",
+      "name": "甜酷辣妹备份 2",
+      "node_type": "text",
+      "layout_rect": [
+        216,
+        760,
+        36,
+        13
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "甜酷辣妹",
+      "runs": [
+        {
+          "text": "甜酷辣妹",
+          "font_family": "PingFangSC-Regular",
+          "font_size": 9,
+          "font_weight": 400,
+          "color": "rgba(218,199,255,1.000000)",
+          "line_height": 13,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "AF8AA2DB-58AA-4539-95D3-1B98E16A81B3",
+      "name": "蒙版",
+      "node_type": "shape",
+      "layout_rect": [
+        205,
+        761,
+        12,
+        12
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "7A9B0FF7-C101-4235-8348-E5AFD4793E23"
+    },
+    {
+      "node_id": "4F4D842E-F732-48D0-BAA3-1E79D4F75CF0",
+      "name": "去除图片主题文案 (51) (1)",
+      "node_type": "bitmap",
+      "layout_rect": [
+        205,
+        761,
+        12,
+        12
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "7A9B0FF7-C101-4235-8348-E5AFD4793E23"
+    },
+    {
+      "node_id": "1F8FDA8F-C9ED-4379-A4B8-2605B3848E6D",
+      "name": "矩形备份 41",
+      "node_type": "shape",
+      "layout_rect": [
+        26,
+        759,
+        54,
+        14
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "9E70D178-BBD1-43ED-9DDC-81E6AC78E710",
+      "name": "温柔知性备份",
+      "node_type": "text",
+      "layout_rect": [
+        40,
+        759,
+        36,
+        13
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "温柔知性",
+      "runs": [
+        {
+          "text": "温柔知性",
+          "font_family": "PingFangSC-Regular",
+          "font_size": 9,
+          "font_weight": 400,
+          "color": "rgba(218,199,255,1.000000)",
+          "line_height": 13,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "8B35387E-659D-48A8-B545-9E068533CF0F",
+      "name": "蒙版",
+      "node_type": "shape",
+      "layout_rect": [
+        30,
+        760,
+        12,
+        12
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "B160912A-FD89-4231-A735-9587882452EF"
+    },
+    {
+      "node_id": "CF1BE17C-B997-4C94-BA6C-5164B4058BC5",
+      "name": "去除图片主题文案 (49) (1)备份",
+      "node_type": "bitmap",
+      "layout_rect": [
+        30,
+        760,
+        12,
+        12
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "B160912A-FD89-4231-A735-9587882452EF"
+    },
+    {
+      "node_id": "4B56B9CB-8D3B-49FF-B7B3-D704322C2E15",
+      "name": "阿珍同学备份 5",
+      "node_type": "text",
+      "layout_rect": [
+        25,
+        736,
+        56,
+        20
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "阿珍同学",
+      "runs": [
+        {
+          "text": "阿珍同学",
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 14,
+          "font_weight": 600,
+          "color": "rgba(255,255,255,1.000000)",
+          "line_height": 20,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "C1F2FCCD-8B4A-4808-9294-730BD7708274",
+      "name": "南城以南…备份 2",
+      "node_type": "text",
+      "layout_rect": [
+        202,
+        735,
+        70,
+        20
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "南城以南…",
+      "runs": [
+        {
+          "text": "南城以南…",
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 14,
+          "font_weight": 600,
+          "color": "rgba(255,255,255,1.000000)",
+          "line_height": 20,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "88F3D345-4828-476C-B1C5-FF4FD79C5483",
+      "name": "矩形",
+      "node_type": "shape",
+      "layout_rect": [
+        28.181818181818016,
+        573.4545454545457,
+        76,
+        14.727272727272748
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "904EF4D0-3F2D-4195-B759-E0684F610347",
+      "name": "魅力指数：",
+      "node_type": "text",
+      "layout_rect": [
+        40.89898989898984,
+        574.2159090909092,
+        45,
+        13
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "魅力指数：",
+      "runs": [
+        {
+          "text": "魅力指数：",
+          "font_family": "PingFangSC-Regular",
+          "font_size": 9,
+          "font_weight": 400,
+          "color": "rgba(255,255,255,1.000000)",
+          "line_height": 13,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "E9C7457E-4342-4464-AFCE-FF08F21E6AAC",
+      "name": "1000",
+      "node_type": "text",
+      "layout_rect": [
+        80.63383838383834,
+        574.2159090909092,
+        20,
+        13
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "1000",
+      "runs": [
+        {
+          "text": "1000",
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 9,
+          "font_weight": 600,
+          "color": "rgba(249,79,45,1.000000)",
+          "line_height": 13,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "BC0EFB0B-FEC1-4B05-91D9-AB971D78A6DF",
+      "name": "蒙版",
+      "node_type": "shape",
+      "layout_rect": [
+        21,
+        571,
+        19.949494949495147,
+        18
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "DC16184F-EFE3-4F81-BB55-7CB18D498509",
+      "name": "image (5)",
+      "node_type": "bitmap",
+      "layout_rect": [
+        21,
+        571,
+        19.949494949495147,
+        18
+      ],
+      "proposal": "missing_bitmap",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8",
+      "name": "矩形",
+      "node_type": "shape",
+      "layout_rect": [
+        203.18181818181802,
+        573.4545454545457,
+        74,
+        14.727272727272748
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "861A68CE-1349-4D54-8CDE-BC56F46056D5",
+      "name": "魅力指数：",
+      "node_type": "text",
+      "layout_rect": [
+        215.89898989898984,
+        574.2159090909092,
+        45,
+        13
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "魅力指数：",
+      "runs": [
+        {
+          "text": "魅力指数：",
+          "font_family": "PingFangSC-Regular",
+          "font_size": 9,
+          "font_weight": 400,
+          "color": "rgba(255,255,255,1.000000)",
+          "line_height": 13,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "62AB6D3E-E284-4AE2-9723-B7DBFBFCB4DE",
+      "name": "500",
+      "node_type": "text",
+      "layout_rect": [
+        255.63383838383834,
+        574.2159090909092,
+        17,
+        13
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "500",
+      "runs": [
+        {
+          "text": "500",
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 9,
+          "font_weight": 600,
+          "color": "rgba(249,79,45,1.000000)",
+          "line_height": 13,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "278182B1-7644-4724-A0E1-AC747FD3BE46",
+      "name": "蒙版",
+      "node_type": "shape",
+      "layout_rect": [
+        196,
+        571,
+        19.949494949495147,
+        18
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "C7274AB2-C021-42A1-81D8-B94A83398764",
+      "name": "image (5)",
+      "node_type": "bitmap",
+      "layout_rect": [
+        196,
+        571,
+        19.949494949495147,
+        18
+      ],
+      "proposal": "missing_bitmap",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "7AFC8E7C-BFFB-4152-A8A9-C26154657BE3",
+      "name": "形状结合备份 4",
+      "node_type": "shape",
+      "layout_rect": [
+        142,
+        747,
+        42,
+        42.04341767730591
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "1CEC3E87-B258-4032-861C-B647A9E6A89B",
+      "name": "形状结合备份 5",
+      "node_type": "shape",
+      "layout_rect": [
+        319,
+        747,
+        42,
+        42.04341767730591
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "97FB03F0-BEFA-49E9-957E-C00EB3D686C1",
+      "name": "椭圆形",
+      "node_type": "shape",
+      "layout_rect": [
+        155.81818181818198,
+        783.7272727272727,
+        16.363636363636488,
+        3.272727272727252
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "F7083F8D-0E63-490D-8946-26D40886DA91"
+    },
+    {
+      "node_id": "C529936D-3130-4023-B20C-603D6BA435B8",
+      "name": "椭圆形",
+      "node_type": "shape",
+      "layout_rect": [
+        146,
+        751,
+        34.90909090909099,
+        34.90909090909088
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "F7083F8D-0E63-490D-8946-26D40886DA91"
+    },
+    {
+      "node_id": "840DA636-451F-4CE6-A1F4-0D723FD3C2E3",
+      "name": "形状结合",
+      "node_type": "shape",
+      "layout_rect": [
+        155.5999999999999,
+        761.4727272727272,
+        16.581818181818107,
+        13.228708133971281
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": "F7083F8D-0E63-490D-8946-26D40886DA91"
+    },
+    {
+      "node_id": "4D3F43B4-8720-42E7-BA8C-794821CFF0D7",
+      "name": "编组 2备份 10",
+      "node_type": "layer-group",
+      "layout_rect": [
+        323,
+        751,
+        34.90909090909099,
+        36
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "802DBE99-2249-46A3-B2BD-A48CA5BB3022",
+      "name": "去除图片主题文案 (51) (1)备份",
+      "node_type": "layer-group",
+      "layout_rect": [
+        205,
+        302,
+        12,
+        12
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "93F2EA16-F78C-4D5B-BCC2-C5A663C90505",
+      "name": "去除图片主题文案 (51) (1)备份 2",
+      "node_type": "layer-group",
+      "layout_rect": [
+        205,
+        534,
+        12,
+        12
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "617EB816-62A2-4887-A623-71F171ED0410",
+      "name": "去除图片主题文案 (49) (1)备份 2",
+      "node_type": "layer-group",
+      "layout_rect": [
+        30,
+        301,
+        12,
+        12
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "51D4528F-19CD-450D-99EA-DA30F90F812C",
+      "name": "去除图片主题文案 (49) (1)备份 2",
+      "node_type": "layer-group",
+      "layout_rect": [
+        30,
+        533,
+        12,
+        12
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "A94C3144-FDEA-46D8-AF9C-C088A6C70E6B",
+      "name": "椭圆形",
+      "node_type": "shape",
+      "layout_rect": [
+        332.818181818182,
+        783.7272727272727,
+        16.363636363636488,
+        3.272727272727252
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "4D3F43B4-8720-42E7-BA8C-794821CFF0D7"
+    },
+    {
+      "node_id": "1AB89435-09ED-4F18-AC00-28DD1E96068C",
+      "name": "椭圆形",
+      "node_type": "shape",
+      "layout_rect": [
+        323,
+        751,
+        34.90909090909099,
+        34.90909090909088
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "4D3F43B4-8720-42E7-BA8C-794821CFF0D7"
+    },
+    {
+      "node_id": "2F4829CC-F3E0-4C5D-9CD8-2C75BFAC0091",
+      "name": "形状结合",
+      "node_type": "shape",
+      "layout_rect": [
+        332.5999999999999,
+        761.4727272727272,
+        16.581818181818107,
+        13.228708133971281
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": "4D3F43B4-8720-42E7-BA8C-794821CFF0D7"
+    },
+    {
+      "node_id": "63368B30-5887-4EFD-9B6C-1F683580EE11",
+      "name": "矩形备份 11",
+      "node_type": "shape",
+      "layout_rect": [
+        85,
+        739,
+        34,
+        14
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "65936BE4-5DBC-40EA-9F8D-7D62008C4683",
+      "name": "椭圆形备份 9",
+      "node_type": "shape",
+      "layout_rect": [
+        89.85714285714266,
+        743.6666666666666,
+        4.857142857142662,
+        4.666666666666629
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "66B203C0-C477-4062-9151-0ED2B6807166",
+      "name": "在线备份 4",
+      "node_type": "text",
+      "layout_rect": [
+        97.23809523809541,
+        740.4027777777778,
+        16,
+        11
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "在线",
+      "runs": [
+        {
+          "text": "在线",
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 8,
+          "font_weight": 600,
+          "color": "rgba(59,206,138,1.000000)",
+          "line_height": 11,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "DD197111-9D7C-4F2E-99A5-1A37E1E2CCFE",
+      "name": "矩形",
+      "node_type": "shape",
+      "layout_rect": [
+        276,
+        738,
+        34,
+        14
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "920D142B-E9A5-4D80-8D39-9C6798D7A6A8",
+      "name": "椭圆形",
+      "node_type": "shape",
+      "layout_rect": [
+        280.85714285714266,
+        742.6666666666666,
+        4.857142857142662,
+        4.666666666666629
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "A41DBF25-3B18-471D-88C1-DFD59DB22529",
+      "name": "忙碌",
+      "node_type": "text",
+      "layout_rect": [
+        288.2380952380954,
+        739.4027777777778,
+        16,
+        11
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "忙碌",
+      "runs": [
+        {
+          "text": "忙碌",
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 8,
+          "font_weight": 600,
+          "color": "rgba(248,123,98,1.000000)",
+          "line_height": 11,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "1D9F5CD5-2627-487B-9808-097E3216EDB1",
+      "name": "蒙版",
+      "node_type": "shape",
+      "layout_rect": [
+        192,
+        98,
+        168.5,
+        224.66666666666663
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "D524ECBD-508B-46A6-9529-56FFEA894F8C",
+      "name": "位图",
+      "node_type": "bitmap",
+      "layout_rect": [
+        192,
+        98,
+        168.5,
+        224.66666666666663
+      ],
+      "proposal": "missing_bitmap",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "F6C58514-30F5-4004-9AE4-3FE2BB506271",
+      "name": "蒙版",
+      "node_type": "shape",
+      "layout_rect": [
+        192,
+        331,
+        168.5,
+        224.66666666666663
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "1CD5ECE0-6C7D-4484-89EC-83A3849B4834",
+      "name": "位图",
+      "node_type": "bitmap",
+      "layout_rect": [
+        192,
+        331,
+        168.5,
+        224.66666666666663
+      ],
+      "proposal": "missing_bitmap",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "0522F0CE-376A-433C-9B09-652C21E812C1",
+      "name": "路径 2",
+      "node_type": "shape",
+      "layout_rect": [
+        23.54449462890625,
+        70.00537242233474,
+        26.50701904296875,
+        8.312014852738002
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "DC0E7CFF-8361-45D0-9689-66DE5D3F7E4A",
+      "name": "交友",
+      "node_type": "text",
+      "layout_rect": [
+        14,
+        51,
+        40,
+        28
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "交友",
+      "runs": [
+        {
+          "text": "交友",
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 20,
+          "font_weight": 600,
+          "color": "rgba(24,24,27,1.000000)",
+          "line_height": 28,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "273FB742-2F0B-4155-B701-B6F044818AA7",
+      "name": "Border",
+      "node_type": "shape",
+      "layout_rect": [
+        336.33330000000024,
+        17.33333333333337,
+        22,
+        11.333333333333343
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "5B5225D9-ADA2-499E-9579-387B1F90696F",
+      "name": "Cap",
+      "node_type": "shape",
+      "layout_rect": [
+        359.33330000000024,
+        21,
+        1.328038005608505,
+        4
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "F43975C8-2179-4C56-93F1-437274E93D65",
+      "name": "Capacity",
+      "node_type": "shape",
+      "layout_rect": [
+        338.33330000000024,
+        19.33333333333337,
+        18,
+        7.333333333333343
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "472E7516-EE6C-4D31-84B7-CA3677C2CE0C",
+      "name": "Wifi",
+      "node_type": "shape",
+      "layout_rect": [
+        316,
+        17.33067270403251,
+        15.333299999999781,
+        11
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "E6F9DCA2-298E-4722-8B44-CF283ED76C77",
+      "name": "Cellular Connection",
+      "node_type": "shape",
+      "layout_rect": [
+        294,
+        17.666667000000075,
+        17,
+        10.666666666666657
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "9DD7AA0D-C02E-44FF-A783-B5693A65377E",
+      "name": "Time",
+      "node_type": "text",
+      "layout_rect": [
+        21,
+        14.333300000000236,
+        54,
+        18
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "9:41",
+      "runs": [
+        {
+          "text": "9:41",
+          "font_family": ".AppleSystemUIFont",
+          "font_size": 15,
+          "font_weight": 400,
+          "color": "rgba(0,0,0,1.000000)",
+          "line_height": 18,
+          "letter_spacing": -0.30000001192092896
+        }
+      ]
+    },
+    {
+      "node_id": "BBE38D7D-FA23-4B64-8A1C-7993772389A7",
+      "name": "Bars/Status Bars/iPhone/Light",
+      "node_type": "symbol",
+      "layout_rect": [
+        0,
+        0,
+        375,
+        44
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "A3DA70AA-7E4D-4053-980E-B9FFA3FC6187",
+      "name": "矩形备份 4",
+      "node_type": "shape",
+      "layout_rect": [
+        15,
+        245,
+        168.5,
+        78
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "8E41EEBC-3D78-4012-AD36-3E1EB47C0B42",
+      "name": "矩形备份 7",
+      "node_type": "shape",
+      "layout_rect": [
+        15,
+        478,
+        168.5,
+        78
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "E6E1BC26-72DE-4BFA-A6FF-075C40B9A2A7",
+      "name": "矩形备份 5",
+      "node_type": "shape",
+      "layout_rect": [
+        192,
+        245,
+        168.5,
+        78
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "BA65F155-D026-45C4-B758-CFDCAB667BC3",
+      "name": "矩形备份 8",
+      "node_type": "shape",
+      "layout_rect": [
+        192,
+        478,
+        168.5,
+        78
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "ACFA342C-5C69-41BA-9B24-6FBC27D50AFC",
+      "name": "矩形备份 38",
+      "node_type": "shape",
+      "layout_rect": [
+        202,
+        300,
+        54,
+        14
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "7EDFF30D-2406-4DB7-BEE6-86D0179E9EED",
+      "name": "矩形备份 39",
+      "node_type": "shape",
+      "layout_rect": [
+        202,
+        532,
+        54,
+        14
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "EE00DAB6-0FA5-47AF-AC00-FC5D969FEEC1",
+      "name": "甜酷辣妹",
+      "node_type": "text",
+      "layout_rect": [
+        216,
+        301,
+        36,
+        13
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "甜酷辣妹",
+      "runs": [
+        {
+          "text": "甜酷辣妹",
+          "font_family": "PingFangSC-Regular",
+          "font_size": 9,
+          "font_weight": 400,
+          "color": "rgba(218,199,255,1.000000)",
+          "line_height": 13,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "9E8CD3AF-2FC7-4A87-9876-DE782F8D3F19",
+      "name": "甜酷辣妹备份",
+      "node_type": "text",
+      "layout_rect": [
+        216,
+        533,
+        36,
+        13
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "甜酷辣妹",
+      "runs": [
+        {
+          "text": "甜酷辣妹",
+          "font_family": "PingFangSC-Regular",
+          "font_size": 9,
+          "font_weight": 400,
+          "color": "rgba(218,199,255,1.000000)",
+          "line_height": 13,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "A393A64B-69C6-429C-8392-361ED358BA84",
+      "name": "蒙版",
+      "node_type": "shape",
+      "layout_rect": [
+        205,
+        302,
+        12,
+        12
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "802DBE99-2249-46A3-B2BD-A48CA5BB3022"
+    },
+    {
+      "node_id": "5A309C32-51B5-4AE6-9F13-402F0FFDC3D8",
+      "name": "去除图片主题文案 (51) (1)",
+      "node_type": "bitmap",
+      "layout_rect": [
+        205,
+        302,
+        12,
+        12
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "802DBE99-2249-46A3-B2BD-A48CA5BB3022"
+    },
+    {
+      "node_id": "F5F29FD0-3962-4450-BDB2-A0FC98600618",
+      "name": "蒙版",
+      "node_type": "shape",
+      "layout_rect": [
+        205,
+        534,
+        12,
+        12
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "93F2EA16-F78C-4D5B-BCC2-C5A663C90505"
+    },
+    {
+      "node_id": "70E7EF0B-DFD6-4BBB-8DFC-79FB979A0DF2",
+      "name": "去除图片主题文案 (51) (1)",
+      "node_type": "bitmap",
+      "layout_rect": [
+        205,
+        534,
+        12,
+        12
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "93F2EA16-F78C-4D5B-BCC2-C5A663C90505"
+    },
+    {
+      "node_id": "A82CA772-AA6F-4484-8E39-65A48B88E823",
+      "name": "矩形备份 41",
+      "node_type": "shape",
+      "layout_rect": [
+        26,
+        300,
+        54,
+        14
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "03162920-B7B7-47C9-ABE2-D4F5898B2379",
+      "name": "温柔知性备份",
+      "node_type": "text",
+      "layout_rect": [
+        40,
+        300,
+        36,
+        13
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "温柔知性",
+      "runs": [
+        {
+          "text": "温柔知性",
+          "font_family": "PingFangSC-Regular",
+          "font_size": 9,
+          "font_weight": 400,
+          "color": "rgba(218,199,255,1.000000)",
+          "line_height": 13,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "99B54AD8-F161-4634-9A2D-8A8D99C51461",
+      "name": "蒙版",
+      "node_type": "shape",
+      "layout_rect": [
+        30,
+        301,
+        12,
+        12
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "617EB816-62A2-4887-A623-71F171ED0410"
+    },
+    {
+      "node_id": "174D30C7-DF63-4B2B-B3CA-D41983C5E936",
+      "name": "去除图片主题文案 (49) (1)备份",
+      "node_type": "bitmap",
+      "layout_rect": [
+        30,
+        301,
+        12,
+        12
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "617EB816-62A2-4887-A623-71F171ED0410"
+    },
+    {
+      "node_id": "2FEDC784-AA80-4D77-BBF1-8AF596855AB3",
+      "name": "矩形备份 41",
+      "node_type": "shape",
+      "layout_rect": [
+        26,
+        532,
+        54,
+        14
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "6BE60EFB-79D0-4A27-AA88-CF8543E0D96F",
+      "name": "温柔知性备份",
+      "node_type": "text",
+      "layout_rect": [
+        40,
+        532,
+        36,
+        13
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "温柔知性",
+      "runs": [
+        {
+          "text": "温柔知性",
+          "font_family": "PingFangSC-Regular",
+          "font_size": 9,
+          "font_weight": 400,
+          "color": "rgba(218,199,255,1.000000)",
+          "line_height": 13,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "0CAD9142-C82A-40FD-BA52-F35BF8B2BDF8",
+      "name": "蒙版",
+      "node_type": "shape",
+      "layout_rect": [
+        30,
+        533,
+        12,
+        12
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "51D4528F-19CD-450D-99EA-DA30F90F812C"
+    },
+    {
+      "node_id": "BC4EE3F3-4F02-4D6E-B62C-066F234CC3B8",
+      "name": "去除图片主题文案 (49) (1)备份",
+      "node_type": "bitmap",
+      "layout_rect": [
+        30,
+        533,
+        12,
+        12
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "51D4528F-19CD-450D-99EA-DA30F90F812C"
+    },
+    {
+      "node_id": "C4AF1D97-AF3C-4551-B2FA-6FCDC8A65691",
+      "name": "阿珍同学备份 3",
+      "node_type": "text",
+      "layout_rect": [
+        25,
+        277,
+        56,
+        20
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "阿珍同学",
+      "runs": [
+        {
+          "text": "阿珍同学",
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 14,
+          "font_weight": 600,
+          "color": "rgba(255,255,255,1.000000)",
+          "line_height": 20,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "E10F6F20-086F-42F8-948D-C2A3645164F3",
+      "name": "阿珍同学备份 4",
+      "node_type": "text",
+      "layout_rect": [
+        25,
+        509,
+        56,
+        20
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "阿珍同学",
+      "runs": [
+        {
+          "text": "阿珍同学",
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 14,
+          "font_weight": 600,
+          "color": "rgba(255,255,255,1.000000)",
+          "line_height": 20,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "D3280CCC-326D-42D0-96D9-BFB81890D222",
+      "name": "南城以南…",
+      "node_type": "text",
+      "layout_rect": [
+        202,
+        276,
+        70,
+        20
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "南城以南…",
+      "runs": [
+        {
+          "text": "南城以南…",
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 14,
+          "font_weight": 600,
+          "color": "rgba(255,255,255,1.000000)",
+          "line_height": 20,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "33AA626F-0FB5-4931-AD34-321ED4A3E2A0",
+      "name": "image (5)",
+      "node_type": "layer-group",
+      "layout_rect": [
+        21,
+        105,
+        18,
+        18
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "46382DB2-FE36-4A1C-9BD7-74FBDFE30379",
+      "name": "image (5)备份 2",
+      "node_type": "layer-group",
+      "layout_rect": [
+        21,
+        337,
+        18,
+        18
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "6E3780C1-5FC0-49F1-BE8A-C38B712A5527",
+      "name": "image (5)备份",
+      "node_type": "layer-group",
+      "layout_rect": [
+        202,
+        105,
+        18,
+        18
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "5C3B8640-CA32-405C-BE08-4C1B4437603E",
+      "name": "image (5)备份 3",
+      "node_type": "layer-group",
+      "layout_rect": [
+        202,
+        337,
+        18,
+        18
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "A8AC7814-9CDF-418C-B9EE-126FFF039ADE",
+      "name": "编组 2",
+      "node_type": "layer-group",
+      "layout_rect": [
+        146,
+        285,
+        34.90909090909099,
+        36
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "CEF50751-2274-4399-B1AA-FE65C2F64A00",
+      "name": "编组 2备份 5",
+      "node_type": "layer-group",
+      "layout_rect": [
+        146,
+        518,
+        34.90909090909099,
+        36
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "F38ECF0A-E38D-48F8-8C39-BF1DAEA85EC0",
+      "name": "编组 2备份 2",
+      "node_type": "layer-group",
+      "layout_rect": [
+        323,
+        285,
+        34.90909090909099,
+        36
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "0F0FA3A2-DB0F-46BD-AD1E-FDC4345ABE10",
+      "name": "编组 2备份 6",
+      "node_type": "layer-group",
+      "layout_rect": [
+        323,
+        518,
+        34.90909090909099,
+        36
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "297C5DCA-81D2-4A4E-AF56-A074C47D1734",
+      "name": "编组 6",
+      "node_type": "layer-group",
+      "layout_rect": [
+        332,
+        527.0000000000001,
+        18,
+        17.27726527043501
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": "0F0FA3A2-DB0F-46BD-AD1E-FDC4345ABE10"
+    },
+    {
+      "node_id": "AD83C2F3-FC9A-4456-A41B-D37E4BA24FB5",
+      "name": "南城以南…备份",
+      "node_type": "text",
+      "layout_rect": [
+        202,
+        508,
+        70,
+        20
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "南城以南…",
+      "runs": [
+        {
+          "text": "南城以南…",
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 14,
+          "font_weight": 600,
+          "color": "rgba(255,255,255,1.000000)",
+          "line_height": 20,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "657ACAF2-961D-4BF7-80AA-89FE7B215DCC",
+      "name": "矩形",
+      "node_type": "shape",
+      "layout_rect": [
+        28.181818181818016,
+        107.45454545454561,
+        76,
+        14.727272727272748
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "667F32D5-D4BD-40F0-85C6-EA0DD47FBC16",
+      "name": "矩形备份 2",
+      "node_type": "shape",
+      "layout_rect": [
+        28.181818181818016,
+        339.4545454545456,
+        76,
+        14.727272727272748
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "5B1685B0-FB7D-4C57-8A48-57AAF03E81CB",
+      "name": "矩形备份",
+      "node_type": "shape",
+      "layout_rect": [
+        209,
+        106.99999999999989,
+        76,
+        14.727272727272748
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "88A37D58-6B12-4352-99ED-8B2C50D30409",
+      "name": "矩形备份 3",
+      "node_type": "shape",
+      "layout_rect": [
+        209,
+        338.9999999999999,
+        76,
+        14.727272727272748
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "F0D2CF6C-0E3E-495F-9261-F397FCD44815",
+      "name": "魅力指数：",
+      "node_type": "text",
+      "layout_rect": [
+        40.89898989898984,
+        108.21590909090924,
+        45,
+        13
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "魅力指数：",
+      "runs": [
+        {
+          "text": "魅力指数：",
+          "font_family": "PingFangSC-Regular",
+          "font_size": 9,
+          "font_weight": 400,
+          "color": "rgba(255,255,255,1.000000)",
+          "line_height": 13,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "993435FE-EAE4-4C9A-988E-F4842A5E8F9B",
+      "name": "魅力指数：备份 2",
+      "node_type": "text",
+      "layout_rect": [
+        40.89898989898984,
+        340.21590909090924,
+        45,
+        13
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "魅力指数：",
+      "runs": [
+        {
+          "text": "魅力指数：",
+          "font_family": "PingFangSC-Regular",
+          "font_size": 9,
+          "font_weight": 400,
+          "color": "rgba(255,255,255,1.000000)",
+          "line_height": 13,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "5D04754E-AE61-4301-BF43-1D8C0F98FFF1",
+      "name": "魅力指数：备份",
+      "node_type": "text",
+      "layout_rect": [
+        222,
+        108,
+        45,
+        13
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "魅力指数：",
+      "runs": [
+        {
+          "text": "魅力指数：",
+          "font_family": "PingFangSC-Regular",
+          "font_size": 9,
+          "font_weight": 400,
+          "color": "rgba(255,255,255,1.000000)",
+          "line_height": 13,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "54435179-3B64-4861-97EF-6872A12B12FE",
+      "name": "魅力指数：备份 3",
+      "node_type": "text",
+      "layout_rect": [
+        222,
+        340,
+        45,
+        13
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "魅力指数：",
+      "runs": [
+        {
+          "text": "魅力指数：",
+          "font_family": "PingFangSC-Regular",
+          "font_size": 9,
+          "font_weight": 400,
+          "color": "rgba(255,255,255,1.000000)",
+          "line_height": 13,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "2FD2F0C0-085F-478F-93CA-022339FB4588",
+      "name": "1000",
+      "node_type": "text",
+      "layout_rect": [
+        80.63383838383834,
+        108.21590909090924,
+        20,
+        13
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "1000",
+      "runs": [
+        {
+          "text": "1000",
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 9,
+          "font_weight": 600,
+          "color": "rgba(249,79,45,1.000000)",
+          "line_height": 13,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "908D225D-A5B0-4192-B9CC-112D32BB1195",
+      "name": "1000备份 2",
+      "node_type": "text",
+      "layout_rect": [
+        80.63383838383834,
+        340.21590909090924,
+        20,
+        13
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "1000",
+      "runs": [
+        {
+          "text": "1000",
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 9,
+          "font_weight": 600,
+          "color": "rgba(249,79,45,1.000000)",
+          "line_height": 13,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "FDD6EA61-7452-45A9-A20C-808B17AC1C5D",
+      "name": "1000备份",
+      "node_type": "text",
+      "layout_rect": [
+        262,
+        108,
+        20,
+        13
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "1000",
+      "runs": [
+        {
+          "text": "1000",
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 9,
+          "font_weight": 600,
+          "color": "rgba(249,79,45,1.000000)",
+          "line_height": 13,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "DA375A82-2668-4850-9815-DBA7CE67BB23",
+      "name": "1000备份 3",
+      "node_type": "text",
+      "layout_rect": [
+        262,
+        340,
+        20,
+        13
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "1000",
+      "runs": [
+        {
+          "text": "1000",
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 9,
+          "font_weight": 600,
+          "color": "rgba(249,79,45,1.000000)",
+          "line_height": 13,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "138012A4-02F8-4444-8C71-9701D1E0C8F8",
+      "name": "蒙版",
+      "node_type": "shape",
+      "layout_rect": [
+        21,
+        105,
+        18,
+        18
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "33AA626F-0FB5-4931-AD34-321ED4A3E2A0"
+    },
+    {
+      "node_id": "E8B15434-31E8-4276-BCC0-D1884B54390B",
+      "name": "image (5)",
+      "node_type": "bitmap",
+      "layout_rect": [
+        21,
+        105,
+        18,
+        18
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "33AA626F-0FB5-4931-AD34-321ED4A3E2A0"
+    },
+    {
+      "node_id": "97577131-E44A-4820-B59D-19A86F0D9015",
+      "name": "蒙版",
+      "node_type": "shape",
+      "layout_rect": [
+        21,
+        337,
+        18,
+        18
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "46382DB2-FE36-4A1C-9BD7-74FBDFE30379"
+    },
+    {
+      "node_id": "AB1C3468-53D5-494F-BC8F-3DC2EB60BA44",
+      "name": "image (5)",
+      "node_type": "bitmap",
+      "layout_rect": [
+        21,
+        337,
+        18,
+        18
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "46382DB2-FE36-4A1C-9BD7-74FBDFE30379"
+    },
+    {
+      "node_id": "61746C39-AB6C-4B7A-93C0-748A52ADA484",
+      "name": "蒙版",
+      "node_type": "shape",
+      "layout_rect": [
+        202,
+        105,
+        18,
+        18
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "6E3780C1-5FC0-49F1-BE8A-C38B712A5527"
+    },
+    {
+      "node_id": "BBEDE7EA-8C0C-456E-A026-654F06E35ABD",
+      "name": "image (5)",
+      "node_type": "bitmap",
+      "layout_rect": [
+        202,
+        105,
+        18,
+        18
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "6E3780C1-5FC0-49F1-BE8A-C38B712A5527"
+    },
+    {
+      "node_id": "2C561AE5-20DB-4634-AC09-C6F77EEA0152",
+      "name": "蒙版",
+      "node_type": "shape",
+      "layout_rect": [
+        202,
+        337,
+        18,
+        18
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "5C3B8640-CA32-405C-BE08-4C1B4437603E"
+    },
+    {
+      "node_id": "881F334C-A989-4050-873B-F53758622409",
+      "name": "image (5)",
+      "node_type": "bitmap",
+      "layout_rect": [
+        202,
+        337,
+        18,
+        18
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "5C3B8640-CA32-405C-BE08-4C1B4437603E"
+    },
+    {
+      "node_id": "B8CDD6AE-2FFA-487A-8F4D-E11B79C58FB9",
+      "name": "形状结合",
+      "node_type": "shape",
+      "layout_rect": [
+        142,
+        281.00000000000006,
+        42,
+        42.043417677305854
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "03D3D21E-2F00-4C25-ACD9-A092F755A61B",
+      "name": "形状结合备份 2",
+      "node_type": "shape",
+      "layout_rect": [
+        142,
+        514.0000000000001,
+        42,
+        42.04341767730591
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "3C021254-152A-46EC-B9E0-BA518AAF230A",
+      "name": "形状结合备份",
+      "node_type": "shape",
+      "layout_rect": [
+        319,
+        281,
+        42,
+        42.04341767730591
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "B383D6D4-17E8-49AC-9420-4AE493CEB9BC",
+      "name": "形状结合备份 3",
+      "node_type": "shape",
+      "layout_rect": [
+        319,
+        514.0000000000001,
+        42,
+        42.04341767730591
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "6AEE8D93-3D7F-4372-A5A3-F0EF43D4965D",
+      "name": "椭圆形",
+      "node_type": "shape",
+      "layout_rect": [
+        155.81818181818198,
+        317.72727272727275,
+        16.363636363636488,
+        3.272727272727252
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "A8AC7814-9CDF-418C-B9EE-126FFF039ADE"
+    },
+    {
+      "node_id": "1E445E06-4B1A-4B89-A4BF-7FDD27B5472A",
+      "name": "椭圆形",
+      "node_type": "shape",
+      "layout_rect": [
+        146,
+        285,
+        34.90909090909099,
+        34.90909090909088
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "A8AC7814-9CDF-418C-B9EE-126FFF039ADE"
+    },
+    {
+      "node_id": "DF7CABE4-F42D-4423-AEBA-0E18EC3775FA",
+      "name": "形状结合",
+      "node_type": "shape",
+      "layout_rect": [
+        155.5999999999999,
+        295.4727272727272,
+        16.581818181818107,
+        13.228708133971281
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": "A8AC7814-9CDF-418C-B9EE-126FFF039ADE"
+    },
+    {
+      "node_id": "8E07A897-DE57-447E-8B09-7DC834624B49",
+      "name": "椭圆形",
+      "node_type": "shape",
+      "layout_rect": [
+        155.81818181818198,
+        550.7272727272727,
+        16.363636363636488,
+        3.272727272727252
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "CEF50751-2274-4399-B1AA-FE65C2F64A00"
+    },
+    {
+      "node_id": "897653A6-5700-4DFB-87F0-AA90854CA3B6",
+      "name": "椭圆形",
+      "node_type": "shape",
+      "layout_rect": [
+        146,
+        518,
+        34.90909090909099,
+        34.90909090909088
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "CEF50751-2274-4399-B1AA-FE65C2F64A00"
+    },
+    {
+      "node_id": "DBB674EE-295F-48B0-970F-BFF0714942C5",
+      "name": "形状结合",
+      "node_type": "shape",
+      "layout_rect": [
+        155.5999999999999,
+        528.4727272727272,
+        16.581818181818107,
+        13.228708133971281
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": "CEF50751-2274-4399-B1AA-FE65C2F64A00"
+    },
+    {
+      "node_id": "BE411C43-8E01-4CF3-BD60-968876C5AD31",
+      "name": "椭圆形",
+      "node_type": "shape",
+      "layout_rect": [
+        332.818181818182,
+        317.72727272727275,
+        16.363636363636488,
+        3.272727272727252
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "F38ECF0A-E38D-48F8-8C39-BF1DAEA85EC0"
+    },
+    {
+      "node_id": "60B14FE1-AD38-451D-A77B-D3C3E2EEE2B0",
+      "name": "椭圆形",
+      "node_type": "shape",
+      "layout_rect": [
+        323,
+        285,
+        34.90909090909099,
+        34.90909090909088
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "F38ECF0A-E38D-48F8-8C39-BF1DAEA85EC0"
+    },
+    {
+      "node_id": "219FD332-AE52-4C95-82EC-5C059B8EE172",
+      "name": "形状结合",
+      "node_type": "shape",
+      "layout_rect": [
+        332.5999999999999,
+        295.4727272727272,
+        16.581818181818107,
+        13.228708133971281
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": "F38ECF0A-E38D-48F8-8C39-BF1DAEA85EC0"
+    },
+    {
+      "node_id": "069C27F5-1AFA-4B23-94B2-FE6C213F4747",
+      "name": "椭圆形",
+      "node_type": "shape",
+      "layout_rect": [
+        332.818181818182,
+        550.7272727272727,
+        16.363636363636488,
+        3.272727272727252
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "0F0FA3A2-DB0F-46BD-AD1E-FDC4345ABE10"
+    },
+    {
+      "node_id": "4B8AD4A9-2785-4589-8560-FC4BB131D1DC",
+      "name": "椭圆形",
+      "node_type": "shape",
+      "layout_rect": [
+        323,
+        518,
+        34.90909090909099,
+        34.90909090909088
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "0F0FA3A2-DB0F-46BD-AD1E-FDC4345ABE10"
+    },
+    {
+      "node_id": "681CC3FB-A474-4663-8658-988B6265A94F",
+      "name": "路径",
+      "node_type": "shape",
+      "layout_rect": [
+        332,
+        527.0000000000001,
+        17.999834249333162,
+        17.27726527043501
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "297C5DCA-81D2-4A4E-AF56-A074C47D1734"
+    },
+    {
+      "node_id": "B97DBEF4-7146-4D3E-83DA-18C7FB6B1558",
+      "name": "路径",
+      "node_type": "shape",
+      "layout_rect": [
+        336.0053134339687,
+        531.325275409918,
+        5.870333458692585,
+        6.973107832500318
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "297C5DCA-81D2-4A4E-AF56-A074C47D1734"
+    },
+    {
+      "node_id": "4C0557A1-29E7-4315-BF04-D787E9458BF3",
+      "name": "形状",
+      "node_type": "shape",
+      "layout_rect": [
+        342.2389546254076,
+        531.627256425918,
+        2.2663588085606534,
+        6.189949028595834
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "297C5DCA-81D2-4A4E-AF56-A074C47D1734"
+    },
+    {
+      "node_id": "02A37778-1F3F-413B-9D75-D7E938C4A704",
+      "name": "矩形备份 11",
+      "node_type": "shape",
+      "layout_rect": [
+        85,
+        280,
+        34,
+        14
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "B9F93DAB-E64E-44DF-A885-7B0B5CCB3EE3",
+      "name": "椭圆形备份 9",
+      "node_type": "shape",
+      "layout_rect": [
+        89.85714285714266,
+        284.6666666666667,
+        4.857142857142662,
+        4.666666666666686
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "9A1948E3-AB48-4B4F-953D-6FE531AF6541",
+      "name": "在线备份 4",
+      "node_type": "text",
+      "layout_rect": [
+        97.23809523809541,
+        281.4027777777778,
+        16,
+        11
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "在线",
+      "runs": [
+        {
+          "text": "在线",
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 8,
+          "font_weight": 600,
+          "color": "rgba(59,206,138,1.000000)",
+          "line_height": 11,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "9D9EAE68-D103-4514-A4C5-ADD8178E42C8",
+      "name": "矩形备份 11",
+      "node_type": "shape",
+      "layout_rect": [
+        85,
+        512,
+        34,
+        14
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "B0931C98-96CB-451A-BF7D-2FA17C440B2A",
+      "name": "椭圆形备份 9",
+      "node_type": "shape",
+      "layout_rect": [
+        89.85714285714266,
+        516.6666666666666,
+        4.857142857142662,
+        4.666666666666629
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "7DCFBF61-5C9E-41A8-B372-777339C3FBDB",
+      "name": "在线备份 4",
+      "node_type": "text",
+      "layout_rect": [
+        97.23809523809541,
+        513.4027777777778,
+        16,
+        11
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "在线",
+      "runs": [
+        {
+          "text": "在线",
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 8,
+          "font_weight": 600,
+          "color": "rgba(59,206,138,1.000000)",
+          "line_height": 11,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "0F63768D-656C-4293-B8FD-E082232434D2",
+      "name": "矩形",
+      "node_type": "shape",
+      "layout_rect": [
+        276,
+        279,
+        34,
+        14
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "D1A49E9B-0C81-422A-B53E-3F83F5BADDBC",
+      "name": "椭圆形",
+      "node_type": "shape",
+      "layout_rect": [
+        280.85714285714266,
+        283.6666666666667,
+        4.857142857142662,
+        4.666666666666686
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "96B97AB1-436C-4D50-A068-6CBB5A301278",
+      "name": "主页-选中",
+      "node_type": "layer-group",
+      "layout_rect": [
+        44,
+        742,
+        29,
+        29
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "214B3847-0DD7-43BF-8571-32527220DCAF",
+      "name": "忙碌",
+      "node_type": "text",
+      "layout_rect": [
+        288.2380952380954,
+        281.4027777777778,
+        16,
+        11
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "忙碌",
+      "runs": [
+        {
+          "text": "忙碌",
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 8,
+          "font_weight": 600,
+          "color": "rgba(248,123,98,1.000000)",
+          "line_height": 11,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "6F7BCFB0-1513-480F-892A-F9760C9A1A5C",
+      "name": "矩形",
+      "node_type": "shape",
+      "layout_rect": [
+        276,
+        511,
+        34,
+        14
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "B4B0C0E3-EEE7-49C7-8289-A352413AF69D",
+      "name": "椭圆形",
+      "node_type": "shape",
+      "layout_rect": [
+        280.85714285714266,
+        515.6666666666666,
+        4.857142857142662,
+        4.666666666666629
+      ],
+      "proposal": "original_asset",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "0F171E3B-2CC3-438B-965D-83A6B24771B6",
+      "name": "忙碌",
+      "node_type": "text",
+      "layout_rect": [
+        288.2380952380954,
+        512.4027777777778,
+        16,
+        11
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "忙碌",
+      "runs": [
+        {
+          "text": "忙碌",
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 8,
+          "font_weight": 600,
+          "color": "rgba(248,123,98,1.000000)",
+          "line_height": 11,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "D702BE09-A795-4BF0-AE0A-94F9D4601193",
+      "name": "矩形",
+      "node_type": "shape",
+      "layout_rect": [
+        14,
+        735,
+        343,
+        56
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "BBBE5D23-3D10-4472-A243-5401BEE4469F",
+      "name": "我的备份 4",
+      "node_type": "text",
+      "layout_rect": [
+        307,
+        772,
+        18,
+        10
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "我的",
+      "runs": [
+        {
+          "text": "我的",
+          "font_family": "PingFangSC-Regular",
+          "font_size": 9,
+          "font_weight": 400,
+          "color": "rgba(123,121,128,1.000000)",
+          "line_height": 10,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "6CC2DEDF-E607-4160-BB38-FD7CD862614B",
+      "name": "消息",
+      "node_type": "text",
+      "layout_rect": [
+        221,
+        772,
+        18,
+        10
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "消息",
+      "runs": [
+        {
+          "text": "消息",
+          "font_family": "PingFangSC-Regular",
+          "font_size": 9,
+          "font_weight": 400,
+          "color": "rgba(123,121,128,1.000000)",
+          "line_height": 10,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "D4C4BE5D-4704-4214-85F7-623DE24A37EB",
+      "name": "矩形备份 9",
+      "node_type": "shape",
+      "layout_rect": [
+        215,
+        742,
+        29,
+        29
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "11F087AE-E152-4B98-BFA1-B7B49D95F0F3",
+      "name": "形状结合",
+      "node_type": "shape",
+      "layout_rect": [
+        219,
+        747,
+        22,
+        19.943704485621083
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "B301A544-A059-4E77-945B-DA6724609D85",
+      "name": "路径 11",
+      "node_type": "shape",
+      "layout_rect": [
+        225.5448843149038,
+        754.33154296875,
+        9.283241895902847,
+        3.3846153846153584
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "B57891F4-1743-42C7-B0AE-718FAB19076B",
+      "name": "矩形备份 10",
+      "node_type": "shape",
+      "layout_rect": [
+        301,
+        742,
+        29,
+        29
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "89E02CB7-9181-4311-B909-3CB78E149B6E",
+      "name": "椭圆形",
+      "node_type": "shape",
+      "layout_rect": [
+        309.727274561782,
+        747,
+        10.909090909090992,
+        10.909090909090878
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "8E3DE8AC-8F20-4827-AE74-8DFB0CAFC74D",
+      "name": "路径",
+      "node_type": "shape",
+      "layout_rect": [
+        307,
+        758.818181818182,
+        16.363636363636488,
+        8.18181818181813
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "E1118B4E-8F03-4575-A906-E415FB9DE49C",
+      "name": "路径 12",
+      "node_type": "shape",
+      "layout_rect": [
+        318.2253658259865,
+        761.194890802557,
+        2.7880859375,
+        2.4366344105111466
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "B3C12E36-F44E-485C-B176-D664B56B4C94",
+      "name": "矩形",
+      "node_type": "shape",
+      "layout_rect": [
+        115,
+        742,
+        60,
+        43
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "20A559D4-2CD6-4739-98B9-7FD8039FE4E4",
+      "name": "交友",
+      "node_type": "text",
+      "layout_rect": [
+        136,
+        772,
+        18,
+        10
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "交友",
+      "runs": [
+        {
+          "text": "交友",
+          "font_family": "PingFangSC-Regular",
+          "font_size": 9,
+          "font_weight": 400,
+          "color": "rgba(24,24,27,1.000000)",
+          "line_height": 10,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "12D33D87-D78E-44DB-8784-9301C08E46D3",
+      "name": "矩形",
+      "node_type": "shape",
+      "layout_rect": [
+        130,
+        742,
+        29,
+        29
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "6DE13EFA-EE86-4025-88B7-21205B10B27F",
+      "name": "路径",
+      "node_type": "shape",
+      "layout_rect": [
+        136.75,
+        750.525,
+        16.333333333333485,
+        15
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "337F3C1B-9C35-412A-8432-A31E693A6B94",
+      "name": "形状",
+      "node_type": "shape",
+      "layout_rect": [
+        140.44999999999982,
+        755.075,
+        7.425000000000182,
+        2.7000000000000455
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "05554036-223C-4740-BD6D-69449754FDD4",
+      "name": "形状",
+      "node_type": "shape",
+      "layout_rect": [
+        131,
+        749,
+        27,
+        17.549999999999955
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "92CFCC69-9746-4C4D-9C79-66E48935F024",
+      "name": "发现",
+      "node_type": "text",
+      "layout_rect": [
+        50,
+        772,
+        18,
+        10
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "发现",
+      "runs": [
+        {
+          "text": "发现",
+          "font_family": "PingFangSC-Regular",
+          "font_size": 9,
+          "font_weight": 400,
+          "color": "rgba(123,121,128,1.000000)",
+          "line_height": 10,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "9669D5E3-D349-4B0D-BE8F-31145980329D",
+      "name": "矩形",
+      "node_type": "shape",
+      "layout_rect": [
+        44,
+        742,
+        29,
+        29
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "96B97AB1-436C-4D50-A068-6CBB5A301278"
+    },
+    {
+      "node_id": "FD7CE27C-2E1E-4F87-BFD0-92F09D9A1379",
+      "name": "路径",
+      "node_type": "shape",
+      "layout_rect": [
+        49,
+        748.6038559995021,
+        19,
+        18.095141861360958
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "96B97AB1-436C-4D50-A068-6CBB5A301278"
+    },
+    {
+      "node_id": "DAA9F1C1-047E-4269-885C-BF0D3BB184E0",
+      "name": "路径 8",
+      "node_type": "shape",
+      "layout_rect": [
+        56,
+        760.603759765625,
+        5,
+        1.79931640625
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "96B97AB1-436C-4D50-A068-6CBB5A301278"
+    },
+    {
+      "node_id": "0D351280-C927-4965-B024-F3FB0507FFE6",
+      "name": "路径 9",
+      "node_type": "shape",
+      "layout_rect": [
+        49,
+        747,
+        2,
+        2
+      ],
+      "proposal": "ancestor_asset_candidate",
+      "asset_owner_candidate": "96B97AB1-436C-4D50-A068-6CBB5A301278"
+    },
+    {
+      "node_id": "30B310D6-99E6-4F20-966C-00D99612D03B",
+      "name": "Home Indicator",
+      "node_type": "shape",
+      "layout_rect": [
+        121,
+        799,
+        134,
+        5
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "B8A5F983-22D8-4723-A3CF-22290E4B6FD4",
+      "name": "Bars/Home Indicators/iPhone/Light - Portrait",
+      "node_type": "symbol",
+      "layout_rect": [
+        121,
+        778,
+        134,
+        34
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "1DCB4BAF-56BB-4FE6-9219-D902811366E1",
+      "name": "矩形",
+      "node_type": "shape",
+      "layout_rect": [
+        14,
+        50,
+        343,
+        68
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "48C19ECF-0824-496C-9BF9-522EE1BF3C49",
+      "name": "蒙版",
+      "node_type": "shape",
+      "layout_rect": [
+        27,
+        59,
+        50,
+        50
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "9A5D800A-E5C2-4B42-AB44-913513AF690F",
+      "name": "位图",
+      "node_type": "bitmap",
+      "layout_rect": [
+        27,
+        59,
+        50,
+        50
+      ],
+      "proposal": "missing_bitmap",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "0CA49764-0A4A-41C8-A6CF-14D01612EB2A",
+      "name": "温柔丸性",
+      "node_type": "text",
+      "layout_rect": [
+        90,
+        66,
+        60,
+        21
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "温柔丸性",
+      "runs": [
+        {
+          "text": "温柔丸性",
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 15,
+          "font_weight": 600,
+          "color": "rgba(34,36,42,1.000000)",
+          "line_height": 21,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "2C388516-EE7D-48B7-8260-6CE644B15952",
+      "name": "椭圆形备份",
+      "node_type": "shape",
+      "layout_rect": [
+        63,
+        100,
+        8,
+        8
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "CEE6746B-6004-44CF-B7FE-B031A32589F1",
+      "name": "矩形",
+      "node_type": "shape",
+      "layout_rect": [
+        288,
+        74,
+        54,
+        21
+      ],
+      "proposal": "review_source_geometry",
+      "asset_owner_candidate": null
+    },
+    {
+      "node_id": "9FD19EA3-49F7-4857-92B3-EFD1190DC1D4",
+      "name": "回复",
+      "node_type": "text",
+      "layout_rect": [
+        303,
+        76,
+        24,
+        17
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "回复",
+      "runs": [
+        {
+          "text": "回复",
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 12,
+          "font_weight": 600,
+          "color": "rgba(249,79,46,1.000000)",
+          "line_height": 17,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "411E1524-68FE-432D-B354-9AF2E8897214",
+      "name": "7”",
+      "node_type": "text",
+      "layout_rect": [
+        127,
+        89,
+        14,
+        17
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "7”",
+      "runs": [
+        {
+          "text": "7”",
+          "font_family": "PingFangSC-Regular",
+          "font_size": 12,
+          "font_weight": 400,
+          "color": "rgba(145,145,155,1.000000)",
+          "line_height": 17,
+          "letter_spacing": 0
+        }
+      ]
+    },
+    {
+      "node_id": "DCB809E4-C808-491A-97D4-50843C30E78E",
+      "name": "[语音]",
+      "node_type": "text",
+      "layout_rect": [
+        91,
+        89,
+        32,
+        17
+      ],
+      "proposal": "text",
+      "asset_owner_candidate": null,
+      "text": "[语音]",
+      "runs": [
+        {
+          "text": "[语音]",
+          "font_family": "PingFangSC-Regular",
+          "font_size": 12,
+          "font_weight": 400,
+          "color": "rgba(145,145,155,1.000000)",
+          "line_height": 17,
+          "letter_spacing": 0
+        }
+      ]
+    }
+  ],
+  "effect_requirements": [
+    {
+      "node_id": "349F36A8-904D-41C6-AF83-0954B7AF3E89",
+      "effect_key": "mask",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "69A0710E-FC76-46C7-95F9-856E4B1E3BF3",
+      "effect_key": "blur:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "69A0710E-FC76-46C7-95F9-856E4B1E3BF3",
+      "effect_key": "opacity",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "188D812C-6E96-4297-91E1-CF5518266247",
+      "effect_key": "shadow:0",
+      "kind": "shadow",
+      "samples": [
+        {
+          "role": "edge",
+          "rect": [
+            340,
+            85,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "peak",
+          "rect": [
+            340,
+            86,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "tail",
+          "rect": [
+            340,
+            91,
+            1,
+            1
+          ]
+        }
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "A629AA0E-D2E3-45A8-8FD7-3EBEF8C4C9BC",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "4B78ED47-A224-4F17-B134-747DBCA5732F",
+      "effect_key": "mask",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "66AB07DA-9039-40F2-BC13-669C41BD947B",
+      "effect_key": "mask",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "D9B48322-C3E3-401D-8BB6-799B0360125A",
+      "effect_key": "mask",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "A7C8FCF7-2421-4C3E-9C42-5B8F2F12EC8D",
+      "effect_key": "mask",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "1B910FB6-6619-40D0-88E9-94CBA7F28173",
+      "effect_key": "fills:0:gradient",
+      "kind": "gradient",
+      "samples": [
+        {
+          "role": "start",
+          "rect": [
+            99,
+            718,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "middle",
+          "rect": [
+            99,
+            750,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "end",
+          "rect": [
+            99,
+            781,
+            1,
+            1
+          ]
+        }
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "1B910FB6-6619-40D0-88E9-94CBA7F28173",
+      "effect_key": "opacity",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "DE544AB5-333D-4928-BCF6-1F50D9F621CA",
+      "effect_key": "fills:0:gradient",
+      "kind": "gradient",
+      "samples": [
+        {
+          "role": "start",
+          "rect": [
+            276,
+            718,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "middle",
+          "rect": [
+            276,
+            750,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "end",
+          "rect": [
+            276,
+            781,
+            1,
+            1
+          ]
+        }
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "DE544AB5-333D-4928-BCF6-1F50D9F621CA",
+      "effect_key": "opacity",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "B33C5281-A170-41D2-9B34-097F22BBDA48",
+      "effect_key": "blur:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "B33C5281-A170-41D2-9B34-097F22BBDA48",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "AF8AA2DB-58AA-4539-95D3-1B98E16A81B3",
+      "effect_key": "mask",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "1F8FDA8F-C9ED-4379-A4B8-2605B3848E6D",
+      "effect_key": "blur:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "1F8FDA8F-C9ED-4379-A4B8-2605B3848E6D",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "8B35387E-659D-48A8-B545-9E068533CF0F",
+      "effect_key": "mask",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "88F3D345-4828-476C-B1C5-FF4FD79C5483",
+      "effect_key": "blur:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "88F3D345-4828-476C-B1C5-FF4FD79C5483",
+      "effect_key": "borders:0:gradient",
+      "kind": "gradient",
+      "samples": [
+        {
+          "role": "start",
+          "rect": [
+            38,
+            582,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "middle",
+          "rect": [
+            67,
+            580,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "end",
+          "rect": [
+            96,
+            578,
+            1,
+            1
+          ]
+        }
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "88F3D345-4828-476C-B1C5-FF4FD79C5483",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "BC0EFB0B-FEC1-4B05-91D9-AB971D78A6DF",
+      "effect_key": "mask",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8",
+      "effect_key": "blur:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8",
+      "effect_key": "borders:0:gradient",
+      "kind": "gradient",
+      "samples": [
+        {
+          "role": "start",
+          "rect": [
+            212,
+            582,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "middle",
+          "rect": [
+            241,
+            580,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "end",
+          "rect": [
+            270,
+            578,
+            1,
+            1
+          ]
+        }
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "278182B1-7644-4724-A0E1-AC747FD3BE46",
+      "effect_key": "mask",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "97FB03F0-BEFA-49E9-957E-C00EB3D686C1",
+      "effect_key": "blur:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "A94C3144-FDEA-46D8-AF9C-C088A6C70E6B",
+      "effect_key": "blur:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "63368B30-5887-4EFD-9B6C-1F683580EE11",
+      "effect_key": "opacity",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "DD197111-9D7C-4F2E-99A5-1A37E1E2CCFE",
+      "effect_key": "opacity",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "1D9F5CD5-2627-487B-9808-097E3216EDB1",
+      "effect_key": "mask",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "F6C58514-30F5-4004-9AE4-3FE2BB506271",
+      "effect_key": "mask",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "0522F0CE-376A-433C-9B09-652C21E812C1",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "273FB742-2F0B-4155-B701-B6F044818AA7",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "273FB742-2F0B-4155-B701-B6F044818AA7",
+      "effect_key": "opacity",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "5B5225D9-ADA2-499E-9579-387B1F90696F",
+      "effect_key": "opacity",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "A3DA70AA-7E4D-4053-980E-B9FFA3FC6187",
+      "effect_key": "fills:0:gradient",
+      "kind": "gradient",
+      "samples": [
+        {
+          "role": "start",
+          "rect": [
+            99,
+            252,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "middle",
+          "rect": [
+            99,
+            284,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "end",
+          "rect": [
+            99,
+            315,
+            1,
+            1
+          ]
+        }
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "A3DA70AA-7E4D-4053-980E-B9FFA3FC6187",
+      "effect_key": "opacity",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "8E41EEBC-3D78-4012-AD36-3E1EB47C0B42",
+      "effect_key": "fills:0:gradient",
+      "kind": "gradient",
+      "samples": [
+        {
+          "role": "start",
+          "rect": [
+            99,
+            485,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "middle",
+          "rect": [
+            99,
+            517,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "end",
+          "rect": [
+            99,
+            548,
+            1,
+            1
+          ]
+        }
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "8E41EEBC-3D78-4012-AD36-3E1EB47C0B42",
+      "effect_key": "opacity",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "E6E1BC26-72DE-4BFA-A6FF-075C40B9A2A7",
+      "effect_key": "fills:0:gradient",
+      "kind": "gradient",
+      "samples": [
+        {
+          "role": "start",
+          "rect": [
+            276,
+            252,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "middle",
+          "rect": [
+            276,
+            284,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "end",
+          "rect": [
+            276,
+            315,
+            1,
+            1
+          ]
+        }
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "E6E1BC26-72DE-4BFA-A6FF-075C40B9A2A7",
+      "effect_key": "opacity",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "BA65F155-D026-45C4-B758-CFDCAB667BC3",
+      "effect_key": "fills:0:gradient",
+      "kind": "gradient",
+      "samples": [
+        {
+          "role": "start",
+          "rect": [
+            276,
+            485,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "middle",
+          "rect": [
+            276,
+            517,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "end",
+          "rect": [
+            276,
+            548,
+            1,
+            1
+          ]
+        }
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "BA65F155-D026-45C4-B758-CFDCAB667BC3",
+      "effect_key": "opacity",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "ACFA342C-5C69-41BA-9B24-6FBC27D50AFC",
+      "effect_key": "blur:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "ACFA342C-5C69-41BA-9B24-6FBC27D50AFC",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "7EDFF30D-2406-4DB7-BEE6-86D0179E9EED",
+      "effect_key": "blur:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "7EDFF30D-2406-4DB7-BEE6-86D0179E9EED",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "A393A64B-69C6-429C-8392-361ED358BA84",
+      "effect_key": "mask",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "F5F29FD0-3962-4450-BDB2-A0FC98600618",
+      "effect_key": "mask",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "A82CA772-AA6F-4484-8E39-65A48B88E823",
+      "effect_key": "blur:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "A82CA772-AA6F-4484-8E39-65A48B88E823",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "99B54AD8-F161-4634-9A2D-8A8D99C51461",
+      "effect_key": "mask",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "2FEDC784-AA80-4D77-BBF1-8AF596855AB3",
+      "effect_key": "blur:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "2FEDC784-AA80-4D77-BBF1-8AF596855AB3",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "0CAD9142-C82A-40FD-BA52-F35BF8B2BDF8",
+      "effect_key": "mask",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "657ACAF2-961D-4BF7-80AA-89FE7B215DCC",
+      "effect_key": "blur:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "657ACAF2-961D-4BF7-80AA-89FE7B215DCC",
+      "effect_key": "borders:0:gradient",
+      "kind": "gradient",
+      "samples": [
+        {
+          "role": "start",
+          "rect": [
+            38,
+            116,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "middle",
+          "rect": [
+            67,
+            114,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "end",
+          "rect": [
+            96,
+            112,
+            1,
+            1
+          ]
+        }
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "657ACAF2-961D-4BF7-80AA-89FE7B215DCC",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "667F32D5-D4BD-40F0-85C6-EA0DD47FBC16",
+      "effect_key": "blur:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "667F32D5-D4BD-40F0-85C6-EA0DD47FBC16",
+      "effect_key": "borders:0:gradient",
+      "kind": "gradient",
+      "samples": [
+        {
+          "role": "start",
+          "rect": [
+            38,
+            348,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "middle",
+          "rect": [
+            67,
+            346,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "end",
+          "rect": [
+            96,
+            344,
+            1,
+            1
+          ]
+        }
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "667F32D5-D4BD-40F0-85C6-EA0DD47FBC16",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "5B1685B0-FB7D-4C57-8A48-57AAF03E81CB",
+      "effect_key": "blur:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "5B1685B0-FB7D-4C57-8A48-57AAF03E81CB",
+      "effect_key": "borders:0:gradient",
+      "kind": "gradient",
+      "samples": [
+        {
+          "role": "start",
+          "rect": [
+            218,
+            116,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "middle",
+          "rect": [
+            248,
+            114,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "end",
+          "rect": [
+            277,
+            111,
+            1,
+            1
+          ]
+        }
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "5B1685B0-FB7D-4C57-8A48-57AAF03E81CB",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "88A37D58-6B12-4352-99ED-8B2C50D30409",
+      "effect_key": "blur:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "88A37D58-6B12-4352-99ED-8B2C50D30409",
+      "effect_key": "borders:0:gradient",
+      "kind": "gradient",
+      "samples": [
+        {
+          "role": "start",
+          "rect": [
+            218,
+            348,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "middle",
+          "rect": [
+            248,
+            346,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "end",
+          "rect": [
+            277,
+            343,
+            1,
+            1
+          ]
+        }
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "88A37D58-6B12-4352-99ED-8B2C50D30409",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "138012A4-02F8-4444-8C71-9701D1E0C8F8",
+      "effect_key": "mask",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "97577131-E44A-4820-B59D-19A86F0D9015",
+      "effect_key": "mask",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "61746C39-AB6C-4B7A-93C0-748A52ADA484",
+      "effect_key": "mask",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "2C561AE5-20DB-4634-AC09-C6F77EEA0152",
+      "effect_key": "mask",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "6AEE8D93-3D7F-4372-A5A3-F0EF43D4965D",
+      "effect_key": "blur:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "8E07A897-DE57-447E-8B09-7DC834624B49",
+      "effect_key": "blur:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "BE411C43-8E01-4CF3-BD60-968876C5AD31",
+      "effect_key": "blur:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "069C27F5-1AFA-4B23-94B2-FE6C213F4747",
+      "effect_key": "blur:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "02A37778-1F3F-413B-9D75-D7E938C4A704",
+      "effect_key": "opacity",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "9D9EAE68-D103-4514-A4C5-ADD8178E42C8",
+      "effect_key": "opacity",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "0F63768D-656C-4293-B8FD-E082232434D2",
+      "effect_key": "opacity",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "6F7BCFB0-1513-480F-892A-F9760C9A1A5C",
+      "effect_key": "opacity",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "D702BE09-A795-4BF0-AE0A-94F9D4601193",
+      "effect_key": "blur:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "D702BE09-A795-4BF0-AE0A-94F9D4601193",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "11F087AE-E152-4B98-BFA1-B7B49D95F0F3",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "B301A544-A059-4E77-945B-DA6724609D85",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "89E02CB7-9181-4311-B909-3CB78E149B6E",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "8E3DE8AC-8F20-4827-AE74-8DFB0CAFC74D",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "E1118B4E-8F03-4575-A906-E415FB9DE49C",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "B3C12E36-F44E-485C-B176-D664B56B4C94",
+      "effect_key": "opacity",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "FD7CE27C-2E1E-4F87-BFD0-92F09D9A1379",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "DAA9F1C1-047E-4269-885C-BF0D3BB184E0",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "0D351280-C927-4965-B024-F3FB0507FFE6",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "1DCB4BAF-56BB-4FE6-9219-D902811366E1",
+      "effect_key": "shadow:0",
+      "kind": "shadow",
+      "samples": [
+        {
+          "role": "edge",
+          "rect": [
+            185,
+            118,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "peak",
+          "rect": [
+            185,
+            120,
+            1,
+            1
+          ]
+        },
+        {
+          "role": "tail",
+          "rect": [
+            185,
+            130,
+            1,
+            1
+          ]
+        }
+      ],
+      "needs_review": true
+    },
+    {
+      "node_id": "1DCB4BAF-56BB-4FE6-9219-D902811366E1",
+      "effect_key": "blur:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "1DCB4BAF-56BB-4FE6-9219-D902811366E1",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "48C19ECF-0824-496C-9BF9-522EE1BF3C49",
+      "effect_key": "mask",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    },
+    {
+      "node_id": "2C388516-EE7D-48B7-8260-6CE644B15952",
+      "effect_key": "borders:0",
+      "kind": "local_effect",
+      "samples": [],
+      "needs_review": true
+    }
+  ],
+  "effect_candidates": [
+    {
+      "node_id": "69A0710E-FC76-46C7-95F9-856E4B1E3BF3",
+      "vector_data_present": true,
+      "effect_fields": [
+        "blur"
+      ]
+    },
+    {
+      "node_id": "188D812C-6E96-4297-91E1-CF5518266247",
+      "vector_data_present": true,
+      "effect_fields": [
+        "shadow"
+      ]
+    },
+    {
+      "node_id": "B33C5281-A170-41D2-9B34-097F22BBDA48",
+      "vector_data_present": true,
+      "effect_fields": [
+        "blur"
+      ]
+    },
+    {
+      "node_id": "1F8FDA8F-C9ED-4379-A4B8-2605B3848E6D",
+      "vector_data_present": true,
+      "effect_fields": [
+        "blur"
+      ]
+    },
+    {
+      "node_id": "88F3D345-4828-476C-B1C5-FF4FD79C5483",
+      "vector_data_present": true,
+      "effect_fields": [
+        "blur"
+      ]
+    },
+    {
+      "node_id": "2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8",
+      "vector_data_present": true,
+      "effect_fields": [
+        "blur"
+      ]
+    },
+    {
+      "node_id": "97FB03F0-BEFA-49E9-957E-C00EB3D686C1",
+      "vector_data_present": true,
+      "effect_fields": [
+        "blur"
+      ]
+    },
+    {
+      "node_id": "A94C3144-FDEA-46D8-AF9C-C088A6C70E6B",
+      "vector_data_present": true,
+      "effect_fields": [
+        "blur"
+      ]
+    },
+    {
+      "node_id": "ACFA342C-5C69-41BA-9B24-6FBC27D50AFC",
+      "vector_data_present": true,
+      "effect_fields": [
+        "blur"
+      ]
+    },
+    {
+      "node_id": "7EDFF30D-2406-4DB7-BEE6-86D0179E9EED",
+      "vector_data_present": true,
+      "effect_fields": [
+        "blur"
+      ]
+    },
+    {
+      "node_id": "A82CA772-AA6F-4484-8E39-65A48B88E823",
+      "vector_data_present": true,
+      "effect_fields": [
+        "blur"
+      ]
+    },
+    {
+      "node_id": "2FEDC784-AA80-4D77-BBF1-8AF596855AB3",
+      "vector_data_present": true,
+      "effect_fields": [
+        "blur"
+      ]
+    },
+    {
+      "node_id": "657ACAF2-961D-4BF7-80AA-89FE7B215DCC",
+      "vector_data_present": true,
+      "effect_fields": [
+        "blur"
+      ]
+    },
+    {
+      "node_id": "667F32D5-D4BD-40F0-85C6-EA0DD47FBC16",
+      "vector_data_present": true,
+      "effect_fields": [
+        "blur"
+      ]
+    },
+    {
+      "node_id": "5B1685B0-FB7D-4C57-8A48-57AAF03E81CB",
+      "vector_data_present": true,
+      "effect_fields": [
+        "blur"
+      ]
+    },
+    {
+      "node_id": "88A37D58-6B12-4352-99ED-8B2C50D30409",
+      "vector_data_present": true,
+      "effect_fields": [
+        "blur"
+      ]
+    },
+    {
+      "node_id": "6AEE8D93-3D7F-4372-A5A3-F0EF43D4965D",
+      "vector_data_present": true,
+      "effect_fields": [
+        "blur"
+      ]
+    },
+    {
+      "node_id": "8E07A897-DE57-447E-8B09-7DC834624B49",
+      "vector_data_present": true,
+      "effect_fields": [
+        "blur"
+      ]
+    },
+    {
+      "node_id": "BE411C43-8E01-4CF3-BD60-968876C5AD31",
+      "vector_data_present": true,
+      "effect_fields": [
+        "blur"
+      ]
+    },
+    {
+      "node_id": "069C27F5-1AFA-4B23-94B2-FE6C213F4747",
+      "vector_data_present": true,
+      "effect_fields": [
+        "blur"
+      ]
+    },
+    {
+      "node_id": "D702BE09-A795-4BF0-AE0A-94F9D4601193",
+      "vector_data_present": true,
+      "effect_fields": [
+        "blur"
+      ]
+    },
+    {
+      "node_id": "1DCB4BAF-56BB-4FE6-9219-D902811366E1",
+      "vector_data_present": true,
+      "effect_fields": [
+        "shadow",
+        "blur"
+      ]
+    }
+  ],
+  "review_queue": [
+    {
+      "node_id": "FDEB1A50-248C-47D0-8CDF-BF900B5DC10F",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "349F36A8-904D-41C6-AF83-0954B7AF3E89",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "9A4A0A90-222B-4071-B4D8-2D3E9A4BC19A"
+    },
+    {
+      "node_id": "69A0710E-FC76-46C7-95F9-856E4B1E3BF3",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "9A4A0A90-222B-4071-B4D8-2D3E9A4BC19A"
+    },
+    {
+      "node_id": "188D812C-6E96-4297-91E1-CF5518266247",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "3BBABDAA-CF61-4BDE-941D-165810B9E2C7"
+    },
+    {
+      "node_id": "53677ADF-BBC3-4B39-BBEC-07EFE30236F1",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "5DAE51BC-2859-41F6-9293-AA0F51C6BA0C"
+    },
+    {
+      "node_id": "A629AA0E-D2E3-45A8-8FD7-3EBEF8C4C9BC",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "5DAE51BC-2859-41F6-9293-AA0F51C6BA0C"
+    },
+    {
+      "node_id": "4B78ED47-A224-4F17-B134-747DBCA5732F",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "94CFC890-5C54-439E-8A42-8BFE9A78D8CE",
+      "kind": "missing_bitmap",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "66AB07DA-9039-40F2-BC13-669C41BD947B",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "D4EE8138-4216-481B-8DE6-974CE61A048C",
+      "kind": "missing_bitmap",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "D9B48322-C3E3-401D-8BB6-799B0360125A",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "DD386080-9BFE-4A0F-9FF9-00AB07D88C79",
+      "kind": "missing_bitmap",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "70F61C63-282E-4BBF-9E9F-775CEA7206AB",
+      "kind": "missing_bitmap",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "A7C8FCF7-2421-4C3E-9C42-5B8F2F12EC8D",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "D10821D7-DC50-440D-B9EB-BED8A411F186",
+      "kind": "missing_bitmap",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "E3858F58-652E-4259-B544-0ECFE4794170",
+      "kind": "missing_bitmap",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "1B910FB6-6619-40D0-88E9-94CBA7F28173",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "DE544AB5-333D-4928-BCF6-1F50D9F621CA",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "B33C5281-A170-41D2-9B34-097F22BBDA48",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "AF8AA2DB-58AA-4539-95D3-1B98E16A81B3",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "7A9B0FF7-C101-4235-8348-E5AFD4793E23"
+    },
+    {
+      "node_id": "4F4D842E-F732-48D0-BAA3-1E79D4F75CF0",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "7A9B0FF7-C101-4235-8348-E5AFD4793E23"
+    },
+    {
+      "node_id": "1F8FDA8F-C9ED-4379-A4B8-2605B3848E6D",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "8B35387E-659D-48A8-B545-9E068533CF0F",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "B160912A-FD89-4231-A735-9587882452EF"
+    },
+    {
+      "node_id": "CF1BE17C-B997-4C94-BA6C-5164B4058BC5",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "B160912A-FD89-4231-A735-9587882452EF"
+    },
+    {
+      "node_id": "BC0EFB0B-FEC1-4B05-91D9-AB971D78A6DF",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "DC16184F-EFE3-4F81-BB55-7CB18D498509",
+      "kind": "missing_bitmap",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "278182B1-7644-4724-A0E1-AC747FD3BE46",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "C7274AB2-C021-42A1-81D8-B94A83398764",
+      "kind": "missing_bitmap",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "7AFC8E7C-BFFB-4152-A8A9-C26154657BE3",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "1CEC3E87-B258-4032-861C-B647A9E6A89B",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "97FB03F0-BEFA-49E9-957E-C00EB3D686C1",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "F7083F8D-0E63-490D-8946-26D40886DA91"
+    },
+    {
+      "node_id": "C529936D-3130-4023-B20C-603D6BA435B8",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "F7083F8D-0E63-490D-8946-26D40886DA91"
+    },
+    {
+      "node_id": "A94C3144-FDEA-46D8-AF9C-C088A6C70E6B",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "4D3F43B4-8720-42E7-BA8C-794821CFF0D7"
+    },
+    {
+      "node_id": "1AB89435-09ED-4F18-AC00-28DD1E96068C",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "4D3F43B4-8720-42E7-BA8C-794821CFF0D7"
+    },
+    {
+      "node_id": "63368B30-5887-4EFD-9B6C-1F683580EE11",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "DD197111-9D7C-4F2E-99A5-1A37E1E2CCFE",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "1D9F5CD5-2627-487B-9808-097E3216EDB1",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "D524ECBD-508B-46A6-9529-56FFEA894F8C",
+      "kind": "missing_bitmap",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "F6C58514-30F5-4004-9AE4-3FE2BB506271",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "1CD5ECE0-6C7D-4484-89EC-83A3849B4834",
+      "kind": "missing_bitmap",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "273FB742-2F0B-4155-B701-B6F044818AA7",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "5B5225D9-ADA2-499E-9579-387B1F90696F",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "F43975C8-2179-4C56-93F1-437274E93D65",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "472E7516-EE6C-4D31-84B7-CA3677C2CE0C",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "E6F9DCA2-298E-4722-8B44-CF283ED76C77",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "BBE38D7D-FA23-4B64-8A1C-7993772389A7",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "8E41EEBC-3D78-4012-AD36-3E1EB47C0B42",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "BA65F155-D026-45C4-B758-CFDCAB667BC3",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "ACFA342C-5C69-41BA-9B24-6FBC27D50AFC",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "7EDFF30D-2406-4DB7-BEE6-86D0179E9EED",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "A393A64B-69C6-429C-8392-361ED358BA84",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "802DBE99-2249-46A3-B2BD-A48CA5BB3022"
+    },
+    {
+      "node_id": "5A309C32-51B5-4AE6-9F13-402F0FFDC3D8",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "802DBE99-2249-46A3-B2BD-A48CA5BB3022"
+    },
+    {
+      "node_id": "F5F29FD0-3962-4450-BDB2-A0FC98600618",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "93F2EA16-F78C-4D5B-BCC2-C5A663C90505"
+    },
+    {
+      "node_id": "70E7EF0B-DFD6-4BBB-8DFC-79FB979A0DF2",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "93F2EA16-F78C-4D5B-BCC2-C5A663C90505"
+    },
+    {
+      "node_id": "A82CA772-AA6F-4484-8E39-65A48B88E823",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "99B54AD8-F161-4634-9A2D-8A8D99C51461",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "617EB816-62A2-4887-A623-71F171ED0410"
+    },
+    {
+      "node_id": "174D30C7-DF63-4B2B-B3CA-D41983C5E936",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "617EB816-62A2-4887-A623-71F171ED0410"
+    },
+    {
+      "node_id": "2FEDC784-AA80-4D77-BBF1-8AF596855AB3",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "0CAD9142-C82A-40FD-BA52-F35BF8B2BDF8",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "51D4528F-19CD-450D-99EA-DA30F90F812C"
+    },
+    {
+      "node_id": "BC4EE3F3-4F02-4D6E-B62C-066F234CC3B8",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "51D4528F-19CD-450D-99EA-DA30F90F812C"
+    },
+    {
+      "node_id": "138012A4-02F8-4444-8C71-9701D1E0C8F8",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "33AA626F-0FB5-4931-AD34-321ED4A3E2A0"
+    },
+    {
+      "node_id": "E8B15434-31E8-4276-BCC0-D1884B54390B",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "33AA626F-0FB5-4931-AD34-321ED4A3E2A0"
+    },
+    {
+      "node_id": "97577131-E44A-4820-B59D-19A86F0D9015",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "46382DB2-FE36-4A1C-9BD7-74FBDFE30379"
+    },
+    {
+      "node_id": "AB1C3468-53D5-494F-BC8F-3DC2EB60BA44",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "46382DB2-FE36-4A1C-9BD7-74FBDFE30379"
+    },
+    {
+      "node_id": "61746C39-AB6C-4B7A-93C0-748A52ADA484",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "6E3780C1-5FC0-49F1-BE8A-C38B712A5527"
+    },
+    {
+      "node_id": "BBEDE7EA-8C0C-456E-A026-654F06E35ABD",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "6E3780C1-5FC0-49F1-BE8A-C38B712A5527"
+    },
+    {
+      "node_id": "2C561AE5-20DB-4634-AC09-C6F77EEA0152",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "5C3B8640-CA32-405C-BE08-4C1B4437603E"
+    },
+    {
+      "node_id": "881F334C-A989-4050-873B-F53758622409",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "5C3B8640-CA32-405C-BE08-4C1B4437603E"
+    },
+    {
+      "node_id": "03D3D21E-2F00-4C25-ACD9-A092F755A61B",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "B383D6D4-17E8-49AC-9420-4AE493CEB9BC",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "6AEE8D93-3D7F-4372-A5A3-F0EF43D4965D",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "A8AC7814-9CDF-418C-B9EE-126FFF039ADE"
+    },
+    {
+      "node_id": "1E445E06-4B1A-4B89-A4BF-7FDD27B5472A",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "A8AC7814-9CDF-418C-B9EE-126FFF039ADE"
+    },
+    {
+      "node_id": "8E07A897-DE57-447E-8B09-7DC834624B49",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "CEF50751-2274-4399-B1AA-FE65C2F64A00"
+    },
+    {
+      "node_id": "897653A6-5700-4DFB-87F0-AA90854CA3B6",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "CEF50751-2274-4399-B1AA-FE65C2F64A00"
+    },
+    {
+      "node_id": "BE411C43-8E01-4CF3-BD60-968876C5AD31",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "F38ECF0A-E38D-48F8-8C39-BF1DAEA85EC0"
+    },
+    {
+      "node_id": "60B14FE1-AD38-451D-A77B-D3C3E2EEE2B0",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "F38ECF0A-E38D-48F8-8C39-BF1DAEA85EC0"
+    },
+    {
+      "node_id": "069C27F5-1AFA-4B23-94B2-FE6C213F4747",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "0F0FA3A2-DB0F-46BD-AD1E-FDC4345ABE10"
+    },
+    {
+      "node_id": "4B8AD4A9-2785-4589-8560-FC4BB131D1DC",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "0F0FA3A2-DB0F-46BD-AD1E-FDC4345ABE10"
+    },
+    {
+      "node_id": "681CC3FB-A474-4663-8658-988B6265A94F",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "297C5DCA-81D2-4A4E-AF56-A074C47D1734"
+    },
+    {
+      "node_id": "B97DBEF4-7146-4D3E-83DA-18C7FB6B1558",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "297C5DCA-81D2-4A4E-AF56-A074C47D1734"
+    },
+    {
+      "node_id": "4C0557A1-29E7-4315-BF04-D787E9458BF3",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "297C5DCA-81D2-4A4E-AF56-A074C47D1734"
+    },
+    {
+      "node_id": "02A37778-1F3F-413B-9D75-D7E938C4A704",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "9D9EAE68-D103-4514-A4C5-ADD8178E42C8",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "0F63768D-656C-4293-B8FD-E082232434D2",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "6F7BCFB0-1513-480F-892A-F9760C9A1A5C",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "D702BE09-A795-4BF0-AE0A-94F9D4601193",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "D4C4BE5D-4704-4214-85F7-623DE24A37EB",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "11F087AE-E152-4B98-BFA1-B7B49D95F0F3",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "B301A544-A059-4E77-945B-DA6724609D85",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "B57891F4-1743-42C7-B0AE-718FAB19076B",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "89E02CB7-9181-4311-B909-3CB78E149B6E",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "8E3DE8AC-8F20-4827-AE74-8DFB0CAFC74D",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "E1118B4E-8F03-4575-A906-E415FB9DE49C",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "B3C12E36-F44E-485C-B176-D664B56B4C94",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "12D33D87-D78E-44DB-8784-9301C08E46D3",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "6DE13EFA-EE86-4025-88B7-21205B10B27F",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "337F3C1B-9C35-412A-8432-A31E693A6B94",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "05554036-223C-4740-BD6D-69449754FDD4",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "9669D5E3-D349-4B0D-BE8F-31145980329D",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "96B97AB1-436C-4D50-A068-6CBB5A301278"
+    },
+    {
+      "node_id": "FD7CE27C-2E1E-4F87-BFD0-92F09D9A1379",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "96B97AB1-436C-4D50-A068-6CBB5A301278"
+    },
+    {
+      "node_id": "DAA9F1C1-047E-4269-885C-BF0D3BB184E0",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "96B97AB1-436C-4D50-A068-6CBB5A301278"
+    },
+    {
+      "node_id": "0D351280-C927-4965-B024-F3FB0507FFE6",
+      "kind": "ancestor_asset_candidate",
+      "owner_candidate": "96B97AB1-436C-4D50-A068-6CBB5A301278"
+    },
+    {
+      "node_id": "30B310D6-99E6-4F20-966C-00D99612D03B",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "B8A5F983-22D8-4723-A3CF-22290E4B6FD4",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "1DCB4BAF-56BB-4FE6-9219-D902811366E1",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "48C19ECF-0824-496C-9BF9-522EE1BF3C49",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "9A5D800A-E5C2-4B42-AB44-913513AF690F",
+      "kind": "missing_bitmap",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "2C388516-EE7D-48B7-8260-6CE644B15952",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    },
+    {
+      "node_id": "CEE6746B-6004-44CF-B7FE-B031A32589F1",
+      "kind": "review_source_geometry",
+      "owner_candidate": null
+    }
+  ],
+  "review_groups": [
+    {
+      "proposal": "original_asset",
+      "owner_candidate": null,
+      "styles": [],
+      "node_ids": [
+        "9A4A0A90-222B-4071-B4D8-2D3E9A4BC19A",
+        "3BBABDAA-CF61-4BDE-941D-165810B9E2C7",
+        "7A9B0FF7-C101-4235-8348-E5AFD4793E23",
+        "B160912A-FD89-4231-A735-9587882452EF",
+        "F7083F8D-0E63-490D-8946-26D40886DA91",
+        "88F3D345-4828-476C-B1C5-FF4FD79C5483",
+        "2AC9ABDE-A920-4387-8820-0DD4C4A5AAA8",
+        "4D3F43B4-8720-42E7-BA8C-794821CFF0D7",
+        "802DBE99-2249-46A3-B2BD-A48CA5BB3022",
+        "93F2EA16-F78C-4D5B-BCC2-C5A663C90505",
+        "617EB816-62A2-4887-A623-71F171ED0410",
+        "51D4528F-19CD-450D-99EA-DA30F90F812C",
+        "65936BE4-5DBC-40EA-9F8D-7D62008C4683",
+        "920D142B-E9A5-4D80-8D39-9C6798D7A6A8",
+        "0522F0CE-376A-433C-9B09-652C21E812C1",
+        "A3DA70AA-7E4D-4053-980E-B9FFA3FC6187",
+        "E6E1BC26-72DE-4BFA-A6FF-075C40B9A2A7",
+        "33AA626F-0FB5-4931-AD34-321ED4A3E2A0",
+        "46382DB2-FE36-4A1C-9BD7-74FBDFE30379",
+        "6E3780C1-5FC0-49F1-BE8A-C38B712A5527",
+        "5C3B8640-CA32-405C-BE08-4C1B4437603E",
+        "A8AC7814-9CDF-418C-B9EE-126FFF039ADE",
+        "CEF50751-2274-4399-B1AA-FE65C2F64A00",
+        "F38ECF0A-E38D-48F8-8C39-BF1DAEA85EC0",
+        "0F0FA3A2-DB0F-46BD-AD1E-FDC4345ABE10",
+        "657ACAF2-961D-4BF7-80AA-89FE7B215DCC",
+        "667F32D5-D4BD-40F0-85C6-EA0DD47FBC16",
+        "5B1685B0-FB7D-4C57-8A48-57AAF03E81CB",
+        "88A37D58-6B12-4352-99ED-8B2C50D30409",
+        "B8CDD6AE-2FFA-487A-8F4D-E11B79C58FB9",
+        "3C021254-152A-46EC-B9E0-BA518AAF230A",
+        "B9F93DAB-E64E-44DF-A885-7B0B5CCB3EE3",
+        "B0931C98-96CB-451A-BF7D-2FA17C440B2A",
+        "D1A49E9B-0C81-422A-B53E-3F83F5BADDBC",
+        "96B97AB1-436C-4D50-A068-6CBB5A301278",
+        "B4B0C0E3-EEE7-49C7-8289-A352413AF69D"
+      ]
+    },
+    {
+      "proposal": "original_asset",
+      "owner_candidate": "3BBABDAA-CF61-4BDE-941D-165810B9E2C7",
+      "styles": [],
+      "node_ids": [
+        "5DAE51BC-2859-41F6-9293-AA0F51C6BA0C"
+      ]
+    },
+    {
+      "proposal": "review_source_geometry",
+      "owner_candidate": null,
+      "styles": [],
+      "node_ids": [
+        "FDEB1A50-248C-47D0-8CDF-BF900B5DC10F",
+        "4B78ED47-A224-4F17-B134-747DBCA5732F",
+        "66AB07DA-9039-40F2-BC13-669C41BD947B",
+        "D9B48322-C3E3-401D-8BB6-799B0360125A",
+        "A7C8FCF7-2421-4C3E-9C42-5B8F2F12EC8D",
+        "1B910FB6-6619-40D0-88E9-94CBA7F28173",
+        "DE544AB5-333D-4928-BCF6-1F50D9F621CA",
+        "B33C5281-A170-41D2-9B34-097F22BBDA48",
+        "1F8FDA8F-C9ED-4379-A4B8-2605B3848E6D",
+        "BC0EFB0B-FEC1-4B05-91D9-AB971D78A6DF",
+        "278182B1-7644-4724-A0E1-AC747FD3BE46",
+        "7AFC8E7C-BFFB-4152-A8A9-C26154657BE3",
+        "1CEC3E87-B258-4032-861C-B647A9E6A89B",
+        "63368B30-5887-4EFD-9B6C-1F683580EE11",
+        "DD197111-9D7C-4F2E-99A5-1A37E1E2CCFE",
+        "1D9F5CD5-2627-487B-9808-097E3216EDB1",
+        "F6C58514-30F5-4004-9AE4-3FE2BB506271",
+        "273FB742-2F0B-4155-B701-B6F044818AA7",
+        "5B5225D9-ADA2-499E-9579-387B1F90696F",
+        "F43975C8-2179-4C56-93F1-437274E93D65",
+        "472E7516-EE6C-4D31-84B7-CA3677C2CE0C",
+        "E6F9DCA2-298E-4722-8B44-CF283ED76C77",
+        "BBE38D7D-FA23-4B64-8A1C-7993772389A7",
+        "8E41EEBC-3D78-4012-AD36-3E1EB47C0B42",
+        "BA65F155-D026-45C4-B758-CFDCAB667BC3",
+        "ACFA342C-5C69-41BA-9B24-6FBC27D50AFC",
+        "7EDFF30D-2406-4DB7-BEE6-86D0179E9EED",
+        "A82CA772-AA6F-4484-8E39-65A48B88E823",
+        "2FEDC784-AA80-4D77-BBF1-8AF596855AB3",
+        "03D3D21E-2F00-4C25-ACD9-A092F755A61B",
+        "B383D6D4-17E8-49AC-9420-4AE493CEB9BC",
+        "02A37778-1F3F-413B-9D75-D7E938C4A704",
+        "9D9EAE68-D103-4514-A4C5-ADD8178E42C8",
+        "0F63768D-656C-4293-B8FD-E082232434D2",
+        "6F7BCFB0-1513-480F-892A-F9760C9A1A5C",
+        "D702BE09-A795-4BF0-AE0A-94F9D4601193",
+        "D4C4BE5D-4704-4214-85F7-623DE24A37EB",
+        "11F087AE-E152-4B98-BFA1-B7B49D95F0F3",
+        "B301A544-A059-4E77-945B-DA6724609D85",
+        "B57891F4-1743-42C7-B0AE-718FAB19076B",
+        "89E02CB7-9181-4311-B909-3CB78E149B6E",
+        "8E3DE8AC-8F20-4827-AE74-8DFB0CAFC74D",
+        "E1118B4E-8F03-4575-A906-E415FB9DE49C",
+        "B3C12E36-F44E-485C-B176-D664B56B4C94",
+        "12D33D87-D78E-44DB-8784-9301C08E46D3",
+        "6DE13EFA-EE86-4025-88B7-21205B10B27F",
+        "337F3C1B-9C35-412A-8432-A31E693A6B94",
+        "05554036-223C-4740-BD6D-69449754FDD4",
+        "30B310D6-99E6-4F20-966C-00D99612D03B",
+        "B8A5F983-22D8-4723-A3CF-22290E4B6FD4",
+        "1DCB4BAF-56BB-4FE6-9219-D902811366E1",
+        "48C19ECF-0824-496C-9BF9-522EE1BF3C49",
+        "2C388516-EE7D-48B7-8260-6CE644B15952",
+        "CEE6746B-6004-44CF-B7FE-B031A32589F1"
+      ]
+    },
+    {
+      "proposal": "ancestor_asset_candidate",
+      "owner_candidate": "9A4A0A90-222B-4071-B4D8-2D3E9A4BC19A",
+      "styles": [],
+      "node_ids": [
+        "349F36A8-904D-41C6-AF83-0954B7AF3E89",
+        "69A0710E-FC76-46C7-95F9-856E4B1E3BF3"
+      ]
+    },
+    {
+      "proposal": "ancestor_asset_candidate",
+      "owner_candidate": "3BBABDAA-CF61-4BDE-941D-165810B9E2C7",
+      "styles": [],
+      "node_ids": [
+        "188D812C-6E96-4297-91E1-CF5518266247"
+      ]
+    },
+    {
+      "proposal": "ancestor_asset_candidate",
+      "owner_candidate": "5DAE51BC-2859-41F6-9293-AA0F51C6BA0C",
+      "styles": [],
+      "node_ids": [
+        "53677ADF-BBC3-4B39-BBEC-07EFE30236F1",
+        "A629AA0E-D2E3-45A8-8FD7-3EBEF8C4C9BC"
+      ]
+    },
+    {
+      "proposal": "missing_bitmap",
+      "owner_candidate": null,
+      "styles": [],
+      "node_ids": [
+        "94CFC890-5C54-439E-8A42-8BFE9A78D8CE",
+        "D4EE8138-4216-481B-8DE6-974CE61A048C",
+        "DD386080-9BFE-4A0F-9FF9-00AB07D88C79",
+        "70F61C63-282E-4BBF-9E9F-775CEA7206AB",
+        "D10821D7-DC50-440D-B9EB-BED8A411F186",
+        "E3858F58-652E-4259-B544-0ECFE4794170",
+        "DC16184F-EFE3-4F81-BB55-7CB18D498509",
+        "C7274AB2-C021-42A1-81D8-B94A83398764",
+        "D524ECBD-508B-46A6-9529-56FFEA894F8C",
+        "1CD5ECE0-6C7D-4484-89EC-83A3849B4834",
+        "9A5D800A-E5C2-4B42-AB44-913513AF690F"
+      ]
+    },
+    {
+      "proposal": "text",
+      "owner_candidate": null,
+      "styles": [
+        {
+          "font_family": "PingFangSC-Regular",
+          "font_size": 9,
+          "font_weight": 400,
+          "color": "rgba(218,199,255,1.000000)",
+          "line_height": 13,
+          "letter_spacing": 0
+        }
+      ],
+      "node_ids": [
+        "EC384EEC-3181-4C57-AD2C-BCCA48B25F2A",
+        "9E70D178-BBD1-43ED-9DDC-81E6AC78E710",
+        "EE00DAB6-0FA5-47AF-AC00-FC5D969FEEC1",
+        "9E8CD3AF-2FC7-4A87-9876-DE782F8D3F19",
+        "03162920-B7B7-47C9-ABE2-D4F5898B2379",
+        "6BE60EFB-79D0-4A27-AA88-CF8543E0D96F"
+      ]
+    },
+    {
+      "proposal": "ancestor_asset_candidate",
+      "owner_candidate": "7A9B0FF7-C101-4235-8348-E5AFD4793E23",
+      "styles": [],
+      "node_ids": [
+        "AF8AA2DB-58AA-4539-95D3-1B98E16A81B3",
+        "4F4D842E-F732-48D0-BAA3-1E79D4F75CF0"
+      ]
+    },
+    {
+      "proposal": "ancestor_asset_candidate",
+      "owner_candidate": "B160912A-FD89-4231-A735-9587882452EF",
+      "styles": [],
+      "node_ids": [
+        "8B35387E-659D-48A8-B545-9E068533CF0F",
+        "CF1BE17C-B997-4C94-BA6C-5164B4058BC5"
+      ]
+    },
+    {
+      "proposal": "text",
+      "owner_candidate": null,
+      "styles": [
+        {
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 14,
+          "font_weight": 600,
+          "color": "rgba(255,255,255,1.000000)",
+          "line_height": 20,
+          "letter_spacing": 0
+        }
+      ],
+      "node_ids": [
+        "4B56B9CB-8D3B-49FF-B7B3-D704322C2E15",
+        "C1F2FCCD-8B4A-4808-9294-730BD7708274",
+        "C4AF1D97-AF3C-4551-B2FA-6FCDC8A65691",
+        "E10F6F20-086F-42F8-948D-C2A3645164F3",
+        "D3280CCC-326D-42D0-96D9-BFB81890D222",
+        "AD83C2F3-FC9A-4456-A41B-D37E4BA24FB5"
+      ]
+    },
+    {
+      "proposal": "text",
+      "owner_candidate": null,
+      "styles": [
+        {
+          "font_family": "PingFangSC-Regular",
+          "font_size": 9,
+          "font_weight": 400,
+          "color": "rgba(255,255,255,1.000000)",
+          "line_height": 13,
+          "letter_spacing": 0
+        }
+      ],
+      "node_ids": [
+        "904EF4D0-3F2D-4195-B759-E0684F610347",
+        "861A68CE-1349-4D54-8CDE-BC56F46056D5",
+        "F0D2CF6C-0E3E-495F-9261-F397FCD44815",
+        "993435FE-EAE4-4C9A-988E-F4842A5E8F9B",
+        "5D04754E-AE61-4301-BF43-1D8C0F98FFF1",
+        "54435179-3B64-4861-97EF-6872A12B12FE"
+      ]
+    },
+    {
+      "proposal": "text",
+      "owner_candidate": null,
+      "styles": [
+        {
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 9,
+          "font_weight": 600,
+          "color": "rgba(249,79,45,1.000000)",
+          "line_height": 13,
+          "letter_spacing": 0
+        }
+      ],
+      "node_ids": [
+        "E9C7457E-4342-4464-AFCE-FF08F21E6AAC",
+        "62AB6D3E-E284-4AE2-9723-B7DBFBFCB4DE",
+        "2FD2F0C0-085F-478F-93CA-022339FB4588",
+        "908D225D-A5B0-4192-B9CC-112D32BB1195",
+        "FDD6EA61-7452-45A9-A20C-808B17AC1C5D",
+        "DA375A82-2668-4850-9815-DBA7CE67BB23"
+      ]
+    },
+    {
+      "proposal": "ancestor_asset_candidate",
+      "owner_candidate": "F7083F8D-0E63-490D-8946-26D40886DA91",
+      "styles": [],
+      "node_ids": [
+        "97FB03F0-BEFA-49E9-957E-C00EB3D686C1",
+        "C529936D-3130-4023-B20C-603D6BA435B8"
+      ]
+    },
+    {
+      "proposal": "original_asset",
+      "owner_candidate": "F7083F8D-0E63-490D-8946-26D40886DA91",
+      "styles": [],
+      "node_ids": [
+        "840DA636-451F-4CE6-A1F4-0D723FD3C2E3"
+      ]
+    },
+    {
+      "proposal": "ancestor_asset_candidate",
+      "owner_candidate": "4D3F43B4-8720-42E7-BA8C-794821CFF0D7",
+      "styles": [],
+      "node_ids": [
+        "A94C3144-FDEA-46D8-AF9C-C088A6C70E6B",
+        "1AB89435-09ED-4F18-AC00-28DD1E96068C"
+      ]
+    },
+    {
+      "proposal": "original_asset",
+      "owner_candidate": "4D3F43B4-8720-42E7-BA8C-794821CFF0D7",
+      "styles": [],
+      "node_ids": [
+        "2F4829CC-F3E0-4C5D-9CD8-2C75BFAC0091"
+      ]
+    },
+    {
+      "proposal": "text",
+      "owner_candidate": null,
+      "styles": [
+        {
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 8,
+          "font_weight": 600,
+          "color": "rgba(59,206,138,1.000000)",
+          "line_height": 11,
+          "letter_spacing": 0
+        }
+      ],
+      "node_ids": [
+        "66B203C0-C477-4062-9151-0ED2B6807166",
+        "9A1948E3-AB48-4B4F-953D-6FE531AF6541",
+        "7DCFBF61-5C9E-41A8-B372-777339C3FBDB"
+      ]
+    },
+    {
+      "proposal": "text",
+      "owner_candidate": null,
+      "styles": [
+        {
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 8,
+          "font_weight": 600,
+          "color": "rgba(248,123,98,1.000000)",
+          "line_height": 11,
+          "letter_spacing": 0
+        }
+      ],
+      "node_ids": [
+        "A41DBF25-3B18-471D-88C1-DFD59DB22529",
+        "214B3847-0DD7-43BF-8571-32527220DCAF",
+        "0F171E3B-2CC3-438B-965D-83A6B24771B6"
+      ]
+    },
+    {
+      "proposal": "text",
+      "owner_candidate": null,
+      "styles": [
+        {
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 20,
+          "font_weight": 600,
+          "color": "rgba(24,24,27,1.000000)",
+          "line_height": 28,
+          "letter_spacing": 0
+        }
+      ],
+      "node_ids": [
+        "DC0E7CFF-8361-45D0-9689-66DE5D3F7E4A"
+      ]
+    },
+    {
+      "proposal": "text",
+      "owner_candidate": null,
+      "styles": [
+        {
+          "font_family": ".AppleSystemUIFont",
+          "font_size": 15,
+          "font_weight": 400,
+          "color": "rgba(0,0,0,1.000000)",
+          "line_height": 18,
+          "letter_spacing": -0.30000001192092896
+        }
+      ],
+      "node_ids": [
+        "9DD7AA0D-C02E-44FF-A783-B5693A65377E"
+      ]
+    },
+    {
+      "proposal": "ancestor_asset_candidate",
+      "owner_candidate": "802DBE99-2249-46A3-B2BD-A48CA5BB3022",
+      "styles": [],
+      "node_ids": [
+        "A393A64B-69C6-429C-8392-361ED358BA84",
+        "5A309C32-51B5-4AE6-9F13-402F0FFDC3D8"
+      ]
+    },
+    {
+      "proposal": "ancestor_asset_candidate",
+      "owner_candidate": "93F2EA16-F78C-4D5B-BCC2-C5A663C90505",
+      "styles": [],
+      "node_ids": [
+        "F5F29FD0-3962-4450-BDB2-A0FC98600618",
+        "70E7EF0B-DFD6-4BBB-8DFC-79FB979A0DF2"
+      ]
+    },
+    {
+      "proposal": "ancestor_asset_candidate",
+      "owner_candidate": "617EB816-62A2-4887-A623-71F171ED0410",
+      "styles": [],
+      "node_ids": [
+        "99B54AD8-F161-4634-9A2D-8A8D99C51461",
+        "174D30C7-DF63-4B2B-B3CA-D41983C5E936"
+      ]
+    },
+    {
+      "proposal": "ancestor_asset_candidate",
+      "owner_candidate": "51D4528F-19CD-450D-99EA-DA30F90F812C",
+      "styles": [],
+      "node_ids": [
+        "0CAD9142-C82A-40FD-BA52-F35BF8B2BDF8",
+        "BC4EE3F3-4F02-4D6E-B62C-066F234CC3B8"
+      ]
+    },
+    {
+      "proposal": "original_asset",
+      "owner_candidate": "0F0FA3A2-DB0F-46BD-AD1E-FDC4345ABE10",
+      "styles": [],
+      "node_ids": [
+        "297C5DCA-81D2-4A4E-AF56-A074C47D1734"
+      ]
+    },
+    {
+      "proposal": "ancestor_asset_candidate",
+      "owner_candidate": "33AA626F-0FB5-4931-AD34-321ED4A3E2A0",
+      "styles": [],
+      "node_ids": [
+        "138012A4-02F8-4444-8C71-9701D1E0C8F8",
+        "E8B15434-31E8-4276-BCC0-D1884B54390B"
+      ]
+    },
+    {
+      "proposal": "ancestor_asset_candidate",
+      "owner_candidate": "46382DB2-FE36-4A1C-9BD7-74FBDFE30379",
+      "styles": [],
+      "node_ids": [
+        "97577131-E44A-4820-B59D-19A86F0D9015",
+        "AB1C3468-53D5-494F-BC8F-3DC2EB60BA44"
+      ]
+    },
+    {
+      "proposal": "ancestor_asset_candidate",
+      "owner_candidate": "6E3780C1-5FC0-49F1-BE8A-C38B712A5527",
+      "styles": [],
+      "node_ids": [
+        "61746C39-AB6C-4B7A-93C0-748A52ADA484",
+        "BBEDE7EA-8C0C-456E-A026-654F06E35ABD"
+      ]
+    },
+    {
+      "proposal": "ancestor_asset_candidate",
+      "owner_candidate": "5C3B8640-CA32-405C-BE08-4C1B4437603E",
+      "styles": [],
+      "node_ids": [
+        "2C561AE5-20DB-4634-AC09-C6F77EEA0152",
+        "881F334C-A989-4050-873B-F53758622409"
+      ]
+    },
+    {
+      "proposal": "ancestor_asset_candidate",
+      "owner_candidate": "A8AC7814-9CDF-418C-B9EE-126FFF039ADE",
+      "styles": [],
+      "node_ids": [
+        "6AEE8D93-3D7F-4372-A5A3-F0EF43D4965D",
+        "1E445E06-4B1A-4B89-A4BF-7FDD27B5472A"
+      ]
+    },
+    {
+      "proposal": "original_asset",
+      "owner_candidate": "A8AC7814-9CDF-418C-B9EE-126FFF039ADE",
+      "styles": [],
+      "node_ids": [
+        "DF7CABE4-F42D-4423-AEBA-0E18EC3775FA"
+      ]
+    },
+    {
+      "proposal": "ancestor_asset_candidate",
+      "owner_candidate": "CEF50751-2274-4399-B1AA-FE65C2F64A00",
+      "styles": [],
+      "node_ids": [
+        "8E07A897-DE57-447E-8B09-7DC834624B49",
+        "897653A6-5700-4DFB-87F0-AA90854CA3B6"
+      ]
+    },
+    {
+      "proposal": "original_asset",
+      "owner_candidate": "CEF50751-2274-4399-B1AA-FE65C2F64A00",
+      "styles": [],
+      "node_ids": [
+        "DBB674EE-295F-48B0-970F-BFF0714942C5"
+      ]
+    },
+    {
+      "proposal": "ancestor_asset_candidate",
+      "owner_candidate": "F38ECF0A-E38D-48F8-8C39-BF1DAEA85EC0",
+      "styles": [],
+      "node_ids": [
+        "BE411C43-8E01-4CF3-BD60-968876C5AD31",
+        "60B14FE1-AD38-451D-A77B-D3C3E2EEE2B0"
+      ]
+    },
+    {
+      "proposal": "original_asset",
+      "owner_candidate": "F38ECF0A-E38D-48F8-8C39-BF1DAEA85EC0",
+      "styles": [],
+      "node_ids": [
+        "219FD332-AE52-4C95-82EC-5C059B8EE172"
+      ]
+    },
+    {
+      "proposal": "ancestor_asset_candidate",
+      "owner_candidate": "0F0FA3A2-DB0F-46BD-AD1E-FDC4345ABE10",
+      "styles": [],
+      "node_ids": [
+        "069C27F5-1AFA-4B23-94B2-FE6C213F4747",
+        "4B8AD4A9-2785-4589-8560-FC4BB131D1DC"
+      ]
+    },
+    {
+      "proposal": "ancestor_asset_candidate",
+      "owner_candidate": "297C5DCA-81D2-4A4E-AF56-A074C47D1734",
+      "styles": [],
+      "node_ids": [
+        "681CC3FB-A474-4663-8658-988B6265A94F",
+        "B97DBEF4-7146-4D3E-83DA-18C7FB6B1558",
+        "4C0557A1-29E7-4315-BF04-D787E9458BF3"
+      ]
+    },
+    {
+      "proposal": "text",
+      "owner_candidate": null,
+      "styles": [
+        {
+          "font_family": "PingFangSC-Regular",
+          "font_size": 9,
+          "font_weight": 400,
+          "color": "rgba(123,121,128,1.000000)",
+          "line_height": 10,
+          "letter_spacing": 0
+        }
+      ],
+      "node_ids": [
+        "BBBE5D23-3D10-4472-A243-5401BEE4469F",
+        "6CC2DEDF-E607-4160-BB38-FD7CD862614B",
+        "92CFCC69-9746-4C4D-9C79-66E48935F024"
+      ]
+    },
+    {
+      "proposal": "text",
+      "owner_candidate": null,
+      "styles": [
+        {
+          "font_family": "PingFangSC-Regular",
+          "font_size": 9,
+          "font_weight": 400,
+          "color": "rgba(24,24,27,1.000000)",
+          "line_height": 10,
+          "letter_spacing": 0
+        }
+      ],
+      "node_ids": [
+        "20A559D4-2CD6-4739-98B9-7FD8039FE4E4"
+      ]
+    },
+    {
+      "proposal": "ancestor_asset_candidate",
+      "owner_candidate": "96B97AB1-436C-4D50-A068-6CBB5A301278",
+      "styles": [],
+      "node_ids": [
+        "9669D5E3-D349-4B0D-BE8F-31145980329D",
+        "FD7CE27C-2E1E-4F87-BFD0-92F09D9A1379",
+        "DAA9F1C1-047E-4269-885C-BF0D3BB184E0",
+        "0D351280-C927-4965-B024-F3FB0507FFE6"
+      ]
+    },
+    {
+      "proposal": "text",
+      "owner_candidate": null,
+      "styles": [
+        {
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 15,
+          "font_weight": 600,
+          "color": "rgba(34,36,42,1.000000)",
+          "line_height": 21,
+          "letter_spacing": 0
+        }
+      ],
+      "node_ids": [
+        "0CA49764-0A4A-41C8-A6CF-14D01612EB2A"
+      ]
+    },
+    {
+      "proposal": "text",
+      "owner_candidate": null,
+      "styles": [
+        {
+          "font_family": "PingFangSC-Semibold",
+          "font_size": 12,
+          "font_weight": 600,
+          "color": "rgba(249,79,46,1.000000)",
+          "line_height": 17,
+          "letter_spacing": 0
+        }
+      ],
+      "node_ids": [
+        "9FD19EA3-49F7-4857-92B3-EFD1190DC1D4"
+      ]
+    },
+    {
+      "proposal": "text",
+      "owner_candidate": null,
+      "styles": [
+        {
+          "font_family": "PingFangSC-Regular",
+          "font_size": 12,
+          "font_weight": 400,
+          "color": "rgba(145,145,155,1.000000)",
+          "line_height": 17,
+          "letter_spacing": 0
+        }
+      ],
+      "node_ids": [
+        "411E1524-68FE-432D-B354-9AF2E8897214",
+        "DCB809E4-C808-491A-97D4-50843C30E78E"
+      ]
+    }
+  ],
+  "issues": [],
+  "pinned_inputs": {
+    "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/normalized-source/region-01.json": "3ca4429a7314d82b0708a719caf563808c9474841d67dc7559213b7d001e65a1",
+    "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/normalized-source/region-02.json": "132250ea576b84f76d2fbac90dab6fc1adc8c47a15a4e078be89f80fe4119287",
+    "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/normalized-source/region-03.json": "43a553244e588344f9e8d0c3478bf7d7d9ac50580365b93153e55ab17931176c",
+    "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/normalized-source/region-04.json": "021753c66deb238372019ad03825e6aa0a3bbef2ec21810fd2a23cde46bd04b4",
+    "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/reference-4x.png": "34a0970adcead4d8a785cb0ba3e0aa3555cc80054992784ee02e2900b7fe47d5",
+    "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/source-bundle/install-receipt.json": "a4784f08bcd9fe52bcf8b8f2c700defe332389a3b74743f9fab025bb25899a60",
+    "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/backup-21-skill213/project-font-map.json": "16fcaaa2ad5cda5d974cfa429c8e442976ed32dcfb289a5cda9fbf8e2cd76144"
+  },
+  "seconds": 0.0873
+}

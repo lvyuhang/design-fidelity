@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "contract_sha256": "444b747d2f2105be003761c59de20e37c621a4906fe85daa723743d82cc5f07f",
+  "candidate_sha256": "7c9e0c3a805fe84a8ae0e366473d4d482b013945772a53104609fe34699f9c29",
+  "environment": {
+    "renderer": "Flutter widget test / Skia",
+    "renderer_version": "Flutter 3.47.7 · engine deb287481e3ce9468f3434937ced4240a70539ca",
+    "platform": "macOS arm64",
+    "locale": "zh_CN",
+    "state": "caller relationship dialog open; deterministic video placeholder",
+    "text_scale": 1
+  },
+  "inputs": {
+    "../../flutter_ui_components/assets/fixtures/feed-photo.png": "5254e5f673b3cc0ff207d7276a878dece5ce5cd386826a8d06fe82a79c0d98f2",
+    "../../flutter_ui_components/assets/fixtures/reply-avatar.png": "277f5d1e4b55ee89bcf293216e0e0e7d3ac96e61ac70848bc82f49520ae4c8a1",
+    "../../flutter_ui_components/assets/fonts/PingFangSC-Medium.otf": "6a1f0df7f25f223b67a219562c45918ca246708462fc1b59cd9ce4c9a7a129b0",
+    "../../flutter_ui_components/assets/fonts/PingFangSC-Regular.otf": "582475dbeb3256eacae907b799144e74a0b063c984218498295c6ea1163d26c6",
+    "../../flutter_ui_components/assets/fonts/PingFangSC-Semibold.otf": "6ebc60350d6ee7f78cf583be0fbd52b74308b8b506cde6526073c7b4d3de1e3b",
+    "../../flutter_ui_components/assets/lanhu/caller_relationship/assets/5355d8346ce5e22f4be49f7731459ff6d76c15d1f4c773601d934b80078f237e.png": "09740aa08a332419e84e510ef7e721d5ad4ebe95bb04b8fd1bdbd871d3ec8e24",
+    "../../flutter_ui_components/assets/lanhu/caller_relationship/assets/5859b2c3b9adbbf2f97f5176d19c6ac2f24293c8cacacb7c601e76a90ceb3c21.png": "d34d6e13b819c76015929f82ba2b3b8ede1c3c1abaaced9c06bfb9d01a8d4b91",
+    "../../flutter_ui_components/assets/lanhu/caller_relationship/assets/724f5751b6438b10e1f13f9ba48349a39ce4d1e9ed616b6838b86b6ce9791e11.png": "f9cccca4cd9e5e6dc2f0ed01314ac27acb3527d94d143f88f8f2ac7cdc11d201",
+    "../../flutter_ui_components/assets/lanhu/caller_relationship/assets/c4230360431291bd733d3496f0a3029f71a18615047dcad1e7ba4aa5d3398a49.png": "1223fa2a7d85ccbf0a9f54908f00414222e8025ba8684f0d512f735cd205147b",
+    "../../flutter_ui_components/assets/lanhu/caller_relationship/assets/d8cc76f99f7becdebd771e7be0fac81ae8afe66257e7c9effa979da60364d235.png": "22414394d4f32c246e7d651befb0631ec36d927066f88a479a51db83c75cbf58",
+    "../../flutter_ui_components/lib/experiments/caller_relationship_page.dart": "f2d22c5bfbd6deb0c321ec1df8fbcab0f05ec075ce05586b6eb4c2c9701602e1",
+    "../../flutter_ui_components/lib/main.dart": "b3e9af4672b48b83441b9a1c6d09c1bcf69dbc3b3395b79223b03a4b37203d91",
+    "../../flutter_ui_components/pubspec.lock": "d764df020ca4eb901ccd2cead6955f5e8600adcc872c563512552b5aa1a815f7",
+    "../../flutter_ui_components/pubspec.yaml": "c40501fc6aee78a03a8f5be2fceb8197169bc5697ec3b5899fc94642ee5173b3",
+    "../../flutter_ui_components/test/caller_relationship_render_test.dart": "192f1dcbeecfb430c54307e14be140e4f643fa38e82ea21cf70aad09ca02eeab",
+    "reference.png": "f10a0f87054a6f6e29070cd6df1e9dcede2e6833e1ebe236792aeff92890bca7",
+    "source/overview.json": "85eeb8f26da97be54030f3e88a1c78852838b61a78b9add4de9b4b917fd6169e",
+    "source/source-01.json": "13bd41029df7f062e4da36db30257d2f0f0522febb337532cf65e2085b1f0d52",
+    "source/source-02.json": "536cd01fbe5f81425a796ab867f16614fd8db925a2d1a46dc7e772f44ddd1bd5",
+    "source/source-03.json": "e664777622d20b6869a442ba5e112d88c505e10d5583ba59f2783beaa41cb4e4"
+  },
+  "command": [
+    "/usr/bin/env",
+    "CALLER_RENDER_OUTPUT=../design_evidence/caller-relationship/r3/render.png",
+    "/Users/tan/development/flutter-arm64/flutter/bin/flutter",
+    "test",
+    "test/caller_relationship_render_test.dart",
+    "--no-pub"
+  ],
+  "cwd": "/Users/tan/Documents/ChatGPT/聚星阁/flutter_ui_components",
+  "exit_code": 0,
+  "started_ns": 1791804064545817000,
+  "finished_ns": 1791804066374107000
+}

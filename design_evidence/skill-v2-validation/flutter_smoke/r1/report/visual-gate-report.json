@@ -1,0 +1,202 @@
+{
+  "contract": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-v2-validation/flutter_smoke/contract.json",
+  "contract_sha256": "f6d8b377f425062ae338ee5633ccabee2d29c6fd4040dd5614a6925fe48de1f3",
+  "coverage": {
+    "nodes": 4,
+    "covered": 4,
+    "exceptions": []
+  },
+  "environment": {
+    "renderer": "Flutter widget test",
+    "renderer_version": "3.47.7 / deb287481e3ce9468f3434937ced4240a70539ca",
+    "platform": "macOS arm64",
+    "locale": "en",
+    "state": "synthetic-static",
+    "text_scale": 1
+  },
+  "exclusions": [],
+  "excluded_fraction": 0.0,
+  "reference": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-v2-validation/flutter_smoke/reference.png",
+  "render_scale": 2.0,
+  "reference_preview": "reference.png",
+  "passed": true,
+  "candidates": {
+    "r1": {
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-v2-validation/flutter_smoke/r1/render.png",
+      "preview": "1-r1-candidate.png",
+      "passed": true,
+      "regions": {
+        "whole": {
+          "label": "画布",
+          "rect": [
+            0,
+            0,
+            375,
+            812
+          ],
+          "metrics": {
+            "compared_pixels": 1218000,
+            "total_pixels": 1218000,
+            "mae": 0.0,
+            "p95_max_channel": 0.0
+          },
+          "passed": true,
+          "failures": []
+        }
+      },
+      "features": {
+        "icon": {
+          "label": "icon",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              20.0,
+              20.0,
+              20.0,
+              20.0
+            ],
+            "center": [
+              29.75,
+              29.75
+            ],
+            "ink_pixels": 1600
+          },
+          "actual": {
+            "bbox": [
+              20.0,
+              20.0,
+              20.0,
+              20.0
+            ],
+            "center": [
+              29.75,
+              29.75
+            ],
+            "ink_pixels": 1600
+          }
+        },
+        "heading": {
+          "label": "heading",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              60.0,
+              20.0,
+              100.0,
+              20.0
+            ],
+            "center": [
+              109.75,
+              29.75
+            ],
+            "ink_pixels": 8000
+          },
+          "actual": {
+            "bbox": [
+              60.0,
+              20.0,
+              100.0,
+              20.0
+            ],
+            "center": [
+              109.75,
+              29.75
+            ],
+            "ink_pixels": 8000
+          }
+        },
+        "cta": {
+          "label": "cta",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.0
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              16.0,
+              714.0,
+              343.0,
+              50.0
+            ],
+            "center": [
+              187.25,
+              738.75
+            ],
+            "ink_pixels": 68600
+          },
+          "actual": {
+            "bbox": [
+              16.0,
+              714.0,
+              343.0,
+              50.0
+            ],
+            "center": [
+              187.25,
+              738.75
+            ],
+            "ink_pixels": 68600
+          }
+        }
+      },
+      "relations": {
+        "row": {
+          "label": "图文行",
+          "reference_delta": 0.0,
+          "actual_delta": 0.0,
+          "error": 0.0,
+          "passed": true
+        }
+      },
+      "colors": {
+        "surface": {
+          "label": "白底",
+          "rect": [
+            184.5,
+            403.0,
+            6,
+            6
+          ],
+          "reference_rgb": [
+            255.0,
+            255.0,
+            255.0
+          ],
+          "actual_rgb": [
+            255.0,
+            255.0,
+            255.0
+          ],
+          "max_channel_delta": 0.0,
+          "passed": true
+        }
+      },
+      "overlay": "1-r1-alignment-overlay.png"
+    }
+  },
+  "status": "PASS"
+}

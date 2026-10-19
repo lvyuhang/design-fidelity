@@ -1,0 +1,68 @@
+{
+  "source": "Lanhu source node IDs; component boundaries selected by visual inspection",
+  "components": [
+    {
+      "widget": "CacheClearDialog",
+      "file": "lib/components/expanded_components.dart",
+      "evidence": "modal-source.json",
+      "snapshot": "d55fd328e4eedf660dbb471e50da78bd",
+      "frame": [
+        23,
+        267,
+        330,
+        228
+      ],
+      "root_node": "FC01670F-8A5F-4911-A3D0-A8FBD16728D3",
+      "state": "default",
+      "assets": 0
+    },
+    {
+      "widget": "JuxingBottomNavigation",
+      "file": "lib/components/expanded_components.dart",
+      "evidence": "nav-source.json",
+      "snapshot": "025bc1130d29bbe5b64e14ca4af2b493",
+      "frame": [
+        14,
+        735,
+        347,
+        56
+      ],
+      "root_node": "F49FDD79-9EFF-47B9-9F75-46536003B9B0",
+      "state": "home selected only",
+      "original_assets": [
+        "A020F413-6674-4CD1-93F8-BD1E926E0E44:image"
+      ],
+      "approximate_nodes": [
+        "FEEAA557-72F1-4878-A6F3-D7D6366A776F"
+      ]
+    },
+    {
+      "widget": "AppealCard",
+      "file": "lib/components/expanded_components.dart",
+      "evidence": "appeal-source.json",
+      "snapshot": "4a82a245a06e7de77a4320e533934570",
+      "frame": [
+        16,
+        352,
+        343,
+        116
+      ],
+      "root_node": "9E065EED-6A5B-4D37-9FFF-4160EA1C5B2C",
+      "state": "appeal available",
+      "original_assets": [
+        "203E602F-75B1-4EBB-AF22-1C630B6DFD99:image"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "node": "FEEAA557-72F1-4878-A6F3-D7D6366A776F",
+      "issue": "Raw source verified directly: layers=[], no points/image/ddsImage. Only message outline is approximate; face paths are exact source vectors."
+    },
+    {
+      "node": "F4DA63E5-5D38-431F-82BE-3FCBCBC48B59",
+      "issue": "Photo bitmap has crop geometry but no exposed asset URL/asset_id; photo feed card was not implemented or included in fidelity results."
+    }
+  ],
+  "reference_policy": "Reference images only in comparison panels. No whole-component screenshot in native component implementation."
+}

@@ -1,0 +1,26 @@
+{
+  "status": "frozen_before_first_render",
+  "frozen_on": "2026-10-12",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "hash_algorithm": "SHA-256",
+  "source": {
+    "path": "flutter_ui_components/lib/experiments/utility_sol56.dart",
+    "sha256": "86585c68989187fbf7d5246b2164c489b8b562a5e20dcd0fcc5ea95ee8751512"
+  },
+  "frozen_copy": {
+    "path": "design_evidence/components-sol56/utility_sol56.frozen.dart",
+    "sha256": "86585c68989187fbf7d5246b2164c489b8b562a5e20dcd0fcc5ea95ee8751512"
+  },
+  "protocol": {
+    "path": "design_evidence/components-sol56/utility-protocol.json",
+    "sha256": "cde0a619443e623a8799bcdba6b2568321e3e14f84846a70d484bb04f19ee241"
+  },
+  "source_matches_frozen_copy": true,
+  "dart_format_completed": true,
+  "flutter_executed": false,
+  "rendered": false,
+  "screenshots_created": false,
+  "comparisons_run": false,
+  "visual_corrections": 0
+}

@@ -1,0 +1,13 @@
+exports.run=function(root){
+ var s=require('sketch'),e=require(root+'/LayerPilot.sketchplugin/Contents/Sketch/lib/engine'),p=require(root+'/LayerPilot.sketchplugin/Contents/Sketch/lib/progress'),fs=require(root+'/LayerPilot.sketchplugin/Contents/Sketch/lib/files'),d=new s.Document(),other=new s.Document(),returned=false,ticks=0,report={},f=new s.Group.Frame({parent:d.selectedPage,name:'async fixture',frame:{x:0,y:0,width:400,height:400}});
+ for(var i=0;i<2;i++){new s.ShapePath({parent:f,name:'Rectangle',frame:{x:i*200,y:80,width:180,height:220},style:{fills:['#fff'],borders:[]}});new s.Text({parent:f,name:'Text',text:'卡片 '+i,frame:{x:i*200+20,y:120,width:100,height:30}});}
+ var original=f.layers.map(function(l){return {id:l.id,name:l.name};}),otherText=new s.Text({parent:other.selectedPage,text:'other'});
+ d.selectedLayers.layers=[f];d.sketchObject.historyMaker().registerHistoryMomentTitle('fixture');d.sketchObject.historyMaker().makeHistoryIfNecessary();d.sketchObject.historyMaker().flush();
+ var timer=setInterval(function(){ticks++;otherText.text='other '+ticks;},10);
+ p.runJob('async fixture',function(update){return e.organizeJob(d,{onProgress:update});},d,function(error,result,metrics){
+  clearInterval(timer);report.error=error?String(error)+' '+error.stack:null;report.returnedBeforeWork=returned;report.ticks=ticks;report.metrics=metrics;report.groups=result&&result.groups;report.doc=d.id;report.frame=f.id;report.original=original;
+  report.success=!error&&returned&&ticks>3&&result.groups>0&&!p.isRunning()&&!d.sketchObject.windowForSheet().attachedSheet();
+  d.sketchObject.historyMaker().makeHistoryIfNecessary();d.sketchObject.historyMaker().flush();other.close();fs.writeFileSync(root+'/evidence/async-report.json',JSON.stringify(report,null,2));
+ });returned=true;
+};
+exports.undo=function(root){var s=require('sketch'),fs=require(root+'/LayerPilot.sketchplugin/Contents/Sketch/lib/files'),r=JSON.parse(String(NSString.stringWithContentsOfFile_encoding_error(root+'/evidence/async-report.json',4,null))),d=s.getDocuments().find(function(d){return d.id===r.doc;});try{d.sketchObject.historyMaker().moveDocument_throughHistoryBackInTime(d.sketchObject.documentData(),true);var f=d.getLayerWithID(r.frame);r.oneUndo=!!f&&f.layers.length===r.original.length&&r.original.every(function(l){var x=d.getLayerWithID(l.id);return x&&x.parent.id===f.id&&x.name===l.name;});r.success=r.success&&r.oneUndo;}catch(error){r.success=false;r.undoError=String(error);}finally{d.close();fs.writeFileSync(root+'/evidence/async-report.json',JSON.stringify(r,null,2));console.log(JSON.stringify(r));}};

@@ -1,0 +1,31 @@
+{
+  "version": "2.10.0",
+  "changed_files": [
+    "SKILL.md",
+    "references/efficient-execution.md",
+    "references/session-entrypoint.md",
+    "references/validation.md",
+    "references/visual-contract.md",
+    "tests/test_preflight.py",
+    "tests/test_page_session.py",
+    "tests/test_round_log.py",
+    "tests/test_fidelity.py",
+    "scripts/page_session.py",
+    "scripts/run_flutter.py",
+    "scripts/baseline_policy.py",
+    "scripts/round_log.py",
+    "scripts/visual_fidelity_gate.py",
+    "assets/page-session.example.json"
+  ],
+  "installed_skill": "/Users/tan/.codex/skills/lanhu-design-fidelity/SKILL.md",
+  "unit_test_cases_passed": 104,
+  "flutter_sequence": [
+    "PASS",
+    "FAIL (4px offset)",
+    "PASS"
+  ],
+  "business_page_reimplemented": false,
+  "end_to_end_speedup_measured": false,
+  "tokens": null,
+  "old_test_valid_as_full_page_same_quality_benchmark": false
+}

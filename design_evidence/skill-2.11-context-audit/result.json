@@ -1,0 +1,54 @@
+{
+  "unit": "Unicode characters, not model tokens",
+  "main": {
+    "before": 4623,
+    "after": 1420,
+    "reduction_percent": 69.3
+  },
+  "main_and_daily_guide": {
+    "before": 6166,
+    "after": 2808,
+    "reduction_percent": 54.5
+  },
+  "all_docs": {
+    "before": 36132,
+    "after": 17915,
+    "reduction_percent": 50.4
+  },
+  "same_validation_stdout": {
+    "before": 2119,
+    "after": 546,
+    "reduction_percent": 74.2
+  },
+  "acceptance_scripts_unchanged": [
+    "scripts/render_with_receipt.py",
+    "scripts/run_flutter.py",
+    "scripts/baseline_policy.py",
+    "scripts/compile_contract.py",
+    "scripts/init_visual_contract.py",
+    "scripts/round_log.py",
+    "scripts/visual_fidelity_gate.py",
+    "scripts/fidelity_contract.py",
+    "scripts/prepare_page.py",
+    "scripts/source_requirements.py",
+    "scripts/preflight.py"
+  ],
+  "doc_links_valid": true,
+  "version": "2.11.0",
+  "installed_skill": "/Users/tan/.codex/skills/lanhu-design-fidelity/SKILL.md",
+  "changed_files": [
+    "SKILL.md",
+    "references/flutter-rendering.md",
+    "references/process-gates.md",
+    "references/efficient-execution.md",
+    "references/session-entrypoint.md",
+    "references/usage.md",
+    "references/preparation.md",
+    "references/implementation-decisions.md",
+    "references/mcp-evidence.md",
+    "references/visual-contract.md",
+    "tests/test_page_session.py",
+    "scripts/page_session.py"
+  ],
+  "tests_log": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/skill-2.11-context-audit/all-tests.log"
+}

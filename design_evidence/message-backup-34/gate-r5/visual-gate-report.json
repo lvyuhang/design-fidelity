@@ -1,0 +1,2535 @@
+{
+  "contract": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/visual-contract.json",
+  "contract_sha256": "5e0904c10efe44199e7b09ec3a405ef230f66ac53ea46b91064d17f1f93a8acf",
+  "skill_version": "2.5.0",
+  "coverage": {
+    "nodes": 141,
+    "covered": 141,
+    "exceptions": []
+  },
+  "environment": {
+    "renderer": "flutter-test-skia",
+    "renderer_version": "Flutter 3.47.7 / engine deb287481e",
+    "platform": "macOS widget-test 375x812 @4x",
+    "locale": "zh_CN",
+    "state": "message-backup-34",
+    "text_scale": 1
+  },
+  "exclusions": [
+    {
+      "rect": [
+        17,
+        194,
+        43,
+        43
+      ],
+      "reason": "阿珍头像原图未提供切图；保留圆形缺图占位"
+    },
+    {
+      "rect": [
+        17,
+        260,
+        43,
+        43
+      ],
+      "reason": "旎旎马克头像原图未提供切图；保留圆形缺图占位"
+    },
+    {
+      "rect": [
+        17,
+        391,
+        43,
+        43
+      ],
+      "reason": "花花头像原图未提供切图；保留圆形缺图占位"
+    },
+    {
+      "rect": [
+        17,
+        456,
+        43,
+        43
+      ],
+      "reason": "物简则明头像原图未提供切图；保留圆形缺图占位"
+    },
+    {
+      "rect": [
+        17,
+        522,
+        43,
+        43
+      ],
+      "reason": "跳舞机宝贝头像原图未提供切图；保留圆形缺图占位"
+    }
+  ],
+  "excluded_fraction": 0.030361247947454872,
+  "reference": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/reference.png",
+  "render_scale": 4.0,
+  "reference_preview": "reference.png",
+  "passed": false,
+  "candidates": {
+    "r5": {
+      "path": "/Users/tan/Documents/ChatGPT/聚星阁/design_evidence/message-backup-34/r5/render.png",
+      "preview": "1-r5-candidate.png",
+      "passed": false,
+      "regions": {
+        "whole": {
+          "label": "完整消息页",
+          "rect": [
+            0,
+            0,
+            375,
+            812
+          ],
+          "metrics": {
+            "compared_pixels": 4724080,
+            "total_pixels": 4872000,
+            "mae": 4.0177,
+            "p95_max_channel": 16.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "header": {
+          "label": "状态栏、标题与通知条",
+          "rect": [
+            0,
+            0,
+            375,
+            142
+          ],
+          "metrics": {
+            "compared_pixels": 852000,
+            "total_pixels": 852000,
+            "mae": 8.4241,
+            "p95_max_channel": 28.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "filters": {
+          "label": "消息筛选",
+          "rect": [
+            0,
+            142,
+            375,
+            40
+          ],
+          "metrics": {
+            "compared_pixels": 240000,
+            "total_pixels": 240000,
+            "mae": 1.392,
+            "p95_max_channel": 8.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "list": {
+          "label": "消息列表",
+          "rect": [
+            0,
+            182,
+            375,
+            530
+          ],
+          "metrics": {
+            "compared_pixels": 3032080,
+            "total_pixels": 3180000,
+            "mae": 3.1388,
+            "p95_max_channel": 14.0
+          },
+          "passed": true,
+          "failures": []
+        },
+        "bottom": {
+          "label": "底部导航",
+          "rect": [
+            0,
+            712,
+            375,
+            100
+          ],
+          "metrics": {
+            "compared_pixels": 600000,
+            "total_pixels": 600000,
+            "mae": 3.2523,
+            "p95_max_channel": 8.0
+          },
+          "passed": true,
+          "failures": []
+        }
+      },
+      "features": {
+        "text_53ebec3c": {
+          "label": "全部",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.3026,
+            "center_y_delta": -0.1112,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.3665
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              84.5,
+              154.5,
+              24.75,
+              11.75
+            ],
+            "center": [
+              97.4556061468412,
+              160.41974957313602
+            ],
+            "ink_pixels": 1757
+          },
+          "actual": {
+            "bbox": [
+              84.25,
+              154.25,
+              25.25,
+              12.0
+            ],
+            "center": [
+              97.7582257392753,
+              160.3085172844648
+            ],
+            "ink_pixels": 2401
+          }
+        },
+        "text_df557cf7": {
+          "label": "熟人",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.2894,
+            "center_y_delta": -0.008,
+            "width_delta": 0.0,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2592
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              148.5,
+              154.25,
+              25.0,
+              12.0
+            ],
+            "center": [
+              157.89689709347996,
+              160.2890809112333
+            ],
+            "ink_pixels": 1273
+          },
+          "actual": {
+            "bbox": [
+              148.5,
+              154.25,
+              25.0,
+              12.25
+            ],
+            "center": [
+              157.60745477230194,
+              160.28103555832814
+            ],
+            "ink_pixels": 1603
+          }
+        },
+        "text_9d85965f": {
+          "label": "深夜聊的...",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.1266,
+            "center_y_delta": -0.0714,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2352
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              193.75,
+              154.25,
+              60.5,
+              12.25
+            ],
+            "center": [
+              220.12460179554012,
+              160.2054735013032
+            ],
+            "ink_pixels": 3453
+          },
+          "actual": {
+            "bbox": [
+              193.5,
+              154.0,
+              61.0,
+              12.5
+            ],
+            "center": [
+              219.99800703399765,
+              160.13405627198125
+            ],
+            "ink_pixels": 4265
+          }
+        },
+        "text_0f0ef7ad": {
+          "label": "我关注的",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.4607,
+            "center_y_delta": -0.0076,
+            "width_delta": 0.0,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.1922
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              275.5,
+              154.5,
+              50.5,
+              11.75
+            ],
+            "center": [
+              300.3603214890017,
+              160.30786802030457
+            ],
+            "ink_pixels": 2955
+          },
+          "actual": {
+            "bbox": [
+              275.5,
+              154.25,
+              50.5,
+              12.0
+            ],
+            "center": [
+              299.8996593812092,
+              160.30031223389156
+            ],
+            "ink_pixels": 3523
+          }
+        },
+        "asset_16f0957e": {
+          "label": "编组",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.2067,
+            "center_y_delta": 0.6217,
+            "width_delta": 0.25,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.219,
+            "mask_iou_loss": 0.17966903073286056
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              27.75,
+              153.75,
+              14.5,
+              12.75
+            ],
+            "center": [
+              33.51909221902017,
+              158.46757925072046
+            ],
+            "ink_pixels": 694
+          },
+          "actual": {
+            "bbox": [
+              27.5,
+              153.75,
+              14.75,
+              12.75
+            ],
+            "center": [
+              33.31235224586288,
+              159.08924349881798
+            ],
+            "ink_pixels": 846
+          }
+        },
+        "asset_46973292": {
+          "label": "message_reminding_icon",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0546,
+            "center_y_delta": -1.1652,
+            "width_delta": 0.0,
+            "height_delta": 0.25,
+            "max_edge_delta": 1.25,
+            "ink_ratio": 0.9766
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              26.5,
+              658.5,
+              25.0,
+              26.25
+            ],
+            "center": [
+              39.631299999999996,
+              672.31835
+            ],
+            "ink_pixels": 5000
+          },
+          "actual": {
+            "bbox": [
+              26.5,
+              657.25,
+              25.0,
+              26.5
+            ],
+            "center": [
+              39.57669465492525,
+              671.1531333196805
+            ],
+            "ink_pixels": 4883
+          }
+        },
+        "asset_7a7e5242": {
+          "label": "位图备份 2",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0179,
+            "center_y_delta": 0.0301,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 0.994
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              14.0,
+              323.0,
+              49.0,
+              49.0
+            ],
+            "center": [
+              38.070839953680014,
+              347.0478078797835
+            ],
+            "ink_pixels": 37133
+          },
+          "actual": {
+            "bbox": [
+              14.0,
+              323.0,
+              49.0,
+              49.0
+            ],
+            "center": [
+              38.05298022216202,
+              347.0778853969114
+            ],
+            "ink_pixels": 36910
+          }
+        },
+        "text_783f2f13": {
+          "label": "阿珍同学",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.4582,
+            "center_y_delta": -0.0195,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.3113
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              72.25,
+              199.75,
+              57.75,
+              13.75
+            ],
+            "center": [
+              100.67741383245834,
+              205.91577265464505
+            ],
+            "ink_pixels": 4381
+          },
+          "actual": {
+            "bbox": [
+              72.0,
+              199.5,
+              58.0,
+              14.0
+            ],
+            "center": [
+              100.21923411662316,
+              205.89625761531767
+            ],
+            "ink_pixels": 5745
+          }
+        },
+        "text_41be3dca": {
+          "label": "官方通知",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.3522,
+            "center_y_delta": -1.0385,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 1.25,
+            "ink_ratio": 1.3196
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              72.0,
+              589.75,
+              57.75,
+              13.75
+            ],
+            "center": [
+              102.32497629208156,
+              596.4001896633475
+            ],
+            "ink_pixels": 4218
+          },
+          "actual": {
+            "bbox": [
+              72.0,
+              588.5,
+              58.0,
+              14.0
+            ],
+            "center": [
+              101.97282608695653,
+              595.3616600790514
+            ],
+            "ink_pixels": 5566
+          }
+        },
+        "text_c3654c3f": {
+          "label": "旎旎马克",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.4704,
+            "center_y_delta": 0.0532,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.3521
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              71.75,
+              265.75,
+              58.5,
+              13.75
+            ],
+            "center": [
+              99.42581018518518,
+              272.43998842592595
+            ],
+            "ink_pixels": 4320
+          },
+          "actual": {
+            "bbox": [
+              71.5,
+              265.5,
+              59.0,
+              14.0
+            ],
+            "center": [
+              98.95544427324089,
+              272.49315185755864
+            ],
+            "ink_pixels": 5841
+          }
+        },
+        "text_17c82158": {
+          "label": "晚风",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0657,
+            "center_y_delta": -0.0129,
+            "width_delta": 0.5,
+            "height_delta": 0.5,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.3076
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              72.25,
+              331.75,
+              28.0,
+              13.5
+            ],
+            "center": [
+              84.7753881661771,
+              338.3434746118338
+            ],
+            "ink_pixels": 2383
+          },
+          "actual": {
+            "bbox": [
+              72.0,
+              331.5,
+              28.5,
+              14.0
+            ],
+            "center": [
+              84.84106225930681,
+              338.33055198973045
+            ],
+            "ink_pixels": 3116
+          }
+        },
+        "text_d900c1f9": {
+          "label": "跳舞机宝贝",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.1472,
+            "center_y_delta": 0.0513,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.3338
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              71.75,
+              527.75,
+              72.75,
+              13.75
+            ],
+            "center": [
+              105.32263052574132,
+              534.3511460796798
+            ],
+            "ink_pixels": 5497
+          },
+          "actual": {
+            "bbox": [
+              71.5,
+              527.5,
+              73.25,
+              14.0
+            ],
+            "center": [
+              105.17539552645935,
+              534.402448172395
+            ],
+            "ink_pixels": 7332
+          }
+        },
+        "text_c031b416": {
+          "label": "花花",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.1248,
+            "center_y_delta": 0.0218,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2933
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              72.0,
+              396.75,
+              28.25,
+              13.75
+            ],
+            "center": [
+              85.86314760508309,
+              403.26735092864124
+            ],
+            "ink_pixels": 2046
+          },
+          "actual": {
+            "bbox": [
+              71.75,
+              396.5,
+              28.75,
+              14.0
+            ],
+            "center": [
+              85.98790627362055,
+              403.2891156462585
+            ],
+            "ink_pixels": 2646
+          }
+        },
+        "text_18e50681": {
+          "label": "物简则明",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.2431,
+            "center_y_delta": -0.0249,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.3187
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              71.75,
+              461.75,
+              57.75,
+              13.75
+            ],
+            "center": [
+              101.30856553147575,
+              468.23328173374614
+            ],
+            "ink_pixels": 4845
+          },
+          "actual": {
+            "bbox": [
+              71.5,
+              461.5,
+              58.25,
+              14.0
+            ],
+            "center": [
+              101.06550320863985,
+              468.20840507121613
+            ],
+            "ink_pixels": 6389
+          }
+        },
+        "text_95de9de3": {
+          "label": "你在干嘛呀？",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.1062,
+            "center_y_delta": -0.0967,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.3912
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              71.5,
+              223.25,
+              65.0,
+              11.0
+            ],
+            "center": [
+              104.37640845070422,
+              228.34110915492957
+            ],
+            "ink_pixels": 2840
+          },
+          "actual": {
+            "bbox": [
+              71.25,
+              223.0,
+              65.5,
+              11.25
+            ],
+            "center": [
+              104.27018476335105,
+              228.24436851430016
+            ],
+            "ink_pixels": 3951
+          }
+        },
+        "text_809a6b37": {
+          "label": "XXXXXXXXXXXXXXXXXXXX XXXX XXXX XX",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.1003,
+            "center_y_delta": -1.1078,
+            "width_delta": 0.75,
+            "height_delta": 0.25,
+            "max_edge_delta": 1.25,
+            "ink_ratio": 1.3849
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              71.25,
+              613.5,
+              240.5,
+              8.5
+            ],
+            "center": [
+              187.78103637695312,
+              617.622802734375
+            ],
+            "ink_pixels": 8192
+          },
+          "actual": {
+            "bbox": [
+              71.0,
+              612.25,
+              241.25,
+              8.75
+            ],
+            "center": [
+              187.8813794623182,
+              616.5150066108417
+            ],
+            "ink_pixels": 11345
+          }
+        },
+        "text_21488c35": {
+          "label": "[微笑][微笑]",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.2911,
+            "center_y_delta": -0.081,
+            "width_delta": 0.25,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.3816
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              71.5,
+              287.0,
+              62.75,
+              11.25
+            ],
+            "center": [
+              102.1456043956044,
+              292.44864163614164
+            ],
+            "ink_pixels": 3276
+          },
+          "actual": {
+            "bbox": [
+              71.5,
+              287.0,
+              63.0,
+              11.25
+            ],
+            "center": [
+              102.43669907202829,
+              292.3676535572249
+            ],
+            "ink_pixels": 4526
+          }
+        },
+        "text_3ab3d3ab": {
+          "label": "[图片]",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.3652,
+            "center_y_delta": 0.0085,
+            "width_delta": 0.25,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.3397
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              71.5,
+              353.0,
+              30.75,
+              11.25
+            ],
+            "center": [
+              84.98624320652173,
+              358.45737092391306
+            ],
+            "ink_pixels": 1472
+          },
+          "actual": {
+            "bbox": [
+              71.5,
+              353.0,
+              31.0,
+              11.25
+            ],
+            "center": [
+              85.35141987829614,
+              358.46589756592294
+            ],
+            "ink_pixels": 1972
+          }
+        },
+        "text_531c48ff": {
+          "label": "[语音]",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.658,
+            "center_y_delta": -0.0121,
+            "width_delta": 0.25,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.3566
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              71.5,
+              549.0,
+              30.75,
+              11.25
+            ],
+            "center": [
+              86.39256198347107,
+              554.6056897647807
+            ],
+            "ink_pixels": 1573
+          },
+          "actual": {
+            "bbox": [
+              71.5,
+              549.0,
+              31.0,
+              11.25
+            ],
+            "center": [
+              87.0506091846298,
+              554.5936035613871
+            ],
+            "ink_pixels": 2134
+          }
+        },
+        "text_d00f1da6": {
+          "label": "15:33",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.2632,
+            "center_y_delta": -0.0997,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2108
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              332.5,
+              203.75,
+              23.5,
+              7.5
+            ],
+            "center": [
+              344.49397590361446,
+              207.29698795180724
+            ],
+            "ink_pixels": 830
+          },
+          "actual": {
+            "bbox": [
+              332.25,
+              203.5,
+              24.0,
+              7.75
+            ],
+            "center": [
+              344.75721393034826,
+              207.19726368159203
+            ],
+            "ink_pixels": 1005
+          }
+        },
+        "text_aaa68ff7": {
+          "label": "15:33",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.2632,
+            "center_y_delta": -0.0997,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2108
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              332.5,
+              269.75,
+              23.5,
+              7.5
+            ],
+            "center": [
+              344.49397590361446,
+              273.29698795180724
+            ],
+            "ink_pixels": 830
+          },
+          "actual": {
+            "bbox": [
+              332.25,
+              269.5,
+              24.0,
+              7.75
+            ],
+            "center": [
+              344.75721393034826,
+              273.19726368159206
+            ],
+            "ink_pixels": 1005
+          }
+        },
+        "text_c2f72dc7": {
+          "label": "15:33",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.2632,
+            "center_y_delta": -0.0997,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2108
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              332.5,
+              335.75,
+              23.5,
+              7.5
+            ],
+            "center": [
+              344.49397590361446,
+              339.29698795180724
+            ],
+            "ink_pixels": 830
+          },
+          "actual": {
+            "bbox": [
+              332.25,
+              335.5,
+              24.0,
+              7.75
+            ],
+            "center": [
+              344.75721393034826,
+              339.19726368159206
+            ],
+            "ink_pixels": 1005
+          }
+        },
+        "text_42285eb3": {
+          "label": "15:33",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.2632,
+            "center_y_delta": -0.0997,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2108
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              332.5,
+              531.75,
+              23.5,
+              7.5
+            ],
+            "center": [
+              344.49397590361446,
+              535.2969879518072
+            ],
+            "ink_pixels": 830
+          },
+          "actual": {
+            "bbox": [
+              332.25,
+              531.5,
+              24.0,
+              7.75
+            ],
+            "center": [
+              344.75721393034826,
+              535.1972636815921
+            ],
+            "ink_pixels": 1005
+          }
+        },
+        "text_f1acb15f": {
+          "label": "15:33",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.2632,
+            "center_y_delta": -0.0997,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2108
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              332.5,
+              400.75,
+              23.5,
+              7.5
+            ],
+            "center": [
+              344.49397590361446,
+              404.29698795180724
+            ],
+            "ink_pixels": 830
+          },
+          "actual": {
+            "bbox": [
+              332.25,
+              400.5,
+              24.0,
+              7.75
+            ],
+            "center": [
+              344.75721393034826,
+              404.19726368159206
+            ],
+            "ink_pixels": 1005
+          }
+        },
+        "text_8d3c9024": {
+          "label": "15:33",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.2632,
+            "center_y_delta": -0.0997,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2108
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              332.5,
+              465.75,
+              23.5,
+              7.5
+            ],
+            "center": [
+              344.49397590361446,
+              469.29698795180724
+            ],
+            "ink_pixels": 830
+          },
+          "actual": {
+            "bbox": [
+              332.25,
+              465.5,
+              24.0,
+              7.75
+            ],
+            "center": [
+              344.75721393034826,
+              469.19726368159206
+            ],
+            "ink_pixels": 1005
+          }
+        },
+        "text_cf437174": {
+          "label": "2",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0011,
+            "center_y_delta": 0.0189,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.1289
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              341.0,
+              219.0,
+              10.0,
+              18.0
+            ],
+            "center": [
+              345.8847583643123,
+              227.9981412639405
+            ],
+            "ink_pixels": 807
+          },
+          "actual": {
+            "bbox": [
+              341.0,
+              219.0,
+              10.0,
+              18.0
+            ],
+            "center": [
+              345.88364434687156,
+              228.01701427003292
+            ],
+            "ink_pixels": 911
+          }
+        },
+        "text_2f09be83": {
+          "label": "15:33",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.2632,
+            "center_y_delta": -0.0997,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2108
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              332.5,
+              591.75,
+              23.5,
+              7.5
+            ],
+            "center": [
+              344.49397590361446,
+              595.2969879518072
+            ],
+            "ink_pixels": 830
+          },
+          "actual": {
+            "bbox": [
+              332.25,
+              591.5,
+              24.0,
+              7.75
+            ],
+            "center": [
+              344.75721393034826,
+              595.1972636815921
+            ],
+            "ink_pixels": 1005
+          }
+        },
+        "text_ab96ca81": {
+          "label": "2",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0011,
+            "center_y_delta": 0.0189,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.1289
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              341.0,
+              607.0,
+              10.0,
+              18.0
+            ],
+            "center": [
+              345.8847583643123,
+              615.9981412639405
+            ],
+            "ink_pixels": 807
+          },
+          "actual": {
+            "bbox": [
+              341.0,
+              607.0,
+              10.0,
+              18.0
+            ],
+            "center": [
+              345.88364434687156,
+              616.017014270033
+            ],
+            "ink_pixels": 911
+          }
+        },
+        "text_83542956": {
+          "label": "提醒消息",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.664,
+            "center_y_delta": -1.0096,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 1.25,
+            "ink_ratio": 1.3769
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              71.75,
+              654.75,
+              58.5,
+              13.75
+            ],
+            "center": [
+              99.1431220856295,
+              661.4994171259008
+            ],
+            "ink_pixels": 4718
+          },
+          "actual": {
+            "bbox": [
+              71.5,
+              653.5,
+              59.0,
+              14.0
+            ],
+            "center": [
+              99.80711206896552,
+              660.4898014162561
+            ],
+            "ink_pixels": 6496
+          }
+        },
+        "text_4ac47899": {
+          "label": "XX XXXX XXXXXXXXXXXXXXXXXXXXXX X",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.1958,
+            "center_y_delta": -1.1072,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 1.25,
+            "ink_ratio": 1.385
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              71.25,
+              678.5,
+              233.0,
+              8.5
+            ],
+            "center": [
+              188.54912236393483,
+              682.6207854527087
+            ],
+            "ink_pixels": 7919
+          },
+          "actual": {
+            "bbox": [
+              71.0,
+              677.25,
+              233.5,
+              8.75
+            ],
+            "center": [
+              188.74496261852664,
+              681.5135849744712
+            ],
+            "ink_pixels": 10968
+          }
+        },
+        "text_a8281b57": {
+          "label": "15:33",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.2632,
+            "center_y_delta": -0.0997,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2108
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              332.5,
+              656.75,
+              23.5,
+              7.5
+            ],
+            "center": [
+              344.49397590361446,
+              660.2969879518072
+            ],
+            "ink_pixels": 830
+          },
+          "actual": {
+            "bbox": [
+              332.25,
+              656.5,
+              24.0,
+              7.75
+            ],
+            "center": [
+              344.75721393034826,
+              660.1972636815921
+            ],
+            "ink_pixels": 1005
+          }
+        },
+        "text_a19f18dc": {
+          "label": "2",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0011,
+            "center_y_delta": 0.0189,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.1289
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              341.0,
+              672.0,
+              10.0,
+              18.0
+            ],
+            "center": [
+              345.8847583643123,
+              680.9981412639405
+            ],
+            "ink_pixels": 807
+          },
+          "actual": {
+            "bbox": [
+              341.0,
+              672.0,
+              10.0,
+              18.0
+            ],
+            "center": [
+              345.88364434687156,
+              681.017014270033
+            ],
+            "ink_pixels": 911
+          }
+        },
+        "asset_ae344697": {
+          "label": "编组",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 0.8523,
+            "mask_iou_loss": 0.1477272727272727
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              338.25,
+              114.25,
+              9.5,
+              9.5
+            ],
+            "center": [
+              342.875,
+              118.875
+            ],
+            "ink_pixels": 704
+          },
+          "actual": {
+            "bbox": [
+              338.25,
+              114.25,
+              9.5,
+              9.5
+            ],
+            "center": [
+              342.875,
+              118.875
+            ],
+            "ink_pixels": 600
+          }
+        },
+        "text_33e0b12a": {
+          "label": "推送通知未开启，会错过重要消息哦",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -1.1937,
+            "center_y_delta": -1.0169,
+            "width_delta": 0.5,
+            "height_delta": 0.5,
+            "max_edge_delta": 1.25,
+            "ink_ratio": 1.6429
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              30.75,
+              114.25,
+              190.5,
+              11.25
+            ],
+            "center": [
+              127.8693003144654,
+              119.60770440251572
+            ],
+            "ink_pixels": 6360
+          },
+          "actual": {
+            "bbox": [
+              29.5,
+              113.0,
+              191.0,
+              11.75
+            ],
+            "center": [
+              126.67556703990813,
+              118.59082208823811
+            ],
+            "ink_pixels": 10449
+          }
+        },
+        "text_05de141b": {
+          "label": "去开启",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.2853,
+            "center_y_delta": -0.9081,
+            "width_delta": 0.25,
+            "height_delta": 0.5,
+            "max_edge_delta": 1.25,
+            "ink_ratio": 1.6295
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              281.75,
+              114.0,
+              31.0,
+              10.0
+            ],
+            "center": [
+              297.9885408708938,
+              118.9329640947288
+            ],
+            "ink_pixels": 1309
+          },
+          "actual": {
+            "bbox": [
+              281.5,
+              112.75,
+              31.25,
+              10.5
+            ],
+            "center": [
+              297.70323488045005,
+              118.02484763244257
+            ],
+            "ink_pixels": 2133
+          }
+        },
+        "asset_1357b849": {
+          "label": "编组",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -0.0265,
+            "center_y_delta": 0.0,
+            "width_delta": 0.0,
+            "height_delta": 1.5,
+            "max_edge_delta": 0.75,
+            "ink_ratio": 1.175,
+            "mask_iou_loss": 0.31612903225806455
+          },
+          "failures": [
+            "mask_iou_loss=0.3161 > 0.3000"
+          ],
+          "reference": {
+            "bbox": [
+              317.5,
+              114.5,
+              5.0,
+              9.0
+            ],
+            "center": [
+              319.7375,
+              118.875
+            ],
+            "ink_pixels": 240
+          },
+          "actual": {
+            "bbox": [
+              317.5,
+              113.75,
+              5.0,
+              10.5
+            ],
+            "center": [
+              319.7109929078014,
+              118.875
+            ],
+            "ink_pixels": 282
+          }
+        },
+        "asset_4c5886b0": {
+          "label": "编组",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": 0.261,
+            "center_y_delta": 0.6686,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.5,
+            "ink_ratio": 1.1337,
+            "mask_iou_loss": 0.5827268316351286
+          },
+          "failures": [
+            "mask_iou_loss=0.5827 > 0.3000"
+          ],
+          "reference": {
+            "bbox": [
+              247.5,
+              748.5,
+              14.25,
+              17.25
+            ],
+            "center": [
+              254.62801314828343,
+              757.1824324324324
+            ],
+            "ink_pixels": 1369
+          },
+          "actual": {
+            "bbox": [
+              248.0,
+              749.0,
+              14.25,
+              17.25
+            ],
+            "center": [
+              254.88901417525773,
+              757.8509987113403
+            ],
+            "ink_pixels": 1552
+          }
+        },
+        "text_4e4dd66e": {
+          "label": "任务",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.0554,
+            "center_y_delta": 0.0252,
+            "width_delta": 0.5,
+            "height_delta": 0.5,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.3977
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              246.5,
+              772.75,
+              16.75,
+              8.0
+            ],
+            "center": [
+              255.08818011257034,
+              776.5811444652908
+            ],
+            "ink_pixels": 533
+          },
+          "actual": {
+            "bbox": [
+              246.25,
+              772.5,
+              17.25,
+              8.5
+            ],
+            "center": [
+              255.14362416107383,
+              776.6063758389262
+            ],
+            "ink_pixels": 745
+          }
+        },
+        "text_6a4d3b16": {
+          "label": "2",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0014,
+            "center_y_delta": 0.199,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.158
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              139.0,
+              738.0,
+              10.0,
+              18.0
+            ],
+            "center": [
+              143.88503184713375,
+              746.8031847133758
+            ],
+            "ink_pixels": 785
+          },
+          "actual": {
+            "bbox": [
+              139.0,
+              738.0,
+              10.0,
+              18.0
+            ],
+            "center": [
+              143.88366336633663,
+              747.002200220022
+            ],
+            "ink_pixels": 909
+          }
+        },
+        "asset_001d3a26": {
+          "label": "首页",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.1029,
+            "center_y_delta": 0.1998,
+            "width_delta": 0.0,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2128,
+            "mask_iou_loss": 0.21043165467625902
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              44.5,
+              747.5,
+              21.0,
+              19.25
+            ],
+            "center": [
+              54.86638250555967,
+              758.6430689399555
+            ],
+            "ink_pixels": 1349
+          },
+          "actual": {
+            "bbox": [
+              44.5,
+              747.25,
+              21.0,
+              19.5
+            ],
+            "center": [
+              54.76344743276284,
+              758.8429095354523
+            ],
+            "ink_pixels": 1636
+          }
+        },
+        "asset_ed7dc567": {
+          "label": "编组",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0082,
+            "center_y_delta": -0.0561,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.1649,
+            "mask_iou_loss": 0.28726147498710675
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              305.5,
+              747.5,
+              19.0,
+              19.0
+            ],
+            "center": [
+              314.875,
+              757.0524771838332
+            ],
+            "ink_pixels": 1534
+          },
+          "actual": {
+            "bbox": [
+              305.5,
+              747.5,
+              19.0,
+              19.0
+            ],
+            "center": [
+              314.8668158925574,
+              756.9963626189144
+            ],
+            "ink_pixels": 1787
+          }
+        },
+        "asset_09d2352b": {
+          "label": "编组",
+          "passed": false,
+          "metrics": {
+            "center_x_delta": -0.4183,
+            "center_y_delta": -0.0817,
+            "width_delta": 0.0,
+            "height_delta": -0.25,
+            "max_edge_delta": 0.5,
+            "ink_ratio": 0.9813,
+            "mask_iou_loss": 0.3810252486610558
+          },
+          "failures": [
+            "mask_iou_loss=0.3810 > 0.3000"
+          ],
+          "reference": {
+            "bbox": [
+              178.5,
+              749.5,
+              19.0,
+              16.5
+            ],
+            "center": [
+              188.2933052434457,
+              756.3078183520599
+            ],
+            "ink_pixels": 1068
+          },
+          "actual": {
+            "bbox": [
+              178.5,
+              749.25,
+              19.0,
+              16.25
+            ],
+            "center": [
+              187.875,
+              756.2261450381679
+            ],
+            "ink_pixels": 1048
+          }
+        },
+        "text_a4571fe1": {
+          "label": "我的",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.6215,
+            "center_y_delta": 0.2386,
+            "width_delta": 0.0,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.75,
+            "ink_ratio": 1.4587
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              307.5,
+              772.75,
+              16.75,
+              8.0
+            ],
+            "center": [
+              315.32841483979763,
+              776.6016020236087
+            ],
+            "ink_pixels": 593
+          },
+          "actual": {
+            "bbox": [
+              306.75,
+              772.75,
+              16.75,
+              8.25
+            ],
+            "center": [
+              314.706936416185,
+              776.8401734104046
+            ],
+            "ink_pixels": 865
+          }
+        },
+        "text_3274b14f": {
+          "label": "关系",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.3339,
+            "center_y_delta": 0.0492,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.5,
+            "ink_ratio": 1.3897
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              179.75,
+              772.75,
+              16.5,
+              8.0
+            ],
+            "center": [
+              188.0134194831014,
+              776.6446322067594
+            ],
+            "ink_pixels": 503
+          },
+          "actual": {
+            "bbox": [
+              179.75,
+              772.5,
+              17.0,
+              8.25
+            ],
+            "center": [
+              188.34728183118742,
+              776.6938483547925
+            ],
+            "ink_pixels": 699
+          }
+        },
+        "text_46eb4dd5": {
+          "label": "首页",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -1.126,
+            "center_y_delta": 0.3873,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.75,
+            "ink_ratio": 1.8139
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              46.5,
+              772.5,
+              17.0,
+              8.5
+            ],
+            "center": [
+              54.47365470852018,
+              776.4164798206278
+            ],
+            "ink_pixels": 446
+          },
+          "actual": {
+            "bbox": [
+              45.75,
+              772.75,
+              17.0,
+              8.5
+            ],
+            "center": [
+              53.34765142150803,
+              776.8037700865266
+            ],
+            "ink_pixels": 809
+          }
+        },
+        "text_15b43c44": {
+          "label": "9:41",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0875,
+            "center_y_delta": 0.0143,
+            "width_delta": 0.0,
+            "height_delta": 0.5,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.1863
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              34.75,
+              18.75,
+              25.75,
+              10.75
+            ],
+            "center": [
+              47.3609022556391,
+              23.960317460317462
+            ],
+            "ink_pixels": 1197
+          },
+          "actual": {
+            "bbox": [
+              34.75,
+              18.5,
+              25.75,
+              11.25
+            ],
+            "center": [
+              47.273415492957746,
+              23.974647887323943
+            ],
+            "ink_pixels": 1420
+          }
+        },
+        "text_84005589": {
+          "label": "消息",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.103,
+            "center_y_delta": 1.0307,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 1.0,
+            "ink_ratio": 1.5
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              112.75,
+              772.75,
+              16.75,
+              8.0
+            ],
+            "center": [
+              121.0831784386617,
+              776.6710037174721
+            ],
+            "ink_pixels": 538
+          },
+          "actual": {
+            "bbox": [
+              112.5,
+              773.5,
+              17.0,
+              8.25
+            ],
+            "center": [
+              121.18618339529121,
+              777.7016728624535
+            ],
+            "ink_pixels": 807
+          }
+        },
+        "asset_2105e345": {
+          "label": "编组",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0017,
+            "center_y_delta": 0.0014,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.0414,
+            "mask_iou_loss": 0.05576873880787925
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              111.25,
+              748.25,
+              19.5,
+              18.5
+            ],
+            "center": [
+              120.71958098307816,
+              757.6326215417674
+            ],
+            "ink_pixels": 3723
+          },
+          "actual": {
+            "bbox": [
+              111.0,
+              748.0,
+              20.0,
+              18.75
+            ],
+            "center": [
+              120.71788754191385,
+              757.6340598400825
+            ],
+            "ink_pixels": 3877
+          }
+        },
+        "asset_5355b69b": {
+          "label": "路径 4",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.3226,
+            "center_y_delta": -0.3497,
+            "width_delta": 0.0,
+            "height_delta": 0.5,
+            "max_edge_delta": 0.5,
+            "ink_ratio": 1.0535,
+            "mask_iou_loss": 0.10950173812282737
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              55.75,
+              73.75,
+              23.0,
+              15.5
+            ],
+            "center": [
+              67.96082441787287,
+              83.66016362492134
+            ],
+            "ink_pixels": 1589
+          },
+          "actual": {
+            "bbox": [
+              56.0,
+              73.25,
+              23.0,
+              16.0
+            ],
+            "center": [
+              68.28345280764636,
+              83.31048387096774
+            ],
+            "ink_pixels": 1674
+          }
+        },
+        "text_ec6ee647": {
+          "label": "消息",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.139,
+            "center_y_delta": -1.0941,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 1.25,
+            "ink_ratio": 1.1683
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              17.5,
+              57.5,
+              49.25,
+              24.0
+            ],
+            "center": [
+              42.64208169358122,
+              69.7115280227982
+            ],
+            "ink_pixels": 7369
+          },
+          "actual": {
+            "bbox": [
+              17.25,
+              56.25,
+              49.75,
+              24.25
+            ],
+            "center": [
+              42.503078174003946,
+              68.6174642815658
+            ],
+            "ink_pixels": 8609
+          }
+        },
+        "text_b21589d4": {
+          "label": "通话记录",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.2193,
+            "center_y_delta": -0.1091,
+            "width_delta": 0.0,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.3405
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              92.75,
+              62.0,
+              58.25,
+              13.5
+            ],
+            "center": [
+              120.41646005509642,
+              68.71150137741047
+            ],
+            "ink_pixels": 3630
+          },
+          "actual": {
+            "bbox": [
+              92.75,
+              61.75,
+              58.25,
+              13.75
+            ],
+            "center": [
+              120.1971845458282,
+              68.602445540485
+            ],
+            "ink_pixels": 4866
+          }
+        },
+        "text_626c814a": {
+          "label": "2",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0011,
+            "center_y_delta": 0.0189,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.1289
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              149.0,
+              45.0,
+              10.0,
+              18.0
+            ],
+            "center": [
+              153.88475836431226,
+              53.99814126394052
+            ],
+            "ink_pixels": 807
+          },
+          "actual": {
+            "bbox": [
+              149.0,
+              45.0,
+              10.0,
+              18.0
+            ],
+            "center": [
+              153.88364434687156,
+              54.01701427003293
+            ],
+            "ink_pixels": 911
+          }
+        },
+        "asset_7a0e367b": {
+          "label": "编组 12",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.0822,
+            "center_y_delta": 0.0236,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 1.1519,
+            "mask_iou_loss": 0.2610198789974071
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              73.5,
+              417.5,
+              16.0,
+              12.0
+            ],
+            "center": [
+              81.33475935828876,
+              423.255614973262
+            ],
+            "ink_pixels": 935
+          },
+          "actual": {
+            "bbox": [
+              73.5,
+              417.5,
+              16.0,
+              12.0
+            ],
+            "center": [
+              81.25255338904364,
+              423.2792479108635
+            ],
+            "ink_pixels": 1077
+          }
+        },
+        "text_481a3981": {
+          "label": "未接",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": -0.5972,
+            "center_y_delta": -0.0304,
+            "width_delta": 0.75,
+            "height_delta": 0.5,
+            "max_edge_delta": 0.5,
+            "ink_ratio": 1.5554
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              96.0,
+              418.25,
+              22.25,
+              10.75
+            ],
+            "center": [
+              108.29386437029063,
+              423.65043057050593
+            ],
+            "ink_pixels": 929
+          },
+          "actual": {
+            "bbox": [
+              95.5,
+              418.0,
+              23.0,
+              11.25
+            ],
+            "center": [
+              107.69671280276816,
+              423.62006920415223
+            ],
+            "ink_pixels": 1445
+          }
+        },
+        "text_f3d18c28": {
+          "label": "已取消",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.4437,
+            "center_y_delta": 0.0078,
+            "width_delta": 0.25,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.25,
+            "ink_ratio": 1.2022
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              95.0,
+              483.25,
+              34.0,
+              11.0
+            ],
+            "center": [
+              112.52436823104694,
+              488.4792418772563
+            ],
+            "ink_pixels": 1939
+          },
+          "actual": {
+            "bbox": [
+              95.0,
+              483.0,
+              34.25,
+              11.25
+            ],
+            "center": [
+              112.96803946803946,
+              488.48702273702276
+            ],
+            "ink_pixels": 2331
+          }
+        },
+        "asset_f5203de6": {
+          "label": "编组 3",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.031,
+            "center_y_delta": 0.0187,
+            "width_delta": 0.0,
+            "height_delta": 0.0,
+            "max_edge_delta": 0.0,
+            "ink_ratio": 0.9992,
+            "mask_iou_loss": 0.03938906752411575
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              72.25,
+              483.25,
+              16.5,
+              12.5
+            ],
+            "center": [
+              80.25840163934426,
+              489.23995901639347
+            ],
+            "ink_pixels": 1220
+          },
+          "actual": {
+            "bbox": [
+              72.25,
+              483.25,
+              16.5,
+              12.5
+            ],
+            "center": [
+              80.28937653814602,
+              489.25861361771945
+            ],
+            "ink_pixels": 1219
+          }
+        },
+        "text_bcafa8cc": {
+          "label": "熟人",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.1444,
+            "center_y_delta": -0.3779,
+            "width_delta": 0.25,
+            "height_delta": 0.5,
+            "max_edge_delta": 0.75,
+            "ink_ratio": 1.5985
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              143.75,
+              268.75,
+              16.75,
+              8.0
+            ],
+            "center": [
+              150.18204488778053,
+              272.66770573566083
+            ],
+            "ink_pixels": 401
+          },
+          "actual": {
+            "bbox": [
+              144.0,
+              268.0,
+              17.0,
+              8.5
+            ],
+            "center": [
+              150.32644305772232,
+              272.28978159126365
+            ],
+            "ink_pixels": 641
+          }
+        },
+        "text_589ac81f": {
+          "label": "生人",
+          "passed": true,
+          "metrics": {
+            "center_x_delta": 0.3399,
+            "center_y_delta": -0.521,
+            "width_delta": 0.5,
+            "height_delta": 0.25,
+            "max_edge_delta": 0.75,
+            "ink_ratio": 1.4254
+          },
+          "failures": [],
+          "reference": {
+            "bbox": [
+              144.5,
+              200.75,
+              17.0,
+              8.0
+            ],
+            "center": [
+              151.61256218905473,
+              205.03980099502488
+            ],
+            "ink_pixels": 402
+          },
+          "actual": {
+            "bbox": [
+              144.75,
+              200.0,
+              17.5,
+              8.25
+            ],
+            "center": [
+              151.95244328097732,
+              204.51876090750437
+            ],
+            "ink_pixels": 573
+          }
+        }
+      },
+      "relations": {
+        "title_tab_center": {
+          "label": "title tab center",
+          "reference_delta": 1.0,
+          "actual_delta": 0.015,
+          "error": 0.985,
+          "passed": true
+        },
+        "first_name_detail_left": {
+          "label": "first name detail left",
+          "reference_delta": 0.75,
+          "actual_delta": 0.75,
+          "error": 0.0,
+          "passed": true
+        },
+        "system_titles_left": {
+          "label": "system titles left",
+          "reference_delta": 0.25,
+          "actual_delta": 0.5,
+          "error": 0.25,
+          "passed": true
+        }
+      },
+      "colors": {
+        "page_white": {
+          "label": "页面白色背景",
+          "rect": [
+            362,
+            400,
+            6,
+            20
+          ],
+          "reference_rgb": [
+            255.0,
+            255.0,
+            255.0
+          ],
+          "actual_rgb": [
+            255.0,
+            255.0,
+            255.0
+          ],
+          "max_channel_delta": 0.0,
+          "passed": true
+        },
+        "filter_surface": {
+          "label": "筛选条底色",
+          "rect": [
+            70,
+            146,
+            8,
+            6
+          ],
+          "reference_rgb": [
+            253.4,
+            253.4,
+            253.95
+          ],
+          "actual_rgb": [
+            253.41,
+            253.41,
+            253.95
+          ],
+          "max_channel_delta": 0.01,
+          "passed": true
+        },
+        "nav_surface": {
+          "label": "导航面板底色",
+          "rect": [
+            20,
+            760,
+            8,
+            8
+          ],
+          "reference_rgb": [
+            252.07,
+            251.43,
+            247.35
+          ],
+          "actual_rgb": [
+            250.33,
+            249.44,
+            244.7
+          ],
+          "max_channel_delta": 2.65,
+          "passed": true
+        }
+      },
+      "overlay": "1-r5-alignment-overlay.png"
+    }
+  },
+  "status": "FAIL"
+}

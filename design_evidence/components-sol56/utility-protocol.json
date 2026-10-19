@@ -1,0 +1,62 @@
+{
+  "experiment": "utility-components-sol56",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "scope": [
+    "Sol56ModalComponentStage",
+    "Sol56NavigationComponentStage",
+    "Sol56AppealComponentStage"
+  ],
+  "stage_sizes": {
+    "modal": [375, 280],
+    "navigation": [375, 98],
+    "appeal": [375, 125]
+  },
+  "inputs_read": [
+    "design_evidence/modal-source.json",
+    "design_evidence/nav-source.json",
+    "design_evidence/appeal-source.json",
+    "design_evidence/appeal-direct-input.json",
+    "design_evidence/expanded-component-map.json",
+    "design_evidence/expanded-resources.json",
+    "design_evidence/reference-modal-4x.png",
+    "design_evidence/reference-nav-4x.png",
+    "design_evidence/reference-appeal-4x.png",
+    "flutter_ui_components/assets/lanhu/nav/install-receipt.json",
+    "flutter_ui_components/assets/lanhu/nav/assets/a8071fdef24e364d65fb5159f6ac36f47d869667d188aca77e99a1fa52207622.png",
+    "flutter_ui_components/assets/lanhu/appeal/install-receipt.json",
+    "flutter_ui_components/assets/lanhu/appeal/assets/3c01e52ce3c5fd7658e2bb85964bf19046d219e3f4f0a6e2e1562aefded0f5b4.png",
+    "flutter_ui_components/pubspec.yaml"
+  ],
+  "original_assets_used": {
+    "navigation_home": "assets/lanhu/nav/assets/a8071fdef24e364d65fb5159f6ac36f47d869667d188aca77e99a1fa52207622.png",
+    "appeal_shield": "assets/lanhu/appeal/assets/3c01e52ce3c5fd7658e2bb85964bf19046d219e3f4f0a6e2e1562aefded0f5b4.png"
+  },
+  "resource_gaps": [
+    {
+      "component": "navigation",
+      "node_id": "FEEAA557-72F1-4878-A6F3-D7D6366A776F",
+      "issue": "The message outline has no source points or exported asset.",
+      "resolution": "Independently approximated with a local CustomPainter; no reference screenshot was embedded."
+    },
+    {
+      "component": "navigation",
+      "issue": "Only the selected home icon has an installed original asset; relationship, task, and profile icons have no installed export in the allowed inputs.",
+      "resolution": "Reconstructed from allowed source bounds and vector evidence with local CustomPainters."
+    }
+  ],
+  "implementation_decisions": [
+    "Used source-coordinate offsets directly within each fixed stage.",
+    "Recreated gradients, borders, shadows, typography, and hit targets in Flutter.",
+    "Kept the modal background as a minimal source-coordinate settings-row reconstruction beneath the 40 percent scrim.",
+    "Used only Flutter, local code, and the two allowed original exported assets."
+  ],
+  "existing_implementations_read": false,
+  "existing_results_read": false,
+  "flutter_executed": false,
+  "rendered": false,
+  "screenshots_created": false,
+  "comparisons_run": false,
+  "visual_corrections": 0,
+  "implementation_completed_before_first_render": true
+}
