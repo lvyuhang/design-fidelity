@@ -1,0 +1,28 @@
+{
+  "upstream": "https://github.com/dsphper/lanhu-mcp",
+  "upstream_git_head": "be942fd26f55aac287676f6897353555de8519ac",
+  "local_modified_snapshot": true,
+  "license": "MIT",
+  "excluded": [
+    ".env",
+    "cookies",
+    "browser profiles",
+    "data",
+    "cache",
+    "virtual environments"
+  ],
+  "sha256": {
+    "LICENSE": "48d1ab8a0cafc48d785b2d3f2c36ae43ca004f125e0c2acf3c0c7d1d72458577",
+    "requirements.txt": "59e4a8ee988061da3e594ab0c23f98e6f7478b1f58f74443d01be00e74d9701a",
+    "pyproject.toml": "2f4029c9631035030e7c8fb96e99ebf991c2fc7a19db21dbcd437e2395c0df14",
+    "README.md": "93cc2e2d6ea3b80ac653fd0a9f3fc69437458ce3d9aebdb7030e8f2b481e94c7",
+    "lanhu_mcp_server.py": "f38f0c135bb846beb1532467d0003e3968f7f545ec480d45129b063c8d8b3259",
+    "lanhu_design/service.py": "a7a97f7ef44a5ba7178048201ba6c997e140a003dd5dc4142cab944c4a6ccd2a",
+    "lanhu_design/media.py": "3f44e337486a69a7b47b99478562a753554af78f88b25e6c2d37e6c8b0746a5d",
+    "lanhu_design/variants.py": "72ca4c6351183ab79dd92cfd959055685a57a58bbef3d0e9dca0a24b4d37103c",
+    "lanhu_design/normalize.py": "b1484ce4edd2506fb03e5134c635c8adf53097c730419ecb4e1d9d207357f8a1",
+    "lanhu_design/__init__.py": "a7870f27e2dfc1fa34e7f2c5760062bf98ebdf6c74e89d3ac8b6e4f9355646e3",
+    "lanhu_design/text.py": "44066919f36c39b6d38b3e03ad274d51564b2dad3d446bac91d0e23c6d309ea6",
+    "lanhu_design/install.py": "ae6d65d70c09eca9ab3f526dc8d0588f17b8e9fc3a99a37b972e292667f2c834"
+  }
+}

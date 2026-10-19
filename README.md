@@ -5,7 +5,7 @@
 首次接入请阅读 [安装与运行说明](docs/GETTING_STARTED.md)。提供 Python 3.11+、冻结的 Flutter 3.47.7 以及本机可使用的字体后：
 
 ```sh
-./setup.command --profile all --flutter-sdk /path/to/flutter
+./setup.command --profile all --with-mcp --flutter-sdk /path/to/flutter
 python3 project.py doctor --strict
 python3 project.py verify --render
 python3 project.py start flutter

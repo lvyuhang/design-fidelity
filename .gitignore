@@ -52,3 +52,6 @@ design_evidence/resource-client.log
 /design_evidence/**/*.webp
 /design_evidence/**/*.gz
 /design_evidence/**/*.b64
+/integrations/lanhu-mcp/data/
+/integrations/lanhu-mcp/images/
+**/*.egg-info/

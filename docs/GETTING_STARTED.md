@@ -11,7 +11,7 @@ macOS 的苹方和 Arial Unicode 字体由脚本从本机已有合法来源准�
 ```sh
 git clone https://github.com/lvyuhang/juxingge-design-fidelity.git
 cd juxingge-design-fidelity
-./setup.command --profile all --flutter-sdk /path/to/flutter
+./setup.command --profile all --with-mcp --flutter-sdk /path/to/flutter
 python3 project.py doctor --strict
 python3 project.py verify --render
 python3 project.py start flutter
@@ -38,7 +38,7 @@ python3 project.py start review --demo --port 8782
 ## 蓝湖、设备与 AI
 
 1. `cp .env.example .env.local`，填入本机 `LANHU_MCP_LAUNCHER`，以及需要时的 `LANHU_CLIENT_PYTHON`、`REVIEW_ADB`、`REVIEW_DATA_DIR`。设置值不会上传。
-2. 单独安装蓝湖 MCP，并使用自己的蓝湖登录。项目使用支持 snapshot/inspect/export 版本的接口；仅安装上游仓库不能保证其具备这些扩展能力。
+2. `--with-mcp` 安装 `integrations/lanhu-mcp/` 中打包的扩展版服务源码（MIT许可及上游出处随源码保留）。其 `.env`、Cookie、缓存及浏览器资料没有打包。可在根目录 `.env.local` 中配置自己的 `LANHU_COOKIE`，默认启动器读取本仓库环境；也可配置外部 `LANHU_MCP_LAUNCHER`。先执行 `python3 project.py check-mcp`，实际确认 stdio 与扩展接口；再用 `python3 project.py check-mcp --url '你的蓝湖项目链接'` 验证登录后项目读取。不要把 Cookie 发到对话或提交 Git。
 3. 在验收台粘贴蓝湖项目链接，实际取回画板才算连通。`doctor` 的“已配置”不表示已验证登录。
 4. 真机需 ADB、USB调试和用户本人授权；高清视频另需 scrcpy-server，详见子项目 README。首次模拟器镜像安装与许可由使用者确认，不随基本安装自动下载。
 5. AI 使用本机 Codex CLI 与使用者自己的登录。`codex login` 后执行真实分析再确认，不复制已有机器的 Codex 登录文件。

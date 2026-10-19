@@ -37,6 +37,7 @@ def environment(config=None):
     config = config if config is not None else load_config()
     if config.get('flutter'): env['PATH']=str(Path(config['flutter']).parent)+os.pathsep+env.get('PATH','')
     if config.get('python'): env.setdefault('LANHU_CLIENT_PYTHON',config['python'])
+    if config.get('mcp_installed'): env.setdefault('LANHU_MCP_LAUNCHER',str(ROOT/'integrations/run-lanhu-mcp.sh'))
     return env
 
 
@@ -99,6 +100,9 @@ def setup(args):
     req=ROOT/('requirements-review.txt' if args.profile in ('all','review') else 'requirements-setup.txt')
     run([py,'-m','pip','install','--disable-pip-version-check','-r',req])
     config=load_config();config.update(python=str(py),profile=args.profile)
+    if args.with_mcp:
+        run([py,'-m','pip','install','--disable-pip-version-check','-e',ROOT/'integrations/lanhu-mcp'])
+        config['mcp_installed']=True
     if args.profile in ('all','flutter'):
         flutter=find_flutter(args.flutter_sdk)
         if not flutter:raise ValueError('未找到 Flutter SDK。按 https://docs.flutter.dev/install/manual 安装 '+TOOLS['flutter']+'，然后用 --flutter-sdk /path/to/flutter 重试。')
@@ -175,15 +179,31 @@ def verify(args):
     run([py,ROOT/'tools/verify_installation.py',*(['--render'] if args.render else [])])
 
 
+def check_mcp(args):
+    command=[python_path(),ROOT/'tools/check_mcp_connection.py']
+    if args.url:command.extend(['--url',args.url])
+    if args.launcher:command.extend(['--launcher',args.launcher])
+    run(command)
+
+
+def mcp_serve(args):
+    executable=ROOT/'.venv/bin/lanhu-mcp'
+    if not executable.is_file():raise ValueError('请先安装 --with-mcp')
+    os.execve(str(executable),[str(executable),'--transport','stdio'],environment())
+
+
 def main():
     p=argparse.ArgumentParser(description=__doc__);sub=p.add_subparsers(dest='command',required=True)
     s=sub.add_parser('setup');s.add_argument('--profile',choices=('flutter','review','all'),default='flutter')
     for flag in ('--flutter-sdk','--font-dir','--pingfang','--arial-unicode'):s.add_argument(flag)
     s.add_argument('--regenerate-fonts',action='store_true');s.set_defaults(handler=setup)
+    s.add_argument('--with-mcp',action='store_true')
     d=sub.add_parser('doctor');d.add_argument('--strict',action='store_true');d.set_defaults(handler=doctor)
     s=sub.add_parser('start');s.add_argument('target',choices=('flutter','review'));s.add_argument('--port',type=int)
     s.add_argument('--build',action='store_true');s.add_argument('--demo',action='store_true');s.set_defaults(handler=start)
     v=sub.add_parser('verify');v.add_argument('--render',action='store_true');v.set_defaults(handler=verify)
+    m=sub.add_parser('check-mcp');m.add_argument('--launcher');m.add_argument('--url');m.set_defaults(handler=check_mcp)
+    sub.add_parser('mcp-serve').set_defaults(handler=mcp_serve)
     a=p.parse_args()
     try:return a.handler(a) or 0
     except (ValueError,KeyError,OSError,subprocess.CalledProcessError) as e:
