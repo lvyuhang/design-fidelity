@@ -20,7 +20,7 @@ from catalog_rules import is_screen
 
 LAUNCHER = os.environ.get(
     'LANHU_MCP_LAUNCHER',
-    '/Users/tan/Documents/Codex/2026-10-10/https-github-com-dsphper-lanhu-mcp/lanhu-mcp/run-local-mcp.sh',
+    '',
 )
 
 
@@ -145,6 +145,8 @@ async def fetch_design(session, project_url, project, entry, output, progress=No
 
 
 async def run(mode, url, output=None):
+    if not LAUNCHER or not Path(LAUNCHER).is_file():
+        raise ValueError('请在 .env.local 配置本机 LANHU_MCP_LAUNCHER，并完成蓝湖登录。')
     async with stdio_client(StdioServerParameters(command='/bin/bash', args=[LAUNCHER]), errlog=sys.stderr) as (reader, writer):
         async with ClientSession(reader, writer) as session:
             await session.initialize()

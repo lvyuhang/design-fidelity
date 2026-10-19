@@ -1,5 +1,18 @@
 # 聚星阁：设计稿到 Flutter 的组件还原验证
 
+## 从干净克隆启动
+
+首次接入请阅读 [安装与运行说明](docs/GETTING_STARTED.md)。提供 Python 3.11+、冻结的 Flutter 3.47.7 以及本机可使用的字体后：
+
+```sh
+./setup.command --profile all --flutter-sdk /path/to/flutter
+python3 project.py doctor --strict
+python3 project.py verify --render
+python3 project.py start flutter
+```
+
+无需登录即可运行打包的“提现-2”离线对比案例。使用 `python3 project.py start review --demo` 可启动带同一设计快照的安卓验收台。真实蓝湖/设备/AI功能分别需要使用者自己的连接与授权。此处的安装复现检查不替代设计还原度验收。
+
 ## 仓库范围与当前版本（2026-10-19）
 
 本仓库保存 Flutter 还原实验、蓝湖取证与测量工具、Sketch 插件、安卓验收台源码，以及 `skills/lanhu-design-fidelity/` 的 Skill 2.18.6 快照。下文保留历次实验记录，历史结论不代表当前页面已通过完整视觉验收。

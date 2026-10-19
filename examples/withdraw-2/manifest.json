@@ -1,0 +1,17 @@
+{
+  "snapshot_id": "18265541131bc4907c9d7a12145180d6",
+  "resolved_version": "456d21e2-473f-4324-b8de-c1740db62112",
+  "canvas": [
+    375,
+    812
+  ],
+  "reproduction_max_mae": 0.1,
+  "sha256": {
+    "source.json": "a85844a94e5e1ab8b9621443efb8336599ade743e7fed09ad83ea67eb6fb1722",
+    "reference.png": "a6f6e11b4631feaf1468aa0f2aadbe47836de420213500b7c715412618f824bd",
+    "baseline-production.png": "e4b64643dc9621f3158fac570fff1e85bae19fc65cbb60f1432e2a2f940d10bd",
+    "assets/wallet.png": "488586321e6234ebba71b7e9c060fa9ca07d4f3b83ffc1e4288785f6acb426b2",
+    "assets/chevron.png": "8835fddc65e15a07ee4e9f729552e55c49faf97a6f3675c5b246ffad72c0d50a",
+    "assets/alipay.png": "693648cce20001047d8ee93a4e1f23bd643c2d1b3e4c03d082488cc9bc50390d"
+  }
+}

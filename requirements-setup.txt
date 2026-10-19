@@ -1,0 +1,4 @@
+# Supported onboarding environment: Python 3.11+.
+Pillow==11.3.0
+numpy==2.0.2
+fonttools==4.60.2

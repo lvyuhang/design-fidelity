@@ -10,6 +10,7 @@ import asyncio
 import base64
 import io
 import json
+import os
 from pathlib import Path
 
 from mcp import ClientSession, StdioServerParameters
@@ -17,10 +18,6 @@ from mcp.client.stdio import stdio_client
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-SERVER_ROOT = Path(
-    "/Users/tan/Documents/Codex/2026-10-10/"
-    "https-github-com-dsphper-lanhu-mcp/lanhu-mcp"
-)
 
 
 def arguments() -> argparse.Namespace:
@@ -32,6 +29,7 @@ def arguments() -> argparse.Namespace:
     parser.add_argument("--expected-width", type=int, default=375)
     parser.add_argument("--expected-height", type=int, default=812)
     parser.add_argument("--tile-size", type=int, default=1100)
+    parser.add_argument("--launcher", default=os.environ.get("LANHU_MCP_LAUNCHER"))
     return parser.parse_args()
 
 
@@ -55,13 +53,15 @@ async def read_bytes(session: ClientSession, uri: str) -> bytes:
 
 
 async def fetch(args: argparse.Namespace) -> dict:
+    if not args.launcher or not Path(args.launcher).expanduser().is_file():
+        raise ValueError('请用 --launcher 或 LANHU_MCP_LAUNCHER 指定本机蓝湖 MCP 启动脚本')
     output = args.output.resolve()
     source = output / "source"
     bundle_dir = output / "source-bundle"
     source.mkdir(parents=True, exist_ok=True)
     with (output / "mcp.log").open("w") as errors:
         params = StdioServerParameters(
-            command="/bin/bash", args=[str(SERVER_ROOT / "run-local-mcp.sh")]
+            command="/bin/bash", args=[str(Path(args.launcher).expanduser().resolve())]
         )
         async with stdio_client(params, errlog=errors) as (reader, writer):
             async with ClientSession(reader, writer) as session:

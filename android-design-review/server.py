@@ -42,7 +42,7 @@ PROJECT_JOB_KEYS = {}
 PROJECT_JOB_LOCK = threading.RLock()
 LANHU_CLIENT_PYTHON = Path(os.environ.get(
     'LANHU_CLIENT_PYTHON',
-    '/Users/tan/Documents/Codex/2026-10-10/https-github-com-dsphper-lanhu-mcp/lanhu-mcp/venv/bin/python',
+    str(WORKSPACE / '.venv/bin/python'),
 ))
 
 

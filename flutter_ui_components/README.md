@@ -15,4 +15,4 @@ flutter test --reporter expanded --timeout 45s
 flutter run -d web-server --web-hostname 127.0.0.1 --web-port 8766
 ```
 
-需先运行上一级 tools/prepare_fonts.py 生成本机字体子集。
+推荐从根目录执行 `./setup.command --profile flutter --flutter-sdk /path/to/flutter`。该入口安装 Python 依赖、准备全部声明字体、校验冻结 SDK、安装 Dart 依赖并构建 Web；不会依赖未入库的历史截图。首次接入完整步骤见 [安装与运行](../docs/GETTING_STARTED.md)。
