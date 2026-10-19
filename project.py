@@ -101,7 +101,7 @@ def setup(args):
     run([py,'-m','pip','install','--disable-pip-version-check','-r',req])
     config=load_config();config.update(python=str(py),profile=args.profile)
     if args.with_mcp:
-        run([py,'-m','pip','install','--disable-pip-version-check','-e',ROOT/'integrations/lanhu-mcp'])
+        run([py,'-m','pip','install','--disable-pip-version-check','-c',ROOT/'constraints-mcp.txt','-e',ROOT/'integrations/lanhu-mcp'])
         config['mcp_installed']=True
     if args.profile in ('all','flutter'):
         flutter=find_flutter(args.flutter_sdk)

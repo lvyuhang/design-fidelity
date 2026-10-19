@@ -37,7 +37,7 @@ python3 project.py start review --demo --port 8782
 
 ## 蓝湖、设备与 AI
 
-1. `cp .env.example .env.local`，填入本机 `LANHU_MCP_LAUNCHER`，以及需要时的 `LANHU_CLIENT_PYTHON`、`REVIEW_ADB`、`REVIEW_DATA_DIR`。设置值不会上传。
+1. `cp .env.example .env.local`，填入自己的 `LANHU_COOKIE`，以及需要时的 `REVIEW_ADB`、`REVIEW_DATA_DIR`。已用 `--with-mcp` 安装时启动器自动配置，只有使用外部服务才需填写 `LANHU_MCP_LAUNCHER`。设置值不会上传。
 2. `--with-mcp` 安装 `integrations/lanhu-mcp/` 中打包的扩展版服务源码（MIT许可及上游出处随源码保留）。其 `.env`、Cookie、缓存及浏览器资料没有打包。可在根目录 `.env.local` 中配置自己的 `LANHU_COOKIE`，默认启动器读取本仓库环境；也可配置外部 `LANHU_MCP_LAUNCHER`。先执行 `python3 project.py check-mcp`，实际确认 stdio 与扩展接口；再用 `python3 project.py check-mcp --url '你的蓝湖项目链接'` 验证登录后项目读取。不要把 Cookie 发到对话或提交 Git。
 3. 在验收台粘贴蓝湖项目链接，实际取回画板才算连通。`doctor` 的“已配置”不表示已验证登录。
 4. 真机需 ADB、USB调试和用户本人授权；高清视频另需 scrcpy-server，详见子项目 README。首次模拟器镜像安装与许可由使用者确认，不随基本安装自动下载。
@@ -48,6 +48,8 @@ python3 project.py start review --demo --port 8782
 仓库内 `skills/lanhu-design-fidelity` 为2.18.6。在 Codex 里使用前，复制到自己的 `$CODEX_HOME/skills/lanhu-design-fidelity`；目标已存在时先比较版本、保留备份。源码更新不会自动覆盖个人 Skill。
 
 ## 更新与验证
+
+MCP 安装使用 `constraints-mcp.txt` 冻结本次验证过的依赖版本。每次安装另将实际解析结果存于本机 `.local/python-resolved.txt`。安装验证范围及结果见 [验证记录](VERIFICATION.md)。
 
 更新源码后，重新运行 setup 安装缺失依赖；`project.py start flutter --build` 重新构建。`verify --render` 比较的是打包实现基线，不能代替新设计页面的 Skill 验收。离线样例和代码的测试结果不代表蓝湖、设备、模型已连通。
 

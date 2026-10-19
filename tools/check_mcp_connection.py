@@ -28,7 +28,7 @@ async def check(args):
                     if args.url:
                         response=await session.call_tool('lanhu_get_designs',{'url':args.url})
                         data=response.structuredContent or next((json.loads(c.text) for c in response.content if getattr(c,'type',None)=='text'),{})
-                        if response.isError or not isinstance(data,dict) or data.get('status') in ('error','failed'):
+                        if response.isError or not isinstance(data,dict) or data.get('status') != 'success' or not isinstance(data.get('designs'),list):
                             raise ValueError('真实项目读取失败；请在本机配置自己的蓝湖登录后重试。详见 .local/mcp-connection.log')
                         result.update(login='PROJECT_READ_SUCCEEDED',design_count=data.get('total_designs'))
                     (folder/'mcp-report.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
