@@ -6,6 +6,7 @@
   "reference": "reference.png",
   "manifest": "assets/manifest.json",
   "font_map": "project-font-map.json",
+  "pending_assets": "pending-assets.json",
   "spec": "reviewed-spec.json",
   "contract": "visual-contract.json",
   "app": "../../flutter_app",

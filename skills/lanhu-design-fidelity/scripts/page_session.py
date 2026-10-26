@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -167,10 +168,26 @@ def save(data, root):
         f'<pre>{esc(json.dumps(s.get("rounds"),ensure_ascii=False,indent=2))}</pre>')
 
 
+def require_prepared_sources(data, config, config_dir):
+    """Fail before expensive work for configured full-page evidence pipelines."""
+    if not config.get('evidence'):
+        return  # Legacy validation-only configs; not a complete page workflow.
+    ready = [e for e in data['events'] if e['action'] == 'prepare' and e.get('status') == 'OK']
+    if not ready:
+        raise ValueError('Full-page acceptance requires successful prepare before rendering')
+    latest = ready[-1]
+    inputs = [(config_dir / name).resolve() for name in config['evidence']]
+    inputs += [(config_dir / config[key]).resolve() for key in
+               ('reference', 'manifest', 'font_map', 'pending_assets') if config.get(key)]
+    current = {str(p): sha256(p) for p in inputs}
+    if current != latest.get('prepared_input_hashes'):
+        raise ValueError('Prepared source inputs changed; prepare again before rendering')
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--config', type=Path, required=True)
-    p.add_argument('action', choices=['start','phase','prepare','inspect','compile','validate','accept','status','finish'])
+    p.add_argument('action', choices=['start','phase','prepare','inspect','compile','validate','accept','status','finish','stop'])
     p.add_argument('--view', choices=['overview','components','text','visual','assets','scenes','effects','issues','nodes'], default='overview')
     p.add_argument('--component', action='append', help='Source group ID/alias; repeat for flat siblings; all selects the page')
     p.add_argument('--file', type=Path, help='Saved JSON path, relative to config')
@@ -212,6 +229,16 @@ def main():
             if args.action == 'status':
                 save(data, root)
                 print(json.dumps(data['summary'] if args.verbose else compact_result(data,root), ensure_ascii=False)); return 0
+            if args.action == 'stop':
+                if data['status'] != 'RUNNING' or not args.note.strip():
+                    raise ValueError('Stop requires a running session and reason; it does not grant acceptance')
+                now = time.time()
+                data['events'].append({'action':'stop','status':'OK','seconds':0,'note':args.note})
+                data.update(status='STOPPED_NOT_ACCEPTED', finished_unix=now)
+                save(data, root)
+                print(json.dumps(compact_result(data, root), ensure_ascii=False)); return 0
+            if data['status'] != 'RUNNING':
+                raise ValueError('Session is terminal; inspect status or start a separate experiment')
             if args.action == 'inspect':
                 from evidence_view import view, encode
                 if args.cursor and not args.sha256:
@@ -319,10 +346,22 @@ def main():
             def invoke(script, flags):
                 command = [data.get('python', sys.executable), str(SCRIPTS/script), *map(str, flags)]
                 log = root/f'{len(data["events"]):03d}-{Path(script).stem}.log'
-                event.setdefault('commands', []).append({'argv':command, 'log':str(log)})
+                child_env = os.environ.copy()
+                env_overrides = {}
+                if c.get('pending_assets'):
+                    pending = str(path('pending_assets'))
+                    from pending_assets import load_policy
+                    load_policy(pending)
+                    child_env['LANHU_PENDING_ASSETS'] = pending
+                    env_overrides['LANHU_PENDING_ASSETS'] = pending
+                record = {'argv':command, 'log':str(log), 'env_overrides':env_overrides}
+                event.setdefault('commands', []).append(record)
+                command_started = time.monotonic()
                 with log.open('w') as stream:
-                    run = subprocess.run(command, cwd=config.parent, stdout=stream,
+                    run = subprocess.run(command, cwd=config.parent, env=child_env, stdout=stream,
                                          stderr=subprocess.STDOUT, timeout=900)
+                record.update(returncode=run.returncode,
+                              seconds=round(time.monotonic()-command_started, 3))
                 if run.returncode:
                     raise ValueError(f'{script} returned {run.returncode}; see {log}')
 
@@ -335,16 +374,23 @@ def main():
                         *(['--font-map',path('font_map')] if c.get('font_map') else [])])
                     invoke('init_visual_contract.py', [*evidence,'--reference',path('reference'),
                         '--output',output/'draft.json','--name',c['name']])
+                    inputs = [(config.parent / name).resolve() for name in c['evidence']]
+                    inputs += [path(key) for key in
+                               ('reference', 'manifest', 'font_map', 'pending_assets') if c.get(key)]
+                    event['prepared_input_hashes'] = {str(p): sha256(p) for p in inputs}
                 elif args.action == 'compile':
                     event['report'] = str(path('contract'))
                     invoke('compile_contract.py', ['--spec',path('spec'),'--output',path('contract')])
                 elif args.action in ('validate', 'accept'):
+                    require_prepared_sources(data, c, config.parent)
                     event['report'] = str(output/'run.json')
                     if c.get('renderer_kind') == 'custom':
                         if not c.get('renderer_capabilities'):
                             raise ValueError('Custom renderer requires renderer_capabilities; node presence does not prove paint support')
                         evidence = [v for entry in c['evidence'] for v in ('--evidence', (config.parent/entry).resolve())]
-                        invoke('renderer_capabilities.py', [*evidence, '--capabilities', path('renderer_capabilities'), '--output', output/'renderer-coverage.json'])
+                        coverage_report = root/f'{len(data["events"]):03d}-renderer-coverage.json'
+                        event['renderer_coverage_report'] = str(coverage_report)
+                        invoke('renderer_capabilities.py', [*evidence, '--capabilities', path('renderer_capabilities'), '--output', coverage_report])
                     if args.action == 'accept':
                         invoke('compile_contract.py', ['--spec',path('spec'),'--output',path('contract')])
                     contract = read_json(path('contract'))

@@ -1,0 +1,3 @@
+# Independent 2.19.5 same-page retest
+Model: gpt-5.6-sol, reasoning high, independent context. Frozen candidate 2.19.5. No historical implementation, outputs, or parent implementation hints. Up to three formal acceptance rounds. Full acquisition through preview/report and last response time; actual tokens only. Same-page regression, not unseen-page generalization. Fresh acquisition for measuring deferred fallback workflow; local SDK/fonts allowed. Historical runs remain unchanged.
+Design f19101d7-5cdc-4c36-959e-71926bb3ce2f; snapshot 2369ff1039c446fe2e499602e10a40bd; resolved version 998f0308-6c39-4ba7-9361-79947facff2d; canvas 375x812.

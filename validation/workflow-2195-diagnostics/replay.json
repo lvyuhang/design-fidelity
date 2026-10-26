@@ -1,0 +1,8 @@
+{
+  "original_assets": 8,
+  "deferred_fallbacks": 37,
+  "issues": [],
+  "prepare_seconds": 0.33630954199999996,
+  "avoided_download_bytes": 444712,
+  "scope": "Local preparation replay only; no model or MCP timing claim"
+}

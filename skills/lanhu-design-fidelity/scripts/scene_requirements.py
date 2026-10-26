@@ -54,6 +54,27 @@ def scene_requirements(nodes):
                 result.append({'id':key+'/boundary/'+mask_key, 'kind':'boundary_overlay',
                                'node_ids':[key,mask_key],
                                'verify':['asset_frame', 'source_order', 'clip_scope', 'visible_contour']})
+    # Coincident fills are a composition, not duplicate geometry.
+    stacks = {}
+    for key, n in nodes.items():
+        if not _visible(n): continue
+        raw = n.get('raw_style') or {}
+        borders = [b for b in raw.get('borders', []) if b.get('isEnabled', True)]
+        if borders:
+            result.append({'id':key+'/stroke', 'kind':'stroke', 'node_ids':[key],
+                           'verify':['source_width_alignment_alpha', 'rendered_edge_band'],
+                           'expected':{'borders':borders, 'opacity':raw.get('opacity',100)}})
+        if raw.get('fills') and not n.get('text'):
+            b = n['bounds']
+            identity = tuple(b.get(k) for k in ('x','y','width','height'))
+            stacks.setdefault(identity, []).append(key)
+    for keys in stacks.values():
+        if len(keys) < 2: continue
+        result.append({'id':keys[0]+'/paint_stack', 'kind':'paint_stack', 'node_ids':keys,
+                       'verify':['all_source_layers', 'source_order', 'composited_pixels'],
+                       'expected':[{ 'node_id':k, 'source_order':nodes[k].get('source_order'),
+                           'fills':nodes[k]['raw_style']['fills'],
+                           'opacity':nodes[k]['raw_style'].get('opacity',100)} for k in keys]})
     return result
 
 

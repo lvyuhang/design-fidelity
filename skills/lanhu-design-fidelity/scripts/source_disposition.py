@@ -1,6 +1,7 @@
 """Source-derived next steps, not claims of complete geometry or visual approval."""
 from __future__ import annotations
 import json
+from pending_assets import pending_allowed
 
 
 def source_disposition(key, nodes):
@@ -8,6 +9,9 @@ def source_disposition(key, nodes):
     raw = node.get('raw_style') or {}
     if node.get('text'):
         return {'state': 'text', 'action': 'verify_font_and_text_runs'}
+    if pending_allowed(key, nodes):
+        return {'state':'missing_vector_candidate','action':'preserve_shape_and_disclose_unavailable_vector',
+                'reason':'hashed reinspection supports authorized placeholder'}
     if node.get('asset_ids'):
         return {'state': 'asset_candidate', 'action': 'verify_export_and_asset_frame',
                 'source_node': key}
@@ -32,6 +36,8 @@ def source_disposition(key, nodes):
     if refs:
         return {'state': 'vector_candidate', 'action': 'inspect_path_and_parent_effects',
                 'geometry_refs': refs}
+    if pending_allowed(key, nodes):
+        return {'state':'missing_vector_candidate','action':'preserve_shape_and_disclose_unavailable_vector','reason':'source unresolved after reinspection; user authorized placeholder'}
     if node.get('node_type') in ('shape', 'shapePath'):
         # An absent key is not evidence of an absent path. Never fabricate empty
         # fields in normalized input to turn UNKNOWN into a missing-source claim.

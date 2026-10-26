@@ -3,9 +3,14 @@ import json
 import subprocess
 import sys
 import unittest
+import numpy as np
+from PIL import Image, ImageDraw
+from unittest.mock import patch
 import test_fidelity as fixtures
-from source_requirements import add_sample_drafts, effects, requirements, source_gaps, validate_exclusion
+from source_requirements import (add_sample_drafts, effects, requirements, source_gaps,
+    validate_exclusion, validate_visual_exclusion, is_small_visual)
 from fidelity_contract import inventory, sha256
+from visual_fidelity_gate import _vector_effect_metric
 
 DRAW = '''from PIL import Image, ImageDraw
 import sys
@@ -49,6 +54,38 @@ class SourceObligationTests(unittest.TestCase):
             validate_exclusion('badge',{'exclusion':{'kind':'outside_canvas'}},nodes,[100,100])
         nodes['badge']['bounds']['x']=100
         validate_exclusion('badge',{'exclusion':{'kind':'outside_canvas'}},nodes,[100,100])
+
+    def test_clipping_mask_is_not_an_independent_small_visual(self):
+        node={'node_type':'shape','bounds':{'x':0,'y':0,'width':20,'height':20},
+              'raw_style':{'hasClippingMask':1}}
+        self.assertFalse(is_small_visual(node))
+
+    @patch('source_requirements.pending_allowed', return_value=True)
+    def test_missing_backdrop_visual_exclusion_requires_executable_verification(self, _):
+        nodes={'photo':{'bounds':{'x':0,'y':0,'width':20,'height':20},'source_order':1},
+               'badge':{'bounds':{'x':5,'y':5,'width':8,'height':8},'source_order':2}}
+        contract={'implementation_inputs':['scene_test.dart'],
+                  'node_decisions':{'photo':{'mode':'missing_asset_placeholder'}}}
+        decision={'visual_exclusion':{'kind':'missing_backdrop','by':'photo',
+                  'verification':'scene_test.dart','assertion':'exact frame and asset binding'}}
+        validate_visual_exclusion('badge',decision,nodes,contract)
+        decision['visual_exclusion'].pop('assertion')
+        with self.assertRaisesRegex(ValueError,'verification and assertion'):
+            validate_visual_exclusion('badge',decision,nodes,contract)
+
+    def test_gradient_sample_moves_along_same_band_when_center_is_covered(self):
+        surface={'node_id':'surface','source_order':1,'node_type':'shape',
+                 'bounds':{'x':0,'y':0,'width':100,'height':100},
+                 'raw_style':{'fills':[{'type':'gradient','isEnabled':True,'gradient':{
+                     'type':'linear','from':{'x':.5,'y':0},'to':{'x':.5,'y':1}}}]}}
+        cover={'node_id':'cover','source_order':2,'node_type':'bitmap',
+               'bounds':{'x':40,'y':40,'width':20,'height':20},'raw_style':{}}
+        req=next(r for r in requirements({'surface':surface,'cover':cover},[100,100])
+                 if r['node_id']=='surface')
+        middle=next(s for s in req['samples'] if s['role']=='middle')
+        self.assertEqual(middle['rect'][1],50)
+        self.assertNotEqual(middle['rect'][0],50)
+        self.assertIn('same gradient band',middle['review_reason'])
 
     def sync(self):
         (self.root/'source.json').write_text(json.dumps(self.e))
@@ -193,6 +230,27 @@ class SourceObligationTests(unittest.TestCase):
         self.e['nodes'][2]['raw_style']['fills'][0]['gradient']['type']='radial'
         self.sync();self.add_samples();r=self.assert_gate(2,'NOT_EVALUATED')
         self.assertIn('automatic samples unavailable',r['reason'])
+
+    def test_vector_effect_profile_accepts_rasterizer_noise_but_rejects_border_regressions(self):
+        reference=Image.new('RGB',(128,128),'white')
+        candidate=Image.new('RGB',(128,128),'white')
+        missing=Image.new('RGB',(128,128),'white')
+        shifted=Image.new('RGB',(128,128),'white')
+        thinner=Image.new('RGB',(128,128),'white')
+        # Equivalent 4x vector rasterizations may differ by one physical pixel.
+        ImageDraw.Draw(reference).rounded_rectangle((16,16,111,111),radius=16,outline=(235,209,166),width=2)
+        ImageDraw.Draw(candidate).rounded_rectangle((17,16,112,111),radius=16,outline=(235,209,166),width=2)
+        # These are real final-scale regressions: 1 logical px displacement and
+        # a 50% loss of the already-thin source stroke.
+        ImageDraw.Draw(shifted).rounded_rectangle((20,16,115,111),radius=16,outline=(235,209,166),width=2)
+        ImageDraw.Draw(thinner).rounded_rectangle((16,16,111,111),radius=16,outline=(235,209,166),width=1)
+        rect=[4,4,24,24]
+        close=_vector_effect_metric(np.asarray(reference),np.asarray(candidate),rect,4)
+        self.assertLessEqual(close['p95_max_channel'],12)
+        for label, image in [('missing',missing),('shifted',shifted),('thinner',thinner)]:
+            with self.subTest(label=label):
+                regression=_vector_effect_metric(np.asarray(reference),np.asarray(image),rect,4)
+                self.assertGreater(regression['p95_max_channel'],12)
 
     def test_disabled_effect_and_one_percent_opacity_are_distinguished(self):
         n={'bounds':{'x':0,'y':0,'width':20,'height':20},'raw_style':{

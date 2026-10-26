@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 from pathlib import Path
 
@@ -38,6 +39,13 @@ def findings(paths, root):
             rel = str(path.resolve().relative_to(root.resolve()))
         except ValueError:
             rel = str(path.resolve())
+        # Reference crops are not exported assets. Require an explicit authorization
+        # binding even when Image.asset uses string interpolation.
+        for match in re.finditer(r"['\"][^'\"\n]*(?:/fallback/|/source[_-]render)[^'\"\n]*['\"]", text):
+            symbol = match.group(0)[1:-1]
+            result.append({'id': f'{rel}::reference_crop::{symbol}', 'file': rel,
+                           'line': _line(text, match.start()), 'kind': 'reference_crop',
+                           'symbol': symbol})
         for match in CUSTOM_PAINT.finditer(text):
             symbol = match.group(1)
             result.append({'id': f'{rel}::custom_paint::{symbol}', 'file': rel,
@@ -71,9 +79,12 @@ def audit(paths, root, provenance=None, evidence=()):
             failures.append({**item, 'reason': 'missing provenance binding'})
             continue
         mode = binding.get('mode')
+        if item['kind'] == 'reference_crop':
+            if mode != 'authorized_reference_crop' or not binding.get('user_authorization', '').strip() or not binding.get('source_nodes'):
+                failures.append({**item, 'reason': 'reference crop requires explicit per-asset user authorization; otherwise use placeholder'})
+            continue
         if mode == 'system_chrome':
-            if not binding.get('reason', '').strip():
-                failures.append({**item, 'reason': 'system_chrome requires reason'})
+            failures.append({**item, 'reason': 'system_chrome cannot authorize app-drawn geometry; use source_vector or missing-asset placeholder'})
         elif mode == 'source_vector':
             refs = binding.get('source_nodes') or []
             if not refs:
@@ -91,7 +102,7 @@ def audit(paths, root, provenance=None, evidence=()):
                         f'unresolved geometry {ref.get("node_id")}#{pointer}'})
         else:
             failures.append({**item, 'reason':
-                'mode must be source_vector or system_chrome; missing custom icons use placeholders'})
+                'mode must be source_vector; missing custom icons use placeholders'})
     stale = sorted(set(bindings) - {item['id'] for item in found})
     if stale:
         failures.append({'reason': 'stale provenance bindings', 'ids': stale})
@@ -107,7 +118,11 @@ def audit_contract(contract_path: Path):
     provenance_path = contract.get('graphics_provenance')
     provenance = _read(base / provenance_path) if provenance_path else None
     evidence = [(base / p).resolve() for p in contract.get('source_documents', [])]
-    return audit(paths, base, provenance, evidence)
+    # Contracts commonly live beside page evidence while implementation lives
+    # in a sibling app. Use their stable common project root so provenance IDs
+    # do not embed machine-specific absolute paths.
+    audit_root = Path(os.path.commonpath([str(base), *(str(p) for p in paths)]))
+    return audit(paths, audit_root, provenance, evidence)
 
 
 def main():

@@ -189,6 +189,10 @@ def implementation_brief(result, nodes):
         'assets': [{k:v for k,v in a.items() if k in
                     ('node_id','kind','path','export_rect','export_frame_source','alpha_ink_rect')}
                    for a in result['assets']],
+        'asset_coverage_candidates': [
+            {k:v for k,v in entry.items() if k in
+             ('node_id','proposal','asset_owner_candidate')}
+            for entry in result.get('nodes', []) if entry.get('asset_owner_candidate')],
         'missing_bitmaps': missing,
         'text_style_groups': list(text_groups.values()),
         'visual_style_groups': list(visual_groups.values()),
@@ -205,7 +209,7 @@ def compact_scene_requirements(requirements):
     groups = {}
     for r in requirements:
         group = groups.setdefault(r['kind'], {'kind':r['kind'], 'verify':r['verify'], 'instances':[]})
-        group['instances'].append({'id':r['id'], 'node_ids':r['node_ids']})
+        group['instances'].append({k:v for k,v in r.items() if k not in ('kind','verify')})
     return list(groups.values())
 
 
@@ -265,6 +269,12 @@ def prepare(evidence, reference, manifest_path, font_map=None):
         item = {'asset_id': key, 'node_id': a['node_id'], 'kind':a.get('kind', 'unspecified'),
                 'layout_rect': rect(nodes[a['node_id']]['bounds'])}
         e = exported.get(key)
+        if not e and a.get('kind') == 'render_fallback':
+            # Source metadata is retained, but unused fallback pixels are not a
+            # prerequisite for native implementation or missing-source review.
+            item.update(download_state='deferred', usable_for_implementation=False)
+            prepared_assets.append(item)
+            continue
         if not e:
             issues.append({'kind': 'asset_not_exported', 'asset_id': key})
             prepared_assets.append(item)
@@ -297,6 +307,23 @@ def prepare(evidence, reference, manifest_path, font_map=None):
             if origin is not None and {'width','height'} <= source_size.keys() and {'x','y'} <= point.keys()
             else None)
         frame_source = 'verified_render_bounds' if verified_bounds else 'source_point_minus_origin'
+        # Some exports include transparent padding around a small node and do
+        # not have a trustworthy document origin. The node's source frame is
+        # still sufficient when every owning document explicitly verifies the
+        # source-canvas coordinate mapping.
+        if frame is None and owners and all(
+                d.get('coordinate_space') == 'source_canvas' and
+                d.get('coordinate_mapping', {}).get('verified') is True for d in owners):
+            raw = nodes[a['node_id']].get('raw_style') or {}
+            local = raw.get('ddsOriginFrame') or {}
+            if (all(k in source_size for k in ('width','height')) and
+                    all(k in point for k in ('x','y')) and
+                    all(k in local for k in ('x','y'))):
+                layout = item['layout_rect']
+                frame = [layout[0]+point['x']-local['x'],
+                         layout[1]+point['y']-local['y'],
+                         source_size['width'], source_size['height']]
+                frame_source = 'source_point_relative_to_node_origin'
         # Corroborated node-local influence mapping is stronger than an unverified
         # document-origin offset (source_point may be in a different artboard space).
         if not verified_bounds:

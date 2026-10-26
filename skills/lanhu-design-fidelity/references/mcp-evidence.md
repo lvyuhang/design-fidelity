@@ -7,7 +7,7 @@
 1. design_id 未知时用 lanhu_get_designs 按指定画板定位。
 2. lanhu_get_design_overview 传 design_id 和 URL 版本；仅明确请求最新时传 latest。保存 snapshot_id、resolved_version、画布、映射、参考图、索引。
 3. lanhu_inspect_design_region 优先 node_ids；发现节点才用 region。完成分页，保存完整 nodes/ancestors/raw_style，与源 total_nodes 对照。
-4. lanhu_export_design_assets 使用源资产 ID，优先 format_preference: original；SVG/回退明确记录。
+4. 先按源 metadata 的 kind 分流：原始素材 ID 批量导出，优先 format_preference: original；render_fallback 保留元数据，默认不下载像素。只有实际诊断需要或用户明确授权使用该项回退时才定向下载。未知类型先查明，不当成可跳过的回退。
 5. 用客户端可用方式下载 bundle，按 manifest 安装，核对字节、SHA256、尺寸。URI/封装随服务适配，服务端路径不是本地文件。
 
 ## 证据字段
@@ -21,3 +21,5 @@
 无 asset_id 继续查原矢量/效果，不能直接判缺图。定制素材缺失按用户策略保形占位；仅授权的单个静态素材可源渲染回退，不得裁图替代卡片/导航等业务代码。缺证据只阻塞受影响区域，正式验收前闭环。
 
 完整页 expected_node_count 对照源总数；局部显式 provided_nodes 和原因。初始化器无法发现未拉取节点。参考图可见但清单没有时排查分页、父层烘焙、低透明层/蒙版，不在代码中仿画补洞。
+
+prepare 允许未下载的 render_fallback，返回 download_state=deferred，不赋予实现资格。原始素材缺文件仍阻断；下载后的回退仍校验哈希和尺寸。此规则减少无用字节传输，不减少节点、效果、文字或素材元数据覆盖。缺源占位可引用已哈希的原始 inspect JSON 中 assets 类型证据，无需为证明它是回退图而下载图片。

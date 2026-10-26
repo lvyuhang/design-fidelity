@@ -4,6 +4,7 @@ import hashlib
 import json
 import math
 from pathlib import Path
+from exclusion_masks import build_keep_mask
 from source_requirements import effects, validate_obligations, enabled
 from scene_requirements import verify_scene_receipt
 
@@ -125,8 +126,19 @@ def validate_contract(c, nodes):
                     if not required_limits <= limits.keys() or len(spec['node_ids']) != 1:
                         raise ValueError(f'{key}: small_visual requires one node and edge, ink and mask limits')
                 det = spec.get('detector', {})
-                if det.get('kind') not in ('dark', 'light', 'gold', 'color_distance', 'channel_range'):
+                if det.get('kind') not in ('dark', 'light', 'gold', 'color_distance', 'channel_range', 'relative_dark', 'enclosed_container'):
                     raise ValueError(f'{key}: unsupported detector')
+                if det.get('kind') == 'enclosed_container':
+                    if det.get('foreground', {}).get('kind') not in ('dark', 'light', 'gold', 'color_distance', 'channel_range'):
+                        raise ValueError(f'{key}: explicit container foreground required')
+                    paint = c.get('regions', {}).get(spec.get('paint_region'))
+                    if not paint or not paint.get('blocking', True) or not set(spec['node_ids']) <= set(paint.get('node_ids', [])):
+                        raise ValueError(f'{key}: container requires a blocking source-bound paint_region')
+                if det.get('kind') == 'relative_dark':
+                    _number(det.get('delta'), f'{key}.delta', True)
+                    percentile=det.get('percentile',80)
+                    _number(percentile,f'{key}.percentile',True)
+                    if percentile>100: raise ValueError(f'{key}.percentile must be <= 100')
                 _number(det.get('min_pixels', 8), key, True)
                 pad = spec.get('padding', [0]*4)
                 if len(pad) != 4:
@@ -137,6 +149,15 @@ def validate_contract(c, nodes):
                 _number(spec.get('max_mae'), key)
                 if 'max_p95' in spec:
                     _number(spec['max_p95'], key)
+                profile = spec.get('comparison_profile')
+                if profile not in (None, 'vector_effect'):
+                    raise ValueError(f'{key}: unsupported region comparison_profile')
+                if profile == 'vector_effect':
+                    effect = spec.get('effect') or {}
+                    if not str(effect.get('key', '')).startswith('borders:'):
+                        raise ValueError(f'{key}: vector_effect is only valid for a source border')
+                    if not spec.get('review_reason', '').strip():
+                        raise ValueError(f'{key}: vector_effect needs an explicit review reason')
             else:
                 _number(spec.get('max_channel_delta'), key)
             if category in ('regions', 'color_samples') and not (spec.get('node_ids') or spec.get('rect')):
@@ -148,6 +169,30 @@ def validate_contract(c, nodes):
                 x, y, w, h = rect
                 if x < 0 or y < 0 or w <= 0 or h <= 0 or x+w > c['canvas'][0] or y+h > c['canvas'][1]:
                     raise ValueError(f'{key}: rect outside canvas')
+    masks = c.get('exclude_rects', []) + c.get('exclude_shapes', [])
+    if masks:
+        keep = build_keep_mask(c['canvas'], c['render_scale'], masks,
+                               c.get('protect_regions', []))
+        for key, spec in c['regions'].items():
+            if not spec.get('blocking', True):
+                continue
+            if 'rect' in spec:
+                rect = spec['rect']
+            else:
+                bounds = [nodes[node_id]['bounds'] for node_id in spec.get('node_ids', [])]
+                if not bounds:
+                    continue
+                left = min(v['x'] for v in bounds); top = min(v['y'] for v in bounds)
+                right = max(v['x'] + v['width'] for v in bounds)
+                bottom = max(v['y'] + v['height'] for v in bounds)
+                rect = [left, top, right-left, bottom-top]
+            x, y, w, h = rect; scale = c['render_scale']
+            x0, y0 = round(x*scale), round(y*scale)
+            x1, y1 = round((x+w)*scale), round((y+h)*scale)
+            if not keep[y0:y1, x0:x1].any():
+                raise ValueError(
+                    f'regions.{key}: completely excluded by masks; protect source-visible '
+                    'foreground or remove the contradictory blocking region')
     coverage = c.get('coverage', {})
     required = inventory(nodes)
     if not required:

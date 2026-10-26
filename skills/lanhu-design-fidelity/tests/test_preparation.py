@@ -5,7 +5,7 @@ from pathlib import Path
 import unittest
 
 import test_fidelity as fixtures
-from compile_contract import compile_spec, check_raster_scope
+from compile_contract import compile_spec, check_raster_scope, freeze_or_verify
 from fidelity_contract import sha256
 from prepare_page import implementation_brief, prepare
 
@@ -42,6 +42,21 @@ class PreparationTests(unittest.TestCase):
         return prepare([self.root/'source.json'], self.root/'reference.png',
                        self.root/'manifest.json', self.root/'fonts.json')
 
+    def test_unused_fallback_bytes_are_optional_but_metadata_remains(self):
+        self.e['assets'][0]['kind'] = 'render_fallback'
+        self.manifest['assets'] = []
+        result = self.run_prepare()
+        self.assertFalse(any(i['kind'] == 'asset_not_exported' for i in result['issues']))
+        self.assertEqual(result['assets'][0]['download_state'], 'deferred')
+        self.assertNotIn('path', result['assets'][0])
+        self.assertFalse(result['assets'][0]['usable_for_implementation'])
+
+    def test_missing_original_asset_still_blocks(self):
+        self.e['assets'][0]['kind'] = 'exported_asset'
+        self.manifest['assets'] = []
+        result = self.run_prepare()
+        self.assertTrue(any(i['kind'] == 'asset_not_exported' for i in result['issues']))
+
     def test_export_frame_preserves_padding_not_node_size(self):
         r = self.run_prepare()
         self.assertEqual(r['status'], 'PREPARED_FOR_REVIEW')
@@ -50,6 +65,15 @@ class PreparationTests(unittest.TestCase):
         self.assertEqual(a['export_rect'], [9,9,12,12])
         self.assertEqual(a['alpha_ink_rect'], [10,10,10,10])
         self.assertTrue(a['layout_differs_from_export'])
+
+    def test_node_local_origin_preserves_transparent_export_padding_without_canvas_anchor(self):
+        self.e['nodes'][2].pop('raw_style')
+        self.e['nodes'][0]['raw_style']['ddsOriginFrame'] = {
+            'x':110,'y':210,'width':10,'height':10}
+        a = self.run_prepare()['assets'][0]
+        self.assertEqual(a['export_rect'], [9,9,12,12])
+        self.assertEqual(a['export_frame_source'], 'source_point_relative_to_node_origin')
+        self.assertEqual(a['export_density'], 4)
 
     def test_asset_not_downloaded_is_not_reported_as_missing_bitmap(self):
         self.e['nodes'][0]['node_type'] = 'bitmap'
@@ -229,6 +253,19 @@ class ContractCompilerTests(unittest.TestCase):
         for k in ('coverage','pinned_files','status'):
             self.spec.pop(k)
         self.spec['excluded_nodes'] = {}
+
+    def test_frozen_reuse_requires_identical_inputs_and_checks(self):
+        spec = self.fixture.root/'reviewed.json'
+        output = self.fixture.root/'frozen.json'
+        spec.write_text(json.dumps(self.spec))
+        self.assertEqual(freeze_or_verify(spec, output)[1], 'CONTRACT_COMPILED')
+        before = output.read_bytes()
+        self.assertEqual(freeze_or_verify(spec, output)[1], 'CONTRACT_REUSED')
+        self.spec['features']['icon']['label'] = 'changed'
+        spec.write_text(json.dumps(self.spec))
+        with self.assertRaisesRegex(ValueError, 'differs'):
+            freeze_or_verify(spec, output)
+        self.assertEqual(output.read_bytes(), before)
 
     def test_derives_same_coverage_without_changing_checks(self):
         c = compile_spec(self.spec, self.fixture.root)

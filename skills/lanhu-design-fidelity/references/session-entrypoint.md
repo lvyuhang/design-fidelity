@@ -1,5 +1,7 @@
 # 日常操作
 
+候选版新增：配置 evidence 的整页任务在 accept/validate 前强制核对成功 prepare 及证据、参考图、资源清单、字体映射哈希；变化须重新 prepare。无 evidence 的旧配置只用于已提供实现的验证，不是端到端效率样本。
+
 复用项目 Python（已装 scripts/requirements.txt）、页面配置和截图 harness。首次复制 assets/page-session.example.json：路径相对配置文件；test/analyze 相对 app。先填 name/run_dir 开始计时，其余路径随取证补齐；完整页 scope 为 page。
 
 ```sh
@@ -41,6 +43,8 @@ stdout 回传全任务轮次、阶段时间和失败摘要；完整输出在 ses
 
 ## 按工具结果继续（2.18.6）
 
+确认缺失且经用户授权占位的素材写入 `pending-assets.json`，并在页面配置声明 `pending_assets`。统一入口会把绝对路径传给 prepare/compile/validate 子命令并把文件哈希写入准备收据；策略文件变化后必须重新 prepare。不要在终端临时设置 `LANHU_PENDING_ASSETS`，否则恢复任务或交给低等级模型时规则会悄然失效。
+
 命令提供 `next_action` 时，先完成它所指阶段；它导航现有流程，不批准候选或推断根因。inspect 返回组件证据后，按候选逐项核实并实现。缺报告先读取报告，不凭成功退出码宣告交付。组件包的 `source_decision_groups` 按同类来源批量给出待办，保留全部实例；路径必须展开核实，工具不替代语义审核。
 
 - `NEEDS_INPUT_FIXES`：批量补取 issues 指向的证据/字体/资源，再 prepare；不要开始猜图形。
@@ -57,3 +61,14 @@ stdout 回传全任务轮次、阶段时间和失败摘要；完整输出在 ses
 能力文件：`{"supported":{"borders.gradient.linear":{"implementation":"文件:函数","test":"测试文件:用例"}}}`。按当前源效果去重登记，不写页面特例；未知效果不可默认当纯色/透明。此检查核对声明，不执行测试，也不替代视觉收据。原素材自带的效果需记录烘焙边界，避免重复叠加透明度。
 
 每种新绘制能力首次接入时，用实际绘制器测试正例及移除该效果的反例；小控件分别测背景/描边的非文字像素与整体合成。固定输入、阈值及测试区域后再修实现；整页均值容易稀释细描边，局部诊断仍不能冒充整页通过。历史原始输出保留，修复后的耗时不回填旧基准。
+
+## 结束未通过实验与复用契约
+
+达到实验轮次上限或决定停止时执行 `page_session.py --config page.json stop --note "具体未通过原因"`。它固定耗时并记录 STOPPED_NOT_ACCEPTED，不授予验收；终止后不能继续写入同一实验。`finish` 仍只允许通过验收的结果。
+
+`compile` / `accept` 可复用与当前 spec 及源文件重新计算结果完全相同的冻结契约，不覆盖旧文件；任何不一致必须建立新的实验基线。
+
+## 缺源策略与计时边界
+复制 `assets/pending-assets.example.json`，以 node_id 填入 `nodes`，每项包含 `reason` 和 `evidence:[{"path":"源证据.json","sha256":"实际文件哈希"}]`。错误字段直接报错，不视为无授权。存在 asset_id 时，已哈希证据须覆盖全部 ID 且均为 render_fallback；原始素材或未知类型不能据此占位。取得源数据之后只需一次定向复查，确认仍无原始素材/路径且已有用户占位授权即可进入缺图决策，不反复下载 fallback 来假装补齐原始素材。
+
+`stop` 必须在最后一次构建、诊断预览和报告之后执行。若停止后仍有产物修改，原停止耗时不能作总耗时；另列最后产物/报告时间，并按模型启动至最后响应统计完整实验。规则不能阻止外部 shell 写文件，不得将终态标记当作产物冻结证明。

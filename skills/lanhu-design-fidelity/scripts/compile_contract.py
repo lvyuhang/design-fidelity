@@ -115,19 +115,30 @@ def compile_spec(spec, base):
     return c
 
 
+def freeze_or_verify(spec_path, output):
+    """Reuse only an exactly reproducible contract; never overwrite it."""
+    if output.resolve().parent != spec_path.resolve().parent:
+        raise ValueError('Spec and contract must share a directory so relative paths remain unchanged')
+    candidate = compile_spec(read_json(spec_path), spec_path.resolve().parent)
+    if output.exists():
+        if read_json(output) != candidate:
+            raise ValueError('Frozen contract differs from current spec or inputs; use a new experiment baseline')
+        return candidate, 'CONTRACT_REUSED'
+    with output.open('x') as stream:
+        stream.write(json.dumps(candidate, ensure_ascii=False, indent=2)+'\n')
+    return candidate, 'CONTRACT_COMPILED'
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--spec', type=Path, required=True)
     p.add_argument('--output', type=Path, required=True)
     a = p.parse_args()
-    if a.output.exists():
-        p.error('Output exists; never overwrite a frozen baseline')
     if a.output.resolve().parent != a.spec.resolve().parent:
         p.error('Spec and contract must share a directory so relative paths remain unchanged')
     try:
-        c = compile_spec(read_json(a.spec), a.spec.resolve().parent)
-        a.output.write_text(json.dumps(c,ensure_ascii=False,indent=2)+'\n')
-        print(json.dumps({'status':'CONTRACT_COMPILED','visual_acceptance':False,
+        c, outcome = freeze_or_verify(a.spec, a.output)
+        print(json.dumps({'status':outcome,'visual_acceptance':False,
                           'nodes':len(c['coverage']),'contract':str(a.output)},ensure_ascii=False))
         return 0
     except (ValueError,OSError,KeyError) as exc:

@@ -1,0 +1,15 @@
+{
+  "source": "/Users/tan/.codex/sessions/2026/10/26/rollout-2026-10-26T17-27-39-01a17789-7622-7ae0-872d-83688b09eee5.jsonl",
+  "agent_started_at": "2026-10-26T09:27:39.936Z",
+  "responses": 130,
+  "totals": {
+    "input_tokens": 19181510,
+    "cached_input_tokens": 18942848,
+    "output_tokens": 52936,
+    "reasoning_output_tokens": 14717,
+    "total_tokens": 19234446,
+    "uncached_input_tokens": 238662
+  },
+  "scope": "Independent agent only, including startup; output includes reasoning. Root maintenance excluded.",
+  "last_usage_at": "2026-10-26T09:44:32.691Z"
+}

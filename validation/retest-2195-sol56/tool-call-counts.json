@@ -1,0 +1,13 @@
+{
+  "scope": "Top-level response_item function_call/custom_tool_call only; nested calls inside exec are not individually counted.",
+  "counts": {
+    "2195": {
+      "exec": 129
+    },
+    "2193": {
+      "exec": 147,
+      "send_message": 4,
+      "js": 4
+    }
+  }
+}

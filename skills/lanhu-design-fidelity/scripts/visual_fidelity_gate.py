@@ -23,7 +23,7 @@ from typing import Any
 from exclusion_masks import build_keep_mask
 
 import numpy as np
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFilter
 
 
 def _load_nodes(paths: list[Path]) -> dict[str, dict[str, Any]]:
@@ -107,8 +107,23 @@ def _mask(pixels: np.ndarray, detector: dict[str, Any]) -> np.ndarray:
     values = pixels.astype(np.float64)
     red, green, blue = values[:, :, 0], values[:, :, 1], values[:, :, 2]
     kind = detector["kind"]
+    if kind == "enclosed_container":
+        # Fill only enclosed holes; exterior-connected background stays exterior.
+        from PIL import ImageDraw
+        base = detector['foreground']
+        if base.get('kind') == 'enclosed_container':
+            raise ValueError('Nested container detectors are unsupported')
+        mask = _mask(pixels, base)
+        padded = np.pad(mask, 1, constant_values=False)
+        flood = Image.fromarray((padded * 255).astype(np.uint8)).copy()
+        ImageDraw.floodfill(flood, (0, 0), 128)
+        return (np.asarray(flood)[1:-1, 1:-1] != 128)
     if kind == "dark":
         return values.mean(axis=2) <= detector.get("luma_max", 165)
+    if kind == "relative_dark":
+        luma=values.mean(axis=2)
+        background=np.percentile(luma,detector.get("percentile",80))
+        return luma <= background-detector["delta"]
     if kind == "light":
         return values.mean(axis=2) >= detector.get("luma_min", 220)
     if kind == "gold":
@@ -221,6 +236,50 @@ def _region_metric(reference: np.ndarray, actual: np.ndarray, rect: list[float],
         "total_pixels": total_pixels,
         "mae": round(float(delta.mean()), 4),
         "p95_max_channel": round(float(np.percentile(delta.max(axis=-1), 95)), 4),
+    }
+
+
+def _vector_effect_metric(reference: np.ndarray, actual: np.ndarray,
+                          rect: list[float], scale: float, keep=None) -> dict[str, float]:
+    """Compare a source border at its final logical display scale.
+
+    Four-times screenshots expose rasterizer-specific subpixel antialiasing and
+    dash phase that users do not see at the target 1x viewport.  Downsampling
+    and a sub-logical-pixel low-pass preserve missing, shifted, thin, thick or
+    malformed borders while avoiding false failures from equivalent vectors.
+    """
+    ref_pixels, _, _ = _pixels(reference, rect, scale)
+    actual_pixels, _, _ = _pixels(actual, rect, scale)
+    width = max(1, round(rect[2]))
+    height = max(1, round(rect[3]))
+
+    def perceptual(values: np.ndarray) -> np.ndarray:
+        return np.asarray(
+            Image.fromarray(values.astype(np.uint8))
+            .resize((width, height), Image.Resampling.LANCZOS)
+            # 0.75 suppresses a one-physical-pixel 4x AA/dash-phase change,
+            # while retaining a one-logical-pixel shift and stroke-width loss.
+            .filter(ImageFilter.GaussianBlur(0.75)),
+            dtype=np.float64,
+        )
+
+    delta = np.abs(perceptual(ref_pixels) - perceptual(actual_pixels))
+    total_pixels = delta.shape[0] * delta.shape[1]
+    if keep is not None:
+        selected, _, _ = _pixels(keep, rect, scale)
+        selected = np.asarray(
+            Image.fromarray((selected.astype(np.uint8) * 255), 'L')
+            .resize((width, height), Image.Resampling.NEAREST)
+        ) > 0
+        delta = delta[selected]
+    if delta.size == 0:
+        raise ValueError('Region completely excluded by masks')
+    per_pixel = delta.max(axis=-1) if delta.ndim == 3 else delta
+    return {
+        'compared_pixels': int(delta.shape[0] if delta.ndim == 2 else delta.shape[0] * delta.shape[1]),
+        'total_pixels': int(total_pixels),
+        'mae': round(float(delta.mean()), 4),
+        'p95_max_channel': round(float(np.percentile(per_pixel, 95)), 4),
     }
 
 
@@ -463,7 +522,14 @@ def main() -> int:
             # node_ids bind coverage; an explicit ROI narrows pixel measurement.
             # Ignoring rect silently diluted small border/mask errors over a card.
             rect = spec["rect"] if "rect" in spec else _union_bounds(spec["node_ids"], nodes)
-            metrics = _region_metric(reference, candidate, rect, scale, keep)
+            try:
+                metrics = (_vector_effect_metric(reference, candidate, rect, scale, keep)
+                           if spec.get('comparison_profile') == 'vector_effect'
+                           else _region_metric(reference, candidate, rect, scale, keep))
+            except ValueError as exc:
+                if str(exc) == "Region completely excluded by masks":
+                    raise ValueError(f"Region {region_id} completely excluded by masks") from exc
+                raise
             failures = []
             if metrics["mae"] > spec["max_mae"]:
                 failures.append(f"mae={metrics['mae']:.4f} > {spec['max_mae']:.4f}")

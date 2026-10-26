@@ -2,8 +2,21 @@ import unittest
 import test_fidelity as fixtures
 import numpy as np
 from exclusion_masks import build_keep_mask
+from fidelity_contract import validate_contract
 
 class MaskTests(unittest.TestCase):
+    def test_contract_rejects_fully_masked_blocking_region(self):
+        f=fixtures.GateTests(); f.setUp()
+        try:
+            f.c['exclude_rects']=[{'rect':[70,70,10,10],'reason':'missing photo'}]
+            f.c['regions']['photo']={'label':'photo','rect':[70,70,10,10],
+                                     'max_mae':1,'max_p95':2}
+            with self.assertRaisesRegex(ValueError, 'regions.photo: completely excluded'):
+                validate_contract(f.c, {n['node_id']:n for n in f.e['nodes']})
+            f.c['protect_regions']=[{'rect':[72,72,4,4],'reason':'foreground badge'}]
+            validate_contract(f.c, {n['node_id']:n for n in f.e['nodes']})
+        finally:f.doCleanups()
+
     def test_shape_preserves_corners_and_protection_wins_union(self):
         masks=[{'shape':'ellipse','rect':[10,10,40,40],'inset':1,'reason':'missing photo'}]
         keep=build_keep_mask([64,64],1,masks)

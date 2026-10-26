@@ -3,8 +3,10 @@ import subprocess
 import sys
 import unittest
 import json
+import numpy as np
 
 import test_fidelity as fixture_support
+from visual_fidelity_gate import _mask
 
 DRAW = '''from PIL import Image, ImageDraw
 import sys
@@ -30,6 +32,12 @@ class SmallVisualTests(unittest.TestCase):
     render = fixture_support.GateTests.render
     gate = fixture_support.GateTests.gate
     assert_gate = fixture_support.GateTests.assert_gate
+
+    def test_relative_dark_detector_is_background_independent(self):
+        light=np.full((12,24,3),240,dtype=np.uint8); light[3:9,4:20]=120
+        dark=np.full((12,24,3),150,dtype=np.uint8); dark[3:9,4:20]=60
+        detector={'kind':'relative_dark','percentile':80,'delta':20}
+        self.assertTrue(np.array_equal(_mask(light,detector),_mask(dark,detector)))
 
     def fixture(self, reference_mode='normal'):
         (self.root/'render.py').write_text(DRAW)

@@ -182,7 +182,11 @@ async def fetch(args: argparse.Namespace) -> dict:
                 # checkout is temporarily unavailable.
                 import sys
 
-                sys.path.insert(0, str(SERVER_ROOT))
+                # The checkout root is the launcher directory.  Derive it from
+                # the pinned launcher instead of relying on a process-global
+                # constant so the fetcher works in cloned workspaces as well.
+                server_root = Path(args.launcher).expanduser().resolve().parent
+                sys.path.insert(0, str(server_root))
                 from lanhu_design.install import install_bundle
 
                 install_bundle(bundle_bytes, bundle_dir)

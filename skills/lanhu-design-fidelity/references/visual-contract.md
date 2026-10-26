@@ -35,6 +35,8 @@ detector 支持 dark(luma_max)、light(luma_min)、color_distance(rgb/max_distan
 
 候选可能被子层遮挡：先看原图局部，允许沿同一渐变色带/阴影边缘平移并写 review_reason；脚本仍检查色带/衰减距离，不能改 role 重复同一点。越界、非线性或参数未知时保留待审，可用单节点局部 region + effect:{node_id,key} + review_reason；须用漏效果反例验证，说明文字不等于检测有效。
 
+源路径完整的细描边在 4× 截图中可能仅因渲染器抗锯齿或虚线相位产生高 P95，而 1× 结果等价。此类单节点 border 局部 region 可明确写 `comparison_profile: vector_effect` 和 `review_reason`：检查器先还原最终逻辑尺寸并低通，再比较局部 MAE/P95；缺失、偏移、粗细或轮廓错误仍须由反例测试失败。不得用于文字、位图、阴影或整页区域，也不得用来掩盖真实几何偏差。
+
 编译 spec 可显式 auto_effect_samples:{max_channel_delta:6}，仅对已审核策略补齐；不重写已有阈值，未知效果不自动排除。检测器/效果采样须结合原图复查，不能只看整页平均值。
 
 ## 排除与字体
@@ -67,4 +69,11 @@ fonts 每项有 path、node_ids，TTC 可加 font_number；对实际文本查 cm
 cwd 相对 **contract 所在目录**，省略为该目录；命令使用 argv 无 shell。`test_file` 相对 contract 且须在 implementation_inputs，生产源码及测试配置也须列入；源证据由 pinned_files 固定。同类 obligation 合入一个命令，默认不另增整页截图。渲染器之后执行测试，任一失败不生成成功收据；门禁要求匹配本次 contract/输入 hash 的执行结果，不能以手写 `passed` 字段通过。
 
 这证明测试确实执行，不自动证明断言质量。新建检查时必须做相关删减反例验证（去掉 blur、改不透明、去掉叠层等）；平时复用已验证检查。合成背景检查不计作原稿整体还原度，也不取代真实局部像素检查。只有被机制测试覆盖的 backdrop/mask 可免除无辨识力的单色 effect region，其余颜色、字形、阴影等检查仍保留。
+
+# 闭合容器几何
+
+当颜色分割能隔离闭合容器时，feature 可使用
+`"detector":{"kind":"enclosed_container","foreground":{"kind":"light","luma_min":220}}`。
+它填充内部孔洞后测轮廓，避免内部文字改变质心。仅适用于闭合、与背景可分离的容器；原稿先验证分割目标，开放边界、遮挡或背景连通时不可套用。
+该 feature 必须指定 `paint_region`，指向覆盖相同 node_ids 的 blocking region，继续检查描边/填充的实际像素。轮廓填充会消除描边厚度信息，不能单独验收视觉效果。内部文字保留各自检查。阈值在首次渲染前确定。
 

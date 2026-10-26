@@ -19,7 +19,7 @@
 
 源画框用于布局，透明墨迹与组合关系用于视觉检查。描边外扩应纳入 ROI；不能裁掉以让 bbox 相等。Flutter 小矢量仅在完整源路径、父变换、描边和填充均已取证时使用固定源尺寸 CustomPainter，并在 `graphics_provenance` 绑定 node_id 与几何 pointer。熟悉的垃圾桶、回复气泡、箭头仍属于定制视觉：缺 asset_id 且路径不完整时使用同画框占位，不能目测仿画、使用 `Icons.*` 或 Unicode/emoji 代替。避免 IconButton 默认 padding、最小尺寸和主题注入，触控热区可独立外包。
 
-`scripts/graphic_source_audit.py` 扫描实现输入中的 `CustomPaint` 和框架图标。`source_vector` 绑定必须指向源 evidence 中实际存在且非空的几何；`system_chrome` 仅用于平台状态栏并填写理由。未绑定、失效或残留绑定均失败。完整契约由 `run_flutter.py` 自动执行；轻量案例显式传 `--source`、`--root` 和 provenance 文件，报告随运行日志保存。
+`scripts/graphic_source_audit.py` 扫描实现输入中的 `CustomPaint` 和框架图标。`source_vector` 绑定必须指向源 evidence 中实际存在且非空的几何；`system_chrome` 不能豁免应用自己绘制的状态栏；缺完整源几何应走占位，真实操作系统渲染不属于此自绘分支。未绑定、失效或残留绑定均失败。完整契约由 `run_flutter.py` 自动执行；轻量案例显式传 `--source`、`--root` 和 provenance 文件，报告随运行日志保存。
 
 ## 复合行与透明叠层
 

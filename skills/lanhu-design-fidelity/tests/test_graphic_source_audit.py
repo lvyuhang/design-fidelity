@@ -36,7 +36,7 @@ class GraphicSourceAuditTests(unittest.TestCase):
         key = 'page.dart::custom_paint::StatusPainter'
         self.assertEqual(self.audit_case({key: {'mode': 'system_chrome'}})['status'], 'FAIL')
         self.assertEqual(self.audit_case({key: {'mode': 'system_chrome',
-            'reason': 'platform status area'}})['status'], 'PASS')
+            'reason': 'platform status area'}})['status'], 'FAIL')
 
     def test_framework_icon_without_binding_is_rejected(self):
         self.code.write_text('const Icon(Icons.delete_outline)')

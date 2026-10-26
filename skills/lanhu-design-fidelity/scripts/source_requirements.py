@@ -1,6 +1,7 @@
 """Source-derived obligations. Reference pixels, never implementation values, are the oracle."""
 from __future__ import annotations
 import math
+from pending_assets import pending_allowed
 from scene_requirements import backdrop_blur, validate_scene_checks
 from source_disposition import placeholder_issue
 
@@ -46,7 +47,8 @@ def source_gaps(nodes, text_styles=False, decisions=None, assets=()):
     for key, node in nodes.items():
         if not visible(node): continue
         raw = node.get('raw_style') or {}
-        if not node.get('text') and not set(raw).intersection({'fills','borders','shadow','shadows','opacity','points','hasClippingMask','effects','blur'}):
+        explicit_empty_artboard = node.get('node_type') in ('artboard', 'artboard-group') and raw.get('hasBackgroundColor') is False
+        if not explicit_empty_artboard and not node.get('text') and not set(raw).intersection({'fills','borders','shadow','shadows','opacity','points','hasClippingMask','effects','blur'}):
             gaps.append({'node_id': key, 'missing': ['raw_style'], 'kind': 'visual_source_unknown'})
         if text_styles and node.get('text'):
             font = raw.get('font') or {}
@@ -86,6 +88,8 @@ def geometry_resolved(key, nodes, decisions=None, assets=()):
         if mode in ('original_asset', 'render_fallback'):
             return bool(d.get('asset')) and d['asset'] in assets
         return mode in ('missing_asset_placeholder', 'excluded_with_reason')
+    if pending_allowed(key, nodes):
+        return True
     seen = set()
     while key in nodes and key not in seen:
         seen.add(key)
@@ -98,7 +102,9 @@ def geometry_resolved(key, nodes, decisions=None, assets=()):
 
 def is_small_visual(node):
     b = node['bounds']
-    return (not node.get('text') and node.get('node_type') in ('shape','bitmap','shapePath','symbol')
+    raw = node.get('raw_style') or {}
+    return (not node.get('text') and not raw.get('hasClippingMask')
+            and node.get('node_type') in ('shape','bitmap','shapePath','symbol')
             and (max(b['width'], b['height']) <= 96 or min(b['width'], b['height']) <= 4))
 
 
@@ -135,12 +141,56 @@ def sample_points(node, effect):
     return []
 
 
+def _painted(node):
+    raw = node.get('raw_style') or {}
+    return bool(node.get('text') or node.get('asset_ids') or node.get('node_type') == 'bitmap'
+                or any(enabled(v) for field in ('fills','borders') for v in raw.get(field, [])))
+
+
+def _occluded(node, rect, nodes):
+    order = node.get('source_order')
+    if not isinstance(order, (int,float)):
+        return False
+    cx,cy = rect[0]+rect[2]/2, rect[1]+rect[3]/2
+    for other in nodes.values():
+        oo=other.get('source_order'); b=other.get('bounds') or {}
+        if (other is node or not isinstance(oo,(int,float)) or oo <= order
+                or not visible(other) or not _painted(other)):
+            continue
+        if b['x'] <= cx <= b['x']+b['width'] and b['y'] <= cy <= b['y']+b['height']:
+            return True
+    return False
+
+
+def _exposed_sample(node, effect, sample, nodes):
+    """Move a covered gradient sample along the same color band using source order only."""
+    if not _occluded(node, sample['rect'], nodes) or effect['kind'] != 'gradient':
+        return sample
+    b,src=node['bounds'],effect['source']; a,z=src.get('from',{}),src.get('to',{})
+    dx=(z.get('x',0)-a.get('x',0))*b['width']; dy=(z.get('y',0)-a.get('y',0))*b['height']
+    length=math.hypot(dx,dy)
+    if not length:
+        return sample
+    tx,ty=-dy/length,dx/length
+    cx,cy=sample['rect'][0]+.5,sample['rect'][1]+.5
+    limit=math.ceil(math.hypot(b['width'],b['height']))
+    for distance in range(1,limit+1):
+        for sign in (1,-1):
+            rect=_rect_at(cx+tx*distance*sign,cy+ty*distance*sign)
+            if (b['x'] <= rect[0] and b['y'] <= rect[1]
+                    and rect[0]+1 <= b['x']+b['width'] and rect[1]+1 <= b['y']+b['height']
+                    and not _occluded(node,rect,nodes)):
+                return {**sample,'rect':rect,'review_reason':
+                        'Automatic source-order relocation to an exposed point on the same gradient band.'}
+    return sample
+
+
 def requirements(nodes, canvas):
     result = []
     for key,n in nodes.items():
         if not visible(n): continue
         for effect_key, effect in effects(n).items():
-            samples = sample_points(n,effect)
+            samples = [_exposed_sample(n,effect,s,nodes) for s in sample_points(n,effect)]
             in_canvas = lambda r: r[0]>=0 and r[1]>=0 and r[0]+r[2]<=canvas[0] and r[1]+r[3]<=canvas[1]
             result.append({'node_id':key,'effect_key':effect_key,'kind':effect['kind'],
                            'samples':samples if samples and all(in_canvas(s['rect']) for s in samples) else [],
@@ -241,6 +291,24 @@ def validate_exclusion(key, decision, nodes, canvas):
     raise ValueError(f'{key}: exclusion needs verifiable nonvisibility; unchanged/reused source is not an exemption. Reuse the checks, not an unchecked baseline')
 
 
+def validate_visual_exclusion(key, decision, nodes, contract):
+    """Allow pixel exclusion only when a verified foreground depends on a missing backdrop."""
+    proof=decision.get('visual_exclusion') or {}
+    if proof.get('kind')!='missing_backdrop':
+        raise ValueError(f'{key}: unsupported visual_exclusion')
+    backdrop_id=proof.get('by'); backdrop=nodes.get(backdrop_id); node=nodes[key]
+    if (not backdrop or contract.get('node_decisions',{}).get(backdrop_id,{}).get('mode')!='missing_asset_placeholder'
+            or not pending_allowed(backdrop_id,nodes)):
+        raise ValueError(f'{key}: visual_exclusion backdrop must be a verified missing asset')
+    a,b=node['bounds'],backdrop['bounds']
+    overlap=max(0,min(a['x']+a['width'],b['x']+b['width'])-max(a['x'],b['x']))*max(0,min(a['y']+a['height'],b['y']+b['height'])-max(a['y'],b['y']))
+    if overlap<=0 or node.get('source_order',-1)<=backdrop.get('source_order',-1):
+        raise ValueError(f'{key}: visual_exclusion must identify a source-visible foreground above the missing backdrop')
+    verification=proof.get('verification')
+    if verification not in contract.get('implementation_inputs',[]) or not proof.get('assertion','').strip():
+        raise ValueError(f'{key}: visual_exclusion requires a pinned executable verification and assertion')
+
+
 def validate_obligations(c, nodes, selected):
     if c.get('workflow_version') != 1:
         raise ValueError('Missing workflow_version: 1; migrate with reviewed node_decisions (legacy: diagnostic only)')
@@ -262,9 +330,10 @@ def validate_obligations(c, nodes, selected):
     required_effects=requirements(nodes,c['canvas'])
     for key,node in selected.items():
         d=decisions[key]; mode=d.get('mode'); excluded=c['coverage'][key].get('status')=='excluded'
+        visual_exclusion=bool(d.get('visual_exclusion'))
         if mode not in ('native_exact','original_asset','render_fallback','missing_asset_placeholder','excluded_with_reason'):
             raise ValueError(f'{key}: unresolved implementation decision')
-        if excluded != (mode in ('missing_asset_placeholder','excluded_with_reason')):
+        if excluded != (mode in ('missing_asset_placeholder','excluded_with_reason') or visual_exclusion):
             raise ValueError(f'{key}: exclusion and implementation decision disagree')
         if mode != 'excluded_with_reason':
             if d.get('implementation') not in c.get('implementation_inputs',[]) or not d.get('symbol','').strip():
@@ -273,7 +342,9 @@ def validate_obligations(c, nodes, selected):
             raise ValueError(f'{key}: original/render asset must be pinned')
         if excluded:
             if not d.get('reason','').strip(): raise ValueError(f'{key}: exclusion reason required')
-            if mode == 'excluded_with_reason':
+            if visual_exclusion:
+                validate_visual_exclusion(key,d,nodes,c)
+            elif mode == 'excluded_with_reason':
                 validate_exclusion(key, d, nodes, c['canvas'])
             if mode=='missing_asset_placeholder' and d.get('shape') not in ('circle','rounded_rect','rect','source_path'):
                 raise ValueError(f'{key}: placeholder must declare source shape')

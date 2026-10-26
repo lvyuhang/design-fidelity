@@ -29,6 +29,17 @@ class PageSessionTests(unittest.TestCase):
             '--config',str(self.config),action,*flags],env=self.env,capture_output=True,text=True)
         return r,json.loads(r.stdout)
 
+    def test_stop_freezes_time_without_acceptance_or_restart(self):
+        self.call('start')
+        self.assertEqual(self.call('stop')[0].returncode, 2)
+        run, result = self.call('stop', '--note', 'round budget exhausted')
+        self.assertEqual(run.returncode, 0, run.stdout)
+        self.assertEqual(result['status'], 'STOPPED_NOT_ACCEPTED')
+        elapsed = result['elapsed_seconds']
+        self.assertEqual(self.call('status')[1]['elapsed_seconds'], elapsed)
+        self.assertEqual(self.call('validate')[0].returncode, 2)
+        self.assertEqual(self.call('start')[0].returncode, 2)
+
     def test_start_cannot_reset_and_prestart_time_is_not_fabricated(self):
         self.assertEqual(self.call('validate')[0].returncode,2)
         self.assertEqual(self.call('start')[0].returncode,0)
@@ -62,6 +73,28 @@ class PageSessionTests(unittest.TestCase):
         self.assertEqual(run.returncode,2)
         self.assertIn('scope differs',result['error'])
         self.assertFalse((self.f.root/'session/task-run.json').exists())
+
+    def test_custom_renderer_audit_does_not_precreate_render_output(self):
+        from fidelity_contract import sha256
+        caps=self.f.root/'renderer-capabilities.json'
+        proof={'implementation':'render.py:fixture','test':'tests:fixture'}
+        caps.write_text(json.dumps({'supported':{
+            'fills.color':proof,'asset.export_frame':proof}}))
+        self.c.update(evidence=['source.json'],renderer_kind='custom',
+                      renderer_capabilities='renderer-capabilities.json')
+        self.config.write_text(json.dumps(self.c))
+        self.call('start')
+        state=self.f.root/'session/session.json';data=json.loads(state.read_text())
+        data['events'].append({'action':'prepare','status':'OK','seconds':0,
+            'prepared_input_hashes':{str((self.f.root/'source.json').resolve()):sha256(self.f.root/'source.json')}})
+        state.write_text(json.dumps(data))
+        run,result=self.call('validate')
+        self.assertEqual(run.returncode,0,run.stdout+run.stderr)
+        saved=json.loads(state.read_text());event=saved['events'][-1]
+        self.assertTrue(Path(event['renderer_coverage_report']).is_file())
+        self.assertNotEqual(Path(event['renderer_coverage_report']).parent,
+                            Path(event['report']).parent)
+        self.assertTrue(Path(event['report']).parent.is_dir())
 
     def test_unvalidated_preview_is_diagnostic_only(self):
         self.call('start')
@@ -108,7 +141,7 @@ class PageSessionTests(unittest.TestCase):
         run,result=self.call('compile');self.assertEqual(run.returncode,0,run.stdout)
         self.assertEqual(result['next_action']['action'],'validate')
         before=(self.f.root/'compiled.json').read_bytes()
-        self.assertEqual(self.call('compile')[0].returncode,2)
+        self.assertEqual(self.call('compile')[0].returncode,0)
         self.assertEqual((self.f.root/'compiled.json').read_bytes(),before)
 
     def test_accept_compiles_then_validates_in_one_logged_action(self):
@@ -152,6 +185,34 @@ class PageSessionTests(unittest.TestCase):
         self.assertEqual(result['preparation']['status'],'NOT_PREPARED')
         self.assertEqual(result['next_action']['action'],'read_report')
         self.assertFalse((f.root/'session/002-prepare/draft.json').exists())
+
+    def test_prepare_passes_and_pins_pending_asset_policy(self):
+        from test_preparation import PreparationTests
+        from fidelity_contract import sha256
+        f=PreparationTests();f.setUp();self.addCleanup(f.doCleanups)
+        missing={'node_id':'missing-vector','node_type':'shape','parent_id':'surface',
+                 'bounds':{'x':70,'y':10,'width':8,'height':8},
+                 'raw_style':{'fills':[{'type':'color','color':{'r':1,'g':0,'b':0,'a':1}}]}}
+        f.e['nodes'].append(missing);f.e['total']=4
+        (f.root/'source.json').write_text(json.dumps(f.e))
+        (f.root/'manifest.json').write_text(json.dumps(f.manifest))
+        pending=f.root/'pending-assets.json'
+        pending.write_text(json.dumps({'policy':'placeholder_after_reinspection','nodes':{
+            'missing-vector':{'reason':'source checked and unavailable','evidence':[
+                {'path':'source.json','sha256':sha256(f.root/'source.json')}]}}}))
+        self.config=f.root/'page.json'
+        self.config.write_text(json.dumps({'name':'pending fixture','run_dir':'session',
+            'evidence':['source.json'],'reference':'reference.png','manifest':'manifest.json',
+            'font_map':'fonts.json','pending_assets':'pending-assets.json'}))
+        self.call('start')
+        run,result=self.call('prepare');self.assertEqual(run.returncode,0,run.stdout+run.stderr)
+        data=json.loads((f.root/'session/session.json').read_text())
+        command=data['events'][0]['commands'][0]
+        self.assertEqual(command['env_overrides']['LANHU_PENDING_ASSETS'],str(pending.resolve()))
+        self.assertGreaterEqual(command['seconds'],0)
+        self.assertEqual(command['returncode'],0)
+        self.assertIn(str(pending.resolve()),data['events'][0]['prepared_input_hashes'])
+        self.assertEqual(result['preparation']['status'],'PREPARED_FOR_REVIEW')
 
     def test_verbose_retains_details_for_entrypoint_debugging(self):
         self.call('start')
