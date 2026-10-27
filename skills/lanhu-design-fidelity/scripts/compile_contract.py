@@ -3,6 +3,7 @@
 from __future__ import annotations
 import argparse
 import copy
+from system_chrome import chrome_exclusion_shapes
 import json
 from pathlib import Path
 
@@ -88,6 +89,16 @@ def compile_spec(spec, base):
     if auto is not None:
         add_sample_drafts(c, nodes, auto["max_channel_delta"])
     selected = inventory(nodes)
+    chrome_ids = {k for k, d in c.get('node_decisions', {}).items()
+                  if (d.get('exclusion') or {}).get('kind') == 'system_chrome'}
+    if chrome_ids:
+        # Source-derived and disclosed (PASS_WITH_EXCLUSIONS); never hand-drawn.
+        shapes = c.setdefault('exclude_shapes', [])
+        for shape in chrome_exclusion_shapes(nodes, c['canvas']):
+            if shape not in shapes:
+                shapes.append(shape)
+        for key in chrome_ids:
+            exclusions.setdefault(key, c['node_decisions'][key].get('reason') or 'system chrome')
     if set(exclusions)-set(selected):
         raise ValueError('Exclusion references unknown/non-inventory node')
     coverage = {}

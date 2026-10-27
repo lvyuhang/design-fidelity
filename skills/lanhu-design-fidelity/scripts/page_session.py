@@ -87,9 +87,16 @@ def next_action(event=None, details=None):
             if state == 'NEEDS_INPUT_FIXES':
                 code, action, instruction = ('FIX_INPUTS', 'inspect --view issues',
                     '按 issues 补齐源证据，再 prepare。')
+            elif outcome == 'OK' and state == 'PREPARED_FOR_REVIEW' and details.get('generate_configured'):
+                code, action, instruction = ('GENERATE', 'generate',
+                    '生成确定性首版（原语 + token + sourceKey），再按报告复核 unsupported/issues。')
             elif outcome == 'OK' and state == 'PREPARED_FOR_REVIEW':
                 code, action, instruction = ('REVIEW_SOURCE', 'inspect --view components',
                     '读取并复核组件证据后实施；准备完成不代表验收通过。')
+        elif current == 'generate' and outcome == 'OK':
+            code, action, instruction = ('IMPLEMENT_SEMANTICS', 'phase --phase implementation',
+                '页面组合生成的 Scene：用 overrides 替换需要组件化/动态数据的组，用 onTap 接交互；'
+                '不改 .g.dart。处理 unsupported 与 issues，把 draft_node_decisions 复核后写入 reviewed spec。')
         elif current == 'compile' and outcome == 'OK' and state == 'ready':
             code, action, instruction = ('VALIDATE', 'validate',
                 '用冻结契约验证当前实现；编译完成不代表视觉通过。')
@@ -142,6 +149,14 @@ def compact_result(data, root, event=None):
             result['preparation'] = {k:details[k] for k in
                 ('status','source_nodes','asset_count','issue_counts','review_count','brief',
                  'missing_bitmap_count','text_style_group_count','major_frame_count','error') if k in details}
+            details = {**details, 'generate_configured': bool(data.get('generate_configured'))}
+        elif event['action'] == 'generate':
+            result['generation'] = {k:details.get(k) for k in ('status','mode_counts','output')}
+            result['generation'].update(
+                unsupported=[{k:u[k] for k in ('node_id','feature')} for u in details.get('unsupported', [])][:10],
+                issue_counts={i['kind']: sum(1 for j in details.get('issues', []) if j['kind'] == i['kind'])
+                              for i in details.get('issues', [])},
+                system_chrome=[c['kind'] for c in details.get('system_chrome', [])])
     result['next_action'] = next_action(event, details)
     return result
 
@@ -187,7 +202,7 @@ def require_prepared_sources(data, config, config_dir):
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--config', type=Path, required=True)
-    p.add_argument('action', choices=['start','phase','prepare','inspect','compile','validate','accept','status','finish','stop'])
+    p.add_argument('action', choices=['start','phase','prepare','generate','inspect','compile','validate','accept','status','finish','stop'])
     p.add_argument('--view', choices=['overview','components','text','visual','assets','scenes','effects','issues','nodes'], default='overview')
     p.add_argument('--component', action='append', help='Source group ID/alias; repeat for flat siblings; all selects the page')
     p.add_argument('--file', type=Path, help='Saved JSON path, relative to config')
@@ -226,6 +241,7 @@ def main():
             data = read_json(state)
             if data['config'] != str(config) or data['name'] != c['name']:
                 raise ValueError('Session belongs to another config/page')
+            data['generate_configured'] = bool(c.get('generated'))
             if args.action == 'status':
                 save(data, root)
                 print(json.dumps(data['summary'] if args.verbose else compact_result(data,root), ensure_ascii=False)); return 0
@@ -378,6 +394,19 @@ def main():
                     inputs += [path(key) for key in
                                ('reference', 'manifest', 'font_map', 'pending_assets') if c.get(key)]
                     event['prepared_input_hashes'] = {str(p): sha256(p) for p in inputs}
+                elif args.action == 'generate':
+                    if not c.get('generated') or not c.get('class_name'):
+                        raise ValueError('generate requires "generated" (Dart output) and "class_name" in the page config')
+                    require_prepared_sources(data, c, config.parent)
+                    plan = Path(next(e for e in reversed(data['events'])
+                                     if e['action'] == 'prepare' and e.get('status') == 'OK')['report']).parent/'page-plan.json'
+                    target = path('generated')
+                    event['report'] = str(target.with_suffix('').with_suffix('.codegen.json'))
+                    evidence = [v for entry in c['evidence'] for v in ('--evidence', (config.parent/entry).resolve())]
+                    invoke('generate_flutter.py', [*evidence, '--plan', plan, '--class-name', c['class_name'],
+                        '--output', target, '--report', event['report'], '--app-root', path('app'),
+                        *(['--asset-dir', c['asset_dir']] if c.get('asset_dir') else []),
+                        *(['--font-map', path('font_map')] if c.get('font_map') else [])])
                 elif args.action == 'compile':
                     event['report'] = str(path('contract'))
                     invoke('compile_contract.py', ['--spec',path('spec'),'--output',path('contract')])

@@ -4,6 +4,7 @@ import math
 from pending_assets import pending_allowed
 from scene_requirements import backdrop_blur, validate_scene_checks
 from source_disposition import placeholder_issue
+from system_chrome import chrome_members
 
 
 def enabled(value):
@@ -44,8 +45,10 @@ def effects(node):
 
 def source_gaps(nodes, text_styles=False, decisions=None, assets=()):
     gaps = []
+    chrome = chrome_members(nodes)
     for key, node in nodes.items():
         if not visible(node): continue
+        if key in chrome: continue  # OS-drawn; reserved, never implemented or traced.
         raw = node.get('raw_style') or {}
         explicit_empty_artboard = node.get('node_type') in ('artboard', 'artboard-group') and raw.get('hasBackgroundColor') is False
         if not explicit_empty_artboard and not node.get('text') and not set(raw).intersection({'fills','borders','shadow','shadows','opacity','points','hasClippingMask','effects','blur'}):
@@ -288,6 +291,10 @@ def validate_exclusion(key, decision, nodes, canvas):
             if rectangle and solid and ancestry_opaque and contained and above:
                 return
         raise ValueError(f'{key}: fully_occluded needs a covering opaque source rectangle above the node')
+    if proof.get('kind') == 'system_chrome':
+        if key in chrome_members(nodes, canvas):
+            return
+        raise ValueError(f'{key}: system_chrome exclusion only applies to detected status bar / home indicator layers')
     raise ValueError(f'{key}: exclusion needs verifiable nonvisibility; unchanged/reused source is not an exemption. Reuse the checks, not an unchecked baseline')
 
 

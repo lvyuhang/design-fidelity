@@ -16,6 +16,7 @@ from source_requirements import requirements, source_gaps, enabled
 from visual_fidelity_gate import _load_nodes, _validate_evidence
 from scene_requirements import scene_requirements
 from source_disposition import source_disposition
+from system_chrome import chrome_members, detect_system_chrome
 
 
 def rect(bounds):
@@ -133,7 +134,10 @@ def implementation_brief(result, nodes):
     # Deduplicate appearance, never discard a node because it is small. Text
     # appearance stays in text_style_groups; layer effects remain here too.
     visual_groups = {}
+    chrome_ids = {e['node_id'] for e in result['nodes'] if e['proposal'] == 'system_chrome'}
     for key, node in inventory(nodes).items():
+        if key in chrome_ids:
+            continue  # Reserved OS chrome: listed separately, never implemented.
         raw = node.get('raw_style') or {}
         style = {}
         for field in ('fills', 'borders', 'shadow', 'shadows', 'innerShadows', 'blur', 'effects'):
@@ -175,6 +179,7 @@ def implementation_brief(result, nodes):
         group['instances'].append(instance)
     brief_ids = {i['node_id'] for g in visual_groups.values() for i in g['instances']}
     brief_ids.update(i['node_id'] for g in text_groups.values() for i in g['instances'])
+    brief_ids.update(chrome_ids)
     if brief_ids != set(inventory(nodes)):
         raise ValueError('Implementation brief lost source inventory nodes')
 
@@ -194,6 +199,7 @@ def implementation_brief(result, nodes):
              ('node_id','proposal','asset_owner_candidate')}
             for entry in result.get('nodes', []) if entry.get('asset_owner_candidate')],
         'missing_bitmaps': missing,
+        'system_chrome': result.get('system_chrome', []),
         'text_style_groups': list(text_groups.values()),
         'visual_style_groups': list(visual_groups.values()),
         'inventory_count': len(brief_ids),
@@ -367,7 +373,16 @@ def prepare(evidence, reference, manifest_path, font_map=None):
     selected = inventory(nodes)
     asset_nodes = {a['node_id'] for a in prepared_assets if 'path' in a and a['kind'] != 'render_fallback'}
     node_plan, review = [], []
+    chrome = chrome_members(nodes, canvas)
     for key, n in selected.items():
+        if key in chrome:
+            node_plan.append({'node_id': key, 'name': n.get('name'), 'node_type': n.get('node_type'),
+                              'layout_rect': rect(n['bounds']), 'proposal': 'system_chrome',
+                              'asset_owner_candidate': None,
+                              'source_disposition': {'state': 'system_chrome',
+                                                     'action': 'reserve_space_do_not_paint'},
+                              'system_chrome': chrome[key]['kind'], 'chrome_owner': chrome[key]['node_id']})
+            continue
         owner, parent, visited = None, n.get('parent_id'), {key}
         while parent in nodes:
             if parent in visited:
@@ -416,6 +431,8 @@ def prepare(evidence, reference, manifest_path, font_map=None):
             'assets': prepared_assets, 'fonts': fonts, 'nodes': node_plan,
             'effect_requirements': requirements(nodes, canvas), 'effect_candidates': effects,
             'review_queue': review, 'review_groups':list(review_groups.values()),
+            'system_chrome': [{k: v for k, v in e.items() if k != 'members'}
+                              for e in detect_system_chrome(nodes, canvas)],
             'issues': issues, 'pinned_inputs': pins}
 
 
