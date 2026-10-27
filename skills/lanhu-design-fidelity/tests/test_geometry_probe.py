@@ -54,6 +54,22 @@ class GeometryProbeTests(unittest.TestCase):
         wider = compare_geometry(nodes(), DECISIONS, measured(LEFT=[32, 120, 63, 20]))
         self.assertIn('width +7.00px', wider['failures'][0]['failures'][0])
 
+    def test_anchor_edge_absorbs_advance_width_noise(self):
+        # Auto-width text anchored at the right grows leftwards: comparing its
+        # left edge would report the 1.6px advance difference as an offset.
+        n = nodes()
+        n['EDIT'] = {'node_id': 'EDIT', 'name': '修改', 'text': '修改',
+                     'bounds': {'x': 301, 'y': 120, 'width': 24, 'height': 17},
+                     'raw_style': {'font': {'textAlignment': 4}}}
+        geometry = measured(EDIT=[299.4, 120, 25.6, 17])
+        left = dict(DECISIONS, EDIT={'mode': 'native_exact'})
+        self.assertFalse(compare_geometry(n, left, geometry)['passed'])
+        right = dict(DECISIONS, EDIT={'mode': 'native_exact', 'anchor': 'right'})
+        self.assertTrue(compare_geometry(n, right, geometry)['passed'])
+        shifted = measured(EDIT=[297.4, 120, 25.6, 17])
+        self.assertIn('right edge -2.00px',
+                      compare_geometry(n, right, shifted)['failures'][0]['failures'])
+
     def test_missing_source_key_fails_closed(self):
         geometry = measured()
         del geometry['nodes']['MID']

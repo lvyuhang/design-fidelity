@@ -598,18 +598,30 @@ class Generator:
             vertical = {'bottom': bottom} if is_text else {'bottom': bottom, 'height': h}
         if stretch:
             if abs(left - right) <= CENTER_TOLERANCE and left <= 32 and w >= pw / 2:
+                if is_text:
+                    self._anchor(key, 'stretch')
                 return Call('Positioned', left=left, right=right, **vertical, child=widget)
             if abs(left - right) <= CENTER_TOLERANCE:
+                if left_aligned_text:
+                    self._anchor(key, 'center')
                 inner = widget if left_aligned_text else Call('SizedBox', width=w, child=widget)
                 return Call('Positioned', left=0, right=0, **vertical,
                             child=Call('Align', alignment=Raw('Alignment.topCenter', True), child=inner))
             if right < left:
                 # Auto-width text keeps its intrinsic width and grows leftwards.
                 width = None if left_aligned_text else w
+                if left_aligned_text:
+                    self._anchor(key, 'right')
                 return Call('Positioned', right=right, **vertical, width=width, child=widget)
         if left_aligned_text:
             return Call('Positioned', left=left, **vertical, child=widget)
         return Call('Positioned', left=left, **vertical, width=w, child=widget)
+
+    def _anchor(self, key: str, edge: str) -> None:
+        """Record which edge a text box is laid out from, so the geometry probe
+        compares that edge instead of turning advance-width noise into offsets."""
+        if key in self.records:
+            self.records[key]['anchor'] = edge
 
     def container(self, key: str | None, rect: tuple, stretch: bool, at_root: bool = False) -> list[Any]:
         """Children of a group as Positioned widgets in paint order."""
@@ -861,6 +873,8 @@ class Generator:
                     decision['covered_by'] = owner
             if mode == 'missing_asset_placeholder':
                 decision['shape'] = 'rect'
+            if entry.get('anchor'):
+                decision['anchor'] = entry['anchor']
             decisions[key] = decision
         counts: dict[str, int] = {}
         for entry in self.records.values():

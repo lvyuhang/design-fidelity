@@ -44,6 +44,7 @@ page finish --note "复查结论、排除项、预览地址"
 
 - `page inspect --view components|issues|assets|text|visual|scenes|effects`、`--component NODE_ID`、`--node NODE_ID --pointer /raw_style`：按需查证据，组件包完整返回；超出 `--limit` 时返回定位信息并标 `complete_packet:false`，不会悄悄截断。重复读取同一内容只回传提示，上下文丢失时加 `--refresh`。
 - `page status [--verbose]`：查看进度、轮次与阶段耗时。
+- `page report`：从运行产物生成阻断项、观察项、逐节点几何偏差、lint 例外、排除与耗时汇总（`run/stage-report.md`），测试记录以它为准。
 - `page stop --note "原因"`：结束未通过的实验，固定耗时并记录 `STOPPED_NOT_ACCEPTED`。
 
 缺图占位授权、自定义渲染器能力声明和冻结契约复用的细则见 [准备](preparation.md#缺源策略与授权)。

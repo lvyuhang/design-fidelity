@@ -74,9 +74,22 @@ flutter pub get && flutter analyze && flutter test
 | accept | 执行到门禁，不出现 `NOT_EVALUATED`；生成 `render.png.geometry.json` 和 `render.png.variants.json` |
 | 门禁结果 | 记录即可，不要求通过。生成首版的失败项就是阶段 C 要观察的"首轮质量" |
 
+阶段 B 结束后运行 `page report`，把生成的 `run/stage-report.md` 和 JSON 一起作为证据提交。阶段 B 没有模型修正轮次，所以**下文的质量必须项不适用于阶段 B**；首版门禁结果只记作"生成首版基线"：
+
+| 首版基线字段 | 来源（`page report`） |
+|---|---|
+| 阻断项合计与分类（几何 / 特征 / 区域 / 关系 / 颜色 / 多尺寸） | `blocking_total`、`blocking` |
+| 每个几何失败的节点与偏差 | `geometry_failures` |
+| 观察项（不阻断，如 1.3 倍字体下的文字重叠） | `observations` |
+| 生成器 unsupported / issues / scene 绑定 | `generation` |
+
+观察项不得计入阻断项。每个阻断项都要标注初步归属（见"失败归属"）：生成器、原语、门禁，还是需要模型语义改写（例如长句在窄屏、大字体下越界，应改为可换行或弹性布局）。
+
 阶段 B 失败通常是接入问题（字体声明、asset 路径、import），修正后记录在本文末尾的问题清单中，再进入阶段 C。
 
 ## 阶段 C：同页对照（与 2.19.5 基线比较）
+
+开始前记录被冻结的 Skill 提交哈希；阶段 C、D 必须使用同一提交。每页结束后运行 `page report`，表格中的数字以它的输出为准。
 
 使用 2.19.5 独立重跑的同一页面（design `f19101d7-5cdc-4c36-959e-71926bb3ce2f`，快照 `2369ff10…`），条件与 `validation/retest-2195-sol56/experiment.md` 保持一致：同一模型与推理强度、独立上下文、不提供历史实现、最多 3 个正式轮次、从模型启动到最后响应完整计时、token 只用实测值。
 
@@ -168,3 +181,11 @@ flutter pub get && flutter analyze && flutter test
 ## 问题清单
 
 （阶段 A、B 中发现的接入问题记在这里，附修复提交。）
+
+### 2026-10-27 阶段 A、B 首次执行
+
+- 阶段 A 全部通过：Skill 251 项（1 项跳过）、根目录 7 项、`flutter analyze` 0 问题、原语 24/24（含语义反例）。
+- 阶段 B 全部通过：prepare 0 issue，generate 0 unsupported，scene 测试 11/11，accept 完整执行到门禁并产出几何与多尺寸文件。
+- 生成首版基线：门禁 FAIL，阻断项为 5 个几何失败和 1 个横向越界（原记录中的"12 个阻断项"把 12 处不阻断的文字重叠计入了，已更正）。像素与特征失败未逐项记录，需要用 `page report` 重新导出。
+- 已修复：几何探针对自适应宽度文字一律比较源对齐边，而生成器实际按右边或居中锚定（"修改""提现""确认提现"）。字宽的亚像素差异因此被报告成位置偏移。现在生成器会把锚定边写入 `node_decisions.anchor`，探针按该边比较。请在最新提交上重跑阶段 B 并附 `page report` 输出，确认剩余的几何失败。
+- 结论不变：保持 3.0.0 候选版。按原样冻结"≤15 分钟、≤3 轮、非缓存输入 ≤119,000"，进入阶段 C、D。

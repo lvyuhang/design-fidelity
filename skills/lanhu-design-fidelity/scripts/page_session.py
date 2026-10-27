@@ -211,7 +211,7 @@ def require_prepared_sources(data, config, config_dir):
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--config', type=Path, required=True)
-    p.add_argument('action', choices=['start','phase','prepare','generate','spec','inspect','compile','validate','accept','status','finish','stop'])
+    p.add_argument('action', choices=['start','phase','prepare','generate','spec','inspect','compile','validate','accept','status','report','finish','stop'])
     p.add_argument('--view', choices=['overview','components','text','visual','assets','scenes','effects','issues','nodes'], default='overview')
     p.add_argument('--component', action='append', help='Source group ID/alias; repeat for flat siblings; all selects the page')
     p.add_argument('--file', type=Path, help='Saved JSON path, relative to config')
@@ -251,6 +251,12 @@ def main():
             if data['config'] != str(config) or data['name'] != c['name']:
                 raise ValueError('Session belongs to another config/page')
             data['generate_configured'] = bool(c.get('generated'))
+            if args.action == 'report':
+                from stage_report import build, markdown
+                report = build(config)
+                (root/'stage-report.md').write_text(markdown(report), encoding='utf-8')
+                report['markdown'] = str(root/'stage-report.md')
+                print(json.dumps(report, ensure_ascii=False, default=dict)); return 0
             if args.action == 'status':
                 save(data, root)
                 print(json.dumps(data['summary'] if args.verbose else compact_result(data,root), ensure_ascii=False)); return 0

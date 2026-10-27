@@ -213,6 +213,10 @@ class GenerateFlutterTests(unittest.TestCase):
         self.assertRegex(self.positioned('BUTTON'), r'left: 28,\s*right: 27,\s*top: 706')
         self.assertRegex(self.positioned('TABBAR'), r'left: 0,\s*right: 0,\s*bottom: 0,\s*height: 50')
         self.assertIn('Positioned.fill(', self.positioned('BG'))
+        decisions = self.report['draft_node_decisions']
+        self.assertEqual(decisions['EDIT']['anchor'], 'right',
+                         'right-anchored auto text is probed on its right edge')
+        self.assertNotIn('anchor', decisions['LABEL'])
 
     def test_tokens_hold_every_color_literal(self):
         body = self.dart.split('abstract final class FixtureAssets')[1]

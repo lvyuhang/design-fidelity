@@ -54,11 +54,16 @@ def compare_geometry(nodes: dict, decisions: dict, geometry: dict) -> dict:
         ax, ay, aw, ah = (float(v) for v in measured[key])
         problems, deltas = [], {}
         if node.get('text'):
-            edge = _text_edge(node)
+            # The generator records the edge it anchored auto-width text to;
+            # otherwise the source alignment edge is the stable one.
+            anchor = decision.get('anchor')
+            edge = anchor if anchor in ('left', 'center', 'right') else _text_edge(node)
             source_edge = {'left': sx, 'center': sx + sw / 2, 'right': sx + sw}[edge]
             actual_edge = {'left': ax, 'center': ax + aw / 2, 'right': ax + aw}[edge]
             deltas = {f'{edge}': actual_edge - source_edge, 'top': ay - sy,
                       'height': ah - sh, 'width': aw - sw}
+            if anchor == 'stretch':
+                deltas.pop('width')
             if abs(deltas[edge]) > TEXT_EDGE_TOLERANCE:
                 problems.append(f'{edge} edge {_fmt(deltas[edge])}')
             if abs(deltas['top']) > BOX_TOLERANCE:
@@ -66,7 +71,7 @@ def compare_geometry(nodes: dict, decisions: dict, geometry: dict) -> dict:
             if abs(deltas['height']) > BOX_TOLERANCE:
                 problems.append(f"line box height {_fmt(deltas['height'])} "
                                 '(line height, wrapping or strut)')
-            if abs(deltas['width']) > TEXT_WIDTH_TOLERANCE:
+            if anchor != 'stretch' and abs(deltas['width']) > TEXT_WIDTH_TOLERANCE:
                 problems.append(f"width {_fmt(deltas['width'])} (font file/weight/letter spacing)")
         else:
             deltas = {'left': ax - sx, 'top': ay - sy, 'width': aw - sw, 'height': ah - sh}
