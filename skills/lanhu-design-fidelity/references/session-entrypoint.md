@@ -35,6 +35,7 @@ page finish --note "复查结论、排除项、预览地址"
 | 节点几何失败 | 按 delta 修布局；文字的 line box 偏差先查字体、字重、行高 |
 | 像素 / 特征失败、几何通过 | 查效果参数、素材、字形渲染；不改阈值 |
 | 多尺寸 `exceptions` / `horizontal_overflow` | 改为弹性布局（Row/Column、Flexible），见 [生成与组件化](codegen.md) |
+| `vertical_clip` / `under_status_bar` / `under_home_indicator` | 检查页面是否外包了 `SafeArea`/`AppBar`、override 是否固定了高度；footer 判断不对时用 override 调整 |
 | `NOT_EVALUATED` | 先修报告指出的输入、契约或环境问题，不要盲调 UI |
 | 连续两轮无改善 | 换定位方法，见 [定位](process-gates.md) |
 

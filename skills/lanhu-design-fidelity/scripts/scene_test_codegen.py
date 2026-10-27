@@ -313,8 +313,15 @@ const Size _canvas = Size({_num(width)}, {_num(height)});
 Future<void> _pumpScene(WidgetTester tester, GlobalKey boundary) async {{
   tester.view.physicalSize = _canvas;
   tester.view.devicePixelRatio = 1;
+  // The design's own safe area keeps every node at its source coordinates.
+  const inset = {self.class_name}Scene.designPadding;
+  final padding = FakeViewPadding(top: inset.top, bottom: inset.bottom);
+  tester.view.padding = padding;
+  tester.view.viewPadding = padding;
   addTearDown(tester.view.resetPhysicalSize);
   addTearDown(tester.view.resetDevicePixelRatio);
+  addTearDown(tester.view.resetPadding);
+  addTearDown(tester.view.resetViewPadding);
   await tester.pumpWidget(Directionality(
     textDirection: TextDirection.ltr,
     child: RepaintBoundary(key: boundary, child: const {self.class_name}Scene()),

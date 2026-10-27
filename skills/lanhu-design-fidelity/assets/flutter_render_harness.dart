@@ -1,11 +1,13 @@
 import 'dart:convert';
 import 'dart:io';
+import 'dart:typed_data';
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:lanhu_fidelity/lanhu_fidelity.dart';
 
 /// Install once at test main(), before registering testWidgets.
 class FidelityTestBinding extends AutomatedTestWidgetsFlutterBinding {
@@ -30,6 +32,65 @@ Future<void> loadDeclaredFidelityFonts() async {
     }
     await loader.load();
   }
+}
+
+/// Loads every design font listed in the fidelity font map from disk under its
+/// `runtime_family`, and makes generated tokens use those families.
+///
+/// The files (e.g. PingFang extracted on the developer's Mac) are only used to
+/// render fidelity tests; they are never declared in pubspec or shipped.
+Future<void> loadSourceFontMap(String path) async {
+  SourceFonts.useDesignFonts = true;
+  final file = File(path);
+  final map = jsonDecode(await file.readAsString()) as Map<String, dynamic>;
+  final families = <String, Set<String>>{};
+  for (final entry in (map['fonts'] as Map<String, dynamic>? ?? {}).values) {
+    final font = entry as Map<String, dynamic>;
+    final family = font['runtime_family'] as String?;
+    final fontPath = font['path'] as String?;
+    if (family == null || fontPath == null) continue;
+    final home = Platform.environment['HOME'] ?? '';
+    final expanded =
+        fontPath.startsWith('~/') ? '$home/${fontPath.substring(2)}' : fontPath;
+    final resolved = File(expanded).isAbsolute
+        ? expanded
+        : '${file.parent.path}/$expanded';
+    families.putIfAbsent(family, () => <String>{}).add(resolved);
+  }
+  for (final MapEntry(key: family, value: paths) in families.entries) {
+    final loader = FontLoader(family);
+    for (final fontPath in paths) {
+      final bytes = await File(fontPath).readAsBytes();
+      loader.addFont(Future.value(ByteData.sublistView(bytes)));
+    }
+    await loader.load();
+  }
+}
+
+/// Screen sizes and safe areas checked by [captureResponsiveVariants]
+/// (logical px). Names must match the contract's `responsive_check.devices`.
+class FidelityDevice {
+  const FidelityDevice(this.name, this.size, this.padding);
+
+  final String name;
+  final Size size;
+  final EdgeInsets padding;
+}
+
+const List<FidelityDevice> lanhuDefaultDevices = <FidelityDevice>[
+  FidelityDevice('iphone_se', Size(375, 667), EdgeInsets.only(top: 20)),
+  FidelityDevice('iphone_15', Size(393, 852), EdgeInsets.only(top: 59, bottom: 34)),
+  FidelityDevice('iphone_15_pro_max', Size(430, 932), EdgeInsets.only(top: 59, bottom: 34)),
+  FidelityDevice('android_compact', Size(360, 800), EdgeInsets.only(top: 24)),
+  FidelityDevice('android_large', Size(412, 915), EdgeInsets.only(top: 24, bottom: 24)),
+];
+
+void _setViewPadding(WidgetTester tester, EdgeInsets padding) {
+  // devicePixelRatio is 1 in fidelity renders, so logical == physical.
+  final fake = FakeViewPadding(
+      left: padding.left, top: padding.top, right: padding.right, bottom: padding.bottom);
+  tester.view.padding = fake;
+  tester.view.viewPadding = fake;
 }
 
 /// Union of the laid-out paragraphs under [root], relative to [origin].
@@ -127,13 +188,19 @@ Future<void> captureFidelityPage(
   required double scale,
   required Iterable<String> imageAssets,
   required String output,
+  EdgeInsets padding = EdgeInsets.zero,
   Locale locale = const Locale('zh', 'CN'),
   Widget Function(Widget child)? appBuilder,
 }) async {
+  SourceFonts.useDesignFonts = true;
   tester.view.physicalSize = size;
   tester.view.devicePixelRatio = 1;
+  // Render with the design's own safe area so the page keeps source coordinates.
+  _setViewPadding(tester, padding);
   addTearDown(tester.view.resetPhysicalSize);
   addTearDown(tester.view.resetDevicePixelRatio);
+  addTearDown(tester.view.resetPadding);
+  addTearDown(tester.view.resetViewPadding);
   final boundaryKey = GlobalKey();
   final boundary = RepaintBoundary(key: boundaryKey, child: page);
   // Whole-page captures use the exact production root (Theme/Scaffold/text).
@@ -177,8 +244,9 @@ Future<void> captureFidelityPage(
   });
 }
 
-/// Lays the page out at other screen widths and accessibility text scales and
-/// records geometry plus any framework exception (e.g. RenderFlex overflow).
+/// Lays the page out on each device profile (screen size + safe area) at each
+/// text scale, and records geometry, paragraphs, whether the page scrolls and
+/// any framework exception (e.g. RenderFlex overflow).
 ///
 /// Writes `<output>.variants.json`; `visual_fidelity_gate.py` checks it when
 /// the contract enables `responsive_check`. Call after [captureFidelityPage]
@@ -186,19 +254,20 @@ Future<void> captureFidelityPage(
 Future<void> captureResponsiveVariants(
   WidgetTester tester, {
   required Widget page,
-  required double height,
   required String output,
-  List<double> widths = const <double>[360, 414],
+  List<FidelityDevice> devices = lanhuDefaultDevices,
   List<double> textScales = const <double>[1.0, 1.3],
   Locale locale = const Locale('zh', 'CN'),
   Widget Function(Widget child)? appBuilder,
 }) async {
+  SourceFonts.useDesignFonts = true;
   final variants = <Map<String, Object?>>[];
   addTearDown(tester.platformDispatcher.clearTextScaleFactorTestValue);
-  for (final width in widths) {
+  for (final device in devices) {
     for (final textScale in textScales) {
-      tester.view.physicalSize = Size(width, height);
+      tester.view.physicalSize = device.size;
       tester.view.devicePixelRatio = 1;
+      _setViewPadding(tester, device.padding);
       tester.platformDispatcher.textScaleFactorTestValue = textScale;
       final boundaryKey = GlobalKey();
       final boundary = RepaintBoundary(key: boundaryKey, child: page);
@@ -207,17 +276,27 @@ Future<void> captureResponsiveVariants(
           : _defaultApp(boundary, locale, pinTextScale: false));
       await tester.pumpAndSettle();
       final error = tester.takeException();
+      final root = find.byKey(boundaryKey);
       variants.add(<String, Object?>{
-        'width': width,
-        'height': height,
+        'device': device.name,
+        'width': device.size.width,
+        'height': device.size.height,
+        'padding': <String, double>{'top': device.padding.top, 'bottom': device.padding.bottom},
         'text_scale': textScale,
         'exception': error?.toString(),
-        'nodes': collectSourceGeometry(tester, find.byKey(boundaryKey)),
+        'scrollable': find
+            .descendant(of: root, matching: find.byType(Scrollable))
+            .evaluate()
+            .isNotEmpty,
+        'nodes': collectSourceGeometry(tester, root),
+        'text_nodes': collectSourceText(tester, root),
       });
     }
   }
   tester.view.resetPhysicalSize();
   tester.view.resetDevicePixelRatio();
+  tester.view.resetPadding();
+  tester.view.resetViewPadding();
   await tester.runAsync(() => _writeJson('$output.variants.json',
-      <String, Object>{'schema': 1, 'variants': variants}));
+      <String, Object>{'schema': 2, 'variants': variants}));
 }

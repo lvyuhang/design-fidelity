@@ -143,7 +143,8 @@ class GenerateFlutterTests(unittest.TestCase):
 
     def run_generate(self, output='lib/fixture.g.dart'):
         return generate([self.root / 'source.json'], self.root / 'plan.json', None, 'Fixture',
-                        self.app / output, app_root=self.app, asset_dir='assets/lanhu/fixture')
+                        self.app / output, app_root=self.app, asset_dir='assets/lanhu/fixture',
+                        render_test=self.app / 'test' / (Path(output).name.split('.')[0] + '_test.dart'))
 
     def test_every_visible_node_has_a_disposition(self):
         modes = {k: n['mode'] for k, n in self.by_id.items()}
@@ -209,14 +210,69 @@ class GenerateFlutterTests(unittest.TestCase):
         self.assertRegex(self.positioned('CARD'), r'left: 16,\s*right: 16')
         self.assertRegex(self.positioned('TITLE'), r'Alignment.topCenter')
         self.assertRegex(self.positioned('EDIT'), r'right: 50')
-        self.assertRegex(self.positioned('LABEL'), r'left: 32,\s*top: 120,\s*child')
-        self.assertRegex(self.positioned('BUTTON'), r'left: 28,\s*right: 27,\s*top: 706')
-        self.assertRegex(self.positioned('TABBAR'), r'left: 0,\s*right: 0,\s*bottom: 0,\s*height: 50')
+        self.assertRegex(self.positioned('LABEL'), r'left: 32,\s*top: dy \+ 120,\s*child')
+        self.assertRegex(self.positioned('BUTTON'), r'left: 28,\s*right: 27,\s*bottom: dyBottom \+ 56')
+        self.assertRegex(self.positioned('TABBAR'),
+                         r'left: 0,\s*right: 0,\s*bottom: dyBottom \+ 0,\s*height: 50')
         self.assertIn('Positioned.fill(', self.positioned('BG'))
         decisions = self.report['draft_node_decisions']
         self.assertEqual(decisions['EDIT']['anchor'], 'right',
                          'right-anchored auto text is probed on its right edge')
         self.assertNotIn('anchor', decisions['LABEL'])
+
+    def test_safe_area_and_screen_height_adaptation(self):
+        self.assertIn('static const EdgeInsets designPadding = EdgeInsets.only(top: 44, bottom: 34);',
+                      self.dart)
+        self.assertIn('MediaQuery.maybePaddingOf(context) ?? designPadding', self.dart)
+        self.assertIn('final dy = padding.top - designPadding.top;', self.dart)
+        self.assertIn('scrolls ? SingleChildScrollView(child: body) : body', self.dart)
+        layout = self.report['layout']
+        self.assertEqual(layout['design_padding'], {'top': 44, 'bottom': 34})
+        self.assertEqual(set(layout['footer']), {'BUTTON', 'GLASS', 'TABBAR'}, 'floating nav bar included')
+        decisions = self.report['draft_node_decisions']
+        self.assertEqual(decisions['BUTTON']['vertical_anchor'], 'bottom')
+        self.assertNotIn('vertical_anchor', decisions['CARD'])
+        # Footers are painted outside the scrolling body, after it.
+        body_end = self.dart.index('child: scrolls ? SingleChildScrollView')
+        self.assertGreater(self.dart.index("'BUTTON'"), body_end)
+        self.assertLess(self.dart.index("'CARD'"), body_end)
+        self.assertNotIn('fillHeight', self.dart)
+
+    def test_design_without_chrome_starts_below_the_device_status_bar(self):
+        evidence = fixture()
+        evidence['nodes'] = [n for n in evidence['nodes']
+                             if n['node_id'] not in ('STATUS', 'TIME', 'WIFI', 'HOME', 'BAR')]
+        evidence['total_nodes'] = len(evidence['nodes'])
+        (self.root / 'source.json').write_text(json.dumps(evidence, ensure_ascii=False))
+        report = self.run_generate('lib/plain.g.dart')
+        text = (self.app / 'lib/plain.g.dart').read_text()
+        self.assertIn('designPadding = EdgeInsets.only(top: 0, bottom: 0)', text)
+        self.assertEqual(set(report['layout']['footer']), {'GLASS', 'TABBAR'}, 'BUTTON is 56px up: body')
+
+    def test_platform_fonts_come_from_the_font_map(self):
+        (self.root / 'fonts.json').write_text(json.dumps({'fonts': {
+            'PingFangSC-Regular@400': {'path': 'a.otf', 'runtime_family': 'SourcePingFang',
+                                       'ios': None, 'android': 'NotoSansSC'},
+            'PingFangSC-Semibold@600': {'path': 'b.otf', 'runtime_family': 'SourcePingFang'}}}))
+        generate([self.root / 'source.json'], self.root / 'plan.json', self.root / 'fonts.json',
+                 'Fixture', self.app / 'lib/fonts.g.dart', app_root=self.app)
+        text = (self.app / 'lib/fonts.g.dart').read_text()
+        self.assertIn("fontFamily: sourceFontFamily('SourcePingFang', android: 'NotoSansSC', "
+                      "ios: SourceFonts.system)", text)
+        self.assertIn("fontFamily: 'SourcePingFang',", text, 'unmapped platforms keep the family')
+        errors = dart_syntax_errors(self.app / 'lib/fonts.g.dart')
+        if errors is not None:
+            self.assertEqual(errors, '')
+
+    def test_render_test_uses_design_padding_and_flags_old_tests(self):
+        test = (self.app / 'test/fixture_test.dart').read_text()
+        self.assertIn('padding: FixtureScene.designPadding', test)
+        self.assertIn('captureResponsiveVariants(tester, page: page, output: output)', test)
+        (self.app / 'test/fixture_test.dart').write_text('captureFidelityPage(); captureResponsiveVariants(height: 1)')
+        report = generate([self.root / 'source.json'], self.root / 'plan.json', None, 'Fixture',
+                          self.app / 'lib/fixture.g.dart', app_root=self.app,
+                          render_test=self.app / 'test/fixture_test.dart')
+        self.assertIn('render_test_outdated', {i['kind'] for i in report['issues']})
 
     def test_tokens_hold_every_color_literal(self):
         body = self.dart.split('abstract final class FixtureAssets')[1]

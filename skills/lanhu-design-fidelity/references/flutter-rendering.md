@@ -8,7 +8,7 @@
 
 ## 字体
 
-`pubspec.yaml` 声明实际字体文件与字重，字体映射（`font_map`）的 `runtime_family` 与之对应。生成的 token 使用 `runtime_family`。中文、数字、标点和状态文本都必须被覆盖；prepare 会按每个 text run 检查 cmap。取不到原字体时明确替代并单独校准，不声称像素一致。
+字体映射（`font_map`）中每个 `源字体名@字重` 有三项：`path` 是还原度渲染用的设计字体文件，harness 用 `loadSourceFontMap` 从磁盘加载，不声明进 `pubspec.yaml`、不随 App 发布；`runtime_family` 是渲染时的 family 名；可选 `ios` / `android` 是上线字体，`null` 为系统字体，名称须在 `pubspec.yaml` 声明。prepare 按每个 text run 检查 `path` 字体的 cmap 覆盖。还原度基线始终按设计字体渲染；平台换用其他字体时，字宽差异由真机核对，不调整阈值迎合。
 
 ## render 测试与 harness
 
@@ -17,25 +17,28 @@
 ```dart
 void main() {
   FidelityTestBinding();
-  setUpAll(loadDeclaredFidelityFonts);
+  setUpAll(() async {
+    await loadDeclaredFidelityFonts();
+    await loadSourceFontMap('fidelity/font-map.json');
+  });
   testWidgets('source canvas', (tester) async {
     final output = fidelityOutputPath('PAGE_RENDER_OUTPUT');
     const page = WithdrawPage(/* 固定夹具数据 */);
     await captureFidelityPage(tester,
         page: page,
         appBuilder: (child) => ProductionAppRoot(child: child),
-        size: Withdraw2Scene.designSize, scale: 4,
-        imageAssets: Withdraw2Assets.all, output: output);
+        size: Withdraw2Scene.designSize, padding: Withdraw2Scene.designPadding,
+        scale: 4, imageAssets: Withdraw2Assets.all, output: output);
     await captureResponsiveVariants(tester,
         page: page,
         appBuilder: (child) => ProductionAppRoot(child: child),
-        height: Withdraw2Scene.designSize.height, output: output);
+        output: output);
   });
 }
 ```
 
 - `ProductionAppRoot` 是项目真实入口（Theme、Scaffold、DefaultTextStyle、locale），由 `main` 与截图共同调用，不在测试里另造默认样式。未传 `appBuilder` 的旧入口只用于孤立组件测试。
-- harness 会加载 FontManifest 中的字体、开启生产阴影、预加载图片、固定画布，并写出几何与多尺寸 sidecar。
+- harness 会加载 FontManifest 与字体映射中的字体、开启生产阴影、预加载图片、按 `designPadding` 设置安全区并固定画布，再写出几何与多尺寸 sidecar。`padding:` 必须传 `designPadding`，否则页面会按零安全区整体上移。
 - 网络内容、动画和时间使用固定夹具。普通 `flutter test` 默认写到唯一临时路径，不会覆盖基线。
 
 ## 输入与目标环境

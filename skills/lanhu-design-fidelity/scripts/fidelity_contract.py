@@ -224,12 +224,12 @@ def verify_files(c, directory):
     if not required <= pins.keys():
         raise ValueError('Missing pinned hashes for reference, evidence, assets or fonts')
     for path, expected in pins.items():
-        if sha256(directory / path) != expected:
+        if sha256(directory / Path(path).expanduser()) != expected:
             raise ValueError(f'Pinned file changed: {path}')
     if not c.get('implementation_inputs'):
         raise ValueError('implementation_inputs must include code, configuration and lockfiles')
     for path in c['implementation_inputs']:
-        if not (directory / path).is_file():
+        if not (directory / Path(path).expanduser()).is_file():
             raise ValueError(f'Missing implementation input: {path}')
     env = c.get('environment', {})
     for key in ('renderer', 'renderer_version', 'platform', 'locale', 'state'):
@@ -244,7 +244,7 @@ def verify_fonts(c, nodes, directory):
     checked = set()
     for spec in c.get('fonts', []):
         from fontTools.ttLib import TTFont
-        font = TTFont(directory / spec['path'], fontNumber=spec.get('font_number', 0))
+        font = TTFont(directory / Path(spec['path']).expanduser(), fontNumber=spec.get('font_number', 0))
         try:
             cmap = font.getBestCmap() or {}
             for key in spec.get('node_ids', []):
@@ -263,7 +263,7 @@ def verify_fonts(c, nodes, directory):
 
 def input_hashes(c, directory):
     paths = set(c['implementation_inputs']) | set(c['pinned_files'])
-    return {p: sha256(directory / p) for p in sorted(paths)}
+    return {p: sha256(directory / Path(p).expanduser()) for p in sorted(paths)}
 
 
 def verify_receipt(path, candidate, contract_path, c):

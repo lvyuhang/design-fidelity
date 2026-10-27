@@ -342,6 +342,35 @@ void main() {
     });
   });
 
+  group('platform fonts', () {
+    tearDown(() {
+      debugDefaultTargetPlatformOverride = null;
+      SourceFonts.useDesignFonts = false;
+    });
+
+    test('each platform resolves its production family', () {
+      String? resolve(TargetPlatform platform) {
+        debugDefaultTargetPlatformOverride = platform;
+        return sourceFontFamily('SourcePingFang',
+            ios: SourceFonts.system, android: 'NotoSansSC');
+      }
+
+      expect(resolve(TargetPlatform.iOS), isNull, reason: 'iOS system font');
+      expect(resolve(TargetPlatform.android), 'NotoSansSC');
+      expect(resolve(TargetPlatform.windows), 'SourcePingFang');
+      debugDefaultTargetPlatformOverride = TargetPlatform.android;
+      expect(sourceFontFamily('SourcePingFang'), 'SourcePingFang',
+          reason: 'unmapped platforms keep the design family');
+    });
+
+    test('fidelity renders always use the design family', () {
+      debugDefaultTargetPlatformOverride = TargetPlatform.iOS;
+      SourceFonts.useDesignFonts = true;
+      expect(sourceFontFamily('SourcePingFang', ios: SourceFonts.system),
+          'SourcePingFang');
+    });
+  });
+
   group('structure', () {
     testWidgets('source keys expose node geometry', (tester) async {
       await tester.pumpWidget(Directionality(

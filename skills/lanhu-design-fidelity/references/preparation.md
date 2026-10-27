@@ -75,7 +75,7 @@ prepare 优先使用已验证 render_bounds；其次在 source_size 与 influenc
 
 ## 新契约的默认检查
 
-`compile` 为新契约写入 `dart_lint: "v1"`、`geometry_probe: "v1"` 和 `responsive_check`（默认宽度 360/414、字体缩放 1.0/1.3，阻断 `exceptions` 与 `horizontal_overflow`，`text_overlap` 只报告）。关闭任何一项都要写 `*_reason`。没有这些字段的旧契约保持原行为，不受影响。
+`compile` 为新契约写入 `dart_lint: "v1"`、`geometry_probe: "v1"` 和 `responsive_check`（默认 5 种机型与安全区、字体缩放 1.0/1.3，阻断项见[生成与组件化](codegen.md#几何与多尺寸门禁)，`text_overlap` 只报告）。关闭任何一项都要写 `*_reason`。没有这些字段的旧契约保持原行为，不受影响。
 
 `node_decisions` 中 `exclusion: {kind: system_chrome}` 只对源中识别出的状态栏或 Home Indicator 节点有效，compile 会自动加入对应的 `exclude_shapes` 并注明原因。
 

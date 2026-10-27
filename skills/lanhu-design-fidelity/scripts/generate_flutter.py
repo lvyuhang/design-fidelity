@@ -31,6 +31,11 @@ PRIMITIVES_IMPORT = 'package:lanhu_fidelity/lanhu_fidelity.dart'
 LINE_WIDTH = 80
 # Designers place odd-width items on whole pixels: 172 + 32 + 171 is centred.
 CENTER_TOLERANCE = 1.0
+# A root layer whose bottom sits within this distance above the design's home
+# indicator (or the canvas bottom), in the lower part of the canvas, is a
+# footer: it stays pinned above the bottom safe area on every screen height.
+FOOTER_SLACK = 48.0
+FOOTER_MIN_TOP_RATIO = 0.6
 
 # Sketch/AppKit NSTextAlignment. Lanhu's derived `align` string mislabels 2.
 TEXT_ALIGN = {0: 'TextAlign.left', 1: 'TextAlign.right', 2: 'TextAlign.center',
@@ -229,6 +234,14 @@ class Generator:
         self.methods: list[tuple[str, str, Any]] = []
         self.short_ids = self._short_ids()
         self.chrome_owners = {e['node_id']: e for e in detect_system_chrome(nodes, self.canvas)}
+        self.design_top, self.design_bottom = 0.0, 0.0
+        for entry in self.chrome_owners.values():
+            x, y, w, h = entry['rect']
+            if entry['kind'] == 'statusBar':
+                self.design_top = max(self.design_top, y + h)
+            else:
+                self.design_bottom = max(self.design_bottom, self.canvas[1] - y)
+        self.footer: list[str] = []
         self._fonts = self._font_lookup(font_map)
         self._index_assets()
 
@@ -243,14 +256,28 @@ class Generator:
             result[key] = clean[:length]
         return result
 
-    def _font_lookup(self, font_map: dict) -> dict[str, str]:
-        lookup = {}
-        for label, entry in (font_map.get('fonts') or {}).items():
-            if entry.get('runtime_family'):
-                lookup[label] = entry['runtime_family']
+    def _font_lookup(self, font_map: dict) -> dict[str, dict]:
+        """label -> {'family': fidelity family, 'ios'/'android': production family}.
+
+        A platform value of null means the platform's system font; an absent
+        key means the bundled fidelity family is also used in production.
+        """
+        lookup: dict[str, dict] = {}
         for entry in self.plan.get('fonts', []):
             if entry.get('runtime_family'):
-                lookup[f"{entry.get('source_family')}@{entry.get('weight')}"] = entry['runtime_family']
+                lookup[f"{entry.get('source_family')}@{entry.get('weight')}"] = {
+                    'family': entry['runtime_family']}
+        for label, entry in (font_map.get('fonts') or {}).items():
+            if not entry.get('runtime_family'):
+                continue
+            item = {'family': entry['runtime_family']}
+            for platform in ('ios', 'android'):
+                if platform in entry:
+                    value = entry[platform]
+                    if value is not None and not isinstance(value, str):
+                        raise ValueError(f'font map {label}.{platform} must be a family name or null')
+                    item[platform] = value
+            lookup[label] = item
         return lookup
 
     def _index_assets(self) -> None:
@@ -270,10 +297,11 @@ class Generator:
         family_src = run.get('font_family')
         weight = font_weight(run.get('font_weight'))
         label = f'{family_src}@{run.get("font_weight")}'
-        family = self._fonts.get(label)
-        if family is None:
-            family = family_src or 'sans-serif'
+        mapping = self._fonts.get(label)
+        if mapping is None:
+            mapping = {'family': family_src or 'sans-serif'}
             self.issues.append({'kind': 'font_mapping_missing', 'node_id': node_id, 'font': label})
+        family = mapping['family']
         size = float(run.get('font_size') or 14)
         line = run.get('line_height')
         line = float(line) if isinstance(line, (int, float)) and line > 0 else None
@@ -293,12 +321,18 @@ class Generator:
         if decoration:
             name += 'u' if 'underline' in decoration else 's'
         signature_family = re.sub(r'[^0-9A-Za-z]', '', family)
-        key = f'{name}|{family}'
+        platforms = {k: mapping[k] for k in ('ios', 'android') if k in mapping}
+        key = f'{name}|{family}|{json.dumps(platforms, sort_keys=True)}'
         if key not in self.text_styles:
             existing = {n for n, _ in self.text_styles.values()}
             if name in existing:
                 name = f'{name}{signature_family[:6]}'
-            call = Call('sourceTextStyle', fontFamily=family, fontSize=size,
+            family_expr: Any = family
+            if platforms:
+                args = ''.join(f", {k}: {'SourceFonts.system' if v is None else dart_string(v)}"
+                               for k, v in sorted(platforms.items()))
+                family_expr = Raw(f'sourceFontFamily({dart_string(family)}{args})')
+            call = Call('sourceTextStyle', fontFamily=family_expr, fontSize=size,
                         fontWeight=Raw(f'FontWeight.w{weight}', True),
                         lineHeight=line, letterSpacing=spacing if spacing else None,
                         color=self.color(color),
@@ -591,11 +625,7 @@ class Generator:
         left_aligned_text = auto_text and align_code in (0, 4, None)
         if at_root and (x, y, w, h) == (px, py, pw, ph) and not is_text:
             return Call('Positioned.fill', child=widget)
-        vertical: dict[str, Any] = {'top': top}
-        if not is_text:
-            vertical['height'] = h
-        if at_root and stretch and bottom <= 1 and top > ph / 2:
-            vertical = {'bottom': bottom} if is_text else {'bottom': bottom, 'height': h}
+        vertical = self.vertical(key, top, bottom, h, bool(is_text), at_root)
         if stretch:
             if abs(left - right) <= CENTER_TOLERANCE and left <= 32 and w >= pw / 2:
                 if is_text:
@@ -616,6 +646,33 @@ class Generator:
         if left_aligned_text:
             return Call('Positioned', left=left, **vertical, child=widget)
         return Call('Positioned', left=left, **vertical, width=w, child=widget)
+
+    def is_footer(self, key: str) -> bool:
+        x, y, w, h = self.frame(key)
+        height = self.canvas[1]
+        if h >= height - 1:
+            return False
+        return (y >= height * FOOTER_MIN_TOP_RATIO
+                and height - (y + h) <= self.design_bottom + FOOTER_SLACK)
+
+    def vertical(self, key: str, top: float, bottom: float, h: float, is_text: bool,
+                 at_root: bool) -> dict[str, Any]:
+        """Vertical placement. Root layers follow the device safe area at run
+        time: footers keep their distance to the bottom inset, everything else
+        to the top inset (`dy` / `dyBottom` are locals of the Scene build)."""
+        if not at_root:
+            result: dict[str, Any] = {'top': top}
+        elif self.is_footer(key):
+            if key not in self.footer:
+                self.footer.append(key)
+            if key in self.records:
+                self.records[key]['vertical_anchor'] = 'bottom'
+            result = {'bottom': Raw(f'dyBottom + {num(bottom)}')}
+        else:
+            result = {'top': Raw(f'dy + {num(top)}')}
+        if not is_text:
+            result['height'] = h
+        return result
 
     def _anchor(self, key: str, edge: str) -> None:
         """Record which edge a text box is laid out from, so the geometry probe
@@ -642,16 +699,22 @@ class Generator:
                     index += 1
                 placed = self.place(child, rect, stretch, at_root)
                 if placed is not None:
-                    result.append(placed)
-                result.extend(self.masked_group(child, masked, rect))
+                    result.append(self._tag(placed, child, at_root))
+                result.extend(self._tag(p, child, at_root)
+                              for p in self.masked_group(child, masked, rect, at_root))
                 continue
             placed = self.place(child, rect, stretch, at_root)
             if placed is not None:
-                result.append(placed)
+                result.append(self._tag(placed, child, at_root))
             index += 1
         return result
 
-    def masked_group(self, mask: str, members: list[str], parent_rect: tuple) -> list[Any]:
+    def _tag(self, placed: Any, key: str, at_root: bool) -> Any:
+        placed.footer = at_root and key in self.footer
+        return placed
+
+    def masked_group(self, mask: str, members: list[str], parent_rect: tuple,
+                     at_root: bool = False) -> list[Any]:
         if not members:
             return []
         shape, kind = self.shape_of(mask)
@@ -675,8 +738,9 @@ class Generator:
             self.records[mask]['masks'] = members
         else:
             self.record(mask, 'native_exact', primitive='mask', shape=kind, masks=members)
-        px, py, _, _ = parent_rect
-        return [Call('Positioned', left=mx - px, top=my - py, width=mw, height=mh, child=clipped)]
+        px, py, pw, ph = parent_rect
+        vertical = self.vertical(mask, my - py, (py + ph) - (my + mh), mh, False, at_root)
+        return [Call('Positioned', left=mx - px, **vertical, width=mw, child=clipped)]
 
     def place(self, key: str, parent_rect: tuple, stretch: bool, at_root: bool) -> Call | None:
         node = self.nodes[key]
@@ -735,9 +799,7 @@ class Generator:
         call = Call('_node', Raw('context'), key, Raw(f'() => {method}(context)'))
         hints = {}
         if child_stretch:
-            vertical = {'top': y - py, 'height': h}
-            if at_root and stretch and (py + ph) - (y + h) <= 1 and y - py > ph / 2:
-                vertical = {'bottom': (py + ph) - (y + h), 'height': h}
+            vertical = self.vertical(key, y - py, (py + ph) - (y + h), h, False, at_root)
             return Call('Positioned', left=left, right=right, **vertical, child=call)
         return self.placement(key, parent_rect, stretch, call, hints, at_root)
 
@@ -777,7 +839,7 @@ class Generator:
             f'// Source: {first.get("design_name") or ""} snapshot {first.get("snapshot_id")}',
             f'// version {first.get("resolved_version")}, canvas {num(width)}x{num(height)}.',
             '// Replace groups through `overrides` / wire actions through `onTap`.',
-            '// ignore_for_file: prefer_const_constructors, unused_element',
+            '// ignore_for_file: prefer_const_constructors, unused_element, unused_local_variable',
             '',
             "import 'package:flutter/widgets.dart';",
             f"import '{PRIMITIVES_IMPORT}';",
@@ -795,17 +857,25 @@ class Generator:
         lines.append('  static const List<String> all = <String>[' +
                      ', '.join(sorted(keys)) + '];')
         lines += ['}', '']
-        stack = Call('Stack', clipBehavior=Raw('Clip.hardEdge', True), children=DList(children, 'Widget'))
+        body_children = [c for c in children if not getattr(c, 'footer', False)]
+        footer_children = [c for c in children if getattr(c, 'footer', False)]
+        body = Call('Stack', clipBehavior=Raw('Clip.none', True), children=DList(body_children, 'Widget'))
+        footer = ''.join(f'            {render(c, 12)},\n' for c in footer_children)
         lines += [
             f'class {self.class_name}Scene extends StatelessWidget {{',
             f'  const {self.class_name}Scene({{',
             '    super.key,',
             '    this.overrides = const <String, WidgetBuilder>{},',
             '    this.onTap = const <String, VoidCallback>{},',
-            '    this.fillHeight = false,',
+            '    this.adaptSafeArea = true,',
             '  });',
             '',
             f'  static const Size designSize = Size({num(width)}, {num(height)});',
+            '',
+            '  /// Safe-area insets drawn in the design (status bar / home indicator).',
+            '  /// The fidelity harness renders with exactly these insets.',
+            f'  static const EdgeInsets designPadding = EdgeInsets.only(top: {num(self.design_top)}, '
+            f'bottom: {num(self.design_bottom)});',
             '',
             '  /// Replacement widgets keyed by source node id; placed in the node frame.',
             '  final Map<String, WidgetBuilder> overrides;',
@@ -813,8 +883,9 @@ class Generator:
             '  /// Tap handlers keyed by source node id.',
             '  final Map<String, VoidCallback> onTap;',
             '',
-            '  /// Expand to the parent height (bottom-anchored nodes follow it).',
-            '  final bool fillHeight;',
+            '  /// Follow the device safe area (default). The scene is a full-screen',
+            '  /// page: do not wrap it in SafeArea or put an AppBar above it.',
+            '  final bool adaptSafeArea;',
             '',
             '  Widget _node(BuildContext context, String id, Widget Function() build) {',
             '    final override = overrides[id];',
@@ -829,10 +900,35 @@ class Generator:
             '',
             '  @override',
             '  Widget build(BuildContext context) {',
-            '    return SizedBox(',
-            f'      height: fillHeight ? double.infinity : {num(height)},',
-            f'      child: {render(stack, 6)},',
-            '    );',
+            '    final padding = adaptSafeArea',
+            '        ? MediaQuery.maybePaddingOf(context) ?? designPadding',
+            '        : designPadding;',
+            '    // Root layers keep their distance to the top / bottom safe area.',
+            '    final dy = padding.top - designPadding.top;',
+            '    final dyBottom = padding.bottom - designPadding.bottom;',
+            '    final natural = designSize.height + dy + dyBottom;',
+            '    return LayoutBuilder(builder: (context, constraints) {',
+            '      final height =',
+            '          constraints.hasBoundedHeight ? constraints.maxHeight : natural;',
+            '      // Shorter screens scroll the body; footers stay pinned.',
+            '      final scrolls = height < natural - 0.5;',
+            '      final body = SizedBox(',
+            '        height: scrolls ? natural : height,',
+            f'        child: {render(body, 8)},',
+            '      );',
+            '      return SizedBox(',
+            '        height: height,',
+            '        child: Stack(',
+            '          clipBehavior: Clip.hardEdge,',
+            '          children: <Widget>[',
+            '            Positioned.fill(',
+            '              child: scrolls ? SingleChildScrollView(child: body) : body,',
+            '            ),',
+            *([footer.rstrip('\n')] if footer_children else []),
+            '          ],',
+            '        ),',
+            '      );',
+            '    });',
             '  }',
         ]
         for method, name, body in self.methods:
@@ -875,6 +971,8 @@ class Generator:
                 decision['shape'] = 'rect'
             if entry.get('anchor'):
                 decision['anchor'] = entry['anchor']
+            if entry.get('vertical_anchor'):
+                decision['vertical_anchor'] = entry['vertical_anchor']
             decisions[key] = decision
         counts: dict[str, int] = {}
         for entry in self.records.values():
@@ -888,6 +986,10 @@ class Generator:
             'mode_counts': dict(sorted(counts.items())),
             'nodes': list(self.records.values()),
             'system_chrome': self.chrome,
+            'layout': {'design_padding': {'top': self.design_top, 'bottom': self.design_bottom},
+                       'footer': list(self.footer),
+                       'note': 'Root layers follow the device safe area; footers stay pinned above '
+                               'the bottom inset; shorter screens scroll the body.'},
             'unsupported': self.unsupported,
             'issues': self.issues,
             'assets': [dict(identifier=k, **v) for k, v in sorted(getattr(self, 'asset_keys', {}).items())],
@@ -899,18 +1001,32 @@ HARNESS = Path(__file__).resolve().parents[1] / 'assets' / 'flutter_render_harne
 
 
 def write_render_test(path: Path, app_root: Path | None, output: Path, class_name: str,
-                      scale: float, output_env: str) -> dict:
+                      scale: float, output_env: str, font_map: Path | None = None) -> dict:
     """Create the page render test once (it is project code, never overwritten)."""
     from scene_test_codegen import page_import
     result = {'path': str(path), 'created': False}
     harness = path.parent / 'support' / 'fidelity_render_harness.dart'
-    if not harness.exists():
+    if not harness.exists() or harness.read_bytes() != HARNESS.read_bytes():
+        # The harness is tool code: keep it in sync with the Skill version.
         harness.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(HARNESS, harness)
         result['harness_installed'] = str(harness)
     if path.exists():
+        text = path.read_text()
+        if 'designPadding' not in text or 'height:' in text.split('captureResponsiveVariants', 1)[-1][:200]:
+            result['outdated'] = ('render test predates safe-area support: pass padding: '
+                                  f'{class_name}Scene.designPadding to captureFidelityPage and drop '
+                                  'height: from captureResponsiveVariants')
         return result
     page = page_import(app_root, output, path)
+    fonts = ''
+    if font_map is not None:
+        try:
+            relative = font_map.resolve().relative_to(app_root.resolve()) if app_root else font_map
+        except ValueError:
+            relative = font_map.resolve()
+        fonts = f"\n    // Design fonts are loaded from disk for fidelity renders only, never bundled.\n" \
+                f"    await loadSourceFontMap({dart_string(Path(relative).as_posix())});"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(f"""import 'package:flutter_test/flutter_test.dart';
 
@@ -919,10 +1035,12 @@ import 'support/fidelity_render_harness.dart';
 
 void main() {{
   FidelityTestBinding();
-  setUpAll(loadDeclaredFidelityFonts);
+  setUpAll(() async {{
+    await loadDeclaredFidelityFonts();{fonts}
+  }});
 
   testWidgets('{class_name} source canvas', (tester) async {{
-    // Render the production page. Replace the scene with the page widget that
+    // Render the production page: replace the scene with the page widget that
     // composes it (overrides/onTap) and pass appBuilder: your real app root.
     const page = {class_name}Scene();
     final output = fidelityOutputPath('{output_env}');
@@ -930,16 +1048,13 @@ void main() {{
       tester,
       page: page,
       size: {class_name}Scene.designSize,
+      padding: {class_name}Scene.designPadding,
       scale: {num(scale)},
       imageAssets: {class_name}Assets.all,
       output: output,
     );
-    await captureResponsiveVariants(
-      tester,
-      page: page,
-      height: {class_name}Scene.designSize.height,
-      output: output,
-    );
+    // iPhone SE / 15 / 15 Pro Max and two Android sizes, at 1.0x and 1.3x text.
+    await captureResponsiveVariants(tester, page: page, output: output);
   }});
 }}
 """, encoding='utf-8')
@@ -983,7 +1098,10 @@ def generate(evidence: list[Path], plan_path: Path | None, font_map_path: Path |
     if render_test is not None:
         report['render_test'] = write_render_test(render_test, app_root, output, class_name,
                                                   float((plan or {}).get('render_scale') or 4),
-                                                  output_env or 'PAGE_RENDER_OUTPUT')
+                                                  output_env or 'PAGE_RENDER_OUTPUT', font_map_path)
+        if report['render_test'].get('outdated'):
+            report['issues'].append({'kind': 'render_test_outdated', 'path': str(render_test),
+                                     'message': report['render_test']['outdated']})
     if app_root is not None and asset_dir:
         for entry in report['assets']:
             target = (app_root / entry['flutter_asset']).resolve()

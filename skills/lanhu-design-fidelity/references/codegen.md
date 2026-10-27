@@ -37,7 +37,9 @@ class WithdrawPage extends StatelessWidget {
 - override 的组件放在原节点的布局框里，`sourceKey` 保留，几何门禁照常检查。
 - 重复的业务行（列表项、卡片）抽成组件后，用 override 替换其所在的组；组件内部同样只用原语与 token。
 - 需要真正可变的布局时，把对应的组改写为 Row/Column，间距取自源坐标差；复合行规则见[节点决策](implementation-decisions.md#复合行与动态文字)。
-- 生成器的响应式规则：整宽元素随屏宽拉伸，居中元素保持居中，靠右元素按右边距锚定，贴底元素按底部锚定。`fillHeight: true` 让 Scene 充满父高度。
+- 生成器的响应式规则：整宽元素随屏宽拉伸，居中元素保持居中，靠右元素按右边距锚定。
+- 安全区与屏幕高度：`designPadding` 是设计稿中的状态栏与 Home Indicator 高度。根层节点在运行时按 `MediaQuery` 实际安全区平移（`dy`、`dyBottom`）；画布下部、距底部安全区 48 以内的根层节点是 footer，固定在底部安全区之上（报告 `layout.footer`、决策 `vertical_anchor: bottom`）。可用高度小于设计高度时主体可滚动，footer 不动；可用高度更大时中间留白。Scene 是整页组件：作为 `Scaffold.body`，不要外包 `SafeArea` 或加 `AppBar`；嵌入预览时传 `adaptSafeArea: false`。
+- 字体：font map 条目的 `ios` / `android` 生成 `sourceFontFamily(...)`，`null` 为系统字体。还原度渲染时 harness 从磁盘加载 `path` 字体并让所有 token 使用设计字体。
 
 ## lint 规则
 
@@ -72,4 +74,4 @@ class WithdrawPage extends StatelessWidget {
 
 - render 测试里的 `captureFidelityPage` 会写出 `render.png.geometry.json`，`captureResponsiveVariants` 会写出 `render.png.variants.json`。这两个文件必须和渲染收据中记录的哈希一致。
 - 几何：非文字节点的左、上、宽、高容差 0.5px；文字比较对齐边（1px）、top 和 line box 高度（0.5px），宽度偏差超过 3px 时提示检查字体文件、字重或字距。
-- 多尺寸：在 360/414 宽与 1.0/1.3 倍字体下检查框架异常、横向越界，并报告新出现的文字重叠。
+- 多尺寸：在 `responsive_check.devices`（默认 iPhone SE / 15 / 15 Pro Max、Android 360×800 / 412×915，各带真实安全区）与 1.0/1.3 倍字体下检查。阻断项：`exceptions`、`horizontal_overflow`、`vertical_clip`（超出屏幕且不可滚动）、`under_status_bar`（文字进入顶部安全区）、`under_home_indicator`（footer 压到底部安全区）、`missing`（契约要求的机型没有渲染）；`text_overlap` 只报告。

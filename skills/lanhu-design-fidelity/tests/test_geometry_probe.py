@@ -77,6 +77,37 @@ class GeometryProbeTests(unittest.TestCase):
         result = compare_geometry(nodes(), DECISIONS, geometry)
         self.assertEqual(result['failures'][0]['failures'], ['top +3.00px'])
 
+    def test_safe_area_and_height_findings(self):
+        n = nodes()
+        n['BTN'] = {'node_id': 'BTN', 'name': '确认按钮',
+                    'bounds': {'x': 28, 'y': 706, 'width': 320, 'height': 50}}
+        decisions = dict(DECISIONS, BTN={'mode': 'native_exact', 'vertical_anchor': 'bottom'})
+        ok = {'device': 'iphone_15', 'width': 393, 'height': 852, 'text_scale': 1.0,
+              'padding': {'top': 59, 'bottom': 34}, 'scrollable': False, 'exception': None,
+              'nodes': {**measured()['nodes'], 'MID': [180, 70, 32.8, 22], 'BTN': [28, 762, 337, 50]}}
+        self.assertTrue(responsive_report(n, {'variants': [ok]}, 375, decisions=decisions)['passed'])
+        bad = dict(ok, device='iphone_se', height=667, padding={'top': 20, 'bottom': 0},
+                   nodes={**ok['nodes'], 'MID': [180, 10, 32.8, 22], 'NEXT': [32, 650, 59, 30],
+                          'BTN': [28, 600, 337, 50]})
+        result = responsive_report(n, {'variants': [bad]}, 375, decisions=decisions)
+        kinds = {f['kind'] for f in result['findings']}
+        self.assertEqual(kinds, {'under_status_bar', 'vertical_clip'})
+        self.assertFalse(result['passed'])
+        scrolled = dict(bad, scrollable=True, nodes={**bad['nodes'], 'MID': [180, 30, 32.8, 22]})
+        self.assertTrue(responsive_report(n, {'variants': [scrolled]}, 375, decisions=decisions)['passed'])
+        sunk = dict(ok, nodes={**ok['nodes'], 'BTN': [28, 790, 337, 50]})
+        self.assertEqual({f['kind'] for f in responsive_report(n, {'variants': [sunk]}, 375,
+                                                              decisions=decisions)['findings']},
+                         {'under_home_indicator'})
+
+    def test_every_contract_device_must_be_rendered(self):
+        variant = {'device': 'iphone_15', 'width': 393, 'height': 852, 'text_scale': 1.0,
+                   'nodes': measured()['nodes']}
+        result = responsive_report(nodes(), {'variants': [variant]}, 375,
+                                   devices=['iphone_15', 'android_compact'])
+        self.assertFalse(result['passed'])
+        self.assertEqual(result['findings'][0]['variant'], 'android_compact')
+
     def test_missing_source_key_fails_closed(self):
         geometry = measured()
         del geometry['nodes']['MID']

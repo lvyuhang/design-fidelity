@@ -76,18 +76,28 @@ flutter pub get
 - 创建 `fidelity/` 工作区：`fidelity/page` 命令、`font-map.json`、`.gitignore`；
 - 写入本机路径到 `fidelity/.local.env`（已被忽略，不会提交）。
 
-**配置字体**：在 `fidelity/font-map.json` 中把设计稿字体映射到 App 已声明的字体文件。不知道需要哪些键时，先跑一次 `prepare`，报告会列出缺少的 `字体名@字重`：
+**配置字体**：设计稿通常用苹方。在 App 根目录执行：
 
-```json
-{"fonts": {
-  "PingFangSC-Regular@400":  {"path": "../assets/fonts/YourSans-Regular.otf",  "runtime_family": "YourSans"},
-  "PingFangSC-Semibold@600": {"path": "../assets/fonts/YourSans-Semibold.otf", "runtime_family": "YourSans"}
-}}
+```sh
+python3 ~/lanhu-flutter-fidelity/skills/lanhu-design-fidelity/scripts/install_app.py fonts --app .
+# Android 想用自带的授权字体时加：--android NotoSansSC（需在 pubspec.yaml 中声明该 family）
 ```
 
-`path` 相对 `font-map.json`，`runtime_family` 要和 `pubspec.yaml` 中的 family 一致。苹方的授权通常只覆盖 Apple 平台，不要把它打进 Android 包，用法请先和法务确认。
+它从本机 macOS 提取苹方到 `~/.lanhu-fidelity/fonts/`（在 App 仓库之外），并写入 `fidelity/font-map.json`。每个字体有两种用途：
 
-团队里只需一人执行 `init` 并提交，其他人拉代码后在自己电脑上再执行一次 `init`，生成自己的 `.local.env`。
+- **还原度检查**：测试时从磁盘加载苹方，和设计稿逐像素对比。字体文件**不会打进 App**；
+- **上线字体**：iOS 用系统字体（本身就是苹方）；Android 默认用系统中文字体，或者用 `--android` 指定的字体。
+
+苹方的授权通常只覆盖 Apple 平台，不要把它声明进 `pubspec.yaml`。设计稿还用了其他字体时，`prepare` 会报 `font_mapping_missing` 并列出 `字体名@字重`，按同样格式手动补到 `font-map.json`：
+
+```json
+"DINAlternate-Bold@700": {"path": "~/.lanhu-fidelity/fonts/DINAlternate-Bold.ttf",
+                          "runtime_family": "DesignDIN", "ios": null, "android": "AppNumber"}
+```
+
+`ios`、`android` 写 `null` 表示用系统字体，写名字表示用 `pubspec.yaml` 中声明的 family。还原度检查始终按设计稿字体进行；Android 换用其他字体后字宽会有细微差异，上线前建议在真机上看一遍文字较密的区域。
+
+团队里只需一人执行 `init` 和 `fonts` 并提交，其他人拉代码后在自己电脑上再执行一次 `init` 和 `fonts`：前者生成自己的 `.local.env`，后者在自己电脑上提取苹方（已有的映射不会被覆盖）。
 
 ## 三、每个页面
 
@@ -140,11 +150,27 @@ AI 会依次执行：`start → 取证 → prepare → generate → 组合页面
 
 所有步骤都可以手动执行：`fidelity/page <page> start|prepare|generate|spec|accept|report|finish`。取证这一步需要调用蓝湖 MCP，手动操作比较繁琐，建议交给 AI。
 
-## 五、目前的限制
+## 五、iOS 与 Android 适配
 
-- **安全区**：生成页面按设计稿画布摆放（状态栏按 44 计算）。灵动岛 iPhone 和 Android 的状态栏高度不同，顶部可能重叠或留白。适配完成前，请在页面代码中按 `MediaQuery.paddingOf(context).top - 44` 调整顶部。
-- **屏幕高度**：生成页面固定为设计稿高度。iPhone SE 等矮屏上，需要把主体内容放进 `SingleChildScrollView`。
-- **多尺寸检查**目前只覆盖 360 和 414 宽；还原度检查在 Mac 的测试渲染器上进行，真机效果建议再用模拟器或真机截图核对。
+生成的页面会自动处理两个平台的差异，研发不需要手写适配代码：
+
+| 差异 | 生成页面的处理 |
+|---|---|
+| 状态栏高度（设计稿 44；灵动岛 iPhone 约 59；Android 约 24） | 内容按设备实际安全区上下移动，状态栏区域不绘制 |
+| 底部 Home Indicator / 导航条 | 底部按钮、底部导航自动贴在底部安全区之上 |
+| 屏幕高度（iPhone SE 667 到 Pro Max 932） | 矮屏时主体内容可滚动，底部按钮保持固定；高屏时中间留出空间 |
+| 字体 | 按 `font-map.json` 的 `ios` / `android` 配置分别使用 |
+| 无障碍字体放大 | 保留系统字体缩放，检查时覆盖 1.3 倍 |
+
+**使用要求**：生成的 `<Page>Scene` 是整页组件，直接作为 `Scaffold` 的 `body`，**不要再包 `SafeArea`，也不要加 `AppBar`**，否则安全区会被重复计算。只把它嵌在别的页面里预览时，传 `adaptSafeArea: false`。
+
+验收时会在 iPhone SE、iPhone 15、iPhone 15 Pro Max、Android 360×800、Android 412×915 五种屏幕下，分别按 1.0 倍和 1.3 倍字体检查：布局报错、横向越界、矮屏内容被截断且不能滚动、文字进入状态栏、底部按钮压到 Home Indicator，这些都会阻断验收。
+
+## 六、目前的限制
+
+- 还原度检查在 Mac 的测试渲染器上进行；iOS 真机用 Metal、Android 用 Vulkan/OpenGL 渲染，模糊、阴影和文字抗锯齿可能有细微差别，上线前建议用模拟器或真机截图核对。
+- 底部按钮、底部导航是否"贴底"由生成器根据位置自动判断（见报告 `layout.footer`），判断不对时用 override 调整。
+- 页面顶部导航栏会随内容一起滚动；需要固定导航栏时，在页面代码中把它拆出来放进 `Column` 顶部。
 - 只支持线性渐变；旋转、径向渐变等会在生成报告中标为 unsupported，需要在页面代码中处理。
 
 ## 常见问题
@@ -152,4 +178,5 @@ AI 会依次执行：`start → 取证 → prepare → generate → 组合页面
 - **prepare 报 `font_mapping_missing`**：按报告补全 `font-map.json`。
 - **prepare 报 `missing_glyphs`**：映射的字体缺字，换成完整字体。
 - **check-mcp 失败**：Cookie 过期，重新从浏览器复制。
+- **契约校验报字体哈希变化**：不同 macOS 版本的苹方文件可能不同。团队统一在同一 macOS 大版本上做验收；换机器后若哈希不同，需要重新建立该页面的验收基线。
 - **设计稿更新了**：重新取证，再 `prepare` 和 `generate`，页面代码不需要重写。注意设计师如果删除或重建了图层，节点 ID 会变化，`overrides` 和 `onTap` 里对应的 ID 要同步更新。

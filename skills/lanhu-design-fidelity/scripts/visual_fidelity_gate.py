@@ -21,7 +21,7 @@ from pathlib import Path
 from typing import Any
 
 from exclusion_masks import build_keep_mask
-from geometry_probe import compare_geometry, geometry_path, responsive_report
+from geometry_probe import DEFAULT_BLOCKING, compare_geometry, geometry_path, responsive_report
 
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
@@ -659,9 +659,10 @@ def main() -> int:
                     'kind': 'missing', 'message': f'missing {variant_file.name}: call '
                     'captureResponsiveVariants in the render test'}]}
             else:
-                report_r = responsive_report(nodes, json.loads(variant_file.read_text()),
-                                             contract['canvas'][0],
-                                             tuple(responsive.get('blocking', ('exceptions', 'horizontal_overflow'))))
+                report_r = responsive_report(
+                    nodes, json.loads(variant_file.read_text()), contract['canvas'][0],
+                    tuple(responsive.get('blocking', DEFAULT_BLOCKING)),
+                    contract.get('node_decisions', {}), responsive.get('devices'))
             candidate_result['responsive'] = report_r
             if not report_r['passed']:
                 candidate_result['passed'] = False

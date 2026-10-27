@@ -5,6 +5,8 @@
                           (no maintainer tests or experiment material)
   init  --app APP         add the lanhu_fidelity package and a fidelity/ workspace
   page  --app APP --name  create fidelity/<name>/page.json and declare its assets
+  fonts --app APP         extract the design font (PingFang SC) from this Mac for
+                          fidelity renders only and add it to fidelity/font-map.json
 
 Nothing here touches page code, thresholds or contracts.
 """
@@ -184,6 +186,65 @@ def _tree_differs(source: Path, target: Path) -> bool:
     return False
 
 
+FONT_HOME = '~/.lanhu-fidelity/fonts'
+PINGFANG_FACES = {'Ultralight': 100, 'Thin': 200, 'Light': 300, 'Regular': 400,
+                  'Medium': 500, 'Semibold': 600}
+
+
+def discover_pingfang() -> Path | None:
+    candidates = [Path('/System/Library/Fonts/PingFang.ttc')]
+    for base in (Path('/System/Library/AssetsV2'), Path('/System/Library/Assets')):
+        if base.exists():
+            candidates.extend(sorted(base.glob('com_apple_MobileAsset_Font*/*/AssetData/PingFang.ttc')))
+    return next((p for p in candidates if p.is_file()), None)
+
+
+def install_fonts(app: Path, source: Path | None, android: str | None) -> dict:
+    """Extract PingFang SC faces to ~/.lanhu-fidelity/fonts (outside every repo).
+
+    The files are only loaded by fidelity tests on this machine. Production
+    fonts are chosen per platform in the font map: iOS uses the system font
+    (PingFang itself); Android uses the system font unless --android names a
+    licensed family declared in pubspec.yaml.
+    """
+    from fontTools.ttLib import TTCollection, TTFont
+    font_map_path = app / 'fidelity' / 'font-map.json'
+    if not font_map_path.is_file():
+        raise ValueError('run install_app.py init --app first')
+    source = source or discover_pingfang()
+    if source is None or not source.is_file():
+        raise ValueError('PingFang.ttc not found; install 苹方 in Font Book or pass --pingfang')
+    collection = TTCollection(str(source), lazy=True)
+    faces = {font['name'].getDebugName(6): index for index, font in enumerate(collection.fonts)}
+    collection.close()
+    target_dir = Path(FONT_HOME).expanduser()
+    target_dir.mkdir(parents=True, exist_ok=True)
+    font_map = json.loads(font_map_path.read_text())
+    fonts = font_map.setdefault('fonts', {})
+    added, extracted = [], []
+    for face, weight in PINGFANG_FACES.items():
+        name = f'PingFangSC-{face}'
+        if name not in faces:
+            continue
+        target = target_dir / f'{name}.otf'
+        if not target.exists():
+            with TTFont(str(source), fontNumber=faces[name], recalcTimestamp=False) as font:
+                font.save(str(target))
+            extracted.append(target.name)
+        key = f'{name}@{weight}'
+        if key not in fonts:
+            fonts[key] = {'path': f'{FONT_HOME}/{name}.otf', 'runtime_family': 'DesignPingFang',
+                          'ios': None, 'android': android}
+            added.append(key)
+    font_map_path.write_text(json.dumps(font_map, ensure_ascii=False, indent=2) + '\n')
+    return {'status': 'READY', 'font_dir': str(target_dir), 'extracted': extracted,
+            'added_to_font_map': added,
+            'production': {'ios': 'system font (PingFang)',
+                           'android': android or 'system font'},
+            'note': 'Fonts stay outside the app and are never bundled. Map any other design '
+                    'fonts that prepare reports as font_mapping_missing by hand.'}
+
+
 def camel(name: str) -> str:
     parts = re.split(r'[^0-9A-Za-z]+', name)
     result = ''.join(p[:1].upper() + p[1:] for p in parts if p)
@@ -251,12 +312,19 @@ def main() -> int:
     p.add_argument('--name', required=True, help='snake_case page id, e.g. withdraw')
     p.add_argument('--class-name', help='UpperCamelCase prefix for generated classes')
     p.add_argument('--title', help='Human-readable page name for reports')
+    f = sub.add_parser('fonts')
+    f.add_argument('--app', type=Path, required=True)
+    f.add_argument('--pingfang', type=Path, help='PingFang.ttc (default: this Mac\'s system copy)')
+    f.add_argument('--android', help='Licensed family declared in pubspec.yaml for Android '
+                                     '(default: Android system font)')
     args = parser.parse_args()
     try:
         if args.command == 'skill':
             result = install_skill(args.target.expanduser().resolve(), args.force)
         elif args.command == 'init':
             result = init_app(args.app.resolve(), args.python, args.force)
+        elif args.command == 'fonts':
+            result = install_fonts(args.app.resolve(), args.pingfang, args.android)
         else:
             result = create_page(args.app.resolve(), args.name, args.class_name, args.title)
     except (ValueError, OSError) as exc:

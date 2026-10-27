@@ -10,6 +10,7 @@ export 'src/effects.dart';
 export 'src/source_asset.dart';
 export 'src/source_blur.dart';
 export 'src/source_box.dart';
+export 'src/source_fonts.dart';
 export 'src/source_key.dart';
 export 'src/source_paint.dart';
 export 'src/source_text.dart';

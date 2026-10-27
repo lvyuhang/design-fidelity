@@ -8,8 +8,10 @@ import 'package:flutter/widgets.dart';
 ///   matches Sketch's fixed line box (half the extra leading above, half
 ///   below);
 /// * letter spacing is explicit (Sketch `kern`), default 0.
+///
+/// [fontFamily] null means the platform system font (see [sourceFontFamily]).
 TextStyle sourceTextStyle({
-  required String fontFamily,
+  required String? fontFamily,
   required double fontSize,
   required Color color,
   FontWeight fontWeight = FontWeight.w400,

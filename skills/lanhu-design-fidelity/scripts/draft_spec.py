@@ -30,8 +30,15 @@ DEFAULT_NODE_REGION = {'max_mae': 6.0, 'max_p95': 40.0}
 GENERATED_FIELDS = ('coverage', 'status', 'pinned_files')
 
 
-def rel(path: Path, base: Path) -> str:
-    return os.path.relpath(Path(path).resolve(), base.resolve())
+def rel(path: Path, base: Path, home_relative: bool = False) -> str:
+    """Path relative to `base`; per-user files (e.g. design fonts under
+    ~/.lanhu-fidelity) are written as ~/... so the spec works on every machine."""
+    resolved = Path(path).expanduser().resolve()
+    if home_relative:
+        home = Path.home().resolve()
+        if home in resolved.parents:
+            return '~/' + resolved.relative_to(home).as_posix()
+    return os.path.relpath(resolved, base.resolve())
 
 
 def strip_nodes(spec: dict, removed: set[str]) -> list[str]:
@@ -254,7 +261,8 @@ def build(draft: dict, draft_dir: Path, codegen: dict, plan: dict | None, spec_d
             continue
         ids = [i for i in entry.get('node_ids', []) if i not in chrome]
         if ids:
-            item = fonts.setdefault(entry['path'], {'path': rel(Path(entry['path']), spec_dir), 'node_ids': []})
+            item = fonts.setdefault(entry['path'], {'path': rel(Path(entry['path']), spec_dir, True),
+                                                    'node_ids': []})
             item['node_ids'] = sorted(set(item['node_ids']) | set(ids))
     spec['fonts'] = list(fonts.values())
     spec['environment'] = {**spec.get('environment', {}), **environment}

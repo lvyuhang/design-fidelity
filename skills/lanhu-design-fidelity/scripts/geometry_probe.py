@@ -95,30 +95,84 @@ def _overlap(a, b, slack=0.5):
             a[1] + slack < b[1] + b[3] and b[1] + slack < a[1] + a[3])
 
 
+DEFAULT_DEVICES = ('iphone_se', 'iphone_15', 'iphone_15_pro_max', 'android_compact', 'android_large')
+DEFAULT_BLOCKING = ('exceptions', 'horizontal_overflow', 'vertical_clip',
+                    'under_status_bar', 'under_home_indicator')
+RESPONSIVE_KINDS = (*DEFAULT_BLOCKING, 'text_overlap')
+
+
+def _variant_name(variant: dict) -> str:
+    base = variant.get('device') or f"{variant['width']:g}w"
+    return f"{base}@{variant['text_scale']:g}x"
+
+
 def responsive_report(nodes: dict, variants: dict, design_width: float,
-                      blocking=('exceptions', 'horizontal_overflow')) -> dict:
-    """Layout at other widths/text scales: exceptions, overflow, new text overlaps."""
+                      blocking=DEFAULT_BLOCKING, decisions: dict | None = None,
+                      devices=None) -> dict:
+    """Layout on other screens, safe areas and text scales.
+
+    * exceptions / horizontal_overflow: the layout breaks or leaves the screen;
+    * vertical_clip: a node ends below the screen while nothing scrolls;
+    * under_status_bar: text drawn inside the top safe area;
+    * under_home_indicator: a pinned footer reaches into the bottom safe area;
+    * text_overlap (observation by default): texts that did not overlap in the
+      design now do, e.g. at 1.3x text.
+    """
+    decisions = decisions or {}
     findings = []
     texts = [k for k, n in nodes.items() if n.get('text')]
-    for variant in variants.get('variants', []):
-        name = f"{variant['width']:g}w@{variant['text_scale']:g}x"
+    footers = {k for k, d in decisions.items() if d.get('vertical_anchor') == 'bottom'}
+    listed = variants.get('variants', [])
+    if devices:
+        recorded = {v.get('device') for v in listed}
+        for device in devices:
+            if device not in recorded:
+                findings.append({'variant': device, 'kind': 'missing',
+                                 'message': f'no variant for device {device}; call '
+                                            'captureResponsiveVariants with the default devices'})
+    for variant in listed:
+        name = _variant_name(variant)
+        width, height = variant['width'], variant.get('height')
+        padding = variant.get('padding') or {}
+        top_inset, bottom_inset = padding.get('top', 0), padding.get('bottom', 0)
         if variant.get('exception'):
             findings.append({'variant': name, 'kind': 'exceptions',
                              'message': variant['exception'].splitlines()[0][:300]})
         measured = variant.get('nodes', {})
+        paragraphs = variant.get('text_nodes', {})
+
+        def label(key):
+            node = nodes.get(key) or {}
+            return f"{key} '{node.get('text') or node.get('name') or ''}'"
+
         for key, rect in measured.items():
-            if rect[0] < -0.5 or rect[0] + rect[2] > variant['width'] + 0.5:
+            if rect[0] < -0.5 or rect[0] + rect[2] > width + 0.5:
                 findings.append({'variant': name, 'kind': 'horizontal_overflow', 'node_id': key,
-                                 'message': f"{key} '{(nodes.get(key) or {}).get('name', '')}' "
-                                            f"spans {rect[0]:.1f}..{rect[0] + rect[2]:.1f} "
-                                            f"outside 0..{variant['width']:g}"})
+                                 'message': f"{label(key)} spans {rect[0]:.1f}..{rect[0] + rect[2]:.1f} "
+                                            f"outside 0..{width:g}"})
+            if height and not variant.get('scrollable') and rect[1] + rect[3] > height + 0.5 \
+                    and rect[3] < height:
+                findings.append({'variant': name, 'kind': 'vertical_clip', 'node_id': key,
+                                 'message': f"{label(key)} ends at {rect[1] + rect[3]:.1f} below the "
+                                            f"{height:g} screen and the page does not scroll"})
+            if key in footers and height and rect[1] + rect[3] > height - bottom_inset + 0.5:
+                findings.append({'variant': name, 'kind': 'under_home_indicator', 'node_id': key,
+                                 'message': f"{label(key)} reaches {rect[1] + rect[3]:.1f}, inside the "
+                                            f"bottom safe area ({height - bottom_inset:g}..{height:g})"})
+        for key in texts:
+            rect = paragraphs.get(key) or measured.get(key)
+            if rect and top_inset and rect[1] < top_inset - 0.5 and rect[1] + rect[3] > 0:
+                findings.append({'variant': name, 'kind': 'under_status_bar', 'node_id': key,
+                                 'message': f"{label(key)} starts at {rect[1]:.1f}, inside the "
+                                            f"{top_inset:g}px status bar"})
         for i, first in enumerate(texts):
             for second in texts[i + 1:]:
                 if first not in measured or second not in measured:
                     continue
                 if _overlap(_rect(nodes[first]), _rect(nodes[second])):
                     continue  # Overlapping in the design already (e.g. duplicates).
-                if _overlap(measured[first], measured[second]):
+                if _overlap(paragraphs.get(first) or measured[first],
+                            paragraphs.get(second) or measured[second]):
                     findings.append({'variant': name, 'kind': 'text_overlap',
                                      'node_id': first, 'other_node_id': second,
                                      'message': f"'{nodes[first].get('text')}' overlaps "
@@ -127,7 +181,7 @@ def responsive_report(nodes: dict, variants: dict, design_width: float,
     counts = {}
     for item in findings:
         counts[item['kind']] = counts.get(item['kind'], 0) + 1
-    return {'variants': len(variants.get('variants', [])), 'design_width': design_width,
+    return {'variants': len(listed), 'design_width': design_width,
             'blocking': list(blocking), 'counts': counts, 'findings': findings,
             'passed': not blocked}
 

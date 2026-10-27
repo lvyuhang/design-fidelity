@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 from collections import Counter
 import json
 from pathlib import Path
@@ -65,7 +66,7 @@ def font_audit(nodes, mapping, base):
             if not font:
                 issues.append({'kind': 'font_mapping_missing', 'node_id': key, 'font': label})
                 continue
-            path = (base/font['path']).resolve()
+            path = (base/Path(os.path.expandvars(font['path'])).expanduser()).resolve()
             identity = (str(path), font.get('font_number', 0))
             try:
                 if identity not in cmaps:
