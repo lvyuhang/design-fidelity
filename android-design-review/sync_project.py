@@ -16,7 +16,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parent
 EVIDENCE = ROOT/'evidence/project'
-SERVER = os.environ.get('LANHU_MCP_LAUNCHER', '/Users/tan/Documents/Codex/2026-10-10/https-github-com-dsphper-lanhu-mcp/lanhu-mcp/run-local-mcp.sh')
+SERVER = os.environ.get('LANHU_MCP_LAUNCHER', str(Path(__file__).resolve().parents[1] / 'integrations' / 'run-lanhu-mcp.sh'))
 URL = 'https://lanhuapp.com/web/#/item/project/stage?tid=8d03f00f-c4fc-4fe6-ba4a-e5f7ab5f48b8&pid=42c284fa-dba5-4d44-af54-f22ffc9b9805'
 
 

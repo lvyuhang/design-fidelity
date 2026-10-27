@@ -13,9 +13,22 @@ python3 project.py start flutter
 
 无需登录即可运行打包的“提现-2”离线对比案例。使用 `python3 project.py start review --demo` 可启动带同一设计快照的安卓验收台。真实蓝湖/设备/AI功能分别需要使用者自己的连接与授权。此处的安装复现检查不替代设计还原度验收。
 
-## 仓库范围与当前版本（2026-10-19）
+## Skill 3.0.0 候选：工具化工作流
 
-本仓库保存 Flutter 还原实验、蓝湖取证与测量工具、Sketch 插件、安卓验收台源码，以及 `skills/lanhu-design-fidelity/` 的 Skill 2.18.6 快照。下文保留历次实验记录，历史结论不代表当前页面已通过完整视觉验收。
+`skills/lanhu-design-fidelity/` 已从"规则文档 + 手写页面"改为"确定性生成 + 已验证原语 + 自动门禁"：
+
+| 步骤 | 产物 |
+|---|---|
+| `page prepare` | 固定快照、素材导出框、字体覆盖；状态栏/Home Indicator 自动识别为系统 chrome |
+| `page generate` | `<page>.g.dart`（token、`lanhu_fidelity` 原语、`sourceKey`、overrides/onTap）、scene 义务测试、首次 render 测试 |
+| `page spec` | 无需手工编辑即可编译的契约草稿（检测器、关系、局部效果区域、scene 检查） |
+| `page accept` | Dart lint → 渲染与 scene 测试 → 像素门禁 → 节点几何门禁 → 360/414 宽与 1.3 倍字体检查 → 构建 |
+
+原语包位于 `skills/lanhu-design-fidelity/assets/flutter/lanhu_fidelity`，首次接入在包目录运行 `flutter test`。工作流说明见 `skills/lanhu-design-fidelity/SKILL.md` 与 `references/codegen.md`。3.0.0 尚未经独立模型在未调优页面验证，仍为候选版。
+
+## 仓库范围与历史记录
+
+本仓库保存 Flutter 还原实验、蓝湖取证与测量工具、Sketch 插件、安卓验收台源码和 Skill。下文保留历次实验记录（基于 Skill 2.x），历史结论不代表当前页面已通过完整视觉验收。`validation/` 中只跟踪独立重跑的复核记录，其余实验工作目录不入库。仓库拆分与大文件处理建议见 [docs/REPO_LAYOUT.md](docs/REPO_LAYOUT.md)。
 
 - `flutter_ui_components/`：Flutter 组件、页面、原始图形资源及测试；最新案例为 `?case=withdraw-2-skill2186`。
 - `skills/lanhu-design-fidelity/`：与本次实际使用版本同步的可安装 Skill。
@@ -149,7 +162,7 @@ python3 project.py start flutter
 
 ## 复现
 
-Flutter SDK 已安装于 `/Users/tan/development/flutter-arm64/flutter`，此轮使用 Flutter 3.47.7 / Dart 3.13.5。
+使用 `toolchain.json` 固定的 Flutter 3.47.7 / Dart 3.13.5，SDK 路径由 `setup.command --flutter-sdk` 指定。
 
 ```sh
 # 在本项目根目录，使用装有 fonttools 的 Python；本机工具已放在 .tools/fonttools。
@@ -167,7 +180,7 @@ python3 tools/compare_requested.py
 python3 -m http.server 8767 --bind 127.0.0.1 --directory flutter_ui_components/build/web
 ```
 
-本机 Python 依赖运行时：`/Users/tan/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3`（含 Pillow、numpy）。
+Python 依赖使用 `setup.command` 创建的 `.venv`（含 Pillow、numpy、fonttools）。
 
 Flutter analyze 在本机中文路径下触发了分析协议 JSON 截断，改用同一 SDK 的 `dart analyze lib test`，已通过。截图测试把真实图片解码、原生截图和文件 I/O 放进 runAsync，以避免测试虚拟时钟挂起。
 

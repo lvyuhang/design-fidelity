@@ -45,7 +45,17 @@ python3 project.py start review --demo --port 8782
 
 ## 安装 Skill
 
-仓库内 `skills/lanhu-design-fidelity` 为2.18.6。在 Codex 里使用前，复制到自己的 `$CODEX_HOME/skills/lanhu-design-fidelity`；目标已存在时先比较版本、保留备份。源码更新不会自动覆盖个人 Skill。
+仓库内 `skills/lanhu-design-fidelity` 为 3.0.0 候选版。在 Codex 里使用前，复制到自己的 `$CODEX_HOME/skills/lanhu-design-fidelity`；目标已存在时先比较版本、保留备份。源码更新不会自动覆盖个人 Skill。
+
+在要接入的 Flutter 项目中：
+
+```sh
+cp -R skills/lanhu-design-fidelity/assets/flutter/lanhu_fidelity <app>/packages/
+# pubspec.yaml: dependencies: lanhu_fidelity: {path: packages/lanhu_fidelity}
+(cd <app>/packages/lanhu_fidelity && flutter pub get && flutter test)
+```
+
+之后按 Skill 的 `references/session-entrypoint.md` 执行 `start → prepare → generate → spec → accept`。
 
 ## 更新与验证
 

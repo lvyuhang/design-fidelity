@@ -1,4 +1,5 @@
 """Read the already-pinned clean MCP tiles; never use the scaled overview preview."""
+import os
 import asyncio
 import base64
 import hashlib
@@ -11,7 +12,7 @@ from mcp.client.stdio import stdio_client
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parent / 'evidence/wanqia-feed'
-SERVER = '/Users/tan/Documents/Codex/2026-10-10/https-github-com-dsphper-lanhu-mcp/lanhu-mcp/run-local-mcp.sh'
+SERVER = os.environ.get('LANHU_MCP_LAUNCHER', str(Path(__file__).resolve().parents[1] / 'integrations' / 'run-lanhu-mcp.sh'))
 
 
 async def main():

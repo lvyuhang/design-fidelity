@@ -32,11 +32,11 @@ implementation-brief schema 2 的 visual_style_groups 保留大小元素与父�
 
 ## 编译 spec
 
-使用 v2 字段与已审核检查，省略生成的 status/coverage/pinned_files，另列 excluded_nodes（节点 ID→具体原因）。spec/contract 同目录，输出不得覆盖已冻结文件。编译器从 blocking 检查的 node_ids 生成 coverage，计算哈希并执行文件、字体、处置与效果义务检查；未覆盖不会自动补 whole-page 或排除。
+通常由 `page spec`（`scripts/draft_spec.py`）生成可编译草稿，再人工复核标为 `auto:` 的检查。手写时使用 v2 字段与已审核检查，省略生成的 status/coverage/pinned_files，另列 excluded_nodes（节点 ID→具体原因）。spec/contract 同目录，输出不得覆盖已冻结文件。编译器从 blocking 检查的 node_ids 生成 coverage，计算哈希并执行文件、字体、处置与效果义务检查；未覆盖不会自动补 whole-page 或排除。
 
 implementation_inputs 列全影响渲染的代码、测试/harness、配置和 lockfile；assets/fonts 列实际文件。工具不推断依赖图。CONTRACT_COMPILED 仅表示声明合法，尚未视觉验收。初始化器的 detector: review_required 和 pending 需审核；字段形状查 assets/visual-contract.template.json，检查设计查 visual-contract.md。
 
-## 批量声明（2.12）
+## 批量声明
 
 同实现或同检测策略可按明确节点 ID 分组；编译后仍是逐节点检查，不能用一张大区域稀释小图标差异。分组与显式声明不可重复，保留不同状态、样式、尺寸的差异，不用分组代替语义审核。
 
@@ -53,7 +53,7 @@ implementation_inputs 列全影响渲染的代码、测试/harness、配置和 l
 
 compile 用原稿运行所有检测器；无墨迹须先查遮挡或目标层，不能等候选截图后删检查。此自检只能发现无效分割，不能证明目标层语义正确，须看对应源 ROI。业务文字或其祖先不允许默认 render_fallback；静态装饰的例外必须说明，页面热区不构成组件实现。
 
-## 执行约束与迁移（2.9）
+## 执行约束与迁移
 
 正式契约 schema_version: 2、workflow_version: 1。node_decisions 为每个可见节点绑定实现，例如：
 
@@ -63,7 +63,7 @@ compile 用原稿运行所有检测器；无墨迹须先查遮挡或目标层，
 
 implementation 必须在 implementation_inputs，symbol 是追踪声明而非静态绘制证明。mode：native_exact、original_asset、render_fallback、missing_asset_placeholder、excluded_with_reason。素材模式额外 asset，列入 assets/哈希表；回退必须是真实源渲染。排除模式填写 reason 并与 excluded coverage 一致；占位额外 shape: circle|rounded_rect|rect|source_path，仍需外形验证。
 
-`source_decision_groups` 是工具根据冻结输入生成的候选和下一动作，不能改成批准清单。2.18.6 的缺图合法性检查拒绝以下情况：文字、存在自身或祖先素材候选、非位图的路径已存在、原始样式未知、矢量几何字段未读取或子节点未查明。下载失败和渲染能力不足属于未解决项，不等于未切图。无素材的 bitmap 可仅替换图像内容（它的 points 可能只是裁剪轮廓）；无素材且源原始记录明确返回空几何的叶矢量才可占位。缺少字段不能自行补 null/[]；取证无法证实时保留诊断预览。候选仍须核实导出内容、父变换及完整路径语义；此检查不证明取证器或素材语义绝对正确。
+`source_decision_groups` 是工具根据冻结输入生成的候选和下一动作，不能改成批准清单。缺图合法性检查拒绝以下情况：文字、存在自身或祖先素材候选、非位图的路径已存在、原始样式未知、矢量几何字段未读取或子节点未查明。下载失败和渲染能力不足属于未解决项，不等于未切图。无素材的 bitmap 可仅替换图像内容（它的 points 可能只是裁剪轮廓）；无素材且源原始记录明确返回空几何的叶矢量才可占位。缺少字段不能自行补 null/[]；取证无法证实时保留诊断预览。候选仍须核实导出内容、父变换及完整路径语义；此检查不证明取证器或素材语义绝对正确。
 
 excluded_with_reason 另需 exclusion:{kind:outside_canvas}，或 {kind:fully_occluded,by:源遮挡节点ID}；后者仅自动证明上层不透明轴对齐矩形覆盖的安全内区，不能证明的遮挡留待诊断。不得以复用、源稿未变或素材相同排除可见节点。复用检查模板并在当前完整截图执行，缺图仅排除该素材，叠在上方的状态底板/圆点/文字仍独立检查。因占位导致混色基底不同，增加绑定源节点的运行时几何、颜色、透明度和描边检查；它补充截图，不取代截图。
 
@@ -72,3 +72,21 @@ excluded_with_reason 另需 exclusion:{kind:outside_canvas}，或 {kind:fully_oc
 ### 素材画框自动校验
 
 prepare 优先使用已验证 render_bounds；其次在 source_size 与 influence 宽高吻合时，以 ddsOriginFrame 和节点布局坐标换算导出框；最后才使用 source_point 与文档原点。导出像素宽高必须支持一致倍率（允许像素取整误差），否则输出 export_density_mismatch 并保留 unresolved。画布外映射仍报错，不能通过拉伸或改坐标绕过。输出 export_rect/export_density/alpha_ink_rect 供实现消费；prepare 成功只验证映射，不证明渲染器使用了它，仍需真实素材的局部画框检查。
+
+## 新契约的默认检查
+
+`compile` 为新契约写入 `dart_lint: "v1"`、`geometry_probe: "v1"` 和 `responsive_check`（默认宽度 360/414、字体缩放 1.0/1.3，阻断 `exceptions` 与 `horizontal_overflow`，`text_overlap` 只报告）。关闭任何一项都要写 `*_reason`。没有这些字段的旧契约保持原行为，不受影响。
+
+`node_decisions` 中 `exclusion: {kind: system_chrome}` 只对源中识别出的状态栏或 Home Indicator 节点有效，compile 会自动加入对应的 `exclude_shapes` 并注明原因。
+
+## 缺源策略与授权
+
+复制 `assets/pending-assets.example.json`，以 node_id 填入 `nodes`，每项包含 `reason` 和 `evidence:[{"path":"源证据.json","sha256":"实际文件哈希"}]`。错误字段直接报错，不视为无授权。存在 asset_id 时，已哈希证据须覆盖全部 ID 且均为 render_fallback；原始素材或未知类型不能据此占位。取得源数据后只需一次定向复查，确认仍无原始素材或路径、且已有用户占位授权，即可进入缺图决策。页面配置声明 `pending_assets`，由统一入口传递；不要在终端临时设置 `LANHU_PENDING_ASSETS`。
+
+## 自定义渲染器
+
+不使用 `lanhu_fidelity` 原语时，页面配置增加 `renderer_kind: "custom"`、`renderer_capabilities: "renderer-capabilities.json"`。能力文件形如 `{"supported":{"borders.gradient.linear":{"implementation":"文件:函数","test":"测试文件:用例"}}}`，按当前源效果去重登记；未知效果不能默认当作纯色或透明。accept/validate 会自动重跑 `scripts/renderer_capabilities.py`，缺少声明即阻断。每种新能力首次接入时，用实际绘制器测试正例和移除该效果的反例。
+
+## 冻结与停止
+
+`compile` / `accept` 只复用与当前 spec 及源文件重新计算结果完全一致的冻结契约，不覆盖旧文件；任何不一致都要建立新的实验基线。`stop` 必须在最后一次构建、诊断预览和报告之后执行；若停止后仍有产物修改，另列最后产物时间，按模型启动到最后响应统计完整实验。
