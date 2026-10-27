@@ -9,8 +9,8 @@ macOS 的苹方和 Arial Unicode 字体由脚本从本机已有合法来源准�
 ## 第一次安装和预览
 
 ```sh
-git clone https://github.com/lvyuhang/juxingge-design-fidelity.git
-cd juxingge-design-fidelity
+git clone <本仓库地址> lanhu-flutter-fidelity
+cd lanhu-flutter-fidelity
 ./setup.command --profile all --with-mcp --flutter-sdk /path/to/flutter
 python3 project.py doctor --strict
 python3 project.py verify --render
@@ -22,7 +22,7 @@ python3 project.py start flutter
 如果 Python 不在 PATH：
 
 ```sh
-JUXINGGE_PYTHON=/path/to/python3.12 ./setup.command --profile all --flutter-sdk /path/to/flutter
+LANHU_FIDELITY_PYTHON=/path/to/python3.12 ./setup.command --profile all --flutter-sdk /path/to/flutter
 ```
 
 只需要 Flutter 时使用 `--profile flutter`；只需要安卓验收台使用 `--profile review`。所有依赖装入当前仓库 `.venv`，不复用其他项目虚拟环境。
