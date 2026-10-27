@@ -100,6 +100,8 @@ def setup(args):
     req=ROOT/('requirements-review.txt' if args.profile in ('all','review') else 'requirements-setup.txt')
     run([py,'-m','pip','install','--disable-pip-version-check','-r',req])
     config=load_config();config.update(python=str(py),profile=args.profile)
+    if args.profile == 'skill':
+        args.with_mcp = True  # Page work always needs the Lanhu MCP server.
     if args.with_mcp:
         run([py,'-m','pip','install','--disable-pip-version-check','-c',ROOT/'constraints-mcp.txt','-e',ROOT/'integrations/lanhu-mcp'])
         config['mcp_installed']=True
@@ -180,7 +182,7 @@ def verify(args):
 
 
 def check_mcp(args):
-    command=[python_path(),ROOT/'tools/check_mcp_connection.py']
+    command=[python_path(),ROOT/'integrations/check_mcp_connection.py']
     if args.url:command.extend(['--url',args.url])
     if args.launcher:command.extend(['--launcher',args.launcher])
     run(command)
@@ -194,7 +196,7 @@ def mcp_serve(args):
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);sub=p.add_subparsers(dest='command',required=True)
-    s=sub.add_parser('setup');s.add_argument('--profile',choices=('flutter','review','all'),default='flutter')
+    s=sub.add_parser('setup');s.add_argument('--profile',choices=('skill','flutter','review','all'),default='flutter',help='skill: 仅研发页面工作所需（Skill 依赖 + 蓝湖 MCP），不构建样例')
     for flag in ('--flutter-sdk','--font-dir','--pingfang','--arial-unicode'):s.add_argument(flag)
     s.add_argument('--regenerate-fonts',action='store_true');s.set_defaults(handler=setup)
     s.add_argument('--with-mcp',action='store_true')

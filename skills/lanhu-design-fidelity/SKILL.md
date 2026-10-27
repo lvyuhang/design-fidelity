@@ -40,4 +40,3 @@ metadata:
 | 字体、契约字段、检测器 | [准备](references/preparation.md) / [契约](references/visual-contract.md) |
 | 首次接入 Flutter 或原语包 | [Flutter 接入](references/flutter-rendering.md) |
 | 连续失败或成本异常 | [定位](references/process-gates.md) / [效率](references/efficient-execution.md) |
-| A/B 实验或维护检测器 | [公平实验](references/model-comparison.md) / [验证](references/validation.md) |

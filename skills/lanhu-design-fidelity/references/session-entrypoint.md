@@ -1,6 +1,6 @@
 # 日常操作
 
-首次接入：复制 `assets/page-session.example.json` 为页面配置（路径相对配置文件），把 `assets/flutter/lanhu_fidelity` 作为 path 依赖加入项目（见 [Flutter 接入](flutter-rendering.md)）。
+首次接入：研发项目用 `scripts/install_app.py init` 接入原语包并创建 `fidelity/` 工作区，再用 `install_app.py page` 为每个页面创建配置；此时命令写作 `fidelity/page <页面> <命令>`，取证结果保存到 `fidelity/<页面>/evidence/`（`source.json`，分页时依次 `source-2.json` 并加入 `evidence` 列表；`reference.png`；素材与 `manifest.json`）。没有工作区时，复制 `assets/page-session.example.json` 手动配置（路径相对配置文件），原语包接入见 [Flutter 接入](flutter-rendering.md)。
 
 ```sh
 # SKILL_DIR 为技能目录；python 为装好 scripts/requirements.txt 的项目环境。
