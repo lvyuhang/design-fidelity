@@ -85,6 +85,13 @@ def compile_spec(spec, base):
     nodes = _load_nodes(paths)
     check_raster_scope(c, nodes)
     c["workflow_version"] = 1
+    # New contracts lint page Dart against the verified primitives. Opting out
+    # is explicit and recorded; legacy contracts (no key) keep their behaviour.
+    lint_profile = c.setdefault('dart_lint', 'v1')
+    if lint_profile not in ('v1', 'off'):
+        raise ValueError('dart_lint must be "v1" or "off"')
+    if lint_profile == 'off' and not str(c.get('dart_lint_reason', '')).strip():
+        raise ValueError('dart_lint "off" requires dart_lint_reason')
     auto = c.pop("auto_effect_samples", None)
     if auto is not None:
         add_sample_drafts(c, nodes, auto["max_channel_delta"])

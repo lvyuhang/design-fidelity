@@ -24,6 +24,14 @@ def preflight(contract_path, skill, require_style_evidence=False):
                            for v in graphics['failures'][:8])
         raise ValueError('Unverified drawn icon or CustomPainter: ' + preview)
     result['graphic_source_audit'] = graphics
+    from dart_fidelity_lint import lint_contract
+    lint = lint_contract(contract_path)
+    if lint['status'] == 'FAIL':
+        preview = '; '.join(f"{v['file']}:{v['line']} {v['rule']} {v.get('symbol', '')}"
+                            for v in lint['findings'][:8])
+        raise ValueError(f"Dart fidelity lint failed ({len(lint['findings'])}): {preview}. "
+                         'Use lanhu_fidelity primitives/tokens; see scripts/dart_fidelity_lint.py')
+    result['dart_fidelity_lint'] = lint
     return result
 
 
