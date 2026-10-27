@@ -1,5 +1,7 @@
 # v2 契约字段与检测
 
+新页面的契约草稿由 `page spec` 生成，本文用于复核其中的检查或定位门禁误差。节点几何（`geometry_probe`）与多尺寸（`responsive_check`）门禁见[生成与组件化](codegen.md#几何与多尺寸门禁)。
+
 创建检查项或定位门禁误差时按章节读；完整字段形状见 assets/visual-contract.template.json。初始化器生成草稿，正式输出由 compile_contract 生成。
 
 ## 身份与覆盖

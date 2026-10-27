@@ -32,6 +32,94 @@ Future<void> loadDeclaredFidelityFonts() async {
   }
 }
 
+/// Union of the laid-out paragraphs under [root], relative to [origin].
+///
+/// An override fills the node frame, so the frame alone cannot show text
+/// shifted inside it (padding, alignment); the paragraph rect can.
+Rect? _paragraphRect(RenderObject root, Offset origin) {
+  Rect? result;
+  void visit(RenderObject child) {
+    if (child is RenderParagraph && child.hasSize) {
+      final rect = (child.localToGlobal(Offset.zero) - origin) & child.size;
+      result = result == null ? rect : result!.expandToInclude(rect);
+      return;
+    }
+    child.visitChildren(visit);
+  }
+
+  visit(root);
+  return result;
+}
+
+/// Paragraph rects per keyed node (see [collectSourceGeometry]).
+Map<String, List<double>> collectSourceText(WidgetTester tester, Finder boundary) {
+  final origin = tester.getTopLeft(boundary);
+  final result = <String, List<double>>{};
+  for (final element in _keyedSourceElements().evaluate()) {
+    final render = element.renderObject;
+    if (render == null) continue;
+    final rect = _paragraphRect(render, origin);
+    if (rect == null) continue;
+    final id = (element.widget.key! as ValueKey<String>).value.substring(6);
+    result[id] = <double>[rect.left, rect.top, rect.width, rect.height];
+  }
+  return result;
+}
+
+Finder _keyedSourceElements() => find.byWidgetPredicate((widget) {
+      final key = widget.key;
+      return key is ValueKey<String> && key.value.startsWith('lanhu:');
+    }, skipOffstage: true);
+
+/// Layout rects of every widget keyed with `sourceKey(nodeId)` (the
+/// `ValueKey<String>('lanhu:<id>')` convention of package:lanhu_fidelity),
+/// relative to [boundary]. The gate compares them with source bounds.
+Map<String, List<double>> collectSourceGeometry(
+    WidgetTester tester, Finder boundary) {
+  final origin = tester.getTopLeft(boundary);
+  final result = <String, List<double>>{};
+  for (final element in _keyedSourceElements().evaluate()) {
+    final render = element.renderObject;
+    if (render is! RenderBox || !render.hasSize) continue;
+    final topLeft = render.localToGlobal(Offset.zero) - origin;
+    final id = (element.widget.key! as ValueKey<String>).value.substring(6);
+    result[id] = <double>[
+      topLeft.dx,
+      topLeft.dy,
+      render.size.width,
+      render.size.height,
+    ];
+  }
+  return result;
+}
+
+Future<void> _writeJson(String path, Object value) async {
+  final file = File(path);
+  await file.parent.create(recursive: true);
+  await file.writeAsString(const JsonEncoder.withIndent(' ').convert(value));
+}
+
+Widget _defaultApp(Widget boundary, Locale locale, {bool pinTextScale = true}) {
+  return MaterialApp(
+    debugShowCheckedModeBanner: false,
+    locale: locale,
+    builder: (context, child) => MediaQuery(
+      data: pinTextScale
+          ? MediaQuery.of(context).copyWith(textScaler: TextScaler.noScaling)
+          : MediaQuery.of(context),
+      child: Localizations.override(
+        context: context,
+        locale: locale,
+        child: child!,
+      ),
+    ),
+    home: DefaultTextStyle(
+      style: const TextStyle(decoration: TextDecoration.none),
+      child: boundary,
+    ),
+  );
+}
+
 Future<void> captureFidelityPage(
   WidgetTester tester, {
   required Widget page,
@@ -50,22 +138,9 @@ Future<void> captureFidelityPage(
   final boundary = RepaintBoundary(key: boundaryKey, child: page);
   // Whole-page captures use the exact production root (Theme/Scaffold/text).
   // The legacy wrapper remains available only for isolated component tests.
-  await tester.pumpWidget(appBuilder != null ? appBuilder(boundary) : MaterialApp(
-    debugShowCheckedModeBanner: false,
-    locale: locale,
-    builder: (context, child) => MediaQuery(
-      data: MediaQuery.of(context).copyWith(textScaler: TextScaler.noScaling),
-      child: Localizations.override(
-        context: context,
-        locale: locale,
-        child: child!,
-      ),
-    ),
-    home: DefaultTextStyle(
-        style: const TextStyle(decoration: TextDecoration.none),
-        child: boundary,
-    ),
-  ));
+  await tester.pumpWidget(appBuilder != null
+      ? appBuilder(boundary)
+      : _defaultApp(boundary, locale));
   await tester.runAsync(() async {
     for (final path in imageAssets.toSet()) {
       await precacheImage(AssetImage(path), boundaryKey.currentContext!,
@@ -77,7 +152,17 @@ Future<void> captureFidelityPage(
   await tester.pumpAndSettle();
   expect(tester.getSize(find.byKey(boundaryKey)), size);
   expect(tester.takeException(), isNull);
+  final geometry = collectSourceGeometry(tester, find.byKey(boundaryKey));
+  final textGeometry = collectSourceText(tester, find.byKey(boundaryKey));
   await tester.runAsync(() async {
+    if (geometry.isNotEmpty) {
+      await _writeJson('$output.geometry.json', <String, Object>{
+        'schema': 1,
+        'canvas': <double>[size.width, size.height],
+        'nodes': geometry,
+        'text_nodes': textGeometry,
+      });
+    }
     final boundary = boundaryKey.currentContext!.findRenderObject()!
         as RenderRepaintBoundary;
     final image = await boundary.toImage(pixelRatio: scale);
@@ -90,4 +175,49 @@ Future<void> captureFidelityPage(
       image.dispose();
     }
   });
+}
+
+/// Lays the page out at other screen widths and accessibility text scales and
+/// records geometry plus any framework exception (e.g. RenderFlex overflow).
+///
+/// Writes `<output>.variants.json`; `visual_fidelity_gate.py` checks it when
+/// the contract enables `responsive_check`. Call after [captureFidelityPage]
+/// in the same test with the same [page]/[appBuilder].
+Future<void> captureResponsiveVariants(
+  WidgetTester tester, {
+  required Widget page,
+  required double height,
+  required String output,
+  List<double> widths = const <double>[360, 414],
+  List<double> textScales = const <double>[1.0, 1.3],
+  Locale locale = const Locale('zh', 'CN'),
+  Widget Function(Widget child)? appBuilder,
+}) async {
+  final variants = <Map<String, Object?>>[];
+  addTearDown(tester.platformDispatcher.clearTextScaleFactorTestValue);
+  for (final width in widths) {
+    for (final textScale in textScales) {
+      tester.view.physicalSize = Size(width, height);
+      tester.view.devicePixelRatio = 1;
+      tester.platformDispatcher.textScaleFactorTestValue = textScale;
+      final boundaryKey = GlobalKey();
+      final boundary = RepaintBoundary(key: boundaryKey, child: page);
+      await tester.pumpWidget(appBuilder != null
+          ? appBuilder(boundary)
+          : _defaultApp(boundary, locale, pinTextScale: false));
+      await tester.pumpAndSettle();
+      final error = tester.takeException();
+      variants.add(<String, Object?>{
+        'width': width,
+        'height': height,
+        'text_scale': textScale,
+        'exception': error?.toString(),
+        'nodes': collectSourceGeometry(tester, find.byKey(boundaryKey)),
+      });
+    }
+  }
+  tester.view.resetPhysicalSize();
+  tester.view.resetDevicePixelRatio();
+  await tester.runAsync(() => _writeJson('$output.variants.json',
+      <String, Object>{'schema': 1, 'variants': variants}));
 }

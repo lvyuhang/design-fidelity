@@ -1,0 +1,36 @@
+{
+  "snapshot_id": "18265541131bc4907c9d7a12145180d6",
+  "resolved_version": "456d21e2-473f-4324-b8de-c1740db62112",
+  "assets": [
+    {
+      "asset_id": "7ACA8DCF-61F0-4D29-932E-EF02B02BEFEB:image",
+      "relative_path": "assets/chevron.png",
+      "sha256": "8835fddc65e15a07ee4e9f729552e55c49faf97a6f3675c5b246ffad72c0d50a",
+      "bytes": 534,
+      "actual_pixel_size": {
+        "width": 24,
+        "height": 40
+      }
+    },
+    {
+      "asset_id": "5D9B651E-5ED6-4C75-8A31-D904C5C88479:image",
+      "relative_path": "assets/wallet.png",
+      "sha256": "488586321e6234ebba71b7e9c060fa9ca07d4f3b83ffc1e4288785f6acb426b2",
+      "bytes": 226339,
+      "actual_pixel_size": {
+        "width": 680,
+        "height": 560
+      }
+    },
+    {
+      "asset_id": "7DB9BEC3-40BD-4A82-8B66-130C35B3C28B:image",
+      "relative_path": "assets/alipay.png",
+      "sha256": "693648cce20001047d8ee93a4e1f23bd643c2d1b3e4c03d082488cc9bc50390d",
+      "bytes": 3805,
+      "actual_pixel_size": {
+        "width": 88,
+        "height": 88
+      }
+    }
+  ]
+}

@@ -10,7 +10,11 @@
 
 ```sh
 python -m unittest discover -s /path/to/lanhu-design-fidelity/tests -v
+# 生成的 Dart 语法检查：装有 dart 时自动使用，或用 LANHU_DART_SYNTAX 指向任一语法检查器
+(cd /path/to/lanhu-design-fidelity/assets/flutter/lanhu_fidelity && flutter test)
 ```
+
+`tests/test_pipeline_e2e.py` 在仓库示例存在时，验证离线快照无需手工编辑即可走到冻结契约；单独分发 Skill 时自动跳过。
 
 首次 Flutter 环境接入可复制 assets/flutter-smoke 到独立临时目录，安装依赖并填写实际 renderer/engine 信息，按 usage.md 的收据流程分别运行 OFFSET=0 与 OFFSET=4。预期正确样本通过、位移样本失败；合成夹具不能充当真实页面还原成绩。
 

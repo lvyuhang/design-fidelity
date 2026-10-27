@@ -5,5 +5,5 @@
   "engine_revision": "deb287481e3ce9468f3434937ced4240a70539ca",
   "dart": "3.13.5",
   "verified_platform": "macOS arm64",
-  "skill": "2.18.6"
+  "skill": "3.0.0"
 }

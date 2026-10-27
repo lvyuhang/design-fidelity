@@ -3,6 +3,7 @@
 from __future__ import annotations
 import argparse
 import copy
+from system_chrome import chrome_exclusion_shapes
 import json
 from pathlib import Path
 
@@ -84,10 +85,39 @@ def compile_spec(spec, base):
     nodes = _load_nodes(paths)
     check_raster_scope(c, nodes)
     c["workflow_version"] = 1
+    # New contracts lint page Dart against the verified primitives. Opting out
+    # is explicit and recorded; legacy contracts (no key) keep their behaviour.
+    lint_profile = c.setdefault('dart_lint', 'v1')
+    if lint_profile not in ('v1', 'off'):
+        raise ValueError('dart_lint must be "v1" or "off"')
+    if lint_profile == 'off' and not str(c.get('dart_lint_reason', '')).strip():
+        raise ValueError('dart_lint "off" requires dart_lint_reason')
+    # Node geometry from sourceKey widgets, and layout at other sizes/text scales.
+    probe = c.setdefault('geometry_probe', 'v1')
+    if probe not in ('v1', 'off') or (probe == 'off' and not str(c.get('geometry_probe_reason', '')).strip()):
+        raise ValueError('geometry_probe must be "v1", or "off" with geometry_probe_reason')
+    responsive = c.setdefault('responsive_check', {'widths': [360, 414], 'text_scales': [1.0, 1.3],
+                                                   'blocking': ['exceptions', 'horizontal_overflow']})
+    if responsive == 'off':
+        if not str(c.get('responsive_check_reason', '')).strip():
+            raise ValueError('responsive_check "off" requires responsive_check_reason')
+    elif not isinstance(responsive, dict) or not set(responsive.get('blocking', [])) <= {
+            'exceptions', 'horizontal_overflow', 'text_overlap'}:
+        raise ValueError('responsive_check.blocking accepts exceptions, horizontal_overflow, text_overlap')
     auto = c.pop("auto_effect_samples", None)
     if auto is not None:
         add_sample_drafts(c, nodes, auto["max_channel_delta"])
     selected = inventory(nodes)
+    chrome_ids = {k for k, d in c.get('node_decisions', {}).items()
+                  if (d.get('exclusion') or {}).get('kind') == 'system_chrome'}
+    if chrome_ids:
+        # Source-derived and disclosed (PASS_WITH_EXCLUSIONS); never hand-drawn.
+        shapes = c.setdefault('exclude_shapes', [])
+        for shape in chrome_exclusion_shapes(nodes, c['canvas']):
+            if shape not in shapes:
+                shapes.append(shape)
+        for key in chrome_ids:
+            exclusions.setdefault(key, c['node_decisions'][key].get('reason') or 'system chrome')
     if set(exclusions)-set(selected):
         raise ValueError('Exclusion references unknown/non-inventory node')
     coverage = {}

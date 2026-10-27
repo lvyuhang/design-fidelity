@@ -62,8 +62,18 @@ class OnboardingTests(unittest.TestCase):
 
     def test_bootstrap_critical_paths_do_not_depend_on_original_username(self):
         for name in ['project.py','tools/prepare_fonts.py','tools/fetch_lanhu_page.py',
-                     'android-design-review/server.py','android-design-review/lanhu_bridge.py']:
+                     'android-design-review/server.py','android-design-review/lanhu_bridge.py',
+                     'android-design-review/fetch_reference.py','android-design-review/sync_project.py',
+                     'README.md']:
             self.assertNotIn('/Users/tan', (ROOT/name).read_text(),name)
+
+
+    def test_skill_version_is_consistent(self):
+        import json, re
+        skill = re.search(r'version:\s*"([^"]+)"', (ROOT/'skills/lanhu-design-fidelity/SKILL.md').read_text()).group(1)
+        self.assertEqual(json.loads((ROOT/'toolchain.json').read_text())['skill'], skill)
+        for name in ['README.md', 'docs/GETTING_STARTED.md']:
+            self.assertIn(skill, (ROOT/name).read_text(), name)
 
 
 if __name__=='__main__':unittest.main()
