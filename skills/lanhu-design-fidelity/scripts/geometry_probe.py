@@ -40,6 +40,9 @@ def _fmt(value):
 
 def compare_geometry(nodes: dict, decisions: dict, geometry: dict) -> dict:
     measured = geometry.get('nodes', {})
+    # Text is compared on its laid-out paragraph when the harness recorded it,
+    # so an override that shifts text inside the node frame is still caught.
+    paragraphs = geometry.get('text_nodes', {})
     checks, failures = [], []
     for key, decision in sorted(decisions.items()):
         if decision.get('mode') not in CHECKED_MODES or key not in nodes:
@@ -51,7 +54,8 @@ def compare_geometry(nodes: dict, decisions: dict, geometry: dict) -> dict:
                              'failures': ['no widget with sourceKey(node_id) in the tree']})
             continue
         sx, sy, sw, sh = _rect(node)
-        ax, ay, aw, ah = (float(v) for v in measured[key])
+        rect = paragraphs.get(key) if node.get('text') and key in paragraphs else measured[key]
+        ax, ay, aw, ah = (float(v) for v in rect)
         problems, deltas = [], {}
         if node.get('text'):
             # The generator records the edge it anchored auto-width text to;

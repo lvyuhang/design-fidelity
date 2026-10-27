@@ -70,6 +70,13 @@ class GeometryProbeTests(unittest.TestCase):
         self.assertIn('right edge -2.00px',
                       compare_geometry(n, right, shifted)['failures'][0]['failures'])
 
+    def test_text_inside_an_override_frame_is_measured(self):
+        # The override fills the frame (unchanged) but pads the text down 3px.
+        geometry = measured()
+        geometry['text_nodes'] = {'LEFT': [32, 123, 55.4, 20]}
+        result = compare_geometry(nodes(), DECISIONS, geometry)
+        self.assertEqual(result['failures'][0]['failures'], ['top +3.00px'])
+
     def test_missing_source_key_fails_closed(self):
         geometry = measured()
         del geometry['nodes']['MID']

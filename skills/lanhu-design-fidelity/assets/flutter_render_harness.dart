@@ -32,6 +32,45 @@ Future<void> loadDeclaredFidelityFonts() async {
   }
 }
 
+/// Union of the laid-out paragraphs under [root], relative to [origin].
+///
+/// An override fills the node frame, so the frame alone cannot show text
+/// shifted inside it (padding, alignment); the paragraph rect can.
+Rect? _paragraphRect(RenderObject root, Offset origin) {
+  Rect? result;
+  void visit(RenderObject child) {
+    if (child is RenderParagraph && child.hasSize) {
+      final rect = (child.localToGlobal(Offset.zero) - origin) & child.size;
+      result = result == null ? rect : result!.expandToInclude(rect);
+      return;
+    }
+    child.visitChildren(visit);
+  }
+
+  visit(root);
+  return result;
+}
+
+/// Paragraph rects per keyed node (see [collectSourceGeometry]).
+Map<String, List<double>> collectSourceText(WidgetTester tester, Finder boundary) {
+  final origin = tester.getTopLeft(boundary);
+  final result = <String, List<double>>{};
+  for (final element in _keyedSourceElements().evaluate()) {
+    final render = element.renderObject;
+    if (render == null) continue;
+    final rect = _paragraphRect(render, origin);
+    if (rect == null) continue;
+    final id = (element.widget.key! as ValueKey<String>).value.substring(6);
+    result[id] = <double>[rect.left, rect.top, rect.width, rect.height];
+  }
+  return result;
+}
+
+Finder _keyedSourceElements() => find.byWidgetPredicate((widget) {
+      final key = widget.key;
+      return key is ValueKey<String> && key.value.startsWith('lanhu:');
+    }, skipOffstage: true);
+
 /// Layout rects of every widget keyed with `sourceKey(nodeId)` (the
 /// `ValueKey<String>('lanhu:<id>')` convention of package:lanhu_fidelity),
 /// relative to [boundary]. The gate compares them with source bounds.
@@ -39,11 +78,7 @@ Map<String, List<double>> collectSourceGeometry(
     WidgetTester tester, Finder boundary) {
   final origin = tester.getTopLeft(boundary);
   final result = <String, List<double>>{};
-  final keyed = find.byWidgetPredicate((widget) {
-    final key = widget.key;
-    return key is ValueKey<String> && key.value.startsWith('lanhu:');
-  }, skipOffstage: true);
-  for (final element in keyed.evaluate()) {
+  for (final element in _keyedSourceElements().evaluate()) {
     final render = element.renderObject;
     if (render is! RenderBox || !render.hasSize) continue;
     final topLeft = render.localToGlobal(Offset.zero) - origin;
@@ -118,12 +153,14 @@ Future<void> captureFidelityPage(
   expect(tester.getSize(find.byKey(boundaryKey)), size);
   expect(tester.takeException(), isNull);
   final geometry = collectSourceGeometry(tester, find.byKey(boundaryKey));
+  final textGeometry = collectSourceText(tester, find.byKey(boundaryKey));
   await tester.runAsync(() async {
     if (geometry.isNotEmpty) {
       await _writeJson('$output.geometry.json', <String, Object>{
         'schema': 1,
         'canvas': <double>[size.width, size.height],
         'nodes': geometry,
+        'text_nodes': textGeometry,
       });
     }
     final boundary = boundaryKey.currentContext!.findRenderObject()!
