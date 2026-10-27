@@ -29,9 +29,8 @@ abstract class SourceShape {
 /// Rectangle with per-corner radii (top-left, top-right, bottom-right,
 /// bottom-left). Sketch clamps each radius to half of the shorter side.
 class SourceRectShape extends SourceShape {
-  const SourceRectShape({this.radii = const <double>[0, 0, 0, 0]})
-      : assert(radii.length == 4),
-        _uniform = null;
+  /// [radii] must hold four values (TL, TR, BR, BL); missing entries count as 0.
+  const SourceRectShape({this.radii = const <double>[0, 0, 0, 0]}) : _uniform = null;
 
   const SourceRectShape.all(double radius)
       : radii = const <double>[0, 0, 0, 0],
@@ -41,7 +40,7 @@ class SourceRectShape extends SourceShape {
   final double? _uniform;
 
   double _radius(int index, Rect rect) {
-    final value = _uniform ?? radii[index];
+    final value = _uniform ?? (index < radii.length ? radii[index] : 0.0);
     return math.max(0, math.min(value, rect.shortestSide / 2));
   }
 
