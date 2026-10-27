@@ -36,30 +36,20 @@ Widget build(BuildContext context) => CheckoutScene(
     );
 ```
 
-## 快速开始
+## 研发同学：从这里开始
 
-环境要求：macOS、Python 3.11+、Flutter（版本见 `toolchain.json`）、有合法使用权的字体文件。
-
-```sh
-git clone <本仓库地址> && cd <仓库目录>
-./setup.command --profile all --with-mcp --flutter-sdk /path/to/flutter
-python3 project.py doctor --strict
-python3 project.py verify --render      # 运行打包的离线样例，无需蓝湖账号
-```
-
-接入自己的 Flutter 项目：
+**请阅读 [研发使用指南](docs/DEVELOPER_GUIDE.md)。** 只需下载 Skill 和 MCP 两个目录，按指南完成一次性配置后，每个页面的工作就是"建页面目录 → 交给 AI → 审核结果 → 提交"。
 
 ```sh
-cp -R skills/lanhu-design-fidelity/assets/flutter/lanhu_fidelity <app>/packages/
-# pubspec.yaml → dependencies: lanhu_fidelity: {path: packages/lanhu_fidelity}
-(cd <app>/packages/lanhu_fidelity && flutter pub get && flutter test)
+git clone --filter=blob:none --sparse https://github.com/lvyuhang/lanhu-flutter-fidelity.git ~/lanhu-flutter-fidelity
+cd ~/lanhu-flutter-fidelity && git sparse-checkout set skills/lanhu-design-fidelity integrations
+./setup.command --profile skill                       # Skill 依赖 + 蓝湖 MCP
+python3 skills/lanhu-design-fidelity/scripts/install_app.py skill --target ~/.codex/skills
+python3 skills/lanhu-design-fidelity/scripts/install_app.py init --app /path/to/your_app \
+  --python ~/lanhu-flutter-fidelity/.venv/bin/python
 ```
 
-然后复制 `skills/lanhu-design-fidelity/assets/page-session.example.json` 作为页面配置，按 [执行入口](skills/lanhu-design-fidelity/references/session-entrypoint.md) 操作。连接真实蓝湖项目需要你自己的 Cookie，配置方法见 [安装与运行说明](docs/GETTING_STARTED.md)。
-
-## 在 AI 编码代理中使用
-
-`skills/lanhu-design-fidelity/` 是一个可安装的 Skill（当前 3.0.0 候选版）。复制到代理的 skills 目录（例如 `$CODEX_HOME/skills/`）后，代理会按 `SKILL.md` 推进流程，并根据每条命令返回的 `next_action` 决定下一步。
+`skills/lanhu-design-fidelity/` 是可安装的 Skill（当前 3.0.0 候选版），AI 代理会按 `SKILL.md` 推进流程，并根据每条命令返回的 `next_action` 决定下一步。
 
 ## 仓库结构
 
@@ -71,9 +61,12 @@ cp -R skills/lanhu-design-fidelity/assets/flutter/lanhu_fidelity <app>/packages/
 | `android-design-review/` | 安卓设计验收台：真机或模拟器截图与设计稿对照、标注、AI 分析 |
 | `sketch-layerpilot/` | Sketch 插件：图层整理与切图辅助 |
 | `flutter_ui_components/`、`design_evidence/`、`tools/`、`validation/` | 方法研发阶段的实验页面、取证数据与复核记录 |
-| `docs/` | 安装说明、测试计划与用例、仓库布局建议、历史实验记录 |
+| `docs/DEVELOPER_GUIDE.md` | 研发使用指南 |
+| `docs/maintainers/` | 维护者资料：测试计划与用例、验证方法、测量口径、仓库布局、历史实验 |
 
-## 测试与验证
+## 维护者
+
+维护 Skill 或工具链时才需要完整克隆，安装方法见 [完整仓库安装](docs/GETTING_STARTED.md)。
 
 ```sh
 python3 -m unittest discover -s skills/lanhu-design-fidelity/tests
@@ -81,7 +74,7 @@ python3 -m unittest discover -s tests
 (cd skills/lanhu-design-fidelity/assets/flutter/lanhu_fidelity && flutter test)
 ```
 
-验证方法和升级标准见 [测试计划](docs/SKILL_3_TEST_PLAN.md) 与 [测试用例](docs/SKILL_3_TEST_CASES.md)。3.0.0 已通过原语包和离线样例流水线验证，还没有经过独立模型在未调优页面上的泛化验证，因此仍是候选版。
+验证方法与升级标准见 [测试计划](docs/maintainers/TEST_PLAN.md) 和 [测试用例](docs/maintainers/TEST_CASES.md)。3.0.0 已通过原语包和离线样例流水线验证，还没有经过独立模型在未调优页面上的泛化验证，因此仍是候选版。
 
 ## 已知限制
 
@@ -89,12 +82,12 @@ python3 -m unittest discover -s tests
 - 生成的布局是带响应式锚定的绝对定位；会随数据变化的区域需要用 override 改写成 Row/Column。
 - 只支持线性渐变；径向/角度渐变、旋转、自由路径的负 spread 会在生成报告中标为 unsupported。
 - Widget test 渲染与真机、Web 渲染器之间存在字形差异，像素基线不能跨渲染器混用。
+- iOS 灵动岛机型与 Android 的安全区、矮屏高度尚未自动适配，临时处理方法见研发使用指南。
 
 ## 相关文档
 
-- [安装与运行说明](docs/GETTING_STARTED.md)
-- [安装验证记录](docs/VERIFICATION.md)
-- [仓库布局与大文件建议](docs/REPO_LAYOUT.md)
-- [历史实验记录](docs/EXPERIMENT_LOG.md)
+- [研发使用指南](docs/DEVELOPER_GUIDE.md)
+- [完整仓库安装（维护者 / 安卓验收台）](docs/GETTING_STARTED.md)
+- [维护者资料](docs/maintainers/)
 
 凭据、Cookie、设备数据和本机构建产物都不会入库。字体需要使用者自行提供有合法使用权的文件。

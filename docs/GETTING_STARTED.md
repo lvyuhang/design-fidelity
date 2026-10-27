@@ -1,4 +1,6 @@
-# 首次接入（macOS）
+# 完整仓库安装（维护者 / 安卓验收台）
+
+> 只在 App 中还原页面的研发同学请看 [研发使用指南](DEVELOPER_GUIDE.md)，不需要本文的完整安装。
 
 ## 运行前
 
@@ -59,7 +61,7 @@ cp -R skills/lanhu-design-fidelity/assets/flutter/lanhu_fidelity <app>/packages/
 
 ## 更新与验证
 
-MCP 安装使用 `constraints-mcp.txt` 冻结本次验证过的依赖版本。每次安装另将实际解析结果存于本机 `.local/python-resolved.txt`。安装验证范围及结果见 [验证记录](VERIFICATION.md)。
+MCP 安装使用 `constraints-mcp.txt` 冻结本次验证过的依赖版本。每次安装另将实际解析结果存于本机 `.local/python-resolved.txt`。安装验证范围及结果见 [验证记录](maintainers/INSTALL_VERIFICATION.md)。
 
 更新源码后，重新运行 setup 安装缺失依赖；`project.py start flutter --build` 重新构建。`verify --render` 比较的是打包实现基线，不能代替新设计页面的 Skill 验收。离线样例和代码的测试结果不代表蓝湖、设备、模型已连通。
 
