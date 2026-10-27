@@ -93,10 +93,16 @@ def next_action(event=None, details=None):
             elif outcome == 'OK' and state == 'PREPARED_FOR_REVIEW':
                 code, action, instruction = ('REVIEW_SOURCE', 'inspect --view components',
                     '读取并复核组件证据后实施；准备完成不代表验收通过。')
+        elif current == 'spec' and outcome == 'OK':
+            code, action, instruction = ('ACCEPT', 'accept --build',
+                '草拟契约已能编译：复核 auto 检测器、局部效果区域与阈值后执行 accept；编译不是视觉验收。')
+        elif current == 'spec':
+            code, action, instruction = ('REVIEW_SPEC', 'read_report',
+                '按 spec-draft.json 的 compile_error / needs_detector / unbound_obligations 补齐后再 spec。')
         elif current == 'generate' and outcome == 'OK':
             code, action, instruction = ('IMPLEMENT_SEMANTICS', 'phase --phase implementation',
                 '页面组合生成的 Scene：用 overrides 替换需要组件化/动态数据的组，用 onTap 接交互；'
-                '不改 .g.dart。处理 unsupported 与 issues，把 draft_node_decisions 复核后写入 reviewed spec。')
+                '不改 .g.dart。处理 unsupported 与 issues 后执行 spec 生成可编译的 reviewed spec。')
         elif current == 'compile' and outcome == 'OK' and state == 'ready':
             code, action, instruction = ('VALIDATE', 'validate',
                 '用冻结契约验证当前实现；编译完成不代表视觉通过。')
@@ -150,6 +156,9 @@ def compact_result(data, root, event=None):
                 ('status','source_nodes','asset_count','issue_counts','review_count','brief',
                  'missing_bitmap_count','text_style_group_count','major_frame_count','error') if k in details}
             details = {**details, 'generate_configured': bool(data.get('generate_configured'))}
+        elif event['action'] == 'spec':
+            result['spec'] = {k: details.get(k) for k in ('status', 'compile_error', 'auto_regions',
+                              'effect_regions', 'auto_relations', 'needs_detector', 'unbound_obligations')}
         elif event['action'] == 'generate':
             result['generation'] = {k:details.get(k) for k in ('status','mode_counts','output')}
             result['generation'].update(
@@ -202,7 +211,7 @@ def require_prepared_sources(data, config, config_dir):
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--config', type=Path, required=True)
-    p.add_argument('action', choices=['start','phase','prepare','generate','inspect','compile','validate','accept','status','finish','stop'])
+    p.add_argument('action', choices=['start','phase','prepare','generate','spec','inspect','compile','validate','accept','status','finish','stop'])
     p.add_argument('--view', choices=['overview','components','text','visual','assets','scenes','effects','issues','nodes'], default='overview')
     p.add_argument('--component', action='append', help='Source group ID/alias; repeat for flat siblings; all selects the page')
     p.add_argument('--file', type=Path, help='Saved JSON path, relative to config')
@@ -405,8 +414,36 @@ def main():
                     evidence = [v for entry in c['evidence'] for v in ('--evidence', (config.parent/entry).resolve())]
                     invoke('generate_flutter.py', [*evidence, '--plan', plan, '--class-name', c['class_name'],
                         '--output', target, '--report', event['report'], '--app-root', path('app'),
+                        '--render-test', path('app')/c['test'], '--output-env', c['output_env'],
                         *(['--asset-dir', c['asset_dir']] if c.get('asset_dir') else []),
                         *(['--font-map', path('font_map')] if c.get('font_map') else [])])
+                elif args.action == 'spec':
+                    generated = [e for e in data['events'] if e['action'] == 'generate' and e.get('status') == 'OK']
+                    if not generated:
+                        raise ValueError('spec drafts from the generated scene; run generate first')
+                    require_prepared_sources(data, c, config.parent)
+                    prepared = Path(next(e for e in reversed(data['events'])
+                                         if e['action'] == 'prepare' and e.get('status') == 'OK')['report']).parent
+                    event['report'] = str(output/'spec-draft.json')
+                    output.mkdir(parents=True, exist_ok=True)
+                    inputs = [path('app')/c['test'], *(config.parent/p for p in c.get('page_inputs', []))]
+                    harness = path('app')/Path(c['test']).parent/'support'/'fidelity_render_harness.dart'
+                    if harness.exists():
+                        inputs.append(harness)
+                    command = [data.get('python', sys.executable), str(SCRIPTS/'draft_spec.py'),
+                               '--draft', str(prepared/'draft.json'), '--codegen', generated[-1]['report'],
+                               '--plan', str(prepared/'page-plan.json'), '--app', str(path('app')),
+                               '--output', str(path('spec')),
+                               '--renderer-version', str(c.get('renderer_version', '')),
+                               '--platform', str(c.get('platform', ''))]
+                    for item in inputs:
+                        command += ['--input', str(item)]
+                    run = subprocess.run(command, cwd=config.parent, capture_output=True, text=True, timeout=300)
+                    (output/'spec-draft.json').write_text(run.stdout.strip().splitlines()[-1] if run.stdout.strip() else
+                                                       json.dumps({'status': 'ERROR', 'compile_error': run.stderr[-2000:]}))
+                    event.setdefault('commands', []).append({'argv': command, 'returncode': run.returncode})
+                    if run.returncode:
+                        raise ValueError(f'Spec drafted but needs review; see {output/"spec-draft.json"}')
                 elif args.action == 'compile':
                     event['report'] = str(path('contract'))
                     invoke('compile_contract.py', ['--spec',path('spec'),'--output',path('contract')])

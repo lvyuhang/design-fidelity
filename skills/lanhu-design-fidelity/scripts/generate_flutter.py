@@ -473,7 +473,7 @@ class Generator:
             return self.text(key), {'text': True, 'raw': raw}
         if node.get('node_type') == 'bitmap':
             self.record(key, 'missing_asset_placeholder', reason='bitmap without exported original')
-            return Call('SourcePlaceholder', nodeId=key), hints
+            return self.placeholder(key), hints
         shape, kind = self.shape_of(key)
         paint = self.paint_of(key)
         if shape is None:
@@ -482,7 +482,7 @@ class Generator:
                 self.issues.append({'kind': 'asset_not_installed', 'node_id': key})
             else:
                 self.record(key, 'missing_asset_placeholder', reason='no complete source geometry')
-            return Call('SourcePlaceholder', nodeId=key), hints
+            return self.placeholder(key), hints
         if not (paint['fills'] or paint['borders'] or paint['shadows']):
             self.record(key, 'no_visible_paint')
             return None, hints
@@ -494,6 +494,19 @@ class Generator:
         widget = self.effects(key, box, shape)
         self.record(key, 'native_exact', primitive='SourceBox', shape=kind)
         return widget, hints
+
+    def placeholder(self, key: str) -> Any:
+        """Missing content only: borders, shadows, opacity and blur stay."""
+        paint = self.paint_of(key)
+        widget: Any = Call('SourcePlaceholder', nodeId=key)
+        if paint['borders'] or paint['shadows']:
+            box = Call('SourceBox', borders=DList(paint['borders']) if paint['borders'] else None,
+                       shadows=DList(paint['shadows']) if paint['shadows'] else None)
+            widget = Call('Stack', children=DList([Call('Positioned.fill', child=box),
+                                                   Call('Positioned.fill', child=widget)], 'Widget'))
+        if paint['opacity'] < 1:
+            widget = Call('Opacity', opacity=paint['opacity'], child=widget)
+        return self.effects(key, widget, None)
 
     def effects(self, key: str, widget: Any, shape: Any) -> Any:
         raw = self.nodes[key].get('raw_style') or {}
@@ -646,7 +659,10 @@ class Generator:
             clipped = Call('ClipPath', clipper=Call('SourceShapeClipper', shape),
                            child=Call('Stack', clipBehavior=Raw('Clip.none', True),
                                       children=DList(inner, 'Widget')))
-        self.record(mask, 'native_exact', primitive='mask', shape=kind, masks=members)
+        if mask in self.records:
+            self.records[mask]['masks'] = members
+        else:
+            self.record(mask, 'native_exact', primitive='mask', shape=kind, masks=members)
         px, py, _, _ = parent_rect
         return [Call('Positioned', left=mx - px, top=my - py, width=mw, height=mh, child=clipped)]
 
@@ -865,9 +881,63 @@ class Generator:
         }
 
 
+HARNESS = Path(__file__).resolve().parents[1] / 'assets' / 'flutter_render_harness.dart'
+
+
+def write_render_test(path: Path, app_root: Path | None, output: Path, class_name: str,
+                      scale: float, output_env: str) -> dict:
+    """Create the page render test once (it is project code, never overwritten)."""
+    from scene_test_codegen import page_import
+    result = {'path': str(path), 'created': False}
+    harness = path.parent / 'support' / 'fidelity_render_harness.dart'
+    if not harness.exists():
+        harness.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(HARNESS, harness)
+        result['harness_installed'] = str(harness)
+    if path.exists():
+        return result
+    page = page_import(app_root, output, path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(f"""import 'package:flutter_test/flutter_test.dart';
+
+import '{page}';
+import 'support/fidelity_render_harness.dart';
+
+void main() {{
+  FidelityTestBinding();
+  setUpAll(loadDeclaredFidelityFonts);
+
+  testWidgets('{class_name} source canvas', (tester) async {{
+    // Render the production page. Replace the scene with the page widget that
+    // composes it (overrides/onTap) and pass appBuilder: your real app root.
+    const page = {class_name}Scene();
+    final output = fidelityOutputPath('{output_env}');
+    await captureFidelityPage(
+      tester,
+      page: page,
+      size: {class_name}Scene.designSize,
+      scale: {num(scale)},
+      imageAssets: {class_name}Assets.all,
+      output: output,
+    );
+    await captureResponsiveVariants(
+      tester,
+      page: page,
+      height: {class_name}Scene.designSize.height,
+      output: output,
+    );
+  }});
+}}
+""", encoding='utf-8')
+    result['created'] = True
+    return result
+
+
 def generate(evidence: list[Path], plan_path: Path | None, font_map_path: Path | None,
              class_name: str, output: Path, report_path: Path | None = None,
-             app_root: Path | None = None, asset_dir: str | None = None) -> dict:
+             app_root: Path | None = None, asset_dir: str | None = None,
+             scene_test: Path | None = None, render_test: Path | None = None,
+             output_env: str | None = None) -> dict:
     if not re.fullmatch(r'[A-Z][A-Za-z0-9]*', class_name):
         raise ValueError('class name must be UpperCamelCase')
     documents = [read_json(p) for p in evidence]
@@ -890,6 +960,16 @@ def generate(evidence: list[Path], plan_path: Path | None, font_map_path: Path |
     generator = Generator(nodes, documents, plan, font_map, class_name, app_root,
                           asset_dir, implementation)
     dart, report = generator.generate()
+    if scene_test is None and app_root is not None:
+        stem = output.name[:-len('.g.dart')] if output.name.endswith('.g.dart') else output.stem
+        scene_test = app_root / 'test' / f'{stem}_scene_test.g.dart'
+    if scene_test is not None:
+        from scene_test_codegen import write_scene_test
+        report['scene_test'] = write_scene_test(generator, class_name, app_root, output, scene_test)
+    if render_test is not None:
+        report['render_test'] = write_render_test(render_test, app_root, output, class_name,
+                                                  float((plan or {}).get('render_scale') or 4),
+                                                  output_env or 'PAGE_RENDER_OUTPUT')
     if app_root is not None and asset_dir:
         for entry in report['assets']:
             target = (app_root / entry['flutter_asset']).resolve()
@@ -924,13 +1004,21 @@ def main() -> int:
     parser.add_argument('--report', type=Path)
     parser.add_argument('--app-root', type=Path, help='Flutter app root; enables asset install')
     parser.add_argument('--asset-dir', help='Asset directory relative to app root, e.g. assets/lanhu/withdraw_2')
+    parser.add_argument('--scene-test', type=Path, help='Scene obligation test (default app/test/<page>_scene_test.g.dart)')
+    parser.add_argument('--render-test', type=Path, help='Create this render test if missing (project-owned)')
+    parser.add_argument('--output-env', help='Environment variable the render test writes the PNG to')
     args = parser.parse_args()
     report = generate(args.evidence, args.plan, args.font_map, args.class_name, args.output,
-                      args.report, args.app_root, args.asset_dir)
+                      args.report, args.app_root, args.asset_dir, args.scene_test,
+                      args.render_test, args.output_env)
     summary = {k: report[k] for k in ('status', 'mode_counts', 'output', 'report')}
     summary['unsupported'] = len(report['unsupported'])
     summary['issues'] = len(report['issues'])
     summary['system_chrome'] = [c['kind'] for c in report['system_chrome']]
+    if report.get('scene_test'):
+        obligations = report['scene_test']['obligations']
+        summary['scene_obligations'] = {'bound': sum(o['status'] == 'bound' for o in obligations),
+                                        'unsupported': [o['id'] for o in obligations if o['status'] != 'bound']}
     if report['assets'] and not args.asset_dir:
         summary['next_action'] = 'pass --app-root/--asset-dir to install assets and declare them in pubspec.yaml'
     print(json.dumps(summary, ensure_ascii=False))

@@ -21,6 +21,7 @@ from pathlib import Path
 from typing import Any
 
 from exclusion_masks import build_keep_mask
+from geometry_probe import compare_geometry, geometry_path, responsive_report
 
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
@@ -340,6 +341,34 @@ def _status_cell(passed: bool) -> str:
     return f'<strong style="color:{color}">{label}</strong>'
 
 
+def _verify_sidecar(path: Path, receipt_path: Path | None, diagnostic: bool) -> None:
+    """A geometry sidecar counts only if the receipt recorded these exact bytes."""
+    if diagnostic or receipt_path is None or not path.is_file():
+        return
+    recorded = read_json(receipt_path).get('sidecars', {})
+    if recorded.get(path.name) != sha256(path):
+        raise ValueError(f'{path.name} is not bound to the render receipt; re-render')
+
+
+def _geometry_html(candidate: dict[str, Any]) -> str:
+    parts = []
+    probe = candidate.get("geometry")
+    if probe:
+        rows = "".join(
+            f"<tr><td>{html.escape(item['label'])}</td><td>{html.escape(', '.join(item['failures']))}</td></tr>"
+            for item in probe["failures"])
+        parts.append(f"<h3>节点几何门禁（{probe['checked']} 个节点）· {_status_cell(probe['passed'])}</h3>"
+                     f"<table><tr><th>节点</th><th>偏差</th></tr>{rows}</table>")
+    responsive = candidate.get("responsive")
+    if responsive:
+        rows = "".join(
+            f"<tr><td>{html.escape(str(item.get('variant', '')))}</td><td>{html.escape(item['kind'])}</td>"
+            f"<td>{html.escape(item['message'])}</td></tr>" for item in responsive["findings"][:60])
+        parts.append(f"<h3>多尺寸/字体缩放 · {_status_cell(responsive['passed'])}</h3>"
+                     f"<table><tr><th>变体</th><th>类型</th><th>说明</th></tr>{rows}</table>")
+    return "".join(parts)
+
+
 def _write_html(report: dict[str, Any], output: Path) -> None:
     candidates = []
     for candidate_id, candidate in report["candidates"].items():
@@ -386,7 +415,7 @@ def _write_html(report: dict[str, Any], output: Path) -> None:
             "<table><tr><th>关系</th><th>原稿差值</th><th>实现差值</th><th>偏差</th><th>结果</th></tr>"
             f"{relation_rows}</table><h3>颜色采样门禁</h3>"
             "<table><tr><th>采样</th><th>原稿 RGB</th><th>实现 RGB</th><th>最大通道偏差</th><th>结果</th></tr>"
-            f"{color_rows}</table></section>"
+            f"{color_rows}</table>{_geometry_html(candidate)}</section>"
         )
     document = f"""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
 <title>视觉还原门禁报告</title><style>
@@ -607,6 +636,36 @@ def main() -> int:
             if spec.get("blocking", True) and not passed:
                 candidate_result["passed"] = False
 
+        if contract.get('geometry_probe') == 'v1':
+            probe_file = geometry_path(candidate_path)
+            _verify_sidecar(probe_file, receipts.get(candidate_id), args.diagnostic)
+            if not probe_file.is_file():
+                probe = {'passed': False, 'checked': 0, 'checks': [], 'failures': [{
+                    'node_id': None, 'label': 'geometry probe',
+                    'failures': [f'missing {probe_file.name}: render with the fidelity harness '
+                                 'and key widgets with sourceKey(node_id)']}]}
+            else:
+                probe = compare_geometry(nodes, contract.get('node_decisions', {}),
+                                         json.loads(probe_file.read_text()))
+            candidate_result['geometry'] = probe
+            if not probe['passed']:
+                candidate_result['passed'] = False
+        responsive = contract.get('responsive_check')
+        if isinstance(responsive, dict):
+            variant_file = geometry_path(candidate_path, 'variants')
+            _verify_sidecar(variant_file, receipts.get(candidate_id), args.diagnostic)
+            if not variant_file.is_file():
+                report_r = {'passed': False, 'counts': {}, 'findings': [{
+                    'kind': 'missing', 'message': f'missing {variant_file.name}: call '
+                    'captureResponsiveVariants in the render test'}]}
+            else:
+                report_r = responsive_report(nodes, json.loads(variant_file.read_text()),
+                                             contract['canvas'][0],
+                                             tuple(responsive.get('blocking', ('exceptions', 'horizontal_overflow'))))
+            candidate_result['responsive'] = report_r
+            if not report_r['passed']:
+                candidate_result['passed'] = False
+
         overlay_name = f"{safe_id}-alignment-overlay.png"
         _draw_overlay(
             candidate_pil, reference_features, measured_features, scale,
@@ -634,7 +693,8 @@ def main() -> int:
             not item["passed"]
             for category in ("regions", "features", "relations", "colors")
             for item in result[category].values()
-        )
+        ) + len(result.get("geometry", {}).get("failures", [])) + (
+            0 if result.get("responsive", {}).get("passed", True) else 1)
         print(f"{candidate_id}: {'PASS' if result['passed'] else 'FAIL'} ({failures} failed checks)")
     print(f"JSON: {report_path}")
     print(f"HTML: {args.output_dir / 'visual-gate-report.html'}")

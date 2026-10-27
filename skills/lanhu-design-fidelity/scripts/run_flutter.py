@@ -99,6 +99,14 @@ def main():
              'failures': value.get('failures'), 'error': value.get('error')}
             for group in ('regions', 'features', 'relations', 'colors')
             for key, value in candidate.get(group, {}).items() if not value.get('passed')]
+        report['failures'] += [
+            {'check': f"geometry.{item['node_id']}", 'label': item['label'], 'failures': item['failures']}
+            for item in candidate.get('geometry', {}).get('failures', [])]
+        if not candidate.get('responsive', {}).get('passed', True):
+            report['failures'].append({'check': 'responsive', 'label': 'multi-size layout',
+                                       'failures': [f"{f['kind']}: {f['message']}" for f in
+                                                    candidate['responsive']['findings']
+                                                    if f['kind'] in (*candidate['responsive'].get('blocking', []), 'missing')][:10]})
         report['metrics'] = {key: value['metrics'] for key,value in candidate.get('regions', {}).items()}
         if gate_code or not gate.get('passed'):
             raise ValueError(gate.get('reason') or f'Visual gate failed; see {out / "gate/visual-gate-report.json"}')

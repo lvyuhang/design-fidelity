@@ -92,6 +92,18 @@ def compile_spec(spec, base):
         raise ValueError('dart_lint must be "v1" or "off"')
     if lint_profile == 'off' and not str(c.get('dart_lint_reason', '')).strip():
         raise ValueError('dart_lint "off" requires dart_lint_reason')
+    # Node geometry from sourceKey widgets, and layout at other sizes/text scales.
+    probe = c.setdefault('geometry_probe', 'v1')
+    if probe not in ('v1', 'off') or (probe == 'off' and not str(c.get('geometry_probe_reason', '')).strip()):
+        raise ValueError('geometry_probe must be "v1", or "off" with geometry_probe_reason')
+    responsive = c.setdefault('responsive_check', {'widths': [360, 414], 'text_scales': [1.0, 1.3],
+                                                   'blocking': ['exceptions', 'horizontal_overflow']})
+    if responsive == 'off':
+        if not str(c.get('responsive_check_reason', '')).strip():
+            raise ValueError('responsive_check "off" requires responsive_check_reason')
+    elif not isinstance(responsive, dict) or not set(responsive.get('blocking', [])) <= {
+            'exceptions', 'horizontal_overflow', 'text_overlap'}:
+        raise ValueError('responsive_check.blocking accepts exceptions, horizontal_overflow, text_overlap')
     auto = c.pop("auto_effect_samples", None)
     if auto is not None:
         add_sample_drafts(c, nodes, auto["max_channel_delta"])

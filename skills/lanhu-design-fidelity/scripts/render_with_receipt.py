@@ -36,6 +36,11 @@ def main():
     if candidate in protected or receipt_path in protected:
         raise ValueError('Output would overwrite an input')
     previous = candidate.stat() if candidate.exists() else None
+    # Geometry/variant sidecars from an earlier render must never be reused.
+    sidecars = [candidate.with_name(candidate.name + f'.{kind}.json') for kind in ('geometry', 'variants')]
+    for sidecar in sidecars:
+        if sidecar.exists():
+            sidecar.unlink()
     receipt_path.parent.mkdir(parents=True, exist_ok=True)
     receipt_path.write_text(json.dumps({'status': 'NOT_EVALUATED', 'reason': 'Render in progress'}))
     started = time.time_ns()
@@ -59,6 +64,7 @@ def main():
                'candidate_sha256': sha256(candidate), 'environment': c['environment'],
                'inputs': before, 'command': command, 'cwd': str(args.cwd.resolve()),
                'exit_code': 0, 'scene_checks':scene_results,
+               'sidecars': {p.name: sha256(p) for p in sidecars if p.is_file()},
                'started_ns': started, 'finished_ns': time.time_ns()}
     receipt_path.parent.mkdir(parents=True, exist_ok=True)
     receipt_path.write_text(json.dumps(receipt, ensure_ascii=False, indent=2, allow_nan=False)+'\n')

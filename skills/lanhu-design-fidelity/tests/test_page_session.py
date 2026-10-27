@@ -146,6 +146,10 @@ class PageSessionTests(unittest.TestCase):
 
     def test_accept_compiles_then_validates_in_one_logged_action(self):
         spec={k:v for k,v in self.f.c.items() if k not in ('coverage','status','pinned_files')}
+        # The fixture renders with Python, not the Flutter harness, so it has no
+        # sourceKey geometry; the opt-out must carry a reason.
+        spec.update(geometry_probe='off', geometry_probe_reason='synthetic Python renderer',
+                    responsive_check='off', responsive_check_reason='synthetic Python renderer')
         (self.f.root/'spec.json').write_text(json.dumps(spec))
         self.c.update(spec='spec.json',contract='accepted.json')
         self.config.write_text(json.dumps(self.c))
