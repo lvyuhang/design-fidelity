@@ -28,7 +28,7 @@ python3 project.py start flutter
 
 ## 仓库范围与历史记录
 
-本仓库保存 Flutter 还原实验、蓝湖取证与测量工具、Sketch 插件、安卓验收台源码和 Skill。下文保留历次实验记录（基于 Skill 2.x），历史结论不代表当前页面已通过完整视觉验收。`validation/` 中只跟踪独立重跑的复核记录，其余实验工作目录不入库。仓库拆分与大文件处理建议见 [docs/REPO_LAYOUT.md](docs/REPO_LAYOUT.md)。
+本仓库保存 Flutter 还原实验、蓝湖取证与测量工具、Sketch 插件、安卓验收台源码和 Skill。下文保留历次实验记录（基于 Skill 2.x），历史结论不代表当前页面已通过完整视觉验收。`validation/` 中只跟踪独立重跑的复核记录，其余实验工作目录不入库。仓库拆分与大文件处理建议见 [docs/REPO_LAYOUT.md](docs/REPO_LAYOUT.md)，3.0.0 的测试说明与评估标准见 [docs/SKILL_3_TEST_PLAN.md](docs/SKILL_3_TEST_PLAN.md)。
 
 - `flutter_ui_components/`：Flutter 组件、页面、原始图形资源及测试；最新案例为 `?case=withdraw-2-skill2186`。
 - `skills/lanhu-design-fidelity/`：与本次实际使用版本同步的可安装 Skill。
