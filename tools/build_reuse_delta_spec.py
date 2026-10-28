@@ -15,7 +15,7 @@ from pathlib import Path
 
 from PIL import Image, ImageChops
 
-SKILL_SCRIPTS = Path("/Users/tan/.codex/skills/lanhu-design-fidelity/scripts")
+SKILL_SCRIPTS = Path("/Users/tan/.codex/skills/design-fidelity/scripts")
 sys.path.insert(0, str(SKILL_SCRIPTS))
 
 from fidelity_contract import inventory  # noqa: E402

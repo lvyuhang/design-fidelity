@@ -7,7 +7,7 @@
 ## 特性
 
 - **确定性代码生成**：从蓝湖 MCP 节点直接生成 Flutter 首版，包含颜色与文字 token、导出素材、遮罩、模糊、渐变和稳定的节点 key。同一输入总是生成相同的输出。
-- **已验证的渲染原语**（`lanhu_fidelity` Dart 包）：内/中/外描边、不染色的外阴影与内阴影、整层透明度、背景模糊、按导出框放置素材、缺图占位。每个机制都有正反例像素测试。
+- **已验证的渲染原语**（`design_fidelity` Dart 包）：内/中/外描边、不染色的外阴影与内阴影、整层透明度、背景模糊、按导出框放置素材、缺图占位。每个机制都有正反例像素测试。
 - **系统 chrome 识别**：设计稿中的状态栏和 Home Indicator 只占位、不绘制，在门禁中按源坐标排除并如实披露。
 - **自动验收契约**：检测器、对齐关系、效果区域和 scene 测试自动生成，契约无需手写即可编译。
 - **多层门禁**：Dart lint（拦截框架图标、硬编码颜色、裸阴影等）→ scene 测试 → 区域像素与特征 → 逐节点几何 → iPhone/Android 五种屏幕与安全区、1.3 倍字体检查。每次渲染都有收据，阈值冻结后不能修改。
@@ -42,20 +42,20 @@ Widget build(BuildContext context) => CheckoutScene(
 
 ```sh
 git clone --filter=blob:none --sparse https://github.com/lvyuhang/lanhu-flutter-fidelity.git ~/lanhu-flutter-fidelity
-cd ~/lanhu-flutter-fidelity && git sparse-checkout set skills/lanhu-design-fidelity integrations
+cd ~/lanhu-flutter-fidelity && git sparse-checkout set skills/design-fidelity integrations
 ./setup.command --profile skill                       # Skill 依赖 + 蓝湖 MCP
-python3 skills/lanhu-design-fidelity/scripts/install_app.py skill --target ~/.codex/skills
-python3 skills/lanhu-design-fidelity/scripts/install_app.py init --app /path/to/your_app \
+python3 skills/design-fidelity/scripts/install_app.py skill --target ~/.codex/skills
+python3 skills/design-fidelity/scripts/install_app.py init --app /path/to/your_app \
   --python ~/lanhu-flutter-fidelity/.venv/bin/python
 ```
 
-`skills/lanhu-design-fidelity/` 是可安装的 Skill（当前 3.0.0 候选版），AI 代理会按 `SKILL.md` 推进流程，并根据每条命令返回的 `next_action` 决定下一步。
+`skills/design-fidelity/` 是可安装的 Skill（当前 3.0.0 候选版），AI 代理会按 `SKILL.md` 推进流程，并根据每条命令返回的 `next_action` 决定下一步。
 
 ## 仓库结构
 
 | 路径 | 内容 |
 |---|---|
-| `skills/lanhu-design-fidelity/` | Skill：脚本（取证、生成、契约、门禁）、参考文档、`lanhu_fidelity` 原语包、render harness |
+| `skills/design-fidelity/` | Skill：脚本（取证、生成、契约、门禁）、参考文档、`design_fidelity` 原语包、render harness |
 | `integrations/lanhu-mcp/` | 扩展版蓝湖 MCP 服务（MIT，保留上游出处） |
 | `examples/withdraw-2/` | 离线样例：固定的设计快照、原稿与已校验素材 |
 | `android-design-review/` | 安卓设计验收台：真机或模拟器截图与设计稿对照、标注、AI 分析 |
@@ -69,9 +69,9 @@ python3 skills/lanhu-design-fidelity/scripts/install_app.py init --app /path/to/
 维护 Skill 或工具链时才需要完整克隆，安装方法见 [完整仓库安装](docs/GETTING_STARTED.md)。
 
 ```sh
-python3 -m unittest discover -s skills/lanhu-design-fidelity/tests
+python3 -m unittest discover -s skills/design-fidelity/tests
 python3 -m unittest discover -s tests
-(cd skills/lanhu-design-fidelity/assets/flutter/lanhu_fidelity && flutter test)
+(cd skills/design-fidelity/assets/flutter/design_fidelity && flutter test)
 ```
 
 验证方法与升级标准见 [测试计划](docs/maintainers/TEST_PLAN.md) 和 [测试用例](docs/maintainers/TEST_CASES.md)。3.0.0 已通过原语包和离线样例流水线验证，还没有经过独立模型在未调优页面上的泛化验证，因此仍是候选版。

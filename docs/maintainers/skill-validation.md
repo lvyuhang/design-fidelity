@@ -9,9 +9,9 @@
 - 每张新页面仍需原稿检测器自检、源覆盖检查和本次真实渲染验收。算法已通过测试不等于当前 ROI、颜色分割或遮挡判断必然有效。
 
 ```sh
-python -m unittest discover -s /path/to/lanhu-design-fidelity/tests -v
-# 生成的 Dart 语法检查：装有 dart 时自动使用，或用 LANHU_DART_SYNTAX 指向任一语法检查器
-(cd /path/to/lanhu-design-fidelity/assets/flutter/lanhu_fidelity && flutter test)
+python -m unittest discover -s /path/to/design-fidelity/tests -v
+# 生成的 Dart 语法检查：装有 dart 时自动使用，或用 FIDELITY_DART_SYNTAX 指向任一语法检查器
+(cd /path/to/design-fidelity/assets/flutter/design_fidelity && flutter test)
 ```
 
 `tests/test_pipeline_e2e.py` 在仓库示例存在时，验证离线快照无需手工编辑即可走到冻结契约；单独分发 Skill 时自动跳过。

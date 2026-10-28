@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CASE = ROOT / 'design_evidence/message-backup-34/optimized-v1'
 APP = ROOT / 'flutter_ui_components'
-SKILL = Path('/Users/tan/.codex/skills/lanhu-design-fidelity')
+SKILL = Path('/Users/tan/.codex/skills/design-fidelity')
 PYTHON = ROOT / '.venv-fidelity/bin/python'
 RUN_ID = datetime.now().strftime('%Y%m%d-%H%M%S')
 RUN = CASE / 'runs' / RUN_ID

@@ -70,7 +70,7 @@ class OnboardingTests(unittest.TestCase):
 
     def test_skill_version_is_consistent(self):
         import json, re
-        skill = re.search(r'version:\s*"([^"]+)"', (ROOT/'skills/lanhu-design-fidelity/SKILL.md').read_text()).group(1)
+        skill = re.search(r'version:\s*"([^"]+)"', (ROOT/'skills/design-fidelity/SKILL.md').read_text()).group(1)
         self.assertEqual(json.loads((ROOT/'toolchain.json').read_text())['skill'], skill)
         for name in ['README.md', 'docs/GETTING_STARTED.md']:
             self.assertIn(skill, (ROOT/name).read_text(), name)

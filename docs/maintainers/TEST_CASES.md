@@ -11,8 +11,8 @@
 **通用前置条件**：
 
 - 分支 `fidelity-codegen-primitives`；记录 `git rev-parse HEAD`。
-- macOS，Flutter 版本与 `toolchain.json` 一致，Python 3.11+ 已装 `skills/lanhu-design-fidelity/scripts/requirements.txt`。
-- 记 `SKILL=skills/lanhu-design-fidelity`；`page` 为 `python $SKILL/scripts/page_session.py --config page.json`。
+- macOS，Flutter 版本与 `toolchain.json` 一致，Python 3.11+ 已装 `skills/design-fidelity/scripts/requirements.txt`。
+- 记 `SKILL=skills/design-fidelity`；`page` 为 `python $SKILL/scripts/page_session.py --config page.json`。
 
 ---
 
@@ -22,9 +22,9 @@
 |---|---|---|---|---|
 | A-01 | Python 工具回归 | `python3 -m unittest discover -s $SKILL/tests` | 全部 OK；e2e 用例在仓库内必须执行。若有 1 项跳过，只能是 Dart 语法检查且 `dart` 不在 PATH | 终端末尾 3 行 |
 | A-02 | 仓库根目录回归 | `python3 -m unittest discover -s tests` | 7 项 OK，包括版本一致性和无用户名路径 | 终端输出 |
-| A-03 | 原语包静态检查 | 在 `$SKILL/assets/flutter/lanhu_fidelity` 执行 `flutter pub get && flutter analyze` | 0 error、0 warning | 终端输出 |
+| A-03 | 原语包静态检查 | 在 `$SKILL/assets/flutter/design_fidelity` 执行 `flutter pub get && flutter analyze` | 0 error、0 warning | 终端输出 |
 | A-04 | 原语行为 | 同目录执行 `flutter test --reporter expanded` | 全部通过，用例清单与下表 A-04 子项一致 | 完整输出 |
-| A-05 | 半径→sigma 只有一处 | `grep -rn "0.57735\|sigma" $SKILL/assets/flutter/lanhu_fidelity/lib` | 只在 `effects.dart` 中定义换算，其他文件只调用 `LanhuEffectMapping` | grep 输出 |
+| A-05 | 半径→sigma 只有一处 | `grep -rn "0.57735\|sigma" $SKILL/assets/flutter/design_fidelity/lib` | 只在 `effects.dart` 中定义换算，其他文件只调用 `FidelityEffectMapping` | grep 输出 |
 | A-06 NEG | 原语测试有辨识力 | 把 `source_box.dart` 中 `SourceBorderPosition.inside` 分支里的 `canvas.clipPath(outline);` 改为 `break;`，再跑 A-04 | `inside border stays within the fill frame` 失败 | 失败输出 |
 | A-07 NEG | 挖空测试有辨识力 | 删除 `_paintOuterShadow` 中的 `canvas.clipPath(...)`，再跑 A-04 | `is knocked out under a translucent fill` 失败 | 失败输出 |
 | A-08 NEG | 整层透明度测试有辨识力 | 把 `paint()` 里的 `grouped` 恒设为 `false`，再跑 A-04 | `layer opacity composites fill and border once` 失败 | 失败输出 |
@@ -65,7 +65,7 @@ A-04 必须出现并通过的用例：
 | B-11 | 运行汇总 | `page report` | 生成 `run/stage-report.md`；`blocking` 不含 `text_overlap`；每个几何失败都有节点名和偏差 | `stage-report.md` |
 | B-12 | 锚定边 | 在 B-11 的几何结果中查看"修改""提现""确认提现" | 若失败，偏差描述应分别是 `right edge`、`center edge`、`center edge`，不应是 `left edge` | 报告片段 |
 | B-14 | 平台适配 | 查看 `render.png.variants.json` 与 `withdraw_2.codegen.json` 的 `layout` | variants 含 iphone_se、iphone_15、iphone_15_pro_max、android_compact、android_large 各 1.0/1.3 两种；`layout.design_padding` 为 top 44 / bottom 34；确认提现按钮和文字在 `layout.footer` 中；iphone_se 变体 `scrollable: true` | 文件片段 |
-| B-15 | 字体不入包 | `install_app.py fonts --app .` 后检查 `pubspec.yaml` 与 `assets/` | 苹方只在 `~/.lanhu-fidelity/fonts/`；`pubspec.yaml` 未声明苹方；生成 token 中为 `sourceFontFamily(..., ios: SourceFonts.system ...)` | 命令输出、grep 结果 |
+| B-15 | 字体不入包 | `install_app.py fonts --app .` 后检查 `pubspec.yaml` 与 `assets/` | 苹方只在 `~/.design-fidelity/fonts/`；`pubspec.yaml` 未声明苹方；生成 token 中为 `sourceFontFamily(..., ios: SourceFonts.system ...)` | 命令输出、grep 结果 |
 | B-13 | 生成首版基线 | 把 B-11 的阻断项分类、观察项、几何失败逐条填入测试计划的"生成首版基线"表，并标注初步归属 | 每个阻断项都有归属 | 填好的表 |
 
 ---
@@ -80,7 +80,7 @@ A-04 必须出现并通过的用例：
 | N-02 | 页面文件中加 `Icon(Icons.chevron_right)` | lint L001 | preflight 失败，指出文件和行号 |
 | N-03 | 页面文件中加 `const Color(0xFF000000)` | lint L003 | 同上 |
 | N-04 | override 一个节点为 `DecoratedBox(decoration: BoxDecoration(boxShadow: [BoxShadow(blurRadius: 4)]))` | lint L005 | 同上 |
-| N-05 | 页面文件中加 `FittedBox(child: ...)`，并在上一行写 `// lanhu-lint: allow L009`（不写原因） | lint | 失败，提示例外必须写原因 |
+| N-05 | 页面文件中加 `FittedBox(child: ...)`，并在上一行写 `// fidelity-lint: allow L009`（不写原因） | lint | 失败，提示例外必须写原因 |
 | N-06 | 同 N-05，但写上原因 | lint | 通过；`page report` 的 `lint.suppressed` 列出这条例外和原因 |
 | N-07 | override 卡片节点 `68382E29-…` 为 `SourceBox(fills: [...])`（去掉内描边） | scene 测试 | 渲染阶段 scene 检查失败，指出该节点的 stroke 绑定 |
 | N-08 | override 标签"提现金额"为 `Padding(padding: EdgeInsets.only(top: 3), child: <原 SourceText>)` | 几何门禁（按文字段落测量） | 门禁 FAIL；该节点几何失败含 `top +3.00px` |
@@ -91,7 +91,7 @@ A-04 必须出现并通过的用例：
 | N-13 | 页面文件中写一段 `Text('超长文案超长文案超长文案超长文案超长文案超长文案超长文案', softWrap: false)` 并放在 Row 中撑出屏幕 | lint L013 先拦；加有原因的例外后由多尺寸检查拦截 | 先 lint 失败；加例外后门禁 FAIL，`responsive` 报 `horizontal_overflow` 或 `exceptions` |
 | N-14 | 删除 render 测试中的 `captureResponsiveVariants(...)` 调用 | 多尺寸门禁 | 门禁 FAIL，提示缺少 `render.png.variants.json` |
 | N-15 | 在 render 测试的 `appBuilder` 中用 `SafeArea` 包住页面 | 多尺寸门禁 | 门禁 FAIL，报 `under_status_bar` 或几何偏移（安全区被重复扣除） |
-| N-16 | render 测试中给 `captureResponsiveVariants` 传 `devices: [lanhuDefaultDevices.first]` | 机型覆盖 | 门禁 FAIL，`missing` 列出未渲染的机型 |
+| N-16 | render 测试中给 `captureResponsiveVariants` 传 `devices: [fidelityDefaultDevices.first]` | 机型覆盖 | 门禁 FAIL，`missing` 列出未渲染的机型 |
 | N-17 | 去掉 render 测试中 `captureFidelityPage` 的 `padding:` 参数 | 节点几何 | 几何失败，节点整体 `top -44.00px` |
 
 ---
@@ -110,7 +110,7 @@ A-04 必须出现并通过的用例：
 
 模型任务说明（逐字使用，不追加提示）：
 
-> 使用 `$lanhu-design-fidelity` 把蓝湖设计 `<设计链接>` 实现为 Flutter 页面，写入 `<app>` 并通过正式验收。按 Skill 的执行入口操作，最多 3 个正式验收轮次；不能通过时用 `page stop` 记录原因。
+> 使用 `$design-fidelity` 把蓝湖设计 `<设计链接>` 实现为 Flutter 页面，写入 `<app>` 并通过正式验收。按 Skill 的执行入口操作，最多 3 个正式验收轮次；不能通过时用 `page stop` 记录原因。
 
 ---
 

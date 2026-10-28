@@ -13,7 +13,7 @@
 ```sh
 git clone --filter=blob:none --sparse https://github.com/lvyuhang/lanhu-flutter-fidelity.git ~/lanhu-flutter-fidelity
 cd ~/lanhu-flutter-fidelity
-git sparse-checkout set skills/lanhu-design-fidelity integrations
+git sparse-checkout set skills/design-fidelity integrations
 ```
 
 这样不会下载样例页面、实验数据、安卓验收台等与日常开发无关的内容。
@@ -53,8 +53,8 @@ claude mcp add lanhu -- /bin/bash ~/lanhu-flutter-fidelity/integrations/run-lanh
 **5. 安装 Skill**
 
 ```sh
-python3 skills/lanhu-design-fidelity/scripts/install_app.py skill --target ~/.codex/skills    # Codex
-python3 skills/lanhu-design-fidelity/scripts/install_app.py skill --target ~/.claude/skills   # Claude Code
+python3 skills/design-fidelity/scripts/install_app.py skill --target ~/.codex/skills    # Codex
+python3 skills/design-fidelity/scripts/install_app.py skill --target ~/.claude/skills   # Claude Code
 ```
 
 安装的副本不包含测试和维护资料。工具更新后执行 `git pull` 再重新运行这一步即可，旧版本会自动备份。
@@ -64,26 +64,26 @@ python3 skills/lanhu-design-fidelity/scripts/install_app.py skill --target ~/.cl
 在 App 仓库根目录执行：
 
 ```sh
-python3 ~/lanhu-flutter-fidelity/skills/lanhu-design-fidelity/scripts/install_app.py init --app . \
+python3 ~/lanhu-flutter-fidelity/skills/design-fidelity/scripts/install_app.py init --app . \
   --python ~/lanhu-flutter-fidelity/.venv/bin/python
 flutter pub get
-(cd packages/lanhu_fidelity && flutter test)    # 确认渲染原语在当前 Flutter 版本下正常；升级 Flutter 后再跑一次
+(cd packages/design_fidelity && flutter test)    # 确认渲染原语在当前 Flutter 版本下正常；升级 Flutter 后再跑一次
 ```
 
 它会做三件事：
 
-- 把渲染原语包复制到 `packages/lanhu_fidelity`，并在 `pubspec.yaml` 中加入依赖；
+- 把渲染原语包复制到 `packages/design_fidelity`，并在 `pubspec.yaml` 中加入依赖；
 - 创建 `fidelity/` 工作区：`fidelity/page` 命令、`font-map.json`、`.gitignore`；
 - 写入本机路径到 `fidelity/.local.env`（已被忽略，不会提交）。
 
 **配置字体**：设计稿通常用苹方。在 App 根目录执行：
 
 ```sh
-python3 ~/lanhu-flutter-fidelity/skills/lanhu-design-fidelity/scripts/install_app.py fonts --app .
+python3 ~/lanhu-flutter-fidelity/skills/design-fidelity/scripts/install_app.py fonts --app .
 # Android 想用自带的授权字体时加：--android NotoSansSC（需在 pubspec.yaml 中声明该 family）
 ```
 
-它从本机 macOS 提取苹方到 `~/.lanhu-fidelity/fonts/`（在 App 仓库之外），并写入 `fidelity/font-map.json`。每个字体有两种用途：
+它从本机 macOS 提取苹方到 `~/.design-fidelity/fonts/`（在 App 仓库之外），并写入 `fidelity/font-map.json`。每个字体有两种用途：
 
 - **还原度检查**：测试时从磁盘加载苹方，和设计稿逐像素对比。字体文件**不会打进 App**；
 - **上线字体**：iOS 用系统字体（本身就是苹方）；Android 默认用系统中文字体，或者用 `--android` 指定的字体。
@@ -91,7 +91,7 @@ python3 ~/lanhu-flutter-fidelity/skills/lanhu-design-fidelity/scripts/install_ap
 苹方的授权通常只覆盖 Apple 平台，不要把它声明进 `pubspec.yaml`。设计稿还用了其他字体时，`prepare` 会报 `font_mapping_missing` 并列出 `字体名@字重`，按同样格式手动补到 `font-map.json`：
 
 ```json
-"DINAlternate-Bold@700": {"path": "~/.lanhu-fidelity/fonts/DINAlternate-Bold.ttf",
+"DINAlternate-Bold@700": {"path": "~/.design-fidelity/fonts/DINAlternate-Bold.ttf",
                           "runtime_family": "DesignDIN", "ios": null, "android": "AppNumber"}
 ```
 
@@ -104,12 +104,12 @@ python3 ~/lanhu-flutter-fidelity/skills/lanhu-design-fidelity/scripts/install_ap
 **1. 创建页面工作区**
 
 ```sh
-python3 ~/lanhu-flutter-fidelity/skills/lanhu-design-fidelity/scripts/install_app.py page --app . --name order_detail --title 订单详情
+python3 ~/lanhu-flutter-fidelity/skills/design-fidelity/scripts/install_app.py page --app . --name order_detail --title 订单详情
 ```
 
 **2. 把任务交给 AI**（照此填写即可）
 
-> 使用 `$lanhu-design-fidelity` 把蓝湖设计 `<设计链接>` 实现为订单详情页。页面配置在 `fidelity/order_detail/page.json`，命令用 `fidelity/page order_detail <命令>`，取证结果保存到 `fidelity/order_detail/evidence/`。业务要求：订单数据来自 `OrderRepository.detail(id)`；点击"确认收货"调用 `onConfirm`；页面文件写在 `lib/pages/order_detail_page.dart`。
+> 使用 `$design-fidelity` 把蓝湖设计 `<设计链接>` 实现为订单详情页。页面配置在 `fidelity/order_detail/page.json`，命令用 `fidelity/page order_detail <命令>`，取证结果保存到 `fidelity/order_detail/evidence/`。业务要求：订单数据来自 `OrderRepository.detail(id)`；点击"确认收货"调用 `onConfirm`；页面文件写在 `lib/pages/order_detail_page.dart`。
 
 AI 会依次执行：`start → 取证 → prepare → generate → 组合页面 → spec → accept`。其中代码和检查由工具生成，AI 主要负责组合页面、接入数据和修复失败项。
 
@@ -126,7 +126,7 @@ AI 会依次执行：`start → 取证 → prepare → generate → 组合页面
 
 | 报告里看到 | 含义 | 处理 |
 |---|---|---|
-| lint `L001`–`L013` | 页面代码用了会降低还原度的写法（框架图标、硬编码颜色、`BoxShadow`、`Text(` 等） | 改用 `<Page>Tokens` 和 `SourceText`、`SourceBox` 等原语；确需例外写 `// lanhu-lint: allow Lxxx 原因` |
+| lint `L001`–`L013` | 页面代码用了会降低还原度的写法（框架图标、硬编码颜色、`BoxShadow`、`Text(` 等） | 改用 `<Page>Tokens` 和 `SourceText`、`SourceBox` 等原语；确需例外写 `// fidelity-lint: allow Lxxx 原因` |
 | `L011` | 生成文件被改过 | 撤销改动，在页面代码里用 override 实现 |
 | 几何失败 `top +2.00px` 等 | 某个节点偏了 | 按偏差修布局；文字行高偏差先查字体映射 |
 | `horizontal_overflow` / `exceptions` | 窄屏或大字体下越界、报错 | 把该区域改成 Row/Column + Flexible，或允许换行 |
