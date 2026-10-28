@@ -61,7 +61,7 @@ class SceneTestWriter:
 
     # ---- source facts -------------------------------------------------------
     def borders(self, key):
-        from generate_flutter import BORDER_POSITION, enabled, parse_color
+        from scene_model import BORDER_POSITION, enabled, parse_color
         raw = self.g.nodes[key].get('raw_style') or {}
         result = []
         for border in enabled(raw.get('borders')):
@@ -76,7 +76,7 @@ class SceneTestWriter:
         return result
 
     def solid_fills(self, key):
-        from generate_flutter import enabled, parse_color
+        from scene_model import enabled, parse_color
         raw = self.g.nodes[key].get('raw_style') or {}
         fills = []
         for fill in enabled(raw.get('fills')):

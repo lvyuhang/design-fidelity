@@ -69,7 +69,7 @@ def strip_nodes(spec: dict, removed: set[str]) -> list[str]:
 
 def _solid_color(node: dict):
     """Opaque source fill/border colour of a small shape, if unambiguous."""
-    from generate_flutter import parse_color
+    from scene_model import parse_color
     raw = node.get('raw_style') or {}
     for field in ('fills', 'borders'):
         for paint in raw.get(field) or []:
