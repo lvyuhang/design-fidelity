@@ -11,8 +11,8 @@
 **通用前置条件**：
 
 - 分支 `fidelity-codegen-primitives`；记录 `git rev-parse HEAD`。
-- macOS，Flutter 版本与 `toolchain.json` 一致，Python 3.11+ 已装 `skills/lanhu-design-fidelity/scripts/requirements.txt`。
-- 记 `SKILL=skills/lanhu-design-fidelity`；`page` 为 `python $SKILL/scripts/page_session.py --config page.json`。
+- macOS，Flutter 版本与 `toolchain.json` 一致，Python 3.11+ 已装 `skills/design-fidelity/scripts/requirements.txt`。
+- 记 `SKILL=skills/design-fidelity`；`page` 为 `python $SKILL/scripts/page_session.py --config page.json`。
 
 ---
 
@@ -22,9 +22,9 @@
 |---|---|---|---|---|
 | A-01 | Python 工具回归 | `python3 -m unittest discover -s $SKILL/tests` | 全部 OK；e2e 用例在仓库内必须执行。若有 1 项跳过，只能是 Dart 语法检查且 `dart` 不在 PATH | 终端末尾 3 行 |
 | A-02 | 仓库根目录回归 | `python3 -m unittest discover -s tests` | 7 项 OK，包括版本一致性和无用户名路径 | 终端输出 |
-| A-03 | 原语包静态检查 | 在 `$SKILL/assets/flutter/lanhu_fidelity` 执行 `flutter pub get && flutter analyze` | 0 error、0 warning | 终端输出 |
+| A-03 | 原语包静态检查 | 在 `$SKILL/assets/flutter/design_fidelity` 执行 `flutter pub get && flutter analyze` | 0 error、0 warning | 终端输出 |
 | A-04 | 原语行为 | 同目录执行 `flutter test --reporter expanded` | 全部通过，用例清单与下表 A-04 子项一致 | 完整输出 |
-| A-05 | 半径→sigma 只有一处 | `grep -rn "0.57735\|sigma" $SKILL/assets/flutter/lanhu_fidelity/lib` | 只在 `effects.dart` 中定义换算，其他文件只调用 `LanhuEffectMapping` | grep 输出 |
+| A-05 | 半径→sigma 只有一处 | `grep -rn "0.57735\|sigma" $SKILL/assets/flutter/design_fidelity/lib` | 只在 `effects.dart` 中定义换算，其他文件只调用 `FidelityEffectMapping` | grep 输出 |
 | A-06 NEG | 原语测试有辨识力 | 把 `source_box.dart` 中 `SourceBorderPosition.inside` 分支里的 `canvas.clipPath(outline);` 改为 `break;`，再跑 A-04 | `inside border stays within the fill frame` 失败 | 失败输出 |
 | A-07 NEG | 挖空测试有辨识力 | 删除 `_paintOuterShadow` 中的 `canvas.clipPath(...)`，再跑 A-04 | `is knocked out under a translucent fill` 失败 | 失败输出 |
 | A-08 NEG | 整层透明度测试有辨识力 | 把 `paint()` 里的 `grouped` 恒设为 `false`，再跑 A-04 | `layer opacity composites fill and border once` 失败 | 失败输出 |
@@ -41,7 +41,10 @@ A-04 必须出现并通过的用例：
 | text metrics | line box equals the source line height；mixed runs keep the forced strut；ambient text styles do not leak |
 | assets and placeholders | asset is placed by its export frame, not squeezed；circle placeholder keeps the source outline |
 | blur | background blur smooths only inside its clip；saturation matrix is identity at 1 |
+| platform fonts | each platform resolves its production family；fidelity renders always use the design family |
 | structure | source keys expose node geometry；system chrome reserves source height without painting |
+
+A-04 还须新增并通过：blur 组 `background blur does not clip the layer shadow`（本版修复的问题）。
 
 ---
 
@@ -63,6 +66,8 @@ A-04 必须出现并通过的用例：
 | B-10 | 正式验收 | `page accept --note "生成首版" --build` | 执行到门禁，不出现 `NOT_EVALUATED`；产出 `render.png`、`render.png.geometry.json`、`render.png.variants.json`、`receipt.json`；收据的 `sidecars` 含两个 sidecar 的哈希 | `run/00x-accept/` 文件列表、收据片段 |
 | B-11 | 运行汇总 | `page report` | 生成 `run/stage-report.md`；`blocking` 不含 `text_overlap`；每个几何失败都有节点名和偏差 | `stage-report.md` |
 | B-12 | 锚定边 | 在 B-11 的几何结果中查看"修改""提现""确认提现" | 若失败，偏差描述应分别是 `right edge`、`center edge`、`center edge`，不应是 `left edge` | 报告片段 |
+| B-14 | 平台适配 | 查看 `render.png.variants.json` 与 `withdraw_2.codegen.json` 的 `layout` | variants 含 iphone_se、iphone_15、iphone_15_pro_max、android_compact、android_large 各 1.0/1.3 两种；`layout.design_padding` 为 top 44 / bottom 34；确认提现按钮和文字在 `layout.footer` 中；iphone_se 变体 `scrollable: true` | 文件片段 |
+| B-15 | 字体不入包 | `install_app.py fonts --app .` 后检查 `pubspec.yaml` 与 `assets/` | 苹方只在 `~/.design-fidelity/fonts/`；`pubspec.yaml` 未声明苹方；生成 token 中为 `sourceFontFamily(..., ios: SourceFonts.system ...)` | 命令输出、grep 结果 |
 | B-13 | 生成首版基线 | 把 B-11 的阻断项分类、观察项、几何失败逐条填入测试计划的"生成首版基线"表，并标注初步归属 | 每个阻断项都有归属 | 填好的表 |
 
 ---
@@ -77,7 +82,7 @@ A-04 必须出现并通过的用例：
 | N-02 | 页面文件中加 `Icon(Icons.chevron_right)` | lint L001 | preflight 失败，指出文件和行号 |
 | N-03 | 页面文件中加 `const Color(0xFF000000)` | lint L003 | 同上 |
 | N-04 | override 一个节点为 `DecoratedBox(decoration: BoxDecoration(boxShadow: [BoxShadow(blurRadius: 4)]))` | lint L005 | 同上 |
-| N-05 | 页面文件中加 `FittedBox(child: ...)`，并在上一行写 `// lanhu-lint: allow L009`（不写原因） | lint | 失败，提示例外必须写原因 |
+| N-05 | 页面文件中加 `FittedBox(child: ...)`，并在上一行写 `// fidelity-lint: allow L009`（不写原因） | lint | 失败，提示例外必须写原因 |
 | N-06 | 同 N-05，但写上原因 | lint | 通过；`page report` 的 `lint.suppressed` 列出这条例外和原因 |
 | N-07 | override 卡片节点 `68382E29-…` 为 `SourceBox(fills: [...])`（去掉内描边） | scene 测试 | 渲染阶段 scene 检查失败，指出该节点的 stroke 绑定 |
 | N-08 | override 标签"提现金额"为 `Padding(padding: EdgeInsets.only(top: 3), child: <原 SourceText>)` | 几何门禁（按文字段落测量） | 门禁 FAIL；该节点几何失败含 `top +3.00px` |
@@ -87,6 +92,9 @@ A-04 必须出现并通过的用例：
 | N-12 | 把 `Withdraw2Scene` 的某个文字 override 成带 `TextScaler.noScaling` 的组件 | lint L010 | preflight 失败 |
 | N-13 | 页面文件中写一段 `Text('超长文案超长文案超长文案超长文案超长文案超长文案超长文案', softWrap: false)` 并放在 Row 中撑出屏幕 | lint L013 先拦；加有原因的例外后由多尺寸检查拦截 | 先 lint 失败；加例外后门禁 FAIL，`responsive` 报 `horizontal_overflow` 或 `exceptions` |
 | N-14 | 删除 render 测试中的 `captureResponsiveVariants(...)` 调用 | 多尺寸门禁 | 门禁 FAIL，提示缺少 `render.png.variants.json` |
+| N-15 | 在 render 测试的 `appBuilder` 中用 `SafeArea` 包住页面 | 多尺寸门禁 | 门禁 FAIL，报 `under_status_bar` 或几何偏移（安全区被重复扣除） |
+| N-16 | render 测试中给 `captureResponsiveVariants` 传 `devices: [fidelityDefaultDevices.first]` | 机型覆盖 | 门禁 FAIL，`missing` 列出未渲染的机型 |
+| N-17 | 去掉 render 测试中 `captureFidelityPage` 的 `padding:` 参数 | 节点几何 | 几何失败，节点整体 `top -44.00px` |
 
 ---
 
@@ -104,7 +112,7 @@ A-04 必须出现并通过的用例：
 
 模型任务说明（逐字使用，不追加提示）：
 
-> 使用 `$lanhu-design-fidelity` 把蓝湖设计 `<设计链接>` 实现为 Flutter 页面，写入 `<app>` 并通过正式验收。按 Skill 的执行入口操作，最多 3 个正式验收轮次；不能通过时用 `page stop` 记录原因。
+> 使用 `$design-fidelity` 把蓝湖设计 `<设计链接>` 实现为 Flutter 页面，写入 `<app>` 并通过正式验收。按 Skill 的执行入口操作，最多 3 个正式验收轮次；不能通过时用 `page stop` 记录原因。
 
 ---
 
@@ -127,14 +135,54 @@ A-04 必须出现并通过的用例：
 
 ---
 
+## W. Web（React）目标
+
+前置条件：Node 20+，App 中 `npm install -D esbuild playwright && npx playwright install chromium`，或设置 `FIDELITY_NODE_PATH` 指向含 react、react-dom、esbuild、playwright 的 node_modules。
+
+| ID | 目的 | 步骤 | 预期结果 | 证据 |
+|---|---|---|---|---|
+| W-01 | 生成与浏览器渲染 | `python3 -m unittest $SKILL/tests/test_emit_react.py` | 11 项 OK，`test_chromium_render_geometry_and_scene_checks` 必须执行（不得跳过） | 终端输出 |
+| W-02 | 提现-2 走完 Web 门禁 | 用 `examples/withdraw-2` 建 `"target": "react"` 的 page.json，依次 `start → prepare → generate → spec → accept` | spec 编译；accept 中所有形状、渐变、阴影、模糊区域通过；剩余失败只能是字体度量（无苹方时）与 1.3 倍下的真实越界 | `stage-report.md` |
+| W-03 NEG | 场景义务有辨识力 | 在 App 的 `packages/design-fidelity-react/src/index.tsx` 把 `const out = position === 'inside' ? 0` 改为 `? t`，再运行 `node fidelity/<page>/support/fidelity_render_harness.cjs fidelity/<page>/render.tsx --scene fidelity/<page>/scene.g.json` | 内描边的 stroke 检查失败，提示 `border band must be painted at …` | 失败输出 |
+| W-04 NEG | Web lint | 在页面代码中加入 `style={{ boxShadow: '0 1px 2px #000' }}` | `W005`、`W003` 拦截 | lint 输出 |
+| W-05 NEG | 生成文件改动 | 手改 `.g.tsx` 任一数值后 accept | `W011 generated_file_edited` | run.json |
+
+## F. Figma 取证
+
+| ID | 目的 | 步骤 | 预期结果 | 证据 |
+|---|---|---|---|---|
+| F-01 | 离线换算 | `python3 -m unittest $SKILL/tests/test_figma_evidence.py` | 12 项 OK | 终端输出 |
+| F-02 | 真实文件取证 | 用自己的令牌对一个含卡片、渐变、阴影、图标、混排文字的画板执行 `figma_evidence.py --url … --out evidence` | `status: OK`、`schema_errors` 为空；`source_gaps` 中的每项都能在设计中找到对应效果 | 输出 JSON、`source.json` |
+| F-03 | 版本固定 | 修改设计后不带 `--version` 重新取证，再带上一次的 `resolved_version` 取证 | 前者 `resolved_version` 变化；后者与第一次一致 | 两次输出 |
+| F-04 | 令牌不落盘 | `grep -r figd_ fidelity/<page>/evidence` | 无结果 | grep 输出 |
+| F-05 | Figma 页面走完 Flutter 与 Web 门禁 | 对 F-02 的证据分别以 flutter、react 目标执行 B 组流程 | 两个目标的形状、阴影、渐变区域都通过；记录与 Figma 截图的差异项 | 两份 `stage-report.md` |
+
+## M. 原生目标（预览，研发机器上执行）
+
+| ID | 目的 | 步骤 | 预期结果 | 证据 |
+|---|---|---|---|---|
+| M-01 | Python 侧生成 | `python3 -m unittest $SKILL/tests/test_emit_native.py`（可设 `FIDELITY_KOTLIN_SYNTAX`、`FIDELITY_SWIFT_SYNTAX` 指向语法检查器） | 6 项 OK | 终端输出 |
+| M-02 | Compose 原语编译 | 在 Android 工程 include `design-fidelity` 模块后 `./gradlew :design-fidelity:assembleDebug` | 编译通过 | 构建输出 |
+| M-03 | Compose 场景义务 | `./gradlew :app:testDebugUnitTest --tests '*Withdraw2FidelitySceneTest'` | 除背景模糊外的义务全部通过 | 测试报告 |
+| M-04 | Compose 渲染与门禁 | `page accept`（target compose） | 产出 PNG 与 sidecar；与 Flutter 结果对照，差异仅限背景模糊与字体 | `stage-report.md` |
+| M-05 | SwiftUI 包编译 | Xcode 添加本地包 `DesignFidelity`，Debug 构建 | 编译通过（若出现 type-check 超时，记录文件与行号） | 构建输出 |
+| M-06 | SwiftUI 场景义务与渲染 | `xcodebuild test … -only-testing:<Tests>/Withdraw2FidelitySceneTests`，再 `page accept`（target swiftui） | 同 M-03、M-04 | 测试报告、`stage-report.md` |
+
+M 组全部通过后，才能去掉 Compose / SwiftUI 的"预览"标记。
+
+---
+
 ## 汇总与判定
 
 | 组 | 通过条件 |
 |---|---|
 | A | A-01 至 A-08 全部 PASS |
-| B | B-01 至 B-12 全部 PASS；B-13 完成填写（首版门禁不要求通过） |
-| N | N-01 至 N-14 全部 PASS。任一反向用例未被拦截，都要先修复对应关卡，再进入 C、D |
+| B | B-01 至 B-12、B-14、B-15 全部 PASS；B-13 完成填写（首版门禁不要求通过） |
+| N | N-01 至 N-17 全部 PASS。任一反向用例未被拦截，都要先修复对应关卡，再进入 C、D |
 | C | C-01 至 C-05 完成记录 |
 | D | 至少 2/3 的项目 D-x-03 至 D-x-06 全部满足；效率中位数达标或有瓶颈分析 |
+| W | W-01 至 W-05 全部 PASS |
+| F | F-01、F-03、F-04 PASS；F-02、F-05 完成记录 |
+| M | 预览目标转正前 M-01 至 M-06 全部 PASS |
 
 A、B、N 全部通过才能开始 C、D。A、B、N、D 全部满足后，才能把 Skill 升为成熟版。

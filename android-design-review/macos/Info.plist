@@ -6,7 +6,7 @@
     <key>CFBundleDisplayName</key><string>设计验收</string>
     <key>CFBundleExecutable</key><string>DesignReview</string>
     <key>CFBundleIconFile</key><string>DesignReview</string>
-    <key>CFBundleIdentifier</key><string>io.github.lanhu-fidelity.design-review</string>
+    <key>CFBundleIdentifier</key><string>io.github.design-fidelity.design-review</string>
     <key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
     <key>CFBundleName</key><string>设计验收</string>
     <key>CFBundlePackageType</key><string>APPL</string>

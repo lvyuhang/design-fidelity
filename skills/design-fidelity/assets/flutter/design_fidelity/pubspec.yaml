@@ -1,0 +1,23 @@
+name: design_fidelity
+description: >-
+  Verified rendering primitives for Lanhu/Sketch design data in Flutter:
+  text metrics, border positions, knocked-out shadows, inner shadows,
+  gradients, layer/background blur, export-frame assets and placeholders.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+  flutter: '>=3.27.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - test/assets/frame.png

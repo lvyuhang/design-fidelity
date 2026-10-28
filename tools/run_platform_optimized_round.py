@@ -5,7 +5,7 @@ import argparse, json, os, subprocess, sys, time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILL = Path('/Users/tan/.codex/skills/lanhu-design-fidelity/scripts')
+SKILL = Path('/Users/tan/.codex/skills/design-fidelity/scripts')
 sys.path.insert(0, str(SKILL))
 from round_log import RoundLog
 from fidelity_contract import sha256

@@ -75,8 +75,8 @@ def prepare(output, font_dir=None, pingfang=None, arial=None, force=False):
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--output',type=Path,default=ROOT/'flutter_ui_components/assets/fonts')
-    p.add_argument('--font-dir');p.add_argument('--pingfang',default=os.environ.get('LANHU_FIDELITY_PINGFANG', os.environ.get('JUXINGGE_PINGFANG')))
-    p.add_argument('--arial-unicode',default=os.environ.get('LANHU_FIDELITY_ARIAL_UNICODE', os.environ.get('JUXINGGE_ARIAL_UNICODE')))
+    p.add_argument('--font-dir');p.add_argument('--pingfang',default=os.environ.get('DESIGN_FIDELITY_PINGFANG', os.environ.get('JUXINGGE_PINGFANG')))
+    p.add_argument('--arial-unicode',default=os.environ.get('DESIGN_FIDELITY_ARIAL_UNICODE', os.environ.get('JUXINGGE_ARIAL_UNICODE')))
     p.add_argument('--force',action='store_true');a=p.parse_args()
     try:r=prepare(a.output,a.font_dir,a.pingfang,a.arial_unicode,a.force)
     except (ValueError,OSError) as e:p.exit(2,str(e)+'\n')

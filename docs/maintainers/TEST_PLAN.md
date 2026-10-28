@@ -9,7 +9,7 @@
 | Python 工具：codegen、lint、几何/多尺寸门禁、spec 草拟、系统 chrome（251 项单测） | 已在 Linux 云环境通过 |
 | 离线样例"提现-2"从快照走到冻结契约（`test_pipeline_e2e.py`） | 已通过，无需手工编辑 |
 | 生成的 Dart 文件 | 只通过语法检查 |
-| `lanhu_fidelity` 原语包、harness、scene 测试、render 测试 | **未编译、未运行**（云环境无法安装 Flutter） |
+| `design_fidelity` 原语包、harness、scene 测试、render 测试 | **未编译、未运行**（云环境无法安装 Flutter） |
 | 真实渲染、像素门禁、模型端到端 | **未执行** |
 
 所以第一步必须在装有 `toolchain.json` 固定版本 Flutter（3.47.7）的 macOS 上完成阶段 A、B。
@@ -18,9 +18,9 @@
 
 ```sh
 git fetch origin fidelity-codegen-primitives && git checkout fidelity-codegen-primitives
-python3 -m unittest discover -s skills/lanhu-design-fidelity/tests      # 预期 251 项 OK（e2e 在仓库内运行）
+python3 -m unittest discover -s skills/design-fidelity/tests      # 预期 251 项 OK（e2e 在仓库内运行）
 python3 -m unittest discover -s tests                                   # 预期 7 项 OK
-cd skills/lanhu-design-fidelity/assets/flutter/lanhu_fidelity
+cd skills/design-fidelity/assets/flutter/design_fidelity
 flutter pub get && flutter analyze && flutter test
 ```
 
@@ -31,7 +31,7 @@ flutter pub get && flutter analyze && flutter test
 | 现象 | 处理 |
 |---|---|
 | 编译错误 | 修 Dart 代码；不要改测试来迁就 |
-| 阴影衰减或模糊用例失败 | 只调整 `lib/src/effects.dart` 中 `LanhuEffectMapping` 的系数，记录调整前后数值和依据 |
+| 阴影衰减或模糊用例失败 | 只调整 `lib/src/effects.dart` 中 `FidelityEffectMapping` 的系数，记录调整前后数值和依据 |
 | 描边位置、挖空、opacity 合成用例失败 | 属于原语实现缺陷，修 `source_box.dart`；这些用例是语义断言，不能放宽 |
 
 ## 阶段 B：离线样例真实渲染（约 15 分钟）
@@ -44,11 +44,11 @@ flutter pub get && flutter analyze && flutter test
    ```sh
    flutter create --empty /tmp/fidelity_app
    mkdir -p /tmp/fidelity_app/packages /tmp/fidelity_app/assets/fonts
-   cp -R skills/lanhu-design-fidelity/assets/flutter/lanhu_fidelity /tmp/fidelity_app/packages/
+   cp -R skills/design-fidelity/assets/flutter/design_fidelity /tmp/fidelity_app/packages/
    cp flutter_ui_components/assets/fonts/PingFangSC-{Regular,Medium,Semibold}.otf /tmp/fidelity_app/assets/fonts/
    ```
 
-   在 `/tmp/fidelity_app/pubspec.yaml` 中加入 `lanhu_fidelity: {path: packages/lanhu_fidelity}`、`assets: [assets/lanhu/withdraw_2/]`，以及 family `SourcePingFang`（400/500/600 三个字重，写法同 `flutter_ui_components/pubspec.yaml`）。
+   在 `/tmp/fidelity_app/pubspec.yaml` 中加入 `design_fidelity: {path: packages/design_fidelity}`、`assets: [assets/lanhu/withdraw_2/]`，以及 family `SourcePingFang`（400/500/600 三个字重，写法同 `flutter_ui_components/pubspec.yaml`）。
 
 3. 准备页面目录：复制 `examples/withdraw-2/` 的 `source.json`、`reference.png`、`asset-manifest.json`、`assets/`，新建 `font-map.json`：
 
@@ -60,7 +60,7 @@ flutter pub get && flutter analyze && flutter test
    }}
    ```
 
-   页面配置 `page.json` 以 `skills/lanhu-design-fidelity/assets/page-session.example.json` 为模板：`app` 指向 `/tmp/fidelity_app`，`generated` 为 `lib/pages/withdraw_2.g.dart`，`class_name` 为 `Withdraw2`，`test` 为 `test/withdraw_2_test.dart`，删除 `pending_assets` 和 `page_inputs`。
+   页面配置 `page.json` 以 `skills/design-fidelity/assets/page-session.example.json` 为模板：`app` 指向 `/tmp/fidelity_app`，`generated` 为 `lib/pages/withdraw_2.g.dart`，`class_name` 为 `Withdraw2`，`test` 为 `test/withdraw_2_test.dart`，删除 `pending_assets` 和 `page_inputs`。
 
 4. 运行：`page start → prepare → generate → spec → accept --build`（命令见 Skill 的 `references/session-entrypoint.md`）。prepare 若报缺字形，用 `tools/prepare_fonts.py` 扩充字符或改用完整字体后重跑。
 
@@ -154,7 +154,7 @@ flutter pub get && flutter analyze && flutter test
 |---|---|---|
 | prepare 缺字段或解析异常 | MCP / 取证适配 | 修 `integrations/lanhu-mcp` 或 prepare |
 | 生成器标为 unsupported，或生成代码与源参数不符 | 生成器 | 修 `generate_flutter.py`，并加最小合成反例 |
-| 原语像素行为与原稿不符 | 原语包 | 修原语或 `LanhuEffectMapping`，并加正反例测试 |
+| 原语像素行为与原稿不符 | 原语包 | 修原语或 `FidelityEffectMapping`，并加正反例测试 |
 | 门禁漏检或误报 | 门禁 | 先保留旧基线，用失败样本校准检查，再修实现 |
 | 模型违反规则但 lint 未拦截 | lint | 新增规则及对应反例 |
 | 模型语义错误（分组、交互、数据） | 模型或 Skill 说明 | 记录具体案例；只有跨页面可复现的问题才改 Skill |
