@@ -457,6 +457,8 @@ def write_scene_test(generator, class_name: str, app: Path | None, output: Path,
 
 
 class WebSceneSpec(SceneTestWriter):
+    backdrop_supported = True
+
     """The same obligations as data for the web harness (`--scene`).
 
     Each check binds the node to a verified @design-fidelity/react primitive
@@ -544,6 +546,8 @@ class WebSceneSpec(SceneTestWriter):
         return check, 'binding (no unobstructed sample point)'
 
     def web_backdrop(self, key):
+        if not self.backdrop_supported:
+            return None, 'background blur is not drawn by this target'
         if self.owner_mode(key)[0] != 'native_exact':
             return None, f'node rendered as {self.owner_mode(key)[0]}'
         blur = (self.g.nodes[key].get('raw_style') or {}).get('blur') or {}
@@ -597,9 +601,15 @@ class WebSceneSpec(SceneTestWriter):
         return None, f'effect {effect_key} not representable on a placeholder'
 
 
-def write_web_scene_spec(generator, class_name: str, module: str, spec_file: Path) -> dict:
+def write_native_scene_spec(generator, class_name: str, spec_file: Path, backdrop: bool = True) -> dict:
+    """Scene obligations for the Compose / SwiftUI harnesses (same JSON as the web)."""
+    return write_web_scene_spec(generator, class_name, '', spec_file, backdrop=backdrop)
+
+
+def write_web_scene_spec(generator, class_name: str, module: str, spec_file: Path, backdrop: bool = True) -> dict:
     import json
     writer = WebSceneSpec(generator, class_name, module)
+    writer.backdrop_supported = backdrop
     for requirement in scene_requirements(generator.nodes):
         writer.add(requirement)
     from source_requirements import effects

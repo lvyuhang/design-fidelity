@@ -418,7 +418,9 @@ def main():
                     target = path('generated')
                     event['report'] = str(target.with_suffix('').with_suffix('.codegen.json'))
                     evidence = [v for entry in c['evidence'] for v in ('--evidence', (config.parent/entry).resolve())]
-                    invoke('generate.py', ['--target', c.get('target', 'flutter'), *evidence, '--plan', plan,
+                    options = [v for k, val in sorted((c.get('target_options') or {}).items())
+                               for v in ('--option', f'{k}={val}')]
+                    invoke('generate.py', ['--target', c.get('target', 'flutter'), *options, *evidence, '--plan', plan,
                         '--class-name', c['class_name'],
                         '--output', target, '--report', event['report'], '--app-root', path('app'),
                         '--render-test', path('app')/c['test'], '--output-env', c['output_env'],
@@ -434,8 +436,10 @@ def main():
                     event['report'] = str(output/'spec-draft.json')
                     output.mkdir(parents=True, exist_ok=True)
                     inputs = [path('app')/c['test'], *(config.parent/p for p in c.get('page_inputs', []))]
-                    harness_name = {'react': 'fidelity_render_harness.cjs'}.get(c.get('target'), 'fidelity_render_harness.dart')
-                    harness = path('app')/Path(c['test']).parent/'support'/harness_name
+                    harness_name = {'react': 'fidelity_render_harness.cjs', 'compose': 'FidelityHarness.kt',
+                                    'swiftui': 'FidelityHarness.swift'}.get(c.get('target'), 'fidelity_render_harness.dart')
+                    support = 'Support' if c.get('target') == 'swiftui' else 'support'
+                    harness = path('app')/Path(c['test']).parent/support/harness_name
                     if harness.exists():
                         inputs.append(harness)
                     command = [data.get('python', sys.executable), str(SCRIPTS/'draft_spec.py'),
@@ -471,7 +475,9 @@ def main():
                     expected = c.get('scope', 'page')
                     if expected not in ('page','provided_nodes') or contract['source_scope']['kind'] != expected:
                         raise ValueError('Requested scope differs from contract; whole-page tasks cannot silently become local checks')
-                    invoke('run_target.py', ['--target', c.get('target', 'flutter'),
+                    options = [v for k, val in sorted((c.get('target_options') or {}).items())
+                               for v in ('--option', f'{k}={val}')]
+                    invoke('run_target.py', ['--target', c.get('target', 'flutter'), *options,
                         '--contract',path('contract'),'--app',path('app'),
                         '--test',c['test'],'--output-env',c['output_env'],'--output',output,
                         '--task-log',root/'task-run.json','--round-note',args.note,

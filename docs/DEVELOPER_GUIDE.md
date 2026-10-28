@@ -198,7 +198,19 @@ python3 ~/lanhu-flutter-fidelity/skills/design-fidelity/scripts/install_app.py p
 
 提交时额外提交 `fidelity/<page>/render.tsx`、`scene.g.json` 和 `support/`；`packages/design-fidelity-react` 与 Flutter 的原语包一样随仓库提交。
 
-## 七、目前的限制
+## 七、原生 Android / iOS 项目（预览）
+
+Compose 与 SwiftUI 的生成器、原语和渲染测试模板已提供，但还没有在真机工具链上验证过。接入方法与第一个页面的验证清单见 Skill 的 `references/native-rendering.md`。简要命令：
+
+```sh
+python3 ~/lanhu-flutter-fidelity/skills/design-fidelity/scripts/install_app.py init --app .
+python3 ~/lanhu-flutter-fidelity/skills/design-fidelity/scripts/install_app.py page --app . --name order_detail \
+  --kotlin-package com.example.shop.fidelity      # Android；iOS 改为 --scheme Shop
+```
+
+背景模糊在这两个目标上不绘制，相关页面需要切图或写明排除原因。
+
+## 八、目前的限制
 
 - 还原度检查在 Mac 的测试渲染器上进行；iOS 真机用 Metal、Android 用 Vulkan/OpenGL 渲染，模糊、阴影和文字抗锯齿可能有细微差别，上线前建议用模拟器或真机截图核对。
 - 底部按钮、底部导航是否"贴底"由生成器根据位置自动判断（见报告 `layout.footer`），判断不对时用 override 调整。

@@ -88,6 +88,8 @@ def generate(evidence: list[Path], plan_path: Path | None, font_map_path: Path |
     report['output_sha256'] = hashlib.sha256(code.encode('utf-8')).hexdigest()
     if target != 'flutter':
         report['target'] = target
+    if options:
+        report['target_options'] = dict(options)
     report_path = report_path or module.default_report_path(output)
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
     report['report'] = str(report_path)

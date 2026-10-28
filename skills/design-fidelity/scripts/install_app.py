@@ -28,7 +28,9 @@ SKILL = Path(__file__).resolve().parents[1]
 PACKAGE = SKILL / 'assets' / 'flutter' / 'design_fidelity'
 WEB_PACKAGE = SKILL / 'assets' / 'web' / 'design-fidelity-react'
 WEB_DEPENDENCY = ('@design-fidelity/react', 'file:packages/design-fidelity-react')
-TARGETS = ('flutter', 'react')
+COMPOSE_PACKAGE = SKILL / 'assets' / 'compose' / 'design-fidelity'
+SWIFT_PACKAGE = SKILL / 'assets' / 'swiftui' / 'DesignFidelity'
+TARGETS = ('flutter', 'react', 'compose', 'swiftui')
 SKILL_PARTS = ('SKILL.md', 'agents', 'references', 'scripts', 'assets')
 IGNORE = shutil.ignore_patterns('__pycache__', '*.pyc', '.dart_tool', 'build', '.DS_Store', 'node_modules')
 DEPENDENCY = '  design_fidelity:\n    path: packages/design_fidelity\n'
@@ -154,7 +156,11 @@ def detect_target(app: Path, target: str | None = None) -> str:
         return 'flutter'
     if (app / 'package.json').is_file():
         return 'react'
-    raise ValueError(f'{app} has neither pubspec.yaml (Flutter) nor package.json (React); pass --target')
+    if (app / 'settings.gradle.kts').is_file() or (app / 'settings.gradle').is_file():
+        return 'compose'
+    if any(app.glob('*.xcodeproj')) or any(app.glob('*.xcworkspace')):
+        return 'swiftui'
+    raise ValueError(f'{app}: no pubspec.yaml, package.json, settings.gradle or .xcodeproj; pass --target')
 
 
 def _install_package(source: Path, target: Path, force: bool) -> str:
@@ -190,7 +196,7 @@ def init_app(app: Path, python: str, force: bool, target: str | None = None) -> 
         dependency = add_dependency(pubspec)
         next_steps = ['flutter pub get',
                       '(cd packages/design_fidelity && flutter test)  # once per Flutter upgrade']
-    else:
+    elif target == 'react':
         package_json = app / 'package.json'
         if not package_json.is_file():
             raise ValueError(f'{app} is not a web app (package.json missing)')
@@ -199,6 +205,20 @@ def init_app(app: Path, python: str, force: bool, target: str | None = None) -> 
         next_steps = ['npm install',
                       'npm install -D esbuild playwright  # fidelity renders only; react/react-dom from the app',
                       'npx playwright install chromium']
+    elif target == 'compose':
+        package = _install_package(COMPOSE_PACKAGE, app / 'design-fidelity', force)
+        dependency = 'manual'
+        next_steps = ['settings.gradle.kts: include(":design-fidelity")',
+                      'app/build.gradle.kts: implementation(project(":design-fidelity")); testImplementation of '
+                      'robolectric, androidx.compose.ui:ui-test-junit4, androidx.test.ext:junit; '
+                      'debugImplementation("androidx.compose.ui:ui-test-manifest"); '
+                      'android.testOptions.unitTests.isIncludeAndroidResources = true']
+    else:
+        package = _install_package(SWIFT_PACKAGE, app / 'DesignFidelity', force)
+        dependency = 'manual'
+        next_steps = ['Xcode: File > Add Package Dependencies > Add Local… > DesignFidelity (app and unit-test targets)',
+                      'Add the generated DesignAssets folder to the app target as a folder reference',
+                      'The unit-test target must be hosted by the app (Host Application)']
     workspace = app / 'fidelity'
     workspace.mkdir(exist_ok=True)
     (workspace / 'workspace.json').write_text(json.dumps({'target': target}, indent=2) + '\n')
@@ -305,7 +325,9 @@ def camel(name: str) -> str:
     return result
 
 
-def create_page(app: Path, name: str, class_name: str | None, title: str | None) -> dict:
+def create_page(app: Path, name: str, class_name: str | None, title: str | None,
+                options: dict | None = None) -> dict:
+    options = options or {}
     if not re.fullmatch(r'[a-z][a-z0-9_]*', name):
         raise ValueError('page name must be snake_case, e.g. withdraw or order_detail')
     workspace = app / 'fidelity'
@@ -316,6 +338,10 @@ def create_page(app: Path, name: str, class_name: str | None, title: str | None)
     if config.exists():
         return {'status': 'EXISTS', 'config': str(config)}
     target = detect_target(app)
+    if target == 'compose' and not options.get('package'):
+        raise ValueError('compose pages need --kotlin-package (e.g. com.example.shop.fidelity)')
+    if target == 'swiftui' and not options.get('scheme'):
+        raise ValueError('swiftui pages need --scheme (the app scheme / module name)')
     folder.mkdir()
     (folder / 'evidence').mkdir()
     page = {
@@ -339,11 +365,35 @@ def create_page(app: Path, name: str, class_name: str | None, title: str | None)
         page.update(generated=f'../../lib/fidelity/{name}.g.dart', asset_dir=asset_dir,
                     test=f'test/fidelity/{name}_test.dart', renderer_version=flutter_version())
         assets = add_asset_dir(app / 'pubspec.yaml', asset_dir)
-    else:
+    elif target == 'react':
         page.update(target='react', generated=f'../../src/fidelity/{name}.g.tsx',
                     asset_dir=f'src/assets/design/{name}', test=f'fidelity/{name}/render.tsx',
                     renderer_version=playwright_version(app))
         assets = 'imported by the generated module'
+    elif target == 'compose':
+        if not options.get('package'):
+            raise ValueError('compose pages need --kotlin-package (e.g. com.example.shop.fidelity)')
+        module = options.get('module', 'app')
+        folder_path = options['package'].replace('.', '/')
+        cls = page['class_name']
+        page.update(target='compose', generated=f'../../{module}/src/main/kotlin/{folder_path}/{cls}.g.kt',
+                    asset_dir=f'{module}/src/main/assets/design/{name}',
+                    test=f'{module}/src/test/kotlin/fidelity/{cls}FidelityTest.kt',
+                    target_options={'package': options['package']}, renderer_version='robolectric')
+        assets = f'{module}/src/main/assets/design/{name} (AssetManager)'
+    else:
+        if not options.get('scheme'):
+            raise ValueError('swiftui pages need --scheme (the app scheme / module name)')
+        scheme = options['scheme']
+        app_dir = options.get('app_dir', scheme)
+        tests = options.get('test_target', f'{scheme}Tests')
+        cls = page['class_name']
+        page.update(target='swiftui', generated=f'../../{app_dir}/Fidelity/{cls}.g.swift',
+                    asset_dir=f'{app_dir}/DesignAssets/{name}',
+                    test=f'{tests}/Fidelity/{cls}FidelityTests.swift',
+                    target_options={'scheme': scheme, 'module': options.get('module', scheme), 'test_target': tests},
+                    renderer_version='xctest-simulator')
+        assets = f'{app_dir}/DesignAssets/{name} (folder reference in the app bundle)'
     config.write_text(json.dumps(page, ensure_ascii=False, indent=2) + '\n')
     return {'status': 'CREATED', 'target': target, 'config': str(config), 'class_name': page['class_name'],
             'pubspec_assets': assets,
@@ -370,6 +420,11 @@ def main() -> int:
     p.add_argument('--name', required=True, help='snake_case page id, e.g. withdraw')
     p.add_argument('--class-name', help='UpperCamelCase prefix for generated classes')
     p.add_argument('--title', help='Human-readable page name for reports')
+    p.add_argument('--kotlin-package', help='Compose: package of the generated scene')
+    p.add_argument('--module', help='Compose: Gradle module (default app); SwiftUI: Swift module (default scheme)')
+    p.add_argument('--scheme', help='SwiftUI: Xcode scheme of the app')
+    p.add_argument('--app-dir', help='SwiftUI: folder of the app sources (default: scheme)')
+    p.add_argument('--test-target', help='SwiftUI: app-hosted unit-test target (default <scheme>Tests)')
     f = sub.add_parser('fonts')
     f.add_argument('--app', type=Path, required=True)
     f.add_argument('--pingfang', type=Path, help='PingFang.ttc (default: this Mac\'s system copy)')
@@ -384,7 +439,9 @@ def main() -> int:
         elif args.command == 'fonts':
             result = install_fonts(args.app.resolve(), args.pingfang, args.android)
         else:
-            result = create_page(args.app.resolve(), args.name, args.class_name, args.title)
+            options = {k: v for k, v in {'package': args.kotlin_package, 'module': args.module, 'scheme': args.scheme,
+                                         'app_dir': args.app_dir, 'test_target': args.test_target}.items() if v}
+            result = create_page(args.app.resolve(), args.name, args.class_name, args.title, options)
     except (ValueError, OSError) as exc:
         print(json.dumps({'status': 'ERROR', 'error': str(exc)}, ensure_ascii=False))
         return 2

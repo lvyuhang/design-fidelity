@@ -44,6 +44,8 @@ A-04 必须出现并通过的用例：
 | platform fonts | each platform resolves its production family；fidelity renders always use the design family |
 | structure | source keys expose node geometry；system chrome reserves source height without painting |
 
+A-04 还须新增并通过：blur 组 `background blur does not clip the layer shadow`（本版修复的问题）。
+
 ---
 
 ## B. 离线样例"提现-2"流水线
@@ -133,6 +135,43 @@ A-04 必须出现并通过的用例：
 
 ---
 
+## W. Web（React）目标
+
+前置条件：Node 20+，App 中 `npm install -D esbuild playwright && npx playwright install chromium`，或设置 `FIDELITY_NODE_PATH` 指向含 react、react-dom、esbuild、playwright 的 node_modules。
+
+| ID | 目的 | 步骤 | 预期结果 | 证据 |
+|---|---|---|---|---|
+| W-01 | 生成与浏览器渲染 | `python3 -m unittest $SKILL/tests/test_emit_react.py` | 11 项 OK，`test_chromium_render_geometry_and_scene_checks` 必须执行（不得跳过） | 终端输出 |
+| W-02 | 提现-2 走完 Web 门禁 | 用 `examples/withdraw-2` 建 `"target": "react"` 的 page.json，依次 `start → prepare → generate → spec → accept` | spec 编译；accept 中所有形状、渐变、阴影、模糊区域通过；剩余失败只能是字体度量（无苹方时）与 1.3 倍下的真实越界 | `stage-report.md` |
+| W-03 NEG | 场景义务有辨识力 | 在 App 的 `packages/design-fidelity-react/src/index.tsx` 把 `const out = position === 'inside' ? 0` 改为 `? t`，再运行 `node fidelity/<page>/support/fidelity_render_harness.cjs fidelity/<page>/render.tsx --scene fidelity/<page>/scene.g.json` | 内描边的 stroke 检查失败，提示 `border band must be painted at …` | 失败输出 |
+| W-04 NEG | Web lint | 在页面代码中加入 `style={{ boxShadow: '0 1px 2px #000' }}` | `W005`、`W003` 拦截 | lint 输出 |
+| W-05 NEG | 生成文件改动 | 手改 `.g.tsx` 任一数值后 accept | `W011 generated_file_edited` | run.json |
+
+## F. Figma 取证
+
+| ID | 目的 | 步骤 | 预期结果 | 证据 |
+|---|---|---|---|---|
+| F-01 | 离线换算 | `python3 -m unittest $SKILL/tests/test_figma_evidence.py` | 12 项 OK | 终端输出 |
+| F-02 | 真实文件取证 | 用自己的令牌对一个含卡片、渐变、阴影、图标、混排文字的画板执行 `figma_evidence.py --url … --out evidence` | `status: OK`、`schema_errors` 为空；`source_gaps` 中的每项都能在设计中找到对应效果 | 输出 JSON、`source.json` |
+| F-03 | 版本固定 | 修改设计后不带 `--version` 重新取证，再带上一次的 `resolved_version` 取证 | 前者 `resolved_version` 变化；后者与第一次一致 | 两次输出 |
+| F-04 | 令牌不落盘 | `grep -r figd_ fidelity/<page>/evidence` | 无结果 | grep 输出 |
+| F-05 | Figma 页面走完 Flutter 与 Web 门禁 | 对 F-02 的证据分别以 flutter、react 目标执行 B 组流程 | 两个目标的形状、阴影、渐变区域都通过；记录与 Figma 截图的差异项 | 两份 `stage-report.md` |
+
+## M. 原生目标（预览，研发机器上执行）
+
+| ID | 目的 | 步骤 | 预期结果 | 证据 |
+|---|---|---|---|---|
+| M-01 | Python 侧生成 | `python3 -m unittest $SKILL/tests/test_emit_native.py`（可设 `FIDELITY_KOTLIN_SYNTAX`、`FIDELITY_SWIFT_SYNTAX` 指向语法检查器） | 6 项 OK | 终端输出 |
+| M-02 | Compose 原语编译 | 在 Android 工程 include `design-fidelity` 模块后 `./gradlew :design-fidelity:assembleDebug` | 编译通过 | 构建输出 |
+| M-03 | Compose 场景义务 | `./gradlew :app:testDebugUnitTest --tests '*Withdraw2FidelitySceneTest'` | 除背景模糊外的义务全部通过 | 测试报告 |
+| M-04 | Compose 渲染与门禁 | `page accept`（target compose） | 产出 PNG 与 sidecar；与 Flutter 结果对照，差异仅限背景模糊与字体 | `stage-report.md` |
+| M-05 | SwiftUI 包编译 | Xcode 添加本地包 `DesignFidelity`，Debug 构建 | 编译通过（若出现 type-check 超时，记录文件与行号） | 构建输出 |
+| M-06 | SwiftUI 场景义务与渲染 | `xcodebuild test … -only-testing:<Tests>/Withdraw2FidelitySceneTests`，再 `page accept`（target swiftui） | 同 M-03、M-04 | 测试报告、`stage-report.md` |
+
+M 组全部通过后，才能去掉 Compose / SwiftUI 的"预览"标记。
+
+---
+
 ## 汇总与判定
 
 | 组 | 通过条件 |
@@ -142,5 +181,8 @@ A-04 必须出现并通过的用例：
 | N | N-01 至 N-17 全部 PASS。任一反向用例未被拦截，都要先修复对应关卡，再进入 C、D |
 | C | C-01 至 C-05 完成记录 |
 | D | 至少 2/3 的项目 D-x-03 至 D-x-06 全部满足；效率中位数达标或有瓶颈分析 |
+| W | W-01 至 W-05 全部 PASS |
+| F | F-01、F-03、F-04 PASS；F-02、F-05 完成记录 |
+| M | 预览目标转正前 M-01 至 M-06 全部 PASS |
 
 A、B、N 全部通过才能开始 C、D。A、B、N、D 全部满足后，才能把 Skill 升为成熟版。

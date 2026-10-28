@@ -139,6 +139,39 @@ class InstallWebAppTests(unittest.TestCase):
             init_app(self.app, 'python3', False)
 
 
+class InstallNativeAppTests(unittest.TestCase):
+    def setUp(self):
+        temp = tempfile.TemporaryDirectory()
+        self.addCleanup(temp.cleanup)
+        self.root = Path(temp.name)
+
+    def test_compose_project(self):
+        app = self.root / 'android'
+        app.mkdir()
+        (app / 'settings.gradle.kts').write_text('include(":app")\n')
+        result = init_app(app, 'python3', False)
+        self.assertEqual(result['target'], 'compose')
+        self.assertTrue((app / 'design-fidelity/src/main/kotlin/design/fidelity/SourceBox.kt').is_file())
+        with self.assertRaises(ValueError):
+            create_page(app, 'order', None, None)
+        page = create_page(app, 'order', None, None, {'package': 'com.example.shop.fidelity'})
+        config = json.loads(Path(page['config']).read_text())
+        self.assertEqual(config['generated'], '../../app/src/main/kotlin/com/example/shop/fidelity/Order.g.kt')
+        self.assertEqual(config['test'], 'app/src/test/kotlin/fidelity/OrderFidelityTest.kt')
+        self.assertEqual(config['asset_dir'], 'app/src/main/assets/design/order')
+
+    def test_swiftui_project(self):
+        app = self.root / 'ios'
+        (app / 'Shop.xcodeproj').mkdir(parents=True)
+        result = init_app(app, 'python3', False)
+        self.assertEqual(result['target'], 'swiftui')
+        self.assertTrue((app / 'DesignFidelity/Package.swift').is_file())
+        page = create_page(app, 'order', None, None, {'scheme': 'Shop'})
+        config = json.loads(Path(page['config']).read_text())
+        self.assertEqual(config['target_options'], {'scheme': 'Shop', 'module': 'Shop', 'test_target': 'ShopTests'})
+        self.assertEqual(config['test'], 'ShopTests/Fidelity/OrderFidelityTests.swift')
+
+
 def synthetic_pingfang(path):
     """A two-face TTC named like the system PingFang collection."""
     from fontTools.fontBuilder import FontBuilder

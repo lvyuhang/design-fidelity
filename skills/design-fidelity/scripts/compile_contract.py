@@ -89,9 +89,10 @@ def compile_spec(spec, base):
     # New contracts lint page Dart against the verified primitives. Opting out
     # is explicit and recorded; legacy contracts (no key) keep their behaviour.
     target = c.setdefault('target', 'flutter')
-    lint_key = {'flutter': 'dart_lint', 'react': 'web_lint'}.get(target)
+    lint_key = {'flutter': 'dart_lint', 'react': 'web_lint', 'compose': 'kotlin_lint',
+                'swiftui': 'swift_lint'}.get(target)
     if lint_key is None:
-        raise ValueError(f'Unknown target {target}; expected flutter or react')
+        raise ValueError(f'Unknown target {target}; expected flutter, react, compose or swiftui')
     lint_profile = c.setdefault(lint_key, 'v1')
     if lint_profile not in ('v1', 'off'):
         raise ValueError(f'{lint_key} must be "v1" or "off"')

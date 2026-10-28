@@ -6,8 +6,10 @@
 |---|---|---|---|---|---|
 | 蓝湖 | MCP | | Flutter（iOS / Android） | `.g.dart` + `design_fidelity` 包 | `flutter test` |
 | Figma | REST（个人访问令牌） | | React（Web） | `.g.tsx` + `@design-fidelity/react` | Playwright Chromium |
+| | | | Jetpack Compose（预览） | `.g.kt` + `design-fidelity` 模块 | Robolectric |
+| | | | SwiftUI（预览） | `.g.swift` + `DesignFidelity` 包 | 模拟器 XCTest |
 
-两种设计源都转换成同一份证据格式，两种目标共用同一个场景模型、验收契约和门禁。原生 Android（Compose）与 iOS（SwiftUI）在规划中。
+两种设计源都转换成同一份证据格式，所有目标共用同一个场景模型、验收契约和门禁。Compose 与 SwiftUI 为预览版：已提供生成器、原语和 harness 并通过语法检查，待在真机工具链上完成编译与像素校准。
 
 核心思路：**能确定的事交给工具，只把语义判断留给模型。** 视觉参数直接从设计源数据生成代码，并用经过验证的渲染原语绘制；质量由像素、节点几何和多尺寸三类门禁判定，不依赖"看起来差不多"。
 

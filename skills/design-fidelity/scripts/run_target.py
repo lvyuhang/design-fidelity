@@ -18,18 +18,45 @@ from round_log import RoundLog
 from fidelity_contract import sha256
 
 
-# render(test, output_env): argv run from the app root; writes the PNG to $output_env.
+# render(test, output_env, options): argv run from the app root; writes the PNG to $output_env.
 # lint: (module, function) taking the contract path; graphic_audit: Flutter-only source audit.
+# options come from page.json "target_options" (e.g. Xcode scheme, Gradle task).
+
+
+def gradle_test(test: str, options: dict) -> list[str]:
+    parts = Path(test).parts
+    module = ':' + ':'.join(parts[:parts.index('src')]) if 'src' in parts and parts.index('src') > 0 else ':app'
+    return [options.get('gradlew', './gradlew'), '-q', f"{module}:{options.get('gradle_task', 'testDebugUnitTest')}",
+            '--tests', f'*{Path(test).stem}']
+
+
+def xcode_test(test: str, options: dict) -> list[str]:
+    if not options.get('scheme'):
+        raise ValueError('swiftui target needs target_options.scheme (the app scheme) in page.json')
+    target = options.get('test_target') or Path(test).parts[0]
+    return ['xcodebuild', 'test', '-quiet', '-scheme', options['scheme'],
+            '-destination', options.get('destination', 'platform=iOS Simulator,name=iPhone 15'),
+            f'-only-testing:{target}/{Path(test).stem}']
+
+
 TARGETS = {
-    'flutter': {'render': lambda test, env: ['flutter', 'test', '--no-pub', test],
+    'flutter': {'render': lambda test, env, options: ['flutter', 'test', '--no-pub', test],
                 'lint': ('dart_fidelity_lint', 'lint_contract'), 'lint_name': 'dart_fidelity_lint',
                 'graphic_audit': True,
                 'analyze': ['dart', 'analyze'], 'build': ['flutter', 'build', 'web', '--release', '--no-pub']},
-    'react': {'render': lambda test, env: ['node', str(Path(test).parent / 'support' / 'fidelity_render_harness.cjs'),
-                                           test, '--output-env', env],
+    'react': {'render': lambda test, env, options: ['node', str(Path(test).parent / 'support' / 'fidelity_render_harness.cjs'),
+                                                    test, '--output-env', env],
               'lint': ('web_fidelity_lint', 'lint_contract'), 'lint_name': 'web_fidelity_lint',
               'graphic_audit': False,
               'analyze': ['npx', '--no-install', 'tsc', '--noEmit'], 'build': ['npm', 'run', 'build']},
+    'compose': {'render': lambda test, env, options: gradle_test(test, options),
+                'lint': ('native_fidelity_lint', 'lint_contract'), 'lint_name': 'native_fidelity_lint',
+                'graphic_audit': False,
+                'analyze': ['./gradlew', '-q', 'lint'], 'build': ['./gradlew', '-q', 'assembleDebug']},
+    'swiftui': {'render': lambda test, env, options: xcode_test(test, options),
+                'lint': ('native_fidelity_lint', 'lint_contract'), 'lint_name': 'native_fidelity_lint',
+                'graphic_audit': False,
+                'analyze': ['true'], 'build': ['xcodebuild', 'build', '-quiet']},
 }
 
 
@@ -60,6 +87,7 @@ def preflight(contract_path, skill, require_style_evidence=False, target='flutte
 def main(default_target: str | None = None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--target', choices=sorted(TARGETS), default=default_target or 'flutter')
+    parser.add_argument('--option', action='append', default=[], help='Target option KEY=VALUE')
     parser.add_argument('--contract', required=True, type=Path)
     parser.add_argument('--app', required=True, type=Path)
     parser.add_argument('--test', required=True)
@@ -73,6 +101,7 @@ def main(default_target: str | None = None):
     parser.add_argument('--round-note', default='', help='Batch changes/retry reason; explain overruns beyond round 3')
     args = parser.parse_args()
     contract, app, out, skill = [p.resolve() for p in (args.contract, args.app, args.output, args.skill)]
+    options = dict(item.split('=', 1) for item in args.option)
     out.mkdir(parents=True, exist_ok=False)
     started = time.monotonic()
     report = {'status': 'RUNNING', 'target': args.target, 'scope': 'validation of supplied implementation; not end-to-end development time',
@@ -105,12 +134,14 @@ def main(default_target: str | None = None):
         report['preflight'] = preflight(contract, skill, args.require_style_evidence, args.target)
         spec = TARGETS[args.target]
         report['stages'].append({'name': 'preflight', 'seconds': round(time.monotonic()-begin, 3), 'exit_code': 0})
-        env = {**os.environ, args.output_env: str(out / 'render.png')}
+        # xcodebuild forwards TEST_RUNNER_<NAME> to the test process as <NAME>.
+        env = {**os.environ, args.output_env: str(out / 'render.png'),
+               f'TEST_RUNNER_{args.output_env}': str(out / 'render.png')}
         current_stage = 'render'
         stage('render', [sys.executable, str(skill / 'scripts/render_with_receipt.py'),
                         '--contract', str(contract), '--candidate', str(out / 'render.png'),
                         '--receipt', str(out / 'receipt.json'), '--cwd', str(app), '--',
-                        *spec['render'](args.test, args.output_env)])
+                        *spec['render'](args.test, args.output_env, options)])
         report['render_sha256'] = sha256(out/'render.png')
         current_stage = 'gate'
         gate_code = stage('gate', [sys.executable, str(skill / 'scripts/visual_fidelity_gate.py'),

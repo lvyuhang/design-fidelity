@@ -242,10 +242,17 @@ def build(draft: dict, draft_dir: Path, codegen: dict, plan: dict | None, spec_d
         test_file = Path(scene['test_file']).resolve()
         inputs.append(rel(test_file, spec_dir))
         command = ['flutter', 'test', '--no-pub', rel(test_file, app)]
-        if codegen.get('target') == 'react':
+        target = codegen.get('target', 'flutter')
+        if target == 'react':
             render = Path(codegen['render_test']['path']).resolve()
             command = ['node', rel(render.parent / 'support' / 'fidelity_render_harness.cjs', app),
                        rel(render, app), '--scene', rel(test_file, app)]
+        elif target in ('compose', 'swiftui'):
+            from run_target import gradle_test, xcode_test
+            runner = Path(scene['runner']).resolve()
+            inputs.append(rel(runner, spec_dir))
+            options = codegen.get('target_options') or {}
+            command = (gradle_test if target == 'compose' else xcode_test)(rel(runner, app), options)
         spec['scene_checks'] = {'generated_scene': {
             'obligations': sorted(bound),
             'test_file': rel(test_file, spec_dir),
@@ -259,7 +266,9 @@ def build(draft: dict, draft_dir: Path, codegen: dict, plan: dict | None, spec_d
     if target != 'flutter':
         spec['target'] = target
     manifests = {'flutter': ('pubspec.yaml', 'pubspec.lock'),
-                 'react': ('package.json', 'package-lock.json', 'pnpm-lock.yaml', 'yarn.lock')}
+                 'react': ('package.json', 'package-lock.json', 'pnpm-lock.yaml', 'yarn.lock'),
+                 'compose': ('settings.gradle.kts', 'settings.gradle', 'gradle/libs.versions.toml'),
+                 'swiftui': ('Package.resolved',)}
     for name in manifests.get(target, ()):
         if (app / name).is_file():
             inputs.append(rel(app / name, spec_dir))
@@ -356,7 +365,8 @@ def main() -> int:
     spec_dir = args.output.resolve().parent
     draft = read_json(args.draft)
     target = read_json(args.codegen).get('target', 'flutter')
-    environment = {'renderer': {'flutter': 'flutter_test', 'react': 'chromium_playwright'}.get(target, target),
+    environment = {'renderer': {'flutter': 'flutter_test', 'react': 'chromium_playwright',
+                                'compose': 'robolectric_compose', 'swiftui': 'xctest_simulator'}.get(target, target),
                    'renderer_version': args.renderer_version,
                    'platform': args.platform, 'locale': args.locale, 'state': 'default', 'text_scale': 1}
     spec, review = build(draft, args.draft.resolve().parent, read_json(args.codegen),
