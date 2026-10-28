@@ -11,8 +11,8 @@ macOS 的苹方和 Arial Unicode 字体由脚本从本机已有合法来源准�
 ## 第一次安装和预览
 
 ```sh
-git clone <本仓库地址> lanhu-flutter-fidelity
-cd lanhu-flutter-fidelity
+git clone <本仓库地址> design-fidelity
+cd design-fidelity
 ./setup.command --profile all --with-mcp --flutter-sdk /path/to/flutter
 python3 project.py doctor --strict
 python3 project.py verify --render

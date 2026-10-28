@@ -6,8 +6,8 @@
 
 | 仓库 | 内容 | 版本 |
 |---|---|---|
-| `lanhu-flutter-fidelity` | `skills/design-fidelity`（含 `design_fidelity` 原语包）、`integrations/lanhu-mcp`、`examples/withdraw-2` | 跟随 Skill 版本（当前 3.0.0） |
-| `lanhu-flutter-fidelity-lab` | `flutter_ui_components/`、`design_evidence/`、`tools/`、`validation/` | 实验记录，不发布 |
+| `design-fidelity` | `skills/design-fidelity`（含 `design_fidelity` 原语包）、`integrations/lanhu-mcp`、`examples/withdraw-2` | 跟随 Skill 版本（当前 3.0.0） |
+| `design-fidelity-lab` | `flutter_ui_components/`、`design_evidence/`、`tools/`、`validation/` | 实验记录，不发布 |
 | `android-design-review` | 安卓验收台（本地已有独立 Git 历史） | 独立 |
 | `sketch-layerpilot` | Sketch 插件 | 独立 |
 

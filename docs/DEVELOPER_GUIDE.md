@@ -11,8 +11,8 @@
 **1. 获取工具（只下载需要的目录）**
 
 ```sh
-git clone --filter=blob:none --sparse https://github.com/lvyuhang/lanhu-flutter-fidelity.git ~/lanhu-flutter-fidelity
-cd ~/lanhu-flutter-fidelity
+git clone --filter=blob:none --sparse https://github.com/lvyuhang/design-fidelity.git ~/design-fidelity
+cd ~/design-fidelity
 git sparse-checkout set skills/design-fidelity integrations
 ```
 
@@ -41,13 +41,13 @@ Codex（`~/.codex/config.toml`）：
 ```toml
 [mcp_servers.lanhu]
 command = "/bin/bash"
-args = ["/Users/<你>/lanhu-flutter-fidelity/integrations/run-lanhu-mcp.sh"]
+args = ["/Users/<你>/design-fidelity/integrations/run-lanhu-mcp.sh"]
 ```
 
 Claude Code：
 
 ```sh
-claude mcp add lanhu -- /bin/bash ~/lanhu-flutter-fidelity/integrations/run-lanhu-mcp.sh
+claude mcp add lanhu -- /bin/bash ~/design-fidelity/integrations/run-lanhu-mcp.sh
 ```
 
 **5. 安装 Skill**
@@ -64,8 +64,8 @@ python3 skills/design-fidelity/scripts/install_app.py skill --target ~/.claude/s
 在 App 仓库根目录执行：
 
 ```sh
-python3 ~/lanhu-flutter-fidelity/skills/design-fidelity/scripts/install_app.py init --app . \
-  --python ~/lanhu-flutter-fidelity/.venv/bin/python
+python3 ~/design-fidelity/skills/design-fidelity/scripts/install_app.py init --app . \
+  --python ~/design-fidelity/.venv/bin/python
 flutter pub get
 (cd packages/design_fidelity && flutter test)    # 确认渲染原语在当前 Flutter 版本下正常；升级 Flutter 后再跑一次
 ```
@@ -79,7 +79,7 @@ flutter pub get
 **配置字体**：设计稿通常用苹方。在 App 根目录执行：
 
 ```sh
-python3 ~/lanhu-flutter-fidelity/skills/design-fidelity/scripts/install_app.py fonts --app .
+python3 ~/design-fidelity/skills/design-fidelity/scripts/install_app.py fonts --app .
 # Android 想用自带的授权字体时加：--android NotoSansSC（需在 pubspec.yaml 中声明该 family）
 ```
 
@@ -104,7 +104,7 @@ python3 ~/lanhu-flutter-fidelity/skills/design-fidelity/scripts/install_app.py f
 **1. 创建页面工作区**
 
 ```sh
-python3 ~/lanhu-flutter-fidelity/skills/design-fidelity/scripts/install_app.py page --app . --name order_detail --title 订单详情
+python3 ~/design-fidelity/skills/design-fidelity/scripts/install_app.py page --app . --name order_detail --title 订单详情
 ```
 
 **2. 把任务交给 AI**（照此填写即可）
@@ -179,11 +179,11 @@ echo 'FIGMA_TOKEN=figd_你的令牌' >> fidelity/.local.env
 流程与 Flutter 相同，`init` 检测到 `package.json` 会自动切到 React：
 
 ```sh
-python3 ~/lanhu-flutter-fidelity/skills/design-fidelity/scripts/install_app.py init --app . \
-  --python ~/lanhu-flutter-fidelity/.venv/bin/python
+python3 ~/design-fidelity/skills/design-fidelity/scripts/install_app.py init --app . \
+  --python ~/design-fidelity/.venv/bin/python
 npm install && npm install -D esbuild playwright && npx playwright install chromium
-python3 ~/lanhu-flutter-fidelity/skills/design-fidelity/scripts/install_app.py fonts --app .
-python3 ~/lanhu-flutter-fidelity/skills/design-fidelity/scripts/install_app.py page --app . --name order_detail
+python3 ~/design-fidelity/skills/design-fidelity/scripts/install_app.py fonts --app .
+python3 ~/design-fidelity/skills/design-fidelity/scripts/install_app.py page --app . --name order_detail
 ```
 
 | | Flutter | React |
@@ -203,8 +203,8 @@ python3 ~/lanhu-flutter-fidelity/skills/design-fidelity/scripts/install_app.py p
 Compose 与 SwiftUI 的生成器、原语和渲染测试模板已提供，但还没有在真机工具链上验证过。接入方法与第一个页面的验证清单见 Skill 的 `references/native-rendering.md`。简要命令：
 
 ```sh
-python3 ~/lanhu-flutter-fidelity/skills/design-fidelity/scripts/install_app.py init --app .
-python3 ~/lanhu-flutter-fidelity/skills/design-fidelity/scripts/install_app.py page --app . --name order_detail \
+python3 ~/design-fidelity/skills/design-fidelity/scripts/install_app.py init --app .
+python3 ~/design-fidelity/skills/design-fidelity/scripts/install_app.py page --app . --name order_detail \
   --kotlin-package com.example.shop.fidelity      # Android；iOS 改为 --scheme Shop
 ```
 

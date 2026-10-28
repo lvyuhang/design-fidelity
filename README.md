@@ -1,6 +1,6 @@
-# Lanhu → Flutter Fidelity
+# Design Fidelity
 
-把蓝湖（Lanhu）或 Figma 设计稿还原为可维护的 Flutter 或 React 页面，并用可复现的门禁衡量还原度。面向 AI 编码代理（Codex、Claude Code 等），也可以由人直接使用。
+把蓝湖（Lanhu）或 Figma 设计稿还原为可维护的 Flutter、React、Jetpack Compose 或 SwiftUI 页面，并用可复现的门禁衡量还原度。面向 AI 编码代理（Codex、Claude Code 等），也可以由人直接使用。
 
 | 设计源 | 取证 | | 目标 | 生成 | 渲染与门禁 |
 |---|---|---|---|---|---|
@@ -50,12 +50,12 @@ Widget build(BuildContext context) => CheckoutScene(
 **请阅读 [研发使用指南](docs/DEVELOPER_GUIDE.md)。** 只需下载 Skill 和 MCP 两个目录，按指南完成一次性配置后，每个页面的工作就是"建页面目录 → 交给 AI → 审核结果 → 提交"。
 
 ```sh
-git clone --filter=blob:none --sparse https://github.com/lvyuhang/lanhu-flutter-fidelity.git ~/lanhu-flutter-fidelity
-cd ~/lanhu-flutter-fidelity && git sparse-checkout set skills/design-fidelity integrations
+git clone --filter=blob:none --sparse https://github.com/lvyuhang/design-fidelity.git ~/design-fidelity
+cd ~/design-fidelity && git sparse-checkout set skills/design-fidelity integrations
 ./setup.command --profile skill                       # Skill 依赖 + 蓝湖 MCP
 python3 skills/design-fidelity/scripts/install_app.py skill --target ~/.codex/skills
 python3 skills/design-fidelity/scripts/install_app.py init --app /path/to/your_app \
-  --python ~/lanhu-flutter-fidelity/.venv/bin/python
+  --python ~/design-fidelity/.venv/bin/python
 ```
 
 `skills/design-fidelity/` 是可安装的 Skill（当前 3.0.0 候选版），AI 代理会按 `SKILL.md` 推进流程，并根据每条命令返回的 `next_action` 决定下一步。
