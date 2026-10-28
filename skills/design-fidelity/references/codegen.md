@@ -2,7 +2,7 @@
 
 ## 生成了什么
 
-`page generate`（`scripts/generate_flutter.py`）读取 prepare 计划和源节点，输出：
+`page generate`（`scripts/generate.py --target flutter`）读取 prepare 计划和源节点，输出：
 
 - `<page>.g.dart`：`<Page>Tokens`（颜色、文字样式）、`<Page>Assets`（已安装素材）、`<Page>Scene`（整页，按源层级分组的方法）。每个节点包在 `SourceNode`（`sourceKey(node_id)`）里，几何门禁靠它定位。
 - `<page>.codegen.json`：每个节点的处置、`unsupported`、`issues`、系统 chrome、素材清单和 `draft_node_decisions`；`output_sha256` 用来检测手改。

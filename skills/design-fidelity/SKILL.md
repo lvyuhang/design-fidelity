@@ -36,6 +36,7 @@ metadata:
 |---|---|
 | 生成的 Scene、overrides、改写布局、lint 规则、几何/多尺寸门禁 | [生成与组件化](references/codegen.md) |
 | MCP 分页、版本或下载 | [取证](references/mcp-evidence.md) |
+| 证据字段、编写或排查取证适配器 | [证据格式](references/evidence-schema.md) |
 | 素材、裁剪、复合行、透明叠层、缺图 | [节点决策](references/implementation-decisions.md) |
 | 字体、契约字段、检测器 | [准备](references/preparation.md) / [契约](references/visual-contract.md) |
 | 首次接入 Flutter 或原语包 | [Flutter 接入](references/flutter-rendering.md) |

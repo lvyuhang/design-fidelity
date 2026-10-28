@@ -267,6 +267,14 @@ def prepare(evidence, reference, manifest_path, font_map=None):
             assets[key] = a
     exported = {a['asset_id']: a for a in manifest.get('assets', [])}
     issues = [{'kind': 'source_styles_missing', **g} for g in source_gaps(nodes, text_styles=True)]
+    from evidence_schema import validate_set
+    schema = validate_set(documents)
+    schema_warnings = []
+    for path, found in zip(evidence, schema['documents']):
+        issues += [{'kind': 'evidence_schema', 'file': Path(path).name, **item}
+                   for item in found if item['severity'] == 'error'][:20]
+        schema_warnings += [{'file': Path(path).name, **item} for item in found if item['severity'] != 'error']
+    issues += [{'kind': 'evidence_schema', **item} for item in schema['overall']]
     for key, node in inventory(nodes).items():
         for asset_id in node.get('asset_ids', []):
             if asset_id not in assets:
@@ -429,6 +437,7 @@ def prepare(evidence, reference, manifest_path, font_map=None):
             'snapshot_id': first['snapshot_id'], 'resolved_version': first['resolved_version'],
             'canvas': canvas, 'render_scale': scale, 'source_nodes': len(nodes),
             'export_origin': origin, 'origin_anchor_nodes': anchors,
+            'evidence_schema_warnings': {'count': len(schema_warnings), 'sample': schema_warnings[:10]},
             'assets': prepared_assets, 'fonts': fonts, 'nodes': node_plan,
             'effect_requirements': requirements(nodes, canvas), 'effect_candidates': effects,
             'review_queue': review, 'review_groups':list(review_groups.values()),

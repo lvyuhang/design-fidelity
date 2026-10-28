@@ -163,7 +163,7 @@ class PageSessionTests(unittest.TestCase):
         self.assertEqual(Path(data['events'][0]['commands'][0]['argv'][1]).name,
                          'compile_contract.py')
         self.assertEqual(Path(data['events'][0]['commands'][1]['argv'][1]).name,
-                         'run_flutter.py')
+                         'run_target.py')
         self.assertEqual(self.call('finish','--note','reviewed accepted render')[0].returncode,0)
 
     def test_prepare_delegates_and_preserves_input_failures(self):

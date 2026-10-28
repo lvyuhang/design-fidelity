@@ -222,7 +222,8 @@ def build(draft: dict, draft_dir: Path, codegen: dict, plan: dict | None, spec_d
     decisions = {}
     asset_paths = {}
     for entry in codegen.get('assets', []):
-        asset_paths[entry['flutter_asset']] = rel(app / entry['flutter_asset'], spec_dir)
+        app_asset = entry.get('app_asset') or entry['flutter_asset']
+        asset_paths[app_asset] = rel(app / app_asset, spec_dir)
     for key, decision in codegen.get('draft_node_decisions', {}).items():
         decision = copy.deepcopy(decision)
         if decision.get('implementation'):

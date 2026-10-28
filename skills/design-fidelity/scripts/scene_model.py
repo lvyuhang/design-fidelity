@@ -491,8 +491,10 @@ class SceneModel:
         raw = node.get('raw_style') or {}
         font = raw.get('font') or {}
         spec = node.get('text_spec') or {}
-        runs = [r for r in spec.get('text_runs', []) if isinstance(r.get('text'), str)]
-        base = runs[0] if runs else (spec.get('base_style') or {})
+        inherited = spec.get('base_style') if isinstance(spec.get('base_style'), dict) else {}
+        runs = [{**inherited, **{k: v for k, v in r.items() if v is not None}}
+                for r in spec.get('text_runs', []) if isinstance(r.get('text'), str)]
+        base = runs[0] if runs else inherited
         if not runs or ''.join(r['text'] for r in runs) != node['text']:
             self.issues.append({'kind': 'text_run_coverage', 'node_id': key})
             runs = [dict(base, text=node['text'])]

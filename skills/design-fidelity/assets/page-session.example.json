@@ -15,7 +15,7 @@
   "app": "../../flutter_app",
   "generated": "../../flutter_app/lib/pages/page.g.dart",
   "class_name": "PageName",
-  "asset_dir": "assets/lanhu/page",
+  "asset_dir": "assets/design/page",
   "page_inputs": [
     "../../flutter_app/lib/pages/page.dart"
   ],

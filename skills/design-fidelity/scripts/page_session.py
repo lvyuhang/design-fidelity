@@ -418,7 +418,8 @@ def main():
                     target = path('generated')
                     event['report'] = str(target.with_suffix('').with_suffix('.codegen.json'))
                     evidence = [v for entry in c['evidence'] for v in ('--evidence', (config.parent/entry).resolve())]
-                    invoke('generate_flutter.py', [*evidence, '--plan', plan, '--class-name', c['class_name'],
+                    invoke('generate.py', ['--target', c.get('target', 'flutter'), *evidence, '--plan', plan,
+                        '--class-name', c['class_name'],
                         '--output', target, '--report', event['report'], '--app-root', path('app'),
                         '--render-test', path('app')/c['test'], '--output-env', c['output_env'],
                         *(['--asset-dir', c['asset_dir']] if c.get('asset_dir') else []),
@@ -469,7 +470,8 @@ def main():
                     expected = c.get('scope', 'page')
                     if expected not in ('page','provided_nodes') or contract['source_scope']['kind'] != expected:
                         raise ValueError('Requested scope differs from contract; whole-page tasks cannot silently become local checks')
-                    invoke('run_flutter.py', ['--contract',path('contract'),'--app',path('app'),
+                    invoke('run_target.py', ['--target', c.get('target', 'flutter'),
+                        '--contract',path('contract'),'--app',path('app'),
                         '--test',c['test'],'--output-env',c['output_env'],'--output',output,
                         '--task-log',root/'task-run.json','--round-note',args.note,
                         *(['--analyze',*c['analyze']] if c.get('analyze') else []),
