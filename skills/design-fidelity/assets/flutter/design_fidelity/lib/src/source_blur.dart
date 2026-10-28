@@ -36,10 +36,20 @@ class SourceBackdropBlur extends StatelessWidget {
         inner: blur);
   }
 
+  /// Only the backdrop sample is clipped to [shape]; [child] (the layer's own
+  /// fills and outer shadows) paints unclipped on top, as in Sketch/Figma.
   @override
-  Widget build(BuildContext context) => ClipPath(
-        clipper: SourceShapeClipper(shape),
-        child: BackdropFilter(filter: filter, child: child),
+  Widget build(BuildContext context) => Stack(
+        clipBehavior: Clip.none,
+        children: [
+          Positioned.fill(
+            child: ClipPath(
+              clipper: SourceShapeClipper(shape),
+              child: BackdropFilter(filter: filter, child: const SizedBox.expand()),
+            ),
+          ),
+          child,
+        ],
       );
 }
 

@@ -88,11 +88,15 @@ def compile_spec(spec, base):
     c["workflow_version"] = 1
     # New contracts lint page Dart against the verified primitives. Opting out
     # is explicit and recorded; legacy contracts (no key) keep their behaviour.
-    lint_profile = c.setdefault('dart_lint', 'v1')
+    target = c.setdefault('target', 'flutter')
+    lint_key = {'flutter': 'dart_lint', 'react': 'web_lint'}.get(target)
+    if lint_key is None:
+        raise ValueError(f'Unknown target {target}; expected flutter or react')
+    lint_profile = c.setdefault(lint_key, 'v1')
     if lint_profile not in ('v1', 'off'):
-        raise ValueError('dart_lint must be "v1" or "off"')
-    if lint_profile == 'off' and not str(c.get('dart_lint_reason', '')).strip():
-        raise ValueError('dart_lint "off" requires dart_lint_reason')
+        raise ValueError(f'{lint_key} must be "v1" or "off"')
+    if lint_profile == 'off' and not str(c.get(f'{lint_key}_reason', '')).strip():
+        raise ValueError(f'{lint_key} "off" requires {lint_key}_reason')
     # Node geometry from sourceKey widgets, and layout at other sizes/text scales.
     probe = c.setdefault('geometry_probe', 'v1')
     if probe not in ('v1', 'off') or (probe == 'off' and not str(c.get('geometry_probe_reason', '')).strip()):

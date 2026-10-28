@@ -201,6 +201,7 @@ class SceneModel:
             else:
                 self.design_bottom = max(self.design_bottom, self.canvas[1] - y)
         self.footer: list[str] = []
+        self.keyed: set[str] = set()  # nodes emitted as their own keyed element
         self._fonts = font_lookup(self.plan, font_map, font_platforms)
         self.font_platforms = font_platforms
         self._index_assets()
@@ -494,6 +495,12 @@ class SceneModel:
         inherited = spec.get('base_style') if isinstance(spec.get('base_style'), dict) else {}
         runs = [{**inherited, **{k: v for k, v in r.items() if v is not None}}
                 for r in spec.get('text_runs', []) if isinstance(r.get('text'), str)]
+        # A fill on a text layer paints the glyphs (Sketch/Figma): it replaces
+        # the run colours, which exports often leave empty.
+        fill = self.text_fill(key)
+        if fill is not None:
+            runs = [dict(r, color=fill) for r in runs]
+            inherited = dict(inherited, color=fill)
         base = runs[0] if runs else inherited
         if not runs or ''.join(r['text'] for r in runs) != node['text']:
             self.issues.append({'kind': 'text_run_coverage', 'node_id': key})
@@ -514,6 +521,22 @@ class SceneModel:
             widget = N('opacity', value=float(opacity) / 100, child=widget)
         self.record(key, 'native_exact', primitive='text', align=align, wrap=wrap)
         return self.effects(key, widget, None)
+
+    def text_fill(self, key: str) -> str | None:
+        fills = enabled((self.nodes[key].get('raw_style') or {}).get('fills'))
+        if not fills:
+            return None
+        top = fills[-1]
+        if top.get('type') not in (None, 'color') or top.get('fillType') not in (None, 0):
+            self.unsupported.append({'node_id': key, 'feature': 'text_gradient_or_pattern_fill',
+                                     'detail': 'text drawn with its run colour'})
+            return None
+        color = parse_color(top.get('color'))
+        if color is None:
+            return None
+        opacity = float(top.get('opacity', 1) if top.get('opacity') is not None else 1)
+        r, g, b, a = color
+        return f'rgba({r},{g},{b},{a * opacity:g})'
 
     def asset_constant(self, key: str, asset: dict) -> str:
         if key in self.asset_constants:
@@ -686,6 +709,7 @@ class SceneModel:
         if widget is None:
             return None
         widget = N('node', id=key, child=widget, size=self.frame(key)[2:])
+        self.keyed.add(key)
         return self.placement(key, parent_rect, stretch, widget, hints, at_root)
 
     def group(self, key: str, parent_rect: tuple, stretch: bool, at_root: bool) -> N | None:
@@ -714,6 +738,7 @@ class SceneModel:
         self.methods.append((method, name, body))
         self.record(key, 'container', symbol=f'{self.class_name}Scene.{method}')
         call = N('node', id=key, child=N('group_ref', method=method), size=(w, h))
+        self.keyed.add(key)
         if child_stretch:
             vertical = self.vertical(key, y - py, (py + ph) - (y + h), h, False, at_root)
             return N('placed', args=[('left', left), ('right', right), *vertical], child=call)
@@ -784,6 +809,10 @@ class SceneModel:
                 decision['anchor'] = entry['anchor']
             if entry.get('vertical_anchor'):
                 decision['vertical_anchor'] = entry['vertical_anchor']
+            if key not in self.keyed:
+                # Drawn by its owner (asset, root frame) or paints nothing: there is
+                # no element of its own whose layout the geometry probe could measure.
+                decision['geometry'] = False
             decisions[key] = decision
         counts: dict[str, int] = {}
         for entry in self.records.values():

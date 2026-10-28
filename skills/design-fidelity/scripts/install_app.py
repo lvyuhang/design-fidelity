@@ -3,7 +3,8 @@
 
   skill --target DIR      copy the Skill into an agent's skills directory
                           (no maintainer tests or experiment material)
-  init  --app APP         add the design_fidelity package and a fidelity/ workspace
+  init  --app APP         add the primitives package and a fidelity/ workspace
+                          (Flutter: pubspec.yaml; React: package.json; or --target)
   page  --app APP --name  create fidelity/<name>/page.json and declare its assets
   fonts --app APP         extract the design font (PingFang SC) from this Mac for
                           fidelity renders only and add it to fidelity/font-map.json
@@ -25,8 +26,11 @@ from pathlib import Path
 
 SKILL = Path(__file__).resolve().parents[1]
 PACKAGE = SKILL / 'assets' / 'flutter' / 'design_fidelity'
+WEB_PACKAGE = SKILL / 'assets' / 'web' / 'design-fidelity-react'
+WEB_DEPENDENCY = ('@design-fidelity/react', 'file:packages/design-fidelity-react')
+TARGETS = ('flutter', 'react')
 SKILL_PARTS = ('SKILL.md', 'agents', 'references', 'scripts', 'assets')
-IGNORE = shutil.ignore_patterns('__pycache__', '*.pyc', '.dart_tool', 'build', '.DS_Store')
+IGNORE = shutil.ignore_patterns('__pycache__', '*.pyc', '.dart_tool', 'build', '.DS_Store', 'node_modules')
 DEPENDENCY = '  design_fidelity:\n    path: packages/design_fidelity\n'
 
 WRAPPER = '''#!/bin/bash
@@ -140,24 +144,64 @@ def flutter_version() -> str:
         return ''
 
 
-def init_app(app: Path, python: str, force: bool) -> dict:
-    pubspec = app / 'pubspec.yaml'
-    if not pubspec.is_file():
-        raise ValueError(f'{app} is not a Flutter app (pubspec.yaml missing)')
-    target = app / 'packages' / 'design_fidelity'
-    package = 'unchanged'
+def detect_target(app: Path, target: str | None = None) -> str:
+    if target:
+        return target
+    marker = app / 'fidelity' / 'workspace.json'
+    if marker.is_file():
+        return json.loads(marker.read_text()).get('target', 'flutter')
+    if (app / 'pubspec.yaml').is_file():
+        return 'flutter'
+    if (app / 'package.json').is_file():
+        return 'react'
+    raise ValueError(f'{app} has neither pubspec.yaml (Flutter) nor package.json (React); pass --target')
+
+
+def _install_package(source: Path, target: Path, force: bool) -> str:
     if target.exists():
-        differs = _tree_differs(PACKAGE, target)
+        differs = _tree_differs(source, target)
         if differs and not force:
             raise ValueError(f'{target} differs from this Skill version; re-run with --force to replace it')
-        if differs:
-            shutil.rmtree(target)
-    if not target.exists():
-        shutil.copytree(PACKAGE, target, ignore=IGNORE)
-        package = 'installed'
-    dependency = add_dependency(pubspec)
+        if not differs:
+            return 'unchanged'
+        shutil.rmtree(target)
+    shutil.copytree(source, target, ignore=IGNORE)
+    return 'installed'
+
+
+def add_web_dependency(package_json: Path) -> str:
+    data = json.loads(package_json.read_text())
+    name, spec = WEB_DEPENDENCY
+    deps = data.setdefault('dependencies', {})
+    if deps.get(name) == spec:
+        return 'present'
+    deps[name] = spec
+    package_json.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
+    return 'added'
+
+
+def init_app(app: Path, python: str, force: bool, target: str | None = None) -> dict:
+    target = detect_target(app, target)
+    if target == 'flutter':
+        pubspec = app / 'pubspec.yaml'
+        if not pubspec.is_file():
+            raise ValueError(f'{app} is not a Flutter app (pubspec.yaml missing)')
+        package = _install_package(PACKAGE, app / 'packages' / 'design_fidelity', force)
+        dependency = add_dependency(pubspec)
+        next_steps = ['flutter pub get',
+                      '(cd packages/design_fidelity && flutter test)  # once per Flutter upgrade']
+    else:
+        package_json = app / 'package.json'
+        if not package_json.is_file():
+            raise ValueError(f'{app} is not a web app (package.json missing)')
+        package = _install_package(WEB_PACKAGE, app / 'packages' / 'design-fidelity-react', force)
+        dependency = add_web_dependency(package_json)
+        next_steps = ['npm install',
+                      'npm install -D esbuild playwright  # fidelity renders only; react/react-dom from the app',
+                      'npx playwright install chromium']
     workspace = app / 'fidelity'
     workspace.mkdir(exist_ok=True)
+    (workspace / 'workspace.json').write_text(json.dumps({'target': target}, indent=2) + '\n')
     font_map = workspace / 'font-map.json'
     if not font_map.exists():
         font_map.write_text(json.dumps({'fonts': {}}, indent=2) + '\n')
@@ -167,11 +211,18 @@ def init_app(app: Path, python: str, force: bool) -> dict:
     (workspace / '.gitignore').write_text(GITIGNORE)
     (workspace / '.local.env').write_text(
         f'DESIGN_FIDELITY_SKILL="{SKILL}"\nDESIGN_FIDELITY_PYTHON="{python}"\n')
-    return {'status': 'READY', 'package': package, 'dependency': dependency,
+    return {'status': 'READY', 'target': target, 'package': package, 'dependency': dependency,
             'workspace': str(workspace),
-            'next': ['flutter pub get',
-                     '(cd packages/design_fidelity && flutter test)  # once per Flutter upgrade',
-                     'python3 <skill>/scripts/install_app.py page --app . --name <page>']}
+            'next': [*next_steps, 'python3 <skill>/scripts/install_app.py page --app . --name <page>']}
+
+
+def playwright_version(app: Path) -> str:
+    try:
+        result = subprocess.run(['node', '-e', "console.log(require('playwright/package.json').version)"],
+                                cwd=app, capture_output=True, text=True, timeout=60)
+        return f'chromium-playwright-{result.stdout.strip()}' if result.returncode == 0 else ''
+    except (OSError, subprocess.TimeoutExpired):
+        return ''
 
 
 def _tree_differs(source: Path, target: Path) -> bool:
@@ -234,13 +285,14 @@ def install_fonts(app: Path, source: Path | None, android: str | None) -> dict:
         key = f'{name}@{weight}'
         if key not in fonts:
             fonts[key] = {'path': f'{FONT_HOME}/{name}.otf', 'runtime_family': 'DesignPingFang',
-                          'ios': None, 'android': android}
+                          'ios': None, 'android': android, 'web': None}
             added.append(key)
     font_map_path.write_text(json.dumps(font_map, ensure_ascii=False, indent=2) + '\n')
     return {'status': 'READY', 'font_dir': str(target_dir), 'extracted': extracted,
             'added_to_font_map': added,
             'production': {'ios': 'system font (PingFang)',
-                           'android': android or 'system font'},
+                           'android': android or 'system font',
+                           'web': 'system font stack (PingFang on Apple devices)'},
             'note': 'Fonts stay outside the app and are never bundled. Map any other design '
                     'fonts that prepare reports as font_mapping_missing by hand.'}
 
@@ -263,9 +315,9 @@ def create_page(app: Path, name: str, class_name: str | None, title: str | None)
     config = folder / 'page.json'
     if config.exists():
         return {'status': 'EXISTS', 'config': str(config)}
+    target = detect_target(app)
     folder.mkdir()
     (folder / 'evidence').mkdir()
-    asset_dir = f'assets/design/{name}'
     page = {
         'name': title or name,
         'run_dir': 'run',
@@ -277,18 +329,23 @@ def create_page(app: Path, name: str, class_name: str | None, title: str | None)
         'spec': 'reviewed-spec.json',
         'contract': 'visual-contract.json',
         'app': '../..',
-        'generated': f'../../lib/fidelity/{name}.g.dart',
         'class_name': class_name or camel(name),
-        'asset_dir': asset_dir,
-        'test': f'test/fidelity/{name}_test.dart',
         'output_env': 'FIDELITY_RENDER_OUTPUT',
         'page_inputs': [],
-        'renderer_version': flutter_version(),
         'platform': f'{sys.platform}',
     }
+    if target == 'flutter':
+        asset_dir = f'assets/design/{name}'
+        page.update(generated=f'../../lib/fidelity/{name}.g.dart', asset_dir=asset_dir,
+                    test=f'test/fidelity/{name}_test.dart', renderer_version=flutter_version())
+        assets = add_asset_dir(app / 'pubspec.yaml', asset_dir)
+    else:
+        page.update(target='react', generated=f'../../src/fidelity/{name}.g.tsx',
+                    asset_dir=f'src/assets/design/{name}', test=f'fidelity/{name}/render.tsx',
+                    renderer_version=playwright_version(app))
+        assets = 'imported by the generated module'
     config.write_text(json.dumps(page, ensure_ascii=False, indent=2) + '\n')
-    assets = add_asset_dir(app / 'pubspec.yaml', asset_dir)
-    return {'status': 'CREATED', 'config': str(config), 'class_name': page['class_name'],
+    return {'status': 'CREATED', 'target': target, 'config': str(config), 'class_name': page['class_name'],
             'pubspec_assets': assets,
             'next': f'fidelity/page {name} start, then let the agent fetch evidence into '
                     f'fidelity/{name}/evidence/ and continue with prepare'}
@@ -306,7 +363,8 @@ def main() -> int:
     i.add_argument('--app', type=Path, required=True)
     i.add_argument('--python', default=sys.executable,
                    help='Python with scripts/requirements.txt installed (default: this one)')
-    i.add_argument('--force', action='store_true', help='Replace a different design_fidelity copy')
+    i.add_argument('--force', action='store_true', help='Replace a different primitives package copy')
+    i.add_argument('--target', choices=TARGETS, help='Default: flutter with pubspec.yaml, react with package.json')
     p = sub.add_parser('page')
     p.add_argument('--app', type=Path, required=True)
     p.add_argument('--name', required=True, help='snake_case page id, e.g. withdraw')
@@ -322,7 +380,7 @@ def main() -> int:
         if args.command == 'skill':
             result = install_skill(args.target.expanduser().resolve(), args.force)
         elif args.command == 'init':
-            result = init_app(args.app.resolve(), args.python, args.force)
+            result = init_app(args.app.resolve(), args.python, args.force, args.target)
         elif args.command == 'fonts':
             result = install_fonts(args.app.resolve(), args.pingfang, args.android)
         else:

@@ -18,13 +18,18 @@ from round_log import RoundLog
 from fidelity_contract import sha256
 
 
-# render: argv run from the app root; the test writes the PNG to $output_env.
+# render(test, output_env): argv run from the app root; writes the PNG to $output_env.
 # lint: (module, function) taking the contract path; graphic_audit: Flutter-only source audit.
 TARGETS = {
-    'flutter': {'render': lambda test: ['flutter', 'test', '--no-pub', test],
+    'flutter': {'render': lambda test, env: ['flutter', 'test', '--no-pub', test],
                 'lint': ('dart_fidelity_lint', 'lint_contract'), 'lint_name': 'dart_fidelity_lint',
                 'graphic_audit': True,
                 'analyze': ['dart', 'analyze'], 'build': ['flutter', 'build', 'web', '--release', '--no-pub']},
+    'react': {'render': lambda test, env: ['node', str(Path(test).parent / 'support' / 'fidelity_render_harness.cjs'),
+                                           test, '--output-env', env],
+              'lint': ('web_fidelity_lint', 'lint_contract'), 'lint_name': 'web_fidelity_lint',
+              'graphic_audit': False,
+              'analyze': ['npx', '--no-install', 'tsc', '--noEmit'], 'build': ['npm', 'run', 'build']},
 }
 
 
@@ -105,7 +110,7 @@ def main(default_target: str | None = None):
         stage('render', [sys.executable, str(skill / 'scripts/render_with_receipt.py'),
                         '--contract', str(contract), '--candidate', str(out / 'render.png'),
                         '--receipt', str(out / 'receipt.json'), '--cwd', str(app), '--',
-                        *spec['render'](args.test)])
+                        *spec['render'](args.test, args.output_env)])
         report['render_sha256'] = sha256(out/'render.png')
         current_stage = 'gate'
         gate_code = stage('gate', [sys.executable, str(skill / 'scripts/visual_fidelity_gate.py'),

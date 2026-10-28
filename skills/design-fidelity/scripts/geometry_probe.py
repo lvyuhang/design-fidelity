@@ -45,7 +45,8 @@ def compare_geometry(nodes: dict, decisions: dict, geometry: dict) -> dict:
     paragraphs = geometry.get('text_nodes', {})
     checks, failures = [], []
     for key, decision in sorted(decisions.items()):
-        if decision.get('mode') not in CHECKED_MODES or key not in nodes:
+        if decision.get('mode') not in CHECKED_MODES or key not in nodes \
+                or decision.get('geometry') is False:
             continue
         node = nodes[key]
         label = f"{key} '{node.get('name') or ''}'"

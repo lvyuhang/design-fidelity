@@ -241,16 +241,26 @@ def build(draft: dict, draft_dir: Path, codegen: dict, plan: dict | None, spec_d
     if bound:
         test_file = Path(scene['test_file']).resolve()
         inputs.append(rel(test_file, spec_dir))
+        command = ['flutter', 'test', '--no-pub', rel(test_file, app)]
+        if codegen.get('target') == 'react':
+            render = Path(codegen['render_test']['path']).resolve()
+            command = ['node', rel(render.parent / 'support' / 'fidelity_render_harness.cjs', app),
+                       rel(render, app), '--scene', rel(test_file, app)]
         spec['scene_checks'] = {'generated_scene': {
             'obligations': sorted(bound),
             'test_file': rel(test_file, spec_dir),
             'cwd': rel(app, spec_dir),
-            'command': ['flutter', 'test', '--no-pub', rel(test_file, app)],
+            'command': command,
             'timeout_seconds': 180,
             'assertions': 'Production scene binds each obligation to the verified design_fidelity primitive '
                           'with source parameters; stroke bands are rendered with/without the border to '
                           'prove position and no leakage; fill stacks are sampled against the source composite.'}}
-    for name in ('pubspec.yaml', 'pubspec.lock'):
+    target = codegen.get('target', 'flutter')
+    if target != 'flutter':
+        spec['target'] = target
+    manifests = {'flutter': ('pubspec.yaml', 'pubspec.lock'),
+                 'react': ('package.json', 'package-lock.json', 'pnpm-lock.yaml', 'yarn.lock')}
+    for name in manifests.get(target, ()):
         if (app / name).is_file():
             inputs.append(rel(app / name, spec_dir))
     spec['implementation_inputs'] = sorted(dict.fromkeys(inputs))
@@ -345,7 +355,9 @@ def main() -> int:
             parser.error('Refusing to overwrite a reviewed/edited spec; edit it directly or choose a new file')
     spec_dir = args.output.resolve().parent
     draft = read_json(args.draft)
-    environment = {'renderer': 'flutter_test', 'renderer_version': args.renderer_version,
+    target = read_json(args.codegen).get('target', 'flutter')
+    environment = {'renderer': {'flutter': 'flutter_test', 'react': 'chromium_playwright'}.get(target, target),
+                   'renderer_version': args.renderer_version,
                    'platform': args.platform, 'locale': args.locale, 'state': 'default', 'text_scale': 1}
     spec, review = build(draft, args.draft.resolve().parent, read_json(args.codegen),
                          read_json(args.plan) if args.plan else None, spec_dir,

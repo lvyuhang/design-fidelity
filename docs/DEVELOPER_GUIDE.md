@@ -166,7 +166,31 @@ AI 会依次执行：`start → 取证 → prepare → generate → 组合页面
 
 验收时会在 iPhone SE、iPhone 15、iPhone 15 Pro Max、Android 360×800、Android 412×915 五种屏幕下，分别按 1.0 倍和 1.3 倍字体检查：布局报错、横向越界、矮屏内容被截断且不能滚动、文字进入状态栏、底部按钮压到 Home Indicator，这些都会阻断验收。
 
-## 六、目前的限制
+## 六、Web（React）项目
+
+流程与 Flutter 相同，`init` 检测到 `package.json` 会自动切到 React：
+
+```sh
+python3 ~/lanhu-flutter-fidelity/skills/design-fidelity/scripts/install_app.py init --app . \
+  --python ~/lanhu-flutter-fidelity/.venv/bin/python
+npm install && npm install -D esbuild playwright && npx playwright install chromium
+python3 ~/lanhu-flutter-fidelity/skills/design-fidelity/scripts/install_app.py fonts --app .
+python3 ~/lanhu-flutter-fidelity/skills/design-fidelity/scripts/install_app.py page --app . --name order_detail
+```
+
+| | Flutter | React |
+|---|---|---|
+| 生成文件 | `lib/fidelity/<page>.g.dart` | `src/fidelity/<page>.g.tsx` |
+| 素材 | `assets/design/<page>/`（写入 pubspec） | `src/assets/design/<page>/`（由生成文件 import） |
+| 渲染入口 | `test/fidelity/<page>_test.dart` | `fidelity/<page>/render.tsx` |
+| 渲染器 | `flutter test` | Playwright Chromium |
+| lint 规则 | `L001`–`L013` | `W001`–`W011`（颜色字面量、手写字号、`box-shadow`、`border`、`<img>`、图标库等） |
+
+页面写法：把 `<Page>Scene` 放进满高容器（如 `height: 100dvh`），用 `overrides` / `onTap` 接数据和交互，不要改 `.g.tsx`。移动端 Safari 需要 `viewport-fit=cover` 才能拿到安全区。Next.js 需要把 `@design-fidelity/react` 加入 `transpilePackages`。详细说明见 Skill 的 `references/web-rendering.md`。
+
+提交时额外提交 `fidelity/<page>/render.tsx`、`scene.g.json` 和 `support/`；`packages/design-fidelity-react` 与 Flutter 的原语包一样随仓库提交。
+
+## 七、目前的限制
 
 - 还原度检查在 Mac 的测试渲染器上进行；iOS 真机用 Metal、Android 用 Vulkan/OpenGL 渲染，模糊、阴影和文字抗锯齿可能有细微差别，上线前建议用模拟器或真机截图核对。
 - 底部按钮、底部导航是否"贴底"由生成器根据位置自动判断（见报告 `layout.footer`），判断不对时用 override 调整。

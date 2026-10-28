@@ -102,7 +102,7 @@ def next_action(event=None, details=None):
         elif current == 'generate' and outcome == 'OK':
             code, action, instruction = ('IMPLEMENT_SEMANTICS', 'phase --phase implementation',
                 '页面组合生成的 Scene：用 overrides 替换需要组件化/动态数据的组，用 onTap 接交互；'
-                '不改 .g.dart。处理 unsupported 与 issues 后执行 spec 生成可编译的 reviewed spec。')
+                '不改生成文件（.g.dart / .g.tsx）。处理 unsupported 与 issues 后执行 spec 生成可编译的 reviewed spec。')
         elif current == 'compile' and outcome == 'OK' and state == 'ready':
             code, action, instruction = ('VALIDATE', 'validate',
                 '用冻结契约验证当前实现；编译完成不代表视觉通过。')
@@ -434,7 +434,8 @@ def main():
                     event['report'] = str(output/'spec-draft.json')
                     output.mkdir(parents=True, exist_ok=True)
                     inputs = [path('app')/c['test'], *(config.parent/p for p in c.get('page_inputs', []))]
-                    harness = path('app')/Path(c['test']).parent/'support'/'fidelity_render_harness.dart'
+                    harness_name = {'react': 'fidelity_render_harness.cjs'}.get(c.get('target'), 'fidelity_render_harness.dart')
+                    harness = path('app')/Path(c['test']).parent/'support'/harness_name
                     if harness.exists():
                         inputs.append(harness)
                     command = [data.get('python', sys.executable), str(SCRIPTS/'draft_spec.py'),

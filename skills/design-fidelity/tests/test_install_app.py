@@ -109,6 +109,36 @@ class InstallAppTests(unittest.TestCase):
         self.assertTrue((self.app / 'fidelity/withdraw/run/session.json').is_file())
 
 
+class InstallWebAppTests(unittest.TestCase):
+    def setUp(self):
+        temp = tempfile.TemporaryDirectory()
+        self.addCleanup(temp.cleanup)
+        self.app = Path(temp.name) / 'web'
+        self.app.mkdir()
+        (self.app / 'package.json').write_text(json.dumps({'name': 'web', 'dependencies': {'react': '^19.0.0'}}))
+
+    def test_react_app_gets_package_dependency_and_react_pages(self):
+        result = init_app(self.app, 'python3', False)
+        self.assertEqual(result['target'], 'react')
+        self.assertTrue((self.app / 'packages/design-fidelity-react/src/index.tsx').is_file())
+        package = json.loads((self.app / 'package.json').read_text())
+        self.assertEqual(package['dependencies']['@design-fidelity/react'], 'file:packages/design-fidelity-react')
+        self.assertEqual(package['dependencies']['react'], '^19.0.0')
+        self.assertEqual(init_app(self.app, 'python3', False)['dependency'], 'present')
+        page = create_page(self.app, 'order_detail', None, None)
+        self.assertEqual(page['target'], 'react')
+        config = json.loads(Path(page['config']).read_text())
+        self.assertEqual(config['target'], 'react')
+        self.assertEqual(config['generated'], '../../src/fidelity/order_detail.g.tsx')
+        self.assertEqual(config['test'], 'fidelity/order_detail/render.tsx')
+        self.assertEqual(config['asset_dir'], 'src/assets/design/order_detail')
+
+    def test_target_is_required_without_a_manifest(self):
+        (self.app / 'package.json').unlink()
+        with self.assertRaises(ValueError):
+            init_app(self.app, 'python3', False)
+
+
 def synthetic_pingfang(path):
     """A two-face TTC named like the system PingFang collection."""
     from fontTools.fontBuilder import FontBuilder

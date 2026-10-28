@@ -335,6 +335,25 @@ void main() {
           greaterThan(200), reason: 'counter-example without blur');
     });
 
+    testWidgets('background blur does not clip the layer shadow',
+        (tester) async {
+      final px = await renderPixels(
+        tester,
+        probeSurface(const SourceBackdropBlur(
+          radius: 8,
+          child: SourceBox(
+            fills: [SourceFill.color(Color(0xFFFFFFFF))],
+            shadows: [
+              SourceShadow(color: Color(0xFF000000), offset: Offset(0, 10)),
+            ],
+          ),
+        )),
+      );
+      expect(px.luma(50, 75), lessThan(30),
+          reason: 'the outer shadow paints outside the blur clip');
+      expect(px.isWhite(50, 50), isTrue);
+    });
+
     test('saturation matrix is identity at 1', () {
       final m = saturationMatrix(1);
       expect(m.sublist(0, 3), [closeTo(1, 1e-9), closeTo(0, 1e-9), closeTo(0, 1e-9)]);

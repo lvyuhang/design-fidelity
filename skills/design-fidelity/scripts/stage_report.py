@@ -34,7 +34,7 @@ def build(config_path: Path) -> dict:
     latest = runs[-1] if runs else None
     run = _read(latest['report']) if latest else None
     gate = _read(Path(latest['report']).parent / 'gate' / 'visual-gate-report.json') if latest else None
-    candidate = ((gate or {}).get('candidates') or {}).get('flutter') or {}
+    candidate = ((gate or {}).get('candidates') or {}).get(config.get('target', 'flutter')) or {}
     contract = _read(base / config['contract']) if config.get('contract') else None
     generations = [e for e in events if e['action'] == 'generate' and e.get('status') == 'OK']
     codegen = _read(generations[-1]['report']) if generations else None
@@ -57,7 +57,8 @@ def build(config_path: Path) -> dict:
         if kind in blocking_kinds:
             blocking[f'responsive.{kind}'] = count
     observations = {f'responsive.{k}': v for k, v in by_kind.items() if k not in blocking_kinds}
-    lint = ((run or {}).get('preflight') or {}).get('dart_fidelity_lint') or {}
+    preflight = (run or {}).get('preflight') or {}
+    lint = preflight.get('dart_fidelity_lint') or preflight.get('web_fidelity_lint') or {}
     summary = session.get('summary') or {}
     rounds = summary.get('rounds') or {}
     return {

@@ -454,3 +454,165 @@ def write_scene_test(generator, class_name: str, app: Path | None, output: Path,
     test_file.parent.mkdir(parents=True, exist_ok=True)
     test_file.write_text(text, encoding='utf-8')
     return {'test_file': str(test_file), 'obligations': writer.obligations}
+
+
+class WebSceneSpec(SceneTestWriter):
+    """The same obligations as data for the web harness (`--scene`).
+
+    Each check binds the node to a verified @design-fidelity/react primitive
+    (read from the rendered DOM: data-df-* attributes written by the
+    primitives) and, where pixels can tell, probes the border band or the
+    composited fill stack in Chromium.
+    """
+
+    def __init__(self, generator, class_name: str, module: str):
+        super().__init__(generator, class_name, module)
+        self.checks: list[dict] = []
+
+    def add(self, requirement):
+        ident, kind = requirement['id'], requirement['kind']
+        keys = requirement['node_ids']
+        modes = {k: self.owner_mode(k) for k in keys}
+        if all(m[0] in ('system_chrome', 'hidden') for m in modes.values()):
+            return
+        covered = [k for k, (mode, _) in modes.items() if mode == 'covered_by_asset']
+        check, note = None, ''
+        if covered and len(covered) == len(keys):
+            check = {'bound': [{'node': o, 'attr': 'data-df-asset'} for o in sorted({modes[k][1] for k in covered})]}
+            note = 'covered by exported asset'
+        elif kind == 'stroke':
+            check, note = self.web_stroke(keys[0])
+        elif kind == 'paint_stack':
+            check, note = self.web_paint_stack(keys)
+        elif kind == 'backdrop':
+            check, note = self.web_backdrop(keys[0])
+        elif kind == 'clip':
+            check, note = self.web_clip(keys[0])
+        elif kind == 'boundary_overlay':
+            check, note = self.web_boundary(keys[0])
+        elif kind == 'placeholder_effect':
+            check, note = self.web_placeholder(keys[0], ident.rsplit('/', 1)[-1])
+        else:
+            note = f'unknown obligation kind {kind}'
+        if check is not None:
+            self.checks.append({'id': ident, 'kind': kind, 'note': note, **check})
+        self.obligations.append({'id': ident, 'kind': kind, 'node_ids': keys,
+                                 'status': 'bound' if check is not None else 'unsupported', 'note': note})
+
+    def web_stroke(self, key):
+        mode, _ = self.owner_mode(key)
+        if mode != 'native_exact':
+            return None, f'node rendered as {mode}'
+        borders = self.borders(key)
+        if not borders:
+            return None, 'no renderable border'
+        check = {'bound': [{'node': key, 'attr': 'data-df-box',
+                            'equals': {'data-df-borders': ' '.join(f"{_num(b['thickness'])}:{b['position']}"
+                                                                   for b in borders)}}]}
+        _, shape_kind = self.g.shape_of(key)
+        first = borders[0]
+        fills = self.solid_fills(key) or []
+        fill_rgb = GRAY
+        for rgb, alpha in fills:
+            fill_rgb = _over(fill_rgb, rgb, alpha)
+        contrast = False
+        if first['color']:
+            base = fill_rgb if first['position'] == 'inside' else GRAY
+            contrast = _distance(_over(base, first['color'][:3], first['color'][3]), base) >= 8
+        if shape_kind in ('rect', 'oval') and len(borders) == 1 and contrast:
+            check['band'] = {'node': key, 'thickness': first['thickness'], 'position': first['position'],
+                             'size': list(self.g.frame(key)[2:])}
+            return check, 'binding + rendered edge band'
+        return check, 'binding (band pixels not distinguishable for this shape/colour)'
+
+    def web_paint_stack(self, keys):
+        bound = []
+        for key in keys:
+            if self.owner_mode(key)[0] != 'native_exact':
+                continue
+            fills = (self.g.nodes[key].get('raw_style') or {}).get('fills') or []
+            count = sum(1 for f in fills if isinstance(f, dict) and f.get('isEnabled', True) is not False)
+            bound.append({'node': key, 'attr': 'data-df-box', 'equals': {'data-df-fills': str(count)}})
+        if not bound:
+            return None, 'no natively rendered layer'
+        check = {'bound': bound}
+        sample = self.stack_sample(keys)
+        if sample:
+            (px, py), rgb = sample
+            check['pixel'] = {'at': [px, py], 'rgb': [round(c) for c in rgb], 'tolerance': 3}
+            return check, 'binding + composited pixel'
+        return check, 'binding (no unobstructed sample point)'
+
+    def web_backdrop(self, key):
+        if self.owner_mode(key)[0] != 'native_exact':
+            return None, f'node rendered as {self.owner_mode(key)[0]}'
+        blur = (self.g.nodes[key].get('raw_style') or {}).get('blur') or {}
+        equals = {'data-df-backdrop': _num(float(blur.get('radius') or 0))}
+        if isinstance(blur.get('saturation', 1), (int, float)):
+            equals['data-df-saturation'] = _num(blur.get('saturation', 1))
+        return {'bound': [{'node': key, 'attr': 'data-df-backdrop', 'equals': equals}]}, 'binding of radius/saturation'
+
+    def web_clip(self, key):
+        members = (self.g.records.get(key) or {}).get('masks') or []
+        members = [m for m in members if self.owner_mode(m)[0] in ('native_exact', 'original_asset',
+                                                                   'missing_asset_placeholder')]
+        if not members:
+            return None, 'no rendered masked member'
+        return {'clipped': members}, 'masked members clipped by source shape'
+
+    def web_boundary(self, key):
+        asset = self.g.assets.get(key)
+        if not asset:
+            return None, 'asset not installed'
+        x, y, _, _ = self.g.frame(key)
+        ex, ey, ew, eh = asset['export_rect']
+        export = '' if [ex, ey, ew, eh] == list(self.g.frame(key)) else \
+            ' '.join(_num(v) for v in (ex - x, ey - y, ew, eh))
+        return {'bound': [{'node': key, 'attr': 'data-df-asset', 'equals': {'data-df-asset': export}}]}, \
+            'export frame binding'
+
+    def web_placeholder(self, key, effect_key):
+        if self.owner_mode(key)[0] != 'missing_asset_placeholder':
+            return None, f'node rendered as {self.owner_mode(key)[0]}'
+        raw = self.g.nodes[key].get('raw_style') or {}
+        field = effect_key.split(':')[0]
+        bound = [{'node': key, 'attr': 'data-df-placeholder'}]
+        if field in ('shadow', 'shadows', 'innerShadows'):
+            count = sum(1 for f in ('shadow', 'innerShadows', 'innerShadow') for s in raw.get(f) or []
+                        if isinstance(s, dict) and s.get('isEnabled', True) is not False)
+            bound.append({'node': key, 'attr': 'data-df-box', 'equals': {'data-df-shadows': str(count)}})
+            return {'bound': bound}, 'placeholder keeps source shadows'
+        if field == 'borders' and not effect_key.endswith(':gradient'):
+            return {'bound': bound + [{'node': key, 'attr': 'data-df-box'}]}, 'placeholder keeps source borders'
+        if effect_key == 'opacity':
+            return {'bound': bound + [{'node': key, 'attr': 'data-df-opacity',
+                                       'equals': {'data-df-opacity': _num(float(raw['opacity']) / 100)}}]}, \
+                'placeholder keeps layer opacity'
+        if field == 'blur':
+            blur = raw.get('blur') or {}
+            attr = 'data-df-backdrop' if blur.get('blurType') == 3 else 'data-df-layer-blur'
+            return {'bound': bound + [{'node': key, 'attr': attr,
+                                       'equals': {attr: _num(float(blur.get('radius') or 0))}}]}, \
+                'placeholder keeps blur'
+        return None, f'effect {effect_key} not representable on a placeholder'
+
+
+def write_web_scene_spec(generator, class_name: str, module: str, spec_file: Path) -> dict:
+    import json
+    writer = WebSceneSpec(generator, class_name, module)
+    for requirement in scene_requirements(generator.nodes):
+        writer.add(requirement)
+    from source_requirements import effects
+    for key, record in generator.records.items():
+        if record['mode'] == 'missing_asset_placeholder' and key in generator.visible:
+            for effect_key in effects(generator.nodes[key]):
+                writer.add({'id': f'{key}/placeholder_effect/{effect_key}', 'kind': 'placeholder_effect',
+                            'node_ids': [key]})
+    width, height = generator.canvas
+    spec = {'schema': 1, 'generator': 'generate.py --target react', 'module': module,
+            'scene': f'{class_name}Scene', 'canvas': [width, height],
+            'design_padding': {'top': generator.design_top, 'bottom': generator.design_bottom},
+            'checks': writer.checks}
+    spec_file.parent.mkdir(parents=True, exist_ok=True)
+    spec_file.write_text(json.dumps(spec, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+    return {'test_file': str(spec_file), 'obligations': writer.obligations}
