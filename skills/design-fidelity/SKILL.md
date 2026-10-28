@@ -1,18 +1,18 @@
 ---
 name: design-fidelity
-description: Implement and verify Lanhu designs as maintainable Flutter or React UI with deterministic codegen, verified rendering primitives and reproducible visual, geometry and multi-size gates.
+description: Implement and verify Lanhu or Figma designs as maintainable Flutter or React UI with deterministic codegen, verified rendering primitives and reproducible visual, geometry and multi-size gates.
 metadata:
   version: "3.0.0"
   maturity: "candidate"
 ---
 
-# 蓝湖到 Flutter / React
+# 蓝湖 / Figma 到 Flutter / React
 
 3.0.0 候选版：规则改由工具执行。尚未经独立模型在未调优页面验证，不标记为成熟。
 
 默认只读本文件与[执行入口](references/session-entrypoint.md)。按命令返回的 `next_action` 推进，不手写本可由工具生成的内容。
 
-目标由页面配置的 `target` 决定：`flutter`（默认，`*.g.dart`）或 `react`（`*.g.tsx`，见 [Web 接入](references/web-rendering.md)）。两者共用同一份证据、场景模型、契约和门禁。
+设计源：蓝湖走 MCP（[取证](references/mcp-evidence.md)），Figma 走 REST（[Figma 取证](references/figma-evidence.md)，需研发自己的个人访问令牌）。两者都转换成同一份[证据格式](references/evidence-schema.md)。目标由页面配置的 `target` 决定：`flutter`（默认，`*.g.dart`）或 `react`（`*.g.tsx`，见 [Web 接入](references/web-rendering.md)）。两者共用同一份证据、场景模型、契约和门禁。
 
 ## 分工
 
@@ -38,6 +38,7 @@ metadata:
 |---|---|
 | 生成的 Scene、overrides、改写布局、lint 规则、几何/多尺寸门禁 | [生成与组件化](references/codegen.md) |
 | MCP 分页、版本或下载 | [取证](references/mcp-evidence.md) |
+| Figma 链接、令牌、换算规则 | [Figma 取证](references/figma-evidence.md) |
 | 证据字段、编写或排查取证适配器 | [证据格式](references/evidence-schema.md) |
 | 素材、裁剪、复合行、透明叠层、缺图 | [节点决策](references/implementation-decisions.md) |
 | 字体、契约字段、检测器 | [准备](references/preparation.md) / [契约](references/visual-contract.md) |

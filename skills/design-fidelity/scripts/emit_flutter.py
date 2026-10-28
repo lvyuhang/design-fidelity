@@ -115,6 +115,7 @@ class FlutterEmitter:
     def __init__(self, model: SceneModel):
         self.m = model
         self.cls = model.class_name
+        self.uses_max = False
 
     # values
     def color(self, c: N) -> Raw:
@@ -174,6 +175,9 @@ class FlutterEmitter:
 
     def value(self, v: Any) -> Any:
         if isinstance(v, Expr):
+            if v.floor is not None:
+                self.uses_max = True
+                return Raw(f'math.max({num(v.floor)}, {v.var} + {num(v.value)})')
             return Raw(f'{v.var} + {num(v.value)}')
         return v
 
@@ -260,6 +264,7 @@ class FlutterEmitter:
             '// Replace groups through `overrides` / wire actions through `onTap`.',
             '// ignore_for_file: prefer_const_constructors, unused_element, unused_local_variable',
             '',
+            "IMPORTS",
             "import 'package:flutter/widgets.dart';",
             f"import '{PRIMITIVES_IMPORT}';",
             '',
@@ -353,6 +358,11 @@ class FlutterEmitter:
             lines += ['', f'  /// {name}'.rstrip(),
                       f'  Widget {method}(BuildContext context) => {render(self.widget(node), 4)};']
         lines += ['}', '']
+        index = lines.index('IMPORTS')
+        if self.uses_max:
+            lines[index] = "import 'dart:math' as math;\n"
+        else:
+            del lines[index]
         return '\n'.join(lines)
 
     def report(self) -> dict:

@@ -6,8 +6,10 @@
 # SKILL_DIR 为技能目录；python 为装好 scripts/requirements.txt 的项目环境。
 page() { python "$SKILL_DIR/scripts/page_session.py" --config page.json "$@"; }
 page start                       # 选页、取证之前开始计时
+# 取证：蓝湖用 MCP（见 mcp-evidence.md）；Figma 用
+#   python "$SKILL_DIR/scripts/figma_evidence.py" --url '<画板链接>' --out evidence
 page prepare                     # 固定快照、素材导出框、字体覆盖
-page generate                    # 生成 <page>.g.dart、scene 测试、首次生成 render 测试
+page generate                    # 生成 <page>.g.dart / .g.tsx、scene 检查、首次生成 render 入口
 page phase --phase implementation
 # 页面代码组合 <Page>Scene：overrides 替换需组件化/动态的组，onTap 接交互
 page spec                        # 生成可编译的 reviewed-spec.json

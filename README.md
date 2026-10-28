@@ -1,16 +1,23 @@
 # Lanhu → Flutter Fidelity
 
-把蓝湖（Lanhu）设计稿通过 MCP 还原为可维护的 Flutter 页面，并用可复现的门禁衡量还原度。面向 AI 编码代理（Codex、Claude Code 等），也可以由人直接使用。
+把蓝湖（Lanhu）或 Figma 设计稿还原为可维护的 Flutter 或 React 页面，并用可复现的门禁衡量还原度。面向 AI 编码代理（Codex、Claude Code 等），也可以由人直接使用。
+
+| 设计源 | 取证 | | 目标 | 生成 | 渲染与门禁 |
+|---|---|---|---|---|---|
+| 蓝湖 | MCP | | Flutter（iOS / Android） | `.g.dart` + `design_fidelity` 包 | `flutter test` |
+| Figma | REST（个人访问令牌） | | React（Web） | `.g.tsx` + `@design-fidelity/react` | Playwright Chromium |
+
+两种设计源都转换成同一份证据格式，两种目标共用同一个场景模型、验收契约和门禁。原生 Android（Compose）与 iOS（SwiftUI）在规划中。
 
 核心思路：**能确定的事交给工具，只把语义判断留给模型。** 视觉参数直接从设计源数据生成代码，并用经过验证的渲染原语绘制；质量由像素、节点几何和多尺寸三类门禁判定，不依赖"看起来差不多"。
 
 ## 特性
 
-- **确定性代码生成**：从蓝湖 MCP 节点直接生成 Flutter 首版，包含颜色与文字 token、导出素材、遮罩、模糊、渐变和稳定的节点 key。同一输入总是生成相同的输出。
-- **已验证的渲染原语**（`design_fidelity` Dart 包）：内/中/外描边、不染色的外阴影与内阴影、整层透明度、背景模糊、按导出框放置素材、缺图占位。每个机制都有正反例像素测试。
+- **确定性代码生成**：从设计源节点直接生成首版，包含颜色与文字 token、导出素材、遮罩、模糊、渐变和稳定的节点 key。同一输入总是生成相同的输出。
+- **已验证的渲染原语**（`design_fidelity` Dart 包与 `@design-fidelity/react`，语义一致）：内/中/外描边、不染色的外阴影与内阴影、整层透明度、背景模糊、按导出框放置素材、缺图占位。每个机制都有正反例像素测试。
 - **系统 chrome 识别**：设计稿中的状态栏和 Home Indicator 只占位、不绘制，在门禁中按源坐标排除并如实披露。
 - **自动验收契约**：检测器、对齐关系、效果区域和 scene 测试自动生成，契约无需手写即可编译。
-- **多层门禁**：Dart lint（拦截框架图标、硬编码颜色、裸阴影等）→ scene 测试 → 区域像素与特征 → 逐节点几何 → iPhone/Android 五种屏幕与安全区、1.3 倍字体检查。每次渲染都有收据，阈值冻结后不能修改。
+- **多层门禁**：Dart / Web lint（拦截框架图标、硬编码颜色、裸阴影等）→ scene 测试 → 区域像素与特征 → 逐节点几何 → iPhone/Android 五种屏幕与安全区、1.3 倍字体检查。每次渲染都有收据，阈值冻结后不能修改。
 - **可追溯的运行报告**：完整记录耗时与轮次，阻断项和观察项分开统计。
 
 ## 工作流
@@ -22,7 +29,7 @@ start → prepare → generate → (组合页面) → spec → accept → finish
 | 步骤 | 做什么 | 产物 |
 |---|---|---|
 | `prepare` | 固定设计快照，校验素材导出框和字体覆盖 | `page-plan.json` |
-| `generate` | 生成页面首版和 scene 测试 | `<page>.g.dart`、`<page>_scene_test.g.dart`、render 测试 |
+| `generate` | 生成页面首版和 scene 测试 | `<page>.g.dart` / `.g.tsx`、scene 检查、render 入口 |
 | 组合页面 | 用 `overrides` 组件化并接入动态数据，用 `onTap` 接交互；不改生成文件 | 你的页面代码 |
 | `spec` | 草拟可编译的验收契约 | `reviewed-spec.json` |
 | `accept` | lint → 渲染 → 门禁 → 构建 | 收据、门禁报告 |

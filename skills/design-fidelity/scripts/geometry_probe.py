@@ -123,6 +123,9 @@ def responsive_report(nodes: dict, variants: dict, design_width: float,
     findings = []
     texts = [k for k, n in nodes.items() if n.get('text')]
     footers = {k for k, d in decisions.items() if d.get('vertical_anchor') == 'bottom'}
+    # Footers the design itself draws into the home-indicator area (tab bar
+    # backgrounds) may reach the screen edge, but not beyond it.
+    bleeding = {k for k, d in decisions.items() if d.get('bleed') == 'bottom'}
     listed = variants.get('variants', [])
     if devices:
         recorded = {v.get('device') for v in listed}
@@ -156,7 +159,8 @@ def responsive_report(nodes: dict, variants: dict, design_width: float,
                 findings.append({'variant': name, 'kind': 'vertical_clip', 'node_id': key,
                                  'message': f"{label(key)} ends at {rect[1] + rect[3]:.1f} below the "
                                             f"{height:g} screen and the page does not scroll"})
-            if key in footers and height and rect[1] + rect[3] > height - bottom_inset + 0.5:
+            limit = height if key in bleeding else height - bottom_inset
+            if key in footers and height and rect[1] + rect[3] > limit + 0.5:
                 findings.append({'variant': name, 'kind': 'under_home_indicator', 'node_id': key,
                                  'message': f"{label(key)} reaches {rect[1] + rect[3]:.1f}, inside the "
                                             f"bottom safe area ({height - bottom_inset:g}..{height:g})"})

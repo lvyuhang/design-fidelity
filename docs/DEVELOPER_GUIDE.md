@@ -1,6 +1,6 @@
 # 研发使用指南
 
-把蓝湖设计稿还原成 Flutter 页面，并自动检查还原度。本文只讲研发日常需要的部分；工具的测试、实验和维护资料在 `docs/maintainers/`，不需要读。
+把蓝湖或 Figma 设计稿还原成 Flutter（或 React）页面，并自动检查还原度。本文只讲研发日常需要的部分；工具的测试、实验和维护资料在 `docs/maintainers/`，不需要读。
 
 整体分工：**AI 编码代理（Codex、Claude Code 等）负责取设计数据、生成代码、跑检查；你负责业务逻辑、数据接入、交互，以及审核结果。**
 
@@ -112,6 +112,14 @@ python3 ~/lanhu-flutter-fidelity/skills/design-fidelity/scripts/install_app.py p
 > 使用 `$design-fidelity` 把蓝湖设计 `<设计链接>` 实现为订单详情页。页面配置在 `fidelity/order_detail/page.json`，命令用 `fidelity/page order_detail <命令>`，取证结果保存到 `fidelity/order_detail/evidence/`。业务要求：订单数据来自 `OrderRepository.detail(id)`；点击"确认收货"调用 `onConfirm`；页面文件写在 `lib/pages/order_detail_page.dart`。
 
 AI 会依次执行：`start → 取证 → prepare → generate → 组合页面 → spec → accept`。其中代码和检查由工具生成，AI 主要负责组合页面、接入数据和修复失败项。
+
+**设计稿在 Figma 时**：不需要蓝湖 MCP 和 Cookie，改为配置自己的 Figma 个人访问令牌（Figma → Settings → Security → Generate new token，权限勾选 File content 只读）。令牌写进 App 仓库的 `fidelity/.local.env`（已被忽略，不会提交）：
+
+```sh
+echo 'FIGMA_TOKEN=figd_你的令牌' >> fidelity/.local.env
+```
+
+交给 AI 时把"蓝湖设计 `<设计链接>`"换成"Figma 画板 `<链接>`"（在 Figma 中右键画板 → Copy link，链接里要有 `node-id`）。AI 会用 `figma_evidence.py` 取证，之后的步骤完全相同。
 
 **3. 你需要审核的四件事**
 

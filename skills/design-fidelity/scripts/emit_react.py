@@ -141,7 +141,9 @@ class ReactEmitter:
 
     def value(self, v: Any) -> Any:
         if isinstance(v, Expr):
-            return Raw(f"{'dy' if v.var == 'dy' else 'dyBottom'}({num(v.value)})")
+            fn = 'dy' if v.var == 'dy' else 'dyBottom'
+            floor = '' if v.floor is None else f', {num(v.floor)}'
+            return Raw(f"{fn}({num(v.value)}{floor})")
         return v
 
     def note(self, feature: str, detail: str) -> None:

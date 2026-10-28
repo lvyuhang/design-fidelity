@@ -397,7 +397,12 @@ export function SourceText({ text, runs, style, align = 'left', wrap = false }: 
       whiteSpace: wrap ? 'pre-wrap' : 'pre', overflowWrap: wrap ? 'break-word' : 'normal',
       WebkitFontSmoothing: 'antialiased',
     } as React.CSSProperties}>
-      {runs ? runs.map(([t, s], i) => <span key={i} style={sourceTextStyle(s, style)}>{t}</span>) : text}
+      {runs ? runs.map(([t, s], i) => (
+        // Forced strut (as Sketch/Figma and the Flutter primitive): a run never
+        // grows the line box set by the base style; zero line-height spans
+        // still paint their glyphs on the shared baseline.
+        <span key={i} style={{ ...sourceTextStyle(s, style), lineHeight: style.lineHeight ? 0 : 'normal' }}>{t}</span>
+      )) : text}
     </div>
   );
 }
@@ -479,10 +484,12 @@ export function SourceClip({ shape, children }: { shape: SourceShape; children?:
 type Len = number | string | null | undefined;
 const len = (v: Len) => (typeof v === 'number' ? px(v) : v ?? undefined);
 
-/** `top` that keeps a root layer's distance to the top safe area. */
-export const dy = (v: number) => `calc(var(--df-dy, 0px) + ${px(v)})`;
-/** `bottom` that keeps a footer's distance to the bottom safe area. */
-export const dyBottom = (v: number) => `calc(var(--df-dy-bottom, 0px) + ${px(v)})`;
+/** Design value plus the top safe-area change (root `top`, or the height of a
+ *  background drawn under the status bar); `floor` clamps it from below. */
+export const dy = (v: number, floor?: number) => clampCalc(`calc(var(--df-dy, 0px) + ${px(v)})`, floor);
+/** Design value plus the bottom safe-area change (footer `bottom` / height). */
+export const dyBottom = (v: number, floor?: number) => clampCalc(`calc(var(--df-dy-bottom, 0px) + ${px(v)})`, floor);
+const clampCalc = (value: string, floor?: number) => (floor == null ? value : `max(${px(floor)}, ${value})`);
 
 export function Placed(props: { left?: Len; top?: Len; right?: Len; bottom?: Len; width?: Len; height?: Len; children?: React.ReactNode }) {
   const { children, ...edges } = props;

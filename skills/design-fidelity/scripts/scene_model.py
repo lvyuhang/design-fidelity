@@ -63,12 +63,17 @@ class N:
 
 
 class Expr:
-    """`<var> + value`, evaluated by the target at run time (`dy`, `dyBottom`)."""
+    """`<var> + value`, evaluated by the target at run time (`dy`, `dyBottom`).
 
-    __slots__ = ('var', 'value')
+    `floor` (when set) clamps the result from below, e.g. a footer drawn into
+    the design's home-indicator area must not leave the screen on a device
+    without one.
+    """
 
-    def __init__(self, var: str, value: float):
-        self.var, self.value = var, value
+    __slots__ = ('var', 'value', 'floor')
+
+    def __init__(self, var: str, value: float, floor: float | None = None):
+        self.var, self.value, self.floor = var, value, floor
 
 
 def num(value: float) -> str:
@@ -567,7 +572,7 @@ class SceneModel:
         left_aligned_text = auto_text and align_code in (0, 4, None)
         if at_root and (x, y, w, h) == (px, py, pw, ph) and not is_text:
             return N('fill', child=widget)
-        vertical = self.vertical(key, top, bottom, h, bool(is_text), at_root)
+        vertical = self.vertical(key, top, bottom, h, bool(is_text), at_root, bool(hints.get('leaf')))
         if stretch:
             if abs(left - right) <= CENTER_TOLERANCE and left <= 32 and w >= pw / 2:
                 if is_text:
@@ -598,10 +603,12 @@ class SceneModel:
                 and height - (y + h) <= self.design_bottom + FOOTER_SLACK)
 
     def vertical(self, key: str, top: float, bottom: float, h: float, is_text: bool,
-                 at_root: bool) -> list[tuple[str, Any]]:
+                 at_root: bool, leaf: bool = False) -> list[tuple[str, Any]]:
         """Vertical placement. Root layers follow the device safe area at run
         time: footers keep their distance to the bottom inset, everything else
-        to the top inset."""
+        to the top inset. A background drawn under the status bar / home
+        indicator (a leaf crossing the design inset) stays glued to the screen
+        edge and grows with the inset instead."""
         if not at_root:
             result: list[tuple[str, Any]] = [('top', top)]
         elif self.is_footer(key):
@@ -609,12 +616,25 @@ class SceneModel:
                 self.footer.append(key)
             if key in self.records:
                 self.records[key]['vertical_anchor'] = 'bottom'
-            result = [('bottom', Expr('dyBottom', bottom))]
+            if bottom < self.design_bottom - 0.5:
+                self._bleed(key, 'bottom')
+                if leaf and not is_text:
+                    return [('bottom', bottom), ('height', Expr('dyBottom', h))]
+                result = [('bottom', Expr('dyBottom', bottom, floor=0.0))]
+            else:
+                result = [('bottom', Expr('dyBottom', bottom))]
+        elif leaf and not is_text and top < self.design_top - 0.5 < top + h - 1:
+            self._bleed(key, 'top')
+            return [('top', top), ('height', Expr('dy', h))]
         else:
             result = [('top', Expr('dy', top))]
         if not is_text:
             result.append(('height', h))
         return result
+
+    def _bleed(self, key: str, edge: str) -> None:
+        if key in self.records:
+            self.records[key]['bleed'] = edge
 
     def _anchor(self, key: str, edge: str) -> None:
         """Record which edge a text box is laid out from, so the geometry probe
@@ -710,7 +730,7 @@ class SceneModel:
             return None
         widget = N('node', id=key, child=widget, size=self.frame(key)[2:])
         self.keyed.add(key)
-        return self.placement(key, parent_rect, stretch, widget, hints, at_root)
+        return self.placement(key, parent_rect, stretch, widget, {**hints, 'leaf': True}, at_root)
 
     def group(self, key: str, parent_rect: tuple, stretch: bool, at_root: bool) -> N | None:
         rect = self.frame(key)
@@ -809,6 +829,8 @@ class SceneModel:
                 decision['anchor'] = entry['anchor']
             if entry.get('vertical_anchor'):
                 decision['vertical_anchor'] = entry['vertical_anchor']
+            if entry.get('bleed'):
+                decision['bleed'] = entry['bleed']
             if key not in self.keyed:
                 # Drawn by its owner (asset, root frame) or paints nothing: there is
                 # no element of its own whose layout the geometry probe could measure.

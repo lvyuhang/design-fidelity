@@ -212,8 +212,10 @@ class GenerateFlutterTests(unittest.TestCase):
         self.assertRegex(self.positioned('EDIT'), r'right: 50')
         self.assertRegex(self.positioned('LABEL'), r'left: 32,\s*top: dy \+ 120,\s*child')
         self.assertRegex(self.positioned('BUTTON'), r'left: 28,\s*right: 27,\s*bottom: dyBottom \+ 56')
+        # Drawn into the home-indicator area: glued to the screen bottom, grows with the inset.
         self.assertRegex(self.positioned('TABBAR'),
-                         r'left: 0,\s*right: 0,\s*bottom: dyBottom \+ 0,\s*height: 50')
+                         r'left: 0,\s*right: 0,\s*bottom: 0,\s*height: dyBottom \+ 50')
+        self.assertEqual(self.report['draft_node_decisions']['TABBAR']['bleed'], 'bottom')
         self.assertIn('Positioned.fill(', self.positioned('BG'))
         decisions = self.report['draft_node_decisions']
         self.assertEqual(decisions['EDIT']['anchor'], 'right',
